@@ -72,6 +72,6 @@ Republish the artifact with the same file path (`site/index.html` + its JSON fil
 - **App Store builds use the public Xcode**: `DEVELOPER_DIR="/Applications/Xcode 1.app/Contents/Developer"`. Check `DTXcodeBuild`.
 
 ## Outward actions
-Everything outward-facing needs Nick's explicit yes each time: creating the repo (planned `nickstrom5/california-eats`), pushing, Pages,
+Everything outward-facing needs Nick's explicit yes each time: pushing (repo https://github.com/nickstrom5/california-eats, Pages live since 2026-10-08),
 App Store Connect, uploads, emails, records requests. Never submit for review or accept agreements. Public commits use
 `329204362+nickstrom5@users.noreply.github.com`. Never publish Google or raw data (`site/*.json`, `data/ca`, `data/raw`) in a public repo.

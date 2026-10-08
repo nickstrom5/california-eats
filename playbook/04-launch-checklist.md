@@ -2,21 +2,27 @@
 
 Everything below is outward-facing: each step needs Nick's explicit yes at the time.
 
-Status 2026-10-07: nothing outward has happened. No repo, no Pages, no App Store Connect record for `com.californiaeats.ios`, nothing
-archived or uploaded. The web leaderboard is a private claude.ai Artifact.
+Status 2026-10-08: website steps 1, 2 and 5 are done (Nick's yes, 2026-10-08): the public repo https://github.com/nickstrom5/california-eats,
+Pages live at https://nickstrom5.github.io/california-eats/ (all 37 sitemap URLs return 200), and California on the eatsranked.com hub
+(commit e9a7c33; the hub's page-size check went from 150 KB to 200 KB with Nick's OK). Build 1.0.0 (1) is archived with the public Xcode
+(`build/CaliforniaEats.xcarchive`, DTXcodeBuild 27A266a), but the upload stopped at "App record with bundle identifier
+com.californiaeats.ios not found on App Store Connect": nothing was uploaded. After Nick creates the record, upload it with
+`DEVELOPER_DIR="/Applications/Xcode 1.app/Contents/Developer" xcodebuild -exportArchive -archivePath build/CaliforniaEats.xcarchive
+-exportOptionsPlist build/ExportOptions-upload.plist -exportPath build/export -allowProvisioningUpdates` (the plist is
+`scripts/ExportOptions-AppStore.plist` with destination `upload`).
 
 ## Website
-1. **Create the public repo** `nickstrom5/california-eats` (empty, no README). Then, with Nick's yes, push `main` with only site and app
+1. **Done 2026-10-08.** **Create the public repo** `nickstrom5/california-eats` (empty, no README). Then, with Nick's yes, push `main` with only site and app
    files (`.gitignore` keeps `site/*.json`, `data/raw`, `data/ca`, Google data and build products out; `data/app` is git-ignored too, the
    app's copy lives in `CaliforniaEats/Resources/Data/`). Author email: `329204362+nickstrom5@users.noreply.github.com`.
-2. **Enable GitHub Pages** from `main` / `docs`. Check every sitemap URL returns 200 at https://nickstrom5.github.io/california-eats/
+2. **Done 2026-10-08.** **Enable GitHub Pages** from `main` / `docs`. Check every sitemap URL returns 200 at https://nickstrom5.github.io/california-eats/
    (privacy and support URLs must load before App Review).
 3. **Cloudflare DNS (Nick):** `california` CNAME → `nickstrom5.github.io`, **DNS only** (grey cloud).
 4. When `dig california.eatsranked.com` shows the CNAME: set `CUSTOM_DOMAIN = "california.eatsranked.com"` in `scripts/make-site.py`,
    re-run it (writes `docs/CNAME`), push, wait for the Pages certificate, then
    `gh api -X PUT repos/nickstrom5/california-eats/pages -F https_enforced=true`, set the repo's Website field, and switch
    `CaliforniaEats/App/Links.swift` and the App Store Connect URLs to the new domain in the next build.
-5. **Hub:** add `playbook/hub-entry.json` to `eatsranked/tools/site-data.json` and a 256 px copy of `docs/icon-512.png` as
+5. **Done 2026-10-08.** **Hub:** add `playbook/hub-entry.json` to `eatsranked/tools/site-data.json` and a 256 px copy of `docs/icon-512.png` as
    `eatsranked/docs/icons/california.png`, rebuild the hub, push (with Nick's OK; the hub is shared and public).
 
 ## App Store

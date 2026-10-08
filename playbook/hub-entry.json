@@ -1,7 +1,7 @@
 {
  "_note": "California's entry for eatsranked/tools/site-data.json `states`, plus docs/icons/california.png (256x256, from docs/icon-512.png). Not added: the hub is a shared, public site; add it only with Nick's OK.",
  "abbr": "CA",
- "status": "soon",
+ "status": "live",
  "app": "California Eats: Restaurants",
  "home_name": "CA Eats",
  "tagline": "Taquerías, burritos, fish tacos and dim sum we checked by hand, MICHELIN and James Beard honors, and official LA County, San Francisco and Sacramento inspection results.",
@@ -11,7 +11,11 @@
  "app_store_id": null,
  "app_store_note": "Coming soon to the App Store",
  "platforms": "iPhone & iPad, free",
- "colors": {"bg": "#003262", "accent": "#FDB515", "text": "#FFFFFF"},
+ "colors": {
+  "bg": "#003262",
+  "accent": "#FDB515",
+  "text": "#FFFFFF"
+ },
  "icon": "icons/california.png",
  "tagline_short": "Taquería & dim sum guide, plus 100,000+ California restaurants.",
  "web_app": "https://nickstrom5.github.io/california-eats/explore/",

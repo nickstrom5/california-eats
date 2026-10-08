@@ -1,0 +1,42 @@
+[
+ {
+  "name": "La Playa Taco Shop",
+  "address": "3973 Mission Blvd",
+  "city": "San Diego",
+  "source_url": "https://timesofsandiego.com/community/2026/09/22/la-playa-taco-shop-closes-after-owner-deported-by-ice/",
+  "source_date": "2026-09-22",
+  "why": "Times of San Diego (2026-09-22): closed for good; last day Saturday, Sept. 19, 2026."
+ },
+ {
+  "name": "Lucha Libre Gourmet Taco Shop (North Park)",
+  "address": "3016 University Ave",
+  "city": "San Diego",
+  "source_url": "https://www.sandiegoville.com/2026/01/san-diegos-70-most-shocking-bar.html",
+  "source_date": "2026-01",
+  "why": "SanDiegoVille 2025 closures roundup: North Park location closed in early 2025 (Mission Hills shop still open)."
+ },
+ {
+  "name": "Oscar's Mexican Seafood (original North PB)",
+  "address": "703 Turquoise St",
+  "city": "San Diego",
+  "source_url": "https://www.sandiegoville.com/2026/01/san-diegos-70-most-shocking-bar.html",
+  "source_date": "2026-01",
+  "why": "SanDiegoVille 2025 closures roundup: original location permanently closed May 2025; landlord-backed lookalike warned about. Emerald St and Hillcrest remain open."
+ },
+ {
+  "name": "Adalberto's Mexican Food (Point Loma)",
+  "address": "Rosecrans St (exact number not given)",
+  "city": "San Diego",
+  "source_url": "https://www.sandiegoville.com/2026/07/san-diego-biggest-restaurant-openings-closures-news-2026.html",
+  "source_date": "2026-07",
+  "why": "SanDiegoVille midyear 2026 roundup: Adalberto's closed its longtime Point Loma (Rosecrans St) shop in 2026; Chalo's Taco Shop has taken over the space."
+ },
+ {
+  "name": "L55 Tacos & More (Lola 55 fast-casual)",
+  "address": "Westfield UTC",
+  "city": "San Diego",
+  "source_url": "https://www.sandiegoville.com/2026/07/san-diego-biggest-restaurant-openings-closures-news-2026.html",
+  "source_date": "2026-07",
+  "why": "SanDiegoVille midyear 2026 roundup: Lola 55 closed its L55 concept at Westfield UTC after about 15 months."
+ }
+]

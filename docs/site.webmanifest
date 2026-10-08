@@ -1,0 +1,21 @@
+{
+  "name": "California Eats",
+  "short_name": "CA Eats",
+  "description": "Taquer\u00eda & dim sum guide, plus 103,585 California restaurants.",
+  "start_url": "/california-eats/",
+  "display": "browser",
+  "background_color": "#f8fafc",
+  "theme_color": "#003262",
+  "icons": [
+    {
+      "src": "/california-eats/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/california-eats/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

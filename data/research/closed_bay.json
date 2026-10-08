@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Yank Sing (Rincon Center)",
+  "address": "101 Spear St",
+  "city": "San Francisco",
+  "source_url": "https://whatnow.com/san-francisco/restaurants/3-bay-area-restaurants-have-closed-this-september-2026/",
+  "source_date": "2026-09-30",
+  "why": "Dim sum restaurant's Rincon Center location closed permanently after 27 years when its lease ended (WhatNow, Sept 2026). Yank Sing's own site (yanksing.com, checked 2026-10-07) also says the Rincon Center lease has ended and directs guests to 49 Stevenson St, which remains open and is in app/bay.json."
+ },
+ {
+  "name": "Tacos El Ultimo Baile (Fruitvale)",
+  "address": "Fruitvale, former Nyum Bai space (street address not given in source)",
+  "city": "Oakland",
+  "source_url": "https://hoodline.com/2025/06/oakland-s-tacos-el-ultimo-baile-bids-adieu-heads-to-san-francisco-s-ikea-food-hall-amidst-small-business-struggles/",
+  "source_date": "2025-06-02",
+  "why": "Hoodline (June 2025) reports the taqueria left its Fruitvale location and moved to a trial stall at Saluhall, the IKEA food hall on Market St in SF; SFist (2025-05-30) says the same. Whether the Saluhall stall is still running in Oct 2026 was not checked."
+ },
+ {
+  "name": "Los Portales",
+  "address": "430 Moffett Blvd",
+  "city": "Mountain View",
+  "source_url": "https://hoodline.com/2026/01/taco-heartbreak-los-portales-serving-final-plates-after-34-years-on-moffett/",
+  "source_date": "2026-01-22",
+  "why": "Family-owned Mexican restaurant (opened 1993) announced its final day as Feb. 10, 2026."
+ },
+ {
+  "name": "Al Pastor Papi",
+  "address": "232 O'Farrell St",
+  "city": "San Francisco",
+  "source_url": "https://hoodline.com/2026/09/union-square-taco-shop-al-pastor-papi-closes-after-rent-triples-to-25k-a-month/",
+  "source_date": "2026-09-24",
+  "why": "Announced closing: Union Square taqueria will close Dec. 31, 2026 after a rent increase (still open at time of check; not added to the guide because it is closing)."
+ },
+ {
+  "name": "Mama Ji's",
+  "address": "4416 18th St",
+  "city": "San Francisco",
+  "source_url": "https://hoodline.com/2026/10/castro-s-mama-ji-s-closes-after-13-years-as-rent-hikes-hit-landmark-building/",
+  "source_date": "2026-10-06",
+  "why": "Announced closing: Castro dim sum and Sichuan restaurant will serve its final meal Oct. 31, 2026 (still open at time of check; not added to the guide)."
+ }
+]

@@ -1,0 +1,2631 @@
+[
+ {
+  "name": "Sea Harbour Seafood Restaurant",
+  "address": "3939 Rosemead Blvd",
+  "city": "Rosemead",
+  "zip": "91770",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "crystal shrimp dumplings (har gow)",
+   "pork dumplings",
+   "rice noodle rolls",
+   "pork soup dumplings",
+   "pan-fried taro cake"
+  ],
+  "opened": 2002,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Cantonese seafood restaurant with a large made-to-order dim sum menu (no carts). Time Out says it has served dim sum here since 2002; LA County reissued its permit in 2026.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-chinese-restaurants-in-los-angeles",
+    "what": "Time Out LA Chinese restaurant roundup (27 places), dated 2026-02-12; lists the place with its dim sum",
+    "date": "2026-02-12"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Sea Harbour Seafood Restaurant' on 2026-07-07, permit active (shows it operates, not what it serves)",
+    "date": "2026-07-07"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/4f31c9a99e444a40a3806e3bbe7b5fdd/data",
+    "what": "LA County DPH facility inventory (as of 2026-09-30) lists Sea Harbour Seafood Restaurant at 3939 Rosemead Blvd",
+    "date": "2026-09-30"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Happy Together",
+  "address": "9920 Valley Blvd",
+  "city": "El Monte",
+  "zip": "91731",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "har gow",
+   "char siu puffs",
+   "lotus-leaf sticky rice with chicken"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Dim sum restaurant inside the Holiday Inn on Valley Blvd; order from a menu. Time Out says it started in Chino Hills.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Happy Together (Holiday Inn)' on 2026-09-10, permit active (shows it operates, not what it serves)",
+    "date": "2026-09-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Chef Tony Dim Sum",
+  "address": "1108 S Baldwin Ave #5",
+  "city": "Arcadia",
+  "zip": "91007",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp har gow",
+   "truffle pork siu mai",
+   "scallop and shrimp dumpling",
+   "lava egg yolk buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Tony He's Arcadia dim sum restaurant (he also led Sea Harbour); a shorter, menu-order dim sum list.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-chinese-restaurants-in-los-angeles",
+    "what": "Time Out LA Chinese restaurant roundup (27 places), dated 2026-02-12; lists the place with its dim sum",
+    "date": "2026-02-12"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH: last routine inspection of 'Chef Tony' on 2024-09-19; facility still on the county's active inventory as of 2026-09-30",
+    "date": "2024-09-19"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Grand Harbor Restaurant",
+  "address": "5725 Rosemead Blvd",
+  "city": "Temple City",
+  "zip": "91780",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "cheung fun (rice noodle rolls)",
+   "steamed durian buns",
+   "corn-and-chive pancakes",
+   "sticky rice",
+   "mango pudding"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Cantonese dim sum hall that takes advance reservations; menu order. Time Out gives the address as 5733 Rosemead Blvd; the county permit is at 5725.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Grand Harbor Restaurant' on 2026-04-16, permit active (shows it operates, not what it serves)",
+    "date": "2026-04-16"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ocean Bo Dim Sum Cafe",
+  "address": "3944 Peck Rd Ste 1",
+  "city": "El Monte",
+  "zip": "91732",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "barbecue pork buns",
+   "chicken feet in black bean sauce",
+   "fried taro puffs",
+   "turnip and taro cakes",
+   "pineapple buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Dim sum counter for takeout with some dine-in tables.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Ocean Bo Dim Sum Cafe' on 2026-01-29, permit active (shows it operates, not what it serves)",
+    "date": "2026-01-29"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Longo Seafood Restaurant",
+  "address": "7540 Garvey Ave",
+  "city": "Rosemead",
+  "zip": "91770",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "har gow",
+   "siu mai",
+   "pork buns",
+   "hot almond milk with puff pastry"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Cantonese seafood restaurant known for oversized dim sum pieces; menu order and reservations.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/longo-seafood-restaurant",
+    "what": "Time Out LA venue page dated 2025-10-09: address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Longo Seafood' on 2026-03-16, permit active (shows it operates, not what it serves)",
+    "date": "2026-03-16"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "NBC Seafood Restaurant",
+  "address": "404 S Atlantic Blvd",
+  "city": "Monterey Park",
+  "zip": "91754",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "chicken feet",
+   "Teochew-style shrimp and pork meatballs",
+   "pan-fried stuffed bitter melon",
+   "salted egg yolk sponge cake"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Monterey Park dim sum hall that still serves from push carts (with a picture menu), 8am-3pm per Time Out.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'NBC Seafood Restaurant' on 2026-03-25, permit active (shows it operates, not what it serves)",
+    "date": "2026-03-25"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "ixlb Dimsum Eats",
+  "address": "5900 Sunset Blvd",
+  "city": "Los Angeles",
+  "zip": "90028",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp har gow",
+   "custard pineapple buns",
+   "soup dumplings",
+   "shrimp toast"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Fast-casual Hollywood dim sum shop; everything cooked to order. Own site gives hours and Toast ordering.",
+  "website": "http://www.ixlbdimsumeats.com/",
+  "sources": [
+   {
+    "url": "http://www.ixlbdimsumeats.com/",
+    "what": "own site: Hollywood address, hours (closed Tue), Toast order link; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-chinese-restaurants-in-los-angeles",
+    "what": "Time Out LA Chinese restaurant roundup (27 places), dated 2026-02-12; lists the place with its dim sum",
+    "date": "2026-02-12"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'ixlb Dim Sum Eats' on 2026-04-16, permit active (shows it operates, not what it serves)",
+    "date": "2026-04-16"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "ixlb Dimsum Eats (Westwood)",
+  "address": "10905 Lindbrook Dr",
+  "city": "Los Angeles",
+  "zip": "90024",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp har gow",
+   "custard pineapple buns",
+   "soup dumplings",
+   "scallion pancakes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Westwood Village branch of the Hollywood fast-casual dim sum shop.",
+  "website": "http://www.ixlbdimsumeats.com/",
+  "sources": [
+   {
+    "url": "http://www.ixlbdimsumeats.com/",
+    "what": "own site: Westwood address, hours (closed Tue), Toast order link; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'ixlb Dim Sum Eats' on 2026-04-30, permit active (shows it operates, not what it serves)",
+    "date": "2026-04-30"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Capital Seafood Restaurant",
+  "address": "755 W Garvey Ave",
+  "city": "Monterey Park",
+  "zip": "91754",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "egg tarts",
+   "chicken feet",
+   "crispy pork belly"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Cantonese seafood restaurant with push-cart dim sum. The Capital Seafood group site now lists only its noodle bars, so this rests on Time Out and the county permit.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Capital Seafood Restaurant' on 2026-09-28, permit active (shows it operates, not what it serves)",
+    "date": "2026-09-28"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Capital Seafood (Arcadia)",
+  "address": "333 E Huntington Dr",
+  "city": "Arcadia",
+  "zip": "91006",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "egg tarts",
+   "chicken feet",
+   "crispy pork belly"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Arcadia branch of Capital Seafood with push-cart dim sum, per Time Out.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Capital Seafood' on 2025-10-08, permit active (shows it operates, not what it serves)",
+    "date": "2025-10-08"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Capital Dim Sum & BBQ",
+  "address": "727 W Garvey Ave",
+  "city": "Monterey Park",
+  "zip": "91754",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "dim sum dumplings to go",
+   "roast duck",
+   "BBQ pork",
+   "soy sauce squid"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Takeout counter beside Capital Seafood selling its dim sum and Cantonese roast meats; cash only per Time Out.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes (counter takeout)",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Capital Dim Sum & BBQ' on 2025-06-06, permit active (shows it operates, not what it serves)",
+    "date": "2025-06-06"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Atlantic Seafood & Dim Sum",
+  "address": "500 N Atlantic Blvd Ste 200",
+  "city": "Monterey Park",
+  "zip": "91754",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "egg tarts",
+   "fried turnip cakes",
+   "rice noodle rolls",
+   "salted egg yolk pineapple buns",
+   "congee"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Push-cart dim sum hall in Monterey Park. Its old domain (atlanticseafooddimsum.com) now redirects to a domain-sale page.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-chinese-restaurants-in-los-angeles",
+    "what": "Time Out LA Chinese restaurant roundup (27 places), dated 2026-02-12; lists the place with its dim sum (push carts)",
+    "date": "2026-02-12"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Atlantic Seafood Restaurant' on 2025-12-01, permit active (shows it operates, not what it serves)",
+    "date": "2025-12-01"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lunasia Dim Sum House (Alhambra)",
+  "address": "500 W Main St",
+  "city": "Alhambra",
+  "zip": "91801",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "jumbo shrimp har gow",
+   "siu mai",
+   "BBQ pork bao",
+   "shrimp rice noodle roll",
+   "egg custard tart"
+  ],
+  "opened": null,
+  "brand_founded": 2009,
+  "chain": true,
+  "note": "All-day, menu-order dim sum; the brand says it has served LA since 2009.",
+  "website": "http://lunasiadimsum.com",
+  "sources": [
+   {
+    "url": "http://lunasiadimsum.com/pages/locations",
+    "what": "own site (c)2026: Alhambra address and hours; dim sum menu page; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Dim Sum House / Lunasia' on 2025-01-22, permit active (shows it operates, not what it serves)",
+    "date": "2025-01-22"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lunasia Signature (Pasadena)",
+  "address": "865 E Colorado Blvd",
+  "city": "Pasadena",
+  "zip": "91101",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "jumbo shrimp har-gow",
+   "truffle sui mai",
+   "shrimp rice noodle roll",
+   "crispy baked BBQ pork bao",
+   "pan-fried turnip cake"
+  ],
+  "opened": null,
+  "brand_founded": 2009,
+  "chain": true,
+  "note": "Lunasia's Pasadena branch, branded Lunasia Signature. Time Out (Oct 2025) gave a Pasadena address of 239 E Colorado Blvd; the brand's own 2026 location page lists 865 E Colorado Blvd.",
+  "website": "http://lunasiadimsum.com",
+  "sources": [
+   {
+    "url": "http://lunasiadimsum.com/pages/locations",
+    "what": "own site (c)2026 location page: Lunasia Signature - Pasadena, 865 E Colorado Blvd, hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://lunasiadimsum.com/pages/menu-lunasia-signature",
+    "what": "own Lunasia Signature dim sum menu; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lunasia Dim Sum House (Cerritos)",
+  "address": "11510 South St",
+  "city": "Cerritos",
+  "zip": "90703",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "jumbo shrimp har gow",
+   "siu mai",
+   "BBQ pork bao",
+   "shrimp rice noodle roll",
+   "egg custard tart"
+  ],
+  "opened": null,
+  "brand_founded": 2009,
+  "chain": true,
+  "note": "Cerritos branch of Lunasia; all-day menu-order dim sum.",
+  "website": "http://lunasiadimsum.com",
+  "sources": [
+   {
+    "url": "http://lunasiadimsum.com/pages/locations",
+    "what": "own site (c)2026: Cerritos address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Lunasia Din Sum House' on 2026-07-17, permit active (shows it operates, not what it serves)",
+    "date": "2026-07-17"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lunasia Dim Sum House (Torrance)",
+  "address": "2575 Pacific Coast Hwy",
+  "city": "Torrance",
+  "zip": "90505",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "jumbo shrimp har gow",
+   "siu mai",
+   "BBQ pork bao",
+   "shrimp rice noodle roll",
+   "egg custard tart"
+  ],
+  "opened": null,
+  "brand_founded": 2009,
+  "chain": true,
+  "note": "Torrance branch of Lunasia; all-day menu-order dim sum.",
+  "website": "http://lunasiadimsum.com",
+  "sources": [
+   {
+    "url": "http://lunasiadimsum.com/pages/locations",
+    "what": "own site (c)2026: Torrance address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-dim-sum-restaurants-in-los-angeles",
+    "what": "Time Out LA dim sum roundup (12 places), dated 2025-10-09; names the place, address and dim sum dishes",
+    "date": "2025-10-09"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Lunasia Dimsum House' on 2026-03-31, permit active (shows it operates, not what it serves)",
+    "date": "2026-03-31"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "All That 'N Dim Sum",
+  "address": "18518 E Gale Ave",
+  "city": "Rowland Heights",
+  "zip": "91748",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "snow cap taro bun",
+   "dim sum served hot to order"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Fast-casual dim sum counter (no carts), open mornings to mid-afternoon, closed Tuesdays. The county lists the address under City of Industry.",
+  "website": "http://allthatndimsum.com/",
+  "sources": [
+   {
+    "url": "http://allthatndimsum.com/",
+    "what": "own site: address, hours, fast-casual dim sum, pickup ordering link; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'All That N Dim Sum' on 2025-10-08, permit active (shows it operates, not what it serves)",
+    "date": "2025-10-08"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Bao Dim Sum House",
+  "address": "8256 Beverly Blvd",
+  "city": "Los Angeles",
+  "zip": "90048",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "har gow",
+   "char siu bao",
+   "potstickers",
+   "scallion pancakes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Beverly Grove Cantonese dim sum restaurant; own site has 2025 posts and ChowNow ordering.",
+  "website": "http://www.baodimsum.com",
+  "sources": [
+   {
+    "url": "http://www.baodimsum.com",
+    "what": "own site (c)2025, posts dated 2025, hours, ChowNow ordering; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Bao Dim Sum House' on 2026-01-14, permit active (shows it operates, not what it serves)",
+    "date": "2026-01-14"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dim Sum House",
+  "address": "1822 Westwood Blvd",
+  "city": "Los Angeles",
+  "zip": "90025",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumpling",
+   "pork and shrimp shumai",
+   "BBQ pork bun",
+   "shrimp rice noodle roll",
+   "steamed chicken feet"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "West LA dim sum restaurant open 9am-9pm daily per its site.",
+  "website": "https://dimsumhousela.com/",
+  "sources": [
+   {
+    "url": "https://dimsumhousela.com/",
+    "what": "own site (c)2025: address, daily hours, dim sum menu; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Dim Sum House (New Mandarin House)' on 2026-04-02, permit active (shows it operates, not what it serves)",
+    "date": "2026-04-02"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sheng Hui Dim Sum",
+  "address": "2889 E Valley Blvd Ste J",
+  "city": "West Covina",
+  "zip": "91792",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "har gow",
+   "shrimp siu mai",
+   "custard buns",
+   "turnip cakes",
+   "braised chicken feet"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Small dim sum shop open Fri-Mon (closed Tue-Thu) per its site.",
+  "website": "http://www.shenghuidimsum.com/",
+  "sources": [
+   {
+    "url": "http://www.shenghuidimsum.com/",
+    "what": "own site: address, hours, dim sum items, online ordering; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Sheng Hui Dim Sum' on 2026-06-05, permit active (shows it operates, not what it serves)",
+    "date": "2026-06-05"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Wonde Harbor Dim Sum Restaurant",
+  "address": "1655 S Azusa Ave",
+  "city": "Hacienda Heights",
+  "zip": "91745",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "dim sum 9am-3pm daily",
+   "har gow",
+   "siu mai",
+   "char siu bao",
+   "rice noodle rolls"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Cantonese restaurant serving dim sum daily 9am-3pm and dinner; items from its own site's photo gallery.",
+  "website": "https://www.wondeharbor.com",
+  "sources": [
+   {
+    "url": "https://www.wondeharbor.com",
+    "what": "own site: address, dim sum hours, gallery of dim sum items, online ordering; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Wonde Harbor Dim Sum Restaurant' on 2025-02-06, permit active (shows it operates, not what it serves)",
+    "date": "2025-02-06"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Won Kok Restaurant",
+  "address": "210 Alpine St",
+  "city": "Los Angeles",
+  "zip": "90012",
+  "county": "Los Angeles",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "baked char siu bao",
+   "sesame balls",
+   "coconut buns",
+   "egg custards"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "No-frills Chinatown dim sum and Chinese bakery spot. Its old domain now shows a parked page. County permit address is 208 Alpine St.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-restaurants-in-los-angeles-guide-to-chinatowns-best-food",
+    "what": "Time Out LA Chinatown guide dated 2026-08-25: Won Kok at 210 Alpine St with its dim sum items",
+    "date": "2026-08-25"
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+    "what": "LA County DPH restaurant inspections (official open data, window to 2026-09-30): routine inspection of 'Won Kok Restaurant' on 2026-09-04, permit active (shows it operates, not what it serves)",
+    "date": "2026-09-04"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tim Ho Wan",
+  "address": "2700 Alton Pkwy Suite 127-131",
+  "city": "Irvine",
+  "zip": "92606",
+  "county": "Orange",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "baked BBQ pork buns",
+   "har gow",
+   "shrimp and chive dumplings",
+   "BBQ pork rice roll",
+   "sticky rice in lotus leaf"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Hong Kong dim sum chain's Irvine branch at Diamond Jamboree; Hoodline reported it reopened in 2026.",
+  "website": "https://www.timhowanusa.com",
+  "sources": [
+   {
+    "url": "https://www.timhowanusa.com/locations",
+    "what": "own site: Irvine address and hours; dim sum specialties on home page; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://hoodline.com/2026/04/hong-kong-dim-sum-darling-scores-17th-michelin-nod-as-irvine-spot-roars-back/",
+    "what": "Hoodline 2026-04-01: Irvine Tim Ho Wan reopened at Diamond Jamboree, baked BBQ pork buns",
+    "date": "2026-04-01"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tasty Dim Sum House",
+  "address": "5777 E La Palma Ave",
+  "city": "Anaheim",
+  "zip": "92807",
+  "county": "Orange",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "steamed shrimp dumpling",
+   "shiu mai",
+   "baked BBQ pork bun",
+   "baked pineapple egg custard bun",
+   "steamed chicken feet"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Anaheim Hills dim sum restaurant (a second branch is in Chino Hills).",
+  "website": "https://www.tastydimsumhouse.com/",
+  "sources": [
+   {
+    "url": "https://www.tastydimsumhouse.com/",
+    "what": "own site: address, hours, dim sum items, online ordering; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Dim Sum Co.",
+  "address": "8900 Westminster Blvd",
+  "city": "Westminster",
+  "zip": "92683",
+  "county": "Orange",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumplings",
+   "pork and shrimp dumplings",
+   "handmade rice noodle rolls",
+   "steamed BBQ pork buns",
+   "egg tarts"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Fast-casual, all-day dim sum counter (steam table, no carts) inside My Thuan supermarket.",
+  "website": "http://www.thedimsumco.com/",
+  "sources": [
+   {
+    "url": "http://www.thedimsumco.com/",
+    "what": "own site: address, 8am-5pm daily, pickup ordering; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://thedimsumco.com/menu/",
+    "what": "own dim sum menu page; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Palette Dim Sum",
+  "address": "3015 El Camino Real",
+  "city": "Tustin",
+  "zip": "92782",
+  "county": "Orange",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "crispy typhoon XO shrimp dumplings",
+   "vegetable spring rolls",
+   "Iberico cha siu"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Modern dim sum and seafood restaurant at The Market Place, with a Thursday late-night 'Dim Sum After Hours' menu. Classic items are not legible in its text menus.",
+  "website": "http://palettedimsum.com/",
+  "sources": [
+   {
+    "url": "http://palettedimsum.com/",
+    "what": "own site: Tustin address, hours, reservation widget dated 2026; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://palettedimsum.com/s/palettemenu2026-c8ay.pdf",
+    "what": "own 2026 menu PDF ('Appetizer & Dim Sum') and 'Dim Sum After Hours' PDF; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Brito's Taqueria",
+  "address": "2159 W Lincoln Ave",
+  "city": "Anaheim",
+  "zip": "92801",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "buche",
+   "pescado taco",
+   "camaron taco",
+   "California burrito",
+   "tortas",
+   "mulitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of three Brito's taquerias; long menu of taco meats plus burritos (incl. California), tortas and breakfast.",
+  "website": "https://britostaquerias.com/",
+  "sources": [
+   {
+    "url": "https://britostaquerias.com/",
+    "what": "own site (c)2026: all three addresses, hours (7:30am-11pm here); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://britostaquerias.com/menu",
+    "what": "own menu: taco meats, burritos, tortas; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Brito's Taqueria",
+  "address": "1504 S Euclid St",
+  "city": "Anaheim",
+  "zip": "92802",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "buche",
+   "pescado taco",
+   "camaron taco",
+   "California burrito",
+   "tortas",
+   "mulitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of three Brito's taquerias; long menu of taco meats plus burritos (incl. California), tortas and breakfast.",
+  "website": "https://britostaquerias.com/",
+  "sources": [
+   {
+    "url": "https://britostaquerias.com/",
+    "what": "own site (c)2026: all three addresses, hours (8am-10pm here); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://britostaquerias.com/menu",
+    "what": "own menu: taco meats, burritos, tortas; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Brito's Taqueria",
+  "address": "122 E 17th St",
+  "city": "Santa Ana",
+  "zip": "92706",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "buche",
+   "pescado taco",
+   "camaron taco",
+   "California burrito",
+   "tortas",
+   "mulitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of three Brito's taquerias; long menu of taco meats plus burritos (incl. California), tortas and breakfast.",
+  "website": "https://britostaquerias.com/",
+  "sources": [
+   {
+    "url": "https://britostaquerias.com/",
+    "what": "own site (c)2026: all three addresses, hours (8am-10pm here); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://britostaquerias.com/menu",
+    "what": "own menu: taco meats, burritos, tortas; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Navarro's Taqueria",
+  "address": "1535 S Standard Ave",
+  "city": "Santa Ana",
+  "zip": "92707",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos",
+   "fish tacos",
+   "burritos",
+   "quesadillas",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": 2020,
+  "chain": true,
+  "note": "Small OC taqueria group ('serving Orange County since 2020'); birria and fish tacos.",
+  "website": "http://navarrostaqueria.com/",
+  "sources": [
+   {
+    "url": "http://navarrostaqueria.com/",
+    "what": "own site (c)2026: three addresses and hours, birria and fish tacos, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Navarro's Taqueria",
+  "address": "7051 Westminster Blvd",
+  "city": "Westminster",
+  "zip": "92683",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos",
+   "fish tacos",
+   "burritos",
+   "quesadillas",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": 2020,
+  "chain": true,
+  "note": "Small OC taqueria group ('serving Orange County since 2020'); birria and fish tacos.",
+  "website": "http://navarrostaqueria.com/",
+  "sources": [
+   {
+    "url": "http://navarrostaqueria.com/",
+    "what": "own site (c)2026: three addresses and hours, birria and fish tacos, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Navarro's Taqueria",
+  "address": "827 N Harbor Blvd",
+  "city": "Fullerton",
+  "zip": "92832",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos",
+   "fish tacos",
+   "burritos",
+   "quesadillas",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": 2020,
+  "chain": true,
+  "note": "Small OC taqueria group ('serving Orange County since 2020'); birria and fish tacos.",
+  "website": "http://navarrostaqueria.com/",
+  "sources": [
+   {
+    "url": "http://navarrostaqueria.com/",
+    "what": "own site (c)2026: three addresses and hours, birria and fish tacos, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Panchitos Taqueria",
+  "address": "13048 Chapman Ave",
+  "city": "Garden Grove",
+  "zip": "92840",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "tripas",
+   "buche",
+   "pescado taco",
+   "camaron taco",
+   "King Ranch two-foot burrito"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Garden Grove taqueria with a long list of classic and special taco fillings and a two-foot party burrito.",
+  "website": "http://www.panchitostaqueria.com/",
+  "sources": [
+   {
+    "url": "http://www.panchitostaqueria.com/",
+    "what": "own site: address, taco fillings, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Cotijas Taco Shop",
+  "address": "11951 Euclid St",
+  "city": "Garden Grove",
+  "zip": "92840",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos (hand-filleted, battered in house)"
+  ],
+  "opened": null,
+  "brand_founded": 1988,
+  "chain": false,
+  "note": "Family taco shop (the brand says est. 1988) whose signature is a battered fish taco. Note: loscotijastacoshopoc.com is a hijacked gambling site; use loscotijastacoshop.com.",
+  "website": "http://loscotijastacoshop.com/",
+  "sources": [
+   {
+    "url": "http://loscotijastacoshop.com/",
+    "what": "own site: both addresses and hours, 'Est. 1988', battered fish tacos, Clover ordering; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Cotijas Taco Shop",
+  "address": "642 E 1st St",
+  "city": "Tustin",
+  "zip": "92780",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos (hand-filleted, battered in house)"
+  ],
+  "opened": null,
+  "brand_founded": 1988,
+  "chain": false,
+  "note": "Family taco shop (the brand says est. 1988) whose signature is a battered fish taco. Note: loscotijastacoshopoc.com is a hijacked gambling site; use loscotijastacoshop.com.",
+  "website": "http://loscotijastacoshop.com/",
+  "sources": [
+   {
+    "url": "http://loscotijastacoshop.com/",
+    "what": "own site: both addresses and hours, 'Est. 1988', battered fish tacos, Clover ordering; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Cholos",
+  "address": "1653 W Orangethorpe Ave",
+  "city": "Fullerton",
+  "zip": "92833",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "tripa",
+   "adobada",
+   "arrachera",
+   "costilla",
+   "cesina",
+   "chorizo",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Grilled-meat taqueria (asada, costilla, arrachera) from Huntington Park with several OC branches.",
+  "website": "https://www.tacosloscholos.net/",
+  "sources": [
+   {
+    "url": "https://www.tacosloscholos.net/fullerton.html",
+    "what": "own location page: address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacosloscholos.net/menu.html",
+    "what": "own menu (c)2025: meats and dishes; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Cholos",
+  "address": "821 S State College Blvd",
+  "city": "Anaheim",
+  "zip": "92806",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "tripa",
+   "adobada",
+   "arrachera",
+   "costilla",
+   "cesina",
+   "chorizo",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Grilled-meat taqueria (asada, costilla, arrachera) from Huntington Park with several OC branches.",
+  "website": "https://www.tacosloscholos.net/",
+  "sources": [
+   {
+    "url": "https://www.tacosloscholos.net/anaheim.html",
+    "what": "own location page: address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacosloscholos.net/menu.html",
+    "what": "own menu (c)2025: meats and dishes; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Cholos",
+  "address": "300 Pacific Coast Hwy #113",
+  "city": "Huntington Beach",
+  "zip": "92648",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "tripa",
+   "adobada",
+   "arrachera",
+   "costilla",
+   "cesina",
+   "chorizo",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Grilled-meat taqueria (asada, costilla, arrachera) from Huntington Park with several OC branches.",
+  "website": "https://www.tacosloscholos.net/",
+  "sources": [
+   {
+    "url": "https://www.tacosloscholos.net/hb.html",
+    "what": "own location page: address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacosloscholos.net/menu.html",
+    "what": "own menu (c)2025: meats and dishes; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Cholos",
+  "address": "113 E 4th St",
+  "city": "Santa Ana",
+  "zip": "92701",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "tripa",
+   "adobada",
+   "arrachera",
+   "costilla",
+   "cesina",
+   "chorizo",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Grilled-meat taqueria (asada, costilla, arrachera) from Huntington Park with several OC branches.",
+  "website": "https://www.tacosloscholos.net/",
+  "sources": [
+   {
+    "url": "https://www.tacosloscholos.net/santaana.html",
+    "what": "own location page: address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacosloscholos.net/menu.html",
+    "what": "own menu (c)2025: meats and dishes; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sancho's Tacos",
+  "address": "3014 W Balboa Blvd",
+  "city": "Newport Beach",
+  "zip": "92663",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled marinated fish taco",
+   "shrimp taco (grilled or beer battered)",
+   "tri-tip taco",
+   "carnitas taco",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Beach-town taco shop chain; fish tacos are grilled, shrimp can be beer battered.",
+  "website": "http://www.sanchostacos.com",
+  "sources": [
+   {
+    "url": "http://www.sanchostacos.com/hours-locations/",
+    "what": "own hours & locations page (7 locations); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.sanchostacos.com/menu/",
+    "what": "own menu: taco fillings; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sancho's Tacos",
+  "address": "602 Pacific Coast Hwy",
+  "city": "Huntington Beach",
+  "zip": "92648",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled marinated fish taco",
+   "shrimp taco (grilled or beer battered)",
+   "tri-tip taco",
+   "carnitas taco",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Beach-town taco shop chain; fish tacos are grilled, shrimp can be beer battered.",
+  "website": "http://www.sanchostacos.com",
+  "sources": [
+   {
+    "url": "http://www.sanchostacos.com/hours-locations/",
+    "what": "own hours & locations page (7 locations); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.sanchostacos.com/menu/",
+    "what": "own menu: taco fillings; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sancho's Tacos",
+  "address": "1101 S El Camino Real",
+  "city": "San Clemente",
+  "zip": "92672",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled marinated fish taco",
+   "shrimp taco (grilled or beer battered)",
+   "tri-tip taco",
+   "carnitas taco",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Beach-town taco shop chain; fish tacos are grilled, shrimp can be beer battered.",
+  "website": "http://www.sanchostacos.com",
+  "sources": [
+   {
+    "url": "http://www.sanchostacos.com/hours-locations/",
+    "what": "own hours & locations page (7 locations); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.sanchostacos.com/menu/",
+    "what": "own menu: taco fillings; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sancho's Tacos",
+  "address": "31181 Niguel Rd",
+  "city": "Laguna Niguel",
+  "zip": "92677",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled marinated fish taco",
+   "shrimp taco (grilled or beer battered)",
+   "tri-tip taco",
+   "carnitas taco",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Beach-town taco shop chain; fish tacos are grilled, shrimp can be beer battered.",
+  "website": "http://www.sanchostacos.com",
+  "sources": [
+   {
+    "url": "http://www.sanchostacos.com/hours-locations/",
+    "what": "own hours & locations page (7 locations); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.sanchostacos.com/menu/",
+    "what": "own menu: taco fillings; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Nazo",
+  "address": "121 S Beach Blvd",
+  "city": "La Habra",
+  "zip": "90631",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish taco",
+   "shrimp taco",
+   "asada taco",
+   "ceviche",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": true,
+  "note": "Ensenada-style fish taco chain (the brand says 'since 1978'); six SoCal shops, two in OC.",
+  "website": "http://www.taconazo.com",
+  "sources": [
+   {
+    "url": "http://www.taconazo.com",
+    "what": "own site: locations with addresses and hours, Ensenada-style fish tacos, 'Since 1978'; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Nazo",
+  "address": "1766 E McFadden Ave",
+  "city": "Santa Ana",
+  "zip": "92705",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish taco",
+   "shrimp taco",
+   "asada taco",
+   "ceviche",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": true,
+  "note": "Ensenada-style fish taco chain (the brand says 'since 1978'); six SoCal shops, two in OC.",
+  "website": "http://www.taconazo.com",
+  "sources": [
+   {
+    "url": "http://www.taconazo.com",
+    "what": "own site: locations with addresses and hours, Ensenada-style fish tacos, 'Since 1978'; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Surf",
+  "address": "115 Main St",
+  "city": "Seal Beach",
+  "zip": "90740",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja fish taco (breaded white fish)",
+   "grilled fish taco",
+   "carnitas",
+   "asada",
+   "al pastor",
+   "birria",
+   "California burrito"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Surf-themed Mexican spot with a breaded Baja fish taco and grilled pescado; three shops near the LA-OC line.",
+  "website": "http://www.tacosurf.com",
+  "sources": [
+   {
+    "url": "http://www.tacosurf.com",
+    "what": "own site (c)2026: three addresses and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacosurf.com/menu",
+    "what": "own menu: taco fillings, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Surf",
+  "address": "10542 Los Alamitos Blvd",
+  "city": "Los Alamitos",
+  "zip": "90720",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja fish taco (breaded white fish)",
+   "grilled fish taco",
+   "carnitas",
+   "asada",
+   "al pastor",
+   "birria",
+   "California burrito"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Surf-themed Mexican spot with a breaded Baja fish taco and grilled pescado; three shops near the LA-OC line.",
+  "website": "http://www.tacosurf.com",
+  "sources": [
+   {
+    "url": "http://www.tacosurf.com",
+    "what": "own site (c)2026: three addresses and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacosurf.com/menu",
+    "what": "own menu: taco fillings, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Surf (Surfside)",
+  "address": "16281 Pacific Coast Hwy",
+  "city": "Seal Beach",
+  "zip": "90743",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja fish taco (breaded white fish)",
+   "grilled fish taco",
+   "carnitas",
+   "asada",
+   "al pastor",
+   "birria",
+   "California burrito"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Surf-themed Mexican spot with a breaded Baja fish taco and grilled pescado; three shops near the LA-OC line.",
+  "website": "http://www.tacosurf.com",
+  "sources": [
+   {
+    "url": "http://www.tacosurf.com",
+    "what": "own site (c)2026: three addresses and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacosurf.com/menu",
+    "what": "own menu: taco fillings, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Gavilan",
+  "address": "1258 E 17th St",
+  "city": "Santa Ana",
+  "zip": "92701",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "buche",
+   "chorizo",
+   "sopes",
+   "mulitas",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Santa Ana branch of a 13-location SoCal taqueria chain.",
+  "website": "https://tacosgavilan.com/",
+  "sources": [
+   {
+    "url": "https://tacosgavilan.com/",
+    "what": "own site (c)2026: Santa Ana location; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosgavilan.com/menu/",
+    "what": "own menu: meats and dishes; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ensenada's Surf N Turf Grill",
+  "address": "2931 Nutwood Ave",
+  "city": "Fullerton",
+  "zip": "92831",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos (battered or grilled)",
+   "shrimp tacos",
+   "grilled mahi tacos",
+   "asada",
+   "al pastor"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Family-owned Baja-style taco shop; the old Baja California Fish Tacos domain for this address now redirects here.",
+  "website": "https://ensenadasurfnturf.com/",
+  "sources": [
+   {
+    "url": "https://ensenadasurfnturf.com/",
+    "what": "own site (c)2025: 6 locations incl. 2931 Nutwood Ave; fish tacos battered or grilled; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Hoy",
+  "address": "291 N Tustin St",
+  "city": "Orange",
+  "zip": "92867",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "buche",
+   "chorizo",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1980,
+  "chain": true,
+  "note": "Taco-and-burrito shop founded in 1980 per its site; the Orange and Santa Ana shops list 24-hour service.",
+  "website": "http://www.taqueriahoy.com/",
+  "sources": [
+   {
+    "url": "http://www.taqueriahoy.com/",
+    "what": "own site: three addresses and hours, 'Founded in 1980'; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.taqueriahoy.com/menu",
+    "what": "own menu: meats, tacos, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Hoy",
+  "address": "1029 E 4th St",
+  "city": "Santa Ana",
+  "zip": "92701",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "buche",
+   "chorizo",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1980,
+  "chain": true,
+  "note": "Taco-and-burrito shop founded in 1980 per its site; the Orange and Santa Ana shops list 24-hour service.",
+  "website": "http://www.taqueriahoy.com/",
+  "sources": [
+   {
+    "url": "http://www.taqueriahoy.com/",
+    "what": "own site: three addresses and hours, 'Founded in 1980'; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.taqueriahoy.com/menu",
+    "what": "own menu: meats, tacos, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Hoy",
+  "address": "1019 N Magnolia Ave",
+  "city": "Anaheim",
+  "zip": "92801",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "buche",
+   "chorizo",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1980,
+  "chain": true,
+  "note": "Taco-and-burrito shop founded in 1980 per its site; the Orange and Santa Ana shops list 24-hour service.",
+  "website": "http://www.taqueriahoy.com/",
+  "sources": [
+   {
+    "url": "http://www.taqueriahoy.com/",
+    "what": "own site: three addresses and hours, 'Founded in 1980'; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.taqueriahoy.com/menu",
+    "what": "own menu: meats, tacos, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Grandes",
+  "address": "1736 W 5th St",
+  "city": "Santa Ana",
+  "zip": "92703",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos dorados",
+   "menudo",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": 1989,
+  "chain": false,
+  "note": "Santa Ana taqueria founded in 1989 by Otoniel Tarin, per its site.",
+  "website": "http://taquerialosgrandes.com/",
+  "sources": [
+   {
+    "url": "http://taquerialosgrandes.com/",
+    "what": "own site: address, hours, founding story, online ordering; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Zamora",
+  "address": "3121 S Main St",
+  "city": "Santa Ana",
+  "zip": "92707",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada encebollada",
+   "carnitas",
+   "costilla in salsa verde",
+   "chicken and shrimp fajita tacos",
+   "burritos",
+   "flautas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "South Santa Ana taqueria known for handmade corn tortillas.",
+  "website": "http://www.taqueriazamora.net/",
+  "sources": [
+   {
+    "url": "http://www.taqueriazamora.net/",
+    "what": "own site: address, hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://taqueriazamora.net/menu/",
+    "what": "own menu; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taquerias Guadalajara",
+  "address": "305 E 4th St",
+  "city": "Santa Ana",
+  "zip": "92701",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "Baja-style fish and shrimp tacos",
+   "torta ahogada",
+   "tacos dorados",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1979,
+  "chain": false,
+  "note": "Jalisco-style taqueria (est. 1979 per its site) with tortas ahogadas and Baja-style seafood tacos.",
+  "website": "http://www.taqueriasguadalajara.com/",
+  "sources": [
+   {
+    "url": "http://www.taqueriasguadalajara.com/",
+    "what": "own site: both addresses, Santa Ana hours, 'Established since 1979'; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.taqueriasguadalajara.com/menu",
+    "what": "own menu; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taquerias Guadalajara",
+  "address": "520 N Anaheim Blvd",
+  "city": "Anaheim",
+  "zip": "92805",
+  "county": "Orange",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "Baja-style fish and shrimp tacos",
+   "torta ahogada",
+   "tacos dorados",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1979,
+  "chain": false,
+  "note": "Jalisco-style taqueria (est. 1979 per its site) with tortas ahogadas and Baja-style seafood tacos.",
+  "website": "http://www.taqueriasguadalajara.com/",
+  "sources": [
+   {
+    "url": "http://www.taqueriasguadalajara.com/",
+    "what": "own site: both addresses, Santa Ana hours, 'Established since 1979'; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.taqueriasguadalajara.com/menu",
+    "what": "own menu; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tio Flaco's Tacos",
+  "address": "18959 Magnolia St",
+  "city": "Fountain Valley",
+  "zip": "92708",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "chicken",
+   "carnitas",
+   "al pastor",
+   "carne asada",
+   "mulitas",
+   "super quesadilla"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Small Fountain Valley taco shop with a short menu of four meats.",
+  "website": "http://www.tioflacos.com/",
+  "sources": [
+   {
+    "url": "http://www.tioflacos.com/",
+    "what": "own site: address; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tioflacos.com/menu",
+    "what": "own menu; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tito's La Especial",
+  "address": "701 N Harbor Blvd Ste A",
+  "city": "Santa Ana",
+  "zip": "92703",
+  "county": "Orange",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos al vapor (shredded beef, chicken, potato, beans)",
+   "burrito original",
+   "carne asada burrito",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Santa Ana shop known for steamed tacos al vapor; a second shop is at 503 W 17th St.",
+  "website": "https://titoslaespecial.menu/menu",
+  "sources": [
+   {
+    "url": "https://titoslaespecial.menu/menu",
+    "what": "own menu site: address, hours, tacos al vapor, burritos; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "16300 Beach Blvd",
+  "city": "Westminster",
+  "zip": "92683",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat meats grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "All-you-can-eat Korean BBQ chain (founded 2011 in LA per its site). Gen's 'Huntington Beach' branch (address is in Westminster).",
+  "website": "https://www.genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.genkoreanbbq.com/",
+    "what": "own site: tabletop grills, founded 2011 in Los Angeles, 50+ locations; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.genkoreanbbq.com/locations",
+    "what": "own locations page: address and hours; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "1300 S Harbor Blvd",
+  "city": "Fullerton",
+  "zip": "92832",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat meats grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "All-you-can-eat Korean BBQ chain (founded 2011 in LA per its site). Fullerton branch.",
+  "website": "https://www.genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.genkoreanbbq.com/",
+    "what": "own site: tabletop grills, founded 2011 in Los Angeles, 50+ locations; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.genkoreanbbq.com/locations",
+    "what": "own locations page: address and hours; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "13741 Newport Ave",
+  "city": "Tustin",
+  "zip": "92780",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat meats grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "All-you-can-eat Korean BBQ chain (founded 2011 in LA per its site). Tustin branch.",
+  "website": "https://www.genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.genkoreanbbq.com/",
+    "what": "own site: tabletop grills, founded 2011 in Los Angeles, 50+ locations; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.genkoreanbbq.com/locations",
+    "what": "own locations page: address and hours; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Top BBQ Grill",
+  "address": "8948 Knott Ave",
+  "city": "Buena Park",
+  "zip": "90620",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "bulgogi",
+   "galbi (LA short rib)",
+   "brisket",
+   "samgyeopsal (pork belly)",
+   "beef tongue"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Buena Park Korean BBQ with grills at the table (also styled Top BBQ Grill & Pocha Cafe).",
+  "website": "https://www.topbbqgrill.com/",
+  "sources": [
+   {
+    "url": "https://www.topbbqgrill.com/",
+    "what": "own site (topgrill20.com redirects here): address, hours, meats, table grills; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Thirsty Cow Korean BBQ",
+  "address": "5939 Chapman Ave",
+  "city": "Garden Grove",
+  "zip": "92845",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi",
+   "brisket",
+   "bulgogi",
+   "pork belly",
+   "pork jowl"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ in Eastgate Plaza; second branch of a City of Industry original.",
+  "website": "https://www.thirstycowbbq.com",
+  "sources": [
+   {
+    "url": "https://www.thirstycowbbq.com",
+    "what": "own site (c)2026: Garden Grove address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.thirstycowbbq.com/menu",
+    "what": "own menu: meats; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://whatnow.com/orange-county/restaurants/thirsty-cow-korean-bbq-to-open-in-garden-grove/",
+    "what": "WhatNow OC 2025-05-10: AYCE Korean BBQ with tabletop grilling coming to 5939 Chapman Ave",
+    "date": "2025-05-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baekjeong",
+  "address": "5171 Beach Blvd",
+  "city": "Buena Park",
+  "zip": "90621",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "prime brisket",
+   "prime boneless short rib",
+   "seasoned short rib",
+   "pork belly",
+   "pork jowl",
+   "beef tongue"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Korean BBQ chain (Kang Ho-dong Baekjeong) with tabletop grills.",
+  "website": "https://www.baekjeongkbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.baekjeongkbbq.com/locations-2/",
+    "what": "own locations page: address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.baekjeongkbbq.com/our-menu/",
+    "what": "own menu: meats for grilling (brisket, short rib, pork belly, pork jowl); live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://ocdrop.com/food-drink/best-korean-bbq-orange-county/",
+    "what": "OC Drop Korean BBQ list dated 2026-06-27: Baekjeong Buena Park, charcoal grilling",
+    "date": "2026-06-27"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baekjeong",
+  "address": "14160 Culver Dr",
+  "city": "Irvine",
+  "zip": "92604",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "prime brisket",
+   "prime boneless short rib",
+   "seasoned short rib",
+   "pork belly",
+   "pork jowl",
+   "beef tongue"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Korean BBQ chain (Kang Ho-dong Baekjeong) with tabletop grills.",
+  "website": "https://www.baekjeongkbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.baekjeongkbbq.com/locations-2/",
+    "what": "own locations page: address and hours; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.baekjeongkbbq.com/our-menu/",
+    "what": "own menu: meats for grilling (brisket, short rib, pork belly, pork jowl); live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mo Ran Gak",
+  "address": "1645 W Orangethorpe Ave",
+  "city": "Fullerton",
+  "zip": "92833",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi",
+   "marinated galbi",
+   "brisket",
+   "short rib",
+   "naengmyeon"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Korean BBQ and naengmyeon house with a grill at every table. Note: morangakbbq.com (single k) is a hijacked gambling site.",
+  "website": "https://morangakkbbq.com/",
+  "sources": [
+   {
+    "url": "https://morangakkbbq.com/",
+    "what": "own site: both addresses and hours; quotes a stainless grill and exhaust hood at each table; live when checked",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mo Ran Gak",
+  "address": "9651 Garden Grove Blvd",
+  "city": "Garden Grove",
+  "zip": "92844",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi",
+   "marinated galbi",
+   "brisket",
+   "short rib",
+   "naengmyeon"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Korean BBQ and naengmyeon house with a grill at every table. Note: morangakbbq.com (single k) is a hijacked gambling site.",
+  "website": "https://morangakkbbq.com/",
+  "sources": [
+   {
+    "url": "https://morangakkbbq.com/",
+    "what": "own site: both addresses and hours; quotes a stainless grill and exhaust hood at each table; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://ocdrop.com/food-drink/best-korean-bbq-orange-county/",
+    "what": "OC Drop Korean BBQ list dated 2026-06-27: Mo Ran Gak Garden Grove, table grilling",
+    "date": "2026-06-27"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gangnam Station Korean BBQ",
+  "address": "5333 Beach Blvd",
+  "city": "Buena Park",
+  "zip": "90621",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "brisket",
+   "beef belly"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ with tabletop grills.",
+  "website": "https://www.gangnamstationbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.gangnamstationbbq.com/buena-park-location",
+    "what": "own location page: address, 'premium all you can eat Korean BBQ'; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://ocdrop.com/food-drink/best-korean-bbq-orange-county/",
+    "what": "OC Drop Korean BBQ list dated 2026-06-27: tabletop grilling",
+    "date": "2026-06-27"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sookdal",
+  "address": "9448 Garden Grove Blvd",
+  "city": "Garden Grove",
+  "zip": "92844",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "aged pork belly (samgyeopsal)",
+   "pork neck",
+   "pork jowl"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Garden Grove branch of a Koreatown pork-focused Korean BBQ; servers grill at the table.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://ocdrop.com/food-drink/best-korean-bbq-orange-county/",
+    "what": "OC Drop Korean BBQ list dated 2026-06-27: Sookdal at 9448 Garden Grove Blvd, servers grill, pork cuts",
+    "date": "2026-06-27"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-korean-bbq-restaurants-in-los-angeles-koreatown",
+    "what": "Time Out LA Korean BBQ list dated 2026-04-30: Sookdal (Koreatown) with a Garden Grove location, house-aged pork",
+    "date": "2026-04-30"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Arisu Korean BBQ",
+  "address": "7814 Orangethorpe Ave Suite 106",
+  "city": "Buena Park",
+  "zip": "90621",
+  "county": "Orange",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "USDA Prime ribeye",
+   "boneless short rib",
+   "brisket"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Buena Park Korean BBQ where staff cook the meat at the table.",
+  "website": "https://arisukoreanbbqrestaurant.com",
+  "sources": [
+   {
+    "url": "https://arisukoreanbbqrestaurant.com",
+    "what": "own online-ordering site (c)2026 with address; live when checked",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://ocdrop.com/food-drink/best-korean-bbq-orange-county/",
+    "what": "OC Drop Korean BBQ list dated 2026-06-27: Arisu, staff cook at the table; ribeye, short rib, brisket",
+    "date": "2026-06-27"
+   }
+  ],
+  "checked": "2026-10-07"
+ }
+]

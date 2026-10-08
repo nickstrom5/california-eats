@@ -1,0 +1,2703 @@
+[
+ {
+  "name": "Philippe the Original",
+  "address": "1001 N Alameda St",
+  "city": "Los Angeles",
+  "zip": "90012",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "French dipped sandwiches",
+   "potato salad",
+   "pickles",
+   "breakfast"
+  ],
+  "opened": 1951,
+  "brand_founded": 1908,
+  "chain": false,
+  "note": "Chinatown-edge deli; its site says founder Philippe Mathieu claimed to have created the French dipped sandwich.",
+  "website": "https://philippes.com/",
+  "sources": [
+   {
+    "url": "https://philippes.com/",
+    "what": "own site, live; open daily 6am-10pm; (c) 2026; says LA since 1908 and on Alameda since 1951",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: in Los Angeles since 1908 and at its current Alameda location since 1951.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Musso & Frank Grill",
+  "address": "6667 Hollywood Blvd",
+  "city": "Los Angeles",
+  "zip": "90028",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "steaks",
+   "chops",
+   "classic cocktails"
+  ],
+  "opened": null,
+  "brand_founded": 1919,
+  "chain": false,
+  "note": "Hollywood Boulevard grill dating to 1919; a dinner house today (Tue-Sun).",
+  "website": "https://mussoandfrank.com/",
+  "sources": [
+   {
+    "url": "https://mussoandfrank.com/about/history/",
+    "what": "own history page, live; 'Celebrating 106'; hours Tue-Sun on home page",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history page: opened 1919 as Frank's Cafe at 6669 Hollywood Blvd; later owners 'years later' moved it next door to 6667. The page gives no year for the move, so the year at this exact address is not sourced.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "El Coyote Mexican Cafe",
+  "address": "7312 Beverly Blvd",
+  "city": "Los Angeles",
+  "zip": "90036",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "traditional Mexican plates",
+   "margaritas"
+  ],
+  "opened": null,
+  "brand_founded": 1931,
+  "chain": false,
+  "note": "Beverly Boulevard Mexican restaurant founded 1931 by Blanche and George March.",
+  "website": "https://elcoyotecafe.com/",
+  "sources": [
+   {
+    "url": "https://elcoyotecafe.com/los-angeles-el-coyote-about",
+    "what": "own about page, live; hours posted; Toast ordering link",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: opened March 5, 1931 at First St and La Brea; 'today's location' is 7312 Beverly Blvd. No year given for the move.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Casa Vega",
+  "address": "13301 Ventura Blvd",
+  "city": "Sherman Oaks",
+  "zip": "91423",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "Mexican lunch and dinner",
+   "margaritas",
+   "brunch"
+  ],
+  "opened": null,
+  "brand_founded": 1956,
+  "chain": false,
+  "note": "Vega family Mexican restaurant on Ventura Blvd; site says it 'just turned 70'.",
+  "website": "https://www.casavega.com/",
+  "sources": [
+   {
+    "url": "https://www.casavega.com/pages/legacy",
+    "what": "own legacy page, live; (c) 2026; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: Ray Vega opened Casa Vega in Sherman Oaks in 1956 and the legacy 'began on Ventura Boulevard'; it does not say 13301 Ventura is the original address.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Pink's Hot Dogs",
+  "address": "709 N La Brea Ave",
+  "city": "Los Angeles",
+  "zip": "90038",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "chili dogs",
+   "jalapeno sausage dogs",
+   "chili cheese burger"
+  ],
+  "opened": null,
+  "brand_founded": 1939,
+  "chain": false,
+  "note": "Pink family hot dog stand that started as a 1939 hot dog cart.",
+  "website": "https://www.pinkshollywood.com/",
+  "sources": [
+   {
+    "url": "https://www.pinkshollywood.com/",
+    "what": "own site, live; (c) 2026; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: Betty and Paul Pink bought a hot dog cart in 1939; it does not state when the business settled at 709 N La Brea.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Original Tommy's (original stand)",
+  "address": "2575 W Beverly Blvd",
+  "city": "Los Angeles",
+  "zip": "90057",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand",
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "chili cheeseburger",
+   "chili cheese dogs",
+   "chili cheese fries",
+   "tamales"
+  ],
+  "opened": 1946,
+  "brand_founded": 1946,
+  "chain": true,
+  "note": "The original Tommy's stand at Beverly and Rampart, open 24 hours; the chain has 32 locations in Southern California and Nevada.",
+  "website": "https://originaltommys.com/",
+  "sources": [
+   {
+    "url": "https://laist.com/brief/news/original-tommys-marks-80-years-with-80-cent-chili-cheeseburgers",
+    "what": "LAist, May 14, 2026: Tommy Koulax opened the original stand at Beverly and Rampart in 1946; original stand still standing",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://originaltommys.com/about/",
+    "what": "own about page: founded 1946 by Tom Koulax, original stand at Beverly and Rampart Blvds",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://originaltommys.com/locations/",
+    "what": "own locations page lists 2575 W Beverly Blvd, 24 hours; 32 locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": "Los Angeles",
+  "opened_note": "LAist (May 14, 2026): opened 1946 at Beverly and Rampart and the original stand still stands there. Tommy's locations page lists the Beverly Blvd stand at 2575 W Beverly Blvd.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "The Apple Pan",
+  "address": "10801 W Pico Blvd",
+  "city": "Los Angeles",
+  "zip": "90064",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest",
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "Hickory Burger",
+   "steakburger",
+   "tuna melt",
+   "pies"
+  ],
+  "opened": null,
+  "brand_founded": 1947,
+  "chain": false,
+  "note": "West LA burger counter; Time Out dates it to 1947.",
+  "website": "https://theapplepan.com/",
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/the-best-burgers-in-los-angeles",
+    "what": "Time Out LA, Oct 30, 2025: West LA institution since 1947, Hickory Burger; address 10801 W Pico Blvd",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://theapplepan.com/",
+    "what": "own site, live; current hours posted; online ordering link",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Time Out (Oct 2025) says it has been around since 1947; no source seen says it has always been at 10801 W Pico.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Smoke House Restaurant",
+  "address": "4420 W Lakeside Dr",
+  "city": "Burbank",
+  "zip": "91505",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "steaks",
+   "garlic bread",
+   "Sunday brunch"
+  ],
+  "opened": 1949,
+  "brand_founded": 1946,
+  "chain": false,
+  "note": "Burbank steakhouse established 1946; moved to its current building in 1949.",
+  "website": "https://www.smokehouse1946.com/",
+  "sources": [
+   {
+    "url": "https://www.smokehouse1946.com/history",
+    "what": "own history page, live; (c) 2026; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history page: established 1946; 'In 1949 the Smoke House moved to its current location'.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "El Cholo (The Original)",
+  "address": "1121 S Western Ave",
+  "city": "Los Angeles",
+  "zip": "90006",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "Mexican plates",
+   "cheese enchiladas"
+  ],
+  "opened": null,
+  "brand_founded": 1923,
+  "chain": true,
+  "note": "Family Mexican restaurant group; this is the original Western Ave restaurant.",
+  "website": "https://www.elcholo.com/",
+  "sources": [
+   {
+    "url": "https://www.elcholo.com/",
+    "what": "own site with history timeline, live (Last-Modified Aug 2026); lists The Original at 1121 S Western Ave",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own timeline: 1923 Sonora Cafe on Broadway (renamed El Cholo 1925); 1927 a storefront 'at 11th and Western'. It does not say the 1927 storefront is today's 1121 S Western building.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "The Dresden Restaurant & Lounge",
+  "address": "1760 N Vermont Ave",
+  "city": "Los Angeles",
+  "zip": "90027",
+  "county": "Los Angeles",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "dinner",
+   "cocktails",
+   "live music in the lounge"
+  ],
+  "opened": null,
+  "brand_founded": 1954,
+  "chain": false,
+  "note": "Family-owned Los Feliz restaurant and lounge, 'since 1954' per its site.",
+  "website": "https://www.thedresden.com/",
+  "sources": [
+   {
+    "url": "https://www.thedresden.com/about/",
+    "what": "own about page, live; Resy and Toast links",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: family-owned landmark since 1954; no statement about always being at 1760 N Vermont.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Tadich Grill",
+  "address": "240 California St",
+  "city": "San Francisco",
+  "zip": "94111",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "mesquite-grilled fish",
+   "seafood",
+   "counter and dining room service"
+  ],
+  "opened": 1967,
+  "brand_founded": 1849,
+  "chain": false,
+  "note": "Financial District seafood grill whose history starts with an 1849 coffee stand; it has moved several times.",
+  "website": "https://tadichgrillsf.com/",
+  "sources": [
+   {
+    "url": "https://tadichgrillsf.com/",
+    "what": "own site with history, live (modified 2026-02-26); hours Mon-Sat",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history: began 1849 as a coffee stand on Long Wharf; moved several times; 'in 1967, to its present location at 240 California Street.' At this address since 1967, so it does NOT meet the open-since-1960-at-same-address rule.",
+  "same_address_by_1960": false
+ },
+ {
+  "name": "Sam's Grill",
+  "address": "374 Bush St",
+  "city": "San Francisco",
+  "zip": "94104",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "rex sole",
+   "seafood",
+   "cocktails"
+  ],
+  "opened": 1946,
+  "brand_founded": 1867,
+  "chain": false,
+  "note": "Downtown seafood grill; its site says it opened in 1867 and calls itself the fifth-oldest restaurant in the US.",
+  "website": "https://samsgrill-sf.com/",
+  "sources": [
+   {
+    "url": "https://samsgrill-sf.com/history/",
+    "what": "own history page, live; hours Mon-Sat posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history page: opened 1867 in the old California Market; 'moved to its current location in 1946'.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Schroeder's",
+  "address": "240 Front St",
+  "city": "San Francisco",
+  "zip": "94111",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "German food",
+   "beer hall"
+  ],
+  "opened": null,
+  "brand_founded": 1893,
+  "chain": false,
+  "note": "German restaurant founded 1893; rebuilt after 1906.",
+  "website": "https://www.schroederssf.com/",
+  "sources": [
+   {
+    "url": "https://www.schroederssf.com/location/schroeders/",
+    "what": "own hours page, live; Mon-Fri 11:30am-9pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: founded 1893, destroyed in 1906 and 'reopened at its current location of 240 Front Street'; no year for the move to 240 Front is given.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "John's Grill",
+  "address": "63 Ellis St",
+  "city": "San Francisco",
+  "zip": "94102",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "steaks",
+   "seafood",
+   "Jack LaLanne Salad",
+   "live jazz"
+  ],
+  "opened": null,
+  "brand_founded": 1908,
+  "chain": false,
+  "note": "Union Square steakhouse established 1908; the site says it has been part of SF for 'more than 117 years'.",
+  "website": "https://www.johnsgrill.com/",
+  "sources": [
+   {
+    "url": "https://www.johnsgrill.com/history/",
+    "what": "own history page, live ('more than 117 years', i.e. written 2025 or later)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history: established 1908, two years after the earthquake; it does not state that it has always been at 63 Ellis.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "House of Prime Rib",
+  "address": "1906 Van Ness Ave",
+  "city": "San Francisco",
+  "zip": "94109",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "prime rib",
+   "dinner"
+  ],
+  "opened": null,
+  "brand_founded": 1949,
+  "chain": false,
+  "note": "Van Ness prime rib house, dinner only.",
+  "website": "https://www.houseofprimerib.net/",
+  "sources": [
+   {
+    "url": "https://www.houseofprimerib.net/",
+    "what": "own site, live; dinner hours posted (page footer (c) 2017); quotes Thrillist that the original House of Prime Rib opened in 1949",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Year comes from a Thrillist quote on the restaurant's own site ('opened in 1949'); no address history given. Weakest freshness of the SF set (site footer dated 2017, but hours are posted).",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Vesuvio Cafe",
+  "address": "255 Columbus Ave",
+  "city": "San Francisco",
+  "zip": null,
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "bar",
+   "cocktails"
+  ],
+  "opened": null,
+  "brand_founded": 1948,
+  "chain": false,
+  "note": "North Beach saloon across from City Lights, established 1948.",
+  "website": "https://vesuvio.com/",
+  "sources": [
+   {
+    "url": "https://vesuvio.com/",
+    "what": "own site, live; (c) 2026; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: saloon across from City Lights 'first established in 1948'; it does not say it has always been at 255 Columbus.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Elixir",
+  "address": "3200 16th St",
+  "city": "San Francisco",
+  "zip": "94103",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "cocktails",
+   "whiskey",
+   "bar"
+  ],
+  "opened": 1858,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Mission saloon; its site says it is the second-oldest continually operating saloon location in San Francisco, with saloon service on the corner since 1858.",
+  "website": "https://www.elixirsf.com/",
+  "sources": [
+   {
+    "url": "https://www.elixirsf.com/",
+    "what": "own site, live; hours posted; history section",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'Serving our neighbors since 1858'; documented saloon service on this corner; rebuilt in the same place after 1906. A saloon location under changing names, not one continuous brand.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "The Old Clam House",
+  "address": "299 Bayshore Blvd",
+  "city": "San Francisco",
+  "zip": "94124",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "clam chowder",
+   "seafood",
+   "pasta"
+  ],
+  "opened": null,
+  "brand_founded": 1861,
+  "chain": false,
+  "note": "Bayview seafood house; its site says it was established in 1861 and is the city's oldest continuously operating restaurant.",
+  "website": "https://theoldclamhouse.com/",
+  "sources": [
+   {
+    "url": "https://theoldclamhouse.com/about",
+    "what": "own about page, live; daily hours 11:30am-9:30pm on home page",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: established 1861 and 'the city's oldest continuously operating restaurant' (its claim). It does not state the address history.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Sears Fine Food",
+  "address": "439 Powell St",
+  "city": "San Francisco",
+  "zip": "94102",
+  "county": "San Francisco",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "18 Swedish pancakes",
+   "breakfast",
+   "lunch"
+  ],
+  "opened": null,
+  "brand_founded": 1938,
+  "chain": false,
+  "note": "Union Square breakfast spot founded 1938 by Wilbur and Ben Sears.",
+  "website": "https://www.searsfinefood.com/",
+  "sources": [
+   {
+    "url": "https://www.searsfinefood.com/our-history",
+    "what": "own history page, live; home page updated 2026-09-07; open 7 days 7am-3pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: founded 1938; it does not say it has always been at 439 Powell.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Heinold's First & Last Chance Saloon",
+  "address": "48 Webster St",
+  "city": "Oakland",
+  "zip": "94607",
+  "county": "Alameda",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "bar"
+  ],
+  "opened": 1884,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Jack London Square saloon on the estuary that opened June 1, 1884.",
+  "website": "https://www.heinoldsfirstandlastchance.com/",
+  "sources": [
+   {
+    "url": "https://www.heinoldsfirstandlastchance.com/",
+    "what": "own site, live; hours posted; history mentions its 2020-21 COVID closure",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: the saloon 'located on the shore of the San Antonio Estuary... opened June 1, 1884', in a building it calls 140+ years old.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Rossotti's Alpine Inn",
+  "address": "3915 Alpine Rd",
+  "city": "Portola Valley",
+  "zip": "94028",
+  "county": "San Mateo",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "beer garden"
+  ],
+  "opened": 1852,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Creekside beer garden and tavern; its site says it was founded in 1852 as Casa de Tableta and is the second-oldest continually operating tavern in California.",
+  "website": "https://www.alpineinnpv.com/",
+  "sources": [
+   {
+    "url": "https://www.alpineinnpv.com/history",
+    "what": "own history page, live; hours Tue-Sun on home page; online pickup ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history page: founded 1852 as Casa de Tableta, a roadhouse on this property by Los Trancos Creek; names changed over the years.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Duarte's Tavern",
+  "address": "202 Stage Rd",
+  "city": "Pescadero",
+  "zip": null,
+  "county": "San Mateo",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "crab cioppino (weekends)",
+   "cream of artichoke soup",
+   "pies"
+  ],
+  "opened": null,
+  "brand_founded": 1894,
+  "chain": false,
+  "note": "Fourth-generation family tavern; Frank Duarte founded it as a saloon and barbershop in 1894.",
+  "website": "https://www.duartestavern.com/",
+  "sources": [
+   {
+    "url": "https://www.duartestavern.com/",
+    "what": "own site, live; (c) 2025; current hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: established 1894 by Frank Duarte; it does not explicitly say it has always been at 202 Stage Rd.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Smiley's Schooner Saloon & Hotel",
+  "address": "41 Wharf Rd",
+  "city": "Bolinas",
+  "zip": "94924",
+  "county": "Marin",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "saloon kitchen (noon-8pm)",
+   "bar",
+   "live music"
+  ],
+  "opened": null,
+  "brand_founded": 1851,
+  "chain": false,
+  "note": "Bolinas saloon and hotel; its site says it may be the oldest continually operating saloon on the West Coast.",
+  "website": "https://smileyssaloon.com/",
+  "sources": [
+   {
+    "url": "https://smileyssaloon.com/about/",
+    "what": "own about page, live; kitchen noon-8pm daily",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site title says 'Established 1851', but its history says it is 'rumored to have started in 1851'. Treat 1851 as the saloon's own claim. Original building restored in 2020.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Frank Fat's",
+  "address": "806 L St",
+  "city": "Sacramento",
+  "zip": "95814",
+  "county": "Sacramento",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "Chinese dishes",
+   "banana cream pie"
+  ],
+  "opened": null,
+  "brand_founded": 1939,
+  "chain": false,
+  "note": "Downtown Sacramento restaurant Frank Fat opened in 1939; the site calls it the oldest Sacramento restaurant owned by one family.",
+  "website": "https://frankfats.com/",
+  "sources": [
+   {
+    "url": "https://frankfats.com/about/our-history/",
+    "what": "own history page, live; (c) 2026; hours and takeout posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: opened 1939; it does not state that it has always been at 806 L St.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Union Hotel Restaurant",
+  "address": "3731 Main St",
+  "city": "Occidental",
+  "zip": "95465",
+  "county": "Sonoma",
+  "kinds": [
+   "oldest",
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "Italian dinners",
+   "bruschetta",
+   "Caesar salad"
+  ],
+  "opened": null,
+  "brand_founded": 1879,
+  "chain": false,
+  "note": "Occidental Italian restaurant and bar; site says 'Italian Dining Since 1879'. Open Fri-Sun.",
+  "website": "https://unionhoteloccidental.com/",
+  "sources": [
+   {
+    "url": "https://unionhoteloccidental.com/",
+    "what": "own site, live; (c) 2022-2025; hours Fri-Sun",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'Italian Dining Since 1879'; no address history given.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Swiss Hotel",
+  "address": "18 W Spain St",
+  "city": "Sonoma",
+  "zip": "95476",
+  "county": "Sonoma",
+  "kinds": [
+   "oldest",
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "wood-oven baked meatballs",
+   "grilled polenta with mushroom ragout",
+   "fried calamari"
+  ],
+  "opened": 1892,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Hotel, restaurant and historic bar on Sonoma Plaza in a Vallejo-era adobe; same family since 1923. Dinner menu includes wood-oven dishes.",
+  "website": "https://swisshotelsonoma.com/",
+  "sources": [
+   {
+    "url": "https://swisshotelsonoma.com/history/",
+    "what": "own history page, live; dining hours Tue-Sun on home page",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history: the building was acquired in 1892 by the Toroni family and run as the Ticino Hotel (later the Swiss Hotel); same family since 1923; closed about 1.5 years for a remodel after 1991.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Murphys Historic Hotel",
+  "address": "457 Main St",
+  "city": "Murphys",
+  "zip": "95247",
+  "county": "Calaveras",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "breakfast",
+   "lunch",
+   "dinner",
+   "saloon"
+  ],
+  "opened": 1856,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Gold Rush hotel with restaurant and saloon, opened summer 1856 as the Sperry & Perry Hotel.",
+  "website": "https://murphyshotel.com/",
+  "sources": [
+   {
+    "url": "https://murphyshotel.com/history/",
+    "what": "own history page, live (modified 2026-07); restaurant and saloon hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history: opened summer 1856 as the Sperry & Perry Hotel; the hotel survived the 1859 fire that destroyed most of town.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Holbrooke Hotel (Golden Gate Saloon)",
+  "address": "212 W Main St",
+  "city": "Grass Valley",
+  "zip": "95945",
+  "county": "Nevada",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "brunch",
+   "bar bites",
+   "saloon"
+  ],
+  "opened": 1852,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Gold Rush hotel built around the Golden Gate Saloon (constructed 1852).",
+  "website": "https://holbrooke.com/",
+  "sources": [
+   {
+    "url": "https://holbrooke.com/story/",
+    "what": "own story page, live; Golden Gate Saloon daily hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own story page: 'The original building was the Golden Gate Saloon, constructed in 1852'; destroyed by fire in 1855 and rebuilt; hotel bought by the Holbrooks in 1879.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Hotel Leger Restaurant & Bar",
+  "address": "8304 Main St",
+  "city": "Mokelumne Hill",
+  "zip": "95245",
+  "county": "Calaveras",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "restaurant",
+   "bar"
+  ],
+  "opened": 1851,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Gold Country hotel restaurant and bar; site calls it a landmark since 1851 and one of the longest continually operating hotels in California.",
+  "website": "https://www.hotelleger.com/",
+  "sources": [
+   {
+    "url": "https://www.hotelleger.com/",
+    "what": "own site, live; reservations; history statement",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'a cherished landmark since 1851' and 'one of the longest continually operating hotels in California' (its claim).",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Nepenthe",
+  "address": "48510 Highway One",
+  "city": "Big Sur",
+  "zip": "93920",
+  "county": "Monterey",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "Ambrosia Burger",
+   "homemade desserts",
+   "terrace dining"
+  ],
+  "opened": 1949,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Clifftop Big Sur restaurant the Fassett family built; opened April 24, 1949.",
+  "website": "https://www.nepenthe.com/",
+  "sources": [
+   {
+    "url": "https://www.nepenthe.com/",
+    "what": "own site, live; reservations and hours pages",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: opened for business April 24, 1949; Lolly and Bill Fassett built the restaurant on the site.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Old Fisherman's Grotto",
+  "address": "39 Fisherman's Wharf",
+  "city": "Monterey",
+  "zip": "93940",
+  "county": "Monterey",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "clam chowder",
+   "seafood",
+   "steaks",
+   "pasta"
+  ],
+  "opened": null,
+  "brand_founded": 1950,
+  "chain": false,
+  "note": "Fisherman's Wharf seafood restaurant; footer reads 'Old Fisherman's Grotto 1950-2026'.",
+  "website": "https://www.oldfishermansgrotto.com/",
+  "sources": [
+   {
+    "url": "https://www.oldfishermansgrotto.com/",
+    "what": "own site, live; footer '1950-2026'; guest reviews dated Oct 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site footer gives 1950 as the start year; it does not state the address history.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Abalonetti Bar & Grill",
+  "address": "57 Fisherman's Wharf",
+  "city": "Monterey",
+  "zip": "93940",
+  "county": "Monterey",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "calamari (10+ preparations)",
+   "seafood",
+   "calamari eggplant parmigiana"
+  ],
+  "opened": null,
+  "brand_founded": 1951,
+  "chain": false,
+  "note": "Wharf calamari specialist that dates itself to 1951.",
+  "website": "https://abalonetti.com/",
+  "sources": [
+   {
+    "url": "https://abalonetti.com/",
+    "what": "own site, live; (c) 2026; open daily, hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'Since 1951', '70+ years on wharf'; does not say it has always been at 57 Fisherman's Wharf.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Madonna Inn",
+  "address": "100 Madonna Rd",
+  "city": "San Luis Obispo",
+  "zip": "93405",
+  "county": "San Luis Obispo",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "dining room",
+   "bakery"
+  ],
+  "opened": 1958,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Roadside hotel with restaurant and bakery, open since 1958.",
+  "website": "https://www.madonnainn.com/",
+  "sources": [
+   {
+    "url": "https://www.madonnainn.com/",
+    "what": "own site, live; (c) 2025; Holidays 2026 page",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: open since 1958 at 100 Madonna Road (a single purpose-built property).",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Joe's Cafe",
+  "address": "536 State St",
+  "city": "Santa Barbara",
+  "zip": "93101",
+  "county": "Santa Barbara",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "American steakhouse fare",
+   "cocktails"
+  ],
+  "opened": null,
+  "brand_founded": 1928,
+  "chain": false,
+  "note": "Downtown Santa Barbara steakhouse and bar, 'since 1928'.",
+  "website": "https://www.joescafesb.com/",
+  "sources": [
+   {
+    "url": "https://www.joescafesb.com/",
+    "what": "own site, live; hours posted; online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: serving Santa Barbara since 1928; no address history stated.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "The Spot",
+  "address": "389 Linden Ave",
+  "city": "Carpinteria",
+  "zip": "93013",
+  "county": "Santa Barbara",
+  "kinds": [
+   "burgerstand",
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "hamburgers",
+   "chili fries",
+   "tacos and Mexican plates"
+  ],
+  "opened": 1958,
+  "brand_founded": 1914,
+  "chain": false,
+  "note": "Old-fashioned beach hamburger stand; its site says it has served since 1914, and the shack was renamed The Spot in 1958.",
+  "website": "https://www.thespotcarpinteria.com/",
+  "sources": [
+   {
+    "url": "https://www.thespotcarpinteria.com/",
+    "what": "own site, live; fall hours posted; history section",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'Since 1914' (its claim); the shack, earlier Sheri's Cafe, was bought by the Hendersons and renamed The Spot in 1958. The site calls this 'The Spot's original location'.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Pick's Roadside (formerly Pick's Drive-In)",
+  "address": "117 S Cloverdale Blvd",
+  "city": "Cloverdale",
+  "zip": "95425",
+  "county": "Sonoma",
+  "kinds": [
+   "burgerstand",
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "Pick's red relish",
+   "root beer floats",
+   "milkshakes"
+  ],
+  "opened": null,
+  "brand_founded": 1923,
+  "chain": false,
+  "note": "Restored roadside drive-in; its site says Pick's holds the title of oldest drive-through in California, established 1923.",
+  "website": "https://picksroadside.com/",
+  "sources": [
+   {
+    "url": "https://picksroadside.com/",
+    "what": "own site, live (assets dated 2026-03); Toast ordering link for 117 S Cloverdale Blvd",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'established in 1923' and 'the oldest drive-through in California' (its claim). It does not state the address history.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Waterfront Bar & Grill",
+  "address": "2044 Kettner Blvd",
+  "city": "San Diego",
+  "zip": "92101",
+  "county": "San Diego",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "breakfast",
+   "full kitchen until late"
+  ],
+  "opened": null,
+  "brand_founded": 1933,
+  "chain": false,
+  "note": "Little Italy tavern; its site says it is San Diego's oldest tavern, opened in 1933.",
+  "website": "https://waterfrontbarandgrill.com/",
+  "sources": [
+   {
+    "url": "https://waterfrontbarandgrill.com/",
+    "what": "own site, live; (c) 2026; open 8am-2am daily",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'The Waterfront opened in 1933, the year prohibition was repealed' and calls itself San Diego's oldest tavern (its claim). It does not state the address history.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Aero Club Bar",
+  "address": "3365 India St",
+  "city": "San Diego",
+  "zip": "92103",
+  "county": "San Diego",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "whiskey (1,200+)",
+   "bar"
+  ],
+  "opened": 1947,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Middletown whiskey dive bar that started as a hangout for local pilots.",
+  "website": "https://aeroclubbar.com/",
+  "sources": [
+   {
+    "url": "https://aeroclubbar.com/",
+    "what": "own site, live; (c) 2026; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'has poured stiff drinks at 3365 India Street... since 1947'.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Hob Nob Hill",
+  "address": "2271 1st Ave",
+  "city": "San Diego",
+  "zip": "92101",
+  "county": "San Diego",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "all-day breakfast and lunch menu"
+  ],
+  "opened": 1946,
+  "brand_founded": 1944,
+  "chain": false,
+  "note": "Bankers Hill restaurant founded 1944; moved to Juniper and First two years later.",
+  "website": "https://www.hobnobhill.com/",
+  "sources": [
+   {
+    "url": "https://www.hobnobhill.com/about",
+    "what": "own about page, live (site built 2025); daily 8am-3pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own about page: opened 1944; 'Just two years later, the restaurant moved to its current home at Juniper and First Avenue'.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Turf Supper Club",
+  "address": "1116 25th St",
+  "city": "San Diego",
+  "zip": "92102",
+  "county": "San Diego",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "grill-your-own steaks",
+   "cocktails"
+  ],
+  "opened": 1950,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Golden Hill cocktail lounge where diners grill their own meat; grill added 1955.",
+  "website": "https://turfsupperclub.com/",
+  "sources": [
+   {
+    "url": "https://turfsupperclub.com/history/",
+    "what": "own history page, live; open daily 5pm-2am",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own history: cocktails began pouring in 1950 in a two-story building near 25th and C Streets in Golden Hill; grill installed 1955; renamed Turf Supper Club the next year.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Rudford's Restaurant",
+  "address": "2900 El Cajon Blvd",
+  "city": "San Diego",
+  "zip": "92104",
+  "county": "San Diego",
+  "kinds": [
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "24-hour diner breakfast, lunch and dinner"
+  ],
+  "opened": null,
+  "brand_founded": 1949,
+  "chain": false,
+  "note": "North Park diner open 24/7; Tommy Rudford bought it in 1949.",
+  "website": "https://www.rudfords.com/",
+  "sources": [
+   {
+    "url": "https://www.rudfords.com/",
+    "what": "own site, live; open 24/7",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'serving San Diego since 1949'; Rudford purchased the restaurant in 1949. Address history not stated.",
+  "same_address_by_1960": null
+ },
+ {
+  "name": "Mustards Grill",
+  "address": "7399 St. Helena Hwy",
+  "city": "Napa",
+  "zip": "94558",
+  "county": "Napa",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "ribs",
+   "lunch and dinner plates",
+   "long wine list"
+  ],
+  "opened": 1983,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Highway 29 roadhouse ('Truckstop Deluxe') serving lunch and dinner seven days; site dates it to 1983.",
+  "website": "https://www.mustardsgrill.com/",
+  "sources": [
+   {
+    "url": "https://www.mustardsgrill.com/",
+    "what": "own site, live; lunch and dinner 7 days; online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site title: 'Mustards Grill | Napa Valley | Since 1983'."
+ },
+ {
+  "name": "Bistro Jeanty",
+  "address": "6510 Washington St",
+  "city": "Yountville",
+  "zip": "94599",
+  "county": "Napa",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "classic French bistro dishes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Chef Philippe Jeanty's family-run French bistro in Yountville.",
+  "website": "https://bistrojeanty.com/",
+  "sources": [
+   {
+    "url": "https://bistrojeanty.com/",
+    "what": "own site, live; hours and menu posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Bottega Napa Valley",
+  "address": "6525 Washington St",
+  "city": "Yountville",
+  "zip": "94599",
+  "county": "Napa",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "Italian lunch and dinner"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Italian restaurant in Yountville; open daily (Mon dinner only).",
+  "website": "https://www.botteganapavalley.com/",
+  "sources": [
+   {
+    "url": "https://www.botteganapavalley.com/about",
+    "what": "own site, live; hours Mon 4-9pm, Tue-Sun 11:30am-9:30pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Oenotri",
+  "address": "1425 First St",
+  "city": "Napa",
+  "zip": "94559",
+  "county": "Napa",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "Italian food"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown Napa Italian restaurant with online ordering.",
+  "website": "https://www.oenotri.com/",
+  "sources": [
+   {
+    "url": "https://www.oenotri.com/",
+    "what": "own site, live; hours, menus and ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Charter Oak",
+  "address": "1050 Charter Oak Ave",
+  "city": "St. Helena",
+  "zip": "94574",
+  "county": "Napa",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "hearth-grilled meat, fish and vegetables",
+   "seasonal plates from its farm"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "St. Helena restaurant cooking much of its menu over a hearth.",
+  "website": "https://www.thecharteroak.com/",
+  "sources": [
+   {
+    "url": "https://www.thecharteroak.com/menus/",
+    "what": "own menu page, live ('From the Hearth' section); hours page",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Angele Restaurant & Bar",
+  "address": "540 Main St",
+  "city": "Napa",
+  "zip": "94559",
+  "county": "Napa",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "French-inspired lunch and dinner"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "French-inspired restaurant on the Napa River; lunch and dinner daily.",
+  "website": "https://www.angelerestaurant.com/",
+  "sources": [
+   {
+    "url": "https://www.angelerestaurant.com/",
+    "what": "own site, live; daily lunch and dinner hours posted (footer (c) 2023)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gott's Roadside (St. Helena)",
+  "address": "933 Main St",
+  "city": "St. Helena",
+  "zip": null,
+  "county": "Napa",
+  "kinds": [
+   "winecountry",
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "cheeseburgers",
+   "shakes",
+   "fries"
+  ],
+  "opened": null,
+  "brand_founded": 1999,
+  "chain": true,
+  "note": "The original Gott's, a roadside burger stand on Highway 29; Gott's says it has served the California roadside since 1999.",
+  "website": "https://www.gotts.com/",
+  "sources": [
+   {
+    "url": "https://www.gotts.com/",
+    "what": "own site, live; 'Since 1999', originating as a roadside diner on Highway 29",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.gotts.com/all-locations/",
+    "what": "own locations page lists the St. Helena store at 933 Main St (Highway 29)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": "St. Helena"
+ },
+ {
+  "name": "the girl & the fig",
+  "address": "110 W Spain St",
+  "city": "Sonoma",
+  "zip": "95476",
+  "county": "Sonoma",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "steak tartare",
+   "fig and arugula salad",
+   "duck confit",
+   "cheese and charcuterie"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "French country restaurant on Sonoma Plaza.",
+  "website": "https://www.thegirlandthefig.com/",
+  "sources": [
+   {
+    "url": "https://www.thegirlandthefig.com/",
+    "what": "own site, live; menus and hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Cafe La Haye",
+  "address": "140 E Napa St",
+  "city": "Sonoma",
+  "zip": "95476",
+  "county": "Sonoma",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "seasonal lunch (omelette, Caesar)",
+   "dinner"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Small Sonoma restaurant, lunch and dinner Tue-Sat.",
+  "website": "https://www.cafelahaye.com/",
+  "sources": [
+   {
+    "url": "https://www.cafelahaye.com/lunch-menu",
+    "what": "own site, live; (c) 1996-2026; hours Tue-Sat",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Glen Ellen Star",
+  "address": "13648 Arnold Dr",
+  "city": "Glen Ellen",
+  "zip": "95442",
+  "county": "Sonoma",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "dinner menu (posted 10.1.26)",
+   "desserts"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Dinner-only restaurant in Glen Ellen; takes Thanksgiving pre-orders.",
+  "website": "https://www.glenellenstar.com/",
+  "sources": [
+   {
+    "url": "https://www.glenellenstar.com/",
+    "what": "own site, live; dinner menu file dated 10.1.26; hours Sun-Thu 5-9, Fri-Sat 5-9:30",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Willi's Wine Bar",
+  "address": "1415 Town and Country Dr",
+  "city": "Santa Rosa",
+  "zip": "95404",
+  "county": "Sonoma",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "global small plates",
+   "wine by the glass"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Small-plates restaurant open since 2002, now in Town and Country Center.",
+  "website": "https://williswinebar.net/",
+  "sources": [
+   {
+    "url": "https://williswinebar.net/",
+    "what": "own site, live; (c) 2026; open daily 11:30am-9pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Valette",
+  "address": "344 Center St",
+  "city": "Healdsburg",
+  "zip": null,
+  "county": "Sonoma",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "charcuterie and local cheeses",
+   "dinner from local farms"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Healdsburg dinner restaurant built around local farmers and winemakers.",
+  "website": "https://www.valettehealdsburg.com/",
+  "sources": [
+   {
+    "url": "https://www.valettehealdsburg.com/",
+    "what": "own site, live; dinner daily from 5pm; staff page mentions May 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Barndiva",
+  "address": "231 Center St",
+  "city": "Healdsburg",
+  "zip": null,
+  "county": "Sonoma",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "seasonal, locally sourced Sonoma County dishes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Farm-to-table restaurant and event space, open Thu-Mon evenings.",
+  "website": "https://www.barndiva.com/",
+  "sources": [
+   {
+    "url": "https://www.barndiva.com/",
+    "what": "own site, live; 2026 references; hours Thu-Mon from 5pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Il Cortile Ristorante",
+  "address": "608 12th St",
+  "city": "Paso Robles",
+  "zip": "93446",
+  "county": "San Luis Obispo",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "homemade pasta",
+   "seasonal Italian dishes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown Paso Robles Italian restaurant.",
+  "website": "https://ilcortileristorante.com/",
+  "sources": [
+   {
+    "url": "https://ilcortileristorante.com/",
+    "what": "own site, live; (c) 2026; hours Wed-Sun",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Fish Gaucho",
+  "address": "1244 Park St",
+  "city": "Paso Robles",
+  "zip": null,
+  "county": "San Luis Obispo",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "California-Mexican seafood and meats",
+   "tequila"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown Paso Robles restaurant pairing California-Mexican cooking with a big tequila list.",
+  "website": "https://www.fishgaucho.com/",
+  "sources": [
+   {
+    "url": "https://www.fishgaucho.com/",
+    "what": "own site, live; menu and reservations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "BL Brasserie (formerly Bistro Laurent)",
+  "address": "1202 Pine St",
+  "city": "Paso Robles",
+  "zip": null,
+  "county": "San Luis Obispo",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "French brasserie dishes",
+   "oyster bar"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "French brasserie, dinner Tue-Sun and lunch Tue-Sat.",
+  "website": "https://www.bistrolaurent.com/",
+  "sources": [
+   {
+    "url": "https://www.bistrolaurent.com/",
+    "what": "own site, live; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Hitching Post II",
+  "address": "420 E Highway 246",
+  "city": "Buellton",
+  "zip": null,
+  "county": "Santa Barbara",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "dinner and lunch menus",
+   "house wines"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Buellton restaurant and Hitching Post winery; running a 40th-anniversary special through October.",
+  "website": "https://www.hitchingpost2.com/",
+  "sources": [
+   {
+    "url": "https://www.hitchingpost2.com/",
+    "what": "own site, live; 40th Anniversary Special extended through October",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "S.Y. Kitchen",
+  "address": "1110 Faraday St",
+  "city": "Santa Ynez",
+  "zip": "93460",
+  "county": "Santa Barbara",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "Italian lunch and dinner"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Italian restaurant in Santa Ynez, lunch daily and dinner nightly.",
+  "website": "https://www.sykitchen.com/",
+  "sources": [
+   {
+    "url": "https://www.sykitchen.com/contact",
+    "what": "own site, live; hours and address",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Olivos Cafe",
+  "address": "2879 Grand Ave",
+  "city": "Los Olivos",
+  "zip": null,
+  "county": "Santa Barbara",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "farm-fresh Santa Barbara wine-country cooking"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Cafe and wine merchant serving lunch and dinner daily.",
+  "website": "https://www.losolivoscafe.com/",
+  "sources": [
+   {
+    "url": "https://www.losolivoscafe.com/",
+    "what": "own site, live; (c) 1995-2026; daily lunch and dinner",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Industrial Eats",
+  "address": "181 Industrial Way",
+  "city": "Buellton",
+  "zip": "93427",
+  "county": "Santa Barbara",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "local-ingredient restaurant plates",
+   "craft butcher shop"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Restaurant and butcher shop in Buellton's industrial park, open daily.",
+  "website": "https://industrialeats.com/",
+  "sources": [
+   {
+    "url": "https://industrialeats.com/",
+    "what": "own site, live; open daily 12-8pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Restaurant at Ponte",
+  "address": "35053 Rancho California Rd",
+  "city": "Temecula",
+  "zip": "92591",
+  "county": "Riverside",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "winery restaurant lunch and early dinner"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Winery restaurant at Ponte Family Estate, open daily 11am-7pm.",
+  "website": "https://www.pontewinery.com/",
+  "sources": [
+   {
+    "url": "https://www.pontewinery.com/",
+    "what": "own site, live; (c) 2026; restaurant open daily 11am-7pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Creekside Grille at Wilson Creek Winery",
+  "address": "35960 Rancho California Rd",
+  "city": "Temecula",
+  "zip": "92591",
+  "county": "Riverside",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "seasonal, locally sourced menu"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Winery restaurant beside Wilson Creek's vineyards.",
+  "website": "https://www.wilsoncreekwinery.com/",
+  "sources": [
+   {
+    "url": "https://www.wilsoncreekwinery.com/",
+    "what": "own site, live; (c) 2026; open 7 days",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Vineyard Rose Restaurant at South Coast Winery",
+  "address": "34843 Rancho California Rd",
+  "city": "Temecula",
+  "zip": null,
+  "county": "Riverside",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "resort restaurant menus"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Restaurant at South Coast Winery Resort & Spa.",
+  "website": "https://www.southcoastwinery.com/",
+  "sources": [
+   {
+    "url": "https://www.southcoastwinery.com/",
+    "what": "own site, live; Oct-Nov 2026 events listed; dining section",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Pietro's Trattoria",
+  "address": "282 Rocky Ln",
+  "city": "Lodi",
+  "zip": "95240",
+  "county": "San Joaquin",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "Italian food"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Italian restaurant in Lodi wine country with online ordering.",
+  "website": "https://www.pietroslodi.com/",
+  "sources": [
+   {
+    "url": "https://www.pietroslodi.com/",
+    "what": "own site, live; hours and ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Cafe at Michael David Winery",
+  "address": "4580 W Highway 12",
+  "city": "Lodi",
+  "zip": "95242",
+  "county": "San Joaquin",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "breakfast plates",
+   "lunch",
+   "bakery"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Winery cafe and bakery serving breakfast and lunch 8am-3pm; seasonal outdoor bistro.",
+  "website": "https://michaeldavidwinery.com/",
+  "sources": [
+   {
+    "url": "https://michaeldavidwinery.com/visit/",
+    "what": "own visit page, live; (c) 2026; cafe 8am-3pm",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://michaeldavidwinery.com/menu/breakfast/",
+    "what": "own breakfast menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Range Life",
+  "address": "2160 Railroad Ave",
+  "city": "Livermore",
+  "zip": null,
+  "county": "Alameda",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "locally and seasonally sourced dishes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Neighborhood restaurant and bar in a renovated 1800s brick building.",
+  "website": "https://www.rangelifelivermore.com/",
+  "sources": [
+   {
+    "url": "https://www.rangelifelivermore.com/",
+    "what": "own site, live; 4-9pm, closed Tuesdays",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "First Street Alehouse",
+  "address": "2106 First St",
+  "city": "Livermore",
+  "zip": "94550",
+  "county": "Alameda",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "salads",
+   "pub fare"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown Livermore alehouse with a full kitchen.",
+  "website": "https://www.firststreetalehouse.com/",
+  "sources": [
+   {
+    "url": "https://www.firststreetalehouse.com/",
+    "what": "own site, live; (c) 2026; updated 2026-05; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taste Restaurant & Wine Bar",
+  "address": "9402 Main St",
+  "city": "Plymouth",
+  "zip": null,
+  "county": "Amador",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "seasonally inspired dinners"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Amador wine-country restaurant in Plymouth.",
+  "website": "https://www.restauranttaste.com/",
+  "sources": [
+   {
+    "url": "https://www.restauranttaste.com/",
+    "what": "own site, live; (c) 2026; hours posted",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hotel Sutter",
+  "address": "53 Main St",
+  "city": "Sutter Creek",
+  "zip": null,
+  "county": "Amador",
+  "kinds": [
+   "winecountry"
+  ],
+  "open": true,
+  "dishes": [
+   "casual dining",
+   "historic bars"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Main Street hotel with restaurant and bars in Sutter Creek.",
+  "website": "https://www.hotelsutter.com/",
+  "sources": [
+   {
+    "url": "https://www.hotelsutter.com/",
+    "what": "own site, live; (c) 2026; restaurant and takeout pages",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gus's Drive-In",
+  "address": "1657 W 3rd St",
+  "city": "Los Angeles",
+  "zip": "90017",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "fries",
+   "Greek specialties",
+   "pastrami",
+   "fried chicken"
+  ],
+  "opened": null,
+  "brand_founded": 1977,
+  "chain": false,
+  "note": "Family-owned Westlake burger stand with Greek dishes, 'since 1977'.",
+  "website": "https://gussdi.com/",
+  "sources": [
+   {
+    "url": "https://gussdi.com/",
+    "what": "own site, live; (c) 2026; open daily 8am-9pm; menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lucky Boy",
+  "address": "531 E Walnut St",
+  "city": "Pasadena",
+  "zip": "91101",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "breakfast burritos (all day)",
+   "burgers",
+   "sandwiches"
+  ],
+  "opened": null,
+  "brand_founded": 1961,
+  "chain": true,
+  "note": "Pasadena burger and burrito stand established 1961; also at 640 S Arroyo Pkwy and in Sylmar.",
+  "website": "https://www.luckyboyburgers.com/",
+  "sources": [
+   {
+    "url": "https://www.luckyboyburgers.com/",
+    "what": "own site, live; (c) 2026; online ordering for Walnut St and Arroyo Pkwy",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lucy's Drive In",
+  "address": "1373 S La Brea Ave",
+  "city": "Los Angeles",
+  "zip": "90019",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "breakfast burritos",
+   "Mexican plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "24-hour La Brea drive-in serving burgers, breakfast and Mexican food.",
+  "website": "https://www.lucysdrivein.com/",
+  "sources": [
+   {
+    "url": "https://www.lucysdrivein.com/",
+    "what": "own site, live; 'Open 24 Hours'; home and menu pages modified 2026-03-13",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Bill's Hamburgers",
+  "address": "14742 Oxnard St",
+  "city": "Van Nuys",
+  "zip": "91411",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "bacon cheeseburger",
+   "hamburgers"
+  ],
+  "opened": null,
+  "brand_founded": 1965,
+  "chain": false,
+  "note": "Weekday-only retro burger counter on the same flat top since 1965.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/bills-hamburgers",
+    "what": "Time Out LA review, Oct 30, 2025: serving the Valley since 1965; address 14742 Oxnard St; Tue-Fri 8:30am-4pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Burgers Never Say Die",
+  "address": "2388 Glendale Blvd",
+  "city": "Los Angeles",
+  "zip": "90039",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "smashburgers ('The Regular')"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Silver Lake walk-up smashburger window that began as a backyard pop-up.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/the-best-burgers-in-los-angeles",
+    "what": "Time Out LA burger list, Oct 30, 2025: walk-up spot in Silver Lake at 2388 Glendale Blvd",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hawkins House of Burgers",
+  "address": "11603 Slater St",
+  "city": "Los Angeles",
+  "zip": "90059",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "Whipper Burger (two patties, pastrami, sausage)",
+   "burgers"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Watts burger stand known for oversized burgers.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/the-best-burgers-in-los-angeles",
+    "what": "Time Out LA burger list, Oct 30, 2025: Hawkins House of Burgers, 11603 Slater St",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Irv's Burgers (West Hollywood)",
+  "address": "7998 Santa Monica Blvd",
+  "city": "West Hollywood",
+  "zip": "90046",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "Original Roadside Double",
+   "pressed-to-order burgers"
+  ],
+  "opened": null,
+  "brand_founded": 1946,
+  "chain": true,
+  "note": "Route 66 burger stand first opened in 1946 as Queen's Burgers; revived in 2022 and now a small chain (LA and Nevada).",
+  "website": "https://www.irvsburgers.com/",
+  "sources": [
+   {
+    "url": "https://lamag.com/food/irvs-burgers-80-year-anniversary-80-cent-burgers/",
+    "what": "LA Magazine, Aug 25, 2026: 80th anniversary; first opened in 1946 as Queen's Burgers in West Hollywood",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.irvsburgers.com/location/",
+    "what": "own locations page, live; lists 7998 Santa Monica Blvd, West Hollywood",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/the-best-burgers-in-los-angeles",
+    "what": "Time Out LA, Oct 30, 2025: old-school Route 66 burger stand revived in 2022",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Not tagged oldest: Time Out says the stand was revived in 2022 after a closure, so it has not run continuously; no source gives the year it reached this address."
+ },
+ {
+  "name": "Astro Burger",
+  "address": "5601 Melrose Ave",
+  "city": "Los Angeles",
+  "zip": "90038",
+  "county": "Los Angeles",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "avocado burger",
+   "gyros",
+   "Greek salads"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Independent family burger stand on Melrose with a Greek side menu.",
+  "website": "https://astroburger.com/",
+  "sources": [
+   {
+    "url": "https://astroburger.com/",
+    "what": "own site, live; hours Mon-Sat 7am-10pm, Sun 9am-10pm; online ordering link (newest date not shown)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "George's Drive-In",
+  "address": "9910 Magnolia Ave",
+  "city": "Riverside",
+  "zip": "92503",
+  "county": "Riverside",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "breakfast burritos",
+   "hot pastrami",
+   "chili cheese fries"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": false,
+  "note": "Family-owned Riverside drive-in founded in 1974 by George and Zaharoula Alexiou.",
+  "website": "https://georgesdrivein.com/",
+  "sources": [
+   {
+    "url": "https://georgesdrivein.com/",
+    "what": "own site, live; daily hours; 2026 posts",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Trails Drive In",
+  "address": "84520 Trona Rd",
+  "city": "Trona",
+  "zip": "93562",
+  "county": "San Bernardino",
+  "kinds": [
+   "burgerstand",
+   "oldest"
+  ],
+  "open": true,
+  "dishes": [
+   "made-to-order burgers",
+   "milkshakes",
+   "flavored sodas",
+   "soft serve"
+  ],
+  "opened": 1958,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Desert drive-in on the road toward Panamint and Death Valley; built by Ruth and Clarence Baker, established 1958.",
+  "website": "https://www.trailsdrivein.com/",
+  "sources": [
+   {
+    "url": "https://www.trailsdrivein.com/",
+    "what": "own site, live; Labor Day 2026 notice; hours Mon-Sat",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "opened_note": "Own site: 'established in 1958' by Ruth and Clarence Baker 'who built the Trails Drive In'; 'A Trona Landmark Since 1958'.",
+  "same_address_by_1960": true
+ },
+ {
+  "name": "Pocket Burger Shack",
+  "address": "16873 CA-1",
+  "city": "Huntington Beach",
+  "zip": "92649",
+  "county": "Orange",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "Pocket Burger (1/3 lb, avocado, egg, bacon)",
+   "breakfast burritos",
+   "agua frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Roadside burger shack on Pacific Coast Highway in Sunset Beach.",
+  "website": "https://pocketburgershack.com/",
+  "sources": [
+   {
+    "url": "https://pocketburgershack.com/",
+    "what": "own site, live; (c) 2026; open daily 8am-3pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lucky's Drive-In",
+  "address": "2565 Franklin Blvd",
+  "city": "Sacramento",
+  "zip": "95818",
+  "county": "Sacramento",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "shakes",
+   "hot dogs",
+   "chili"
+  ],
+  "opened": 2024,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Curtis Park burger stand; the owners' first location is in Tacoma, WA, and this one opened at the end of 2024.",
+  "website": "https://sacramentoburgers.com/",
+  "sources": [
+   {
+    "url": "https://sacramentoburgers.com/",
+    "what": "own site, live; (c) 2026; open daily 11am-8pm",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Beep's Burgers",
+  "address": "1051 Ocean Ave",
+  "city": "San Francisco",
+  "zip": "94112",
+  "county": "San Francisco",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "1/4 lb Beep's Burger",
+   "milkshakes",
+   "root beer floats"
+  ],
+  "opened": null,
+  "brand_founded": 1962,
+  "chain": false,
+  "note": "Ocean Avenue throwback drive-in serving burgers since 1962.",
+  "website": "https://www.beepsburgers.com/",
+  "sources": [
+   {
+    "url": "https://www.beepsburgers.com/",
+    "what": "own site, live; menu and hours Mon-Sat 10am-2am",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sylvester's Burgers (Atascadero)",
+  "address": "6455 El Camino Real",
+  "city": "Atascadero",
+  "zip": "93422",
+  "county": "San Luis Obispo",
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "online ordering menu"
+  ],
+  "opened": null,
+  "brand_founded": 1988,
+  "chain": true,
+  "note": "SLO County burger joint 'serving SLO County since 1988' with locations in Atascadero, Los Osos, Oceano, Paso Robles and San Luis Obispo.",
+  "website": "https://www.sylvestersburgers.com/",
+  "sources": [
+   {
+    "url": "https://www.sylvestersburgers.com/",
+    "what": "own site, live; (c) 2025; hours for each location; ordering links",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Foster's Freeze (brand)",
+  "address": null,
+  "city": null,
+  "zip": null,
+  "county": null,
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "fries",
+   "soft serve",
+   "shakes"
+  ],
+  "opened": null,
+  "brand_founded": 1946,
+  "chain": true,
+  "note": "California-born burger and soft-serve chain. Its own store locator is script-rendered with region pages (Bay Area, Central Valley, Southern California, Other California); individual stores not checked here.",
+  "website": "https://fostersfreeze.com/",
+  "sources": [
+   {
+    "url": "https://fostersfreeze.com/",
+    "what": "own site, live; page metadata: 'since 1946', foundingDate 1946, foundingLocation Inglewood, California",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": "Inglewood"
+ },
+ {
+  "name": "The Habit Burger & Grill (brand)",
+  "address": null,
+  "city": null,
+  "zip": null,
+  "county": null,
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "Charburgers",
+   "sandwiches",
+   "salads"
+  ],
+  "opened": null,
+  "brand_founded": 1969,
+  "chain": true,
+  "note": "Chargrilled-burger chain; its site says it was 'born under the golden Santa Barbara sun in 1969' (no specific first-store city given). Store locator only; stores not checked here.",
+  "website": "https://www.habitburger.com/",
+  "sources": [
+   {
+    "url": "https://www.habitburger.com/about-us/",
+    "what": "own about page, live; (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": null
+ },
+ {
+  "name": "Farmer Boys (brand)",
+  "address": null,
+  "city": null,
+  "zip": null,
+  "county": null,
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "breakfast",
+   "salads"
+  ],
+  "opened": null,
+  "brand_founded": 1981,
+  "chain": true,
+  "note": "Founded in 1981 by five brothers; the site says nearly 100 restaurants in California and Nevada but does not name the first city. Locations page is a search tool; stores not checked here.",
+  "website": "https://www.farmerboys.com/",
+  "sources": [
+   {
+    "url": "https://www.farmerboys.com/about-us/",
+    "what": "own about page, live; (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": null
+ },
+ {
+  "name": "Fatburger (brand)",
+  "address": null,
+  "city": null,
+  "zip": null,
+  "county": null,
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "fat fries",
+   "shakes"
+  ],
+  "opened": null,
+  "brand_founded": 1947,
+  "chain": true,
+  "note": "Lovie Yancey and her husband started a three-stool stand called Mr. Fatburger in 1947; in 1952 she took it over as Fatburger. The site does not name the first city. Locations page uses a location search plus 'View all locations'; stores not checked here.",
+  "website": "https://fatburger.com/",
+  "sources": [
+   {
+    "url": "https://fatburger.com/our-story/",
+    "what": "own Our Story page, live; (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": null
+ },
+ {
+  "name": "Baker's Drive-Thru (brand)",
+  "address": null,
+  "city": null,
+  "zip": null,
+  "county": null,
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "burgers",
+   "tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1952,
+  "chain": true,
+  "note": "Inland Empire drive-thru chain; its site says it has fed Southern California since 1952 (first city not stated). Stores not checked here.",
+  "website": "https://www.bakersdrivethru.com/",
+  "sources": [
+   {
+    "url": "https://www.bakersdrivethru.com/",
+    "what": "own site, live; 'feeding Southern California since 1952'",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": null
+ },
+ {
+  "name": "Nation's Giant Hamburgers (brand)",
+  "address": null,
+  "city": null,
+  "zip": null,
+  "county": null,
+  "kinds": [
+   "burgerstand"
+  ],
+  "open": true,
+  "dishes": [
+   "giant hamburgers",
+   "pies",
+   "breakfast"
+  ],
+  "opened": null,
+  "brand_founded": 1970,
+  "chain": true,
+  "note": "Bay Area burger-and-pie chain; its timeline says the Nation's name started in 1970 with a restaurant in Oakland, the first to carry the signage. Stores not checked here.",
+  "website": "https://nationsrestaurants.com/",
+  "sources": [
+   {
+    "url": "https://nationsrestaurants.com/",
+    "what": "own site with Our Story timeline, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07",
+  "brand_first_city": "Oakland"
+ }
+]

@@ -1,0 +1,4290 @@
+[
+ {
+  "name": "Tacos Los Cholos",
+  "address": "7127 Pacific Blvd",
+  "city": "Huntington Park",
+  "zip": "90255",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "costilla de res taco",
+   "arrachera taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Huntington Park taqueria known for grilled beef rib and skirt steak tacos.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Asadero Chikali",
+  "address": "1321 S Atlantic Blvd",
+  "city": "East Los Angeles",
+  "zip": "90022",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "chorizo taco",
+   "guisado tacos",
+   "vampiros"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Mexicali-style asadero; also has an Inglewood location.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Asadero Chikali",
+  "address": "4233 W Century Blvd",
+  "city": "Inglewood",
+  "zip": "90304",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "chorizo taco",
+   "guisado tacos",
+   "vampiros"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Inglewood location of the Mexicali-style asadero.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Guichos",
+  "address": "320 W Slauson Ave",
+  "city": "Los Angeles",
+  "zip": "90003",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco (evenings)",
+   "lengua taco",
+   "tripas taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "South LA taco stand; al pastor comes off the trompo in the evening.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Carnitas El Momo",
+  "address": "1470 Monterey Pass Rd",
+  "city": "Monterey Park",
+  "zip": "91754",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carnitas tacos (carne, buche, cuero)",
+   "mulitas",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Carnitas specialist in Monterey Park.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos La Rueda",
+  "address": "16900 Lakewood Blvd",
+  "city": "Bellflower",
+  "zip": "90706",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "al pastor taco",
+   "tripas taco",
+   "cabeza taco",
+   "caramelo",
+   "menudo"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Bellflower taqueria.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tijuanazo",
+  "address": "355 S Atlantic Blvd",
+  "city": "East Los Angeles",
+  "zip": "90022",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "adobada taco",
+   "asada taco",
+   "chorizo taco",
+   "fantasmas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Tijuana-style taqueria in East LA.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tire Shop Taqueria (Tacos Los Poblanos)",
+  "address": "4077 S Avalon Blvd",
+  "city": "Los Angeles",
+  "zip": "90011",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "al pastor taco",
+   "chorizo taco",
+   "mulitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Grilled-meat taqueria; South LA location of three.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tire Shop Taqueria (Tacos Los Poblanos)",
+  "address": "5821 S Avalon Blvd",
+  "city": "Los Angeles",
+  "zip": "90011",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "al pastor taco",
+   "chorizo taco",
+   "mulitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Grilled-meat taqueria; second South LA location of three.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tire Shop Taqueria (Tacos Los Poblanos)",
+  "address": "1743 N Cahuenga Blvd",
+  "city": "Los Angeles",
+  "zip": "90028",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "al pastor taco",
+   "chorizo taco",
+   "mulitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Grilled-meat taqueria; Hollywood location of three.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Birrieria Nochistlan",
+  "address": "3200 E 4th St",
+  "city": "Los Angeles",
+  "zip": "90063",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria de chivo tacos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Boyle Heights birrieria serving goat birria.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Originales Tacos Arabes de Puebla",
+  "address": "3600 E Olympic Blvd",
+  "city": "Los Angeles",
+  "zip": "90023",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "taco arabe",
+   "especial"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Boyle Heights stand serving Puebla-style tacos arabes on pita-style bread.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-food-trucks-in-los-angeles",
+    "what": "Time Out LA food trucks list, updated 2025-12-10; lists address and tacos; fetched 2026-10-07",
+    "date": "2025-12-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Barbacoa Ramirez",
+  "address": "14263 Hoyt St",
+  "city": "Arleta",
+  "zip": "91331",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "barbacoa tacos",
+   "pancita",
+   "moronga"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "San Fernando Valley barbacoa spot.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Carnitas El Artista",
+  "address": "510 N La Brea Ave",
+  "city": "Inglewood",
+  "zip": "90302",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carnitas taco",
+   "ribs",
+   "lengua",
+   "cabeza"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Inglewood carnitas taqueria.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos La Carreta",
+  "address": "11402 Washington Blvd",
+  "city": "Whittier",
+  "zip": "90606",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada chorreada",
+   "vampiros",
+   "tripa taco",
+   "adobada taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Whittier taco stand; a second stand is in North Long Beach.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos La Carreta",
+  "address": "3480 E 69th St",
+  "city": "Long Beach",
+  "zip": "90805",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada chorreada",
+   "vampiros",
+   "tripa taco",
+   "adobada taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "North Long Beach location.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos y Birria La Unica",
+  "address": "5871 Venice Blvd",
+  "city": "Los Angeles",
+  "zip": "90019",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos dorados",
+   "quesatacos (beef and goat birria)",
+   "cabeza",
+   "lengua",
+   "labio"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Birria truck in Mid-City; a second one parks in Boyle Heights.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-food-trucks-in-los-angeles",
+    "what": "Time Out LA food trucks list, updated 2025-12-10; lists address and tacos; fetched 2026-10-07",
+    "date": "2025-12-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos y Birria La Unica",
+  "address": "2840 E Olympic Blvd",
+  "city": "Los Angeles",
+  "zip": "90023",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos dorados",
+   "quesatacos (beef and goat birria)",
+   "cabeza",
+   "lengua",
+   "labio"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Boyle Heights location of the birria truck.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-food-trucks-in-los-angeles",
+    "what": "Time Out LA food trucks list, updated 2025-12-10; lists address and tacos; fetched 2026-10-07",
+    "date": "2025-12-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Cinco Puntos",
+  "address": "3300 E Cesar E Chavez Ave",
+  "city": "Los Angeles",
+  "zip": "90063",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carnitas tacos",
+   "chicharron",
+   "tamales",
+   "tortas",
+   "quesadillas",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Boyle Heights market counter selling carnitas tacos and tamales.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sonoratown",
+  "address": "208 E 8th St",
+  "city": "Los Angeles",
+  "zip": "90014",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco on flour tortilla",
+   "cabeza",
+   "chivichanga",
+   "caramelo",
+   "Burrito 2.0"
+  ],
+  "opened": null,
+  "brand_founded": 2016,
+  "chain": true,
+  "note": "Sonoran-style taqueria (Downtown) with house-made flour tortillas made with pork lard.",
+  "website": "https://www.sonoratown.com/",
+  "sources": [
+   {
+    "url": "https://www.sonoratown.com/",
+    "what": "own site, live; lists 3 locations, hours daily 11am-10pm, menu; says founded 2016",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sonoratown",
+  "address": "5610 San Vicente Blvd",
+  "city": "Los Angeles",
+  "zip": "90019",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco on flour tortilla",
+   "cabeza",
+   "chivichanga",
+   "caramelo",
+   "Burrito 2.0"
+  ],
+  "opened": null,
+  "brand_founded": 2016,
+  "chain": true,
+  "note": "Sonoran-style taqueria (Mid-City) with house-made flour tortillas made with pork lard.",
+  "website": "https://www.sonoratown.com/",
+  "sources": [
+   {
+    "url": "https://www.sonoratown.com/",
+    "what": "own site, live; lists 3 locations, hours daily 11am-10pm, menu; says founded 2016",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sonoratown",
+  "address": "244 E 3rd St",
+  "city": "Long Beach",
+  "zip": "90802",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco on flour tortilla",
+   "cabeza",
+   "chivichanga",
+   "caramelo",
+   "Burrito 2.0"
+  ],
+  "opened": null,
+  "brand_founded": 2016,
+  "chain": true,
+  "note": "Sonoran-style taqueria (Long Beach) with house-made flour tortillas made with pork lard.",
+  "website": "https://www.sonoratown.com/",
+  "sources": [
+   {
+    "url": "https://www.sonoratown.com/",
+    "what": "own site, live; lists 3 locations, hours daily 11am-10pm, menu; says founded 2016",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Avenue 26 Taco Stand",
+  "address": "353 S Alameda St",
+  "city": "Los Angeles",
+  "zip": "90013",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Al pastor taco stand; Time Out lists this Little Tokyo/Alameda address. Its old site avenue26tacos.com is now an unrelated spam blog.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Avenue 26 Taco Stand",
+  "address": "1033 Neola St",
+  "city": "Los Angeles",
+  "zip": "90041",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Eagle Rock location of the al pastor stand.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mexicali Taco & Co.",
+  "address": "702 N Figueroa St",
+  "city": "Los Angeles",
+  "zip": "90012",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish taco",
+   "carne asada taco",
+   "Zuperman",
+   "vampiro"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Chinatown taqueria serving Baja-style tacos; chef Esdras Ochoa per its site.",
+  "website": "http://www.mexicalitaco.com/",
+  "sources": [
+   {
+    "url": "http://www.mexicalitaco.com/",
+    "what": "own site, live; address, hours Mon-Sat 11am-8pm, ChowNow ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ditroit Taqueria",
+  "address": "2117 Violet St",
+  "city": "Los Angeles",
+  "zip": "90021",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carnitas taco",
+   "suadero taco",
+   "fish flauta",
+   "tamales",
+   "churros con chocolate"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Arts District taqueria.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Ruso",
+  "address": "2081 Hillhurst Ave",
+  "city": "Los Angeles",
+  "zip": "90027",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "chile colorado taco",
+   "asada taco",
+   "chile relleno",
+   "sobaquera (large flour tortilla burrito)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Sonoran-style flour-tortilla taqueria in Los Feliz.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Villa's Tacos",
+  "address": "5455 N Figueroa St",
+  "city": "Los Angeles",
+  "zip": "90042",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "LA-style tacos on handmade blue-corn tortillas",
+   "quesotacos",
+   "vegan tacos",
+   "fish tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Highland Park taqueria grilling over mesquite.",
+  "website": "https://www.villastacos.com",
+  "sources": [
+   {
+    "url": "https://www.villastacos.com",
+    "what": "own site, live, (c) 2025; lists three Villa's Tacos locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Villa's Tacos",
+  "address": "317 S Broadway",
+  "city": "Los Angeles",
+  "zip": "90013",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "LA-style tacos on handmade blue-corn tortillas",
+   "quesotacos",
+   "vegan tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Downtown stall (Grand Central Market address).",
+  "website": "https://www.villastacos.com",
+  "sources": [
+   {
+    "url": "https://www.villastacos.com",
+    "what": "own site, live, (c) 2025",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Holbox",
+  "address": "3655 S Grand Ave #C9",
+  "city": "Los Angeles",
+  "zip": "90007",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish tacos",
+   "taco de pulpo en su tinta",
+   "smoked kanpachi tostada",
+   "ceviche"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Mexican seafood counter inside Mercado La Paloma.",
+  "website": "https://www.holboxla.com/",
+  "sources": [
+   {
+    "url": "https://www.holboxla.com/",
+    "what": "own site, live; address, hours Tue-Sun (closed Mon), seafood menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Chato Taco Truck",
+  "address": "1013 S La Brea Ave",
+  "city": "Los Angeles",
+  "zip": "90019",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada taco",
+   "chorizo taco",
+   "lengua taco",
+   "buche taco",
+   "burritos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Night taco truck at Olympic and La Brea; cash only per its site.",
+  "website": "https://elchatola.com/",
+  "sources": [
+   {
+    "url": "https://elchatola.com/",
+    "what": "own site, live, (c) 2026; menu and Olympic & La Brea location",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-food-trucks-in-los-angeles",
+    "what": "Time Out LA food trucks list, updated 2025-12-10; lists address and tacos; fetched 2026-10-07",
+    "date": "2025-12-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mariscos El Faro",
+  "address": "6139 N Figueroa St",
+  "city": "Los Angeles",
+  "zip": "90042",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos",
+   "tostadas",
+   "ceviches",
+   "empanadas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Highland Park mariscos truck.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-food-trucks-in-los-angeles",
+    "what": "Time Out LA food trucks list, updated 2025-12-10; lists address and tacos; fetched 2026-10-07",
+    "date": "2025-12-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mariscos El Faro",
+  "address": "9070 W Venice Blvd",
+  "city": "Culver City",
+  "zip": null,
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos",
+   "tostadas",
+   "ceviches",
+   "empanadas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Culver City location of the mariscos truck.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-food-trucks-in-los-angeles",
+    "what": "Time Out LA food trucks list, updated 2025-12-10; lists address and tacos; fetched 2026-10-07",
+    "date": "2025-12-10"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #9",
+  "address": "2400 E Cesar Chavez Ave",
+  "city": "Los Angeles",
+  "zip": "90033",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada burrito",
+   "sopes",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "King Taco store #9 (Boyle Heights); the brand began in 1974 in a converted ice cream truck per its site.",
+  "website": "https://www.kingtaco.com/",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations-2-0/",
+    "what": "brand locations page, live; lists store #9 with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.kingtaco.com",
+    "what": "brand site, live; menu items, founding 1974, 2026 FIFA Fan Zone dates",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #2",
+  "address": "4504 E 3rd St",
+  "city": "East Los Angeles",
+  "zip": "90022",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada burrito",
+   "sopes",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "King Taco store #2 (East LA); the brand began in 1974 in a converted ice cream truck per its site.",
+  "website": "https://www.kingtaco.com/",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations-2-0/",
+    "what": "brand locations page, live; lists store #2 with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.kingtaco.com",
+    "what": "brand site, live; menu items, founding 1974, 2026 FIFA Fan Zone dates",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #1",
+  "address": "1118 Cypress Ave",
+  "city": "Los Angeles",
+  "zip": "90065",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada burrito",
+   "sopes",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "King Taco store #1 (Cypress Park); the brand began in 1974 in a converted ice cream truck per its site.",
+  "website": "https://www.kingtaco.com/",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations-2-0/",
+    "what": "brand locations page, live; lists store #1 with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.kingtaco.com",
+    "what": "brand site, live; menu items, founding 1974, 2026 FIFA Fan Zone dates",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #21",
+  "address": "45 N Arroyo Pkwy",
+  "city": "Pasadena",
+  "zip": "91103",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada burrito",
+   "sopes",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "King Taco store #21 (Pasadena); the brand began in 1974 in a converted ice cream truck per its site.",
+  "website": "https://www.kingtaco.com/",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations-2-0/",
+    "what": "brand locations page, live; lists store #21 with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.kingtaco.com",
+    "what": "brand site, live; menu items, founding 1974, 2026 FIFA Fan Zone dates",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #27",
+  "address": "1841 Long Beach Blvd",
+  "city": "Long Beach",
+  "zip": "90806",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada burrito",
+   "sopes",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "King Taco store #27 (Long Beach); the brand began in 1974 in a converted ice cream truck per its site.",
+  "website": "https://www.kingtaco.com/",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations-2-0/",
+    "what": "brand locations page, live; lists store #27 with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.kingtaco.com",
+    "what": "brand site, live; menu items, founding 1974, 2026 FIFA Fan Zone dates",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #32",
+  "address": "401 Lincoln Blvd",
+  "city": "Venice",
+  "zip": "90291",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada burrito",
+   "sopes",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "King Taco store #32 (Venice); the brand began in 1974 in a converted ice cream truck per its site.",
+  "website": "https://www.kingtaco.com/",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations-2-0/",
+    "what": "brand locations page, live; lists store #32 with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.kingtaco.com",
+    "what": "brand site, live; menu items, founding 1974, 2026 FIFA Fan Zone dates",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Leo's Tacos Truck",
+  "address": "1515 S La Brea Ave",
+  "city": "Los Angeles",
+  "zip": "90019",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada taco",
+   "sopes",
+   "huaraches",
+   "carnitas mulita"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Leo's truck parked at a fixed corner (La Brea & Venice).",
+  "website": "http://www.leostacostruck.com",
+  "sources": [
+   {
+    "url": "http://www.leostacostruck.com/locations",
+    "what": "brand locations page, live; lists this truck stop with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Leo's Tacos Truck",
+  "address": "5525 Sunset Blvd",
+  "city": "Los Angeles",
+  "zip": "90028",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada taco",
+   "sopes",
+   "huaraches",
+   "carnitas mulita"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Leo's truck parked at a fixed corner (Western & Sunset).",
+  "website": "http://www.leostacostruck.com",
+  "sources": [
+   {
+    "url": "http://www.leostacostruck.com/locations",
+    "what": "brand locations page, live; lists this truck stop with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Leo's Tacos Truck",
+  "address": "1748 N Avalon Blvd",
+  "city": "Wilmington",
+  "zip": "90744",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada taco",
+   "sopes",
+   "huaraches",
+   "carnitas mulita"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Leo's truck parked at a fixed corner (Lomita & Avalon).",
+  "website": "http://www.leostacostruck.com",
+  "sources": [
+   {
+    "url": "http://www.leostacostruck.com/locations",
+    "what": "brand locations page, live; lists this truck stop with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Leo's Tacos Truck",
+  "address": "15421 Parthenia St",
+  "city": "North Hills",
+  "zip": "91343",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor taco",
+   "carne asada taco",
+   "sopes",
+   "huaraches",
+   "carnitas mulita"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Leo's truck parked at a fixed corner (Sepulveda & Parthenia).",
+  "website": "http://www.leostacostruck.com",
+  "sources": [
+   {
+    "url": "http://www.leostacostruck.com/locations",
+    "what": "brand locations page, live; lists this truck stop with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Gavilan",
+  "address": "4380 S Broadway",
+  "city": "Los Angeles",
+  "zip": "90037",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "buche",
+   "sopes",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tacos Gavilan location.",
+  "website": "https://tacosgavilan.com/",
+  "sources": [
+   {
+    "url": "https://tacosgavilan.com/",
+    "what": "brand site, live, (c) 2026; lists this location",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosgavilan.com/menu/",
+    "what": "brand menu page, live; meats and items",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Gavilan",
+  "address": "1900 S Central Ave",
+  "city": "Los Angeles",
+  "zip": "90011",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "buche",
+   "sopes",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tacos Gavilan location.",
+  "website": "https://tacosgavilan.com/",
+  "sources": [
+   {
+    "url": "https://tacosgavilan.com/",
+    "what": "brand site, live, (c) 2026; lists this location",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosgavilan.com/menu/",
+    "what": "brand menu page, live; meats and items",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Gavilan",
+  "address": "2425 E Florence Ave",
+  "city": "Huntington Park",
+  "zip": "90255",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "buche",
+   "sopes",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tacos Gavilan location.",
+  "website": "https://tacosgavilan.com/",
+  "sources": [
+   {
+    "url": "https://tacosgavilan.com/",
+    "what": "brand site, live, (c) 2026; lists this location",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosgavilan.com/menu/",
+    "what": "brand menu page, live; meats and items",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Gavilan",
+  "address": "13009 Valley Blvd",
+  "city": "La Puente",
+  "zip": "91746",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "buche",
+   "sopes",
+   "mulitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tacos Gavilan location.",
+  "website": "https://tacosgavilan.com/",
+  "sources": [
+   {
+    "url": "https://tacosgavilan.com/",
+    "what": "brand site, live, (c) 2026; lists this location",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosgavilan.com/menu/",
+    "what": "brand menu page, live; meats and items",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos 1986",
+  "address": "609 S Spring St",
+  "city": "Los Angeles",
+  "zip": "90014",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Tijuana-style tacos",
+   "mulitas",
+   "vampiros",
+   "quesadillas",
+   "breakfast burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tijuana-style taqueria (Downtown) with handmade tortillas and fire-grilled meat.",
+  "website": "https://www.tacos1986.com/",
+  "sources": [
+   {
+    "url": "https://www.tacos1986.com/locations",
+    "what": "brand locations page, live; lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacos1986.com/",
+    "what": "brand site, live; Tijuana-style tacos, mulitas, vampiros",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos 1986",
+  "address": "10874 Kinross Ave",
+  "city": "Los Angeles",
+  "zip": "90024",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Tijuana-style tacos",
+   "mulitas",
+   "vampiros",
+   "quesadillas",
+   "breakfast burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tijuana-style taqueria (Westwood Village) with handmade tortillas and fire-grilled meat.",
+  "website": "https://www.tacos1986.com/",
+  "sources": [
+   {
+    "url": "https://www.tacos1986.com/locations",
+    "what": "brand locations page, live; lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacos1986.com/",
+    "what": "brand site, live; Tijuana-style tacos, mulitas, vampiros",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos 1986",
+  "address": "9039 Lindley Ave",
+  "city": "Northridge",
+  "zip": "91325",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Tijuana-style tacos",
+   "mulitas",
+   "vampiros",
+   "quesadillas",
+   "breakfast burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tijuana-style taqueria (Northridge) with handmade tortillas and fire-grilled meat.",
+  "website": "https://www.tacos1986.com/",
+  "sources": [
+   {
+    "url": "https://www.tacos1986.com/locations",
+    "what": "brand locations page, live; lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacos1986.com/",
+    "what": "brand site, live; Tijuana-style tacos, mulitas, vampiros",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacos1986.com/northridge",
+    "what": "location page, live; hours daily from 9am",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos 1986",
+  "address": "16711 Hawthorne Blvd",
+  "city": "Lawndale",
+  "zip": "90260",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Tijuana-style tacos",
+   "mulitas",
+   "vampiros",
+   "quesadillas",
+   "breakfast burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Tijuana-style taqueria (Lawndale) with handmade tortillas and fire-grilled meat.",
+  "website": "https://www.tacos1986.com/",
+  "sources": [
+   {
+    "url": "https://www.tacos1986.com/locations",
+    "what": "brand locations page, live; lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacos1986.com/",
+    "what": "brand site, live; Tijuana-style tacos, mulitas, vampiros",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Guisados",
+  "address": "2100 E Cesar E Chavez Ave",
+  "city": "Los Angeles",
+  "zip": "90033",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tinga taco",
+   "cochinita pibil taco",
+   "chicharron taco",
+   "bistek taco",
+   "mole taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Braise-based (guisado) tacos on handmade corn tortillas; Boyle Heights, the first location.",
+  "website": "https://www.guisados.la/",
+  "sources": [
+   {
+    "url": "https://www.guisados.la/",
+    "what": "brand site, live; lists 10 locations including this one, and menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Guisados",
+  "address": "1261 W Sunset Blvd",
+  "city": "Los Angeles",
+  "zip": "90026",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tinga taco",
+   "cochinita pibil taco",
+   "chicharron taco",
+   "bistek taco",
+   "mole taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Braise-based (guisado) tacos on handmade corn tortillas; Echo Park.",
+  "website": "https://www.guisados.la/",
+  "sources": [
+   {
+    "url": "https://www.guisados.la/",
+    "what": "brand site, live; lists 10 locations including this one, and menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Guisados",
+  "address": "577 S Arroyo Pkwy",
+  "city": "Pasadena",
+  "zip": "91105",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tinga taco",
+   "cochinita pibil taco",
+   "chicharron taco",
+   "bistek taco",
+   "mole taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Braise-based (guisado) tacos on handmade corn tortillas; Pasadena.",
+  "website": "https://www.guisados.la/",
+  "sources": [
+   {
+    "url": "https://www.guisados.la/",
+    "what": "brand site, live; lists 10 locations including this one, and menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Guisados",
+  "address": "1201 Redondo Ave",
+  "city": "Long Beach",
+  "zip": "90804",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tinga taco",
+   "cochinita pibil taco",
+   "chicharron taco",
+   "bistek taco",
+   "mole taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Braise-based (guisado) tacos on handmade corn tortillas; Long Beach.",
+  "website": "https://www.guisados.la/",
+  "sources": [
+   {
+    "url": "https://www.guisados.la/",
+    "what": "brand site, live; lists 10 locations including this one, and menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Teddy's Red Tacos",
+  "address": "731 E Slauson Ave",
+  "city": "Los Angeles",
+  "zip": "90011",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "red (birria) tacos with consome",
+   "quesatacos",
+   "mulitas",
+   "vampiro tacos",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Birria-focused taqueria.",
+  "website": "https://teddysredtacos.com",
+  "sources": [
+   {
+    "url": "https://teddysredtacos.com",
+    "what": "brand site, live, (c) 2026; lists this location and menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Teddy's Red Tacos",
+  "address": "1827 Ocean Front Walk",
+  "city": "Venice",
+  "zip": "90291",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "red (birria) tacos with consome",
+   "quesatacos",
+   "mulitas",
+   "vampiro tacos",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Birria-focused taqueria.",
+  "website": "https://teddysredtacos.com",
+  "sources": [
+   {
+    "url": "https://teddysredtacos.com",
+    "what": "brand site, live, (c) 2026; lists this location and menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Teddy's Red Tacos",
+  "address": "12434 Whittier Blvd",
+  "city": "Whittier",
+  "zip": "90603",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "red (birria) tacos with consome",
+   "quesatacos",
+   "mulitas",
+   "vampiro tacos",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Birria-focused taqueria.",
+  "website": "https://teddysredtacos.com",
+  "sources": [
+   {
+    "url": "https://teddysredtacos.com",
+    "what": "brand site, live, (c) 2026; lists this location and menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Desvelados",
+  "address": "5306 Atlantic Blvd",
+  "city": "Maywood",
+  "zip": "90270",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "tripa",
+   "buche",
+   "birria",
+   "shrimp and fish tacos",
+   "micheladas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Micheladas-and-tacos spot.",
+  "website": "http://tacoslosdesvelados.com",
+  "sources": [
+   {
+    "url": "http://tacoslosdesvelados.com",
+    "what": "brand site, live; lists 4 locations incl. this one",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://tacoslosdesvelados.com/menu",
+    "what": "menu page, live; taco fillings",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Desvelados",
+  "address": "1402 W Kenneth Rd",
+  "city": "Glendale",
+  "zip": "91201",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "tripa",
+   "buche",
+   "birria",
+   "shrimp and fish tacos",
+   "micheladas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Micheladas-and-tacos spot.",
+  "website": "http://tacoslosdesvelados.com",
+  "sources": [
+   {
+    "url": "http://tacoslosdesvelados.com",
+    "what": "brand site, live; lists 4 locations incl. this one",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://tacoslosdesvelados.com/menu",
+    "what": "menu page, live; taco fillings",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Desvelados",
+  "address": "6741 Greenleaf Ave",
+  "city": "Whittier",
+  "zip": "90601",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "tripa",
+   "buche",
+   "birria",
+   "shrimp and fish tacos",
+   "micheladas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Micheladas-and-tacos spot.",
+  "website": "http://tacoslosdesvelados.com",
+  "sources": [
+   {
+    "url": "http://tacoslosdesvelados.com",
+    "what": "brand site, live; lists 4 locations incl. this one",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://tacoslosdesvelados.com/menu",
+    "what": "menu page, live; taco fillings",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Pinches Tacos",
+  "address": "8200 Sunset Blvd",
+  "city": "Los Angeles",
+  "zip": "90046",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "pollo mole",
+   "lengua",
+   "carnitas",
+   "asada",
+   "crispy fish taco",
+   "burritos",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Family-run taqueria (Sunset Strip; the family's first taqueria per its site).",
+  "website": "http://www.pinchestacos.com/",
+  "sources": [
+   {
+    "url": "http://www.pinchestacos.com/",
+    "what": "brand site, live; locations, hours, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Pinches Tacos",
+  "address": "8665 Washington Blvd",
+  "city": "Culver City",
+  "zip": "90232",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "pollo mole",
+   "lengua",
+   "carnitas",
+   "asada",
+   "crispy fish taco",
+   "burritos",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Family-run taqueria (Culver City).",
+  "website": "http://www.pinchestacos.com/",
+  "sources": [
+   {
+    "url": "http://www.pinchestacos.com/",
+    "what": "brand site, live; locations, hours, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Daniel's Tacos",
+  "address": "5650 Cahuenga Blvd",
+  "city": "North Hollywood",
+  "zip": "91601",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "burritos",
+   "quesadillas",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Fernando Valley taqueria (North Hollywood) with tortillas made daily and a salsa bar.",
+  "website": "https://www.danielstacos.com/",
+  "sources": [
+   {
+    "url": "https://www.danielstacos.com/",
+    "what": "brand site, live; 4 locations with hours, menu, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Daniel's Tacos",
+  "address": "11840 Foothill Blvd Unit C",
+  "city": "Sylmar",
+  "zip": "91342",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "burritos",
+   "quesadillas",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Fernando Valley taqueria (Sylmar) with tortillas made daily and a salsa bar.",
+  "website": "https://www.danielstacos.com/",
+  "sources": [
+   {
+    "url": "https://www.danielstacos.com/",
+    "what": "brand site, live; 4 locations with hours, menu, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Benny's Tacos",
+  "address": "7101 W Manchester Ave",
+  "city": "Los Angeles",
+  "zip": "90045",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "rotisserie chicken",
+   "churros"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Westside taco shop that also sells rotisserie chicken.",
+  "website": "http://bennystacos.com/",
+  "sources": [
+   {
+    "url": "http://bennystacos.com/",
+    "what": "brand site, live; page updated 2026-06-22, (c) 2024-2026; lists this location",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Benny's Tacos",
+  "address": "10401 Venice Blvd Ste 101B",
+  "city": "Culver City",
+  "zip": "90034",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "rotisserie chicken",
+   "churros"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Westside taco shop that also sells rotisserie chicken.",
+  "website": "http://bennystacos.com/",
+  "sources": [
+   {
+    "url": "http://bennystacos.com/",
+    "what": "brand site, live; page updated 2026-06-22, (c) 2024-2026; lists this location",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Goloso",
+  "address": "3720 Pacific Coast Hwy",
+  "city": "Torrance",
+  "zip": "90505",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "birria",
+   "pastor",
+   "carnitas",
+   "tacos dorados de birria",
+   "mulitas",
+   "vampiros"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "South Bay taqueria chain; open daily.",
+  "website": "https://www.tacoselgoloso.com",
+  "sources": [
+   {
+    "url": "https://www.tacoselgoloso.com/locations/torrance",
+    "what": "location page, live; address and hours daily 10am-10pm",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacoselgoloso.com",
+    "what": "brand site, live; menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Goloso",
+  "address": "1212 W Anaheim St",
+  "city": "Harbor City",
+  "zip": "90710",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "birria",
+   "pastor",
+   "carnitas",
+   "tacos dorados de birria",
+   "mulitas",
+   "vampiros"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "South Bay taqueria chain; open daily.",
+  "website": "https://www.tacoselgoloso.com",
+  "sources": [
+   {
+    "url": "https://www.tacoselgoloso.com/locations/harbor-city",
+    "what": "location page, live; address and hours daily 10am-10pm",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacoselgoloso.com",
+    "what": "brand site, live; menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Nazo",
+  "address": "13032 Valley Blvd",
+  "city": "La Puente",
+  "zip": "91746",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish taco",
+   "shrimp taco",
+   "carne asada taco",
+   "al pastor taco",
+   "fish burrito",
+   "ceviche"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": true,
+  "note": "Baja-style fish taco shop; the brand says it has served fish tacos since 1978.",
+  "website": "http://www.taconazo.com",
+  "sources": [
+   {
+    "url": "http://www.taconazo.com",
+    "what": "brand site, live; lists this location and menu; Santa Ana location noted as newly opened",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Nazo",
+  "address": "9516 Garvey Ave",
+  "city": "South El Monte",
+  "zip": "91733",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish taco",
+   "shrimp taco",
+   "carne asada taco",
+   "al pastor taco",
+   "fish burrito",
+   "ceviche"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": true,
+  "note": "Baja-style fish taco shop; the brand says it has served fish tacos since 1978.",
+  "website": "http://www.taconazo.com",
+  "sources": [
+   {
+    "url": "http://www.taconazo.com",
+    "what": "brand site, live; lists this location and menu; Santa Ana location noted as newly opened",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Nazo",
+  "address": "10326 Alondra Blvd",
+  "city": "Bellflower",
+  "zip": "90706",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish taco",
+   "shrimp taco",
+   "carne asada taco",
+   "al pastor taco",
+   "fish burrito",
+   "ceviche"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": true,
+  "note": "Baja-style fish taco shop; the brand says it has served fish tacos since 1978.",
+  "website": "http://www.taconazo.com",
+  "sources": [
+   {
+    "url": "http://www.taconazo.com",
+    "what": "brand site, live; lists this location and menu; Santa Ana location noted as newly opened",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Nazo",
+  "address": "1267 N Grand Ave",
+  "city": "Walnut",
+  "zip": "91789",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish taco",
+   "shrimp taco",
+   "carne asada taco",
+   "al pastor taco",
+   "fish burrito",
+   "ceviche"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": true,
+  "note": "Baja-style fish taco shop; the brand says it has served fish tacos since 1978.",
+  "website": "http://www.taconazo.com",
+  "sources": [
+   {
+    "url": "http://www.taconazo.com",
+    "what": "brand site, live; lists this location and menu; Santa Ana location noted as newly opened",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/los-angeles/restaurants/best-tacos-in-los-angeles",
+    "what": "Time Out LA tacos roundup (33 places), published/updated 2026-06-24 by Yeo & Torres; gives address and tacos; fetched 2026-10-07",
+    "date": "2026-06-24"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tito's Tacos",
+  "address": "11222 Washington Pl",
+  "city": "Culver City",
+  "zip": "90230",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "hard-shell tacos",
+   "bean and cheese burrito",
+   "tamales",
+   "enchiladas"
+  ],
+  "opened": null,
+  "brand_founded": 1959,
+  "chain": false,
+  "note": "Hard-shell taco stand; site gives 1959 as its founding year.",
+  "website": "http://www.titostacos.com/",
+  "sources": [
+   {
+    "url": "http://www.titostacos.com/",
+    "what": "own site, live; address, hours daily 11am-8pm, menu, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Manzano",
+  "address": "11160 Burbank Blvd",
+  "city": "North Hollywood",
+  "zip": "91601",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "tasajo/cecina/chorizo taco",
+   "fish taco",
+   "tlayudas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Oaxacan taqueria that grew out of a taco cart.",
+  "website": "http://tacosmanzano.com/",
+  "sources": [
+   {
+    "url": "http://tacosmanzano.com/",
+    "what": "own site, live, (c) 2026; address, hours, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Jalisciense",
+  "address": "9750 Woodman Ave",
+  "city": "Arleta",
+  "zip": "91331",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "buche",
+   "birria",
+   "chorizo",
+   "lengua",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Arleta taqueria; a Tujunga branch was announced to open 2026-10-10 (not included).",
+  "website": "https://eljalisciensesfv.com/",
+  "sources": [
+   {
+    "url": "https://eljalisciensesfv.com/",
+    "what": "own site, live, (c) 2026; address, hours, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Senor Esparza Tacos",
+  "address": "251 S Irwindale Ave",
+  "city": "Azusa",
+  "zip": "91702",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Tijuana-style tacos on yellow corn tortillas",
+   "burritos",
+   "chilaquiles",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-run Tijuana-style taqueria.",
+  "website": "https://senoresparzatacos.com/",
+  "sources": [
+   {
+    "url": "https://senoresparzatacos.com/",
+    "what": "own site, live, (c) 2026; address and menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Saas",
+  "address": "10030 Rush St",
+  "city": "South El Monte",
+  "zip": "91733",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "barbacoa",
+   "chicharron",
+   "brisket",
+   "tacos dorados de papa",
+   "fish and shrimp tacos",
+   "menudo (weekends)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-owned taco shop at Rush and Central.",
+  "website": "https://semtacosaas.com",
+  "sources": [
+   {
+    "url": "https://semtacosaas.com",
+    "what": "own site, live, (c) 2026; address, hours Tue-Sun, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los 3 Potrillos",
+  "address": "1959 Durfee Ave",
+  "city": "South El Monte",
+  "zip": "91733",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos de cabeza"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taqueria centered on beef-head (cabeza) tacos; open daily 8:30am-midnight per its site.",
+  "website": "http://www.tacoslos3potrillos.com/",
+  "sources": [
+   {
+    "url": "http://www.tacoslos3potrillos.com/",
+    "what": "own site, live, (c) 2025; address, hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Jaime! Taqueria",
+  "address": "450 Main St",
+  "city": "El Segundo",
+  "zip": "90245",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos on hand-rolled tortillas",
+   "breakfast burritos",
+   "guacamole"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taqueria from Jackson Kalb's Memento Mori Hospitality; cashless.",
+  "website": "http://jaimetaqueria.com/",
+  "sources": [
+   {
+    "url": "http://jaimetaqueria.com/",
+    "what": "own site, live, (c) 2026; address, hours, menu periods",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Plus",
+  "address": "1525 S Bundy Dr",
+  "city": "Los Angeles",
+  "zip": "90025",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "quesadillas",
+   "taquitos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Westside taco shop; open daily 9am-10pm per its site.",
+  "website": "http://www.tacoplus.com/",
+  "sources": [
+   {
+    "url": "http://www.tacoplus.com/",
+    "what": "own site, live, (c) 2025; both locations, hours, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Plus",
+  "address": "9824 National Blvd",
+  "city": "Los Angeles",
+  "zip": "90034",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "quesadillas",
+   "taquitos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Westside taco shop; open daily 9am-10pm per its site.",
+  "website": "http://www.tacoplus.com/",
+  "sources": [
+   {
+    "url": "http://www.tacoplus.com/",
+    "what": "own site, live, (c) 2025; both locations, hours, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Mi Casita",
+  "address": "18342 Soledad Canyon Rd",
+  "city": "Santa Clarita",
+  "zip": "91387",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "lengua",
+   "tripas",
+   "crunchy tacos",
+   "burritos",
+   "taquitos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Santa Clarita taqueria.",
+  "website": "http://TacosMiCasita.com/",
+  "sources": [
+   {
+    "url": "http://TacosMiCasita.com/",
+    "what": "own site, live; address, hours, menu, online ordering (no 2025/26 date seen)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Otro Dia Tacos",
+  "address": "9911 S Santa Monica Blvd",
+  "city": "Beverly Hills",
+  "zip": "90212",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (various cuts)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taco bar in Beverly Hills.",
+  "website": "http://www.otrodiatacos.com/",
+  "sources": [
+   {
+    "url": "http://www.otrodiatacos.com/",
+    "what": "own site, live; address, hours Mon-Sat 11am-9pm, Sun 11am-3pm (no 2025/26 date seen)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roadside Taco",
+  "address": "10628 Ventura Blvd",
+  "city": "Studio City",
+  "zip": "91604",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "street tacos on handmade corn tortillas",
+   "birria",
+   "margaritas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taco restaurant and bar; closed Mondays.",
+  "website": "http://Roadsidetaco.com/",
+  "sources": [
+   {
+    "url": "http://Roadsidetaco.com/",
+    "what": "own site, live; address, Tue-Sun service, menu, Taco Tuesday (no 2025/26 date seen)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Xochipilli Taco Bar",
+  "address": "7213 Balboa Blvd",
+  "city": "Van Nuys",
+  "zip": "91406",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled fish tacos",
+   "fried shrimp tacos",
+   "chicken in mole",
+   "pozole",
+   "churros"
+  ],
+  "opened": 2021,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Van Nuys taco bar; its site says it opened in 2021.",
+  "website": "http://www.XochipilliTacoBar.com/",
+  "sources": [
+   {
+    "url": "http://www.XochipilliTacoBar.com/",
+    "what": "own site, live; address, hours, menu, opened 2021",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Andy's Surf N Turf Tacos",
+  "address": "10224 Balboa Blvd",
+  "city": "Granada Hills",
+  "zip": "91344",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled mahi-mahi taco",
+   "smoked tuna taco",
+   "marinated steak taco",
+   "Surf N Turf burrito"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Baja-style street tacos with grilled wild-caught fish.",
+  "website": "https://www.andyssurfnturftacos.com",
+  "sources": [
+   {
+    "url": "https://www.andyssurfnturftacos.com",
+    "what": "own site, live; address, hours daily 8am-8pm, menu ((c) 2019 footer)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Sonora",
+  "address": "2940 Clark Ave",
+  "city": "Long Beach",
+  "zip": "90815",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "hard-shell tacos",
+   "street tacos",
+   "shrimp tacos",
+   "2-lb Baja Burrito",
+   "salsa bar"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Long Beach taco and burrito counter; its site says it has served since 1998.",
+  "website": "https://bajasonora.com/",
+  "sources": [
+   {
+    "url": "https://bajasonora.com/",
+    "what": "own site, live, (c) 2026; hours, menu, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Viva Tacos La Estrella",
+  "address": "2315 E Palmdale Blvd Ste A",
+  "city": "Palmdale",
+  "zip": "93550",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "quesadillas",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taqueria (9am-10pm daily per its site).",
+  "website": "https://www.tacoslaestrella.com",
+  "sources": [
+   {
+    "url": "https://www.tacoslaestrella.com",
+    "what": "own site, live; both addresses with hours and menu ((c) 2017 footer, no 2025/26 date seen)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Viva Tacos La Estrella",
+  "address": "2525 E Foothill Blvd",
+  "city": "Pasadena",
+  "zip": "91107",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "quesadillas",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taqueria (open 24 hours per its site).",
+  "website": "https://www.tacoslaestrella.com",
+  "sources": [
+   {
+    "url": "https://www.tacoslaestrella.com",
+    "what": "own site, live; both addresses with hours and menu ((c) 2017 footer, no 2025/26 date seen)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria De Anda",
+  "address": "10731 La Mirada Blvd",
+  "city": "Whittier",
+  "zip": "90604",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Taqueria De Anda location (mostly Orange County chain).",
+  "website": "https://www.taqueriadeanda.com/",
+  "sources": [
+   {
+    "url": "https://www.taqueriadeanda.com/",
+    "what": "brand site, live, (c) 2025; lists this location",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria De Anda",
+  "address": "1690 S Garey Ave",
+  "city": "Pomona",
+  "zip": "91766",
+  "county": "Los Angeles",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Taqueria De Anda location (mostly Orange County chain).",
+  "website": "https://www.taqueriadeanda.com/",
+  "sources": [
+   {
+    "url": "https://www.taqueriadeanda.com/",
+    "what": "brand site, live, (c) 2025; lists this location",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja California Tacos",
+  "address": "1904 Hillhurst Ave",
+  "city": "Los Angeles",
+  "zip": "90027",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered (crispy) fish taco",
+   "grilled shrimp taco",
+   "carne asada taco",
+   "ceviche",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Baja-style fish taco shop.",
+  "website": "https://www.bajacaliforniatacos.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacaliforniatacos.com/",
+    "what": "own site, live; both addresses, menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.bajacaliforniatacos.com/menu",
+    "what": "menu page, live, with Order Now links for both locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja California Tacos",
+  "address": "4002 Lincoln Blvd",
+  "city": "Marina del Rey",
+  "zip": "90292",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered (crispy) fish taco",
+   "grilled shrimp taco",
+   "carne asada taco",
+   "ceviche",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Baja-style fish taco shop.",
+  "website": "https://www.bajacaliforniatacos.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacaliforniatacos.com/",
+    "what": "own site, live; both addresses, menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.bajacaliforniatacos.com/menu",
+    "what": "menu page, live, with Order Now links for both locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Cali Fish & Tacos",
+  "address": "2001 W Valley Blvd",
+  "city": "Alhambra",
+  "zip": "91803",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered fish taco",
+   "fish burrito",
+   "ceviche",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Gabriel Valley fish taco shop.",
+  "website": "https://www.bajacali.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacali.com/",
+    "what": "brand site, live, (c) 2026; lists 6 locations incl. this one; battered fish tacos on menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Cali Fish & Tacos",
+  "address": "31 E Main St",
+  "city": "Alhambra",
+  "zip": "91801",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered fish taco",
+   "fish burrito",
+   "ceviche",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Gabriel Valley fish taco shop.",
+  "website": "https://www.bajacali.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacali.com/",
+    "what": "brand site, live, (c) 2026; lists 6 locations incl. this one; battered fish tacos on menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Cali Fish & Tacos",
+  "address": "490 N Lake Ave",
+  "city": "Pasadena",
+  "zip": "91101",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered fish taco",
+   "fish burrito",
+   "ceviche",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Gabriel Valley fish taco shop.",
+  "website": "https://www.bajacali.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacali.com/",
+    "what": "brand site, live, (c) 2026; lists 6 locations incl. this one; battered fish tacos on menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Cali Fish & Tacos",
+  "address": "2487 E Washington Blvd",
+  "city": "Pasadena",
+  "zip": "91104",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered fish taco",
+   "fish burrito",
+   "ceviche",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Gabriel Valley fish taco shop.",
+  "website": "https://www.bajacali.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacali.com/",
+    "what": "brand site, live, (c) 2026; lists 6 locations incl. this one; battered fish tacos on menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Cali Fish & Tacos",
+  "address": "314 W Huntington Dr",
+  "city": "Monrovia",
+  "zip": "91016",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered fish taco",
+   "fish burrito",
+   "ceviche",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Gabriel Valley fish taco shop.",
+  "website": "https://www.bajacali.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacali.com/",
+    "what": "brand site, live, (c) 2026; lists 6 locations incl. this one; battered fish tacos on menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Cali Fish & Tacos",
+  "address": "1535 E Amar Rd",
+  "city": "West Covina",
+  "zip": "91792",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "battered fish taco",
+   "fish burrito",
+   "ceviche",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "San Gabriel Valley fish taco shop.",
+  "website": "https://www.bajacali.com/",
+  "sources": [
+   {
+    "url": "https://www.bajacali.com/",
+    "what": "brand site, live, (c) 2026; lists 6 locations incl. this one; battered fish tacos on menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Grand Fish Tacos & Ceviche",
+  "address": "15410 S Western Ave Ste A",
+  "city": "Gardena",
+  "zip": "90249",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled fish taco",
+   "fried fish taco",
+   "grilled/fried shrimp taco",
+   "mahi-mahi taco",
+   "albacore tacos dorados",
+   "ceviche"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-owned South Bay seafood taco shop.",
+  "website": "http://grandfishtacosandceviche.com/",
+  "sources": [
+   {
+    "url": "http://grandfishtacosandceviche.com/",
+    "what": "own site, live; address, hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://grandfishtacosandceviche.com/menu",
+    "what": "menu page, live; fish and shrimp tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Playita Mariscos",
+  "address": "3143 Sunset Blvd",
+  "city": "Los Angeles",
+  "zip": "90026",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos",
+   "shrimp tacos",
+   "ceviches",
+   "campechanas",
+   "tostadas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Silver Lake mariscos spot.",
+  "website": "https://www.playitamariscos.com",
+  "sources": [
+   {
+    "url": "https://www.playitamariscos.com",
+    "what": "own site, live; address, hours daily, menu (no 2025/26 date seen)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Catch & Grill",
+  "address": "12219 Jefferson Blvd",
+  "city": "Culver City",
+  "zip": "90230",
+  "county": "Los Angeles",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja fish tacos",
+   "shrimp tacos",
+   "ceviche tostadas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Baja-style seafood grill; open daily 8am-10:30pm per its site.",
+  "website": "https://bajacatchandgrillca.com/",
+  "sources": [
+   {
+    "url": "https://bajacatchandgrillca.com/",
+    "what": "own site, live; address, hours, menu, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "88Q Korean BBQ",
+  "address": "1725 Nogales St #112",
+  "city": "Rowland Heights",
+  "zip": "91748",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE tabletop Korean BBQ",
+   "galbi",
+   "wagyu",
+   "picanha",
+   "banchan"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ.",
+  "website": "http://www.88qkbbq.com/",
+  "sources": [
+   {
+    "url": "http://www.88qkbbq.com/",
+    "what": "own site, live; address, current hours, menu and reservations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "AYCE Gogi",
+  "address": "7128 Van Nuys Blvd",
+  "city": "Van Nuys",
+  "zip": "91405",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "kalbi",
+   "beef bulgogi",
+   "brisket (chadol)",
+   "pork belly (samgyeopsal)",
+   "beef tongue",
+   "spicy pork"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ with a pinball bar; 90-minute seating.",
+  "website": "https://aycegogi.com",
+  "sources": [
+   {
+    "url": "https://aycegogi.com",
+    "what": "own site, live, (c) 2026; both addresses, hours, AYCE meat list",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "AYCE Gogi",
+  "address": "6747 Fallbrook Ave",
+  "city": "West Hills",
+  "zip": "91307",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "kalbi",
+   "beef bulgogi",
+   "brisket (chadol)",
+   "pork belly (samgyeopsal)",
+   "beef tongue",
+   "spicy pork"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ with a pinball bar; 90-minute seating.",
+  "website": "https://aycegogi.com",
+  "sources": [
+   {
+    "url": "https://aycegogi.com",
+    "what": "own site, live, (c) 2026; both addresses, hours, AYCE meat list",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "BBQ Chung Dam",
+  "address": "100 S Western Ave",
+  "city": "Los Angeles",
+  "zip": "90004",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "boneless beef short rib",
+   "king-size beef short rib",
+   "prime beef top sirloin"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Koreatown AYCE Korean BBQ (also in Garden Grove).",
+  "website": "http://bbqchungdam.com/",
+  "sources": [
+   {
+    "url": "http://bbqchungdam.com/",
+    "what": "own site, live, (c) 2025; LA menu PDF dated 2025-09-23; hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Charcoal Korean BBQ",
+  "address": "19158 Soledad Canyon Rd",
+  "city": "Canyon Country",
+  "zip": "91351",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE BBQ",
+   "happy hour AYCE",
+   "BBQ entrees"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Santa Clarita Valley AYCE Korean BBQ; open daily noon-10pm.",
+  "website": "http://www.charcoalkoreanbbq.com",
+  "sources": [
+   {
+    "url": "http://www.charcoalkoreanbbq.com",
+    "what": "own site, live; AYCE menus, hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.charcoalkoreanbbq.com/contact",
+    "what": "contact page, live; address and hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "126 N Artsakh Ave",
+  "city": "Glendale",
+  "zip": "91206",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Korean BBQ grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen Korean BBQ location; the brand says it was founded in Los Angeles in 2011.",
+  "website": "http://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://genkoreanbbq.com/locations",
+    "what": "brand locations page, live; lists this location as open",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://genkoreanbbq.com/",
+    "what": "brand site, live; tabletop grills, founded 2011",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "10151 Reseda Blvd",
+  "city": "Northridge",
+  "zip": "91324",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Korean BBQ grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen Korean BBQ location; the brand says it was founded in Los Angeles in 2011.",
+  "website": "http://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://genkoreanbbq.com/locations",
+    "what": "brand locations page, live; lists this location as open",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://genkoreanbbq.com/",
+    "what": "brand site, live; tabletop grills, founded 2011",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "68 W Main St",
+  "city": "Alhambra",
+  "zip": "91801",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Korean BBQ grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen Korean BBQ location; the brand says it was founded in Los Angeles in 2011.",
+  "website": "http://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://genkoreanbbq.com/locations",
+    "what": "brand locations page, live; lists this location as open",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://genkoreanbbq.com/",
+    "what": "brand site, live; tabletop grills, founded 2011",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "24301 Crenshaw Blvd",
+  "city": "Torrance",
+  "zip": "90505",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Korean BBQ grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen Korean BBQ location; the brand says it was founded in Los Angeles in 2011.",
+  "website": "http://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://genkoreanbbq.com/locations",
+    "what": "brand locations page, live; lists this location as open",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://genkoreanbbq.com/",
+    "what": "brand site, live; tabletop grills, founded 2011",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "11472 South St",
+  "city": "Cerritos",
+  "zip": "90703",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Korean BBQ grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen Korean BBQ location; the brand says it was founded in Los Angeles in 2011.",
+  "website": "http://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://genkoreanbbq.com/locations",
+    "what": "brand locations page, live; lists this location as open",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://genkoreanbbq.com/",
+    "what": "brand site, live; tabletop grills, founded 2011",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "19100 Gridley Rd",
+  "city": "Cerritos",
+  "zip": "90703",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Korean BBQ grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen Korean BBQ location; the brand says it was founded in Los Angeles in 2011.",
+  "website": "http://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://genkoreanbbq.com/locations",
+    "what": "brand locations page, live; lists this location as open",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://genkoreanbbq.com/",
+    "what": "brand site, live; tabletop grills, founded 2011",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "300 S California Ave",
+  "city": "West Covina",
+  "zip": "91790",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Korean BBQ grilled on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen Korean BBQ location; the brand says it was founded in Los Angeles in 2011.",
+  "website": "http://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://genkoreanbbq.com/locations",
+    "what": "brand locations page, live; lists this location as open",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://genkoreanbbq.com/",
+    "what": "brand site, live; tabletop grills, founded 2011",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Han Korean BBQ House",
+  "address": "201 E Magnolia Blvd #281",
+  "city": "Burbank",
+  "zip": "91502",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE Korean BBQ (House Special, Premium, Premium Plus tiers)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "AYCE Korean BBQ near Burbank Town Center.",
+  "website": "https://hanbbq.com",
+  "sources": [
+   {
+    "url": "https://hanbbq.com",
+    "what": "own site, live, (c) 2026; hours incl. special hours for 2026-09-11; AYCE tiers",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hanoo Kalbi",
+  "address": "9711 Reseda Blvd",
+  "city": "Northridge",
+  "zip": "91324",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE tabletop BBQ (beef, pork, chicken; tiers A/B/C)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ.",
+  "website": "http://www.hanookalbi.com/",
+  "sources": [
+   {
+    "url": "http://www.hanookalbi.com/",
+    "what": "own site, live, (c) 2026; both addresses with hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hanoo Kalbi",
+  "address": "17623 Sherman Way",
+  "city": "Van Nuys",
+  "zip": "91406",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE tabletop BBQ (beef, pork, chicken; tiers A/B/C)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ.",
+  "website": "http://www.hanookalbi.com/",
+  "sources": [
+   {
+    "url": "http://www.hanookalbi.com/",
+    "what": "own site, live, (c) 2026; both addresses with hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hanu Korean BBQ",
+  "address": "2999 W 6th St #104",
+  "city": "Los Angeles",
+  "zip": "90020",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "USDA premium beef, pork and chicken grilled at the table"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Koreatown Korean BBQ and lounge.",
+  "website": "https://hanukbbq.com/",
+  "sources": [
+   {
+    "url": "https://hanukbbq.com/",
+    "what": "own site, live; address, hours 7 days, reservations (latest dated content May 2024)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "House of Galbi",
+  "address": "15927 Ventura Blvd",
+  "city": "Encino",
+  "zip": "91436",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi",
+   "AYCE and a la carte Korean BBQ"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Encino Korean BBQ with AYCE and a la carte menus.",
+  "website": "https://www.houseofgalbi.net/",
+  "sources": [
+   {
+    "url": "https://www.houseofgalbi.net/contact",
+    "what": "contact page, live, (c) 2026; address, hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Kkondae K-BBQ",
+  "address": "2561 W Olympic Blvd",
+  "city": "Los Angeles",
+  "zip": "90006",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "samgyeopsal (grilled pork belly)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Koreatown pork-belly-focused Korean BBQ; open evenings.",
+  "website": "https://kkondaekbbq.com/",
+  "sources": [
+   {
+    "url": "https://kkondaekbbq.com/",
+    "what": "own site, live; address, live hours widget",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "MGD Korean BBQ",
+  "address": "9350 Corbin Ave",
+  "city": "Northridge",
+  "zip": "91324",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Standard and Supreme AYCE Korean BBQ"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Northridge AYCE Korean BBQ.",
+  "website": "http://www.mgdkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://www.mgdkoreanbbq.com/",
+    "what": "own site, live; AYCE tiers, happy hour, phone",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Moohan Korean BBQ",
+  "address": "3435 Wilshire Blvd Ste 123",
+  "city": "Los Angeles",
+  "zip": "90010",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE Korean BBQ"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Koreatown AYCE Korean BBQ open late (to 2am most nights).",
+  "website": "https://www.moohankbbq.com",
+  "sources": [
+   {
+    "url": "https://www.moohankbbq.com",
+    "what": "own site, live, (c) 2026; address, hours, Resy reservations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Namoo Korean BBQ",
+  "address": "13455 Maxella Ave Ste 270",
+  "city": "Marina del Rey",
+  "zip": "90292",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "ribeye",
+   "short rib",
+   "pork belly",
+   "beef"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Westside Korean BBQ; closed Mondays.",
+  "website": "https://www.namookbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.namookbbq.com/",
+    "what": "own site, live; address, hours, OpenTable reservations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Park's BBQ",
+  "address": "955 S Vermont Ave",
+  "city": "Los Angeles",
+  "zip": "90006",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Park's gal-bi (marinated short rib)",
+   "ggot sal (prime beef)",
+   "ribeye bulgogi",
+   "brisket point",
+   "prime beef tongue",
+   "pork belly",
+   "pork neck"
+  ],
+  "opened": null,
+  "brand_founded": 2003,
+  "chain": false,
+  "note": "Koreatown Korean BBQ centered on USDA Prime and wagyu beef; site says operating since 2003.",
+  "website": "http://www.parksbbq.com",
+  "sources": [
+   {
+    "url": "http://www.parksbbq.com",
+    "what": "own site, live; address, hours incl. holidays, since 2003",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.parksbbq.com/menu",
+    "what": "menu page, live; BBQ meat list",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Road to Seoul",
+  "address": "1230 S Western Ave",
+  "city": "Los Angeles",
+  "zip": "90006",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE Korean BBQ: beef, pork, bulgogi, squid"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Koreatown AYCE Korean BBQ (Western location).",
+  "website": "https://roadtoseoul.net/",
+  "sources": [
+   {
+    "url": "https://roadtoseoul.net/",
+    "what": "own site, live; both addresses with hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Road to Seoul",
+  "address": "703 S Vermont Ave",
+  "city": "Los Angeles",
+  "zip": "90005",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE Korean BBQ: beef, pork, bulgogi, squid"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Koreatown AYCE Korean BBQ (Vermont location).",
+  "website": "https://roadtoseoul.net/",
+  "sources": [
+   {
+    "url": "https://roadtoseoul.net/",
+    "what": "own site, live; both addresses with hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sanya Korean BBQ",
+  "address": "2897 W Olympic Blvd #105",
+  "city": "Los Angeles",
+  "zip": "90006",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE specials",
+   "group and single-diner BBQ menus"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Koreatown Korean BBQ.",
+  "website": "https://www.sanyakbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.sanyakbbq.com/",
+    "what": "own site, live; address, hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Seoul Chamsoot BBQ",
+  "address": "2139 Foothill Blvd",
+  "city": "La Canada Flintridge",
+  "zip": "91011",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "charcoal-grilled premium cuts",
+   "BBQ combos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Charcoal-grill Korean BBQ in La Canada Flintridge.",
+  "website": "https://www.seoulchamsootbbq.com",
+  "sources": [
+   {
+    "url": "https://www.seoulchamsootbbq.com",
+    "what": "own site, live; address, hours, images dated January 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "TGI Korean BBQ",
+  "address": "2585 W Olympic Blvd 2nd Fl",
+  "city": "Los Angeles",
+  "zip": "90006",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE Korean BBQ"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "AYCE Korean BBQ with a large outdoor patio; valet parking.",
+  "website": "http://www.tgikoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://www.tgikoreanbbq.com/",
+    "what": "own site, live; address, hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Thirsty Cow Korean BBQ",
+  "address": "17500 Castleton St",
+  "city": "City of Industry",
+  "zip": "91748",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "USDA Prime beef",
+   "dry-aged beef",
+   "galbi"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "AYCE Korean BBQ (also in Garden Grove).",
+  "website": "http://thirstycowbbq.com/",
+  "sources": [
+   {
+    "url": "http://thirstycowbbq.com/",
+    "what": "own site, live, (c) 2026; both addresses, hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Wow Cow Korean BBQ",
+  "address": "10632 Lower Azusa Rd",
+  "city": "El Monte",
+  "zip": "91731",
+  "county": "Los Angeles",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "AYCE Korean BBQ",
+   "seafood boil",
+   "sushi"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "AYCE Korean BBQ with seafood boil and sushi.",
+  "website": "http://www.wowcowkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "http://www.wowcowkoreanbbq.com/",
+    "what": "own site, live, (c) 2024; address, hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ }
+]

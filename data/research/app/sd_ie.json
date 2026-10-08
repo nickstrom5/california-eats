@@ -1,0 +1,5461 @@
+[
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "10765 Westview Pkwy",
+  "city": "San Diego",
+  "zip": "92126",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "marinated beef",
+   "pork belly",
+   "brisket",
+   "chicken",
+   "grilled seafood"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Mira Mesa branch of the Gen chain; guests grill meats on built-in tabletop grills, all-you-can-eat.",
+  "website": "https://genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://genkoreanbbq.com/locations",
+    "what": "own locations page, live, lists this address with current weekly hours and an order link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "own brand page, live: tabletop grills, all-you-can-eat; founded 2011 in Los Angeles",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "3370 Grand Ave",
+  "city": "Chino Hills",
+  "zip": "91709",
+  "county": "San Bernardino",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "marinated beef",
+   "pork belly",
+   "brisket",
+   "chicken",
+   "grilled seafood"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Chino Hills branch of the Gen chain; tabletop-grill all-you-can-eat Korean BBQ.",
+  "website": "https://genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://genkoreanbbq.com/locations",
+    "what": "own locations page, live, lists this address with current weekly hours and an order link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "own brand page, live: tabletop grills, all-you-can-eat; founded 2011 in Los Angeles",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "390 N McKinley St",
+  "city": "Corona",
+  "zip": "92879",
+  "county": "Riverside",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "marinated beef",
+   "pork belly",
+   "brisket",
+   "chicken",
+   "grilled seafood"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Corona branch of the Gen chain; tabletop-grill all-you-can-eat Korean BBQ.",
+  "website": "https://genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://genkoreanbbq.com/locations",
+    "what": "own locations page, live, lists this address with current weekly hours and an order link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "own brand page, live: tabletop grills, all-you-can-eat; founded 2011 in Los Angeles",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "11837 E Foothill Blvd Ste A",
+  "city": "Rancho Cucamonga",
+  "zip": "91730",
+  "county": "San Bernardino",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "marinated beef",
+   "pork belly",
+   "brisket",
+   "chicken",
+   "grilled seafood"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Rancho Cucamonga branch of the Gen chain; tabletop-grill all-you-can-eat Korean BBQ.",
+  "website": "https://genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://genkoreanbbq.com/locations",
+    "what": "own locations page, live, lists this address with current weekly hours and an order link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "own brand page, live: tabletop grills, all-you-can-eat; founded 2011 in Los Angeles",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "2N1 Korean BBQ",
+  "address": "401 Vista Village Dr #401-A",
+  "city": "Vista",
+  "zip": "92083",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "marinated galbi",
+   "LA galbi",
+   "beef brisket",
+   "pork belly",
+   "bulgogi",
+   "pork jowl"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ with built-in tabletop grills; sister location in Temecula.",
+  "website": "https://2n1kbbq.com/",
+  "sources": [
+   {
+    "url": "https://2n1kbbq.com/",
+    "what": "own site, live: both locations with addresses and daily hours; built-in tabletop grills",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://2n1kbbq.com/food-menu",
+    "what": "own all-you-can-eat menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "2N1 Korean BBQ",
+  "address": "27483 Ynez Rd",
+  "city": "Temecula",
+  "zip": "92591",
+  "county": "Riverside",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "marinated galbi",
+   "LA galbi",
+   "beef brisket",
+   "pork belly",
+   "bulgogi",
+   "pork jowl"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Temecula location of 2N1; all-you-can-eat Korean BBQ grilled at the table.",
+  "website": "https://2n1kbbq.com/",
+  "sources": [
+   {
+    "url": "https://2n1kbbq.com/",
+    "what": "own site, live: both locations with addresses and daily hours; built-in tabletop grills",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://2n1kbbq.com/food-menu",
+    "what": "own all-you-can-eat menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sura Korean BBQ",
+  "address": "1960 Optima St",
+  "city": "Chula Vista",
+  "zip": "91915",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "premium cuts served to the table",
+   "shabu shabu"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Chula Vista all-you-can-eat Korean BBQ that mixes a meat buffet line with table-served premium cuts; also serves shabu shabu.",
+  "website": "https://surakbbqsd.com/",
+  "sources": [
+   {
+    "url": "https://surakbbqsd.com/",
+    "what": "own site, live: address, current hours, Toast online-ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://surakbbqsd.com/about-us/",
+    "what": "own about page, live: AYCE Korean BBQ and shabu shabu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Handoo Korean BBQ",
+  "address": "4647 Convoy St #104",
+  "city": "San Diego",
+  "zip": "92111",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "premium meats",
+   "banchan"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Convoy Street all-you-can-eat Korean BBQ; guests grill meats at the table; walk-in only except large parties.",
+  "website": "https://www.handookbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.handookbbq.com/",
+    "what": "own site, live (site assets updated 2026): AYCE, meats grilled at the table, Convoy address",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Prime Grill",
+  "address": "4620 Convoy St",
+  "city": "San Diego",
+  "zip": "92111",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "New York steak",
+   "marinated top blade",
+   "beef bulgogi",
+   "thin-sliced brisket",
+   "beef belly",
+   "pork neck",
+   "spicy small octopus",
+   "beef small intestine"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Convoy Street Korean BBQ restaurant grilling premium meats; takeout ordering online.",
+  "website": "https://www.kprimegrill.com/",
+  "sources": [
+   {
+    "url": "https://www.kprimegrill.com/",
+    "what": "own site, live (site assets updated Sept 2026): Korean BBQ meat list, Convoy address, online-ordering link",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hanu Korean BBQ",
+  "address": "970 Eastlake Pkwy #108",
+  "city": "Chula Vista",
+  "zip": "91914",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "premium meats",
+   "banchan"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Eastlake Parkway Plaza all-you-can-eat Korean BBQ; diners grill their own meats.",
+  "website": "https://www.hanukbbqsd.com/",
+  "sources": [
+   {
+    "url": "https://www.hanukbbqsd.com/",
+    "what": "own site, live: AYCE grilling, store hours, Eastlake Parkway address",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Temecula Korean BBQ",
+  "address": "41925 Motor Car Pkwy Ste G",
+  "city": "Temecula",
+  "zip": "92591",
+  "county": "Riverside",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "pork belly",
+   "bulgogi",
+   "spicy pork",
+   "beef brisket",
+   "short rib"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean BBQ on Motor Car Parkway in Temecula.",
+  "website": "https://temeculakoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://temeculakoreanbbq.com/",
+    "what": "own site, live: address and AYCE menu tiers",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rockin' Baja Lobster",
+  "address": "322 Fifth Ave",
+  "city": "San Diego",
+  "zip": "92101",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "San Felipe-style fried fish taco",
+   "grilled fish taco sampler (salmon, mahi, cod)",
+   "lobster taco",
+   "Puerto Nuevo-style lobster"
+  ],
+  "opened": null,
+  "brand_founded": 1983,
+  "chain": true,
+  "note": "Gaslamp Quarter branch of a local Baja-style seafood group; buckets of Puerto Nuevo-style lobster and fish tacos.",
+  "website": "https://rockinbaja.com/gaslamp/",
+  "sources": [
+   {
+    "url": "https://rockinbaja.com/gaslamp/",
+    "what": "own location page, live: address, menu with fish tacos",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://rockinbaja.com/about-us/",
+    "what": "own about page, live: brand founded 1983",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rockin' Baja Lobster",
+  "address": "258 Harbor Dr S",
+  "city": "Oceanside",
+  "zip": "92054",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "San Felipe-style fried fish taco",
+   "grilled fish taco sampler (salmon, mahi, cod)",
+   "lobster taco",
+   "Puerto Nuevo-style lobster"
+  ],
+  "opened": null,
+  "brand_founded": 1983,
+  "chain": true,
+  "note": "Oceanside Harbor branch of Rockin' Baja Lobster; Baja-style seafood and fish tacos on the harbor.",
+  "website": "https://rockinbaja.com/oceanside/",
+  "sources": [
+   {
+    "url": "https://rockinbaja.com/oceanside/",
+    "what": "own location page, live: address, hours, menu with fish tacos",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://rockinbaja.com/about-us/",
+    "what": "own about page, live: brand founded 1983",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rockin' Baja Lobster",
+  "address": "3890 Twiggs St",
+  "city": "San Diego",
+  "zip": "92110",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "San Felipe-style fried fish taco",
+   "grilled fish taco sampler (salmon, mahi, cod)",
+   "lobster taco",
+   "Puerto Nuevo-style lobster"
+  ],
+  "opened": null,
+  "brand_founded": 1983,
+  "chain": true,
+  "note": "Old Town branch of Rockin' Baja Lobster, the group's first location per its site.",
+  "website": "https://rockinbaja.com/old-town/",
+  "sources": [
+   {
+    "url": "https://rockinbaja.com/old-town/",
+    "what": "own location page, live: address, hours, menu with fish tacos",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://rockinbaja.com/about-us/",
+    "what": "own about page, live: brand founded 1983",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Rick's Cantina",
+  "address": "170 Sixth Ave",
+  "city": "San Diego",
+  "zip": "92101",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "San Felipe-style fried fish taco",
+   "fish taco sampler",
+   "burritos",
+   "seafood platters"
+  ],
+  "opened": null,
+  "brand_founded": 1983,
+  "chain": true,
+  "note": "Quick-service Baja-style seafood cantina between Petco Park and the Convention Center, from the Rockin' Baja Lobster group.",
+  "website": "https://rockinbaja.com/baja-ricks/",
+  "sources": [
+   {
+    "url": "https://rockinbaja.com/baja-ricks/",
+    "what": "own location page, live: address, menu with fish tacos",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://rockinbaja.com/about-us/",
+    "what": "own about page, live: brand founded 1983",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Baja Betty's",
+  "address": "1421 University Ave",
+  "city": "San Diego",
+  "zip": "92103",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "battered mini fish tacos with cabbage and baja sauce",
+   "street tacos (carnitas, chicken adobado, carne asada)",
+   "birria flautas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Hillcrest Mexican restaurant and bar; menu has battered Baja-style mini fish tacos.",
+  "website": "https://bajabettyssd.com/",
+  "sources": [
+   {
+    "url": "https://bajabettyssd.com/food/",
+    "what": "own food menu page, live (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://bajabettyssd.com/",
+    "what": "own site, live: current hours and Toast ordering link",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "City Tacos",
+  "address": "3028 University Ave",
+  "city": "San Diego",
+  "zip": "92104",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pescado taco (fried basa, cabbage)",
+   "Sonoran fish taco (battered)",
+   "carnitas",
+   "pollo asado",
+   "carne asada",
+   "birria",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "North Park branch of a local taco group with six San Diego County shops; menu mixes traditional and house tacos.",
+  "website": "https://citytacossd.com/locations-north-park/",
+  "sources": [
+   {
+    "url": "https://citytacossd.com/locations-north-park/",
+    "what": "own location page, live: address, daily hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://citytacossd.com/all-menus/",
+    "what": "own menu page, live: same menu at all six locations, fried fish tacos with cabbage",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "City Tacos",
+  "address": "8325 La Mesa Blvd",
+  "city": "La Mesa",
+  "zip": "91942",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pescado taco (fried basa, cabbage)",
+   "Sonoran fish taco (battered)",
+   "carnitas",
+   "pollo asado",
+   "carne asada",
+   "birria",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "La Mesa branch of a local taco group with six San Diego County shops; menu mixes traditional and house tacos.",
+  "website": "https://citytacossd.com/locations-la-mesa/",
+  "sources": [
+   {
+    "url": "https://citytacossd.com/locations-la-mesa/",
+    "what": "own location page, live: address, daily hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://citytacossd.com/all-menus/",
+    "what": "own menu page, live: same menu at all six locations, fried fish tacos with cabbage",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "City Tacos",
+  "address": "1031 S Coast Hwy 101 Ste A101",
+  "city": "Encinitas",
+  "zip": "92024",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pescado taco (fried basa, cabbage)",
+   "Sonoran fish taco (battered)",
+   "carnitas",
+   "pollo asado",
+   "carne asada",
+   "birria",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Encinitas branch of a local taco group with six San Diego County shops; menu mixes traditional and house tacos.",
+  "website": "https://citytacossd.com/locations-encinitas/",
+  "sources": [
+   {
+    "url": "https://citytacossd.com/locations-encinitas/",
+    "what": "own location page, live: address, daily hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://citytacossd.com/all-menus/",
+    "what": "own menu page, live: same menu at all six locations, fried fish tacos with cabbage",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "City Tacos",
+  "address": "11045 Roselle St Ste 100",
+  "city": "San Diego",
+  "zip": "92121",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pescado taco (fried basa, cabbage)",
+   "Sonoran fish taco (battered)",
+   "carnitas",
+   "pollo asado",
+   "carne asada",
+   "birria",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Sorrento Valley branch of a local taco group with six San Diego County shops; menu mixes traditional and house tacos.",
+  "website": "https://citytacossd.com/locations-sorrento-valley/",
+  "sources": [
+   {
+    "url": "https://citytacossd.com/locations-sorrento-valley/",
+    "what": "own location page, live: address, daily hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://citytacossd.com/all-menus/",
+    "what": "own menu page, live: same menu at all six locations, fried fish tacos with cabbage",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "City Tacos",
+  "address": "4516 Mission Blvd Ste E",
+  "city": "San Diego",
+  "zip": "92109",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pescado taco (fried basa, cabbage)",
+   "Sonoran fish taco (battered)",
+   "carnitas",
+   "pollo asado",
+   "carne asada",
+   "birria",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Pacific Beach branch of a local taco group with six San Diego County shops; menu mixes traditional and house tacos.",
+  "website": "https://citytacossd.com/locations-pacific-beach/",
+  "sources": [
+   {
+    "url": "https://citytacossd.com/locations-pacific-beach/",
+    "what": "own location page, live: address, daily hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://citytacossd.com/all-menus/",
+    "what": "own menu page, live: same menu at all six locations, fried fish tacos with cabbage",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "City Tacos",
+  "address": "4896 Voltaire St",
+  "city": "San Diego",
+  "zip": "92107",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pescado taco (fried basa, cabbage)",
+   "Sonoran fish taco (battered)",
+   "carnitas",
+   "pollo asado",
+   "carne asada",
+   "birria",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Ocean Beach (OB Playground) branch of a local taco group with six San Diego County shops; menu mixes traditional and house tacos.",
+  "website": "https://citytacossd.com/ob-playground/",
+  "sources": [
+   {
+    "url": "https://citytacossd.com/ob-playground/",
+    "what": "own location page, live: address, daily hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://citytacossd.com/all-menus/",
+    "what": "own menu page, live: same menu at all six locations, fried fish tacos with cabbage",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Gordo",
+  "address": "511 F St",
+  "city": "San Diego",
+  "zip": "92102",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "buche",
+   "suadero",
+   "lengua",
+   "tripa",
+   "chorizo",
+   "mulas",
+   "sopes",
+   "tostadas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": 1972,
+  "chain": true,
+  "note": "Downtown San Diego branch of a taquería chain with shops in San Diego County and Las Vegas; site says its first restaurant opened in 1972 and its first San Diego shop in 1998.",
+  "website": "https://tacoselgordobc.com/locations/",
+  "sources": [
+   {
+    "url": "https://tacoselgordobc.com/locations/",
+    "what": "own locations page, live: this address with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacoselgordobc.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Gordo",
+  "address": "3265 Palm Ave",
+  "city": "San Diego",
+  "zip": "92154",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "buche",
+   "suadero",
+   "lengua",
+   "tripa",
+   "chorizo",
+   "mulas",
+   "sopes",
+   "tostadas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": 1972,
+  "chain": true,
+  "note": "Palm Avenue (San Diego) branch of a taquería chain with shops in San Diego County and Las Vegas; site says its first restaurant opened in 1972 and its first San Diego shop in 1998.",
+  "website": "https://tacoselgordobc.com/locations/",
+  "sources": [
+   {
+    "url": "https://tacoselgordobc.com/locations/",
+    "what": "own locations page, live: this address with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacoselgordobc.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Gordo",
+  "address": "556 Broadway",
+  "city": "Chula Vista",
+  "zip": "91910",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "buche",
+   "suadero",
+   "lengua",
+   "tripa",
+   "chorizo",
+   "mulas",
+   "sopes",
+   "tostadas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": 1972,
+  "chain": true,
+  "note": "Chula Vista branch of a taquería chain with shops in San Diego County and Las Vegas; site says its first restaurant opened in 1972 and its first San Diego shop in 1998.",
+  "website": "https://tacoselgordobc.com/locations/",
+  "sources": [
+   {
+    "url": "https://tacoselgordobc.com/locations/",
+    "what": "own locations page, live: this address with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacoselgordobc.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Tacos",
+  "address": "3480 Marron Rd",
+  "city": "Oceanside",
+  "zip": "92056",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered Baja-style fish tacos",
+   "grilled fish tacos",
+   "garlic shrimp tacos",
+   "al pastor",
+   "carne asada",
+   "California burrito (carne asada, french fries, cheese)",
+   "carnitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "North County taco shop in the Marron Road center; menu has Baja-style fish tacos and a California burrito with fries.",
+  "website": "https://goodtacos.com/",
+  "sources": [
+   {
+    "url": "https://goodtacos.com/",
+    "what": "own site, live (c) 2026: four locations with addresses and hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://goodtacos.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Tacos",
+  "address": "2183 Vista Way Ste B-9",
+  "city": "Oceanside",
+  "zip": "92054",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered Baja-style fish tacos",
+   "grilled fish tacos",
+   "garlic shrimp tacos",
+   "al pastor",
+   "carne asada",
+   "California burrito (carne asada, french fries, cheese)",
+   "carnitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Vista Way location of the Los Tacos group; Baja-style fish tacos and a California burrito with fries.",
+  "website": "https://goodtacos.com/",
+  "sources": [
+   {
+    "url": "https://goodtacos.com/",
+    "what": "own site, live (c) 2026: four locations with addresses and hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://goodtacos.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Tacos",
+  "address": "32065 Temecula Pkwy",
+  "city": "Temecula",
+  "zip": "92592",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered Baja-style fish tacos",
+   "grilled fish tacos",
+   "garlic shrimp tacos",
+   "al pastor",
+   "carne asada",
+   "California burrito (carne asada, french fries, cheese)",
+   "carnitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Temecula Parkway location of the Los Tacos group; tacos, burritos and Baja-style fish tacos.",
+  "website": "https://goodtacos.com/",
+  "sources": [
+   {
+    "url": "https://goodtacos.com/",
+    "what": "own site, live (c) 2026: four locations with addresses and hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://goodtacos.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Tacos",
+  "address": "40315 Winchester Rd Ste D",
+  "city": "Temecula",
+  "zip": "92591",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered Baja-style fish tacos",
+   "grilled fish tacos",
+   "garlic shrimp tacos",
+   "al pastor",
+   "carne asada",
+   "California burrito (carne asada, french fries, cheese)",
+   "carnitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Winchester Road location of the Los Tacos group in Temecula.",
+  "website": "https://goodtacos.com/",
+  "sources": [
+   {
+    "url": "https://goodtacos.com/",
+    "what": "own site, live (c) 2026: four locations with addresses and hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://goodtacos.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Surf Taco Shop",
+  "address": "4657 Mission Blvd",
+  "city": "San Diego",
+  "zip": "92109",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered fried fish tacos (cabbage, white sauce)",
+   "grilled mahi tacos",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "pollo asado",
+   "burritos",
+   "rolled tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Pacific Beach taco shop blocks from the sand; site says it has served Pacific Beach since 1989.",
+  "website": "https://tacosurftacoshop.com/",
+  "sources": [
+   {
+    "url": "https://tacosurftacoshop.com/",
+    "what": "own site, live: address, daily hours, online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosurftacoshop.com/san-diego-pacific-beach-taco-surf-taco-shop-food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rudy's Taco Shop",
+  "address": "524 Stevens Ave Ste 1",
+  "city": "Solana Beach",
+  "zip": "92075",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish tacos (cabbage, white sauce)",
+   "California burrito (carne asada, fries, cheese, sour cream)",
+   "al pastor",
+   "carnitas",
+   "birria",
+   "lengua",
+   "cabeza"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Solana Beach taco shop; menu lists Baja-style fish tacos and a carne asada California burrito with fries.",
+  "website": "https://www.rudystacoshop.com/",
+  "sources": [
+   {
+    "url": "https://www.rudystacoshop.com/",
+    "what": "own site, live: both addresses with hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rudy's Taco Shop",
+  "address": "7662 El Camino Real #102",
+  "city": "Carlsbad",
+  "zip": "92009",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish tacos (cabbage, white sauce)",
+   "California burrito (carne asada, fries, cheese, sour cream)",
+   "al pastor",
+   "carnitas",
+   "birria",
+   "lengua",
+   "cabeza"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "La Costa (Carlsbad) location of Rudy's; Baja-style fish tacos and California burritos.",
+  "website": "https://www.rudystacoshop.com/",
+  "sources": [
+   {
+    "url": "https://www.rudystacoshop.com/",
+    "what": "own site, live: both addresses with hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Kotija Jr. Taco Shop",
+  "address": "852 N Coast Hwy 101",
+  "city": "Encinitas",
+  "zip": "92024",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos",
+   "grilled fish tacos",
+   "carne asada",
+   "cabeza",
+   "carnitas",
+   "al pastor",
+   "pollo asado",
+   "asada fries",
+   "caldo de camaron"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Leucadia/Encinitas taco shop on Coast Highway 101; daily hours 7am-9pm per its site.",
+  "website": "https://kotijajrencinitas.com/",
+  "sources": [
+   {
+    "url": "https://kotijajrencinitas.com/",
+    "what": "own site, live: address, daily hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://kotijajrencinitas.com/food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Loco",
+  "address": "1971 India St",
+  "city": "San Diego",
+  "zip": "92101",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja fish taco (cabbage, pico)",
+   "grilled mahi taco",
+   "grilled shrimp taco",
+   "Cali burrito (carne asada, cheddar, fries)",
+   "birria",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Little Italy taco shop on India Street, open late on weekends.",
+  "website": "https://tacolocosd.com/",
+  "sources": [
+   {
+    "url": "https://tacolocosd.com/",
+    "what": "own site, live: address, current hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacolocosd.com/food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Papas & Tacos Mexican Food",
+  "address": "2239 1st Ave",
+  "city": "San Diego",
+  "zip": "92101",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "fried fish tacos (pollock, cabbage)",
+   "grilled fish tacos",
+   "adobada",
+   "carne asada",
+   "carnitas",
+   "California burrito (steak, potato)",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1989,
+  "chain": false,
+  "note": "Family-run Bankers Hill taco shop; its site says Juan and Maria Diaz founded it in January 1989.",
+  "website": "https://mypapastacos.com/",
+  "sources": [
+   {
+    "url": "https://mypapastacos.com/",
+    "what": "own site, live: address and current hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://mypapastacos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Rodeo Taco Shop",
+  "address": "5149 Waring Rd",
+  "city": "San Diego",
+  "zip": "92120",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "California burritos",
+   "rolled tacos",
+   "breakfast burritos",
+   "carne asada fries",
+   "birria tacos",
+   "al pastor",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Allied Gardens neighborhood taco shop open from breakfast through dinner.",
+  "website": "https://www.elrodeotacoshop.com/",
+  "sources": [
+   {
+    "url": "https://www.elrodeotacoshop.com/",
+    "what": "own site, live: address, weekly hours, menu summary",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "444 Broadway",
+  "city": "Chula Vista",
+  "zip": "91910",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Chula Vista shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "471 Encinitas Blvd",
+  "city": "Encinitas",
+  "zip": "92024",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Encinitas shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "12401 Woodside Ave",
+  "city": "Lakeside",
+  "zip": "92040",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Lakeside shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "1406 Highland Ave",
+  "city": "National City",
+  "zip": "91950",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "National City shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "4770 Voltaire St",
+  "city": "San Diego",
+  "zip": "92107",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Ocean Beach shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "518 Oceanside Blvd #111",
+  "city": "Oceanside",
+  "zip": "92054",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Oceanside shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "16773 Bernardo Center Dr Ste D",
+  "city": "San Diego",
+  "zip": "92128",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Rancho Bernardo shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "3095 Clairemont Dr #C",
+  "city": "San Diego",
+  "zip": "92117",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Clairemont shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "2744 El Cajon Blvd",
+  "city": "San Diego",
+  "zip": "92104",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "North Park/El Cajon Blvd shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "1858 Garnet Ave",
+  "city": "San Diego",
+  "zip": "92109",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Pacific Beach shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "7710 Hazard Center Dr",
+  "city": "San Diego",
+  "zip": "92108",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Mission Valley (Hazard Center) shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "1525 Morena Blvd",
+  "city": "San Diego",
+  "zip": "92110",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Bay Park/Morena shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "420 Robinson Ave #F",
+  "city": "San Diego",
+  "zip": "92103",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Hillcrest shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "9740 Cuyamaca St #C",
+  "city": "Santee",
+  "zip": "92071",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, salsa mexicana, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish taco",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1964,
+  "chain": true,
+  "note": "Santee shop of the Roberto's family taco-shop chain (San Diego, Nevada, Texas); menu lists a California burrito with carne asada and fries.",
+  "website": "https://robertostacoshop.com/locations/",
+  "sources": [
+   {
+    "url": "https://robertostacoshop.com/locations/",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/menu/",
+    "what": "brand's own menu page, live (menu image dated 2025)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshop.com/about/",
+    "what": "brand's own about page: family business begun in 1964 with a San Ysidro tortilla factory",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Taco Shop",
+  "address": "445 N Hwy 101",
+  "city": "Solana Beach",
+  "zip": "92075",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas plate",
+   "rolled tacos",
+   "chorizo and egg",
+   "adobada"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Solana Beach Roberto's shop run with the Mission Valley and Encinitas shops listed on the same to-go site.",
+  "website": "https://robertostacoshoptogo.com/locations.html",
+  "sources": [
+   {
+    "url": "https://robertostacoshoptogo.com/locations.html",
+    "what": "own locations page, live: three shops with addresses, hours and online-ordering links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshoptogo.com/menu.html",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Roberto's Mexican Food",
+  "address": "274 N El Camino Real",
+  "city": "Encinitas",
+  "zip": "92024",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas plate",
+   "rolled tacos",
+   "chorizo and egg",
+   "adobada"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Encinitas El Camino Real shop listed on the Roberto's to-go site with hours and online ordering.",
+  "website": "https://robertostacoshoptogo.com/locations.html",
+  "sources": [
+   {
+    "url": "https://robertostacoshoptogo.com/locations.html",
+    "what": "own locations page, live: three shops with addresses, hours and online-ordering links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://robertostacoshoptogo.com/menu.html",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "7345 La Jolla Blvd",
+  "city": "La Jolla",
+  "zip": "92037",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says drive-thru, open till 11pm.",
+  "website": "https://www.rigobertostacoshop.net/7345-la-jolla-blvd-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/7345-la-jolla-blvd-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "6990 La Jolla Blvd",
+  "city": "La Jolla",
+  "zip": "92037",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says open 24 hours.",
+  "website": "https://www.rigobertostacoshop.net/6990-la-jolla-blvd-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/6990-la-jolla-blvd-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "14149 Twin Peaks Rd #10",
+  "city": "Poway",
+  "zip": "92064",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says 6am-10pm daily.",
+  "website": "https://www.rigobertostacoshop.net/2704-university-ave-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/2704-university-ave-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "7094 Miramar Rd",
+  "city": "San Diego",
+  "zip": "92121",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says open 24 hours.",
+  "website": "https://www.rigobertostacoshop.net/7094-miramar-rd-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/7094-miramar-rd-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "5070 Federal Blvd",
+  "city": "San Diego",
+  "zip": "92102",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says open 24 hours.",
+  "website": "https://www.rigobertostacoshop.net/5070-federal-blvd-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/5070-federal-blvd-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "1310 E Mission Rd",
+  "city": "San Marcos",
+  "zip": "92069",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says open 24 hours.",
+  "website": "https://www.rigobertostacoshop.net/1310-east-mission-road-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/1310-east-mission-road-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "5454 Jackson Dr",
+  "city": "La Mesa",
+  "zip": "91942",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says open 24 hours.",
+  "website": "https://www.rigobertostacoshop.net/5454-jackson-drive-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/5454-jackson-drive-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rigoberto's Taco Shop",
+  "address": "1190 Garnet Ave",
+  "city": "San Diego",
+  "zip": "92109",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "adobada",
+   "carne asada",
+   "cabeza",
+   "tripa",
+   "carne asada fries",
+   "pollo asado fries",
+   "sopes",
+   "super nachos",
+   "chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "One of eight San Diego County Rigoberto's taco shops with a salsa bar; location page says open 24 hours.",
+  "website": "https://www.rigobertostacoshop.net/1190-garnet-ave-location",
+  "sources": [
+   {
+    "url": "https://www.rigobertostacoshop.net/1190-garnet-ave-location",
+    "what": "own location page, live (c) 2026: address and business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.rigobertostacoshop.net/rigobertos-special-menu",
+    "what": "own specials menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "356 Korean BBQ & Bar",
+  "address": "1640 Camino Del Rio N Ste FSU12",
+  "city": "San Diego",
+  "zip": "92108",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "beef brisket",
+   "LA galbi (marinated short rib)",
+   "bulgogi",
+   "pork belly (several marinades)",
+   "pork jowl"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission Valley all-you-can-eat Korean BBQ with a 2-hour table limit; sister shops in Chula Vista, Eastvale and Brea.",
+  "website": "https://356bbq.com/",
+  "sources": [
+   {
+    "url": "https://356bbq.com/",
+    "what": "own site, live (c) 2025, posts mention 2026 Super Bowl and the new Chula Vista opening; lists all locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://356bbq.com/menu/",
+    "what": "own menu page, live: all-you-can-eat menu image (brisket, LA galbi, pork belly, bulgogi), 2-hour limit",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "356 Korean BBQ & Bar",
+  "address": "2015 Birch Rd Ste 409",
+  "city": "Chula Vista",
+  "zip": "91915",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "beef brisket",
+   "LA galbi (marinated short rib)",
+   "bulgogi",
+   "pork belly (several marinades)",
+   "pork jowl"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Chula Vista location of 356 Korean BBQ, opened recently per the site's posts.",
+  "website": "https://356bbq.com/",
+  "sources": [
+   {
+    "url": "https://356bbq.com/",
+    "what": "own site, live (c) 2025, posts mention 2026 Super Bowl and the new Chula Vista opening; lists all locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://356bbq.com/menu/",
+    "what": "own menu page, live: all-you-can-eat menu image (brisket, LA galbi, pork belly, bulgogi), 2-hour limit",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "356 Korean BBQ & Bar",
+  "address": "12585 Cantu-Galleano Ranch Rd",
+  "city": "Eastvale",
+  "zip": "91752",
+  "county": "Riverside",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "beef brisket",
+   "LA galbi (marinated short rib)",
+   "bulgogi",
+   "pork belly (several marinades)",
+   "pork jowl"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Eastvale location of the 356 all-you-can-eat Korean BBQ group.",
+  "website": "https://356bbq.com/",
+  "sources": [
+   {
+    "url": "https://356bbq.com/",
+    "what": "own site, live (c) 2025, posts mention 2026 Super Bowl and the new Chula Vista opening; lists all locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://356bbq.com/menu/",
+    "what": "own menu page, live: all-you-can-eat menu image (brisket, LA galbi, pork belly, bulgogi), 2-hour limit",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "DPoong Korean BBQ",
+  "address": "41269 Margarita Rd #C101",
+  "city": "Temecula",
+  "zip": "92591",
+  "county": "Riverside",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ (classic and heritage tiers)",
+   "AYCE lunch special",
+   "a la carte meats"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Temecula all-you-can-eat Korean BBQ; meats grilled at the table; first come, first served.",
+  "website": "http://www.dpoong.com/",
+  "sources": [
+   {
+    "url": "http://www.dpoong.com/",
+    "what": "own site, live (c) 2025: address, AYCE tiers, grilling at the table",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Wang Cho Korean BBQ",
+  "address": "3639 Riverside Plaza Dr",
+  "city": "Riverside",
+  "zip": "92506",
+  "county": "Riverside",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "Angus beef brisket",
+   "LA marinated short rib",
+   "pork belly (garlic, wine, spicy, basil)",
+   "pork bulgogi",
+   "beef tongue"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "All-you-can-eat Korean BBQ in Riverside Plaza with three package tiers.",
+  "website": "https://www.wangchobbq.com/",
+  "sources": [
+   {
+    "url": "https://www.wangchobbq.com/korean-bbq-restaurant/kbbq-riverside/kbbq-menu-riverside/",
+    "what": "own location/menu page, live: addresses and hours for Riverside and Chino, AYCE packages",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Wang Cho Korean BBQ",
+  "address": "3911 Grand Ave",
+  "city": "Chino",
+  "zip": "91710",
+  "county": "San Bernardino",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean BBQ",
+   "Angus beef brisket",
+   "LA marinated short rib",
+   "pork belly (garlic, wine, spicy, basil)",
+   "pork bulgogi",
+   "beef tongue"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Chino location of Wang Cho all-you-can-eat Korean BBQ.",
+  "website": "https://www.wangchobbq.com/",
+  "sources": [
+   {
+    "url": "https://www.wangchobbq.com/korean-bbq-restaurant/kbbq-riverside/kbbq-menu-riverside/",
+    "what": "own location/menu page, live: addresses and hours for Riverside and Chino, AYCE packages",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Stand",
+  "address": "1393 University Ave Ste 106",
+  "city": "Riverside",
+  "zip": "92507",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja taco (battered fish, cabbage)",
+   "al pastor",
+   "carne asada",
+   "California burrito (steak, cheese, fries)",
+   "shrimp tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Riverside branch of a San Diego-born Tijuana-style taco chain, near UC Riverside.",
+  "website": "https://www.letstaco.com/location/riverside",
+  "sources": [
+   {
+    "url": "https://www.letstaco.com/location/riverside",
+    "what": "own location page, live: address and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/about",
+    "what": "own about page: first Taco Stand opened in La Jolla in 2013; dated growth timeline",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Man Taqueria",
+  "address": "16232 W Foothill Blvd",
+  "city": "Fontana",
+  "zip": "92335",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish taco",
+   "al pastor",
+   "birria",
+   "carnitas",
+   "street tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Fontana branch of a small Inland Empire taquería group that says it opened in 2013.",
+  "website": "http://www.thetacoman.com/",
+  "sources": [
+   {
+    "url": "http://www.thetacoman.com/",
+    "what": "own site, live: Fontana and Upland addresses with hours, Toast ordering; 'since opening in 2013'",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.thetacoman.com/upland-the-taco-man-taqueria-food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Man Taqueria",
+  "address": "891 W Foothill Blvd",
+  "city": "Upland",
+  "zip": "91786",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja-style fish taco",
+   "al pastor",
+   "birria",
+   "carnitas",
+   "street tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Upland branch of The Taco Man; street tacos, birria and Baja-style fish tacos.",
+  "website": "http://www.thetacoman.com/",
+  "sources": [
+   {
+    "url": "http://www.thetacoman.com/",
+    "what": "own site, live: Fontana and Upland addresses with hours, Toast ordering; 'since opening in 2013'",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.thetacoman.com/upland-the-taco-man-taqueria-food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Cruz Tacos",
+  "address": "41539 Kalmia St #120",
+  "city": "Murrieta",
+  "zip": "92562",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos",
+   "shrimp tacos",
+   "adobada",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "carnitas",
+   "California burrito",
+   "surf and turf burrito (carne asada, shrimp, fries)",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Murrieta taco shop open from breakfast; menu has a long list of taco meats including cabeza, lengua and tripa.",
+  "website": "http://www.cruztacosmurrieta.com/",
+  "sources": [
+   {
+    "url": "http://www.cruztacosmurrieta.com/",
+    "what": "own site, live (c) 2025: address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.cruztacosmurrieta.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Ranchito Taco Shop",
+  "address": "32251 Mission Trail Ste G4",
+  "city": "Lake Elsinore",
+  "zip": "92530",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "street-style carne asada tacos",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "California burritos",
+   "carne asada fries",
+   "menudo",
+   "pozole"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": false,
+  "note": "Lake Elsinore taco shop run by the Barajas family, whose recipes it traces to 1978.",
+  "website": "http://ranchitoelsinore.com/",
+  "sources": [
+   {
+    "url": "http://ranchitoelsinore.com/",
+    "what": "own site, live (c) 2026: address, daily hours, Toast ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Ranchito Taco Shop",
+  "address": "33195 Temecula Pkwy Ste G",
+  "city": "Temecula",
+  "zip": "92592",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "street tacos (carne asada, lengua, carnitas, al pastor, cabeza)",
+   "fish taco (breaded fish, cabbage)",
+   "California burrito (grilled steak, fries)",
+   "al pastor burrito"
+  ],
+  "opened": null,
+  "brand_founded": 1978,
+  "chain": false,
+  "note": "Temecula Parkway taco shop; its site says the family business began in Santee in 1978.",
+  "website": "http://www.tacoshoptemecula.com/",
+  "sources": [
+   {
+    "url": "http://www.tacoshoptemecula.com/",
+    "what": "own site, live (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://www.tacoshoptemecula.com/burritos-%26-tacos",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Fish Taco Express Taqueria",
+  "address": "1675 N Perris Blvd Ste B",
+  "city": "Perris",
+  "zip": "92571",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Rosarito-style fish tacos",
+   "tacos",
+   "tortas",
+   "burritos",
+   "mulitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Perris taquería focused on Rosarito-style Mexican seafood; breakfast and happy-hour specials.",
+  "website": "https://fishtacoexpress.com/",
+  "sources": [
+   {
+    "url": "http://www.fishtacoexpresstaqueria.com/",
+    "what": "own site, live (c) 2026: promos and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://fishtacoexpress.com/location",
+    "what": "own location page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Las Carretas Taco Shop",
+  "address": "67555 E Palm Canyon Dr",
+  "city": "Cathedral City",
+  "zip": "92234",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish taco (fish, cabbage, tartar sauce)",
+   "carne asada",
+   "al pastor",
+   "birria",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "California breakfast burrito",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": false,
+  "note": "Coachella Valley taco shop with San Diego roots; site says Las Carretas first opened April 13, 1998.",
+  "website": "https://www.lascarretastacoshop.org",
+  "sources": [
+   {
+    "url": "https://www.lascarretastacoshop.org",
+    "what": "own site, live: both locations with hours, menu, Clover online ordering; first opened April 13, 1998",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Las Carretas Taco Shop",
+  "address": "40205 Washington St Ste 3",
+  "city": "Palm Desert",
+  "zip": "92211",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish taco (fish, cabbage, tartar sauce)",
+   "carne asada",
+   "al pastor",
+   "birria",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "California breakfast burrito",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": false,
+  "note": "Palm Desert location of Las Carretas, open from early morning.",
+  "website": "https://www.lascarretastacoshop.org",
+  "sources": [
+   {
+    "url": "https://www.lascarretastacoshop.org",
+    "what": "own site, live: both locations with hours, menu, Clover online ordering; first opened April 13, 1998",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mr. Taco",
+  "address": "855 Alabama St",
+  "city": "Redlands",
+  "zip": "92374",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos (cabbage, chipotle sauce)",
+   "al pastor",
+   "carne asada",
+   "carnitas",
+   "tripa",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1982,
+  "chain": false,
+  "note": "Redlands taco shop of a small Inland Empire group the site says was established in 1982.",
+  "website": "https://mrtacoonline.com",
+  "sources": [
+   {
+    "url": "https://mrtacoonline.com",
+    "what": "own site, live: Redlands and Beaumont addresses with hours; 'established in 1982'",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://mrtacoonline.com/redlands-mr-taco-redlands-food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mr. Taco",
+  "address": "174 Beaumont Ave",
+  "city": "Beaumont",
+  "zip": "92223",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos (cabbage, chipotle sauce)",
+   "al pastor",
+   "carne asada",
+   "carnitas",
+   "tripa",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1982,
+  "chain": false,
+  "note": "Beaumont location of Mr. Taco.",
+  "website": "https://mrtacoonline.com",
+  "sources": [
+   {
+    "url": "https://mrtacoonline.com",
+    "what": "own site, live: Redlands and Beaumont addresses with hours; 'established in 1982'",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://mrtacoonline.com/redlands-mr-taco-redlands-food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mrs Taco's",
+  "address": "22455 Alessandro Blvd",
+  "city": "Moreno Valley",
+  "zip": "92553",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "al pastor",
+   "fish tacos",
+   "wet burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Moreno Valley taco shop on Alessandro Boulevard.",
+  "website": "http://mrstacos.com",
+  "sources": [
+   {
+    "url": "http://mrstacos.com",
+    "what": "own site, live: address and opening hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://mrstacos.com/menu/",
+    "what": "own menu pages, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Pio Pico's Tacos",
+  "address": "3410 Ontario Ranch Rd Ste 2",
+  "city": "Ontario",
+  "zip": "91761",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "mesquite-grilled tacos",
+   "al pastor",
+   "carne asada",
+   "carnitas",
+   "quesabirria with consome",
+   "mulitas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Ontario Ranch neighborhood taco spot grilling over mesquite.",
+  "website": "https://piopicostacos.com",
+  "sources": [
+   {
+    "url": "https://piopicostacos.com",
+    "what": "own site, live (c) 2026, Clover online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://piopicostacos.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ricos Tacos de Jalisco",
+  "address": "396 S Mount Vernon Ave",
+  "city": "San Bernardino",
+  "zip": "92410",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos de asada, pastor, carnitas, buche, tripitas, lengua, birria, suadero, cabeza",
+   "handmade tortillas",
+   "torta ahogada",
+   "birria and menudo on weekends"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Jalisco-style taquería on Mount Vernon Avenue.",
+  "website": "https://ricostacosdejalisco.com",
+  "sources": [
+   {
+    "url": "https://ricostacosdejalisco.com",
+    "what": "own site, live (c) 2026: address and menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Senor Tacos",
+  "address": "313 6th St Ste A",
+  "city": "Norco",
+  "zip": "92860",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp tacos",
+   "chicken burrito",
+   "menudo"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": false,
+  "note": "Family-owned counter-service taco shop in Norco; its site says it started in 2011.",
+  "website": "https://www.senortacosnorco.com/",
+  "sources": [
+   {
+    "url": "https://www.senortacosnorco.com/",
+    "what": "own site, live: address, weekly hours, online ordering, featured dishes",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Shack",
+  "address": "510 E State St",
+  "city": "Redlands",
+  "zip": "92373",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Cali burrito (protein, fries, guacamole, pico)",
+   "potato tacos",
+   "al pastor",
+   "carne asada",
+   "carnitas",
+   "taquitos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown Redlands taco shop open from breakfast.",
+  "website": "http://www.redlandstacoshack.com/",
+  "sources": [
+   {
+    "url": "http://www.redlandstacoshack.com/",
+    "what": "own site, live: address, hours, ChowNow ordering, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Del Rio",
+  "address": "6987 Hamner Ave Ste 2",
+  "city": "Eastvale",
+  "zip": "92880",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "quesadillas",
+   "tortas",
+   "huaraches",
+   "mulitas",
+   "asada nachos",
+   "menudo"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Eastvale taco shop on Hamner Avenue, open daily 8am-10pm per its site.",
+  "website": "https://tacosdelrio.com",
+  "sources": [
+   {
+    "url": "https://tacosdelrio.com",
+    "what": "own site, live: address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosdelrio.com/menu.html",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Gavilan",
+  "address": "115 E Base Line Rd",
+  "city": "Rialto",
+  "zip": "92376",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "buche",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Rialto branch of the Tacos Gavilan chain (Los Angeles, Orange County and Inland Empire).",
+  "website": "https://tacosgavilan.com/locations",
+  "sources": [
+   {
+    "url": "https://tacosgavilan.com/locations",
+    "what": "brand's own locations page, live (c) 2026, lists this address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosgavilan.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "2560 N Perris Blvd #F4",
+  "city": "Perris",
+  "zip": "92571",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Perris branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "5650 Van Buren Blvd",
+  "city": "Riverside",
+  "zip": "92503",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Riverside (Van Buren) branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "25312 Madison Ave Ste 102",
+  "city": "Murrieta",
+  "zip": "92562",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Murrieta branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "497 E Alessandro Ave Ste B",
+  "city": "Riverside",
+  "zip": "92508",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Mission Grove (Riverside) branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "4880 S Motor Ln",
+  "city": "Ontario",
+  "zip": "91761",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Ontario branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "4468 Holt Blvd Unit B&C",
+  "city": "Montclair",
+  "zip": "91763",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Montclair branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "14329 Bear Valley Rd Ste 1",
+  "city": "Victorville",
+  "zip": "92392",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Victorville branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "14135 Limonite Ave Ste 234",
+  "city": "Eastvale",
+  "zip": "92880",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Eastvale branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Bufadora Baja Grill",
+  "address": "29640 Goetz Rd",
+  "city": "Menifee",
+  "zip": "92587",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Ensenada-style fish tacos",
+   "Baja tacos with house cream",
+   "shrimp tacos",
+   "quesabirria",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "Menifee branch of a family-owned Baja-style chain (since 1998) specializing in Ensenada fish tacos.",
+  "website": "https://labufadorabajagrill.com/locations/",
+  "sources": [
+   {
+    "url": "https://labufadorabajagrill.com/locations/",
+    "what": "brand's own locations page, live: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.labufadorabajagrill.com/menu",
+    "what": "own menu page, live: Baja-style tacos; family-owned since 1998, Ensenada fish tacos",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Carnales",
+  "address": "4770 Mission Blvd",
+  "city": "Montclair",
+  "zip": "91762",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos on tortillas made to order",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1996,
+  "chain": true,
+  "note": "Family-owned taquería (since 1996) that presses tortillas for every order.",
+  "website": "https://www.tacosloscarnales.com/",
+  "sources": [
+   {
+    "url": "https://www.tacosloscarnales.com/",
+    "what": "own site, live (c) 2026: Montclair and Upland addresses, daily hours, online ordering; founded 1996",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Los Carnales",
+  "address": "1262 W Foothill Blvd",
+  "city": "Upland",
+  "zip": "91786",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos on tortillas made to order",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1996,
+  "chain": true,
+  "note": "Upland location of Tacos Los Carnales at Mountain Avenue.",
+  "website": "https://www.tacosloscarnales.com/",
+  "sources": [
+   {
+    "url": "https://www.tacosloscarnales.com/",
+    "what": "own site, live (c) 2026: Montclair and Upland addresses, daily hours, online ordering; founded 1996",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Y Mas",
+  "address": "10203 Hole Ave",
+  "city": "Riverside",
+  "zip": "92503",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "birria",
+   "cabeza",
+   "carnitas",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Riverside branch of the Tacos Y Mas taquería group.",
+  "website": "http://tacosmas.com/",
+  "sources": [
+   {
+    "url": "http://tacosmas.com/",
+    "what": "own site, live: five Inland Empire addresses with per-location Toast ordering links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosmas.com/el-menu/",
+    "what": "own menu pages, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Y Mas",
+  "address": "1112 W 6th St Ste 101",
+  "city": "Corona",
+  "zip": "92882",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "birria",
+   "cabeza",
+   "carnitas",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Corona branch of the Tacos Y Mas taquería group.",
+  "website": "http://tacosmas.com/",
+  "sources": [
+   {
+    "url": "http://tacosmas.com/",
+    "what": "own site, live: five Inland Empire addresses with per-location Toast ordering links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosmas.com/el-menu/",
+    "what": "own menu pages, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Y Mas",
+  "address": "1290 N Mt Vernon Ave",
+  "city": "Colton",
+  "zip": "92324",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "birria",
+   "cabeza",
+   "carnitas",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Colton branch of the Tacos Y Mas taquería group.",
+  "website": "http://tacosmas.com/",
+  "sources": [
+   {
+    "url": "http://tacosmas.com/",
+    "what": "own site, live: five Inland Empire addresses with per-location Toast ordering links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosmas.com/el-menu/",
+    "what": "own menu pages, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Y Mas",
+  "address": "14050 Cherry Ave Unit N",
+  "city": "Fontana",
+  "zip": "92337",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "birria",
+   "cabeza",
+   "carnitas",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Fontana branch of the Tacos Y Mas taquería group.",
+  "website": "http://tacosmas.com/",
+  "sources": [
+   {
+    "url": "http://tacosmas.com/",
+    "what": "own site, live: five Inland Empire addresses with per-location Toast ordering links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosmas.com/el-menu/",
+    "what": "own menu pages, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Y Mas",
+  "address": "4726 Riverside Dr Unit A",
+  "city": "Chino",
+  "zip": "91710",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "birria",
+   "cabeza",
+   "carnitas",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Chino branch of the Tacos Y Mas taquería group.",
+  "website": "http://tacosmas.com/",
+  "sources": [
+   {
+    "url": "http://tacosmas.com/",
+    "what": "own site, live: five Inland Empire addresses with per-location Toast ordering links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacosmas.com/el-menu/",
+    "what": "own menu pages, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos del Valle",
+  "address": "68467 E Palm Canyon Dr",
+  "city": "Cathedral City",
+  "zip": "92234",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos on handmade corn tortillas",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "chorizo",
+   "barbacoa",
+   "tortas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Cathedral City taco shop on East Palm Canyon Drive.",
+  "website": "https://www.tacosdelvallecc.com",
+  "sources": [
+   {
+    "url": "https://www.tacosdelvallecc.com",
+    "what": "own site, live (c) 2025: address, hours, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "10088 Magnolia Ave",
+  "city": "Riverside",
+  "zip": "92503",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Riverside location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "515 E 6th St",
+  "city": "Corona",
+  "zip": "92879",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Corona location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "403 S D St",
+  "city": "Perris",
+  "zip": "92570",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Perris location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "13373 Perris Blvd #D-301",
+  "city": "Moreno Valley",
+  "zip": "92553",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Moreno Valley location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "5299 Holt Blvd Bldg 2",
+  "city": "Montclair",
+  "zip": "91763",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Montclair location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "1255 W Foothill Blvd",
+  "city": "Rialto",
+  "zip": "92376",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Rialto location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "980 N Haven Ave Ste 170",
+  "city": "Ontario",
+  "zip": "91764",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Ontario location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "12620 Day St",
+  "city": "Moreno Valley",
+  "zip": "92553",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Moreno Valley location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "1508 S Riverside Ave",
+  "city": "Rialto",
+  "zip": "92376",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Rialto location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria 2 Potrillos",
+  "address": "13325 Main St Ste 109",
+  "city": "Hesperia",
+  "zip": "92345",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "tripa",
+   "birria",
+   "burritos",
+   "aguas frescas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Hesperia location of an Inland Empire taquería chain with ten shops.",
+  "website": "https://www.taqueria2potrillos.com/locations",
+  "sources": [
+   {
+    "url": "https://www.taqueria2potrillos.com/locations",
+    "what": "own locations page, live (c) 2026: this address with weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueria2potrillos.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Teotihuacan",
+  "address": "79410 Hwy 111 Ste 170",
+  "city": "La Quinta",
+  "zip": "92253",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "taco de pescado (cabbage)",
+   "shrimp taco",
+   "al pastor",
+   "buche",
+   "cabeza",
+   "lengua",
+   "carnitas",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-owned La Quinta taquería on Highway 111.",
+  "website": "https://taqueriateotihuacan.com/",
+  "sources": [
+   {
+    "url": "http://www.taqueriateotihuacan.com/",
+    "what": "own site, live (c) 2026: address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://taqueriateotihuacan.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Urban Fish Taco",
+  "address": "13865 City Center Dr Ste 309",
+  "city": "Chino Hills",
+  "zip": "91709",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja fish taco",
+   "blackened fish taco",
+   "Baja shrimp taco",
+   "spicy shrimp taco",
+   "chicken al pastor taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Chino Hills craft-taco and seafood spot on City Center Drive; its site says it comes from the founder of California Fish Grill.",
+  "website": "http://www.urbanfishtaco.com/",
+  "sources": [
+   {
+    "url": "http://www.urbanfishtaco.com/",
+    "what": "own site, live: address, hours, Toast ordering, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #28",
+  "address": "406 N Mountain Ave",
+  "city": "Ontario",
+  "zip": "91762",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "taco al pastor",
+   "carne asada burrito",
+   "nachos",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "Ontario branch of King Taco, a Los Angeles taquería chain founded in 1974 (per its site) from a converted ice cream truck.",
+  "website": "https://kingtaco.com/locations",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations",
+    "what": "brand's own locations page, live (c) 2026: this branch with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://kingtaco.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "King Taco #31",
+  "address": "9800 Sierra Ave",
+  "city": "Fontana",
+  "zip": "92335",
+  "county": "San Bernardino",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "taco al pastor",
+   "carne asada burrito",
+   "nachos",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": 1974,
+  "chain": true,
+  "note": "Fontana branch of the Los Angeles-based King Taco chain.",
+  "website": "https://kingtaco.com/locations",
+  "sources": [
+   {
+    "url": "https://kingtaco.com/locations",
+    "what": "brand's own locations page, live (c) 2026: this branch with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://kingtaco.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Aztek Tacos",
+  "address": "43810 Butterfield Stage Rd #104",
+  "city": "Temecula",
+  "zip": "92592",
+  "county": "Riverside",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "breakfast plates",
+   "combination plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Temecula taco shop and bar on Butterfield Stage Road.",
+  "website": "https://aztektacos.com/",
+  "sources": [
+   {
+    "url": "https://aztektacos.com/",
+    "what": "own site, live (c) 2026: address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://aztektacos.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Oscar's Mexican Seafood",
+  "address": "746 Emerald St",
+  "city": "San Diego",
+  "zip": "92109",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "smoked fish taco (cabbage, avocado)",
+   "grilled fish taco",
+   "grilled shrimp taco",
+   "taco especial (smoked fish, shrimp, scallops)",
+   "seafood tortas"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Pacific Beach flagship of Oscar's (brand founded 2011), reopened in 2025 after a renovation; smoked-fish, grilled fish and shrimp tacos.",
+  "website": "https://oscarsmexicanseafood.com/locations/",
+  "sources": [
+   {
+    "url": "https://oscarsmexicanseafood.com/locations/",
+    "what": "own locations page, live: Pacific Beach and Hillcrest addresses with hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://oscarsmexicanseafood.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.sandiegoville.com/2026/01/san-diegos-70-most-shocking-bar.html",
+    "what": "SanDiegoVille 2025 closures roundup (Jan 2026): brand founded 2011; Hillcrest and the 746 Emerald St flagship (reopened 2025) still operating",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Oscar's Mexican Seafood",
+  "address": "646 University Ave",
+  "city": "San Diego",
+  "zip": "92103",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "smoked fish taco (cabbage, avocado)",
+   "grilled fish taco",
+   "grilled shrimp taco",
+   "taco especial (smoked fish, shrimp, scallops)",
+   "seafood tortas"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Hillcrest location of Oscar's Mexican Seafood.",
+  "website": "https://oscarsmexicanseafood.com/locations/",
+  "sources": [
+   {
+    "url": "https://oscarsmexicanseafood.com/locations/",
+    "what": "own locations page, live: Pacific Beach and Hillcrest addresses with hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://oscarsmexicanseafood.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.sandiegoville.com/2026/01/san-diegos-70-most-shocking-bar.html",
+    "what": "SanDiegoVille 2025 closures roundup (Jan 2026): brand founded 2011; Hillcrest and the 746 Emerald St flagship (reopened 2025) still operating",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "South Beach Bar & Grille",
+  "address": "5059 Newport Ave",
+  "city": "San Diego",
+  "zip": "92107",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "mahi fish tacos",
+   "wahoo tacos",
+   "lobster tacos",
+   "birria tacos",
+   "carne asada fries"
+  ],
+  "opened": 1992,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Ocean Beach bar and grill on Newport Avenue; its site says it opened in 1992 and features mahi fish tacos.",
+  "website": "https://www.southbeachob.com/",
+  "sources": [
+   {
+    "url": "https://www.southbeachob.com/",
+    "what": "own site, live: address, current hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Pescador Fish Market",
+  "address": "634 Pearl St",
+  "city": "La Jolla",
+  "zip": "92037",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled fish tacos with cabbage salad",
+   "fish burrito",
+   "seafood tortas",
+   "fresh fish market"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "La Jolla fish market with a counter restaurant; grilled fish tacos from the day's catch.",
+  "website": "https://www.elpescadorfishmarket.com/",
+  "sources": [
+   {
+    "url": "https://www.elpescadorfishmarket.com/menu",
+    "what": "own menu page, live (footer (c) 2019; daily hours listed)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mitch's Seafood",
+  "address": "1403 Scott St",
+  "city": "San Diego",
+  "zip": "92106",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "fried fish taco",
+   "swordfish taco",
+   "rockfish taco",
+   "octopus taco",
+   "calamari taco",
+   "tostadas"
+  ],
+  "opened": null,
+  "brand_founded": 2008,
+  "chain": false,
+  "note": "Point Loma seafood counter established in 2008 by local fishing families, per its site.",
+  "website": "https://www.mitchsseafood.com/",
+  "sources": [
+   {
+    "url": "https://www.mitchsseafood.com/",
+    "what": "own site, live: address, hours, Toast online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://mitchsseafood.com/about/",
+    "what": "own about page: established 2008",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Blue Water Seafood Market & Grill",
+  "address": "3667 India St",
+  "city": "San Diego",
+  "zip": "92103",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered fish taco",
+   "beer-battered shrimp tacos (cabbage, white sauce)",
+   "grilled specialty tacos",
+   "fish plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission Hills fish market and grill; fish tacos with a choice of marinades.",
+  "website": "https://www.bluewaterseafoodsandiego.com/",
+  "sources": [
+   {
+    "url": "https://www.bluewaterseafoodsandiego.com/",
+    "what": "own site, live: both addresses with hours, Toast links, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Blue Water Seafood Market & Grill",
+  "address": "5083 Santa Monica Ave Ste 1B",
+  "city": "San Diego",
+  "zip": "92107",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered fish taco",
+   "beer-battered shrimp tacos (cabbage, white sauce)",
+   "grilled specialty tacos",
+   "fish plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Ocean Beach location of Blue Water Seafood.",
+  "website": "https://www.bluewaterseafoodsandiego.com/",
+  "sources": [
+   {
+    "url": "https://www.bluewaterseafoodsandiego.com/",
+    "what": "own site, live: both addresses with hours, Toast links, menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Juanita's Taco Shop",
+  "address": "290 N Coast Hwy 101",
+  "city": "Encinitas",
+  "zip": "92024",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, papas fritas, sour cream, cheese)",
+   "Arizona burrito",
+   "carne asada",
+   "pollo asado",
+   "carnitas",
+   "al pastor",
+   "fish taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Encinitas taco shop on Coast Highway 101, open from 7:30am.",
+  "website": "https://juanitastacoshop.com/",
+  "sources": [
+   {
+    "url": "https://www.juanitastacoshop.com/",
+    "what": "own site, live: address, daily hours, online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://juanitastacoshop.com/food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Indio",
+  "address": "3695 India St",
+  "city": "San Diego",
+  "zip": "92103",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "taquitos",
+   "California burrito (carne asada, fries, cheddar)",
+   "carne asada",
+   "adobada",
+   "carnitas",
+   "fish tacos",
+   "tamales"
+  ],
+  "opened": null,
+  "brand_founded": 1940,
+  "chain": false,
+  "note": "Mission Hills Mexican counter that says it has served San Diego since 1940; menu has taquitos, burritos and plates.",
+  "website": "https://www.elindiosandiego.com/",
+  "sources": [
+   {
+    "url": "https://www.elindiosandiego.com/",
+    "what": "own site, live: hours with 2026 holiday notes, Square online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Salud!",
+  "address": "2196 Logan Ave",
+  "city": "San Diego",
+  "zip": "92113",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Northern Mexico-style street tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Barrio Logan taco shop near Chicano Park whose menu draws on Northern Mexico street food; this is its original location.",
+  "website": "https://saludtacos.com/",
+  "sources": [
+   {
+    "url": "https://www.saludtacos.com/",
+    "what": "own site, live (c) 2026: address and hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://saludtacos.com/barrio-logan-menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mariscos El Pacifico",
+  "address": "111 N Vine St",
+  "city": "Fallbrook",
+  "zip": "92028",
+  "county": "San Diego",
+  "kinds": [
+   "fishtaco",
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "San Felipe fish taco (white sauce, cabbage)",
+   "taco de pescado",
+   "taco de camaron",
+   "taco gobernador",
+   "al pastor",
+   "California burrito"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Fallbrook Mexican seafood restaurant with a taco list and happy hour.",
+  "website": "http://mariscoselpacificofb.com/",
+  "sources": [
+   {
+    "url": "http://Mariscoselpacificofb.com/",
+    "what": "own site, live: address, SpotOn online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Chuy's Taqueria y Burritos",
+  "address": "115 W Washington Ave",
+  "city": "El Cajon",
+  "zip": "92020",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "beer-battered fish taco",
+   "California burrito (carne asada, fries)",
+   "shrimp Cali burrito",
+   "adobada",
+   "birria",
+   "cabeza",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "El Cajon taquería open 9am-10pm per its site; menu has a carne asada California burrito with fries.",
+  "website": "https://chuystyb.com/",
+  "sources": [
+   {
+    "url": "https://chuystyb.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://chuystyb.com/order-now-2/",
+    "what": "own order page linking its live Toast ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lucha Libre Taco Shop",
+  "address": "1810 W Washington St",
+  "city": "San Diego",
+  "zip": "92103",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Surfin' California burrito (steak, shrimp, fries)",
+   "classic Cali burrito (steak, fresh fries)",
+   "adobada",
+   "birria",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": 2008,
+  "chain": false,
+  "note": "Mission Hills taco shop with wrestling-themed decor (brand founded 2008); its North Park shop closed in early 2025.",
+  "website": "https://www.luchalibretacoshop.com/",
+  "sources": [
+   {
+    "url": "https://www.luchalibretacoshop.com/menu/",
+    "what": "own menu page, live (c) 2008-2026: address and business hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Stand",
+  "address": "621 Pearl St",
+  "city": "La Jolla",
+  "zip": "92037",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja taco (battered fish, cabbage)",
+   "al pastor",
+   "carne asada",
+   "California burrito (steak, cheese, fries)",
+   "shrimp tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Tijuana-style taco shop in La Jolla; the chain's first shop, opened November 2013 per its site.",
+  "website": "https://www.letstaco.com/location/la-jolla",
+  "sources": [
+   {
+    "url": "https://www.letstaco.com/location/la-jolla",
+    "what": "own location page, live: address and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/about",
+    "what": "own about page: first Taco Stand opened in La Jolla in 2013; dated growth timeline",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Stand",
+  "address": "645 B St",
+  "city": "San Diego",
+  "zip": "92101",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja taco (battered fish, cabbage)",
+   "al pastor",
+   "carne asada",
+   "California burrito (steak, cheese, fries)",
+   "shrimp tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Tijuana-style taco shop in Downtown San Diego (opened 2016 per the site).",
+  "website": "https://www.letstaco.com/location/san-diego-downtown",
+  "sources": [
+   {
+    "url": "https://www.letstaco.com/location/san-diego-downtown",
+    "what": "own location page, live: address and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/about",
+    "what": "own about page: first Taco Stand opened in La Jolla in 2013; dated growth timeline",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Stand",
+  "address": "642 S Coast Hwy 101",
+  "city": "Encinitas",
+  "zip": "92024",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja taco (battered fish, cabbage)",
+   "al pastor",
+   "carne asada",
+   "California burrito (steak, cheese, fries)",
+   "shrimp tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Tijuana-style taco shop in Encinitas (opened 2016 per the site).",
+  "website": "https://www.letstaco.com/location/san-diego-encinitas",
+  "sources": [
+   {
+    "url": "https://www.letstaco.com/location/san-diego-encinitas",
+    "what": "own location page, live: address and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/about",
+    "what": "own about page: first Taco Stand opened in La Jolla in 2013; dated growth timeline",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Stand",
+  "address": "3000 Upas St Ste 105",
+  "city": "San Diego",
+  "zip": "92104",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja taco (battered fish, cabbage)",
+   "al pastor",
+   "carne asada",
+   "California burrito (steak, cheese, fries)",
+   "shrimp tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Tijuana-style taco shop in North Park (opened 2018 per the site).",
+  "website": "https://www.letstaco.com/location/san-diego-north-park",
+  "sources": [
+   {
+    "url": "https://www.letstaco.com/location/san-diego-north-park",
+    "what": "own location page, live: address and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/about",
+    "what": "own about page: first Taco Stand opened in La Jolla in 2013; dated growth timeline",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "The Taco Stand",
+  "address": "4646 Convoy St Ste 111",
+  "city": "San Diego",
+  "zip": "92111",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "fishtaco",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja taco (battered fish, cabbage)",
+   "al pastor",
+   "carne asada",
+   "California burrito (steak, cheese, fries)",
+   "shrimp tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 2013,
+  "chain": true,
+  "note": "Tijuana-style taco shop in Convoy Street (opened 2022 per the site).",
+  "website": "https://www.letstaco.com/location/san-diego-convoy-st",
+  "sources": [
+   {
+    "url": "https://www.letstaco.com/location/san-diego-convoy-st",
+    "what": "own location page, live: address and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.letstaco.com/about",
+    "what": "own about page: first Taco Stand opened in La Jolla in 2013; dated growth timeline",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Revolucion",
+  "address": "3001 Bonita Rd",
+  "city": "Chula Vista",
+  "zip": "91910",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "street tacos",
+   "Sonora-style tacos",
+   "carne asada",
+   "carnitas",
+   "birria",
+   "quesatacos",
+   "Revo fries"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Bonita Road taquería in Chula Vista.",
+  "website": "https://www.tacosrevo.com/",
+  "sources": [
+   {
+    "url": "https://www.tacosrevo.com/",
+    "what": "own site, live: address and hours, online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacosrevo.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Trompo",
+  "address": "764 13th St",
+  "city": "Imperial Beach",
+  "zip": "91932",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "trompo (adobada) tacos",
+   "carne asada",
+   "carnitas",
+   "birria",
+   "cabeza",
+   "fish taco",
+   "mulitas",
+   "vampiros",
+   "California burrito"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Imperial Beach taquería serving tacos off the trompo.",
+  "website": "https://eltrompotacos.com/",
+  "sources": [
+   {
+    "url": "https://eltrompotacos.com/",
+    "what": "own site, live: address, hours, Toast ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://eltrompotacos.com/food-menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Buga Korean BBQ",
+  "address": "5580 Clairemont Mesa Blvd",
+  "city": "San Diego",
+  "zip": "92117",
+  "county": "San Diego",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "fresh short rib (galbi)",
+   "bulgogi",
+   "all-you-can-eat BBQ",
+   "soondubu",
+   "cold noodles"
+  ],
+  "opened": null,
+  "brand_founded": 2001,
+  "chain": false,
+  "note": "Clairemont Mesa Korean BBQ restaurant that says it has served San Diego since 2001; private dining rooms.",
+  "website": "https://www.bugabbq.com/",
+  "sources": [
+   {
+    "url": "https://www.bugabbq.com/",
+    "what": "own site, live: address, galbi and AYCE BBQ pages, takeout by phone (page undated)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lolita's Mexican Food",
+  "address": "413 Telegraph Canyon Rd",
+  "city": "Chula Vista",
+  "zip": "91910",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, cheddar, sour cream)",
+   "carne asada tacos",
+   "adobada",
+   "carnitas",
+   "pollo asado",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1984,
+  "chain": true,
+  "note": "Chula Vista (Telegraph Canyon) shop of a family-owned South Bay taco-shop group (family run since 1984, per its site).",
+  "website": "https://lolitasmexicanfood.com/locations/",
+  "sources": [
+   {
+    "url": "https://lolitasmexicanfood.com/locations/",
+    "what": "own locations page, live: this address with store hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://lolitasmexicanfood.com/menu/",
+    "what": "own menu page, live (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lolita's Mexican Food",
+  "address": "4516 Bonita Rd",
+  "city": "Bonita",
+  "zip": "91902",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, cheddar, sour cream)",
+   "carne asada tacos",
+   "adobada",
+   "carnitas",
+   "pollo asado",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1984,
+  "chain": true,
+  "note": "Bonita shop of a family-owned South Bay taco-shop group (family run since 1984, per its site).",
+  "website": "https://lolitasmexicanfood.com/locations/",
+  "sources": [
+   {
+    "url": "https://lolitasmexicanfood.com/locations/",
+    "what": "own locations page, live: this address with store hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://lolitasmexicanfood.com/menu/",
+    "what": "own menu page, live (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lolita's Mexican Food",
+  "address": "7305 Clairemont Mesa Blvd",
+  "city": "San Diego",
+  "zip": "92111",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, cheddar, sour cream)",
+   "carne asada tacos",
+   "adobada",
+   "carnitas",
+   "pollo asado",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1984,
+  "chain": true,
+  "note": "Kearny Mesa shop of a family-owned South Bay taco-shop group (family run since 1984, per its site).",
+  "website": "https://lolitasmexicanfood.com/locations/",
+  "sources": [
+   {
+    "url": "https://lolitasmexicanfood.com/locations/",
+    "what": "own locations page, live: this address with store hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://lolitasmexicanfood.com/menu/",
+    "what": "own menu page, live (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lolita's Mexican Food",
+  "address": "601 E Palomar St",
+  "city": "Chula Vista",
+  "zip": "91911",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "California burrito (carne asada, french fries, cheddar, sour cream)",
+   "carne asada tacos",
+   "adobada",
+   "carnitas",
+   "pollo asado",
+   "rolled tacos",
+   "carne asada fries"
+  ],
+  "opened": null,
+  "brand_founded": 1984,
+  "chain": true,
+  "note": "Sunbow (Chula Vista) shop of a family-owned South Bay taco-shop group (family run since 1984, per its site).",
+  "website": "https://lolitasmexicanfood.com/locations/",
+  "sources": [
+   {
+    "url": "https://lolitasmexicanfood.com/locations/",
+    "what": "own locations page, live: this address with store hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://lolitasmexicanfood.com/menu/",
+    "what": "own menu page, live (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Holtville Taco Shop",
+  "address": "404 E 5th St",
+  "city": "Holtville",
+  "zip": "92250",
+  "county": "Imperial",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "carne asada",
+   "breakfast"
+  ],
+  "opened": 1992,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Imperial Valley taco shop in a remodeled former liquor store; its history page says it opened in November 1992.",
+  "website": "http://www.holtvilletacoshop.com/",
+  "sources": [
+   {
+    "url": "http://www.holtvilletacoshop.com/",
+    "what": "own site, live (2026 on page): address, hours, history, Menufy online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Marlyn",
+  "address": "1614 S 4th St",
+  "city": "El Centro",
+  "zip": "92243",
+  "county": "Imperial",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos",
+   "shrimp tacos",
+   "Baja-style seafood"
+  ],
+  "opened": null,
+  "brand_founded": 1986,
+  "chain": true,
+  "note": "El Centro seafood taco market; its site says Tacos Marlyn started in Mexicali in 1986. Also in Yuma and Mexicali.",
+  "website": "https://www.tacosmarlyn.com/",
+  "sources": [
+   {
+    "url": "https://www.tacosmarlyn.com/locations",
+    "what": "own locations page, live (c) 2026: address and daily hours, Toast ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "TJ Tacos",
+  "address": "802 E Valley Pkwy",
+  "city": "Escondido",
+  "zip": "92025",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada tacos",
+   "adobada tacos",
+   "asada and adobada fries",
+   "quesadillas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Tijuana-style street-taco shop in Escondido with handmade tortillas; open until midnight Fridays and Saturdays.",
+  "website": "http://www.tj-tacos.com/",
+  "sources": [
+   {
+    "url": "http://www.tj-tacos.com/",
+    "what": "own site, live: address, current hours, Toast online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Paisa",
+  "address": "840 S 47th St",
+  "city": "San Diego",
+  "zip": "92113",
+  "county": "San Diego",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada tacos",
+   "shrimp taco",
+   "doble adobada mulitas",
+   "asada fries",
+   "monster burrito"
+  ],
+  "opened": null,
+  "brand_founded": 1999,
+  "chain": false,
+  "note": "Southeast San Diego taco shop that says it has served the community since 1999.",
+  "website": "https://elpaisasd.com",
+  "sources": [
+   {
+    "url": "https://elpaisasd.com",
+    "what": "own site, live: address, menu, Toast online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ }
+]

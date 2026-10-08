@@ -1,0 +1,698 @@
+# Leads: San Diego, Imperial and Inland Empire (2026-10-07)
+
+Candidates and other places not verified for a guide, with what is missing.
+
+- Baja Beach Cafe | 701 Thomas Ave, San Diego | fishtaco candidate | own site (bajabeachcafe.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Baja Fish Mart | 2036 Dairy Mart Rd #127, San Diego | fishtaco candidate | site has almost no content; need menu/hours
+- Baja Fish Taco & Burgers | 2745 Otay Pacific Dr, San Diego | fishtaco candidate | own site now lists 9995 Carmel Mountain Rd and calls itself a catering company; candidate address unconfirmed
+- Baja Oyster and Sushi Bar | 1912 Coronado Ave, San Diego | fishtaco candidate | own site (bajaoysterbar.com) returned bot_wall / bot check; skipped
+- Baja Pizzeria | 4330 University Ave, San Diego | fishtaco candidate | website domain (bajapizzeria.com) does not resolve - possibly closed or site lapsed
+- Carnitas y Mariscos Las Morelianas | 2822 Imperial Ave, San Diego | fishtaco candidate | own site (carnitasymariscoslasmorelianas.com) returned HTTP 403 / bot check; skipped
+- Casanova Fish Tacos | 2731 Via Orange Way Unit 111, Spring Valley | fishtaco candidate | catering/mobile fish-taco business with no fixed storefront; excluded (no fixed address)
+- El Mundo De Mariscos | 2936 Oceanside Blvd, Oceanside | fishtaco candidate | own site (mundodemariscos.com) returns 404
+- Ferchaladas Birria and Mariscos | 2709 Imperial Ave, San Diego | fishtaco candidate | listed website (ferchaladas-birria-y-mariscos.negocio.site) is a third-party/aggregator or unrelated page; need own site or news
+- Hector's Mariscos | 1177 Broadway #14, Chula Vista | fishtaco candidate | own site live (c) 2026 but no fish-taco menu text found; need menu
+- Hector's Mariscos | 2305 Otay Lakes Rd #201, Chula Vista | fishtaco candidate | own site live (c) 2026 but no fish-taco menu text found; need menu
+- Karina's Ceviche Bar and Tacos | 1852 National Ave, San Diego | fishtaco candidate | own site live (c) 2026 but menu text did not show fish tacos; recheck menu
+- La Reyna de Mariscos German | 1740 S 43rd St, San Diego | fishtaco candidate | listed website (bizapedia.com) is a third-party/aggregator or unrelated page; need own site or news
+- Lonchera Mariscos El Gordo | 370 E St, Chula Vista | fishtaco candidate | own site (mariscoselgordo.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Marisco's German | 251 W Washington Ave, Escondido | fishtaco candidate | listed site is a third-party page; need own site or news
+- Mariscos Alex | 4357 El Cajon Blvd, San Diego | fishtaco candidate | listed website (kitchenkonfidence.com) is a third-party/aggregator or unrelated page; need own site or news
+- Mariscos El Pescador | 1008 Industrial Blvd, Chula Vista | fishtaco candidate | website domain (mariscoselpescadorchulavista.com) does not resolve - possibly closed or site lapsed
+- Mariscos El Prieto | 6070 1/2 University Ave, San Diego | fishtaco candidate | listed site is a third-party SEO page, not the restaurant's own; need own site or news
+- Mariscos El Titanic | 3600 Fairmount Ave, San Diego | fishtaco candidate | website domain (mariscoseltitanicseafood.com) does not resolve - possibly closed or site lapsed
+- Mariscos German | Linda Vista Dr, San Marcos | fishtaco candidate | website domain (mariscosgerman.com) does not resolve - possibly closed or site lapsed
+- Mariscos La Morena | 4630 El Cajon Blvd, San Diego | fishtaco candidate | listed website (order.store) is a third-party/aggregator or unrelated page; need own site or news
+- Mariscos La Perla Negra | 651 Palomar St, Chula Vista | fishtaco candidate | website domain (mariscosgodoy.com) does not resolve - possibly closed or site lapsed
+- Mariscos La Riviera est. | 342 Euclid Ave, San Diego | fishtaco candidate | listed website (qrco.de) is a third-party/aggregator or unrelated page; need own site or news
+- Mariscos La Sinaloense | 9410 Apple St, Spring Valley | fishtaco candidate | own site has no readable menu; need menu
+- Mariscos Mar De Cortez | 109 10th St, Ramona | fishtaco candidate | website domain (mariscosmardecortez.com) does not resolve - possibly closed or site lapsed
+- Mariscos Mar Y Tierra | 15 N 4th Ave, Chula Vista | fishtaco candidate | own site (mariscosmarytierra.info) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Mariscos Negro Durazo | 415 Broadway, Chula Vista | fishtaco candidate | site has no readable content; need menu/hours
+- Mariscos Negro Durazo | 6954 Federal Blvd, Lemon Grove | fishtaco candidate | site has no readable content; need menu/hours
+- Mariscos Oaxaqueno | 1551 W Mission Rd STE J, San Marcos | fishtaco candidate | website domain (mariscoslospinosrestaurant.com) does not resolve - possibly closed or site lapsed
+- Mariscos Sabor A Mexico | 1777 Palm Ave, San Diego | fishtaco candidate | website domain (mariscossaboramexico.com) does not resolve - possibly closed or site lapsed
+- Baja Fusion Grill | 3564 University Ave, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Cacho Fish Taco Stand | 2830 Main St, Chula Vista | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Chochis Mariscos & Snacks | 1065 Main St, Brawley | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Kyrios Mariscos | 3540 El Cajon Blvd, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- La Moreña Mariscos | 77 Broadway, Chula Vista | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Low Baja Mariscos | 14251 Garden Rd, Poway | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Marisco's Seafood | 635 W Mission Ave, Escondido | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos Altata | 4297 Market St, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos Altata Broadway | 631 Broadway, Chula Vista | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos El Prieto | 3001-3027 Main St, Chula Vista | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos El Prieto | 3630 Main St, Chula Vista | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos German | 4724 Federal Blvd, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos Gonzalez | 7880 Airway Rd, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos Guille | 500-514 S 31st St, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos La Baja | 363 Autumn Dr Ste 111, San Marcos | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos La Capital | 2249 Imperial Ave, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos La Reyna Del Sur | 943 Broadway, Chula Vista | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos Mazatlan HHH | 1111 E Washington Ave, Escondido | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos Oceanos San Marcos | 188 Los Vallecitos Blvd, San Marcos | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos la chalupa | 2250 Logan Ave, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mariscos la chalupa #3 | 401 N Johnson Ave, El Cajon | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Meches Fish Tacos Food Truck | 420 S Santa Fe Ave, Vista | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mi Sonora Mariscos | 2037 Main St, Ramona | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Oscar's Fish Tacos | 225 S Coast Hwy, Oceanside | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria y mariscos el kiki | 2295 Main St, San Diego | fishtaco candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- And Breakfast Burritos | 1904 S Coast Hwy, Oceanside | burrito candidate | breakfast-burrito shop; no California burrito/taco menu confirmed
+- Banda Burrito | 2203 Via De La Valle, Del Mar | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 4235 Spring St, La Mesa | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 605 College Blvd, Oceanside | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 487 Harbor Dr, Oceanside | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 2273 El Camino Real, Oceanside | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 1445 Ocotillo Drive, El Centro | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 3403 Dogwood Rd., El Centro | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 540 W Vista Way, Vista | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 3920 W. Point Loma, San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 6908 Miramar Road, San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 5445 Kearny Villa Rd., San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 9898 Mira Mesa Blvd., San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 731 W San Marcos Blvd, San Marcos | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 424 W. Mile Of Cars, National City | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 692 E St, Chula Vista | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 16686 Bernardo Center Dr., San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 1904 Sweetwater Rd., National City | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 2222 Coronado Ave, San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 110 Bonita Rd, Chula Vista | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 510 W. Mission Ave, Escondido | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 2445 El Cajon Blvd, San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 4365 University Ave, San Diego | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Banda Burrito | 110 W Cole Blv, Calexico | burrito candidate | listed site is Banda Burrito, a delivery brand run by Denny's franchisor DFO LLC (site footer); not a walk-in burrito shop - excluded
+- Beach House Tequila + Taqueria | 3125 Ocean Front Walk, San Diego | burrito candidate | own site live but no taco menu text extracted; recheck menu
+- Birrieria and Taqueria La Huasteca | 865 Turquoise St, San Diego | burrito candidate | website domain (lahuastecatacos-sandiego.com) does not resolve - possibly closed or site lapsed
+- Burritos Luna Mexican Food | 1337 Palm Ave, Imperial Beach | burrito candidate | site nearly empty / flagged spam text; need own source
+- Burritos Santana | 10443 San Diego Mission Rd, San Diego | burrito candidate | site nearly empty / flagged spam text; need own source
+- Burritos Santana | 5330 El Cajon Blvd, San Diego | burrito candidate | site nearly empty / flagged spam text; need own source
+- Burritos Santana | 6545 University Ave, San Diego | burrito candidate | site nearly empty / flagged spam text; need own source
+- California Burritos | 7754 Starling Dr, San Diego | burrito candidate | page mentions California burritos but has little content; recheck with menu
+- Casero Taqueria | 2674 Gateway Rd #195, Carlsbad | burrito candidate | own site (caserotacos.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Cecilia's Taqueria | 2820 Historic Decatur Rd, San Diego | burrito candidate | own site (ceciliastaqueria.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Cilantros La Taqueria | 643 S 4th St Ste 1, El Centro | burrito candidate | website domain (ordercilantroslataqueria.com) does not resolve - possibly closed or site lapsed
+- El Toro Grill Taqueria | 4491 El Cajon Blvd, San Diego | burrito candidate | website domain (eltorogrilltaqueria.com) does not resolve - possibly closed or site lapsed
+- Johnny's Burritos | 490 D St, Brawley | burrito candidate | own site (johnnysburritos.org) returns 404
+- Johnny's Burritos | 105 S Imperial Ave, Imperial | burrito candidate | own site (johnnysburritos.com) returns 404
+- Las Brisas Taqueria | 1005 S Main Ave, Fallbrook | burrito candidate | listed website (lasbrisastaqueria.food94.com) is a third-party/aggregator or unrelated page; need own site or news
+- Picante Taqueria | 6620 Mission Gorge Rd, San Diego | burrito candidate | own site (picantetaqueriasd.com) returned bot_wall / bot check; skipped
+- Taqueria Chabelita Taco Shop | 1587 E Vista Way, Vista | burrito candidate | listed website (bit.ly) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria La Nueva Imperial | 1351 3rd Ave, Chula Vista | burrito candidate | listed website (taqueriaimperialchulavista2.gastro-america.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Los Ruiz | 5010 Cass St, San Diego | burrito candidate | own site (taquerialosruiz.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Taqueria Morelos | 167 W Washington Ave, Escondido | burrito candidate | website domain (taqueriamorelosdos.com) does not resolve - possibly closed or site lapsed
+- Taqueria Morelos | 309 N Ash St, Escondido | burrito candidate | website domain (taqueriamorelosesco.com) does not resolve - possibly closed or site lapsed
+- The Burrito City | 1255 Avocado Ave #103, El Cajon | burrito candidate | site lists a Culver City address and little menu text; El Cajon location unconfirmed
+- The Burrito Factory | 130 S Imperial Ave, El Centro | burrito candidate | site links to an unrelated domain; no menu; need own source
+- Ama’s taqueria y cocina | 1024 Broadway, El Cajon | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Burrito Leo's Mexican Food | 3170 Main St, San Diego | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Coal Bros Taqueria | 407 C St, San Diego | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Dulzura Mini Market & Taqueria | 17023 Campo Rd, Dulzura | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Jumping Bean Taqueria Clx | 114 W Birch St, Calexico | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Frida's Taqueria | , Escondido | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Johnny's Burritos | 301 Wake Ave, El Centro | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- King Burrito Mexican Food | 3490 Marron Rd, Oceanside | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Los Burritos | 835 Palm Ave, National City | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Serranos Taqueria & Seafood | 1351 3rd Ave, Chula Vista | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria | 14151 CA-94, Jamul | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Don Chamango | 3082 Fairmount Ave, San Diego | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Don Julio | 962 S Santa Fe Ave, Vista | burrito candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Agave Taco Shop | 4111 W Point Loma Blvd, San Diego | taqueria candidate | own site (agavetacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Alberto's Taco Shop | 1183 13th St, Imperial Beach | taqueria candidate | website domain (albertosmexicanfoods.com) does not resolve - possibly closed or site lapsed
+- Alpine Taco Shop | 1903A Alpine Blvd, Alpine | taqueria candidate | own site (alpinetacoshop.com) returned HTTP 403 / bot check; skipped
+- Areli's Taco Shop | 1313 Garnet Ave, San Diego | taqueria candidate | listed website (tacomotion.menutoeat.com) is a third-party/aggregator or unrelated page; need own site or news
+- Azteca Taco Shop | 555 Park Blvd, San Diego | taqueria candidate | listed website (azteca.com) is a third-party/aggregator or unrelated page; need own site or news
+- Beach Taco Shack | 1500 Orange Ave, Coronado | taqueria candidate | listed website (hoteldel.com) is a third-party/aggregator or unrelated page; need own site or news
+- Big Boyz Tacos | 1415 Skyline Dr, Lemon Grove | taqueria candidate | own site (bigboyztacocart.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Birria Spot | 301 W 28th St suite p, National City | taqueria candidate | website domain (birriaspot.com) does not resolve - possibly closed or site lapsed
+- Carniceria Taco Shop | 750 Rock Springs Rd, Escondido | taqueria candidate | own site (tortilleriaescondido.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Cesar's Taco Shop | 3123 D Ave, National City | taqueria candidate | own site (californiastacoshop.com) returned HTTP 403 / bot check; skipped
+- Chacho's Tacos | 8262 Clairemont Mesa Blvd, San Diego | taqueria candidate | own site (chachostacossd.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Chito's Taco Shop | 3440 Del Lago Blvd Ste L, Escondido | taqueria candidate | website domain (chitostacoshopca.com) does not resolve - possibly closed or site lapsed
+- Chitos Taco Shop | 320 Sycamore Ave Ste 50, Vista | taqueria candidate | website domain (chitostacoshopca.com) does not resolve - possibly closed or site lapsed
+- Chula Tacos | 1719 Palm Ave, San Diego | taqueria candidate | own site (eatchulatacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Chuy's Taco Shop | 6663 El Cajon Blvd G, San Diego | taqueria candidate | listed website (chuystacoshopsandiego.bestcafes.online) is a third-party/aggregator or unrelated page; need own site or news
+- Cilantro's Taco Shop | 7520 El Cajon Blvd #301, La Mesa | taqueria candidate | own site (cilantrostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Colima's Mexican and Seafood Taco Shop | 4102 Bonita Rd, Bonita | taqueria candidate | website domain (colimasmexicanfood.com) does not resolve - possibly closed or site lapsed
+- Cotija's Taco Shop | 13350 Camino Del Sur, San Diego | taqueria candidate | website domain (ordercotijastacoshopsur.com) does not resolve - possibly closed or site lapsed
+- Cotija's Taco Shop | 740 E 30th St, National City | taqueria candidate | own site (cotijas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Cotija's Taco Shop | 17090 Bernardo Center Dr, San Diego | taqueria candidate | own site (cotijasmexgrill.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Cotija's Tierrasanta | 10645 Tierrasanta Blvd, San Diego | taqueria candidate | own site (cotijas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Cotijas Taco Shop | 9121 Mission Gorge Rd, Santee | taqueria candidate | own site (cotijas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Cotijas Taco Shop | 4444 Bonita Rd, Bonita | taqueria candidate | listed website fins.net does not resolve; need own source
+- Cotijas Taco Shop | 872 Eastlake Pkwy #411, Chula Vista | taqueria candidate | own site (cotijastacoshops.com) returned HTTP 403 / bot check; skipped
+- Cotijas Taco Shop | 7285 Navajo Rd, San Diego | taqueria candidate | own site (cotijas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Crack Taco Shop | 4242 Camino Del Rio N #28, San Diego | taqueria candidate | own site (cracktacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Craft Coast Beer and Tacos | 275 Mission Ave, Oceanside | taqueria candidate | own site (c) 2026 says Baja-style tacos but menu is not readable and addresses not on page; recheck
+- Craft and Taco Lounge | 511 W Valley Pkwy, Escondido | taqueria candidate | own site (craftandtaco.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- De Kotija Taco Shop | 3504 College Blvd, Oceanside | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Don Carlos Taco Shop | 737 Pearl St, La Jolla | taqueria candidate | own site footer (c) 2016, no current date or hours; need 2025-26 source
+- Don Lucio's Taco Shop | 9969 Mira Mesa Blvd #9, San Diego | taqueria candidate | listed website (donluciostaco.dinehere.us) is a third-party/aggregator or unrelated page; need own site or news
+- Don Pedro Taco Shop | 247 3rd Ave, Chula Vista | taqueria candidate | listed website (labellapizza.com) is a third-party/aggregator or unrelated page; need own site or news
+- Don Roman Taco Shop | 1392 E Palomar St #204, Chula Vista | taqueria candidate | own site (orderdonromantacoshop2.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Donatos Taco Shop | 6780 Miramar Rd, San Diego | taqueria candidate | website domain (donatostacoshop.net) does not resolve - possibly closed or site lapsed
+- EL PASO TACO SHOP | , Campo | taqueria candidate | listed website (el-paso-taco-shop.edan.io) is a third-party/aggregator or unrelated page; need own site or news
+- El Compadre Taco Shop | 595 N 2nd St, El Cajon | taqueria candidate | website (elcompadretacoshop.com) timed out / TLS error
+- El Compadre Taco Shop & More | 7327 University Ave, La Mesa | taqueria candidate | own site (elcompadretacoshopandmore.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Huarache Taco Shop | 764 N Midway Dr, Escondido | taqueria candidate | listed website (el-huarache-taco-shop-escondido.sites.tablehero.com) is a third-party/aggregator or unrelated page; need own site or news
+- El Indio De Tijuana Taco Shop | 810 N Broadway, Escondido | taqueria candidate | listed website (el-indio-de-tijuana.edan.io) is a third-party/aggregator or unrelated page; need own site or news
+- El Jefe Taco Shop | 3146 Mission Blvd, San Diego | taqueria candidate | listed website (belmontpark.com) is a third-party/aggregator or unrelated page; need own site or news
+- El Palenque Taco Shop | 218 W San Marcos Blvd #110, San Marcos | taqueria candidate | website domain (el-palenque.com) does not resolve - possibly closed or site lapsed
+- El Patron Taco Shop | 675 Saturn Blvd, San Diego | taqueria candidate | own site (cotijas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Puerto Street Tacos | 890 Palomar Airport Rd, Carlsbad | taqueria candidate | own site (elpuertocarlsbad.net) returned bot_wall / bot check; skipped
+- El Ranchero Taco Shop | 3344 Main St, Chula Vista | taqueria candidate | website domain (elrancherotacoshop.ml) does not resolve - possibly closed or site lapsed
+- El Ranchito Taco Shop | 13654 Poway Rd, Poway | taqueria candidate | own site (powaytacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Rey Moro Taco Shop | 4471 Clairemont Mesa Blvd, San Diego | taqueria candidate | website domain (elreymorotacoshop.com) does not resolve - possibly closed or site lapsed
+- El Rey Taco Shop | 4386 Moraga Ave, San Diego | taqueria candidate | website domain (elreytacoshop.net) does not resolve - possibly closed or site lapsed
+- El Sabroso Taco Shop | 2363 Midway Dr, San Diego | taqueria candidate | own site (sabrosotaos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Sabroso Taco Shop | 4184 Beyer Blvd #108, 2183, San Diego | taqueria candidate | website domain (orderelsabrosotacoshop.com) does not resolve - possibly closed or site lapsed
+- El Taco Loco at Ramona Market | 838 Main St, Ramona | taqueria candidate | listed website (ramonamarket.com) is a third-party/aggregator or unrelated page; need own site or news
+- El negão taco shop | 143 W San Ysidro Blvd, San Diego | taqueria candidate | own site (lasmichoacanastacoshopca.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Estrada's Taco Shop | 9630 Carlton Hills Blvd, Santee | taqueria candidate | own site (estradasmexicanfood.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Graciela's Taco Shop | 8300 Paradise Valley Rd, Spring Valley | taqueria candidate | website domain (gracielastacoshop.com) does not resolve - possibly closed or site lapsed
+- Graciela's Taco Shop | 5047 Central Ave A, Bonita | taqueria candidate | website domain (gracielastacoshop.com) does not resolve - possibly closed or site lapsed
+- Gualberto's Taco Shop | 6215 Imperial Ave, San Diego | taqueria candidate | listed website (imperialbarbershopsd.com) is a third-party/aggregator or unrelated page; need own site or news
+- Haggo's Organic Taco | 1302 N Coast Hwy 101 #101, Encinitas | taqueria candidate | own site (haggosorganictaco.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Harvest Taco Shop | 9350 Clairemont Mesa Blvd, San Diego | taqueria candidate | listed website (harvesttaco.dinehere.us) is a third-party/aggregator or unrelated page; need own site or news
+- Hector's Taco Shop and Fruteria | 1045 Elkelton Blvd, Spring Valley | taqueria candidate | website domain (hectorstacoshop.com) does not resolve - possibly closed or site lapsed
+- Hermanos Taco Shop | 1295 Broadway #206, Chula Vista | taqueria candidate | listed website (centraltravel.com) is a third-party/aggregator or unrelated page; need own site or news
+- Humberto's Taco Shop | 1015 25th St, San Diego | taqueria candidate | own site (humbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Humberto's Taco Shop | 1136 S 43rd St, San Diego | taqueria candidate | own site (humbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- It's A Taco Shop | 3910 W Point Loma Blvd, San Diego | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Jose's Taco Shop | 3910 Vista Way Exhibit Hall, Oceanside | taqueria candidate | listed website (sandiego.citysearch.com) is a third-party/aggregator or unrelated page; need own site or news
+- Jose's Taco Shop | 5808 Van Allen Way Ste 112, Carlsbad | taqueria candidate | listed website (theislandatcarlsbad.com) is a third-party/aggregator or unrelated page; need own site or news
+- Jose's Taco Shop | 2440 S Melrose Dr, Vista | taqueria candidate | own site (tacodelmar.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Junior's Taco Shop | 1680 S Melrose Dr #110, Vista | taqueria candidate | website domain (juniorstacoshop.com) does not resolve - possibly closed or site lapsed
+- Kotija Jr. | 1693 Melrose Dr, San Marcos | taqueria candidate | listed domain now shows Thai gambling spam (hijacked); website null; needs another 2025-26 source
+- Kotija Jr. Taco Shop | 2668 Del Mar Heights Rd, Del Mar | taqueria candidate | listed domain now shows Thai gambling spam (hijacked); website null; needs another 2025-26 source
+- Kotija Junior Taco Shop Carlsbad | 961 Palomar Airport Rd, Carlsbad | taqueria candidate | listed domain now shows Thai gambling spam (hijacked); website null; needs another 2025-26 source
+- Kotija Junior Taco Shop Mira Mesa | 6695 Mira Mesa Blvd, San Diego | taqueria candidate | listed website is robertostacoshop.com (wrong business); need own source
+- Kotija Taco Shop | 663 N Broadway, Escondido | taqueria candidate | listed website (ww1.bzlnk.com) is a third-party/aggregator or unrelated page; need own site or news
+- Kotija Taco Shop | 2319 E Valley Pkwy, Escondido | taqueria candidate | listed website (kotijatacoshop1.placeweb.site) is a third-party/aggregator or unrelated page; need own site or news
+- La Morena Taco Shop | 5059 Federal Blvd, San Diego | taqueria candidate | listed website (all-opening-hours.com) is a third-party/aggregator or unrelated page; need own site or news
+- La Original Casa Del Taco | 1635 Sweetwater Rd, National City | taqueria candidate | own site (casadeltacorestaurant.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- La Vecindad Neighborhood Tacos | 3827 Fifth Ave, San Diego | taqueria candidate | listed domain now hosts Indonesian gambling spam (hijacked); website null
+- Laredo Taco Company | 3504 El Cajon Blvd, San Diego | taqueria candidate | Laredo Taco Company is a 7-Eleven in-store brand (site (c) 7-Eleven); excluded as chain
+- Las Ahumaderas By El Poblano | 1011 Broadway, Chula Vista | taqueria candidate | own site (lasahumaderasca.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Las Brasas Taco Shop | 1890 San Diego Ave, San Diego | taqueria candidate | listed website (lasbrasastacoshop.dinehere.us) is a third-party/aggregator or unrelated page; need own site or news
+- Las Olas | 2655 S Coast Hwy 101, Cardiff | taqueria candidate | own site (lasolasmex.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Las Palmitas Taco Shop | 880 Adams Ave, El Centro | taqueria candidate | website domain (robertostacoshops.com) does not resolve - possibly closed or site lapsed
+- Lola 55 | 1290 F St, San Diego | taqueria candidate | own site live with hours but menu page 404; recheck menu
+- Los Jilberto's Taco Shop | 655 Palm Canyon Dr, Borrego Springs | taqueria candidate | own site (losjilbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Los Pancho's Taco Shop | 1009 Third Ave, Chula Vista | taqueria candidate | own site (lospanchos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Los Panchos Taco Shop | 6110 Friars Rd, San Diego | taqueria candidate | own site (lospanchostacoshops.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Los Panchos Taco Shop | 2441 National City Blvd, National City | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Los Panchos Taco Shop | 5182 Waring Rd, San Diego | taqueria candidate | listed website (lospanchos.menutoeat.com) is a third-party/aggregator or unrelated page; need own site or news
+- Los Pinos Taco Shop | 5646 Lake Murray Blvd, La Mesa | taqueria candidate | own site (lospinostacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Los Rancheros Taco Shop | 1847 Main St, Ramona | taqueria candidate | website domain (losrancherosmexicanseafood.com) does not resolve - possibly closed or site lapsed
+- Los Tacos | 1450 Encinitas Blvd, Encinitas | taqueria candidate | Los Tacos Encinitas is not on the brand's current location list (2026); possibly closed - needs confirmation
+- Los Taquitos Taco Shop(Cash Only) | 1665 Third Ave, Chula Vista | taqueria candidate | listed website (los-taquitos.cafes-guide.com) is a third-party/aggregator or unrelated page; need own site or news
+- Lucita Taco Shop | 2933 Beyer Blvd, San Diego | taqueria candidate | listed website (luzitas-taco-shop.dinehere.us) is a third-party/aggregator or unrelated page; need own site or news
+- Macho's Taco Shop | 3757 Avocado Blvd, La Mesa | taqueria candidate | listed website (mikeysfunnies.com) is a third-party/aggregator or unrelated page; need own site or news
+- Mario's Taco Shop | 642 Palomar St #409, Chula Vista | taqueria candidate | own site (ordermariostacoshop.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Mike's Red Tacos | 2335 Morena Blvd, San Diego | taqueria candidate | own site (mikesredtacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Mike's Taco Club | 5060 Newport Ave, San Diego | taqueria candidate | own site (mikestacoclub.com) returns 404
+- Mr. Taco 2 Fresh Mexican Grill | 342 S Twin Oaks Valley Rd #141, San Marcos | taqueria candidate | own site (mrtaco.net) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Nacho's Taco Shop | 681 S Rancho Santa Fe Rd, San Marcos | taqueria candidate | own site (nachostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Nachos Jr Taco Shop | 7589 University Ave, La Mesa | taqueria candidate | website domain (nachostacoshopsd.com) does not resolve - possibly closed or site lapsed
+- Nancys Taco Shop | 8731 Broadway, La Mesa | taqueria candidate | website domain (nancystacoshop.online) does not resolve - possibly closed or site lapsed
+- Nando's Taco Shop | 8025 Broadway, Lemon Grove | taqueria candidate | own site (nandostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Nico's Taco Shop | 3860 Valley Centre Dr #404, San Diego | taqueria candidate | listed website (piazza-carmel.com) is a third-party/aggregator or unrelated page; need own site or news
+- Nolberto's Taco Shop | 3120 Market St, San Diego | taqueria candidate | website domain (reymorotacoshop.com) does not resolve - possibly closed or site lapsed
+- Not Not Tacos | 550 W Date St suite b, San Diego | taqueria candidate | listed domain now hosts Thai slots spam (hijacked); website null
+- Orlando's Taco Shop | 3200 National Ave, San Diego | taqueria candidate | own site (rolandostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Ortiz's Taco Shop | 3704 Voltaire St, San Diego | taqueria candidate | listed website (ortizstacoshop.menutoeat.com) is a third-party/aggregator or unrelated page; need own site or news
+- Papas & Tacos Mexican Food | 2239 First Ave., San Diego | taqueria candidate | own site (mypapastacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Pedro's Tacos | 656 Benet Rd, Oceanside | taqueria candidate | own site (pedrostacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Pedro's Tacos | 536 S Main Ave, Fallbrook | taqueria candidate | own site (pedrostacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Pure Taco | 2742 State St, Carlsbad | taqueria candidate | own site (mypuretaco.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Quiero Restaurants | 879 W Harbor Dr, San Diego | taqueria candidate | own site (quierorestaurants.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Ramberto's Taco Shop | 1039 Sweetwater Rd, Spring Valley | taqueria candidate | own site (robertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Ramon's Taco Shop | 3951 Governor Dr, San Diego | taqueria candidate | own site (ramonstacoshop.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Rodrigo's Taco Shop | Carmel Mountain Rd, San Diego | taqueria candidate | listed site is Taco Bell; need own source
+- Rolando's Taco Shop | 2303 National Ave, San Diego | taqueria candidate | own site (rolandostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Rolando's Taco Shop | 6915 Paradise Valley Rd, San Diego | taqueria candidate | own site (rolandostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Rolberto's Taco Shop | 3462 Adams Ave, San Diego | taqueria candidate | listed website (rolbertos.menutoeat.com) is a third-party/aggregator or unrelated page; need own site or news
+- Rolberto's Taco Shop | 4090 El Cajon Blvd Apt G, San Diego | taqueria candidate | own site (robertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Rosendo's Taco Shop | 1408 E Main St, El Cajon | taqueria candidate | website domain (rosendostacoshops.com) does not resolve - possibly closed or site lapsed
+- Sancho's Tacos | 400 Mission Ave, Oceanside | taqueria candidate | own site (sanchostacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Sarai's Taco Shop | 788 Broadway, Chula Vista | taqueria candidate | own site (saritastacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Sarais Taco Shop | 10143 Maine Ave, Lakeside | taqueria candidate | own site (saritastacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Sarita Taco Shop | 9906 Campo Rd, Spring Valley | taqueria candidate | own site (saritastacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Silva's Taco Shop | 998 Broadway, El Cajon | taqueria candidate | listed website (sandiegorestaurantreviews.wikidot.com) is a third-party/aggregator or unrelated page; need own site or news
+- Stars and Stripes Taco Shop | 5706 Miramar Rd, San Diego | taqueria candidate | listed website (starsstripestacoshop.eat24hour.com) is a third-party/aggregator or unrelated page; need own site or news
+- Street Tacos El Camino | 138 S Main Ave, Fallbrook | taqueria candidate | website domain (streettacoselcamino.com) does not resolve - possibly closed or site lapsed
+- TJ Tortas and Tacos | 1850 Coronado Ave #401, San Diego | taqueria candidate | website domain (tjtortasandtacos.com) does not resolve - possibly closed or site lapsed
+- Taco Azul | 14110 Olde Hwy 80 Ste C, El Cajon | taqueria candidate | own site (tacoazulsd.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Bar | 133 S Las Posas Rd, San Marcos | taqueria candidate | own site (tacobarsanmarcos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Champs | 850 Broadway, Chula Vista | taqueria candidate | own site (sdtacochamps.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Fiesta | 4920 University Ave, San Diego | taqueria candidate | own site (tacofiesta.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Fiesta II | 2939 Alta View Dr d1, San Diego | taqueria candidate | listed website (tacofiesta.com.au) is a third-party/aggregator or unrelated page; need own site or news
+- Taco Fiesta Restaurant | 6201 Mission Gorge Rd, San Diego | taqueria candidate | own site (tacofiesta.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Mex | 900 W Birch St, Calexico | taqueria candidate | own site lists hours but no readable menu; need menu
+- Taco Salsa Taco Shop | 925 E Plaza Blvd, National City | taqueria candidate | own site (taco-salsa.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacoman | 2708 Highland Ave, National City | taqueria candidate | own site (tacomansd.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Asadero | 15721 Bernardo Heights Pkwy, San Diego | taqueria candidate | own site (tacosasadero.net) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos De Birria Junior | 625 H St, Chula Vista | taqueria candidate | own site (tacosdebirriaelchinitojr.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Don Paco | 800 Civic Center Dr, Vista | taqueria candidate | website domain (tacosdonpacosd.com) does not resolve - possibly closed or site lapsed
+- Tacos El G | 1940 Highland Ave, National City | taqueria candidate | National City Highland Ave is not on Tacos El Gordo's current location list; needs confirmation
+- Tacos El Gordo | Ocean Front Walk & Oliver Ave, San Diego | taqueria candidate | listed website (tacoselgordosandiego.continentalcafes.xyz) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos El Paisa | 3096 National Ave, San Diego | taqueria candidate | listed website (tacoselpaisasandiego6.goodbistros.com) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos El Panson | 4433 El Cajon Blvd, San Diego | taqueria candidate | listed domain now hosts gambling spam (hijacked); website null
+- Tacos El Poblano | 885 E H St, Chula Vista | taqueria candidate | website domain (tacos-el-poblano.com) does not resolve - possibly closed or site lapsed
+- Tacos El Portal | 311 W Mission Ave, Escondido | taqueria candidate | website domain (tacoselportal.com) does not resolve - possibly closed or site lapsed
+- Tacos El Trompo | 1879 Logan Ave Ste c, San Diego | taqueria candidate | Logan Ave location not on the brand's site (only Imperial Beach listed), though a Toast link remains; needs confirmation
+- Tacos El Vaquero | 269 3rd Ave, Chula Vista | taqueria candidate | own site (tacoselvaquerosd.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos de Birria El Chinito Jr | 301 Montgomery St, Chula Vista | taqueria candidate | own site (tacosdebirriaelchinitojr.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos el Trompo | 3460 Highland Ave, National City | taqueria candidate | own site (ordertacoseltrompo.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- The Original Mr. Taco Vista | 2215 S Melrose Dr, Vista | taqueria candidate | own site (theoriginalmrtaco1.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- The Waves Taco Club | 916 5th Ave, San Diego | taqueria candidate | own site (thewavestacoclub.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tita's Taco Shop | 7941 University Ave, La Mesa | taqueria candidate | own site (titastacoshop.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Trujillo's Taco Shop | 5119 College Ave, San Diego | taqueria candidate | own site (trujillostacoshop.com) returned bot_wall / bot check; skipped
+- Tu Taco Taco Shop | 1419 Hilltop Dr Unit D, Chula Vista | taqueria candidate | listed website (tutacotacoshopchulavista5.bestcafes.online) is a third-party/aggregator or unrelated page; need own site or news
+- Valerie's Taco Shop - Pacific Beach | 4427 Ingraham St, San Diego | taqueria candidate | own site (robertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Valerie's Taco Stand | 2213 El Camino Real Ste d, Oceanside | taqueria candidate | listed website (bit.ly) is a third-party/aggregator or unrelated page; need own site or news
+- Valeries Taco Shop | 3617 Ocean Ranch Blvd, Oceanside | taqueria candidate | own site (robertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Aiberto's Taco Shop | 3894 41st St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Birrieria Enriquez: North Park's Finest Taco Restaurant | 2041 University Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Bravo's Taco Shop | 3815 Euclid Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Cachanillas Tacos | 1101 Paulin Ave, Calexico | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Californias Taco Shop | 3066 Clairemont Dr, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Charcoal Tacos | 1211 E Vista Way, Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Chiliberto's Taco & Breakfast | 717 Imperial Ave, Calexico | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Chingones Tacos and Munchies | 124 W Barioni Blvd, Imperial | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Cotijas Taco Shop | 3695 Fairmount Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- D' Sotos Taco Shop | 5307 Lake Murray Blvd, La Mesa | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- D'Poly Taco, Grill and Beer | 1573 W Main St, El Centro | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Daniel's Taco Shop | 1104 E Washington Ave, El Cajon | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Diego's Taco Shop | 1140 Tavern Rd, Alpine | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Don Roman Taco Shop | 6145 El Cajon Blvd, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Charro Taco Shop | 3445 Midway Dr, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Mejor Taco Avapor | 295 Third Ave, Chula Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Papas Fritas Taco Shop | 5413 Redwood St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Puerto Taco Shop | 2836 Bancroft Dr, Spring Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Rinconcito Taco Shop | 1655 Brandywine Ave, Chula Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Taco Rico | 3594 National Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Gloria's Taco Shop | 1233 28th St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Gualberto's Taco Shop No 4 | 8042 Clairemont Mesa Blvd, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Guerrero Taco Shop | 3716 1/2 Main St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Harry's Taco Club | 4612 Cass St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Jilberto's Taco Shop | 29144 Valley Center Rd, Valley Center | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Jilberto's Taco Shop | 15265 CA-76, Pauma Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Kotija Taco Shop | 295 E Orange Ave, Chula Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- La Birrieria Red Tacos | 710 S 4th St, El Centro | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Las Palmitas Taco Shop | 2003 S 4th St, El Centro | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Loreto's Taco Shop | 3546 Bancroft Dr, Spring Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Los Garcia's Taco Shop | 584 N Mollison Ave, El Cajon | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Los Panchos Taco Shop | 374 E H St #1703, Chula Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Lucys Taco Shop | 109 West C St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- MARIA'S TACO SHOP | 401 Broadway, El Centro | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Marlen's Taco Shop | 8921 Jamacha Rd, Spring Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mexicali Street Tacos | 3383 El Cajon Blvd, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mi Ranchito Taco Shop | 1028 Main St, Ramona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mi Taco Shop | 220 E Madison Ave, El Cajon | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mis Cuates Taco Shop | 1777 Pala Mission Rd, Pala | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mrs. Taco | 1385 E Vista Way, Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Rancho's Taco Shop And Seafood | 744 N Midway Dr, Escondido | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Raymundo's Taco Shop | 7918 Ivanhoe Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Rolando's Taco Shop #3 | 1879 Logan Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Roxy's Tacos | 815 C St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Sonora Steak Asadero El Prieto | 4211 Camino De La Plaza, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- T&T Tacos & Tequila Grill & Cantina | 12205 Scripps Poway Pkwy, Poway | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- TACO HOLIX | 1074 E Cole Blvd, Calexico | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Centro | 539 Island Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Machin | 4228 Bonita Rd, Bonita | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Shop | , San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Time Food Truck | Linda Vista Rd &, Comstock St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- TacoSon cebocitos | 1777 Palm Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Alex | 250 W Mission Rd, San Marcos | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Chiquilin | 1685 S 43rd St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Franc – Gaslamp Quarter | 528 Fifth Ave, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Franc – National City (Plaza Bonita) | 3030 Plaza Bonita Rd Ste 1108, National City | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Gallo | 569 N 2nd St #6449, El Cajon | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Guero | 2036 Dairy Mart Rd, San Ysidro | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Jalisience | 1247 S Mission Rd, Fallbrook | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Pirata | 431 N Highland Ave, National City | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Rápido y Sabroso | 2525 Main St, Ramona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos TiaJuana | 135 Mace St, Chula Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos el uzzi | 4270 Del Sol Blvd, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos la ocho | 41 E 8th St, National City | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos puebla | 127 W San Ysidro Blvd, San Ysidro | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taquería Imperial Taco Shop | 9664 Campo Rd, Spring Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tavos Tacos n Beer | 558 Jamacha Rd, El Cajon | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- The Barrel Taco Shop | 6936 Lisbon St, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- The Little Taco Shop | 163 W Main St, Westmorland | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Valentinas Taco Shop | 6051 Business Center Ct, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Valerie's Taco Shop | 6986 El Camino Real Ste B, Carlsbad | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Valerie's Taco Shop | 1006 Mission Ave, Oceanside | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Valeries Taco Shop | 170 Emerald Dr, Vista | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Vallarta Taco Shop | 4125 El Cajon Blvd, San Diego | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Village Tacos | 1510 S Mission Rd, Fallbrook | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Your Taco Connect | 1423 Cuyamaca St, El Cajon | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- BOPJO Korean-Mexican Grill | 2820 Historic Decatur Rd, San Diego | kbbq candidate | website (bluebridgehospitality.com) timed out / TLS error
+- Grandma Tofu & BBQ | 4425 Convoy St, San Diego | kbbq candidate | listed site is a third-party aggregator that says it is not affiliated with the restaurant; need own site or news
+- JJANG Korean bbq | 3637 Avocado Blvd, La Mesa | kbbq candidate | own site (jjangkoreanbbq.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- KM BBQ | 2216 S El Camino Real, Oceanside | kbbq candidate | listed website (yelp.to) is a third-party/aggregator or unrelated page; need own site or news
+- Khan Korean BBQ | 330 Wake Ave, El Centro | kbbq candidate | listed website (khankoreanbbq.menu11.com) is a third-party/aggregator or unrelated page; need own site or news
+- Korean Kitchen Tofu and Galbi | 509 Telegraph Canyon Rd, Chula Vista | kbbq candidate | own site (koreankitchenchulavista.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Song Hak Korean BBQ | 4681 Convoy St, San Diego | kbbq candidate | listed site belongs to Honey Pig (VA/MD/TX), a different business; need Song Hak's own source
+- Sushi & Galbi | 1519 Highland Ave, National City | kbbq candidate | own site (sushingalbi.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Kangnam Korean BBQ | 11828 Rancho Bernardo Rd Ste 117 - 119, San Diego | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Kogi BBQ | 5447 Kearny Villa Rd, San Diego | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Manna Heaven BBQ | 740 Nordahl Rd, San Marcos | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Olleh CONVOY Korean BBQ | 4344 Convoy St, San Diego | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Ahumadas Mexican Grill and Tacos | 7614 Evans St, Riverside | taqueria candidate | website domain (cecistacos.com) does not resolve - possibly closed or site lapsed
+- Al Pastor Taqueria | 9453 Central Ave, Montclair | taqueria candidate | own site (alpastortaqueria.com) returned bot_wall / bot check; skipped
+- Alamilla's Taco Shop | 3522 Madison St ste 104, Riverside | taqueria candidate | own site (alamillas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Alex's Tacos Birrieria | 1745 S Mountain Ave, Ontario | taqueria candidate | listed website (castorage.com) is a third-party/aggregator or unrelated page; need own site or news
+- Amapola Rico Taco | 291 E Valley Blvd, Colton | taqueria candidate | own site (amapolaricotaco.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Amapola Rico Taco | 596 N Mt Vernon Ave, San Bernardino | taqueria candidate | own site (amapolaricotaco.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Amapola Rico Taco | 1279 W Base Line St, San Bernardino | taqueria candidate | own site (amapolaricotaco.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Amapola Rico Taco | 7990 Tippecanoe Ave, San Bernardino | taqueria candidate | own site (amapolaricotaco.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Amapola Rico Taco | 2390 Del Rosa Ave, San Bernardino | taqueria candidate | own site (amapolaricotaco.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Arturo's Tacos Cocina Tradicional Mexicana | 18596 Valley Blvd, Bloomington | taqueria candidate | own site (taqueriamexicana.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- B & C Taco Bar and Burger | 34620 Yucaipa Blvd, Yucaipa | taqueria candidate | own site live with hours but menu text thin (taco bar and burger); recheck menu
+- BZ Taco | 414 Orange St, Redlands | taqueria candidate | own site (bztaco.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Baja Ensenada Fish Tacos | 718 S San Jacinto Ave, San Jacinto | taqueria candidate | own site (bajaensenadafishtacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Baja Fish Tacos | 2335 Hamner Ave, Norco | taqueria candidate | own site (bajafishtacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Baja Taco | 13112 Glen Ridge Ct, Victorville | taqueria candidate | own site (bajatacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Baja Taco Plus | 13738 Bear Valley Rd #3, Victorville | taqueria candidate | website domain (bajataco.powersites.net) does not resolve - possibly closed or site lapsed
+- Best Taco | 5110 Holt Blvd, Montclair | taqueria candidate | listed website is The Taco Man (different name); Montclair Holt Blvd not on Taco Man's site
+- Captains Fish Tacos | 12748 Amargosa Rd, Victorville | taqueria candidate | own site (captainsgrill.com) returned HTTP 403 / bot check; skipped
+- Casa Fresca Tacos | 1200 E Highland Ave, San Bernardino | taqueria candidate | listed site is an aggregator (Fresh Taco Haven); need own source
+- Cha-Cha's Tacos | 26393 Redlands Blvd, Loma Linda | taqueria candidate | website domain (chachastacos.net) does not resolve - possibly closed or site lapsed
+- Chucks Tacos | 661 E Foothill Blvd, Upland | taqueria candidate | listed website (restaurantportals.com) is a third-party/aggregator or unrelated page; need own site or news
+- Cinco De Mayo Market and Taqueria | 27800 Landau Blvd B-103, Cathedral City | taqueria candidate | own site (cincodemayotacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Cotijas Taco Shop | 1089 E Washington St, Colton | taqueria candidate | website domain (cotijatacoshop.com) does not resolve - possibly closed or site lapsed
+- Crazy Coyote Tacos | 13033 Malki Road, Banning | taqueria candidate | listed website (smartfinancial.com) is a third-party/aggregator or unrelated page; need own site or news
+- Don Orange Tacos | 14 E State St, Redlands | taqueria candidate | own site live (c) 2026 but menu is modern Mexican plates rather than a taco-centered menu; not added
+- El Burrito Taco Shop | 36520 Temeku St, Winchester | taqueria candidate | own site (elburritotacoshop.com) returned HTTP 403 / bot check; skipped
+- El Burrito Taco Shop | 32395 Clinton Keith Rd, Wildomar | taqueria candidate | own site (elburritotacoshop.com) returned HTTP 403 / bot check; skipped
+- El Burrito Taco Shop | 31900 Mission Trail, Lake Elsinore | taqueria candidate | own site (elburritotacoshop.com) returned HTTP 403 / bot check; skipped
+- El GoGo’s Taco Shop | 19530 Van Buren Boulevard, Riverside | taqueria candidate | own site (robertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Mariachi Taco Shop | 1410 Beaumont Ave d1, Beaumont | taqueria candidate | website domain (elmariachitacoshopbeaumont.com) does not resolve - possibly closed or site lapsed
+- El Ojo De Agua Taqueria | 830 E Foothill Blvd, Rialto | taqueria candidate | website domain (orderelojodeaguataqueria.com) does not resolve - possibly closed or site lapsed
+- El Ojo De Agua Taqueria | 580 S San Jacinto Ave, San Jacinto | taqueria candidate | listed website (rinns.top) is a third-party/aggregator or unrelated page; need own site or news
+- El Ojo De Agua Taqueria | 25100 Alessandro Blvd, Moreno Valley | taqueria candidate | website domain (elojodeaguataqueria.com) does not resolve - possibly closed or site lapsed
+- El Pollo Taco Peruvian Cuisine | 3980 University Ave, Riverside | taqueria candidate | own site (elpollotaco.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Ranchito Taco Shop | 3148 W Florida Ave, Hemet | taqueria candidate | listed site is Taco Shop in Hays, Kansas (different business)
+- El Ranchito Taco Shop | 31855 Date Palm Dr Ste 12, Cathedral City | taqueria candidate | own site (powaytacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Ranchito Taco Shop | 23811 Washington Ave, Murrieta | taqueria candidate | own site (elranchitotacoshop.net) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Ranchito Taco Shop | 78540 CA-111 a13, La Quinta | taqueria candidate | own site (elranchitotacoshop.net) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Ranchito Taco Shop | 34580 Monterey Ave Ste 103, Palm Desert | taqueria candidate | own site (elranchitotacoshop.net) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- El Ranchito Taco Shop and Sports Bar | 39840 Los Alamos Rd #3, Murrieta | taqueria candidate | own site (elranchitotacoshop-losalamos.com) returns 404
+- El Rey Taco Grill | 16687 Arrow Blvd, Fontana | taqueria candidate | own site (c) 2024 with hours (Fontana and Wildomar) but no readable menu; need menu
+- El Super Taco | 5274 Arlington Ave, Riverside | taqueria candidate | listed domain is for sale (HugeDomains); website null
+- El Taco Asado | 440 S El Cielo Rd, Palm Springs | taqueria candidate | website domain (eltacoasado.com) does not resolve - possibly closed or site lapsed
+- El Taco Bar | 29263 Central Ave Ste F, Lake Elsinore | taqueria candidate | own site (eltacobarmenu.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- El Toro Taqueria | 630 E Florida Ave, Hemet | taqueria candidate | listed website (pery.top) is a third-party/aggregator or unrelated page; need own site or news
+- Ensenada Baja Tacos | 48400 Seminole Dr, Cabazon | taqueria candidate | own site (premiumoutlets.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Fiesta Taco | 49500 Seminole Dr, Cabazon | taqueria candidate | own site (morongocasinoresort.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Fiesta Tacos | 1111 Beaumont Ave, Beaumont | taqueria candidate | website domain (fiestatacosbeaumont.com) does not resolve - possibly closed or site lapsed
+- Freddy's Tacos | 21465 Palomar St, Wildomar | taqueria candidate | website domain (freddystacosca.com) does not resolve - possibly closed or site lapsed
+- Fredy's Tacos | 1821 E 4th St, Ontario | taqueria candidate | listed domain now hosts gambling spam (hijacked); website null
+- Fuzzy's Taco Shop | 1523 E Main St, Barstow | taqueria candidate | Fuzzy's Taco Shop is a national chain; excluded
+- Goyos Tacos | 18793 Valley Blvd, Bloomington | taqueria candidate | listed website (order.store) is a third-party/aggregator or unrelated page; need own site or news
+- Green Taco | 3812 Pierce St, Riverside | taqueria candidate | own site (Wix) text unreadable, footer 2017; need menu/current source
+- Jilberto's Taco Shop | 41413 Margarita Rd unit 102, Temecula | taqueria candidate | own site lists Hemet and Temecula but menu not readable (Menufy); recheck
+- Jilberto's Taco Shop | 27523 Ynez Rd, Temecula | taqueria candidate | listed website (losjilbertostacoshoptemecula.gastrobars.com) is a third-party/aggregator or unrelated page; need own site or news
+- Jilberto's Taco Shop | 31178, 31198 Pauba Rd, Temecula | taqueria candidate | own site (losjilbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Johnny's Tacos and Sports | 1756 E Lugonia Ave, Redlands | taqueria candidate | own site (johnnysredlands.getbento.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Juanito's Tacos | 7750 Palm Ave, Highland | taqueria candidate | website domain (juanitostaco53.myfbplace.com) does not resolve - possibly closed or site lapsed
+- Kasa Market & Taco Shop | 29 Palms Hwy, Yucca Valley | taqueria candidate | own site (superpages.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Keriko Pollos y Tacos | 5623 Mission Blvd, Jurupa Valley | taqueria candidate | own site (kerikopollosytacosca.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- La Bamba Tacos And Beer | 40365 Murrieta Hot Springs Rd, Murrieta | taqueria candidate | website (publicreputation.com) timed out / TLS error
+- La Cabana Taco Shop | 2244 E Florida Ave, Hemet | taqueria candidate | own site (dineoption.com) returned bot_wall / bot check; skipped
+- La Familia Street Tacos & More | 25227 Redlands Blvd, Loma Linda | taqueria candidate | own site (lafamilia.restaurant) returned bot_wall / bot check; skipped
+- La Mexicana Taqueria | 343 Wilkerson Ave, Perris | taqueria candidate | own site (lamexicanataqueria.net) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- La Pasadita Taco Shop | 24635 Madison Ave, Murrieta | taqueria candidate | website domain (lapasaditatacoshop.com) does not resolve - possibly closed or site lapsed
+- La Tapatia Taqueria Y Mariscos | 2100 N Rancho Ave, Colton | taqueria candidate | listed domain suspended (ICANN verification page); website null
+- La Victoria Tacos y Mariscos Restaurant | 450 N Mountain Ave, Ontario | taqueria candidate | own site (Wix) text unreadable; need menu
+- La corita tacos de canasta | 9115 Beech Ave, Fontana | taqueria candidate | website domain (lacoritatacosdecanasta.com) does not resolve - possibly closed or site lapsed
+- Laredo Taco Company | 171 W Redlands Blvd, San Bernardino | taqueria candidate | Laredo Taco Company is a 7-Eleven in-store brand (site (c) 7-Eleven); excluded as chain
+- Laredo Taco Company | 15666 Hellman Ave, Chino | taqueria candidate | Laredo Taco Company is a 7-Eleven in-store brand (site (c) 7-Eleven); excluded as chain
+- Leno's Rico Taco | 549 W Valley Blvd, Colton | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Los Cabos Tacos | 11840 Magnolia Ave, Riverside | taqueria candidate | website domain (loscabostacosca.com) does not resolve - possibly closed or site lapsed
+- Los Jilberto's Taco Shop | 29989 Canyon Hills Rd, Lake Elsinore | taqueria candidate | own site (losjilbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Los Jilberto's Taco Shop | 30571 Temecula Pkwy, Temecula | taqueria candidate | own site (losjilbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Los Jilberto's Taco Shop | 25021 Madison Ave STE 104, Murrieta | taqueria candidate | own site (Wix) location pages unreadable; need per-location confirmation
+- Los Jilbertos Taco Shop | 23971 Clinton Keith Rd, Wildomar | taqueria candidate | own site (losjilbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Los Jilbertos Taco Shop | 511 E 4th St, Perris | taqueria candidate | own site (losjilbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Los Portales Taco Shop | 33040 Antelope Rd, Murrieta | taqueria candidate | own site (losportalestacoshoptogo.com) returned HTTP 403 / bot check; skipped
+- Los Portales Taco Shop | 1191 N State St # A, San Jacinto | taqueria candidate | own site (losportalestacoshoptogo.com) returned HTTP 403 / bot check; skipped
+- Los Portales Taco Shop | 1497 S San Jacinto Ave C, San Jacinto | taqueria candidate | listed site is Taco Shop in Hays, Kansas (different business)
+- Lulus tacos | 356 E M St, Colton | taqueria candidate | own site (finerestaurantfinder.com) returned HTTP 429 / bot check; skipped
+- Machete Taqueria | 1580 Barton Rd C, Redlands | taqueria candidate | own site (machetetaqueria.com) returned HTTP 403 / bot check; skipped
+- Maiquitos Tacos | 647 Main St, Riverside | taqueria candidate | website domain (maiquitostacos.com) does not resolve - possibly closed or site lapsed
+- Mi Ranchito Taqueria | 1181 Magnolia Ave, Corona | taqueria candidate | listed website (elranchitotacoshop.top-cafes.com) is a third-party/aggregator or unrelated page; need own site or news
+- Michi Tacos | 111 N Main St, Lake Elsinore | taqueria candidate | own site (c) 2025 with hours and Toast links but no readable menu; need menu
+- Michi Tacos Menifee | 30141 Antelope Rd Ste l, Menifee | taqueria candidate | own site (c) 2025 with hours and Toast links but no readable menu; need menu
+- Monica's Tacos | 11430 I Ave, Hesperia | taqueria candidate | website domain (monicas-tacos.com) does not resolve - possibly closed or site lapsed
+- Mr G's Market Liquor and Taco Kitchen | 1411 Rimpau Ave #101, Corona | taqueria candidate | website domain (mrgsliquors.com) does not resolve - possibly closed or site lapsed
+- Mr. Taco | 5701 Van Buren Boulevard, Riverside | taqueria candidate | own site (mrtacofresh.com) returned HTTP 403 / bot check; skipped
+- Mr. Taco Main Street No.2 | 2435 Main St, Riverside | taqueria candidate | website domain (mrtacoriverside.com) does not resolve - possibly closed or site lapsed
+- Nataly's Tacos | 1945 E Riverside Dr #5, Ontario | taqueria candidate | own site (natalystaqueria.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Nathans Tacos and Catering | 1125 Orange St, Redlands | taqueria candidate | website domain (nathanstacos.com) does not resolve - possibly closed or site lapsed
+- Oli's Tacos | 5060 E Montclair Plaza Ln, Montclair | taqueria candidate | listed domain is for sale (DomainMarket); website null
+- One Stop Taco Shop | 84051 Indio Blvd, Indio | taqueria candidate | website domain (onestop.com) does not resolve - possibly closed or site lapsed
+- Original Del Taco Barstow | 2871 Lenwood Rd, Barstow | taqueria candidate | Del Taco chain; excluded
+- Pablo's Tacos & Beer | 42425 Jackson St, Indio | taqueria candidate | website domain (pablostacosndbeer.com) does not resolve - possibly closed or site lapsed
+- Paco's Tacos | 1689 Kendall Dr, San Bernardino | taqueria candidate | own site (pacostacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Papa's Tacos Casero | 11272 Palmdale Rd, Adelanto | taqueria candidate | own site (papastacoscaseroca.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Ranchito Tacos Al Carbon | 2995 Van Buren Blvd, Riverside | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Rancho Taco Shop | 2057 River Rd, Norco | taqueria candidate | website domain (ranchotacoshop.com) does not resolve - possibly closed or site lapsed
+- Rebel Tacos | 40820 Winchester Rd, Temecula | taqueria candidate | website (rebeltacos.com) timed out / TLS error
+- Restaurant & Taqueria Los Paisanos | 9097 Sierra Ave., Fontana | taqueria candidate | website domain (taquerialospaisanos.com) does not resolve - possibly closed or site lapsed
+- Ricos Tacos Antony | 825 W Highland Ave, San Bernardino | taqueria candidate | own page lists hours but menu mostly pupusas; taco menu unconfirmed
+- Ricos Tacos El Primo | 1788 University Ave Ste 102, Riverside | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Ruben's Tacos | 175 Grove Ave, Upland | taqueria candidate | own site (tiktok.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Ruben's Tacos | 7107 Arlington Ave, Riverside | taqueria candidate | listed website (chow.com) is a third-party/aggregator or unrelated page; need own site or news
+- Sanchez Tacos | 430 River Rd, Corona | taqueria candidate | own site (sanchez-tacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Santiago's Taco Shop | 27226 State Highway 189, Blue Jay | taqueria candidate | own site (santiagostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Senor Tacos | 313 Sixth St A, Norco | taqueria candidate | own site (senortacosnorco.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Servandos Taco Shop | 977 N Central Ave, Upland | taqueria candidate | Del Taco chain; excluded
+- So Cal Tacos and Beer | 2437 W Florida Ave, Hemet | taqueria candidate | own site (socaltacosandbeer.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- So Cal Tacos and Beer | 26957 Date St B-205, Murrieta | taqueria candidate | own site (socaltacosandbeer.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Stand Up Tacos | 12375 Central Ave, Chino | taqueria candidate | website domain (standuptacos.com) does not resolve - possibly closed or site lapsed
+- Super Tacos Panchitos | 13646 Magnolia Ave, Corona | taqueria candidate | website domain (supertacospanchito.online) does not resolve - possibly closed or site lapsed
+- Sweet Rolled Tacos | 501 W Redlands Blvd, Redlands | taqueria candidate | own site (sweetrolledtacos.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Azteca | 1463 W 6th St, Corona | taqueria candidate | own site (aztecamex.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Grande | 15177 Hook Blvd, Victorville | taqueria candidate | own site (ordertacogrande.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Hut | 9451 Foothill Blvd, Rancho Cucamonga | taqueria candidate | own site (c) 2026, Est. 1982, but street number of the Foothill Blvd location not shown; recheck which address is current
+- Taco Hut | 11815 Foothill Blvd, Rancho Cucamonga | taqueria candidate | own site (c) 2026, Est. 1982, but street number of the Foothill Blvd location not shown; recheck which address is current
+- Taco Joe's | 1749 S Riverside Ave, Rialto | taqueria candidate | website domain (amaachinofliers.com) does not resolve - possibly closed or site lapsed
+- Taco Joe's Mexican Restaurant | 26659 Highland Ave, Highland | taqueria candidate | own site (tacojoeshighland.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco My Hacienda | 14380 Main St #104 9, Hesperia | taqueria candidate | own site (richmondmexicanfood.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taco Shop 760 Restaurant | 48975 Grapefruit Blvd, Coachella | taqueria candidate | own site (tacoshops760.com) returned HTTP 403 / bot check; skipped
+- Taco Station | 4088 Mission Inn Avenue, Riverside | taqueria candidate | own site (c) 2026 but menu text not readable; recheck menu
+- Taco Tia | 1004 Orange St, Redlands | taqueria candidate | listed website (tacotia1.netwaiter.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taco Time | 91193 2nd St, Mec | taqueria candidate | website domain (thetacoscv.com) does not resolve - possibly closed or site lapsed
+- Tacollynn | 3864 Sierra Ave, Fontana | taqueria candidate | own site (tacollynn.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos & Beer | 909 E 6th St, Beaumont | taqueria candidate | website (tandbbeaumont.com) timed out / TLS error
+- Tacos & Tequila Grill and Cantina | 27301 Newport Rd #250, Menifee | taqueria candidate | own site (tacosandtequilamenu.com) returned bot_wall / bot check; skipped
+- Tacos Al 100 Por Ciento | 15441 Anacapa Rd, Victorville | taqueria candidate | own site (tacosal100.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Al Fuego | 486 N Main St, Corona | taqueria candidate | own site still shows 'Temporary COVID hours'; need 2025-26 source
+- Tacos Arandas | 2075 E Highland Ave, San Bernardino | taqueria candidate | listed website (events.sbsun.com) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos Arandas | 23655 Sunnymead Boulevard C, Moreno Valley | taqueria candidate | catering company, not a fixed taquería
+- Tacos Carnitas Lindo Michoacan | 26498 Baseline St, Highland | taqueria candidate | own site (carnitasmichoacanla.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Choix | 15188 Main St Ste F, Hesperia | taqueria candidate | listed website (local.yahoo.com) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos Don Ramon | 739 N Mt Vernon Ave, San Bernardino | taqueria candidate | own site (tacosdonramon.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos El Chuleton | 540 W 4th St, Perris | taqueria candidate | listed website (tacoselchuleton.netwaiter.com) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos El Comal | 1040 W G St, Colton | taqueria candidate | website domain (tacoselcomalcolton.com) does not resolve - possibly closed or site lapsed
+- Tacos El Guero | 16355 Merrill Ave, Fontana | taqueria candidate | listed website (tacos-el-guero.cafe-inspector.com) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos El Mr. | 15899 Manzanita St, Hesperia | taqueria candidate | own site (lostacoslv.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Tacos El Parrillazo | S Willow Ave, Rialto | taqueria candidate | own site (square.online) returned HTTP 403 / bot check; skipped
+- Tacos El Primo | 19059 W Valley Blvd, Bloomington | taqueria candidate | listed site is Guadalajara Grill in San Antonio, TX (different business)
+- Tacos El Ranchero | 106 W G St, Ontario | taqueria candidate | website domain (tacoselranchero.com) does not resolve - possibly closed or site lapsed
+- Tacos El Rancho | 1845 Hamner Ave # C, Norco | taqueria candidate | listed site is Tacos El Rancho in Orlando, FL (different business)
+- Tacos El Rancho | 4942 La Sierra Ave, Riverside | taqueria candidate | listed website (tacos-5.poi.place) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos Elsinore Number 2 | 16331 Lakeshore Dr, Lake Elsinore | taqueria candidate | own site (rudystacosqc.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Estilo Sonora | 21623 Cajalco Rd, Perris | taqueria candidate | own site (tacosestilosonora.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Estrella | 271 Foothill Blvd, Rialto | taqueria candidate | own site (companymap.xyz) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Tacos Galaktikos | 82944 Ave 44 #D, Indio | taqueria candidate | website domain (tacosgalaktikos.online) does not resolve - possibly closed or site lapsed
+- Tacos In the Towe | 1860 N Willow Ave, Rialto | taqueria candidate | own site (tacosinthetowe.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Jalisco | 9251 Sierra Ave., Fontana | taqueria candidate | own site (tacosjalisco.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Tacos La Bufadora | 24939 Sunnymead Boulevard, Moreno Valley | taqueria candidate | Moreno Valley Sunnymead Blvd is not on La Bufadora's current location list; needs confirmation
+- Tacos La Central | 920 N Mt Vernon Ave, Colton | taqueria candidate | own site (tacoslacentral.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos La Central | 601 E Foothill Blvd, Rialto | taqueria candidate | own site (tacoslacentral.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos La Piedad | 3522 Madison St, Riverside | taqueria candidate | own site (tacoslapiedad.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Las Cuatas | 163 S Ramona Blvd, San Jacinto | taqueria candidate | website domain (hemettacos.com) does not resolve - possibly closed or site lapsed
+- Tacos Lucaz | 19498-19348 Seaton Ave, Perris | taqueria candidate | listed website (yelp.to) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos Mexico | 320 S Riverside Ave, Rialto | taqueria candidate | own site (tacosmexico.com) returned bot_wall / bot check; skipped
+- Tacos Mexico | 14868 Bear Valley Rd, Victorville | taqueria candidate | own site (tacosmexico.com) returned bot_wall / bot check; skipped
+- Tacos Mexico | 205 W Base Line St, San Bernardino | taqueria candidate | own site (tacosmexico.com) returned bot_wall / bot check; skipped
+- Tacos More | 5322 Etiwanda Ave, Jurupa Valley | taqueria candidate | own site (partytacosmore.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tacos Nochistlan | 2055 N Perris Blvd A7, Perris | taqueria candidate | listed website (tacosnochistlan.netwaiter.com) is a third-party/aggregator or unrelated page; need own site or news
+- Tacos Panchito | 1530 W 6th St, Corona | taqueria candidate | website domain (tacospanchito.com) does not resolve - possibly closed or site lapsed
+- Tacos Pericos | 84705 Avenue 50, Coachella | taqueria candidate | own site (tacos19.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Tacos Xalisco | 8188 Sierra Ave. F, Fontana | taqueria candidate | website domain (tacosxalisco.net) does not resolve - possibly closed or site lapsed
+- Tacos al Fuego | 16810 Van Buren Blvd, Riverside | taqueria candidate | own site still shows 'Temporary COVID hours'; need 2025-26 source
+- Tacos and Beer Mi Lindo Mexico | 731 S Sanderson Ave, Hemet | taqueria candidate | own site (tbmx1.com) returned HTTP 403 / bot check; skipped
+- Tacos y Mariscos La Gloria | 1405 W Mission Blvd, Ontario | taqueria candidate | own site (tacosymariscoslagloria.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Taqueria Allende 2 | 83103 Ave 48 Ste 1A, Coachella | taqueria candidate | own site (taqueriasguerrero.com) returned HTTP 403 / bot check; skipped
+- Taqueria Arandas | 11619 Rancho Rd, Adelanto | taqueria candidate | own site (taqueria-arandas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taqueria Azteca | 257 E Main St, San Jacinto | taqueria candidate | listed website (lmaps.top) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Azteca | 5959 Arlington Ave # E, Riverside | taqueria candidate | own site (aztecamex.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taqueria D'Los Fuentes | 22574 Alessandro Blvd, Moreno Valley | taqueria candidate | own site (ordertaqueriadlosfuentes.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Taqueria Del Valle | 23900 Ironwood Ave, Moreno Valley | taqueria candidate | listed website (local.yahoo.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria El Guero | 13156 Palm Dr #3, Desert Hot Springs | taqueria candidate | own site (elguerodhs.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taqueria El Guero #2 | 34481 Date Palm Dr, Cathedral City | taqueria candidate | website domain (taqueriaelguero2.com) does not resolve - possibly closed or site lapsed
+- Taqueria El Tacocho | 25064 3rd St, San Bernardino | taqueria candidate | own site (dineoption.com) returned bot_wall / bot check; skipped
+- Taqueria El Zacatecano | 802 Navajo Rd, Perris | taqueria candidate | listed website (taqueriaelzacatecano.netwaiter.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Guerrero | 81576 CA-111, Indio | taqueria candidate | own site (taqueriasguerrero.com) returned HTTP 403 / bot check; skipped
+- Taqueria Ixtlan | 83233 Indio Blvd, Indio | taqueria candidate | own site (taqueriaixtlan.com) returned bot_wall / bot check; skipped
+- Taqueria La Cadena | 1497 N Mount Vernon Ave, Colton | taqueria candidate | website domain (taquerialacadena.com) does not resolve - possibly closed or site lapsed
+- Taqueria La Pasadita | 12909 9th St, Chino | taqueria candidate | website domain (tacosinchinoca.com) does not resolve - possibly closed or site lapsed
+- Taqueria Los Hermanos | 14297 7th St, Victorville | taqueria candidate | listed site is a Georgia restaurant (different business)
+- Taqueria Los Panchos | 68351 E Palm Canyon Dr, Cathedral City | taqueria candidate | listed website (taqueria-los-panchos.keeq.io) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Mexico | 830 N Main St, Corona | taqueria candidate | listed domain is for sale (HugeDomains); website null
+- Taqueria Mexico | 8127 Mulberry Ave, Fontana | taqueria candidate | listed domain is for sale (HugeDomains); website null
+- Taqueria Mi Ranchito | 4724 La Sierra Ave, Riverside | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Mora | 4183 Chino Hills Pkwy L, Chino Hills | taqueria candidate | listed website (taqueria-mora.res-menu.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Oaxaca | 416 W 6th St, Corona | taqueria candidate | website domain (taqueriaoaxacamexicanfood.online) does not resolve - possibly closed or site lapsed
+- Taqueria San Miguel | 35320 Date Palm Dr, Cathedral City | taqueria candidate | own site (c) 2026 but says 'call to confirm' hours; no readable menu
+- Taqueria San Miguel | 72450 Ramon Rd, Thousand Palms | taqueria candidate | own site (c) 2026 but says 'call to confirm' hours; no readable menu
+- Taqueria Sinaloense | 73850 CA-111, Palm Desert | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Teotihuacan | 79410 CA-111, La Quinta | taqueria candidate | own site (taqueriateotihuacan.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taqueria Tlaquepaque | 362 S Palm Canyon Dr, Palm Springs | taqueria candidate | own site (Wix) text unreadable; need menu
+- Taqueria Tomateros | 9164 Magnolia Ave, Riverside | taqueria candidate | own site (taqueriatomateros.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taqueria Viva Villa | 15092 Slover Ave, Fontana | taqueria candidate | own site (pancho-villas.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Taqueria Viva Villa | 9585 Sierra Ave., Fontana | taqueria candidate | website domain (vivavillataqueria.com) does not resolve - possibly closed or site lapsed
+- Taqueria Zacatecas | 17014 Smoke Tree St, Hesperia | taqueria candidate | listed website (taqueria-zacatecas.edan.io) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria Zacatecas | 24318 Hemlock Ave, Moreno Valley | taqueria candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Taqueria el Guero bar & grill en Indio | 82204 Highway 111, Indio | taqueria candidate | own site (taqueriaelguerocali.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- Taqueria el salitre | 11399 Triumph Ln, Moreno Valley | taqueria candidate | own site (aztecamex.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- The Taco Hut | 34557 Yucaipa Blvd, Yucaipa | taqueria candidate | listed domain now hosts gambling spam (hijacked); website null
+- The Taco Man | 2502 S Euclid Ave, Ontario | taqueria candidate | Ontario Euclid Ave not on The Taco Man's current location list (Fontana, Upland, Glendora); needs confirmation
+- Tijuana's Tacos | 1702 S Euclid Ave, Ontario | taqueria candidate | own site footer (c) 2017; locations page not found; need 2025-26 per-location source
+- Tijuana's Tacos | 8151 Arlington Ave A2, Riverside | taqueria candidate | own site footer (c) 2017; locations page not found; need 2025-26 per-location source
+- Tijuana's Tacos | 24578 Sunnymead Boulevard, Moreno Valley | taqueria candidate | own site footer (c) 2017; locations page not found; need 2025-26 per-location source
+- Tijuana's Tacos | 9260 Sierra Ave., Fontana | taqueria candidate | own site footer (c) 2017; locations page not found; need 2025-26 per-location source
+- Tio's Tacos | 3948 Mission Inn Avenue, Riverside | taqueria candidate | own site (tiostacos1.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- Tipsy Tacos | 34993 Yucaipa Blvd, Yucaipa | taqueria candidate | website domain (selectsourcemedia.com) does not resolve - possibly closed or site lapsed
+- Tudy's Taqueria | 1027 W 6th St, Corona | taqueria candidate | website domain (tudystaqueria.com) does not resolve - possibly closed or site lapsed
+- Yilbertos Taco Shop | 55050 CA-371, Anza | taqueria candidate | own site (yilbertostacoshop.com) loaded but did not confirm this address plus a current taco/burrito/KBBQ menu; recheck
+- iGuey Tacos | 20333 Osuna Rd, Apple Valley | taqueria candidate | own site (igueytacos.com) returned bot_wall / bot check; skipped
+- Algoberto's Taco Shop | 56143 29 Palms Hwy, Yucca Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- All Guys Tacos | 3700 E Vista Chino G, Palm Springs | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Aztlan Tacos | 29280 Central Ave Ste G, Lake Elsinore | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Baja King Fish Tacos | 157 S Del Rosa Dr, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- BellaMar Baja Fish Tacos | 499 W Orange Show Rd, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Birrieria Tacos Mi Negra | 24651 Alessandro Blvd, Moreno Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Birrieria y taqueria don tino | 2735 N Macy St, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Birrieria, Carnitas y Tacos DON TECO | 17146 Main St, Hesperia | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- California Meat Market and Taqueria | 45941 Monroe St, Indio | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Castellon Tacos | 4806 Fairway Blvd, Chino Hills | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Cotija's Taco Shop | 43985 Mahlon Vail Rd, Temecula | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- East La Tacos | 15923 Bear Valley Rd, Hesperia | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Ranchito Taco Shop | 256 E Stetson Ave, Hemet | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Ranchito Taco Shop | 43430 CA-74, Hemet | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Ranchito Taco Shop | 2117 E Florida Ave, Hemet | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Ranchito Taco Shop | 40335 Winchester Rd F, Temecula | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Rey Tacos Y Mariscos | 1034 W 6th St STE 105, Corona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- El Taco Loro | 1303 N E St, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Guadalajara's Taco Shop and Soul Food | 12031 5th St A, Yucaipa | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Huicho's Tacos | 416 W Colton Ave, Redlands | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Hungry Bear Tacos | 499 W Orange Show Rd, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Ledezma's TACOS | 473 S San Jacinto Ave, San Jacinto | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Leo's Tacos | 45891 Monroe St, Indio | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Los 3 Trompos Taqueria and Beer | 2437 W Florida Ave, Hemet | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Los Jilbertos Taco Shop | 27511 McCall Blvd, Menifee | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Los Tacos Callejeros | 21618 Palomar St, Wildomar | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- M Tacos Mexican food | 4111 Main St, Riverside | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mexican Street Tacos | 73768 Gorgonio Dr, Twentynine Palms | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mi Taqueria Poblana | 6875 Valley Way, Riverside | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mis Pinches Tacos | 40865 Sunrise Canyon Rd, Yermo | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Monarcas Tacos | 8104 I Ave, Hesperia | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Ochoa's Carniceria, Taqueria y Menudo | 508 S Smith Ave, Corona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Raul's Tacos | 11416 Chamberlaine Way, Adelanto | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- SoCal Taqueria | 39400 Murrieta Hot Springs Rd #106, Murrieta | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Bout Good | 507 N Mountain Ave, Upland | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Chiro Taqueria y Pupuseria | 14051 Indian St Ste M, Moreno Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Jalisco | 43501 Monroe St, Indio | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Lucas | 401 S Lincoln Ave, Corona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Shop 760 | 46490 Calhoun St, Indio | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Shop 760 Restaurant | 81096 CA-111 Ste E, Indio | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Shop Mexican Grill | 1331 Kendall Dr #7, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taco Town USA | 3699 Hamner Ave, Norco | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos | 524 S J St, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Alvizo La Guadalupana | 25073 Sunnymead Boulevard Ste D15, Moreno Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Bahia Fish | 25026 Filaree Ave, Moreno Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Calentano | 1424 W Foothill Blvd Ste F, Rialto | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Cheko | 721 Beaumont Ave, Beaumont | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Chema | 18123 Collier Ave, Lake Elsinore | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Grande | 41101 Sunset Ln, Hemet | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Guero | 105 W Merrill Ave, Rialto | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Jr | 126 Iowa Ave, Riverside | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Paisa | 1655 W Arrow Rte, Upland | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Pecas | 11138 Kadota Ave, Pomona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Pistolon | 10485 Locust Ave, Bloomington | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Poblano | 30075 Avenida Alvera, Cathedral City | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos El Viejon | 51697 Harrison St, Coachella | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Estilo Guadalajara | 724 W Holt Blvd, Ontario | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Estilo Sonora | 22426 San Jacinto Ave, Perris | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Gonzalez | 80120 CA-111, Indio | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos La Madrina ( Food Truck) | 14968 Main St, Hesperia | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Los Olivarez | 83095 Indio Blvd, Indio | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Marline | 881 Main St, Riverside | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Nico | 2600 Highland Ave, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Puro Jalisco | 161 N McKinley St #101, Corona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Puro Jalisco San Bernardino | 145 E Highland Ave, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Sinaloa Y Carniceria | 17294 Valley Blvd, Fontana | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Tijuana Mexican Grill | 32100 Clinton Keith Rd, Wildomar | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Wisa | 12078 Three Flags Ct, Oak Hills | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos Y Tortas San Bernardino | 331 E 9th St, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos el Juanito | 1866 S Euclid Ave, Ontario | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos jimenez | 1004 Whispering Wood Ln, Perris | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Tacos y Tortas Ahogadas Altamirano | 9743 Linden Ave, Bloomington | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- TacosKiero | 85980 Grapefruit Blvd, Coachella | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Allende | 49715 Harrison St, Coachella | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Don Jose | 120 Ramona Expy, Perris | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Don Pedro | 3848 N McKinley St Ste R, Corona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria El ARBOLITO | 1024 E 4th St, Ontario | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria El Flaco | 4080 Tyler St, Riverside | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria El Limoncito | 1130 N Pepper Ave suite-h, Colton | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria La Central Mexican Grill | 806 E Baseline St, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria La Faena | 16380 Perris Blvd, Moreno Valley | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria La Huasteca | 318 S Pico Ave, San Jacinto | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria La Suprema | 1591 E Date St, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria La Villa | 685 E Grand Blvd, Corona | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Michoacan | 16307 Chino-Corona Rd, Chino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Rancho Grande | 3330 E Florida Ave Ste J, Hemet | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Tamazulena | 635 E Holt Blvd # B, Ontario | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria Tortilla Factory | 35270 Date Palm Dr, Cathedral City | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria los 2 plebes | 500 S State St, San Jacinto | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Taqueria y Birrieria Guadalajara | 51335 Cesar Chavez St, Coachella | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- The Original del Taco | 38484 W Yermo Rd, Yermo | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- The Taco Shrimp | 124 S Harvard St, Hemet | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Yass Tacos | 7305 Laurel Ave, Fontana | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Yoly's Taqueria & Pupuseria | 17760 Adelanto Rd, Adelanto | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Zendejas Tacos | 2895 N Waterman Ave, San Bernardino | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Zurita tacos | , Perris | taqueria candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- City Sushi & Korean Grill | 10370 Beaumont Ave, Cherry Valley | kbbq candidate | website domain (citysushiandgrill.com) does not resolve - possibly closed or site lapsed
+- Koreana Grill | 10051 Magnolia Ave, Riverside | kbbq candidate | listed website (local.yahoo.com) is a third-party/aggregator or unrelated page; need own site or news
+- Manna Grill | 1201 University Ave, Riverside | kbbq candidate | listed source is an old student-paper review, not current; need own site
+- Myung Ga Tofu & Korean BBQ | 1760 S Tippecanoe Ave, San Bernardino | kbbq candidate | listed site is a third-party aggregator not affiliated with the restaurant; need own site or news
+- Myungdong Restaurant Tofu BBQ | 9799 Base Line Rd, Rancho Cucamonga | kbbq candidate | listed website (groupon.com) is a third-party/aggregator or unrelated page; need own site or news
+- Q Korean BBQ & Hot Pot | 9309 Foothill Blvd, Rancho Cucamonga | kbbq candidate | site loads no readable content (JavaScript only); need menu/hours source
+- Sam's Korean BBQ | 79405 CA-111 #10, La Quinta | kbbq candidate | listed site is Samurai Sam's Teriyaki (different business); need own source
+- Seoul Garden Korean B.B.Q | 15449 Anacapa Rd, Victorville | kbbq candidate | listed domain now a South Carolina dentist site (hijacked); website null
+- Seoul Tofu & Grill | 2545 Chino Hills Pkwy, Chino Hills | kbbq candidate | website domain (restaurantchinohills.com) does not resolve - possibly closed or site lapsed
+- U Grill Korean BBQ | 9309 Foothill Blvd, Rancho Cucamonga | kbbq candidate | same address as Q Korean BBQ & Hot Pot; site unreadable; need source
+- U Grill Korean BBQ | 12728 Foothill Blvd, Rancho Cucamonga | kbbq candidate | own site (ugrillkbbq.com) robots.txt disallows ClaudeBot/anthropic-ai/*; not fetched - need a news source
+- U Grill Korean Bbq | 12206 Central Ave, Chino | kbbq candidate | listed site is Gangnam KBBQ in Austin, TX (different business); need own source
+- Zip Fusion Sushi and KBBQ | 12257 Limonite Ave Ste 800, Eastvale | kbbq candidate | own site (c) 2023; tabletop grills not confirmed
+- Hi BBQ. Chicken | 4085 Old Waverly Cir, Corona | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Hi Bbq Chicken | 1535 E Ontario Ave #101, Corona | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Korean B.B.Q | 14950 Bear Valley Rd, Victorville | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Red Castle Korean BBQ | 403 S Riverside Ave, Rialto | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- You Grill Korean BBQ | 79680 CA-111 Ste 102, La Quinta | kbbq candidate | no website in listing; needs own site/ordering page or a dated 2025-26 news source
+- Mike's Taco Club | 5060 Newport Ave, San Diego (OB) | non-candidate fish tacos | own site mikestacoclub.com returns 404; SanDiegoVille 2025 roundup mentions it only in passing; need a 2025-26 source
+- Tacos El Franc (Gaslamp, National City) | 528 Fifth Ave / 3030 Plaza Bonita Rd | taqueria | tacoselfranc.com returns 403; need news source
+- Las Cuatro Milpas | Logan Ave, Barrio Logan | taqueria | San Diego Magazine (2025-11-03) says the family is preparing to close and the property is for sale; status now unknown
+- Lolita's Mexican Food (Eastlake) | 871 District Pl / 871 Showroom Pl, Chula Vista | burrito | own site gives two different street names for this branch; confirm address
+- Cotixan Mexican Restaurant (Encinitas, Clairemont, Mira Mesa) | 219 N El Camino Real; 4370 Genesee Ave; 8214 Mira Mesa Blvd | burrito/fish taco | own site shows California burrito and battered fish taco but carries injected casino spam and (c) 2022; need cleaner source
+- Puesto (San Diego locations) | various | taqueria | multi-state chain site; not checked per location
+- Point Loma Seafoods | 2805 Emerson St, San Diego | fish taco | own site live (est. 1963) but no fish taco found in menu text
+- Ponce's Mexican Restaurant | 4050 Adams Ave, San Diego | fish taco | own site live (since 1969) but sit-down restaurant; fish tacos not confirmed in menu text
+- Craft Coast Beer & Tacos (San Marcos) | 1325 Grand Ave, San Marcos | taqueria | own site (c) 2026 with hours; menu not readable
+- Khan Korean BBQ | 330 Wake Ave, El Centro | kbbq | listed ordering page shows 'no site found'; need source

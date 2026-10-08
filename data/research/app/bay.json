@@ -1,0 +1,3434 @@
+[
+ {
+  "name": "Yank Sing",
+  "address": "49 Stevenson St",
+  "city": "San Francisco",
+  "zip": "94105",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumpling (har gow)",
+   "pork and shrimp siu mai",
+   "steamed BBQ pork bun",
+   "Shanghai kurobuta pork dumplings",
+   "egg custard tart",
+   "turnip cake"
+  ],
+  "opened": null,
+  "brand_founded": 1958,
+  "chain": false,
+  "note": "Family-run dim sum served from pushcarts, daytime only (Tue-Sun per its site). Its Rincon Center location at 101 Spear St closed in Sept 2026; this Stevenson St room is the one still open.",
+  "website": "https://yanksing.com/",
+  "sources": [
+   {
+    "url": "https://yanksing.com/",
+    "what": "own site, live: 49 Stevenson St with hours, notice that the Rincon Center lease ended, founded 1958",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://yanksing.com/menu/",
+    "what": "own menu page, live: dim sum list",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Koi Palace",
+  "address": "365 Gellert Blvd",
+  "city": "Daly City",
+  "zip": "94015",
+  "county": "San Mateo",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumplings (har gow)",
+   "shrimp, pork and mushroom shui mai",
+   "steamed BBQ pork buns",
+   "shrimp rice roll",
+   "Shanghai dumplings",
+   "baked Portuguese custard tart"
+  ],
+  "opened": null,
+  "brand_founded": 1996,
+  "chain": true,
+  "note": "Large Cantonese seafood and dim sum hall in Serramonte Plaza with a separate daytime dim sum menu; menu prints Since 1996. Sister locations in Dublin and Milpitas.",
+  "website": "https://koipalace.com/",
+  "sources": [
+   {
+    "url": "https://koipalace.com/daly-city-ca",
+    "what": "own location page, live: address and current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://koipalace.com/s/Koi-Palace-Daly-City-Dim-Sum-Menu-6-20-25.pdf",
+    "what": "own Daly City dim sum menu PDF dated 2025 (Ver 9 2025/05)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Koi Palace",
+  "address": "768 Barber Ln",
+  "city": "Milpitas",
+  "zip": "95035",
+  "county": "Santa Clara",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "dim sum (separate dim sum menu)"
+  ],
+  "opened": null,
+  "brand_founded": 1996,
+  "chain": true,
+  "note": "Milpitas branch of the Daly City Cantonese seafood and dim sum restaurant; lunch dim sum, dinner menu at night.",
+  "website": "https://koipalace.com/milpitas-ca",
+  "sources": [
+   {
+    "url": "https://koipalace.com/milpitas-ca",
+    "what": "own location page, live: address and current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://koipalace.com/menus",
+    "what": "own menus page lists a Koi Palace Dim Sum Menu (Milpitas)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Koi Palace",
+  "address": "4288 Dublin Blvd, Ste 213",
+  "city": "Dublin",
+  "zip": "94568",
+  "county": "Alameda",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "dim sum (2026 dim sum menu)"
+  ],
+  "opened": null,
+  "brand_founded": 1996,
+  "chain": true,
+  "note": "Dublin branch in the Ulferts Center; a separate Koi Palace Express counter is in the same center (Ste 120).",
+  "website": "https://koipalace.com/dublin-ca",
+  "sources": [
+   {
+    "url": "https://koipalace.com/dublin-ca",
+    "what": "own location page, live: address and current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://koipalace.com/s/2026-Koi-Dublin-Dim-Sum-Menu.pdf",
+    "what": "own menus page links a 2026 Dublin dim sum menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dragon Beaux",
+  "address": "5700 Geary Blvd",
+  "city": "San Francisco",
+  "zip": "94121",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumplings topped with Chilean sea bass",
+   "BBQ pork puff pastry",
+   "dim sum (daytime)",
+   "hot pot (dinner)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Outer Richmond dim sum by day and hot pot at night, from the owners of Koi Palace; its site quotes press on its Feb 2015 debut.",
+  "website": "https://dragonbeaux.com/",
+  "sources": [
+   {
+    "url": "https://dragonbeaux.com/",
+    "what": "own site, live: Labor Day 9/7/2026 hours notice, regular hours, address, dishes",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: DRAGON BEAUX, 5700 Geary Blvd, routine inspection 2025-03-07 (Pass)",
+    "date": "2025-03-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Palette Tea Garden",
+  "address": "48 Hillsdale Mall",
+  "city": "San Mateo",
+  "zip": "94403",
+  "county": "San Mateo",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "dim sum",
+   "Iberico cha siu pork",
+   "roasted Peking duck",
+   "Cantonese roast meats"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Large dim sum, seafood and roast-meat restaurant in Hillsdale Mall from the Koi Palace and Dragon Beaux team.",
+  "website": "https://www.paletteteagarden.com/",
+  "sources": [
+   {
+    "url": "https://www.paletteteagarden.com/",
+    "what": "own site, live: address, current hours, reservations and takeout ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Palette Tea House",
+  "address": "900 North Point St",
+  "city": "San Francisco",
+  "zip": "94109",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "xiao long bao in colored wrappers",
+   "dim sum",
+   "Cantonese seafood"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Dim sum tea house in Ghirardelli Square from the family behind Koi Palace and Dragon Beaux.",
+  "website": "https://paletteteahouse.com/",
+  "sources": [
+   {
+    "url": "https://paletteteahouse.com/",
+    "what": "own site, live: address, hours, online ordering and reservations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/best-dim-sum-in-san-francisco",
+    "what": "Time Out SF dim sum guide dated 2025-11-18: multicolor xiao long bao, address, hours",
+    "date": "2025-11-18"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hang Ah Tea Room",
+  "address": "1 Pagoda Pl",
+  "city": "San Francisco",
+  "zip": null,
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "Hong Kong-style dim sum",
+   "Cantonese dishes"
+  ],
+  "opened": null,
+  "brand_founded": 1920,
+  "chain": false,
+  "note": "Chinatown alley tea room; its site says it has served since 1920 and calls itself the oldest dim sum spot in the U.S. (its own claim).",
+  "website": "https://hangahtearoom.com/",
+  "sources": [
+   {
+    "url": "https://hangahtearoom.com/",
+    "what": "own site, live: address, daily hours, (c) 2026, since-1920 claim",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: HANG AH TEA ROOM, 1 Pagoda Pl, routine inspection 2025-04-02 (Pass)",
+    "date": "2025-04-02"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Peony Seafood Restaurant",
+  "address": "388 9th St, Ste 288",
+  "city": "Oakland",
+  "zip": "94607",
+  "county": "Alameda",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "har gow",
+   "siu mai",
+   "BBQ pork buns",
+   "piggy custard buns",
+   "fried shrimp dumpling with garlic"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Oakland Chinatown Cantonese banquet hall in Pacific Renaissance Plaza; about 100 dim sum items served all day, plus barbecue and live seafood (per Hoodline, 2026). Closed Tuesdays.",
+  "website": "https://peonyrestaurant.com/",
+  "sources": [
+   {
+    "url": "https://peonyrestaurant.com/",
+    "what": "own site, live: 2026 Mid-Autumn banquet notice, dim sum items, online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://hoodline.com/2026/09/ex-rich-table-chef-teams-with-oakland-s-last-banquet-hall-for-moon-festival-feast/",
+    "what": "Hoodline, dated 2026-09-17: Peony operating in Pacific Renaissance Plaza, about 100 dim sum items served all day, live seafood tanks, Peking duck",
+    "date": "2026-09-17"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Osmanthus Dim Sum Lounge",
+  "address": "504 Broadway",
+  "city": "San Francisco",
+  "zip": "94133",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumplings",
+   "siu mai",
+   "Chaozhou dumplings",
+   "spicy wontons",
+   "pan-fried pot stickers"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Menu-order dim sum lounge on Broadway at the Chinatown/North Beach edge, open daily with online pickup ordering.",
+  "website": "https://osmanthusdimsum.com/",
+  "sources": [
+   {
+    "url": "https://osmanthusdimsum.com/",
+    "what": "own site, live: address, daily hours, online ordering, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/best-dim-sum-in-san-francisco",
+    "what": "Time Out SF dim sum guide dated 2025-11-18: menu-order dim sum, daily hours",
+    "date": "2025-11-18"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dim Sum Club",
+  "address": "2237 Taraval St",
+  "city": "San Francisco",
+  "zip": "94116",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "har gow",
+   "siu mai",
+   "BBQ pork bun",
+   "chive and shrimp dumplings",
+   "Teochew dumpling",
+   "rice noodle rolls"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Parkside Cantonese dim sum house with handmade dim sum plus seafood dishes; closed Tuesdays.",
+  "website": "https://dimsumclub-sf.com/",
+  "sources": [
+   {
+    "url": "https://dimsumclub-sf.com/",
+    "what": "own site, live: address, current hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Red A Dim Sum",
+  "address": "634 Clement St",
+  "city": "San Francisco",
+  "zip": "94118",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumplings",
+   "siu mai",
+   "rice rolls",
+   "congee"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Inner Richmond Hong Kong-style dim sum shop open daytime (8am-5pm), with takeout and online pickup ordering.",
+  "website": "https://www.redadimsum.com/",
+  "sources": [
+   {
+    "url": "https://www.redadimsum.com/",
+    "what": "own site, live: address, hours, online ordering, (c) 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Kung Fu Dim Sum",
+  "address": "4370 Thornton Ave",
+  "city": "Fremont",
+  "zip": "94536",
+  "county": "Alameda",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "dim sum",
+   "mushroom dumpling",
+   "chili wonton"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Small Fremont dim sum shop that opens early (7:30am); closed Tuesdays.",
+  "website": "https://www.kungfudimsumusa.com/",
+  "sources": [
+   {
+    "url": "https://www.kungfudimsumusa.com/",
+    "what": "own site, live: address, hours, online ordering, (c) 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dim Sum King",
+  "address": "824 W El Camino Real",
+  "city": "Sunnyvale",
+  "zip": "94087",
+  "county": "Santa Clara",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "dim sum",
+   "party trays"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Dim sum takeout shop: same-day pickup orders by phone, next-day pre-orders and party trays; daytime hours.",
+  "website": "https://www.dimsumkingnow.com/",
+  "sources": [
+   {
+    "url": "https://www.dimsumkingnow.com/",
+    "what": "own site, live: hours, Labor Day 9/7 closure notice, (c) 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "10 Butchers Korean BBQ",
+  "address": "595 E El Camino Real",
+  "city": "Sunnyvale",
+  "zip": "94087",
+  "county": "Santa Clara",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "wagyu beef cuts grilled at the BBQ table"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Sunnyvale Korean barbecue built around ten kinds of wagyu beef grilled at the table.",
+  "website": "https://www.10butchers.net/",
+  "sources": [
+   {
+    "url": "https://www.10butchers.net/",
+    "what": "own site, live: hours, address, online ordering and reservations, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ohgane",
+  "address": "3915 Broadway",
+  "city": "Oakland",
+  "zip": "94611",
+  "county": "Alameda",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi (marinated short rib)",
+   "beef brisket",
+   "all-you-can-eat barbecue"
+  ],
+  "opened": 2005,
+  "brand_founded": null,
+  "chain": true,
+  "note": "The original Ohgane: Korean barbecue on tabletop mesquite grills, open daily; its site says this Broadway location opened in 2005.",
+  "website": "https://ohgane.com/oakland-location",
+  "sources": [
+   {
+    "url": "https://ohgane.com/oakland-location",
+    "what": "own location page, live: open since 2005 at Broadway and 39th, tabletop grills, hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ohgane",
+  "address": "2211 S Shore Center #170",
+  "city": "Alameda",
+  "zip": "94501",
+  "county": "Alameda",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi",
+   "beef brisket",
+   "all-you-can-eat barbecue"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Alameda branch of the Oakland tabletop-grill Korean barbecue.",
+  "website": "https://ohgane.com/alameda-location",
+  "sources": [
+   {
+    "url": "https://ohgane.com/",
+    "what": "own site, live: lists Alameda location and hours, tabletop mesquite grills",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ohgane",
+  "address": "1671 Willow Pass Rd",
+  "city": "Concord",
+  "zip": "94520",
+  "county": "Contra Costa",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi",
+   "beef brisket",
+   "all-you-can-eat barbecue"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Concord branch of the Oakland tabletop-grill Korean barbecue.",
+  "website": "https://ohgane.com/concord-location",
+  "sources": [
+   {
+    "url": "https://ohgane.com/",
+    "what": "own site, live: lists Concord location and hours, tabletop mesquite grills",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "1554 Saratoga Ave #401",
+  "city": "San Jose",
+  "zip": "95129",
+  "county": "Santa Clara",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean barbecue cooked on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen (Westgate) location of the Los Angeles-founded (2011) chain; guests grill meats on built-in tabletop grills.",
+  "website": "https://www.genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://www.genkoreanbbq.com/locations",
+    "what": "brand's own locations page, live: this address with current hours and Open status",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "brand's own site: founded 2011 in Los Angeles, built-in tabletop grills",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "43476 Boscell Rd",
+  "city": "Fremont",
+  "zip": "94538",
+  "county": "Alameda",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean barbecue cooked on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen (Fremont) location of the Los Angeles-founded (2011) chain; guests grill meats on built-in tabletop grills.",
+  "website": "https://www.genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://www.genkoreanbbq.com/locations",
+    "what": "brand's own locations page, live: this address with current hours and Open status",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "brand's own site: founded 2011 in Los Angeles, built-in tabletop grills",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "1353 Willow Pass Rd",
+  "city": "Concord",
+  "zip": "94520",
+  "county": "Contra Costa",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean barbecue cooked on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen (Concord) location of the Los Angeles-founded (2011) chain; guests grill meats on built-in tabletop grills.",
+  "website": "https://www.genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://www.genkoreanbbq.com/locations",
+    "what": "brand's own locations page, live: this address with current hours and Open status",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "brand's own site: founded 2011 in Los Angeles, built-in tabletop grills",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House",
+  "address": "1628 Hostetter Rd Ste F",
+  "city": "San Jose",
+  "zip": "95131",
+  "county": "Santa Clara",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "all-you-can-eat Korean barbecue cooked on built-in tabletop grills"
+  ],
+  "opened": null,
+  "brand_founded": 2011,
+  "chain": true,
+  "note": "Gen (San Jose) location of the Los Angeles-founded (2011) chain; guests grill meats on built-in tabletop grills.",
+  "website": "https://www.genkoreanbbq.com/locations",
+  "sources": [
+   {
+    "url": "https://www.genkoreanbbq.com/locations",
+    "what": "brand's own locations page, live: this address with current hours and Open status",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/",
+    "what": "brand's own site: founded 2011 in Los Angeles, built-in tabletop grills",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Good Mong Kok Bakery",
+  "address": "1039 Stockton St",
+  "city": "San Francisco",
+  "zip": "94108",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shu mai",
+   "har gow",
+   "shark fin dumpling",
+   "pineapple BBQ pork bun",
+   "scallion bread",
+   "egg tarts"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Chinatown dim sum bakery: takeout counter only, no seating; open daily 7am-6pm per Time Out.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/best-dim-sum-in-san-francisco",
+    "what": "Time Out SF dim sum guide dated 2025-11-18: address, daily hours, takeout counter, items",
+    "date": "2025-11-18"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: GOOD MONGKOK BAKERY, 1039 Stockton St, routine inspection 2025-01-21 (Pass)",
+    "date": "2025-01-21"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Good Luck Dim Sum",
+  "address": "736 Clement St",
+  "city": "San Francisco",
+  "zip": "94118",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "turnip cakes",
+   "taro puffs",
+   "potstickers",
+   "ham sui gok",
+   "sesame balls",
+   "steamed BBQ pork buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Small Inner Richmond dim sum shop with about six tables; mostly takeout, cash only, open Wed-Sun mornings to mid-afternoon.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/best-dim-sum-in-san-francisco",
+    "what": "Time Out SF dim sum guide dated 2025-11-18: address, Wed-Sun hours, items, cash only",
+    "date": "2025-11-18"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dim Sum Bistro",
+  "address": "675 Broadway",
+  "city": "San Francisco",
+  "zip": "94133",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "baked BBQ pork bun",
+   "steamed shrimp and chive dumplings",
+   "Chinese tamales",
+   "sesame balls",
+   "steamed sponge cake",
+   "pork puffs"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Chinatown dim sum takeout counter with glass cases and no seating; also sells frozen dim sum. Open daily 8am-3pm per Time Out.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/best-dim-sum-in-san-francisco",
+    "what": "Time Out SF dim sum guide dated 2025-11-18: address, hours, counter service, items",
+    "date": "2025-11-18"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "HK Lounge Bistro",
+  "address": "1136 Folsom St",
+  "city": "San Francisco",
+  "zip": "94103",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "Shanghai soup dumplings",
+   "baked pork buns",
+   "truffle salt shrimp toast",
+   "minced chicken lettuce cups",
+   "whole roast duck"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "SoMa dim sum restaurant whose name honors an earlier Hong Kong Lounge that closed after a fire (per Time Out); dim sum at lunch, dinner menu at night, closed Tuesdays.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/best-dim-sum-in-san-francisco",
+    "what": "Time Out SF dim sum guide dated 2025-11-18: address, hours, dishes",
+    "date": "2025-11-18"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: HK LOUNGE BISTRO, 1136 Folsom St, routine inspection 2025-02-26 (Pass)",
+    "date": "2025-02-26"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "2779 Mission St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. The Mission Street flagship, open past 3am most nights; its site says El Farolito started on Mission Street in the early 1980s.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA EL FAROLITO #1, 2779 Mission St, inspection 2026-02-06 (Pass)",
+    "date": "2026-02-06"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "2950 24th St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. 24th Street branch near the BART station, open late.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA EL FAROLITO #3, 2950 24th St, routine inspection 2025-05-19 (Pass)",
+    "date": "2025-05-19"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "4817 Mission St",
+  "city": "San Francisco",
+  "zip": "94112",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. Excelsior branch, open late.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA EL FAROLITO #2, 4817 Mission St, inspection 2025-12-11 (Pass)",
+    "date": "2025-12-11"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "1230 Grant Ave",
+  "city": "San Francisco",
+  "zip": "94133",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. North Beach branch.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA EL FAROLITO NO. 9, 1230 Grant Ave, inspection 2026-07-21 (Pass)",
+    "date": "2026-07-21"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "3646 International Blvd",
+  "city": "Oakland",
+  "zip": "94601",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. Fruitvale-area branch on International Blvd.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "394 Grand Ave",
+  "city": "South San Francisco",
+  "zip": "94080",
+  "county": "San Mateo",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. South San Francisco branch.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "3140 Senter Rd",
+  "city": "San Jose",
+  "zip": "95111",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. San Jose branch.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Farolito",
+  "address": "1844 Grant St",
+  "city": "Concord",
+  "zip": "94520",
+  "county": "Contra Costa",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (rice, beans, cheese, sour cream, avocado slices)",
+   "carne asada",
+   "al pastor",
+   "carnitas",
+   "lengua",
+   "cabeza",
+   "quesadilla suiza",
+   "Bosses burrito (shrimp and al pastor)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Mission-style super burritos with rice and sliced avocado; cash only. Concord branch.",
+  "website": "https://elfarolitosf.com/",
+  "sources": [
+   {
+    "url": "https://elfarolitosf.com/locations/",
+    "what": "El Farolito's site, live: this location with current hours, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://elfarolitosf.com/menu/",
+    "what": "El Farolito's menu page, live: burritos, tacos, quesadillas",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Taqueria",
+  "address": "2889 Mission St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carnitas burrito (no rice)",
+   "carne asada",
+   "pollo asado",
+   "chorizo",
+   "lengua",
+   "tacos",
+   "quesadillas",
+   "aguas frescas"
+  ],
+  "opened": 1973,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Mission District taqueria opened by Miguel Jara in 1973; burritos are meat, beans and pico de gallo with no rice. Its old domain (lataqueriasf.com) now redirects to an unrelated gambling site, so no website is listed.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://sfist.com/2025/03/05/tacolicious-alters-menu-over-trumps-tariffs-now-serving-avocado-garbanzo-guacamole/",
+    "what": "SFist, dated 2025-03-05: quotes owner Miguel Jara on La Taqueria's current pricing (operating in 2025)",
+    "date": "2025-03-05"
+   },
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/best-mission-district-restaurants",
+    "what": "Time Out SF Mission guide dated 2024-11-21: opened 1973, burritos with no rice, carnitas",
+    "date": "2024-11-21"
+   },
+   {
+    "url": "https://www.timeout.com/san-francisco/restaurants/la-taqueria",
+    "what": "Time Out venue page (2018): address, fillings, tacos, quesadillas, aguas frescas",
+    "date": "2018-01-04"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Pancho Villa Taqueria",
+  "address": "3071 16th St",
+  "city": "San Francisco",
+  "zip": "94103",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "regular burrito (meat, rice, beans, salsa)",
+   "especial burrito",
+   "super vegetarian burrito",
+   "classic and super tacos",
+   "agua frescas"
+  ],
+  "opened": null,
+  "brand_founded": 1985,
+  "chain": false,
+  "note": "Mission taqueria a block from 16th St BART; Mission-style burritos with rice; daily 10am-10pm. A sister Pancho Villa is in San Mateo.",
+  "website": "https://www.sfpanchovilla.com/",
+  "sources": [
+   {
+    "url": "https://www.sfpanchovilla.com/our-menu",
+    "what": "own menu and online ordering page, live, (c) 2025",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.sfpanchovilla.com/",
+    "what": "own site: Since 1985, address, daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: PANCHO VILLA TAQUERIA, 3071 16th St, routine inspection 2025-04-28 (Pass)",
+    "date": "2025-04-28"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Pancho Villa Taqueria",
+  "address": "365 S B St",
+  "city": "San Mateo",
+  "zip": "94401",
+  "county": "San Mateo",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burritos",
+   "tacos",
+   "salsa bar",
+   "aguas frescas (horchata, jamaica, tamarindo)"
+  ],
+  "opened": null,
+  "brand_founded": 1985,
+  "chain": false,
+  "note": "San Mateo sibling of the Mission's Pancho Villa (its site: born in San Francisco, since 1985); daily 10am-9pm.",
+  "website": "https://www.smpanchovilla.com/",
+  "sources": [
+   {
+    "url": "https://www.smpanchovilla.com/",
+    "what": "own site, live: address, daily hours, online ordering, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Buen Sabor",
+  "address": "699 Valencia St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor burrito",
+   "super burrito (meat, rice, beans, cheese, guacamole, sour cream)",
+   "carnitas",
+   "tripa",
+   "lengua",
+   "fish and shrimp tacos",
+   "chile verde"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-run Mission taqueria at Valencia and 18th; its site marks 30 years in business. Burritos include rice.",
+  "website": "https://www.taqueriaelbuensabor.com/",
+  "sources": [
+   {
+    "url": "https://www.taqueriaelbuensabor.com/menu-taqueria-san-francisco-elbuens",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueriaelbuensabor.com/",
+    "what": "own site, live: daily hours, address",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA EL BUEN SABOR, 699 Valencia St, inspection 2025-03-04 (Pass)",
+    "date": "2025-03-04"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Metate",
+  "address": "2406 Bryant St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "grilled steak burrito",
+   "carnitas burrito",
+   "al pastor taco",
+   "fish taco",
+   "carnitas torta",
+   "chicken milanesa torta"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Mission taqueria at Bryant and 21st; burritos with rice and beans, tacos and tortas; open daily.",
+  "website": "https://elmetatesf.com/",
+  "sources": [
+   {
+    "url": "https://elmetatesf.com/food-menu",
+    "what": "own menu page, live (2026 dates on page), online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: EL MATATE CON SABOR A MEXICO, 2406 Bryant St, reinspection 2025-02-11 (Pass)",
+    "date": "2025-02-11"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria San Francisco",
+  "address": "2794 24th St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "24th Street taqueria in the Mission; its site says it opened in 1990 and posts a menu dated April 2024.",
+  "website": "https://www.taqueriasanfrancisco.com/",
+  "sources": [
+   {
+    "url": "https://www.taqueriasanfrancisco.com/",
+    "what": "own site, live: tacos and burritos, opened 1990; menu PDF dated April 1, 2024",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA SAN FRANCISCO, 2794 24th St, routine inspection 2025-02-04 (Pass)",
+    "date": "2025-02-04"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Castillo",
+  "address": "86 McAllister St",
+  "city": "San Francisco",
+  "zip": "94102",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (meat, rice, beans, cheese, avocado, sour cream)",
+   "super tongue burrito",
+   "prawns burrito",
+   "fish fillet burrito",
+   "quesadilla suiza"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Civic Center taqueria near UN Plaza; Mission-style burritos with rice; phone orders.",
+  "website": "https://taqueria-castillo.com/",
+  "sources": [
+   {
+    "url": "https://taqueria-castillo.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA CASTILLO B, 86 McAllister St, routine inspection 2025-02-06 (Pass)",
+    "date": "2025-02-06"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Capitan Taqueria",
+  "address": "1198 Folsom St",
+  "city": "San Francisco",
+  "zip": "94103",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "street tacos",
+   "burritos",
+   "quesabirria",
+   "tortas",
+   "super nachos",
+   "super quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "SoMa late-night taqueria (to 3am Fri-Sat per its site); its site says it has served SF since 2004.",
+  "website": "https://www.elcapitantaqueriasf.com/",
+  "sources": [
+   {
+    "url": "https://www.elcapitantaqueriasf.com/",
+    "what": "own site, live: hours, online ordering, dishes, since 2004",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: EL CAPITAN TAQUERIA & ANTON'S PIZZA, 1198 Folsom St, site visit 2025-06-12 (Pass)",
+    "date": "2025-06-12"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Cilantro SF Taqueria",
+  "address": "2257 Mason St",
+  "city": "San Francisco",
+  "zip": "94133",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito",
+   "regular and super tacos",
+   "veg taco",
+   "chile verde"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "North Beach taqueria a few blocks up from Pier 39; its site says it has served tacos in North Beach since January 2018.",
+  "website": "https://cilantrosftaqueria.com/",
+  "sources": [
+   {
+    "url": "https://cilantrosftaqueria.com/",
+    "what": "own site, live: hours, online ordering, since January 2018",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: CILANTRO SF TAQUERIA, 2257 Mason St, inspection 2025-09-02 (Conditional Pass); earlier 2025 reinspections Pass",
+    "date": "2025-09-02"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Street Taco",
+  "address": "1607 Haight St",
+  "city": "San Francisco",
+  "zip": "94117",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "carne asada",
+   "costilla (beef rib)",
+   "campechano",
+   "carnitas",
+   "chorizo",
+   "super burrito (with rice)",
+   "street burrito (double meat, no rice)",
+   "alambres"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Haight-Ashbury branch of a five-shop SF taqueria group; tacos two per order, and a street burrito with double meat and no rice per its menu.",
+  "website": "https://streettacosf.com/",
+  "sources": [
+   {
+    "url": "https://streettacosf.com/",
+    "what": "Street Taco's own site, live: menu and list of its five SF locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: STREET TACO, 1607 Haight St, inspection 2025-12-09 (Pass)",
+    "date": "2025-12-09"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Street Taco",
+  "address": "980 16th St",
+  "city": "San Francisco",
+  "zip": "94107",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "carne asada",
+   "costilla (beef rib)",
+   "campechano",
+   "carnitas",
+   "chorizo",
+   "super burrito (with rice)",
+   "street burrito (double meat, no rice)",
+   "alambres"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Potrero Hill branch of a five-shop SF taqueria group; tacos two per order, and a street burrito with double meat and no rice per its menu.",
+  "website": "https://streettacosf.com/",
+  "sources": [
+   {
+    "url": "https://streettacosf.com/",
+    "what": "Street Taco's own site, live: menu and list of its five SF locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: STREET TACO 16TH ST, 980 16th St, inspection 2026-07-22 (Pass)",
+    "date": "2026-07-22"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Street Taco",
+  "address": "126 New Montgomery St",
+  "city": "San Francisco",
+  "zip": "94105",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "carne asada",
+   "costilla (beef rib)",
+   "campechano",
+   "carnitas",
+   "chorizo",
+   "super burrito (with rice)",
+   "street burrito (double meat, no rice)",
+   "alambres"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "SoMa branch of a five-shop SF taqueria group; tacos two per order, and a street burrito with double meat and no rice per its menu.",
+  "website": "https://streettacosf.com/",
+  "sources": [
+   {
+    "url": "https://streettacosf.com/",
+    "what": "Street Taco's own site, live: menu and list of its five SF locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: STREET TACO, 126 New Montgomery St, inspection 2026-06-12 (Pass)",
+    "date": "2026-06-12"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Street Taco",
+  "address": "712 Irving St",
+  "city": "San Francisco",
+  "zip": "94122",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "carne asada",
+   "costilla (beef rib)",
+   "campechano",
+   "carnitas",
+   "chorizo",
+   "super burrito (with rice)",
+   "street burrito (double meat, no rice)",
+   "alambres"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Inner Sunset branch of a five-shop SF taqueria group; tacos two per order, and a street burrito with double meat and no rice per its menu.",
+  "website": "https://streettacosf.com/",
+  "sources": [
+   {
+    "url": "https://streettacosf.com/",
+    "what": "Street Taco's own site, live: menu and list of its five SF locations",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: STREET TACO, 712 Irving St, inspection 2025-03-28 (Pass)",
+    "date": "2025-03-28"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gordo Taqueria",
+  "address": "2252 Clement St",
+  "city": "San Francisco",
+  "zip": "94121",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas burrito",
+   "chile verde burrito",
+   "crispy or soft tacos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": 1977,
+  "chain": true,
+  "note": "Tacos and burritos to go; choice of pinto, black or refried beans, with rice and pico de gallo. Outer Richmond; Gordo says it opened its first restaurant on Clement Street in 1977.",
+  "website": "https://gordotaqueria.co/",
+  "sources": [
+   {
+    "url": "https://gordotaqueria.co/locations",
+    "what": "Gordo's own site, live: five locations with hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://gordotaqueria.co/menu",
+    "what": "Gordo's own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: GORDO TAQUERIA #1 INC, 2252 Clement St, routine inspection 2025-06-04 (Pass)",
+    "date": "2025-06-04"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gordo Taqueria",
+  "address": "5450 Geary Blvd",
+  "city": "San Francisco",
+  "zip": "94121",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas burrito",
+   "chile verde burrito",
+   "crispy or soft tacos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": 1977,
+  "chain": true,
+  "note": "Tacos and burritos to go; choice of pinto, black or refried beans, with rice and pico de gallo. Outer Richmond branch on Geary.",
+  "website": "https://gordotaqueria.co/",
+  "sources": [
+   {
+    "url": "https://gordotaqueria.co/locations",
+    "what": "Gordo's own site, live: five locations with hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://gordotaqueria.co/menu",
+    "what": "Gordo's own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: GORDO TAQUERIA #6, 5450 Geary Blvd, inspection 2026-07-29 (Pass)",
+    "date": "2026-07-29"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gordo Taqueria",
+  "address": "1423 Solano Ave",
+  "city": "Albany",
+  "zip": "94706",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas burrito",
+   "chile verde burrito",
+   "crispy or soft tacos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": 1977,
+  "chain": true,
+  "note": "Tacos and burritos to go; choice of pinto, black or refried beans, with rice and pico de gallo. Albany branch on Solano Avenue.",
+  "website": "https://gordotaqueria.co/",
+  "sources": [
+   {
+    "url": "https://gordotaqueria.co/locations",
+    "what": "Gordo's own site, live: five locations with hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://gordotaqueria.co/menu",
+    "what": "Gordo's own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gordo Taqueria",
+  "address": "2989 College Ave",
+  "city": "Berkeley",
+  "zip": "94705",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas burrito",
+   "chile verde burrito",
+   "crispy or soft tacos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": 1977,
+  "chain": true,
+  "note": "Tacos and burritos to go; choice of pinto, black or refried beans, with rice and pico de gallo. Berkeley branch in Elmwood.",
+  "website": "https://gordotaqueria.co/",
+  "sources": [
+   {
+    "url": "https://gordotaqueria.co/locations",
+    "what": "Gordo's own site, live: five locations with hours and online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://gordotaqueria.co/menu",
+    "what": "Gordo's own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Mayas",
+  "address": "331 Clement St",
+  "city": "San Francisco",
+  "zip": "94118",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "cochinita pibil",
+   "panuchos",
+   "tacos",
+   "burritos",
+   "empanadas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Yucatecan taqueria in the Inner Richmond; its site says it has served here since 2017.",
+  "website": "https://www.taquerialosmayassf.com/",
+  "sources": [
+   {
+    "url": "https://www.taquerialosmayassf.com/",
+    "what": "own site, live: menu highlights, online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: TAQUERIA LOS MAYAS, 331 Clement St, inspection 2026-01-28 (Pass)",
+    "date": "2026-01-28"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Bonita Taqueria y Rotisserie",
+  "address": "2257 Chestnut St",
+  "city": "San Francisco",
+  "zip": "94123",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos on 6-inch corn tortillas",
+   "burritos",
+   "quesadillas",
+   "rotisserie chicken",
+   "fajitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Marina taqueria and rotisserie-chicken shop, one of three Bonita locations in SF.",
+  "website": "https://sfbonita.com/",
+  "sources": [
+   {
+    "url": "https://sfbonita.com/",
+    "what": "own site, live: Marina, Polk and Noe Valley locations with hours, online ordering, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Bonita Taqueria y Rotisserie",
+  "address": "2227 Polk St",
+  "city": "San Francisco",
+  "zip": "94109",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos on 6-inch corn tortillas",
+   "burritos",
+   "quesadillas",
+   "rotisserie chicken",
+   "fajitas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Russian Hill/Polk Gulch taqueria and rotisserie-chicken shop, one of three Bonita locations in SF.",
+  "website": "https://sfbonita.com/",
+  "sources": [
+   {
+    "url": "https://sfbonita.com/",
+    "what": "own site, live: Marina, Polk and Noe Valley locations with hours, online ordering, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Primo",
+  "address": "2301 Fillmore St",
+  "city": "San Francisco",
+  "zip": "94115",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "breakfast tacos and burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Pacific Heights Cali-Mex taco shop at Fillmore and Clay, open from 8am with breakfast daily.",
+  "website": "https://www.tacoprimo.com/",
+  "sources": [
+   {
+    "url": "https://www.tacoprimo.com/hours-locations",
+    "what": "own site, live: address, hours, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria San Jose",
+  "address": "3433 International Blvd",
+  "city": "Oakland",
+  "zip": "94601",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos (with rice and beans)",
+   "tortas",
+   "mariscos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-run Fruitvale taqueria a block from Fruitvale BART; its site says it has served here since 1991.",
+  "website": "https://www.taqueriasanjose.com/oakland",
+  "sources": [
+   {
+    "url": "https://www.taqueriasanjose.com/oakland",
+    "what": "own location page, live: address, daily hours, since 1991",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueriasanjose.com/menu",
+    "what": "own menu page, live (menu data updated 2026-08-22)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria San Jose",
+  "address": "615 4th St",
+  "city": "San Rafael",
+  "zip": "94901",
+  "county": "Marin",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "regular and super burritos",
+   "tortas",
+   "quesabirrias",
+   "mariscos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown San Rafael taqueria under US 101; its site says it reopened after a fire kept it closed for over two years.",
+  "website": "https://www.taqueriasanjose.com/san-rafael",
+  "sources": [
+   {
+    "url": "https://www.taqueriasanjose.com/san-rafael",
+    "what": "own location page, live: reopened notice, address, daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueriasanjose.com/menu",
+    "what": "own San Rafael menu, live (menu data updated 2026-08-22)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Cuco's Burritos",
+  "address": "2855 Middlefield Rd",
+  "city": "Redwood City",
+  "zip": "94063",
+  "county": "San Mateo",
+  "kinds": [
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "specialty burritos (more than a dozen kinds)",
+   "quesadillas",
+   "breakfast burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Redwood City burrito shop run by the family behind the El Grullo taquerias (per its history page); a second shop is listed at 1729 McKee Rd, San Jose.",
+  "website": "https://cucosburritos.com/",
+  "sources": [
+   {
+    "url": "https://cucosburritos.com/",
+    "what": "own site, live: address, (c) 2026, images uploaded 2026-05",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://cucosburritos.com/history/",
+    "what": "own history page",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Sinaloa",
+  "address": "2138 International Blvd",
+  "city": "Oakland",
+  "zip": "94606",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "suadero",
+   "tripitas",
+   "buche",
+   "fish and shrimp tacos",
+   "burritos with rice and beans",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "East Bay taqueria group with four shops; tacos include suadero, tripitas and buche. International Blvd branch, open until 1am daily.",
+  "website": "https://tacossinaloaoakland.com/",
+  "sources": [
+   {
+    "url": "https://tacossinaloaoakland.com/",
+    "what": "own site, live: four locations with hours, Toast online ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacossinaloaoakland.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Sinaloa",
+  "address": "3132 E 12th St",
+  "city": "Oakland",
+  "zip": "94601",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "suadero",
+   "tripitas",
+   "buche",
+   "fish and shrimp tacos",
+   "burritos with rice and beans",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "East Bay taqueria group with four shops; tacos include suadero, tripitas and buche. Fruitvale-area branch on E 12th St.",
+  "website": "https://tacossinaloaoakland.com/",
+  "sources": [
+   {
+    "url": "https://tacossinaloaoakland.com/",
+    "what": "own site, live: four locations with hours, Toast online ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacossinaloaoakland.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Sinaloa",
+  "address": "2384 Telegraph Ave",
+  "city": "Berkeley",
+  "zip": "94704",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "asada",
+   "al pastor",
+   "carnitas",
+   "cabeza",
+   "lengua",
+   "suadero",
+   "tripitas",
+   "buche",
+   "fish and shrimp tacos",
+   "burritos with rice and beans",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "East Bay taqueria group with four shops; tacos include suadero, tripitas and buche. Berkeley branch near the UC campus.",
+  "website": "https://tacossinaloaoakland.com/",
+  "sources": [
+   {
+    "url": "https://tacossinaloaoakland.com/",
+    "what": "own site, live: four locations with hours, Toast online ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacossinaloaoakland.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Cactus Taqueria",
+  "address": "5642 College Ave",
+  "city": "Oakland",
+  "zip": "94618",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas (braised in Coca-Cola and orange juice)",
+   "pastor",
+   "pollo asado",
+   "camarones",
+   "crispy tacos",
+   "burrito mejor"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-friendly taqueria making food from scratch with Mi Rancho tortillas; burritos come with rice and beans. Rockridge location.",
+  "website": "https://www.cactustaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.cactustaqueria.com/",
+    "what": "own site, live: both locations with daily hours, online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.cactustaqueria.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Cactus Taqueria",
+  "address": "1881 Solano Ave",
+  "city": "Berkeley",
+  "zip": "94707",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada burrito",
+   "carnitas (braised in Coca-Cola and orange juice)",
+   "pastor",
+   "pollo asado",
+   "camarones",
+   "crispy tacos",
+   "burrito mejor"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-friendly taqueria making food from scratch with Mi Rancho tortillas; burritos come with rice and beans. North Berkeley location on Solano Avenue.",
+  "website": "https://www.cactustaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.cactustaqueria.com/",
+    "what": "own site, live: both locations with daily hours, online ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.cactustaqueria.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Calaca Loca",
+  "address": "5199 Telegraph Ave",
+  "city": "Oakland",
+  "zip": "94609",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp tacos",
+   "fish tacos (grilled or Baja style)",
+   "carne asada",
+   "carnitas",
+   "pollo",
+   "elote",
+   "queso fundido"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Temescal taqueria; sister restaurant to Nick's Crispy Tacos in San Francisco per its site.",
+  "website": "https://www.lacalacaloca.net/",
+  "sources": [
+   {
+    "url": "https://www.lacalacaloca.net/",
+    "what": "own site, live: address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.lacalacaloca.net/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Victoria Taqueria",
+  "address": "140 E San Carlos St",
+  "city": "San Jose",
+  "zip": "95112",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (beans, rice, salsa, cheese, guacamole, sour cream)",
+   "orange sauce",
+   "carne asada",
+   "carnitas",
+   "al pastor",
+   "buche",
+   "lengua",
+   "breakfast burritos",
+   "tacos"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "San Jose taqueria known for its orange sauce (its site: home of the orange sauce, a San Jose staple since 1998). Downtown branch on San Carlos St, open daily 7am-3am.",
+  "website": "https://www.lavicsj.com/",
+  "sources": [
+   {
+    "url": "https://www.lavicsj.com/locations",
+    "what": "own locations page, live: six locations with hours and order links ((c) 2024 footer)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.lavicsj.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Victoria Taqueria",
+  "address": "131 W Santa Clara St",
+  "city": "San Jose",
+  "zip": "95113",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (beans, rice, salsa, cheese, guacamole, sour cream)",
+   "orange sauce",
+   "carne asada",
+   "carnitas",
+   "al pastor",
+   "buche",
+   "lengua",
+   "breakfast burritos",
+   "tacos"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "San Jose taqueria known for its orange sauce (its site: home of the orange sauce, a San Jose staple since 1998). Downtown branch on Santa Clara St, open to 3am Fri-Sat.",
+  "website": "https://www.lavicsj.com/",
+  "sources": [
+   {
+    "url": "https://www.lavicsj.com/locations",
+    "what": "own locations page, live: six locations with hours and order links ((c) 2024 footer)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.lavicsj.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Victoria Taqueria",
+  "address": "1415 N 4th St",
+  "city": "San Jose",
+  "zip": "95112",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito (beans, rice, salsa, cheese, guacamole, sour cream)",
+   "orange sauce",
+   "carne asada",
+   "carnitas",
+   "al pastor",
+   "buche",
+   "lengua",
+   "breakfast burritos",
+   "tacos"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": true,
+  "note": "San Jose taqueria known for its orange sauce (its site: home of the orange sauce, a San Jose staple since 1998). 4th and Gish branch.",
+  "website": "https://www.lavicsj.com/",
+  "sources": [
+   {
+    "url": "https://www.lavicsj.com/locations",
+    "what": "own locations page, live: six locations with hours and order links ((c) 2024 footer)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.lavicsj.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Rico Rico Taco",
+  "address": "3205 Lakeshore Ave",
+  "city": "Oakland",
+  "zip": "94610",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor (spit-roasted pork)",
+   "carne asada",
+   "carnitas",
+   "camaron",
+   "pescado (crispy fried fish)",
+   "nopales",
+   "huarachito",
+   "burritos with rice and beans"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Lakeshore taqueria making fresh tortillas daily; open daily with online ordering.",
+  "website": "https://www.ricoricotaco.com/",
+  "sources": [
+   {
+    "url": "https://www.ricoricotaco.com/",
+    "what": "own site, live: menu, address, hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sol Taqueria",
+  "address": "1335 San Pablo Ave",
+  "city": "Berkeley",
+  "zip": "94702",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada, al pastor, carnitas and birria tacos",
+   "huarache (signature)",
+   "molcajete",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Jalisco-style taqueria on San Pablo Avenue; the huarache is its signature dish.",
+  "website": "https://www.soltaqueriaberkeley.com/",
+  "sources": [
+   {
+    "url": "https://www.soltaqueriaberkeley.com/menus",
+    "what": "own menu and online ordering page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria La Mordida",
+  "address": "535 Oceana Blvd",
+  "city": "Pacifica",
+  "zip": "94044",
+  "county": "San Mateo",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada, carnitas and chorizo tacos",
+   "al pastor tacos (Tuesdays)",
+   "quesabirria",
+   "birria plate",
+   "menudo and pozole (weekends)",
+   "breakfast burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Jalisco-style Pacifica taqueria; handmade tortillas on weekend mornings. A second La Mordida is in Half Moon Bay.",
+  "website": "https://www.taquerialamordida.com/",
+  "sources": [
+   {
+    "url": "https://www.taquerialamordida.com/copy-of-menu",
+    "what": "own menu and online ordering page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taquerialamordida.com/",
+    "what": "own site: Pacifica address, weekend tortillas",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Han Sung BBQ",
+  "address": "2644 El Camino Real",
+  "city": "Santa Clara",
+  "zip": "95051",
+  "county": "Santa Clara",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "Certified Angus beef grilled over mesquite charcoal",
+   "rice pots",
+   "tofu soup",
+   "noodles"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Santa Clara Korean barbecue where meats are grilled over mesquite-charcoal grills at the table; closed Mondays.",
+  "website": "https://www.hansungbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.hansungbbq.com/",
+    "what": "own site, live: charcoal grills, address, current hours, reservations and online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "SK Korean BBQ (Seoul Kalbi)",
+  "address": "1610 El Camino Real",
+  "city": "San Bruno",
+  "zip": "94066",
+  "county": "San Mateo",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "American wagyu",
+   "Duroc pork belly",
+   "free-range chicken",
+   "grilled over mesquite charcoal at the table"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "San Bruno Korean barbecue cooking over real mesquite charcoal at the table; its site says it has done so since 1991.",
+  "website": "https://www.skkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.skkoreanbbq.com/",
+    "what": "own site, live: grill-at-your-table since 1991, address, hours, reservations and online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "BAO",
+  "address": "590 Valencia St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "classic dim sum (menu order)",
+   "traditional Cantonese entrees"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Mission District Cantonese teahouse-style restaurant with a full dim sum menu plus traditional entrees; lunch and dinner daily per its site.",
+  "website": "https://www.baovalencia.com/",
+  "sources": [
+   {
+    "url": "https://www.baovalencia.com/about",
+    "what": "own site, live: says it offers a full dim sum menu plus traditional entrees; hours; pickup ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: BAO, 590 Valencia St, reinspection 2025-03-20 (Pass) after a 2025-03-04 closure order",
+    "date": "2025-03-20"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Catrina Taqueria",
+  "address": "2900 Broadway",
+  "city": "Oakland",
+  "zip": null,
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "carne asada",
+   "carnitas",
+   "cabeza",
+   "birria",
+   "shrimp tacos",
+   "super burritos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Uptown Oakland taqueria on Broadway serving street-style tacos and loaded burritos; closed Mondays per its posted hours.",
+  "website": "https://www.lacatrinataqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.lacatrinataqueria.com/",
+    "what": "own site, live: address, hours Tue-Sun, menu highlights, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Caporales Taqueria",
+  "address": "1316 Railroad Ave",
+  "city": "Livermore",
+  "zip": "94550",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "birria and quesabirria",
+   "mariscos",
+   "breakfast burritos and chilaquiles"
+  ],
+  "opened": null,
+  "brand_founded": 1998,
+  "chain": false,
+  "note": "Family-run Livermore taqueria; its site says it has cooked in Livermore since 1998. Pickup-only ordering, open daily 9am-10pm.",
+  "website": "https://loscaporalestaqueria.com/",
+  "sources": [
+   {
+    "url": "https://loscaporalestaqueria.com/",
+    "what": "own site, live: address, daily hours, pickup ordering, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Extra",
+  "address": "39494 Fremont Blvd",
+  "city": "Fremont",
+  "zip": "94538",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "tripa",
+   "shrimp",
+   "burritos and super burritos",
+   "birria",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Fremont taqueria; the same owners run a Taqueria Extra truck on Warm Springs Blvd.",
+  "website": "https://taqueriaextra.com/",
+  "sources": [
+   {
+    "url": "https://taqueriaextra.com/",
+    "what": "own site, live: locations, menu, online ordering, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Gallos Express",
+  "address": "1747 Willow Pass Rd",
+  "city": "Concord",
+  "zip": "94520",
+  "county": "Contra Costa",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "carnitas",
+   "shrimp",
+   "tacos",
+   "burritos",
+   "tamales"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Concord branch of a Contra Costa taqueria group with shops in Concord, Pleasant Hill and Pittsburg.",
+  "website": "https://www.taquerialosgallosexpress.com/",
+  "sources": [
+   {
+    "url": "https://www.taquerialosgallosexpress.com/",
+    "what": "own site, live: locations, menus, online ordering, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Gallos Express",
+  "address": "1974 Contra Costa Blvd",
+  "city": "Pleasant Hill",
+  "zip": "94523",
+  "county": "Contra Costa",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "carnitas",
+   "shrimp",
+   "tacos",
+   "burritos",
+   "tamales"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Pleasant Hill branch of a Contra Costa taqueria group.",
+  "website": "https://www.taquerialosgallosexpress.com/",
+  "sources": [
+   {
+    "url": "https://www.taquerialosgallosexpress.com/",
+    "what": "own site, live: locations, menus, online ordering, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Cunados",
+  "address": "196 Ranch Dr",
+  "city": "Milpitas",
+  "zip": "95035",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "carne asada",
+   "burritos",
+   "pozole",
+   "seafood"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Milpitas taqueria; its site says it has served Milpitas since 2003.",
+  "website": "https://taquerialoscunados.us/",
+  "sources": [
+   {
+    "url": "https://taquerialoscunados.us/",
+    "what": "own site, live: address, menu, online ordering, (c) 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Zocalo",
+  "address": "1243 33rd Ave",
+  "city": "Oakland",
+  "zip": "94601",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "Oaxacan-style tacos",
+   "antojitos",
+   "house specials"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Fruitvale taqueria with Oaxacan cooking; open daily 10am-7pm per its site.",
+  "website": "https://taqueriaelzocalo.com/",
+  "sources": [
+   {
+    "url": "https://taqueriaelzocalo.com/",
+    "what": "own site, live: address, daily hours, menu, ordering, (c) 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tres Amigos",
+  "address": "270 Cabrillo Hwy S",
+  "city": "Half Moon Bay",
+  "zip": "94019",
+  "county": "San Mateo",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor",
+   "carne asada",
+   "carnitas",
+   "lengua",
+   "buche",
+   "fish tacos",
+   "super burritos",
+   "tortas",
+   "tamales"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Coastside taqueria; its site says it first opened on March 23, 1985, founded by three friends who came to Half Moon Bay from San Jose.",
+  "website": "https://tresamigoshmb.com/",
+  "sources": [
+   {
+    "url": "https://tresamigoshmb.com/",
+    "what": "own site, live: address, menu, phone ordering, 2026 dates on page",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Parranga",
+  "address": "300 Santana Row #110",
+  "city": "San Jose",
+  "zip": "95128",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Santana Row taqueria and bar with happy hour.",
+  "website": "https://www.parranga.com/",
+  "sources": [
+   {
+    "url": "https://www.parranga.com/",
+    "what": "own site, live: address, hours, menus, ordering, (c) 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos Del Guero",
+  "address": "40 Hornlein Ct",
+  "city": "Gilroy",
+  "zip": "95020",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "burritos",
+   "quesadillas",
+   "sopes"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Gilroy taqueria open until midnight most nights and 3am Fri-Sat per its site.",
+  "website": "https://www.gilroytacos.com/",
+  "sources": [
+   {
+    "url": "https://www.gilroytacos.com/",
+    "what": "own site, live: address, hours, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Pleasant Hill",
+  "address": "1675 Contra Costa Blvd",
+  "city": "Pleasant Hill",
+  "zip": "94523",
+  "county": "Contra Costa",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "steak, chicken, shrimp and chorizo tacos",
+   "birria and quesabirria",
+   "burritos",
+   "sopes",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Pleasant Hill taqueria with grilled-meat tacos and birria.",
+  "website": "https://taqueriapleasanthill.com/",
+  "sources": [
+   {
+    "url": "https://taqueriapleasanthill.com/",
+    "what": "own site, live: address, menu, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Venganza",
+  "address": "6419 Telegraph Ave",
+  "city": "Oakland",
+  "zip": "94609",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "plant-based asada tacos",
+   "plant-based carnitas tacos",
+   "plant-based pollo tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "North Oakland taqueria whose entire menu is plant-based (no animal products), modeled on street-taco fillings; closed Mondays.",
+  "website": "https://venganzafoods.com/",
+  "sources": [
+   {
+    "url": "https://venganzafoods.com/",
+    "what": "own site, live: address, Tue-Sun hours, menu, pre-order",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Burrito Jalisciense",
+  "address": "927 Lincoln Ave",
+  "city": "San Rafael",
+  "zip": "94901",
+  "county": "Marin",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "shrimp (camaron)",
+   "burritos",
+   "tacos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "San Rafael taqueria and burrito shop on Lincoln Avenue.",
+  "website": "https://www.elburritojalisciense.com/",
+  "sources": [
+   {
+    "url": "https://www.elburritojalisciense.com/",
+    "what": "own site, live: address, menu, gift cards, (c) 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "iGuey Taqueria",
+  "address": "1494 El Camino Real",
+  "city": "San Carlos",
+  "zip": "94070",
+  "county": "San Mateo",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja fish taco",
+   "shrimp taco",
+   "iGuey burrito",
+   "fajita quesadilla",
+   "enchiladas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "San Carlos taqueria on El Camino Real with Baja-style fish tacos.",
+  "website": "https://igueytaqueria.com/",
+  "sources": [
+   {
+    "url": "https://igueytaqueria.com/",
+    "what": "own site, live: address, menu items, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Chingada Taqueria",
+  "address": "3281 Sierra Rd",
+  "city": "San Jose",
+  "zip": "95132",
+  "county": "Santa Clara",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "al pastor tacos",
+   "huaraches",
+   "micheladas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "East San Jose taqueria focused on al pastor; its site says it has served San Jose since 2017.",
+  "website": "https://www.lachingadataqueriasj.com/",
+  "sources": [
+   {
+    "url": "https://www.lachingadataqueriasj.com/",
+    "what": "own site, live: address, current hours, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Suavecito Birria & Tacos",
+  "address": "1100 S Amphlett Blvd, Ste B",
+  "city": "San Mateo",
+  "zip": "94402",
+  "county": "San Mateo",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos",
+   "tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "San Mateo birria-and-taco kitchen open Tuesday-Sunday for takeout and delivery.",
+  "website": "https://www.suavecitosm.com/",
+  "sources": [
+   {
+    "url": "https://www.suavecitosm.com/",
+    "what": "own site, live: address, days open, menu, online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Chino",
+  "address": "2300 Humphrey Ave",
+  "city": "Richmond",
+  "zip": "94804",
+  "county": "Contra Costa",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada tacos",
+   "mariscos (Mariscos El Chino)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taco truck at a fixed spot (23rd St and Humphrey Ave) with outdoor seating; its site says it has served Richmond since 2016.",
+  "website": "https://www.tacoselchino.com/",
+  "sources": [
+   {
+    "url": "https://www.tacoselchino.com/",
+    "what": "own site, live: address, daily hours, pickup phone orders",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria La Morena",
+  "address": "307 Baden Ave",
+  "city": "South San Francisco",
+  "zip": "94080",
+  "county": "San Mateo",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "super burrito",
+   "tacos (choice of meat)",
+   "quesadilla suiza",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-owned taqueria in downtown South San Francisco; its site says it has served the community since 1986.",
+  "website": "https://www.taquerialamorena.com/",
+  "sources": [
+   {
+    "url": "https://www.taquerialamorena.com/",
+    "what": "own site, live: address, hours, menu, pickup ordering, (c) 2025",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "High Tech Burrito",
+  "address": "800 Redwood Hwy, Ste 118",
+  "city": "Mill Valley",
+  "zip": "94941",
+  "county": "Marin",
+  "kinds": [
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "burritos",
+   "carnitas",
+   "tacos"
+  ],
+  "opened": null,
+  "brand_founded": 1986,
+  "chain": true,
+  "note": "Mill Valley shop of a small Bay Area burrito chain (Alamo, Blackhawk, Mill Valley, San Anselmo) that says it started in 1986.",
+  "website": "https://hightechburrito.com/",
+  "sources": [
+   {
+    "url": "https://hightechburrito.com/",
+    "what": "brand's own site, live: four locations with daily hours, online ordering, started 1986",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "High Tech Burrito",
+  "address": "914-A Sir Francis Drake Blvd",
+  "city": "San Anselmo",
+  "zip": "94960",
+  "county": "Marin",
+  "kinds": [
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "burritos",
+   "carnitas",
+   "tacos"
+  ],
+  "opened": null,
+  "brand_founded": 1986,
+  "chain": true,
+  "note": "San Anselmo shop of a small Bay Area burrito chain (Alamo, Blackhawk, Mill Valley, San Anselmo) that says it started in 1986.",
+  "website": "https://hightechburrito.com/",
+  "sources": [
+   {
+    "url": "https://hightechburrito.com/",
+    "what": "brand's own site, live: four locations with daily hours, online ordering, started 1986",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "High Tech Burrito",
+  "address": "120-A Alamo Plaza",
+  "city": "Alamo",
+  "zip": "94507",
+  "county": "Contra Costa",
+  "kinds": [
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "burritos",
+   "carnitas",
+   "tacos"
+  ],
+  "opened": null,
+  "brand_founded": 1986,
+  "chain": true,
+  "note": "Alamo shop of a small Bay Area burrito chain (Alamo, Blackhawk, Mill Valley, San Anselmo) that says it started in 1986.",
+  "website": "https://hightechburrito.com/",
+  "sources": [
+   {
+    "url": "https://hightechburrito.com/",
+    "what": "brand's own site, live: four locations with daily hours, online ordering, started 1986",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Toro Taqueria",
+  "address": "598 Valencia St",
+  "city": "San Francisco",
+  "zip": "94110",
+  "county": "San Francisco",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "fish tacos",
+   "nachos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Mission taqueria on Valencia St known for fish tacos and nachos per WhatNow.",
+  "website": null,
+  "sources": [
+   {
+    "url": "https://whatnow.com/san-francisco/local-news/san-francisco-mexican-eatery-recommended-to-close-after-health-inspection/",
+    "what": "WhatNow, dated 2026-01-16: El Toro Taqueria at 598 Valencia St, fish tacos and nachos; closure order after 2026-01-15 inspection",
+    "date": "2026-01-16"
+   },
+   {
+    "url": "https://data.sf.gov/resource/tvy3-wexg.json",
+    "what": "SF DPH health inspection dataset: EL TORO TAQUERIA, 598 Valencia St, inspection 2026-01-16 (Pass)",
+    "date": "2026-01-16"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Maria's Taco and Bar",
+  "address": "288 Sunset Ave, Ste G",
+  "city": "Suisun City",
+  "zip": null,
+  "county": "Solano",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "soft tacos (pastor, carnitas, steak, chorizo, lengua, cabeza)",
+   "fish and shrimp tacos",
+   "tacos quemados de pulpo (octopus)",
+   "aguachiles",
+   "ceviche de camaron"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Suisun City taqueria and bar with a seafood side (aguachiles, ceviche, octopus tacos) and a breakfast menu.",
+  "website": "https://www.mariastacoandbar.com/",
+  "sources": [
+   {
+    "url": "https://www.mariastacoandbar.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.mariastacoandbar.com/",
+    "what": "own site, live: address, hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Comales",
+  "address": "2105 MacArthur Blvd",
+  "city": "Oakland",
+  "zip": "94602",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria",
+   "burrito"
+  ],
+  "open": true,
+  "dishes": [
+   "fish taco (corn tortilla, cabbage, pico de gallo)",
+   "regular and super burritos",
+   "super fish burrito",
+   "lengua",
+   "fish plate"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-run Dimond District taqueria; its site says it has been family owned and operated since 1997. Weekday daytime hours only (closed weekends).",
+  "website": "https://www.loscomalestaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.loscomalestaqueria.com/",
+    "what": "own site, live: menu, address, current weekday hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Calafia Taqueria",
+  "address": "1445 Webster St",
+  "city": "Alameda",
+  "zip": "94501",
+  "county": "Alameda",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada",
+   "pollo asado",
+   "carnitas",
+   "chile verde",
+   "lengua",
+   "al pastor",
+   "pescado",
+   "camaron"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Alameda taqueria on Webster Street with pickup-only online ordering and a rentable patio.",
+  "website": "https://www.calafiataqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.calafiataqueria.com/",
+    "what": "own site, live: fillings list, address, online pickup ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ }
+]

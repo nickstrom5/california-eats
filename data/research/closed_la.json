@@ -1,0 +1,5 @@
+[
+ {"name": "Cabo Taco Baja Grill", "address": "15294 Rosecrans Ave", "city": "La Mirada", "source_url": "http://www.cabotacobajagrill.com/", "source_date": "2026-10-07", "why": "Own website says 'Permanently CLOSED' and links a 'Closed 8/23/26' notice page."},
+ {"name": "Kogiya Korean BBQ", "address": "9711 Reseda Blvd", "city": "Northridge", "source_url": "http://www.hanookalbi.com/", "source_date": "2026-10-07", "why": "Hanoo Kalbi's own site lists 9711 Reseda Blvd as its Northridge restaurant; kogiyabbq.com no longer resolves. Treated as replaced at this address."},
+ {"name": "Gwang Yang BBQ", "address": "3435 Wilshire Blvd Ste 123", "city": "Los Angeles", "source_url": "https://www.moohankbbq.com", "source_date": "2026-10-07", "why": "Moohan Korean BBQ's own site (c) 2026 lists 3435 Wilshire Blvd Ste 123 as its address; gybbq.com is a parked for-sale domain. Treated as replaced at this address."}
+]

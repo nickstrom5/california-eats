@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en" data-base="/california-eats">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-R/C9RrTEh5EytW5buNSZVBFcyxHQK/n9RefUsVMJLqM=' 'sha256-+pVLco3lw1uwNvPduKL5H+vpzOU/auRMtCVLhj5pAKo='; style-src 'sha256-QBfdukvdr8uVy2jJCsOnCbb397oOHAtDkaQ6Dv4MDnU='; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search California Restaurants, Taquerías &amp; Dim Sum</title>
+<meta name="description" content="Search 103,585 California restaurants by name, town, street or dish, and map hand-checked taquerías, dim sum, burritos and more. Free, no account.">
+<link rel="canonical" href="https://nickstrom5.github.io/california-eats/explore/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#003262">
+<meta property="og:title" content="Search California Restaurants, Taquerías &amp; Dim Sum">
+<meta property="og:description" content="Search 103,585 California restaurants by name, town, street or dish, and map hand-checked taquerías, dim sum, burritos and more. Free, no account.">
+<meta property="og:url" content="https://nickstrom5.github.io/california-eats/explore/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="California Eats">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://nickstrom5.github.io/california-eats/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="California Eats: Taquería &amp; dim sum guide. California restaurants, with hand-checked taquerías, dim sum, burritos and more.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Search California Restaurants, Taquerías &amp; Dim Sum">
+<meta name="twitter:description" content="Search 103,585 California restaurants by name, town, street or dish, and map hand-checked taquerías, dim sum, burritos and more. Free, no account.">
+<meta name="twitter:image" content="https://nickstrom5.github.io/california-eats/og.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003262'/%3E%3Crect y='53' width='64' height='11' fill='%231A4B80'/%3E%3Cpath d='M2 56 Q8 53 16 56 T32 56 T48 56 T64 56' stroke='%235582B4' stroke-width='1.6' fill='none'/%3E%3Cg transform='rotate(-16 32 30)'%3E%3Cpath d='M32 6 C40 6 41 20 47 31 C53 43 45 52 32 52 C19 52 11 43 17 31 C23 20 24 6 32 6 Z' fill='%232F4F1C'/%3E%3Cpath d='M32 8.5 C39 8.5 39.5 21 45 31.5 C50 42 43.5 49.5 32 49.5 C20.5 49.5 14 42 19 31.5 C24.5 21 25 8.5 32 8.5 Z' fill='%239CC94F'/%3E%3Cpath d='M32 12 C37.5 12 37.5 23 42.5 32 C46.5 40.5 41 46.5 32 46.5 C23 46.5 17.5 40.5 21.5 32 C26.5 23 26.5 12 32 12 Z' fill='%23E4EC9A'/%3E%3Ccircle cx='32' cy='36' r='7' fill='%237A4A26'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="/california-eats/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/california-eats/apple-touch-icon.png">
+<link rel="manifest" href="/california-eats/site.webmanifest">
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #fff; --surface2: #eef3f8; --rule: #dce3ec;
+    --ink: #0e1b2c; --ink2: #283a52; --muted: #4a5a72;
+    --blue: #003262; --blue2: #1a4b80; --sea: #5582b4; --seasoft: #e3ecf5;
+    --gold: #fdb515; --goldsoft: #fee7b0; --poppy: #e35b1e;
+    --radius: 16px;
+    --display: "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1420; --surface: #111d2c; --surface2: #172638; --rule: #24364b; --ink: #edf2f8; --ink2: #ccd8e6; --muted: #a2b2c6; --blue: #9cc3ec; --blue2: #7fb0e3; --sea: #8cb6df; --seasoft: #16304a; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--blue); text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: -9999px; top: 0; background: var(--gold); color: #0e1b2c; padding: 10px 14px; font-weight: 700; z-index: 10; }
+  .skip:focus { left: 8px; top: 8px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  .band { display: block; width: 100%; height: 22px; margin-top: 8px; }
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0 18px; border-bottom: 4px solid var(--gold); }
+  .logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font: 800 22px/1 var(--display); text-transform: uppercase; letter-spacing: .01em; color: var(--blue); text-decoration: none; }
+  header.site nav { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: flex-end; }
+  header.site nav a { color: var(--ink2); text-decoration: none; font-size: 15px; }
+  header.site nav a, footer nav a, nav.crumbs a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
+  header.site nav a:hover { color: var(--blue); text-decoration: underline; }
+  h1, h2 { font-family: var(--display); font-weight: 800; color: var(--blue); letter-spacing: -.005em; }
+  h1 { font-size: clamp(36px, 7.5vw, 56px); line-height: 1.02; margin: 0 0 16px; text-transform: uppercase; text-wrap: balance; }
+  h1 .kicker { display: block; font: 700 15px/1.4 -apple-system, system-ui, sans-serif; letter-spacing: .06em; color: var(--muted); margin-bottom: 12px; }
+  h2 { font-size: 32px; line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  h3 { font-size: 18px; margin: 0; line-height: 1.3; }
+  .lede { font-size: 19px; color: var(--ink2); margin: 0 0 26px; }
+  .hero { padding: 44px 0 28px; }
+  section { padding: 36px 0; border-top: 1px solid var(--rule); }
+  section.hero { border: 0; }
+  .sub { color: var(--ink2); margin: 0 0 22px; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; gap: 10px; background: var(--gold); color: #0e1b2c; font-weight: 700; padding: 14px 20px; border-radius: 14px; text-decoration: none; font-size: 17px; }
+  .btn svg { width: 22px; height: 22px; }
+  .btn-ghost { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+  .pill { font-size: 14px; color: var(--muted); }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 28px 0 0; padding: 0; list-style: none; }
+  .stats li { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 14px; }
+  .stats b { display: block; font: 800 30px/1 var(--display); color: var(--blue); font-variant-numeric: tabular-nums; }
+  .stats span { font-size: 14px; color: var(--muted); }
+  .steps { display: grid; gap: 12px; list-style: none; margin: 0; padding: 0; }
+  .step { display: flex; gap: 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
+  .step .n { flex: 0 0 32px; height: 32px; border-radius: 50%; background: var(--gold); color: #0e1b2c; font-weight: 800; display: grid; place-items: center; }
+  .step p { margin: 4px 0 0; color: var(--ink2); }
+  .shots { display: flex; gap: 14px; overflow-x: auto; margin: 0 -20px; padding: 4px 20px 14px; scroll-snap-type: x proximity; list-style: none; }
+  .shots li { flex: 0 0 auto; width: 210px; scroll-snap-align: start; }
+  .shots img { display: block; width: 210px; height: auto; border-radius: 24px; border: 1px solid var(--rule); background: var(--surface2); }
+  .shots p { font-size: 14px; color: var(--muted); margin: 8px 2px 0; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
+  .card p { margin: 6px 0 0; color: var(--ink2); }
+  a.card { display: block; text-decoration: none; color: var(--ink); }
+  a.card:hover h3 { text-decoration: underline; color: var(--blue); }
+  .card.lead { border-color: var(--gold); background: var(--goldsoft); }
+  @media (prefers-color-scheme: dark) { .card.lead { background: var(--surface); } }
+  .cities { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+  .cities a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); text-decoration: none; color: var(--ink); font-size: 15px; }
+  .cities a:hover { border-color: var(--blue); }
+  details { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 2px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; padding: 14px 0; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--blue); font-weight: 800; }
+  details[open] summary::after { content: "\2013"; }
+  details p { margin: 0 0 16px; color: var(--ink2); }
+  .final { text-align: center; }
+  .final .cta-row { justify-content: center; }
+  nav.crumbs { font-size: 14px; color: var(--muted); padding: 16px 0 0; }
+  nav.crumbs ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  nav.crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--rule); }
+  nav.crumbs a { color: var(--muted); }
+  nav.crumbs li { display: inline-flex; align-items: center; min-height: 44px; }
+  .places { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .places li { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 14px 16px; min-width: 0; overflow-wrap: anywhere; }
+  .places .where { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+  .places .facts { margin: 8px 0 0; font-size: 15px; color: var(--ink2); }
+  .places .facts b { color: var(--ink); font-weight: 600; }
+  .places .note { margin: 6px 0 0; font-size: 15px; color: var(--ink2); }
+  .places .link { font-size: 14px; }
+  .places .link a, .places h3 a, .toc a, td a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--goldsoft); color: #0e1b2c; border-radius: 6px; padding: 1px 6px; margin-right: 4px; }
+  .tag-sea { background: var(--seasoft); color: var(--blue); }
+  .tag-mi { background: #003262; color: #fff; }
+  .toc { columns: 2; padding-left: 20px; margin: 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--rule); }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .tablewrap { overflow-x: auto; }
+  .fine { font-size: 14px; color: var(--muted); }
+  .legal h2 { font-size: 26px; margin-top: 28px; }
+  .legal p, .legal li { color: var(--ink2); }
+  footer { padding: 32px 0 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--rule); margin-top: 20px; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+  footer a { color: var(--muted); }
+  footer p { margin: 12px 0 0; }
+  @media (max-width: 600px) {
+    .grid2 { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .toc { columns: 1; }
+    header.site { flex-direction: column; align-items: flex-start; }
+    header.site nav { justify-content: flex-start; }
+  }
+
+  [hidden] { display: none !important; }
+  .ex-hero { padding: 28px 0 8px; }
+  .ex-hero h1 { font-size: clamp(30px, 6vw, 44px); }
+  .ex-controls { background: var(--bg); padding: 10px 0 8px; border-bottom: 1px solid var(--rule); }
+  .ex-guides { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
+  .ex-guides button, .ex-view button, .ex-small { flex: 0 0 auto; border: 1px solid var(--rule); background: var(--surface); color: var(--blue); border-radius: 999px; padding: 7px 12px; font: 600 14px/1.2 inherit; font-family: inherit; cursor: pointer; min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  .ex-guides button[aria-pressed="true"], .ex-view button[aria-pressed="true"] { background: var(--blue); color: var(--bg); border-color: var(--blue); }
+  .ex-row1 { display: flex; gap: 8px; align-items: center; }
+  .ex-row1 input[type=search] { flex: 1; min-width: 0; font: 16px/1.3 inherit; font-family: inherit; padding: 10px 12px; min-height: 44px; border: 2px solid var(--blue); border-radius: 12px; background: var(--surface); color: var(--ink); }
+  .ex-row2 { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; font-size: 14px; }
+  .ex-row2 select { font: 14px inherit; font-family: inherit; padding: 6px 8px; min-height: 44px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); color: var(--ink); max-width: 46vw; }
+  .ex-row2 label { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; cursor: pointer; }
+  .ex-view { margin-left: auto; display: flex; gap: 4px; }
+  #ex-count { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
+  #ex-sub { margin: 4px 0 0; font-size: 14px; color: var(--ink2); }
+  #ex-locmsg { font-size: 13px; color: var(--muted); margin: 4px 0 0; }
+  /* holds the app's place while the data loads, so the footer starts below the fold instead of jumping down */
+  #ex-loading { min-height: 100vh; }
+  .ex-list { list-style: none; padding: 0; margin: 10px 0; }
+  .ex-list li + li { border-top: 1px solid var(--rule); }
+  .ex-row { width: 100%; display: flex; gap: 12px; align-items: center; text-align: left; background: none; border: 0; padding: 12px 4px; cursor: pointer; color: var(--ink); font: inherit; }
+  .ex-row:hover { background: var(--surface2); }
+  .ex-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+  .ex-main b { font-weight: 650; }
+  .ex-town { font-size: 14px; color: var(--muted); }
+  .ex-chips .tag { margin: 0 4px 2px 0; }
+  .tag-jb { background: var(--blue); color: var(--bg); }
+  .tag-plain { background: var(--surface2); color: var(--blue); }
+  .tag-dash { background: transparent; color: var(--muted); border: 1px dashed var(--rule); }
+  .ex-metric { text-align: right; display: flex; flex-direction: column; align-items: flex-end; }
+  .ex-metric b { font: 800 22px/1 var(--display); color: var(--blue); }
+  .ex-metric small { font-size: 11px; color: var(--muted); }
+  .ex-rank { flex: 0 0 34px; height: 34px; display: grid; place-items: center; font: 800 20px var(--display); color: var(--blue); border-radius: 8px; }
+  .ex-rank.top { background: var(--gold); color: #0e1b2c; }
+  .ex-empty { padding: 24px 4px; color: var(--muted); }
+  #ex-more { display: block; margin: 8px auto 24px; }
+  #ex-mapwrap { position: relative; height: min(72vh, 620px); margin: 10px 0 20px; border: 1px solid var(--rule); border-radius: 16px; overflow: hidden; background: #d6e4f2; }
+  @media (prefers-color-scheme: dark) { #ex-mapwrap { background: #13283d; } }
+  #ex-map { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+  .ex-zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
+  .ex-zoom button { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--rule); background: var(--surface); color: var(--blue); font: 700 20px/1 inherit; cursor: pointer; }
+  #ex-maphint { position: absolute; left: 10px; bottom: 8px; margin: 0; font-size: 13px; background: var(--surface); padding: 3px 8px; border-radius: 999px; color: var(--ink2); }
+  .ex-panel { position: fixed; z-index: 20; right: 0; top: 0; bottom: 0; width: min(440px, 100%); overflow-y: auto; background: var(--surface); border-left: 1px solid var(--rule); box-shadow: -8px 0 24px rgba(0,0,0,.12); padding: 18px 20px 40px; }
+  @media (max-width: 600px) { .ex-panel { top: auto; height: 86vh; border-left: 0; border-top: 4px solid var(--gold); border-radius: 18px 18px 0 0; } }
+  .ex-close { position: sticky; top: 0; float: right; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--rule); background: var(--surface); font-size: 24px; line-height: 1; cursor: pointer; color: var(--ink); }
+  .ex-kicker { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .1em; color: var(--blue2); }
+  .ex-panel h2 { font-size: 34px; margin: 4px 0 6px; text-transform: uppercase; }
+  .ex-addr, .ex-dist { margin: 0 0 4px; color: var(--ink2); font-size: 15px; }
+  .ex-actions { margin: 14px 0 8px; display: grid; gap: 8px; }
+  .ex-apple { justify-content: center; }
+  .ex-act-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .ex-act-row a, .ex-act-row button { flex: 1; min-width: 88px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 10px; border: 1px solid var(--rule); border-radius: 12px; text-decoration: none; color: var(--blue); font: 600 14px inherit; font-family: inherit; background: var(--surface); cursor: pointer; }
+  .ex-act-row button[aria-pressed="true"] { background: var(--goldsoft); color: #0e1b2c; }
+  .ex-sec { margin-top: 18px; }
+  .ex-sec h3 { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 6px; margin-bottom: 8px; }
+  .ex-sec p, .ex-sec li { font-size: 15px; color: var(--ink2); margin: 6px 0; }
+  .ex-kv { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; padding: 3px 0; }
+  .ex-kv span { color: var(--ink2); }
+  .ex-kv b { text-align: right; }
+  .ex-fine { font-size: 13px !important; color: var(--muted) !important; }
+  .ex-grade { display: flex; align-items: center; gap: 10px; font-weight: 600; flex-wrap: wrap; }
+  .ex-app { margin-top: 22px; font-size: 14px; color: var(--muted); }
+  body.ex-open { overflow: hidden; }
+  @media (min-width: 601px) { body.ex-open { overflow: auto; } }
+  .ex-res { display: inline-block; padding: 2px 8px; border-radius: 6px; font-weight: 800; font-size: 13px; white-space: nowrap; }
+  .ex-res-0 { background: #ddefe3; color: #0e5a2b; } .ex-res-1 { background: #ffe9c2; color: #6b3a00; } .ex-res-2 { background: #f9d5db; color: #7a0019; }
+  .ex-res-n { background: var(--surface2); color: var(--ink2); }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebApplication",
+ "name": "California Eats web app",
+ "url": "https://nickstrom5.github.io/california-eats/explore/",
+ "applicationCategory": "TravelApplication",
+ "operatingSystem": "Any",
+ "browserRequirements": "Requires JavaScript",
+ "description": "Search 103,585 California restaurants by name, town, street or dish, and map hand-checked taquerías, dim sum, burritos and more. Free, no account.",
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "publisher": {
+  "@id": "https://nickstrom5.github.io/california-eats/#org"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Home",
+   "item": "https://nickstrom5.github.io/california-eats/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Search",
+   "item": "https://nickstrom5.github.io/california-eats/explore/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <svg class="band" viewBox="0 0 760 22" preserveAspectRatio="none" aria-hidden="true"><path d="M40 22 A22 22 0 0 1 84 22 Z" fill="#fdb515"/><path d="M0 22 V14 Q24 9 48 14 T96 14 T144 14 T192 14 T240 14 T288 14 T336 14 T384 14 T432 14 T480 14 T528 14 T576 14 T624 14 T672 14 T720 14 T760 14 V22 Z" fill="#5582b4"/><path d="M0 22 V18 Q24 14 48 18 T96 18 T144 18 T192 18 T240 18 T288 18 T336 18 T384 18 T432 18 T480 18 T528 18 T576 18 T624 18 T672 18 T720 18 T760 18 V22 Z" fill="#003262"/></svg>
+  <header class="site">
+    <a class="logo" href="/california-eats/" aria-label="California Eats home"><svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#003262"/><rect y="53" width="64" height="11" fill="#1A4B80"/><path d="M2 56 Q8 53 16 56 T32 56 T48 56 T64 56" stroke="#5582B4" stroke-width="1.6" fill="none"/><g transform="rotate(-16 32 30)"><path d="M32 6 C40 6 41 20 47 31 C53 43 45 52 32 52 C19 52 11 43 17 31 C23 20 24 6 32 6 Z" fill="#2F4F1C"/><path d="M32 8.5 C39 8.5 39.5 21 45 31.5 C50 42 43.5 49.5 32 49.5 C20.5 49.5 14 42 19 31.5 C24.5 21 25 8.5 32 8.5 Z" fill="#9CC94F"/><path d="M32 12 C37.5 12 37.5 23 42.5 32 C46.5 40.5 41 46.5 32 46.5 C23 46.5 17.5 40.5 21.5 32 C26.5 23 26.5 12 32 12 Z" fill="#E4EC9A"/><circle cx="32" cy="36" r="7" fill="#7A4A26"/></g></svg>California Eats</a>
+    <nav aria-label="Main"><a href="/california-eats/california-taquerias.html">Taquerías</a><a href="/california-eats/california-dim-sum.html">Dim sum</a><a href="/california-eats/california-burritos.html">Burritos</a><a href="/california-eats/california-fish-tacos.html">Fish tacos</a><a href="/california-eats/california-michelin-james-beard.html">Honors</a><a href="/california-eats/#cities">Cities</a><a href="/california-eats/explore/">Search</a></nav>
+  </header>
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/california-eats/">Home</a></li><li aria-current="page">Search</li></ol></nav>
+  <main id="main">
+  <section class="ex-hero">
+    <h1><span class="kicker">California Eats · on the web</span>Search California restaurants</h1>
+    <p class="sub">103,585 restaurants, cafés and bars, with 363 hand-checked taquerías, 53 dim sum houses and the state's MICHELIN and James Beard honorees. The same data as the free iPhone and iPad app. Nothing about you is stored anywhere but this browser.</p>
+  </section>
+  <p id="ex-loading">Loading the restaurant list…</p>
+  <noscript><p>The search needs JavaScript. The guides work without it: <a href="/california-eats/california-taquerias.html">california taquerías</a>, <a href="/california-eats/california-dim-sum.html">california dim sum</a>, <a href="/california-eats/california-burritos.html">mission &amp; california burritos</a>, <a href="/california-eats/california-fish-tacos.html">california fish tacos</a>, <a href="/california-eats/california-korean-bbq.html">california korean barbecue</a>, <a href="/california-eats/california-burger-stands.html">california burger stands</a>, <a href="/california-eats/california-wine-country-restaurants.html">wine-country restaurants</a>.</p></noscript>
+  <div id="ex-app" hidden>
+    <div class="ex-controls">
+      <div class="ex-guides" role="group" aria-label="Guides"><button type="button" data-g="taqueria" aria-pressed="false">Taquerías</button><button type="button" data-g="dimsum" aria-pressed="false">Dim sum</button><button type="button" data-g="burrito" aria-pressed="false">Burritos</button><button type="button" data-g="fishtaco" aria-pressed="false">Fish tacos</button><button type="button" data-g="kbbq" aria-pressed="false">Korean BBQ</button><button type="button" data-g="burgerstand" aria-pressed="false">Burger stands</button><button type="button" data-g="winecountry" aria-pressed="false">Wine country</button><button type="button" data-g="honors" aria-pressed="false">MICHELIN &amp; James Beard</button><button type="button" data-g="oldest" aria-pressed="false">Oldest</button><button type="button" data-g="inspections" aria-pressed="false">Inspections</button><button type="button" data-g="all" aria-pressed="false">All restaurants</button><button type="button" data-g="saved" aria-pressed="false">Saved</button></div>
+      <div class="ex-row1">
+        <label class="skip" for="ex-q">Search</label>
+        <input id="ex-q" type="search" placeholder="Name, town, street, zip or dish" autocomplete="off" enterkeyhint="search">
+        <button type="button" id="ex-locate" class="ex-small">Near me</button>
+      </div>
+      <div class="ex-row2">
+        <label>Sort <select id="ex-sort" aria-label="Sort"></select></label>
+        <select id="ex-region" aria-label="Region"></select>
+        <select id="ex-town" aria-label="Town"></select>
+        <select id="ex-cuisine" aria-label="Kind of place"></select>
+        <select id="ex-jur" aria-label="County" hidden></select>
+        <label><input type="checkbox" id="ex-chains"> Hide chains</label>
+        <button type="button" id="ex-clear" class="ex-small" hidden>Clear filters</button>
+        <div class="ex-view" role="group" aria-label="View"><button type="button" data-v="list" aria-pressed="true">List</button><button type="button" data-v="map" aria-pressed="false">Map</button></div>
+      </div>
+      <p id="ex-sub"></p>
+      <p id="ex-count" aria-live="polite"></p>
+      <p id="ex-locmsg"></p>
+    </div>
+    <div id="ex-listwrap"><ol id="ex-list" class="ex-list"></ol><button type="button" id="ex-more" class="ex-small" hidden></button></div>
+    <div id="ex-mapwrap" hidden>
+      <canvas id="ex-map" role="img" aria-label="Map of California with a dot for each place in the list. The list view has the same places."></canvas>
+      <div class="ex-zoom"><button type="button" id="ex-zin" aria-label="Zoom in">+</button><button type="button" id="ex-zout" aria-label="Zoom out">−</button></div>
+      <p id="ex-maphint"></p>
+    </div>
+  </div>
+  <aside id="ex-panel" class="ex-panel" hidden aria-labelledby="ex-pname"></aside>
+  </main>
+<script>
+// California Eats web app: the iPhone app's guides, search, filters, map and place details, in the browser.
+// Same data as the app (split into core + detail by scripts/make-site.py). No cookies, no trackers; saved places and the last guide
+// live in this browser's localStorage only. Adapted from wa-eats/scripts/explore.js (itself from wi-eats).
+(() => {
+  "use strict";
+  const BASE = document.documentElement.dataset.base || "";
+  const $ = (s) => document.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem("cae-" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+    set(k, v) { try { localStorage.setItem("cae-" + k, JSON.stringify(v)); } catch { /* private mode */ } },
+  };
+
+  // ---------------------------------------------------------------- search (a port of CaliforniaEats/Models/Search.swift)
+  const typeSyn = { avenue: "ave", av: "ave", street: "st", boulevard: "blvd", road: "rd", drive: "dr", place: "pl", court: "ct",
+    parkway: "pkwy", highway: "hwy", lane: "ln", trail: "trl", circle: "cir", terrace: "ter" };
+  const syn = { ...typeSyn, north: "n", south: "s", east: "e", west: "w", saint: "st", mount: "mt", fort: "ft" };
+  // looked up with words people type: no prototype, so "constructor" or "__proto__" is just a word
+  Object.setPrototypeOf(typeSyn, null); Object.setPrototypeOf(syn, null);
+  const abbrs = new Set(Object.values(syn)), typeAbbrs = new Set(Object.values(typeSyn));
+  let G = {};   // guide bits, from the data
+  const tagPhraseList = [["fish tacos", "fishtaco"], ["fish taco", "fishtaco"], ["dim sum", "dimsum"], ["dimsum", "dimsum"], ["yum cha", "dimsum"],
+    ["korean bbq", "kbbq"], ["korean barbecue", "kbbq"], ["kbbq", "kbbq"], ["taquerias", "taqueria"], ["taqueria", "taqueria"], ["burritos", "burrito"],
+    ["burrito", "burrito"], ["burger stands", "burgerstand"], ["burger stand", "burgerstand"], ["drive ins", "burgerstand"], ["drive in", "burgerstand"],
+    ["wine country", "winecountry"]];
+  function normalize(s) {
+    let t = String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    t = t.replace(/\b([a-z0-9])\s*&\s*([a-z0-9])\b/g, "$1$2").replace(/&/g, " and ").replace(/['’`]/g, "");
+    return t.replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  }
+  const normAddr = (s) => normalize(s).split(" ").map((w) => syn[w] || w).join(" ");
+
+  function parse(text) {
+    const q = { tokens: [], town: null, townPhrase: null, tag: 0, tagPhrase: null };
+    let raw = normalize(text).split(" ").filter(Boolean);
+    if (!raw.length) return q;
+    let mapped = raw.map((w) => syn[w] || w);
+    const find = (phrase) => {
+      const p = phrase.split(" ");
+      for (let i = 0; i + p.length <= mapped.length; i++) if (p.every((w, k) => mapped[i + k] === w)) return [i, i + p.length];
+      return null;
+    };
+    const cut = ([a, b]) => { const words = raw.slice(a, b).join(" "); raw.splice(a, b - a); mapped.splice(a, b - a); return words; };
+    for (const [phrase, key] of tagPhraseList) { const r = find(normalize(phrase)); if (r) { q.tag = G[key]; q.tagPhrase = cut(r); break; } }
+    for (const key of TOWN_KEYS_BY_LENGTH) {
+      const r = find(key);
+      if (r && !(r[1] < mapped.length && typeAbbrs.has(mapped[r[1]]))) { q.town = TOWN_KEYS[key]; q.townPhrase = cut(r); break; }
+    }
+    const stop = new Set(["the", "and", "of", "a", "in", "near", "me"]);
+    let idx = raw.map((_, i) => i);
+    if (q.tag || q.town || idx.some((i) => !stop.has(mapped[i]))) idx = idx.filter((i) => !stop.has(mapped[i]));
+    idx.forEach((i, n) => {
+      const token = raw[i], isLast = n === idx.length - 1;
+      if (syn[token]) { q.tokens.push([` ${syn[token]} `, ` ${token}`]); return; }
+      const whole = (abbrs.has(token) && (!isLast || token.length > 1)) || (token.length <= 2 && !isLast);
+      const needles = [" " + token + (whole ? " " : "")];
+      if (isLast && token.length >= 3) for (const [word, abbr] of Object.entries(typeSyn)) if (word !== token && word.startsWith(token)) needles.push(` ${abbr} `);
+      q.tokens.push(needles);
+    });
+    if (q.tokens.length >= 2 && idx.length && typeAbbrs.has(mapped[idx[idx.length - 1]])) {
+      const last = idx[idx.length - 1], prev = idx[idx.length - 2];
+      q.tokens.splice(-2, 2, [` ${mapped[prev]} ${mapped[last]} `, ` ${raw[prev]} ${raw[last]}`]);
+    }
+    return q;
+  }
+  const qEmpty = (q) => !q.tokens.length && !q.town && !q.tag;
+  function matches(p, q) {
+    if (q.tag && !(p.hc && (p.g & q.tag))) {
+      const stem = normalize(q.tagPhrase || "").replace(/s$/, "");
+      if (!stem || !p.nameText.includes(" " + stem)) return false;
+    }
+    if (q.town && p.c !== q.town && !p.nameText.includes(" " + normalize(q.townPhrase || ""))) return false;
+    return q.tokens.every((needles) => needles.some((n) => p.search.includes(n)));
+  }
+  const nameMatches = (p, q) => q.tokens.length && q.tokens.every((needles) => needles.some((n) => p.nameText.includes(n)));
+
+  // ---------------------------------------------------------------- guides (CaliforniaEats/Models/Guide.swift)
+  const MI = { 5: "3 MICHELIN Stars", 4: "2 MICHELIN Stars", 3: "1 MICHELIN Star", 2: "Bib Gourmand", 1: "MICHELIN Recommended" };
+  const checked = (key) => (p) => p.hc && (p.g & G[key]);
+  const GUIDES = {
+    taqueria: { title: "Taquerías", sub: "Hand-checked taquerías and taco shops, with what's on the menu", inc: checked("taqueria"), sorts: ["nearest", "name", "oldest"] },
+    dimsum: { title: "Dim Sum", sub: "Hand-checked dim sum houses and bakeries", inc: checked("dimsum"), sorts: ["nearest", "name", "oldest"] },
+    burrito: { title: "Burritos", sub: "Mission-style burritos in the Bay Area, California burritos in San Diego, hand-checked", inc: checked("burrito"), sorts: ["nearest", "name", "oldest"] },
+    fishtaco: { title: "Fish Tacos", sub: "Hand-checked Baja-style fish tacos, mostly San Diego", inc: checked("fishtaco"), sorts: ["nearest", "name", "oldest"] },
+    kbbq: { title: "Korean BBQ", sub: "Hand-checked tabletop-grill Korean barbecue", inc: checked("kbbq"), sorts: ["nearest", "name", "oldest"] },
+    burgerstand: { title: "Burger Stands", sub: "Hand-checked walk-up burger stands and drive-ins", inc: checked("burgerstand"), sorts: ["nearest", "name", "oldest"] },
+    winecountry: { title: "Wine Country", sub: "Hand-checked restaurants in California's wine towns", inc: checked("winecountry"), sorts: ["nearest", "name", "oldest"] },
+    honors: { title: "MICHELIN & James Beard", sub: "MICHELIN Guide California 2026 and James Beard honors, from the official announcements. Facts, not ratings.", inc: (p) => p.mi || p.h || p.gs,
+      sorts: ["honored", "nearest", "name"], ranked: true },
+    oldest: { title: "Oldest Places", sub: "Opening years we could verify at the current address, oldest first", inc: (p) => p.f != null, sorts: ["oldest", "nearest"], ranked: true },
+    inspections: { title: "Inspections", sub: "", inc: (p) => p.ij != null && p.ij === st.jur, sorts: ["best", "lowest", "nearest"] },
+    all: { title: "All Restaurants", sub: "Restaurants, cafés and bars statewide", inc: () => true, sorts: ["name", "nearest"] },
+    saved: { title: "Saved", sub: "Places you saved in this browser", inc: (p) => saved.has(p.id), sorts: ["name", "nearest"] },
+  };
+  const SORT_LABEL = { nearest: "Nearest", oldest: "Oldest first", name: "A to Z", honored: "Most honored", best: "Best latest result", lowest: "Lowest latest result" };
+
+  // ---------------------------------------------------------------- state
+  let P = [], D = null, CAL = {}, JURS = [], TOWNS = new Set(), KINDS = new Set(), TOWN_KEYS = {}, TOWN_KEYS_BY_LENGTH = [], GENERATED = "", REGIONS = [];
+  let here = null, shown = 100, current = [], view = "list";
+  const saved = new Set(store.get("saved", []));
+  const st = { g: "taqueria", q: "", sort: "", region: "", town: "", cuisine: "", chains: false, p: "", jur: 0 };
+
+  const miles = (a, b) => {
+    const r = Math.PI / 180, dLa = (b.la - a.la) * r, dLo = (b.lo - a.lo) * r;
+    const h = Math.sin(dLa / 2) ** 2 + Math.cos(a.la * r) * Math.cos(b.la * r) * Math.sin(dLo / 2) ** 2;
+    return 3958.8 * 2 * Math.asin(Math.sqrt(h));
+  };
+  const milesText = (m) => (m < 10 ? m.toFixed(1) : Math.round(m)) + " mi";
+  // a simplified California outline: Nevada sits inside the state's bounding box, so a box test would call Reno "California"
+  const OUTLINE = [[42.05, -124.6], [42.05, -119.95], [39.0, -119.95], [35.0, -114.55], [34.25, -114.05], [32.718, -114.72], [32.534, -117.124],
+    [32.534, -117.5], [33.8, -119.9], [34.6, -121.0], [36.3, -122.2], [37.8, -123.2], [40.2, -124.6]];
+  function inCalifornia(la, lo) {
+    let inside = false;
+    for (let i = 0, j = OUTLINE.length - 1; i < OUTLINE.length; j = i++) {
+      const [yi, xi] = OUTLINE[i], [yj, xj] = OUTLINE[j];
+      if ((yi > la) !== (yj > la) && lo < (xj - xi) * (la - yi) / (yj - yi) + xi) inside = !inside;
+    }
+    return inside;
+  }
+
+  function order() {
+    const g = GUIDES[st.g];
+    if (st.sort && g.sorts.includes(st.sort)) return st.sort;
+    if (here && g.sorts.includes("nearest") && ["taqueria", "dimsum", "burrito", "fishtaco", "kbbq", "burgerstand", "winecountry"].includes(st.g)) return "nearest";
+    return g.sorts[0] === "nearest" && !here ? g.sorts[1] : g.sorts[0];
+  }
+
+  function allows(p) {
+    const handPicked = ["taqueria", "dimsum", "burrito", "fishtaco", "kbbq", "burgerstand", "winecountry", "honors", "saved"].includes(st.g);
+    if (p.v && !handPicked) return false;            // gas-station counters, stadium stands and the like
+    if (st.region && p.rg !== st.region) return false;
+    if (st.town && p.c !== st.town) return false;
+    if (st.cuisine && p.cu !== st.cuisine) return false;
+    if (st.chains && p.ch >= 5) return false;
+    return true;
+  }
+
+  // within one county: LA County's own score where there is one, otherwise the placard; then fewer non-pass results on record
+  const inspKey = (p) => [p.is != null ? -p.is : (p.ir ?? 9) * 1000, p.ib ?? 0];
+  function list() {
+    const g = GUIDES[st.g], q = parse(st.q), o = order();
+    if (qEmpty(q) && st.q.trim()) return [];   // typed something, but nothing searchable ("🌮", "!!!")
+    if (!qEmpty(q)) indexAll();
+    let out = P.filter((p) => g.inc(p) && allows(p) && (qEmpty(q) || matches(p, q)));
+    const byName = (a, b) => a.n.localeCompare(b.n, "en", { sensitivity: "base" });
+    const dist = (p) => (here && p.la != null ? miles(here, p) : Infinity);
+    if (o === "nearest" && here) out.sort((a, b) => dist(a) - dist(b) || byName(a, b));
+    else if (o === "oldest") out.sort((a, b) => (a.f ?? 9999) - (b.f ?? 9999) || byName(a, b));
+    else if (o === "honored") out.sort((a, b) => (b.ip ?? -1) - (a.ip ?? -1) || byName(a, b));
+    else if (o === "best" || o === "lowest") {
+      const s = o === "best" ? 1 : -1;
+      out.sort((a, b) => { const x = inspKey(a), y = inspKey(b); return s * (x[0] - y[0]) || s * (x[1] - y[1]) || byName(a, b); });
+    } else out.sort(byName);
+    if (q.tokens.length && !g.ranked && o !== "best" && o !== "lowest") {       // name matches first when searching
+      const named = out.filter((p) => nameMatches(p, q));
+      if (named.length && named.length < out.length) { const ids = new Set(named); out = named.concat(out.filter((p) => !ids.has(p))); }
+    }
+    return out;
+  }
+
+  // ---------------------------------------------------------------- rendering
+  function chips(p, max) {
+    const c = [];
+    if (p.mi) c.push(`<span class="tag tag-jb">${MI[p.mi]}</span>`);
+    if (p.gs) c.push('<span class="tag tag-jb">MICHELIN Green Star</span>');
+    const jb = p.h & 1 ? "America's Classic" : p.h & 2 ? "James Beard winner" : p.h & 4 ? "James Beard finalist" : p.h & 8 ? "James Beard semifinalist" : null;
+    if (jb) c.push(`<span class="tag tag-jb">${jb}</span>`);
+    if (p.hc) for (const [k, l] of [["taqueria", "Taquería"], ["burrito", "Burritos"], ["fishtaco", "Fish tacos"], ["dimsum", "Dim sum"], ["kbbq", "Korean BBQ"],
+      ["burgerstand", "Burger stand"], ["winecountry", "Wine country"]]) if (p.g & G[k]) c.push(`<span class="tag">${l}</span>`);
+    if (p.ch >= 5) c.push(`<span class="tag tag-plain">Chain · ${p.ch}</span>`);
+    if (p.t === 0 && !p.h && !p.mi && !p.hc) c.push('<span class="tag tag-dash">Listing only</span>');
+    return (max ? c.slice(0, max) : c).join("");
+  }
+
+  function resultBadge(p) {
+    const j = JURS[p.ij];
+    if (!j) return "";
+    if (p.ir == null) return `<span class="ex-res ex-res-n">${p.is != null ? "Score " + p.is : "—"}</span>`;
+    const v = j.scale[p.ir], lbl = j.id === "lac" ? "Grade " + v : v.charAt(0) + v.slice(1).toLowerCase();
+    return `<span class="ex-res ex-res-${Math.min(p.ir, 2)}">${esc(lbl)}</span>`;
+  }
+
+  function metric(p, o) {
+    if (o === "nearest" && here && p.la != null) return [milesText(miles(here, p)), "away"];
+    if (o === "honored" && p.ip != null) return [String(Math.round(p.ip)), "honor pts"];
+    if (p.f && st.g !== "all") return [String(p.f), "opened"];
+    return null;
+  }
+
+  function jurNote() {
+    const j = JURS[st.jur];
+    if (!j) return "";
+    const how = { lac: "LA County's official score and letter grade at the latest inspection (A 90–100, B 80–89, C 70–79). Seven cities that never adopted grade cards show the score only. Pasadena, Long Beach and Vernon inspect on their own and aren't included.",
+      sf: "San Francisco's official placard at the latest inspection: Pass, Conditional Pass or Closure.",
+      sac: "Sacramento County's official placard at the latest inspection: Pass, Conditional Pass or Closed." }[j.id] || "";
+    return `${how} As recorded by ${j.agency}, through ${j.through}. We never compute a grade of our own or compare counties. One inspection is a snapshot of one day.`;
+  }
+
+  function render() {
+    const g = GUIDES[st.g], o = order();
+    current = list();
+    document.querySelectorAll(".ex-guides button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.g === st.g)));
+    $("#ex-sub").textContent = st.g === "inspections" ? jurNote() : g.sub;
+    $("#ex-jur").hidden = st.g !== "inspections";
+    const sortSel = $("#ex-sort");
+    sortSel.innerHTML = g.sorts.map((s) => `<option value="${s}"${s === o ? " selected" : ""}>${SORT_LABEL[s]}</option>`).join("");
+    sortSel.disabled = g.sorts.length < 2;
+    const regionName = st.region && (REGIONS.find((r) => r.id === st.region) || {}).name;
+    const filters = [regionName && `in ${regionName}`, st.town && `in ${st.town}`, st.cuisine && st.cuisine, st.chains && "no chains"].filter(Boolean);
+    $("#ex-count").textContent = `${current.length.toLocaleString()} ${current.length === 1 ? "place" : "places"} · ${SORT_LABEL[o]}` + (filters.length ? ` · ${filters.join(", ")}` : "");
+    $("#ex-clear").hidden = !filters.length;
+    $("#ex-locate").hidden = Boolean(here);
+    if (view === "list") renderList(o); else drawMap();
+    saveHash();
+  }
+
+  function renderList(o) {
+    const ol = $("#ex-list");
+    const g = GUIDES[st.g];
+    if (!current.length) {
+      ol.innerHTML = `<li class="ex-empty">${st.g === "saved" ? "Nothing saved yet. Open a place and tap Save to keep it here, in this browser." : "No places match. Try fewer words or clear the filters."}</li>`;
+      $("#ex-more").hidden = true;
+      return;
+    }
+    ol.innerHTML = current.slice(0, shown).map((p, i) => {
+      const m = metric(p, o);
+      const rank = g.ranked ? `<span class="ex-rank${i < 3 ? " top" : ""}" aria-label="Rank ${i + 1}">${i + 1}</span>` : "";
+      const insp = st.g === "inspections";
+      const second = insp ? [p.a, p.id_ && "inspected " + p.id_, p.is != null && p.ir != null && "score " + p.is].filter(Boolean).join(" · ") : (p.hc ? p.di : "");
+      const metricHtml = insp ? `<span class="ex-metric">${resultBadge(p)}<small>official</small></span>` : m ? `<span class="ex-metric"><b>${esc(m[0])}</b><small>${m[1]}</small></span>` : "";
+      return `<li><button class="ex-row" data-i="${p.i}">${rank}<span class="ex-main"><b>${esc(p.n)}</b><span class="ex-town">${esc([p.c, p.cu].filter(Boolean).join(" · "))}</span>${second ? `<span class="ex-town">${esc(second)}</span>` : ""}<span class="ex-chips">${chips(p, 4)}</span></span>${metricHtml}</button></li>`;
+    }).join("");
+    const left = current.length - shown;
+    $("#ex-more").hidden = left <= 0;
+    $("#ex-more").textContent = `Show more (${left.toLocaleString()} left)`;
+  }
+
+  // ---------------------------------------------------------------- place panel
+  const TIER = { 2: "On an official list", 1: "Confirmed listing", 0: "Listing only" };
+
+  function rate(p) {
+    if (p.t === 2) return null;
+    const src = SOURCES[p.s] || "meta";
+    const group = src === "meta" ? (p.t === 1 ? "meta_high (>=0.95)" : "meta_mid (0.90-0.95)") : (src === "AllThePlaces" || src === "DAC") ? "brand_feed" : null;
+    const v = ["lac", "sd"].map((k) => group && CAL[k]?.groups?.[group]?.official).filter((x) => x != null);
+    if (!v.length) return null;
+    const lo = Math.round(Math.min(...v) * 100), hi = Math.round(Math.max(...v) * 100);
+    return lo === hi ? `${lo}%` : `${lo}–${hi}%`;
+  }
+
+  function howWeKnow(p) {
+    const src = SOURCES[p.s] || "meta";
+    if (src === "research") return "On our hand-checked or honors list. The open map data didn't list it as a place to eat (it may sit inside a hotel or inn), so it's placed from its own map listing or street address.";
+    if (p.t === 2) return src === "official"
+      ? "From a county food-facility list. The open map data didn't have it, so its location comes from the county's record."
+      : "Matched to a county food-facility record or an active California ABC liquor license.";
+    const r = rate(p);
+    return (p.t === 1 ? "A high-confidence listing in Overture's open map data." : "A single listing in Overture's open map data, so it may be closed or misfiled.")
+      + (r ? ` Checked against LA County's and San Diego County's food-facility lists, listings like this matched a permitted business ${r} of the time.` : "")
+      + (p.hc ? " It's also on our hand-checked list, checked in Oct 2026 against a 2025 or 2026 source." : "");
+  }
+
+  const kv = (k, v) => (v == null || v === "" ? "" : `<div class="ex-kv"><span>${esc(k)}</span><b>${esc(v)}</b></div>`);
+  const section = (t, body) => `<section class="ex-sec"><h3>${esc(t)}</h3>${body}</section>`;
+
+  function openPlace(p, push = true) {
+    st.p = p.id;
+    const d = (D && D[p.i]) || {};
+    const addr = [p.a, [p.c, p.z].filter(Boolean).join(" ")].filter(Boolean).join(", ");
+    const apple = p.la != null
+      ? `https://maps.apple.com/?q=${encodeURIComponent(p.n)}&ll=${p.la},${p.lo}`
+      : `https://maps.apple.com/?q=${encodeURIComponent(p.n + ", " + addr)}`;
+    const dirs = p.la != null ? `https://maps.apple.com/?daddr=${p.la},${p.lo}&dirflg=d` : apple;
+    const site = d.w && /^https?:\/\//i.test(d.w) ? d.w : null;
+    let html = `<button class="ex-close" id="ex-close" aria-label="Close">×</button>
+      <p class="ex-kicker">${esc([(p.c || "California"), p.co].filter(Boolean).join(" · ").toUpperCase())}</p>
+      <h2 id="ex-pname">${esc(p.n)}</h2>
+      <p class="ex-addr">${esc([addr, p.cu].filter(Boolean).join(" · "))}</p>
+      ${here && p.la != null ? `<p class="ex-dist">${milesText(miles(here, p))} away</p>` : ""}
+      <p class="ex-chips">${chips(p)}</p>
+      <div class="ex-actions">
+        <a class="btn ex-apple" href="${esc(apple)}" rel="noopener" target="_blank">Ratings, hours &amp; photos · Apple Maps</a>
+        <div class="ex-act-row">
+          <a href="${esc(dirs)}" rel="noopener" target="_blank">Directions</a>
+          ${d.ph ? `<a href="tel:${esc(d.ph.replace(/[^\d+]/g, ""))}">Call</a>` : ""}
+          ${site ? `<a href="${esc(site)}" rel="noopener nofollow" target="_blank">Website</a>` : ""}
+          <button id="ex-save" aria-pressed="${saved.has(p.id)}">${saved.has(p.id) ? "Saved" : "Save"}</button>
+        </div>
+      </div>`;
+    if (p.hc || d.note || p.di) {
+      html += section(p.hc ? "Hand-checked" : "Notes", (d.note ? `<p>${esc(d.note)}</p>` : "") + (p.di ? `<p><b>On the menu</b><br>${esc(p.di)}</p>` : "")
+        + (p.hc ? `<p class="ex-fine">Checked open in Oct 2026 against a 2025 or 2026 source: the place's own site, menu or ordering page, or dated local news. Menus and hours change, so check before you go.</p>` : ""));
+    }
+    if (p.mi || p.h || p.gs || p.f || d.bf) {
+      const lines = [p.mi && `${MI[p.mi]} · MICHELIN Guide California 2026`, p.gs && "MICHELIN Green Star (2026)",
+        ...(d.jbf ? d.jbf.split("; ").map((x) => "James Beard: " + x) : [])].filter(Boolean);
+      html += section("Honors & history", (lines.length ? `<ul>${lines.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>` : "")
+        + (p.f ? kv("Opened here", String(p.f) + (d.on ? ` · ${d.on}` : "")) : "") + (d.bf ? kv("Founded", d.bf) : "")
+        + (p.mi || p.h || p.gs ? `<p class="ex-fine">Honors are facts from MICHELIN's and the James Beard Foundation's own announcements, not ratings. MICHELIN is a trademark of Michelin; James Beard Award is a trademark of the James Beard Foundation.</p>` : ""));
+    }
+    if (p.ij != null && JURS[p.ij]) {
+      const j = JURS[p.ij];
+      html += section(`Health inspections · ${j.name}`,
+        `<p class="ex-grade">${resultBadge(p)} Latest inspection ${esc(p.id_ || "")}${p.is != null ? " · score " + p.is : ""}</p>`
+        + kv("Inspections on record", p.in) + kv(j.id === "lac" ? "Graded B or C" : "Yellow or red placards", p.ib)
+        + (j.id === "lac" && p.ir == null ? `<p class="ex-fine">This city never adopted LA County's letter-grade cards, so only the official score is shown.</p>` : "")
+        + `<p class="ex-fine">Official result, as recorded by ${esc(j.agency)}, through ${esc(j.through)}. One inspection is a snapshot of one day; conditions may have changed since.</p>`);
+    }
+    html += section("How we know it's here", kv("Listed as", TIER[p.t]) + kv("County", p.co)
+      + kv("Serves alcohol", p.liq ? `${LIQT[p.liq]} (ABC on-sale license)` : "— (no on-sale license matched)")
+      + (p.ch >= 2 ? kv("Locations in California", p.ch.toLocaleString()) : "") + `<p class="ex-fine">${esc(howWeKnow(p))}</p>`);
+    html += `<p class="ex-app">Save it on your phone: <a class="store-btn" href="${BASE}/#download"><span class="store-label">Get the free iPhone app</span></a></p>`;
+    const panel = $("#ex-panel");
+    panel.innerHTML = html;
+    panel.hidden = false;
+    document.body.classList.add("ex-open");
+    $("#ex-close").onclick = closePlace;
+    $("#ex-save").onclick = (e) => {
+      if (saved.has(p.id)) saved.delete(p.id); else saved.add(p.id);
+      store.set("saved", [...saved]);
+      e.target.textContent = saved.has(p.id) ? "Saved" : "Save";
+      e.target.setAttribute("aria-pressed", String(saved.has(p.id)));
+      if (st.g === "saved") render();
+    };
+    panel.scrollTop = 0;
+    $("#ex-close").focus();
+    if (push) saveHash();
+    if (!D) loadDetail().then(() => { if (st.p === p.id) openPlace(p, false); });
+  }
+
+  function closePlace() {
+    const was = st.p;
+    st.p = "";
+    $("#ex-panel").hidden = true;
+    document.body.classList.remove("ex-open");
+    saveHash();
+    const row = was && document.querySelector(`.ex-row[data-i="${P.findIndex((p) => p.id === was)}"]`);
+    if (row) row.focus();
+  }
+
+  // ---------------------------------------------------------------- map (canvas: county outlines + a dot per place)
+  let SHAPES = null, cam = null;
+  const LAT0 = 37.2, KX = Math.cos(LAT0 * Math.PI / 180);
+  const proj = (lo, la) => [(lo + 119.4) * KX, -(la - LAT0)];
+
+  function fitCam(w, h, box) {
+    const [x0, y0] = proj(box[0], box[3]), [x1, y1] = proj(box[1], box[2]);
+    const k = Math.min(w / (x1 - x0), h / (y1 - y0)) * 0.95;
+    return { k, x: (w - (x1 - x0) * k) / 2 - x0 * k, y: (h - (y1 - y0) * k) / 2 - y0 * k };
+  }
+  const STATE_BOX = [-124.5, -114.1, 32.5, 42.05];
+
+  async function drawMap() {
+    const cv = $("#ex-map"), wrap = $("#ex-mapwrap");
+    const w = wrap.clientWidth, h = wrap.clientHeight, dpr = window.devicePixelRatio || 1;
+    if (cv.width !== Math.round(w * dpr) || cv.height !== Math.round(h * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+    if (!cam) cam = fitCam(w, h, STATE_BOX);
+    if (!SHAPES) SHAPES = await fetchJSON(`${BASE}/data/ca_shapes.json`).catch(() => ({ state: [], counties: [] }));
+    const c = cv.getContext("2d");
+    c.setTransform(dpr, 0, 0, dpr, 0, 0);
+    c.clearRect(0, 0, w, h);
+    const X = (lo, la) => { const [x, y] = proj(lo, la); return [x * cam.k + cam.x, y * cam.k + cam.y]; };
+    const ring = (r) => { r.forEach(([lo, la], i) => { const [x, y] = X(lo, la); i ? c.lineTo(x, y) : c.moveTo(x, y); }); c.closePath(); };
+    c.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--surface").trim() || "#fff";
+    c.beginPath(); (SHAPES.state || []).forEach((poly) => poly.forEach(ring)); c.fill("evenodd");
+    c.strokeStyle = "rgba(74,90,114,.35)"; c.lineWidth = 0.8;
+    for (const co of SHAPES.counties || []) { c.beginPath(); co.c.forEach(ring); c.stroke(); }
+    const pts = current.filter((p) => p.la != null);
+    const r = Math.max(1.6, Math.min(5, 1.2 + cam.k / 160));
+    for (const featured of [false, true]) {
+      c.fillStyle = featured ? "#fdb515" : "#003262";
+      c.strokeStyle = "#003262"; c.lineWidth = 1;
+      for (const p of pts) {
+        if (Boolean(p.hc || p.mi) !== featured) continue;
+        const [x, y] = X(p.lo, p.la);
+        if (x < -5 || y < -5 || x > w + 5 || y > h + 5) continue;
+        c.beginPath(); c.arc(x, y, featured ? r + 1 : r, 0, 6.2832); c.fill(); if (featured) c.stroke();
+      }
+    }
+    $("#ex-maphint").textContent = pts.length ? `${pts.length.toLocaleString()} places · tap a dot` : "No places to show";
+  }
+
+  function nearestDot(px, py) {
+    let best = null, bd = 14 * 14;
+    for (const p of current) {
+      if (p.la == null) continue;
+      const [x0, y0] = proj(p.lo, p.la), x = x0 * cam.k + cam.x, y = y0 * cam.k + cam.y;
+      const d = (x - px) ** 2 + (y - py) ** 2;
+      if (d < bd) { bd = d; best = p; }
+    }
+    return best;
+  }
+
+  function zoomAt(f, px, py) {
+    const k = Math.min(Math.max(cam.k * f, 30), 80000);
+    const s = k / cam.k;
+    cam = { k, x: px - (px - cam.x) * s, y: py - (py - cam.y) * s };
+    drawMap();
+  }
+
+  function mapEvents() {
+    const cv = $("#ex-map");
+    const ptrs = new Map();
+    let moved = false, pinch0 = null;
+    cv.addEventListener("wheel", (e) => { e.preventDefault(); const b = cv.getBoundingClientRect(); zoomAt(e.deltaY < 0 ? 1.25 : 0.8, e.clientX - b.left, e.clientY - b.top); }, { passive: false });
+    cv.addEventListener("pointerdown", (e) => { cv.setPointerCapture(e.pointerId); ptrs.set(e.pointerId, [e.clientX, e.clientY]); moved = false; pinch0 = null; });
+    cv.addEventListener("pointermove", (e) => {
+      if (!ptrs.has(e.pointerId)) return;
+      const prev = ptrs.get(e.pointerId);
+      ptrs.set(e.pointerId, [e.clientX, e.clientY]);
+      if (ptrs.size === 2) {
+        const [a, b] = [...ptrs.values()], d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+        const r = cv.getBoundingClientRect();
+        if (pinch0) zoomAt(d / pinch0, (a[0] + b[0]) / 2 - r.left, (a[1] + b[1]) / 2 - r.top);
+        pinch0 = d; moved = true; return;
+      }
+      const dx = e.clientX - prev[0], dy = e.clientY - prev[1];
+      if (Math.abs(dx) + Math.abs(dy) > 2) moved = true;
+      cam.x += dx; cam.y += dy; drawMap();
+    });
+    const up = (e) => {
+      ptrs.delete(e.pointerId);
+      if (!moved && ptrs.size === 0) {
+        const b = cv.getBoundingClientRect(), p = nearestDot(e.clientX - b.left, e.clientY - b.top);
+        if (p) openPlace(p);
+      }
+      if (ptrs.size < 2) pinch0 = null;
+    };
+    cv.addEventListener("pointerup", up);
+    cv.addEventListener("pointercancel", (e) => ptrs.delete(e.pointerId));
+    $("#ex-zin").onclick = () => zoomAt(1.6, cv.clientWidth / 2, cv.clientHeight / 2);
+    $("#ex-zout").onclick = () => zoomAt(0.625, cv.clientWidth / 2, cv.clientHeight / 2);
+    window.addEventListener("resize", () => { if (view === "map") drawMap(); });
+  }
+
+  function centerOn(pt) {
+    const cv = $("#ex-map"), w = cv.clientWidth, h = cv.clientHeight;
+    const k = 4000, [x, y] = proj(pt.lo, pt.la);
+    cam = { k, x: w / 2 - x * k, y: h / 2 - y * k };
+  }
+
+  // ---------------------------------------------------------------- data, URL state, controls
+  let SOURCES = [], LIQT = [];
+  // Search text for every place. Building it for 120,000 places blocks the page for seconds on a phone, and the first screen
+  // (a guide) doesn't need it: it's built in small slices after the first paint, and finished at once if a search comes first.
+  let indexed = 0;
+  function indexPlace(p) {
+    p.search = " " + normalize([p.n, p.c, p.co, p.z, p.cu, p.b, p.di].filter(Boolean).join(" ")) + " " + normAddr(p.a || "") + " ";
+    p.nameText = " " + normalize([p.n, p.b].filter(Boolean).join(" ")) + " ";
+  }
+  function indexAll() { while (indexed < P.length) indexPlace(P[indexed++]); }
+  const idle = (f) => ("requestIdleCallback" in window ? requestIdleCallback(f, { timeout: 2000 }) : setTimeout(f, 50));
+  function indexSome(deadline) {
+    const until = performance.now() + Math.min(deadline && !deadline.didTimeout ? deadline.timeRemaining() : 12, 12);
+    while (indexed < P.length && performance.now() < until) indexPlace(P[indexed++]);
+    if (indexed < P.length) idle(indexSome);
+  }
+  async function fetchJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(r.status + " " + url); return r.json(); }
+  let detailPromise = null;
+  function loadDetail() {
+    detailPromise ||= fetchJSON(`${BASE}/data/detail.json`).then((d) => { D = d; }).catch(() => { D = {}; });
+    return detailPromise;
+  }
+
+  async function load() {
+    const d = await fetchJSON(`${BASE}/data/core.json`);
+    GENERATED = d.generated; CAL = d.calibration || {}; SOURCES = d.sources || []; JURS = d.jurs || []; G = d.guides || {}; LIQT = d.liqt || [];
+    REGIONS = d.regions || [];
+    const C = d.cols, n = C.id.length, towns = new Map();
+    for (const k in C) if (C[k] && !Array.isArray(C[k])) {   // sparse columns: [rows since the last value, value] pairs
+      const full = new Array(n).fill(null);
+      let i = -1;
+      for (const [gap, v] of C[k].gap) { i += gap; full[i] = v; }
+      C[k] = full;
+    }
+    P = new Array(n);
+    for (let i = 0; i < n; i++) {
+      const city = C.c[i] == null ? null : d.cities[C.c[i]], cu = d.cuisines[C.cu[i]], brand = C.b[i] == null ? null : d.brands[C.b[i]];
+      const co = C.ct[i] == null ? null : d.counties[C.ct[i]];
+      const p = { i, id: C.id[i], n: C.n[i], c: city, co, cu, t: C.t[i], s: C.s[i], a: C.a[i], z: C.z[i], la: C.la[i], lo: C.lo[i],
+        ch: C.ch[i] || 1, v: C.v[i] === 1, g: C.g[i] || 0, hc: C.hc[i] === 1, ip: C.ip[i], f: C.f[i], h: C.h[i] || 0, mi: C.mi[i] || 0, gs: C.gs[i] === 1,
+        di: C.di[i], liq: C.liq[i] || 0, rg: (REGIONS[C.rg[i]] || {}).id, ij: C.ij[i], ir: C.ir[i], is: C.is[i], id_: C.id_[i], in: C.in[i], ib: C.ib[i], b: brand };
+      P[i] = p;
+      if (city && !p.v) towns.set(city, (towns.get(city) || 0) + 1);
+    }
+    const byCount = [...towns.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    for (const [name] of byCount) { const k = normAddr(name); if (!(k in TOWN_KEYS)) TOWN_KEYS[k] = name; }
+    TOWN_KEYS_BY_LENGTH = Object.keys(TOWN_KEYS).sort((a, b) => b.length - a.length);
+    TOWNS = new Set(towns.keys());
+    $("#ex-region").innerHTML = '<option value="">All of California</option>' + REGIONS.map((r) => `<option value="${esc(r.id)}">${esc(r.name)}</option>`).join("");
+    $("#ex-town").innerHTML = '<option value="">All towns</option>' + [...towns.keys()].sort((a, b) => a.localeCompare(b)).map((t) => `<option>${esc(t)}</option>`).join("");
+    const cuis = new Map();
+    for (const p of P) if (!p.v) cuis.set(p.cu, (cuis.get(p.cu) || 0) + 1);
+    KINDS = new Set(cuis.keys());
+    $("#ex-cuisine").innerHTML = '<option value="">All kinds</option>' + [...cuis.entries()].sort((a, b) => b[1] - a[1]).map(([c, k]) => `<option value="${esc(c)}">${esc(c)} (${k.toLocaleString()})</option>`).join("");
+    $("#ex-jur").innerHTML = JURS.map((j, i) => `<option value="${i}">${esc(j.name)}</option>`).join("");
+  }
+
+  function readHash() {
+    const h = new URLSearchParams(location.hash.slice(1));
+    st.g = Object.hasOwn(GUIDES, h.get("g") || "") ? h.get("g") : store.get("guide", "taqueria");
+    if (!Object.hasOwn(GUIDES, String(st.g))) st.g = "taqueria";
+    st.q = h.get("q") || ""; st.region = h.get("region") || ""; st.town = h.get("town") || ""; st.cuisine = h.get("kind") || ""; st.chains = h.get("chains") === "1";
+    st.sort = h.get("sort") || ""; st.p = h.get("p") || ""; st.jur = Number(h.get("county") || store.get("jur", 0)) || 0;
+  }
+  function saveHash() {
+    const h = new URLSearchParams();
+    h.set("g", st.g);
+    if (st.q) h.set("q", st.q); if (st.region) h.set("region", st.region); if (st.town) h.set("town", st.town); if (st.cuisine) h.set("kind", st.cuisine);
+    if (st.chains) h.set("chains", "1"); if (st.sort) h.set("sort", st.sort); if (st.p) h.set("p", st.p); if (st.g === "inspections") h.set("county", String(st.jur));
+    history.replaceState(null, "", "#" + h.toString());
+    store.set("guide", st.g); store.set("jur", st.jur);
+  }
+
+  function locate() {
+    if (!navigator.geolocation) { $("#ex-locmsg").textContent = "This browser can't share its location."; return; }
+    $("#ex-locmsg").textContent = "Finding you…";
+    navigator.geolocation.getCurrentPosition((pos) => {
+      here = { la: pos.coords.latitude, lo: pos.coords.longitude };
+      const outside = !inCalifornia(here.la, here.lo);
+      $("#ex-locmsg").textContent = outside ? "You're outside California, so distances are from where you are now. Your location stays in this browser."
+        : "Sorted by distance from you. Your location stays in this browser.";
+      st.sort = GUIDES[st.g].sorts.includes("nearest") ? "nearest" : st.sort;
+      if (view === "map" && !outside) centerOn(here);
+      shown = 100; render();
+    }, () => { $("#ex-locmsg").textContent = "Location is off for this site. Allow it in your browser settings to sort by distance."; },
+    { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
+  }
+
+  function setView(v) {
+    view = v;
+    document.querySelectorAll(".ex-view button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === v)));
+    $("#ex-listwrap").hidden = v !== "list";
+    $("#ex-mapwrap").hidden = v !== "map";
+    render();
+  }
+
+  function controls() {
+    document.querySelectorAll(".ex-guides button").forEach((b) => b.onclick = () => { st.g = b.dataset.g; st.sort = ""; shown = 100; render(); });
+    let t = null;
+    $("#ex-q").addEventListener("input", (e) => { clearTimeout(t); t = setTimeout(() => { st.q = e.target.value; shown = 100; render(); }, 150); });
+    $("#ex-sort").onchange = (e) => { st.sort = e.target.value; if (st.sort === "nearest" && !here) locate(); shown = 100; render(); };
+    $("#ex-region").onchange = (e) => {
+      st.region = e.target.value; st.town = ""; $("#ex-town").value = ""; shown = 100;
+      if (view === "map") {   // the map zooms to the region
+        const ps = P.filter((p) => p.rg === st.region && p.la != null);
+        cam = ps.length ? fitCam($("#ex-map").clientWidth, $("#ex-map").clientHeight, [Math.min(...ps.map((p) => p.lo)), Math.max(...ps.map((p) => p.lo)),
+          Math.min(...ps.map((p) => p.la)), Math.max(...ps.map((p) => p.la))]) : null;
+      }
+      render();
+    };
+    $("#ex-town").onchange = (e) => { st.town = e.target.value; shown = 100; render(); };
+    $("#ex-cuisine").onchange = (e) => { st.cuisine = e.target.value; shown = 100; render(); };
+    $("#ex-jur").onchange = (e) => { st.jur = Number(e.target.value) || 0; shown = 100; render(); };
+    $("#ex-chains").onchange = (e) => { st.chains = e.target.checked; shown = 100; render(); };
+    $("#ex-clear").onclick = () => { st.region = st.town = st.cuisine = ""; st.chains = false; syncInputs(); shown = 100; render(); };
+    $("#ex-locate").onclick = locate;
+    $("#ex-more").onclick = () => { shown += 200; renderList(order()); };
+    document.querySelectorAll(".ex-view button").forEach((b) => b.onclick = () => setView(b.dataset.v));
+    $("#ex-list").addEventListener("click", (e) => { const b = e.target.closest(".ex-row"); if (b) openPlace(P[+b.dataset.i]); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && st.p) closePlace(); });
+    // a link or an edited address bar changing the hash (our own updates use replaceState, which doesn't fire this)
+    window.addEventListener("hashchange", () => {
+      readHash(); checkState(); syncInputs(); shown = 100; render();
+      const p = st.p && P.find((x) => x.id === st.p);
+      if (p) openPlace(p, false); else if (!$("#ex-panel").hidden) closePlace();
+    });
+    mapEvents();
+  }
+  function checkState() {
+    if (st.region && !REGIONS.some((r) => r.id === st.region)) st.region = "";
+    if (st.town && !TOWNS.has(st.town)) st.town = "";
+    if (st.cuisine && !KINDS.has(st.cuisine)) st.cuisine = "";
+    if (!(st.jur >= 0 && st.jur < JURS.length)) st.jur = 0;
+  }
+  function syncInputs() {
+    $("#ex-q").value = st.q; $("#ex-region").value = st.region; $("#ex-town").value = st.town; $("#ex-cuisine").value = st.cuisine;
+    $("#ex-chains").checked = st.chains; $("#ex-jur").value = String(st.jur);
+  }
+
+  (async () => {
+    readHash();
+    // #ex-count is inside the hidden app, so a failed load is reported where "Loading…" was
+    try { await load(); } catch (e) { $("#ex-loading").textContent = "The restaurant list couldn't load. Refresh to try again."; return; }
+    checkState(); syncInputs(); controls();
+    $("#ex-app").hidden = false;
+    $("#ex-loading").hidden = true;
+    render();
+    const open = st.p && P.find((p) => p.id === st.p);
+    if (open) { await loadDetail(); openPlace(open, false); }
+    idle(() => loadDetail());
+    idle(indexSome);
+  })();
+})();
+
+</script>
+  <footer>
+    <nav aria-label="Footer">
+      <a href="/california-eats/">California Eats app</a>
+      <a href="/california-eats/explore/">Search California restaurants</a>
+      <a href="/california-eats/california-taquerias.html">California taquerías</a><a href="/california-eats/california-dim-sum.html">California dim sum</a><a href="/california-eats/california-burritos.html">Mission &amp; California burritos</a><a href="/california-eats/california-fish-tacos.html">California fish tacos</a><a href="/california-eats/california-korean-bbq.html">California Korean barbecue</a><a href="/california-eats/california-burger-stands.html">California burger stands</a><a href="/california-eats/california-wine-country-restaurants.html">Wine-country restaurants</a>
+      <a href="/california-eats/california-michelin-james-beard.html">MICHELIN &amp; James Beard</a>
+      <a href="/california-eats/privacy.html">Privacy policy</a>
+      <a href="/california-eats/terms.html">Terms of use</a>
+      <a href="mailto:work-with-nick@gmail.com">Email us</a>
+    </nav>
+    <p>Place data: hand-checked research by California Eats (October 2026); Overture Maps Foundation (CDLA Permissive 2.0); County of Los Angeles, City and County of San Francisco, Sacramento County and San Diego County food-facility and inspection records; California Department of Alcoholic Beverage Control license data. Not affiliated with or endorsed by any restaurant, chain or government agency. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. Places open and close, so check before you go.</p>
+    <p>© 2026 California Eats.</p>
+  </footer>
+</div>
+<script>
+  // Once the App Store listing exists, paste its URL here (looks like https://apps.apple.com/app/id123456789).
+  // Every button switches from "Get early access" to "Download on the App Store" automatically.
+  var APP_STORE_URL = "";
+  if (APP_STORE_URL) {
+    document.querySelectorAll(".store-btn").forEach(function (b) { b.href = APP_STORE_URL; b.rel = "noopener"; });
+    document.querySelectorAll(".store-label").forEach(function (l) { l.textContent = "Download on the App Store"; });
+    document.querySelectorAll(".store-note").forEach(function (n) { n.textContent = "Free for iPhone and iPad."; });
+  }
+</script>
+</body>
+</html>

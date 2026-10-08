@@ -1,0 +1,222 @@
+import XCTest
+import CoreLocation
+@testable import CaliforniaEats
+
+@MainActor
+final class CaliforniaEatsTests: XCTestCase {
+
+    /// A tiny data folder with the same shape as Resources/Data: index.json plus two region files.
+    private func sampleModel() async throws -> AppModel {
+        let index = """
+        {"v":1,"generated":"2026-10-07","cuisines":["Mexican","Chinese","Burgers","Bar & Pub","American & Other"],"brands":["In-N-Out Burger"],
+         "sources":["official","meta","AllThePlaces","DAC","research"],"counties":["Los Angeles County","San Francisco","San Diego County"],
+         "guides":{"taqueria":1,"burrito":2,"fishtaco":4,"dimsum":8,"kbbq":16,"burgerstand":32,"winecountry":64,"oldest":128},
+         "liqt":["","beer","beer & wine","full bar"],
+         "jurs":[{"id":"lac","name":"Los Angeles County","agency":"LA County DPH","scale":["A","B","C"],"through":"2026-09-30","newest":"2026-09-30"},
+                 {"id":"sf","name":"San Francisco","agency":"SF DPH","scale":["Pass","Conditional Pass","Closure"],"through":"2026-09-30","newest":"2026-09-29"}],
+         "count":9,"count_restaurants":8,"count_hc":3,
+         "calibration":{"lac":{"groups":{"meta_high (>=0.95)":{"n":17409,"official":0.86},"meta_mid (0.90-0.95)":{"n":3731,"official":0.482}},"coverage":0.611},
+                        "sd":{"groups":{"meta_high (>=0.95)":{"n":6472,"official":0.729},"meta_mid (0.90-0.95)":{"n":1117,"official":0.44}},"coverage":0.583}},
+         "michelin":{"edition":"2026"},"overture_release":"2026-09-23.1",
+         "regions":[{"id":"la","name":"Los Angeles","file":"places-la.json","counties":["Los Angeles County"],"count":6,"count_restaurants":5},
+                    {"id":"bay","name":"Bay Area","file":"places-bay.json","counties":["San Francisco"],"count":3,"count_restaurants":3}]}
+        """
+        let la = """
+        {"region":"la","cities":["Los Angeles","Signal Hill","Glendale","East Los Angeles"],"places":[
+          {"id":"a","n":"Guisados","c":0,"cu":0,"t":2,"s":1,"hc":1,"g":1,"a":"2100 E Cesar E Chavez Ave","z":"90033","la":34.0466,"lo":-118.2174,"ct":0,"di":"tinga, chicharrón","in":{"j":0,"r":0,"s":96,"d":"2026-08-01","n":3,"b":0}},
+          {"id":"b","n":"Taquería El Sol","c":3,"cu":0,"t":0,"s":1,"a":"4400 Whittier Blvd","la":34.0233,"lo":-118.1720,"ct":0},
+          {"id":"c","n":"In-N-Out Burger","c":1,"cu":2,"t":2,"s":2,"b":0,"ch":296,"a":"799 E Spring St","la":33.81,"lo":-118.18,"ct":0,"in":{"j":0,"s":94,"d":"2026-04-08","n":2,"b":0}},
+          {"id":"d","n":"Corner Bar","c":2,"cu":3,"t":2,"s":0,"a":"100 N Brand Blvd","la":34.15,"lo":-118.25,"ct":0,"liq":3,"in":{"j":0,"r":1,"s":84,"d":"2026-05-02","n":4,"b":2}},
+          {"id":"e","n":"Gas Mart Grill","c":0,"cu":4,"t":1,"s":1,"v":1,"la":34.05,"lo":-118.25,"ct":0},
+          {"id":"f","n":"Providence","c":0,"cu":4,"t":2,"s":1,"a":"5955 Melrose Ave","la":34.0836,"lo":-118.3302,"ct":0,"h":2,"mi":5,"gs":1,"ip":95.2,"jbf":"Outstanding Hospitality 2026: winner"}
+        ]}
+        """
+        let bay = """
+        {"region":"bay","cities":["San Francisco","Millbrae"],"places":[
+          {"id":"g","n":"La Taqueria","c":0,"cu":0,"t":2,"s":1,"hc":1,"g":3,"h":1,"ip":60,"jbf":"America's Classics 2017","a":"2889 Mission St","la":37.7509,"lo":-122.4181,"ct":1,"f":1973,"in":{"j":1,"r":0,"d":"2026-06-01","n":2,"b":0}},
+          {"id":"h","n":"Dim Sum House","c":0,"cu":1,"t":1,"s":1,"hc":1,"g":8,"a":"1 San Pablo Ave","la":37.78,"lo":-122.41,"ct":1,"in":{"j":1,"r":2,"d":"2026-09-10","n":3,"b":2}},
+          {"id":"i","n":"Golden Dragon","c":1,"cu":1,"t":0,"s":1,"a":"500 Broadway","la":37.6,"lo":-122.39,"ct":1}
+        ]}
+        """
+        let dir = FileManager.default.temporaryDirectory.appendingPathComponent("ca-data-\(UUID().uuidString)")
+        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        try index.data(using: .utf8)!.write(to: dir.appendingPathComponent("index.json"))
+        try la.data(using: .utf8)!.write(to: dir.appendingPathComponent("places-la.json"))
+        try bay.data(using: .utf8)!.write(to: dir.appendingPathComponent("places-bay.json"))
+        let model = AppModel(defaults: UserDefaults(suiteName: "test-\(UUID().uuidString)")!)
+        await model.load(from: dir)
+        XCTAssertTrue(model.isLoaded, model.loadError ?? "")
+        return model
+    }
+
+    func testDecodesEveryRegionAndHidesNonRestaurants() async throws {
+        let m = try await sampleModel()
+        XCTAssertEqual(m.places.count, 9)
+        XCTAssertEqual(Set(m.places.map(\.region)), ["la", "bay"])
+        XCTAssertFalse(m.list(.all, sort: .name, search: "", here: nil).contains { $0.name == "Gas Mart Grill" }, "non-restaurants are hidden unless asked for")
+        m.filters.includeNonRestaurants = true
+        XCTAssertTrue(m.list(.all, sort: .name, search: "", here: nil).contains { $0.name == "Gas Mart Grill" })
+    }
+
+    func testGuidesListOnlyHandCheckedPlaces() async throws {
+        let m = try await sampleModel()
+        XCTAssertEqual(Set(m.list(.taquerias, sort: .name, search: "", here: nil).map(\.id)), ["a", "g"])
+        XCTAssertFalse(m.list(.taquerias, sort: .name, search: "", here: nil).contains { $0.id == "b" },
+                       "a listing merely named \u{201C}Taquería\u{201D} stays out of the checked guide")
+        XCTAssertEqual(m.list(.all, sort: .name, search: "el sol", here: nil).map(\.id), ["b"], "but it's still in the directory")
+        XCTAssertEqual(m.list(.burritos, sort: .name, search: "", here: nil).map(\.id), ["g"])
+        XCTAssertEqual(m.list(.dimSum, sort: .name, search: "", here: nil).map(\.id), ["h"])
+        XCTAssertEqual(Set(m.list(.honors, sort: .honored, search: "", here: nil).map(\.id)), ["f", "g"])
+        XCTAssertEqual(m.list(.honors, sort: .honored, search: "", here: nil).first?.id, "f", "three stars and a James Beard win rank first")
+        XCTAssertEqual(m.list(.nearMe, sort: .nearest, search: "", here: nil), [], "near me needs a location")
+        XCTAssertEqual(m.count(.taquerias), 2)
+    }
+
+    /// Counties score differently, so the Inspections guide shows one county at a time, ranked on its own official scale.
+    func testInspectionsStayWithinOneCounty() async throws {
+        let m = try await sampleModel()
+        m.setInspectionJurisdiction(0)
+        XCTAssertEqual(m.list(.inspections, sort: .bestResult, search: "", here: nil).map(\.id), ["a", "c", "d"],
+                       "A before the score-only no-card city before B; LA County only")
+        XCTAssertEqual(m.list(.inspections, sort: .worstResult, search: "", here: nil).first?.id, "d")
+        m.setInspectionJurisdiction(1)
+        XCTAssertEqual(m.list(.inspections, sort: .bestResult, search: "", here: nil).map(\.id), ["g", "h"], "San Francisco only: Pass, then Closure")
+        let signalHill = m.place(id: "c")!
+        XCTAssertNil(signalHill.inspection?.r, "Signal Hill never adopted grade cards: the score is shown, not a letter")
+        XCTAssertEqual(signalHill.inspection?.s, 94)
+    }
+
+    func testNearestSort() async throws {
+        let m = try await sampleModel()
+        let downtown = CLLocation(latitude: 34.0522, longitude: -118.2437)
+        let near = m.list(.nearMe, sort: .nearest, search: "", here: downtown)
+        XCTAssertEqual(near.first?.id, "a", "Guisados in Boyle Heights is closest to downtown LA")
+        XCTAssertEqual(near.last?.region, "bay")
+    }
+
+    func testSearchWordStartsAccentsTownsAndStreets() async throws {
+        let m = try await sampleModel()
+        func ids(_ q: String) -> [String] { m.list(.all, sort: .name, search: q, here: nil).map(\.id) }
+        XCTAssertEqual(ids("guis"), ["a"])
+        XCTAssertTrue(ids("isados").isEmpty, "matches the start of words only")
+        XCTAssertEqual(ids("taqueria el sol"), ["b"], "no accent needed for Taquería")
+        XCTAssertEqual(ids("chicharron"), ["a"], "a hand-checked place's dishes are searchable")
+        XCTAssertEqual(ids("east cesar e chavez avenue"), ["a"], "east/avenue match the abbreviated address")
+        XCTAssertEqual(ids("millbrae"), ["i"])
+        // "san francisco" is a town, but "san pablo ave" is a street
+        XCTAssertEqual(Set(ids("san francisco")), ["g", "h"])
+        XCTAssertEqual(ids("san pablo ave"), ["h"])
+        XCTAssertEqual(ids("san francisco dim sum"), ["h"], "a guide phrase plus a town")
+        XCTAssertEqual(ids("🌮"), [], "nothing searchable typed means no results, not everything")
+        XCTAssertEqual(ids("!!! ?"), [])
+    }
+
+    func testFiltersRegionsAndSavedPlaces() async throws {
+        let m = try await sampleModel()
+        m.filters.hideChains = true
+        XCTAssertFalse(m.list(.all, sort: .name, search: "", here: nil).contains { $0.name == "In-N-Out Burger" })
+        m.filters = Filters(confirmedOnly: true)
+        XCTAssertFalse(m.list(.all, sort: .name, search: "", here: nil).contains { $0.id == "b" }, "single listings drop out")
+        m.filters = Filters(region: "bay")
+        XCTAssertEqual(Set(m.list(.all, sort: .name, search: "", here: nil).map(\.id)), ["g", "h", "i"])
+        m.filters = Filters()
+        let p = m.place(id: "g")!
+        m.toggleSaved(p)
+        XCTAssertEqual(m.savedPlaces.map(\.id), ["g"])
+        m.toggleSaved(p)
+        XCTAssertTrue(m.savedPlaces.isEmpty)
+        XCTAssertEqual(m.place(id: "d")?.liquorLabel, "Full bar")
+        XCTAssertNil(m.place(id: "a")?.liquorLabel, "no license matched is unknown, not \u{201C}no\u{201D}")
+    }
+
+    func testMatchRatesAndTiers() async throws {
+        let m = try await sampleModel()
+        XCTAssertEqual(m.matchRate(for: m.place(id: "h")!), "73–86%")
+        XCTAssertEqual(m.matchRate(for: m.place(id: "i")!), "44–48%")
+        XCTAssertNil(m.matchRate(for: m.place(id: "a")!), "official places don't cite a listing rate")
+        XCTAssertEqual(m.place(id: "a")!.tier, .official)
+    }
+
+    func testListCacheFollowsFiltersAndSearch() async throws {
+        let m = try await sampleModel()
+        let all = m.list(.all, sort: .name, search: "", here: nil)
+        XCTAssertTrue(all.contains { $0.name == "In-N-Out Burger" })
+        m.filters.hideChains = true
+        XCTAssertFalse(m.list(.all, sort: .name, search: "", here: nil).contains { $0.name == "In-N-Out Burger" }, "a filter change isn't served from the cache")
+        m.filters = Filters()
+        XCTAssertEqual(m.list(.all, sort: .name, search: "", here: nil).map(\.id), all.map(\.id))
+        XCTAssertEqual(m.list(.all, sort: .name, search: "guisados", here: nil).map(\.id), ["a"])
+    }
+
+    func testNearMeIsntASearchWord() {
+        let q = Search.parse("dim sum near me", towns: ["menlo park": "Menlo Park"])
+        XCTAssertEqual(q.tag, .dimSum)
+        XCTAssertNil(q.town)
+        XCTAssertTrue(q.tokens.isEmpty, "\"me\" mustn't match Menlo Park or Mexican places")
+    }
+
+    func testOutsideCalifornia() {
+        XCTAssertTrue(LocationService.inCalifornia(CLLocationCoordinate2D(latitude: 34.05, longitude: -118.24)), "Los Angeles")
+        XCTAssertTrue(LocationService.inCalifornia(CLLocationCoordinate2D(latitude: 37.77, longitude: -122.42)), "San Francisco")
+        XCTAssertTrue(LocationService.inCalifornia(CLLocationCoordinate2D(latitude: 41.75, longitude: -124.2)), "Crescent City")
+        XCTAssertTrue(LocationService.inCalifornia(CLLocationCoordinate2D(latitude: 32.72, longitude: -117.16)), "San Diego")
+        XCTAssertFalse(LocationService.inCalifornia(CLLocationCoordinate2D(latitude: 39.53, longitude: -119.81)), "Reno is in the state's box but not the state")
+        XCTAssertFalse(LocationService.inCalifornia(CLLocationCoordinate2D(latitude: 36.17, longitude: -115.14)), "Las Vegas")
+        XCTAssertFalse(LocationService.inCalifornia(CLLocationCoordinate2D(latitude: 32.53, longitude: -117.02)), "Tijuana")
+    }
+
+    /// The one-pass normalize must agree with the regex version it replaced, on tricky strings and every bundled name and address.
+    func testNormalizeMatchesTheRegexVersion() async throws {
+        func reference(_ s: String) -> String {
+            var t = s.folding(options: [.diacriticInsensitive, .caseInsensitive], locale: .init(identifier: "en_US")).lowercased()
+            t = t.replacingOccurrences(of: #"\b([a-z0-9])\s*&\s*([a-z0-9])\b"#, with: "$1$2", options: .regularExpression)
+            t = t.replacingOccurrences(of: "&", with: " and ")
+            t = t.replacingOccurrences(of: #"['’`]"#, with: "", options: .regularExpression)
+            t = t.replacingOccurrences(of: #"[^\p{L}\p{N}]+"#, with: " ", options: .regularExpression)
+            return t.trimmingCharacters(in: .whitespaces)
+        }
+        for s in ["Taquería El Sol", "Phở Hòa", "In-N-Out Burger", "Philippe's", "Café Händel", "Joe`s", "A&W", "½ Price",
+                  "2100 E Cesar E Chavez Ave", "🌮 Tacos", "Ⅻ Club", "", "---", "Nanbantei of Tokyo 南蛮亭"] {
+            XCTAssertEqual(Search.normalize(s), reference(s), s)
+        }
+    }
+
+    /// The real bundled data decodes, holds what the app promises and ships nothing it may not.
+    func testBundledData() async throws {
+        let m = AppModel(defaults: UserDefaults(suiteName: "bundle-\(UUID().uuidString)")!)
+        let t0 = Date()
+        await m.load()
+        print("bundled data loaded in \(String(format: "%.2f", Date().timeIntervalSince(t0))) s on \(ProcessInfo.processInfo.activeProcessorCount) cores")
+        XCTAssertTrue(m.isLoaded, m.loadError ?? "")
+        XCTAssertGreaterThan(m.restaurantCount, 80_000)
+        XCTAssertEqual(m.regions.count, 9)
+        XCTAssertEqual(Set(m.places.map(\.id)).count, m.places.count, "ids are unique")
+        XCTAssertTrue(m.places.allSatisfy { $0.coordinate != nil }, "every place is on the map")
+        XCTAssertEqual(Set(m.jurisdictions.map(\.id)), ["lac", "sf", "sac"], "Santa Clara's inspections stay out of the app (no license stated)")
+        XCTAssertGreaterThan(m.count(.inspections), 20_000)
+        XCTAssertGreaterThan(m.count(.honors), 200)
+        XCTAssertTrue(m.places.contains { $0.name == "The French Laundry" && $0.michelin == 5 })
+        // a hand check names its guide, or it's an old place whose year isn't tied to this address (shown as "Founded", not in Oldest Places)
+        XCTAssertTrue(m.places.filter(\.handChecked).allSatisfy { !$0.guides.isEmpty || $0.isHonored || $0.brandFounded != nil },
+                      "a hand check always names its guide")
+        XCTAssertTrue(m.list(.oldest, sort: .oldest, search: "", here: nil).allSatisfy { ($0.founded ?? 9999) <= 1960 },
+                      "Oldest Places: open at this address since 1960 or earlier")
+        XCTAssertFalse(m.places.contains { $0.name.range(of: #"gentlem[ae]n'?s club|strip club|exotic dancer|spearmint rhino"#, options: [.regularExpression, .caseInsensitive]) != nil },
+                       "adult clubs aren't restaurants")
+        XCTAssertFalse(m.places.contains { ($0.website?.absoluteString ?? "").range(
+            of: #"yelp\.com|business\.site|google\.com|groupon\.com|yellowpages\.com"#, options: .regularExpression) != nil },
+                       "directory links were checked out")
+        // no Google-derived field may ship: the region files carry only these keys
+        let allowed: Set<String> = ["id", "n", "c", "cu", "t", "s", "a", "z", "la", "lo", "ct", "b", "ch", "v", "bar", "g", "hc", "liq", "h", "mi", "gs",
+                                    "ip", "jbf", "f", "on", "bf", "note", "di", "w", "ph", "in"]
+        let folder = try XCTUnwrap(AppModel.bundledData)
+        for r in m.regions {
+            let obj = try JSONSerialization.jsonObject(with: Data(contentsOf: folder.appendingPathComponent(r.file))) as! [String: Any]
+            for p in obj["places"] as! [[String: Any]] {
+                let extra = Set(p.keys).subtracting(allowed)
+                XCTAssertTrue(extra.isEmpty, "unexpected keys \(extra) in \(r.file)")
+                if !extra.isEmpty { break }
+            }
+        }
+    }
+}

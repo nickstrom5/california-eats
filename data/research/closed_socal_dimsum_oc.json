@@ -1,0 +1,18 @@
+[
+ {
+  "name": "Iron Teapot Dim Sum & Bar",
+  "address": "10306 Venice Blvd",
+  "city": "Los Angeles (Culver City area)",
+  "source_url": "http://www.iron-teapot.com/",
+  "source_date": "2026-10-07",
+  "why": "Own website states the restaurant closed as of January 1, 2024."
+ },
+ {
+  "name": "King Hua",
+  "address": "2000 W Main St",
+  "city": "Alhambra",
+  "source_url": "https://www.arcgis.com/sharing/rest/content/items/19b6607ac82c4512b10811870975dbdc/data",
+  "source_date": "2026-01-09",
+  "why": "LA County DPH inspections (2023-10 to 2026-09) show only Jianghu Bistro operating at 2000 W Main St (last routine inspection 2026-01-09); no King Hua record in the window."
+ }
+]

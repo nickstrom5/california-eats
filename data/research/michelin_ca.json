@@ -1,0 +1,2754 @@
+{
+ "edition": "2026",
+ "ceremony_date": "2026-06-24",
+ "ceremony_place": "EVE, Downtown San Diego",
+ "checked": "2026-10-07",
+ "counts": {
+  "3": 10,
+  "2": 13,
+  "1": 60,
+  "green": 18,
+  "bib": 117,
+  "recommended": 321
+ },
+ "counts_notes": "Stars/Green/Bib counts match MICHELIN's own selection table. Recommended: michelinmedia.com (posted 2026-06-24) prints 321 Recommended / 521 total; the michelin.com PDF dated 2026-06-26 prints 323 Recommended / 523 total. 321 used here. The 5 Green-Star-only restaurants are Recommended-level and are included in restaurants[] (distinction 'Recommended', green_star true).",
+ "restaurants": [
+  {
+   "name": "Addison",
+   "address": "Fairmont Grand Del Mar, 5200 Grand Del Mar Way, San Diego, 92130",
+   "city": "San Diego",
+   "distinction": "3 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Atelier Crenn",
+   "address": "3127 Fillmore St., San Francisco, 94123",
+   "city": "San Francisco",
+   "distinction": "3 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Benu",
+   "address": "22 Hawthorne St., San Francisco, 94105",
+   "city": "San Francisco",
+   "distinction": "3 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Californios",
+   "address": "355 11th St., San Francisco, 94103",
+   "city": "San Francisco",
+   "distinction": "3 Stars",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "Promoted from 2 Stars to 3 Stars"
+  },
+  {
+   "name": "Enclos",
+   "address": "139 E. Napa St., Sonoma, 95476",
+   "city": "Sonoma",
+   "distinction": "3 Stars",
+   "green_star": true,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "Promoted from 2 Stars to 3 Stars"
+  },
+  {
+   "name": "Providence",
+   "address": "5955 Melrose Ave., Los Angeles, 90038",
+   "city": "Los Angeles",
+   "distinction": "3 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Quince",
+   "address": "470 Pacific Ave., San Francisco, 94133",
+   "city": "San Francisco",
+   "distinction": "3 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "SingleThread",
+   "address": "131 North St., Healdsburg, 95448",
+   "city": "Healdsburg",
+   "distinction": "3 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Somni",
+   "address": "9045 Nemo St., West Hollywood, 90069",
+   "city": "West Hollywood",
+   "distinction": "3 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "The French Laundry",
+   "address": "6640 Washington St., Yountville, 94599",
+   "city": "Yountville",
+   "distinction": "3 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Acquerello",
+   "address": "1722 Sacramento St., San Francisco, 94109",
+   "city": "San Francisco",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Aubergine",
+   "address": "L'Auberge Carmel, Monte Verde at 7th Ave., Carmel-by-the-Sea, 93921",
+   "city": "Carmel-by-the-Sea",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Birdsong",
+   "address": "1085 Mission St., San Francisco, 94103",
+   "city": "San Francisco",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Commis",
+   "address": "3859 Piedmont Ave., Oakland, 94611",
+   "city": "Oakland",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Harbor House",
+   "address": "5600 CA-1, Elk, 95432",
+   "city": "Elk",
+   "distinction": "2 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "name_note": "michelinmedia star-table image prints 'Harbor House Inn'; the PDF tables and Green Star table print 'Harbor House'"
+  },
+  {
+   "name": "Hayato",
+   "address": "1320 E. 7th St., Ste. 126, Los Angeles, 90021",
+   "city": "Los Angeles",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Kato",
+   "address": "777 Alameda St., #114, Los Angeles, 90021",
+   "city": "Los Angeles",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "Promoted from 1 Star to 2 Stars"
+  },
+  {
+   "name": "Kiln",
+   "address": "149 Fell St., San Francisco, 94102",
+   "city": "San Francisco",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lazy Bear",
+   "address": "3416 19th St., San Francisco, 94110",
+   "city": "San Francisco",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Mélisse",
+   "address": "1104 Wilshire Blvd., Santa Monica, 90401",
+   "city": "Santa Monica",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Saison",
+   "address": "178 Townsend St., San Francisco, 94107",
+   "city": "San Francisco",
+   "distinction": "2 Stars",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sons & Daughters",
+   "address": "2875 18th St., San Francisco, 94110",
+   "city": "San Francisco",
+   "distinction": "2 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Vespertine",
+   "address": "3599 Hayden Ave., Culver City, 90232",
+   "city": "Culver City",
+   "distinction": "2 Stars",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "7 Adams",
+   "address": "1963 Sutter St., San Francisco, 94115",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Angler SF",
+   "address": "132 The Embarcadero, San Francisco, 94105",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Auberge du Soleil",
+   "address": "180 Rutherford Hill Rd., Rutherford, 94573",
+   "city": "Rutherford",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Auro",
+   "address": "Four Seasons Resort and Residences Napa Valley, 400 Silverado Trl., Calistoga, 94515",
+   "city": "Calistoga",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Bell's",
+   "address": "406 Bell St., Los Alamos, 93440",
+   "city": "Los Alamos",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Caruso's",
+   "address": "Rosewood Miramar Beach, 1759 S. Jameson Ln., Montecito, 93108",
+   "city": "Montecito",
+   "distinction": "1 Star",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Chez Noir",
+   "address": "5th Ave. btw. Dolores and San Carlos Sts., Carmel-By-The-Sea, 93921",
+   "city": "Carmel-by-the-Sea",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Citrin",
+   "address": "1104 Wilshire Blvd., Santa Monica, 90401",
+   "city": "Santa Monica",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Corridor 109",
+   "address": "641 North Western Ave., Ste. A, Los Angeles, 90004",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'new')"
+  },
+  {
+   "name": "Cyrus",
+   "address": "275 CA-128, Geyserville, 95441",
+   "city": "Geyserville",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Heritage",
+   "address": "2030 E. 7th St., Long Beach, 90804",
+   "city": "Long Beach",
+   "distinction": "1 Star",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Hilda and Jesse",
+   "address": "701 Union St., San Francisco, 94133",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Holbox",
+   "address": "3655 S. Grand Ave., Los Angeles, 90007",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Jeune et Jolie",
+   "address": "2659 State St., Carlsbad, 92008",
+   "city": "Carlsbad",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Kali",
+   "address": "5722 Melrose Ave., Los Angeles, 90038",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Kin Khao",
+   "address": "Parc 55 San Francisco - a Hilton Hotel, 55 Cyril Magnin St., San Francisco, 94102",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "KOJIMA",
+   "address": "2130 Sawtelle Blvd., Ste. 211, Los Angeles, 90025",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'new')"
+  },
+  {
+   "name": "Lielle",
+   "address": "9575 W. Pico Blvd., Los Angeles, 90035",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'new')"
+  },
+  {
+   "name": "Lilo",
+   "address": "2571 Roosevelt St., Carlsbad, 92008",
+   "city": "Carlsbad",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Localis",
+   "address": "2031 S. St., Sacramento, 95811",
+   "city": "Sacramento",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lucien",
+   "address": "7863 Girard Ave., Ste. 308, La Jolla, 92037",
+   "city": "La Jolla",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'new')"
+  },
+  {
+   "name": "Madcap",
+   "address": "198 Sir Francis Drake Blvd., San Anselmo, 94960",
+   "city": "San Anselmo",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Meteora",
+   "address": "6703 Melrose Ave., Los Angeles, 90038",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Mister Jiu's",
+   "address": "28 Waverly Pl., San Francisco, 94108",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Miura",
+   "address": "218 N. Rodeo Dr., Beverly Hills, 90210",
+   "city": "Beverly Hills",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'new')"
+  },
+  {
+   "name": "Mori Nozomi",
+   "address": "11500 W. Pico Blvd., Los Angeles, 90064",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "n/naka",
+   "address": "3455 Overland Ave., Los Angeles, 90034",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Naides",
+   "address": "708 Bush St., San Francisco, 94108",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'new')"
+  },
+  {
+   "name": "Nari",
+   "address": "Hotel Kabuki - JDV by Hyatt, 1625 Post St., San Francisco, 94115",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Niku Steakhouse",
+   "address": "61 Division St., San Francisco, 94103",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Nisei",
+   "address": "2316 Polk St., San Francisco, 94109",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Nozawa Bar",
+   "address": "212 N. Cañon Dr., Beverly Hills, 90210",
+   "city": "Beverly Hills",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Orsa & Winston",
+   "address": "122 W. 4th St., Los Angeles, 90013",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Osteria Mozza",
+   "address": "6602 Melrose Ave., Los Angeles, 90038",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Pasta|Bar",
+   "address": "16101 Ventura Blvd., Ste. 250, Encino, 91436",
+   "city": "Encino",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Plumed Horse",
+   "address": "14555 Big Basin Way, Saratoga, 95070",
+   "city": "Saratoga",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Press",
+   "address": "587 St. Helena St., Saint Helena, 94574",
+   "city": "Saint Helena",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Protégé",
+   "address": "250 California Ave., Palo Alto, 94306",
+   "city": "Palo Alto",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "R|O-Rebel Omakase",
+   "address": "361 Forest Ave., Ste. 103, Laguna Beach, 92651",
+   "city": "Laguna Beach",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Restaurant Ki",
+   "address": "111 San Pedro St., Los Angeles, 90012",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "San Ho Won",
+   "address": "2170 Bryant St., San Francisco, 94110",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Selby's",
+   "address": "3001 El Camino Real, Atherton, 94061",
+   "city": "Atherton",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Seline",
+   "address": "3110 Main St., Ste. 132, Santa Monica, 90405",
+   "city": "Santa Monica",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'promotion' in the 2026 table; was in the guide without a star)"
+  },
+  {
+   "name": "Shin Sushi",
+   "address": "16573 Ventura Blvd., Ste. 14, Encino, 91436",
+   "city": "Encino",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Silvers Omakase",
+   "address": "224 Helena Ave., Santa Barbara, 93101",
+   "city": "Santa Barbara",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Six Test Kitchen",
+   "address": "3075 Blue Rock Rd., Paso Robles, 93446",
+   "city": "Paso Robles",
+   "distinction": "1 Star",
+   "green_star": true,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Green Star in 2026"
+  },
+  {
+   "name": "Soichi",
+   "address": "2121 Adams Ave., San Diego, 92116",
+   "city": "San Diego",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sorrel",
+   "address": "3228 Sacramento St., San Francisco, 94115",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Ssal",
+   "address": "2226 Polk St., San Francisco, 94109",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "State Bird Provisions",
+   "address": "1529 Fillmore St., San Francisco, 94115",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sun Moon Studio",
+   "address": "1940 Union St., Ste. 21, Oakland, 94607",
+   "city": "Oakland",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sushi Inaba",
+   "address": "20918 Hawthorne Blvd., Torrance, 90503",
+   "city": "Torrance",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sushi Kaneyoshi",
+   "address": "250 E. 1st St., B1, Los Angeles, 90012",
+   "city": "Los Angeles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "The Kitchen",
+   "address": "915 Broadway, Ste. 100, Sacramento, 95818",
+   "city": "Sacramento",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "The Progress",
+   "address": "1525 Fillmore St., San Francisco, 94115",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "The Restaurant at JUSTIN",
+   "address": "11680 Chimney Rock Rd., Paso Robles, 93446",
+   "city": "Paso Robles",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "The Village Pub",
+   "address": "2967 Woodside Rd., Woodside, 94062",
+   "city": "Woodside",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Troubadour",
+   "address": "381 Healdsburg Ave., Healdsburg, 95448",
+   "city": "Healdsburg",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'promotion' in the 2026 table; was in the guide without a star)"
+  },
+  {
+   "name": "Wakuriya",
+   "address": "115 De Anza Blvd., San Mateo, 94402",
+   "city": "San Mateo",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Wolfsbane",
+   "address": "2495 3rd St., San Francisco, 94107",
+   "city": "San Francisco",
+   "distinction": "1 Star",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New 1 Star (marked 'new')"
+  },
+  {
+   "name": "Chez Panisse",
+   "address": "1517 Shattuck Ave., Berkeley, California 94709",
+   "city": "Berkeley",
+   "distinction": "Recommended",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Chi Spacca",
+   "address": "6610 Melrose Ave., Los Angeles, California 90038",
+   "city": "Los Angeles",
+   "distinction": "Recommended",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Monte's",
+   "address": "1198 Coast Village Rd., Santa Barbara, California 93108",
+   "city": "Santa Barbara",
+   "distinction": "Recommended",
+   "green_star": true,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Green Star in 2026 (also a new Recommended restaurant in 2026)"
+  },
+  {
+   "name": "Pomet",
+   "address": "4029 Piedmont Ave., Oakland, California 94611",
+   "city": "Oakland",
+   "distinction": "Recommended",
+   "green_star": true,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sierra Mar",
+   "address": "Post Ranch Inn, 47900 CA-1, Big Sur, California 93920",
+   "city": "Big Sur",
+   "distinction": "Recommended",
+   "green_star": true,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Green Star in 2026"
+  },
+  {
+   "name": "A16",
+   "address": "2355 Chestnut St., San Francisco, California 94123",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Adana Restaurant",
+   "address": "6918 San Fernando Rd., Glendale, California 91201",
+   "city": "Glendale",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "status_note": "Marked '(temporarily closed)' in the michelin.com PDF (2026-06-26); the michelinmedia Bib image does not carry that note"
+  },
+  {
+   "name": "Amor y Tacos",
+   "address": "13333 South St., Cerritos, California 90703",
+   "city": "Cerritos",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Anchor Oyster Bar",
+   "address": "579 Castro St., San Francisco, California 94114",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Atelier Manna",
+   "address": "1076 N. Coast Hwy. 101, Ste. 101, Encinitas, California 92024",
+   "city": "Encinitas",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Bansang",
+   "address": "1560 Fillmore St., San Francisco, California 94115",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Bettina",
+   "address": "1014 Coast Village Rd., Santa Barbara, California 93108",
+   "city": "Santa Barbara",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Bombera",
+   "address": "3459 Champion St., Oakland, California 94602",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Callie",
+   "address": "1195 Island Ave., San Diego, California 92101",
+   "city": "San Diego",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Canon",
+   "address": "1719 34th St., Sacramento, California 95816",
+   "city": "Sacramento",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Carnes Asadas Pancho Lopez",
+   "address": "3328 Pasadena Ave., Los Angeles, California 90031",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Cesarina",
+   "address": "4161 Voltaire St., San Diego, California 92107",
+   "city": "San Diego",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "CHAAK Kitchen",
+   "address": "215 El Camino Real, Tustin, California 92780",
+   "city": "Tustin",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Chengdu Taste",
+   "address": "828 W. Valley Blvd., Alhambra, California 91803",
+   "city": "Alhambra",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Chifa",
+   "address": "4374 Eagle Rock Blvd., Los Angeles, California 90041",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Ciccia Osteria",
+   "address": "2233 Logan Ave., San Diego, California 92113",
+   "city": "San Diego",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Ciccio",
+   "address": "6770 Washington St., Yountville, California 94599",
+   "city": "Yountville",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Cobi's",
+   "address": "2104 Main St., Santa Monica, California 90405",
+   "city": "Santa Monica",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Colapasta",
+   "address": "1241 5th St., Santa Monica, California 90401",
+   "city": "Santa Monica",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Comal",
+   "address": "2020 Shattuck Ave., Berkeley, California 94704",
+   "city": "Berkeley",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Corazon Cocina",
+   "address": "38 W. Victoria St., #122, Santa Barbara, California 93101",
+   "city": "Santa Barbara",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Cucina Urbana",
+   "address": "505 Laurel St., San Diego, California 92101",
+   "city": "San Diego",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Dai Ho",
+   "address": "9148 Las Tunas Dr., Temple City, California 91780",
+   "city": "Temple City",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Dha Rae Oak",
+   "address": "1106 S. Western Ave., Los Angeles, California 90006",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Dija Mara",
+   "address": "232 S. Coast Hwy., Oceanside, California 92054",
+   "city": "Oceanside",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Dumpling Home",
+   "address": "298 Gough St., San Francisco, California 94102",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Eat Joy Food",
+   "address": "18888 Labin Ct., Rowland Heights, California 91748",
+   "city": "Rowland Heights",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "El Molino Central",
+   "address": "11 Central Ave., Sonoma, California 95476",
+   "city": "Sonoma",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Eylan",
+   "address": "500 El Camino Real, Menlo Park, California 94025",
+   "city": "Menlo Park",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Fable & Spirit",
+   "address": "3441 Via Lido, Ste. A, Newport Beach, California 92663",
+   "city": "Newport Beach",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "FOB Kitchen",
+   "address": "5179 Telegraph Ave., Oakland, California 94609",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Glen Ellen Star",
+   "address": "13648 Arnold Dr., Glen Ellen, California 95442",
+   "city": "Glen Ellen",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Good Good Culture Club",
+   "address": "3560 18th St., San Francisco, California 94110",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Grá",
+   "address": "1524 Pizarro St., Los Angeles, California 90026",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Great China",
+   "address": "2190 Bancroft Way, Berkeley, California 94704",
+   "city": "Berkeley",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Heritage Barbecue",
+   "address": "31721 Camino Capistrano, San Juan Capistrano, California 92675",
+   "city": "San Juan Capistrano",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Horn Barbecue",
+   "address": "464 8th St., Oakland, California 94607",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Insalata's",
+   "address": "120 Sir Francis Drake Blvd., San Anselmo, California 94960",
+   "city": "San Anselmo",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Ipoh Kopitiam",
+   "address": "1411 S. Garfield Ave., Ste. 104, Alhambra, California 91801",
+   "city": "Alhambra",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Ippuku",
+   "address": "2130 Center St., Berkeley, California 94704",
+   "city": "Berkeley",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Izakaya Rintaro",
+   "address": "82 14th St., San Francisco, California 94103",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Jon & Vinny's",
+   "address": "412 N. Fairfax Ave., Los Angeles, California 90036",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Joodooboo",
+   "address": "4201 Market St., Oakland, California 94608",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Bib Gourmand (marked 'new')"
+  },
+  {
+   "name": "Jo's Modern Thai",
+   "address": "3725 MacArthur Blvd., Oakland, California 94619",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Khan Saab Desi Craft Kitchen",
+   "address": "229 E. Commonwealth Ave., Ste. A, Fullerton, California 92832",
+   "city": "Fullerton",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Khom Loi",
+   "address": "7385 Healdsburg Ave., Sebastopol, California 95472",
+   "city": "Sebastopol",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Kismet",
+   "address": "4648 Hollywood Blvd., Los Angeles, California 90027",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Kitchen Istanbul",
+   "address": "349 Clement St., San Francisco, California 94118",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Bib Gourmand (marked 'new')"
+  },
+  {
+   "name": "Komal",
+   "address": "3655 S. Grand Ave., Los Angeles, California 90007",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lalibela",
+   "address": "1025 S. Fairfax Ave., Los Angeles, California 90019",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Langer's",
+   "address": "704 S. Alvarado St., Los Angeles, California 90057",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "LaoXi Noodle House",
+   "address": "600 Live Oak Ave., Arcadia, California 91007",
+   "city": "Arcadia",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lapaba",
+   "address": "558 S. Western Ave., Los Angeles, California 90020",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Bib Gourmand (marked 'new')"
+  },
+  {
+   "name": "Little Fish",
+   "address": "1606 W. Sunset Blvd., Los Angeles, California 90026",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "status_note": "Marked '(temporarily closed)' in MICHELIN's 2026 release"
+  },
+  {
+   "name": "Little Fish Melrose Hill",
+   "address": "5035 Melrose Ave., Los Angeles, California 90038",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Bib Gourmand (marked 'new')"
+  },
+  {
+   "name": "Liu's Cafe",
+   "address": "3915 1/2 W. 6th St., Los Angeles, California 90020",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "LOLA 55",
+   "address": "1290 F St., San Diego, California 92101",
+   "city": "San Diego",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lola Gaspar",
+   "address": "211 W. 2nd St., Santa Ana, California 92701",
+   "city": "Santa Ana",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Longo Seafood",
+   "address": "7540 Garvey Ave., Rosemead, California 91770",
+   "city": "Rosemead",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Loquita",
+   "address": "202 State St., Santa Barbara, California 93101",
+   "city": "Santa Barbara",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Los Carnalitos",
+   "address": "30200 Industrial Pkwy. S.W., Hayward, California 94544",
+   "city": "Hayward",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lugya'h",
+   "address": "4301 W. Jefferson Blvd., Los Angeles, California 90016",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Bib Gourmand (marked 'new')"
+  },
+  {
+   "name": "Luna Mexican Kitchen",
+   "address": "1495 The Alameda, San Jose, California 95126",
+   "city": "San Jose",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lunasia Dim Sum House",
+   "address": "500 W. Main St., Alhambra, California 91801",
+   "city": "Alhambra",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Luscious Dumplings",
+   "address": "919 W. Duarte Rd., Monrovia, California 91016",
+   "city": "Monrovia",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Lynx",
+   "address": "427 S. Hewitt St., Los Angeles, California 90013",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Bib Gourmand (marked 'new')"
+  },
+  {
+   "name": "Mabel's Gone Fishing",
+   "address": "3770 30th St., San Diego, California 92104",
+   "city": "San Diego",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Maccheroni Republic",
+   "address": "332 S. Broadway, Los Angeles, California 90013",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Mae Malai Thai House of Noodles",
+   "address": "5445 Hollywood Blvd., Unit A and B, Los Angeles, California 90027",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Maligne",
+   "address": "600 Broadway Ave., Seaside, California 93955",
+   "city": "Seaside",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "MAMA Oakland",
+   "address": "388 Grand Ave., Oakland, California 94610",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Mariscos Jalisco",
+   "address": "753 E. Holt Ave., Pomona, California 91767",
+   "city": "Pomona",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Mentone",
+   "address": "174 Aptos Village Way, Aptos, California 95003",
+   "city": "Aptos",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Moo's Craft Barbecue",
+   "address": "2118 N. Broadway, Los Angeles, California 90031",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Morning Glory",
+   "address": "550 W. Date St., San Diego, California 92101",
+   "city": "San Diego",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "New Dumpling",
+   "address": "10064 San Pablo Ave., El Cerrito, California 94530",
+   "city": "El Cerrito",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Nixtaco",
+   "address": "1805 Cirby Way, Ste. 12, Roseville, California 95661",
+   "city": "Roseville",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Okane",
+   "address": "669 Townsend St., San Francisco, California 94103",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Outerlands",
+   "address": "4001 Judah St., San Francisco, California 94122",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Pausa",
+   "address": "223 E. 4th Ave., San Mateo, California 94401",
+   "city": "San Mateo",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "peasants FEAST",
+   "address": "487 Atterdag Rd., Solvang, California 93463",
+   "city": "Solvang",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Petiscos",
+   "address": "399 S. 1st St., San Jose, California 95113",
+   "city": "San Jose",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Phở 79",
+   "address": "9941 Hazard Ave., Garden Grove, California 92844",
+   "city": "Garden Grove",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Pho Momma",
+   "address": "9555 Folsom Blvd., Ste. A, Sacramento, California 95827",
+   "city": "Sacramento",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Pine & Crane",
+   "address": "1521 Griffith Park Blvd., Los Angeles, California 90026",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Pizzana",
+   "address": "11712 San Vicente Blvd., Los Angeles, California 90049",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Pizzeria Bianco Los Angeles",
+   "address": "1320 E. 7th St., Los Angeles, California 90021",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "Listed as 'Pizzeria Bianco' (same address) in the 2025 Bib list"
+  },
+  {
+   "name": "Pizzeria Mozza",
+   "address": "641 N. Highland Ave., Los Angeles, California 90036",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Playa",
+   "address": "41 Throckmorton Ave., Mill Valley, California 94941",
+   "city": "Mill Valley",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Pollo a la Brasa",
+   "address": "764 S. Western Ave., Los Angeles, California 90005",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Quarter Sheets",
+   "address": "1305 Portia St., Los Angeles, California 90026",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Ramen & Tsukemen TAO",
+   "address": "10488 Valley View St., Buena Park, California 90620",
+   "city": "Buena Park",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Ramen Gaijin",
+   "address": "6948 Sebastopol Ave., Sebastopol, California 95472",
+   "city": "Sebastopol",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Rasarumah",
+   "address": "3107 Beverly Blvd., Los Angeles, California 90026",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Rocio's Mexican Kitchen",
+   "address": "7891 Garfield Ave., Bell Gardens, California 90201",
+   "city": "Bell Gardens",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sama Sama Kitchen",
+   "address": "1208 State St., Santa Barbara, California 93101",
+   "city": "Santa Barbara",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sea Harbour",
+   "address": "3939 Rosemead Blvd., Rosemead, California 91770",
+   "city": "Rosemead",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sichuan Impression",
+   "address": "235 W. Main St., Ste. B, Alhambra, California 91801",
+   "city": "Alhambra",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Snail Bar",
+   "address": "4935 Shattuck Ave., Oakland, California 94609",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Soba Ichi",
+   "address": "2311A Magnolia St., Oakland, California 94607",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Sonoratown",
+   "address": "208 E. 8th St., Los Angeles, California 90014",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": true,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ],
+   "change": "New Bib Gourmand (marked 'new')"
+  },
+  {
+   "name": "Spinning Bones",
+   "address": "1205 Park St., Alameda, California 94501",
+   "city": "Alameda",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Stockhome",
+   "address": "220 Western Ave., Petaluma, California 94952",
+   "city": "Petaluma",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Tacos Oscar",
+   "address": "420 40th St., Oakland, California 94609",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Teni East Kitchen",
+   "address": "4015 Broadway, Oakland, California 94611",
+   "city": "Oakland",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "The Factory Kitchen",
+   "address": "1300 Factory Pl., Ste. 101, Los Angeles, California 90013",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Top Hatters Kitchen",
+   "address": "855 MacArthur Blvd., San Leandro, California 94577",
+   "city": "San Leandro",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Trestle",
+   "address": "531 Jackson St., San Francisco, California 94133",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Tsubaki",
+   "address": "1356 Allison Ave., Los Angeles, California 90026",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Union",
+   "address": "37 Union St., Pasadena, California 91103",
+   "city": "Pasadena",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Valley",
+   "address": "487 1st St. W., Sonoma, California 95476",
+   "city": "Sonoma",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Village Sake",
+   "address": "19 Bolinas Rd., Fairfax, California 94930",
+   "city": "Fairfax",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Villa's Tacos",
+   "address": "5455 N. Figueroa St., Ste. 123, Los Angeles, California 90042",
+   "city": "Los Angeles",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Vin Folk",
+   "address": "1501 Hermosa Ave., Hermosa Beach, California 90254",
+   "city": "Hermosa Beach",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Yafa",
+   "address": "Junipero St., Carmel-by-the-Sea, California 93923",
+   "city": "Carmel-by-the-Sea",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  },
+  {
+   "name": "Yank Sing",
+   "address": "101 Spear St., San Francisco, California 94105",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf",
+    "https://whatnow.com/san-francisco/restaurants/3-bay-area-restaurants-have-closed-this-september-2026/"
+   ],
+   "status_note": "Rincon Center location (101 Spear St., the MICHELIN-listed address) closed 2026-09-20 per WhatNow (2026-09-30); Stevenson Street location reported still open. See closed[]."
+  },
+  {
+   "name": "Z & Y",
+   "address": "655 Jackson St., San Francisco, California 94133",
+   "city": "San Francisco",
+   "distinction": "Bib Gourmand",
+   "green_star": false,
+   "new_this_edition": false,
+   "sources": [
+    "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+    "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf"
+   ]
+  }
+ ],
+ "previous_edition": {
+  "edition": "2025",
+  "ceremony_date_note": "michelinmedia post dated 2025-06-25 ('Tonight marked a momentous evening')",
+  "counts": {
+   "3": 8,
+   "2": 14,
+   "1": 65,
+   "green": 17,
+   "bib": 123,
+   "recommended": 338
+  },
+  "source": "https://michelinmedia.com/pages/blog/detail/article/c/a1409/",
+  "stars_not_in_2026": [
+   {
+    "name": "715",
+    "2025_distinction": "1 Star",
+    "2025_address": "738 E. 3rd St., Los Angeles, 90013",
+    "note": "Lost its star (LA Magazine: '715 and Camphor ... lost a star').",
+    "sources": [
+     "https://lamag.com/food/michelin-guide-california-ceremony-los-angeles-restaurant-winners/"
+    ]
+   },
+   {
+    "name": "Camphor",
+    "2025_distinction": "1 Star",
+    "2025_address": "923 E. 3rd St., Ste. 109, Los Angeles, 90013",
+    "note": "Lost its star (LA Magazine).",
+    "sources": [
+     "https://lamag.com/food/michelin-guide-california-ceremony-los-angeles-restaurant-winners/"
+    ]
+   },
+   {
+    "name": "Morihiro",
+    "2025_distinction": "1 Star",
+    "2025_address": "3133 Glendale Blvd., Los Angeles, 90039",
+    "note": "Lost its star after moving from Atwater Village to Echo Park (LA Magazine).",
+    "sources": [
+     "https://lamag.com/food/michelin-guide-california-ceremony-los-angeles-restaurant-winners/"
+    ]
+   },
+   {
+    "name": "The Shota",
+    "2025_distinction": "1 Star",
+    "2025_address": "115 Sansome St., San Francisco, 94104",
+    "note": "Listed 'temporarily closed' in the 2025 release; SFist: lost its star in 2026.",
+    "sources": [
+     "https://sfist.com/2026/06/25/californios-elevated-to-three-michelin-stars-wolfsbane-and-naides/",
+     "https://michelinmedia.com/pages/blog/detail/article/c/a1409/"
+    ]
+   },
+   {
+    "name": "O' by Claude Le Tohic",
+    "2025_distinction": "1 Star",
+    "2025_address": "165 O'Farrell St., San Francisco, 94102",
+    "note": "SFist: lost its star in 2026.",
+    "sources": [
+     "https://sfist.com/2026/06/25/californios-elevated-to-three-michelin-stars-wolfsbane-and-naides/"
+    ]
+   },
+   {
+    "name": "Le Comptoir at Bar Crenn",
+    "2025_distinction": "1 Star",
+    "2025_address": "3131 Fillmore St., San Francisco, 94123",
+    "note": "SFist: lost its star (and its 2025 Green Star); 'recently announced will be closing'.",
+    "sources": [
+     "https://sfist.com/2026/06/25/californios-elevated-to-three-michelin-stars-wolfsbane-and-naides/"
+    ]
+   },
+   {
+    "name": "Kenzo",
+    "2025_distinction": "1 Star",
+    "2025_address": "1339 Pearl St., Napa, 94559",
+    "note": "SFist: lost its star in 2026.",
+    "sources": [
+     "https://sfist.com/2026/06/25/californios-elevated-to-three-michelin-stars-wolfsbane-and-naides/"
+    ]
+   },
+   {
+    "name": "Gucci Osteria da Massimo Bottura",
+    "2025_distinction": "1 Star",
+    "2025_address": "347 N. Rodeo Dr., Beverly Hills, 90210",
+    "note": "Not in the 2026 star list. Wikipedia's list cites Eater LA (2025-11-24): 'Five-Year-Old Gucci Osteria Beverly Hills Suddenly Closes'.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_California"
+    ]
+   },
+   {
+    "name": "Shibumi",
+    "2025_distinction": "1 Star",
+    "2025_address": "815 S. Hill St., Los Angeles, 90014",
+    "note": "Not in the 2026 star list. Wikipedia's list cites LA Times (2025-07-14) on the Michelin-starred izakaya closing in downtown L.A.",
+    "sources": [
+     "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_California"
+    ]
+   },
+   {
+    "name": "Uka",
+    "2025_distinction": "1 Star",
+    "2025_address": "6801 Hollywood Blvd., Level 5, Los Angeles, 90028",
+    "note": "Not in the 2026 star list. Wikipedia marks it Closed, citing 'UKA Transition From JAPAN HOUSE Los Angeles' (2025-12-10).",
+    "sources": [
+     "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_California"
+    ]
+   },
+   {
+    "name": "Gwen",
+    "2025_distinction": "1 Star",
+    "2025_address": "6600 Sunset Blvd., Los Angeles, 90028",
+    "note": "Not in the 2026 star list; MICHELIN does not say why. WhatNow (2025-06-24) reported Gwen would leave 6600 W. Sunset Blvd. to relocate to the Westside, with the move expected in early 2026.",
+    "sources": [
+     "https://michelinmedia.com/pages/blog/detail/article/c/a1409/",
+     "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+     "https://whatnow.com/los-angeles/restaurants/michelin-starred-gwen-to-relocate-later-this-year/"
+    ]
+   },
+   {
+    "name": "Knife Pleat",
+    "2025_distinction": "1 Star",
+    "2025_address": "3333 S. Bristol St., Ste. 3001, Costa Mesa, 92626",
+    "note": "Not in the 2026 star list; no source we could open states why.",
+    "sources": [
+     "https://michelinmedia.com/pages/blog/detail/article/c/a1409/",
+     "https://michelinmedia.com/pages/blog/detail/article/c/a1474/"
+    ]
+   },
+   {
+    "name": "Valle",
+    "2025_distinction": "1 Star",
+    "2025_address": "222 N. Pacific St., Oceanside, 92056",
+    "note": "Not in the 2026 star list; no source we could open states why.",
+    "sources": [
+     "https://michelinmedia.com/pages/blog/detail/article/c/a1409/",
+     "https://michelinmedia.com/pages/blog/detail/article/c/a1474/"
+    ]
+   }
+  ],
+  "green_stars_not_in_2026": [
+   {
+    "name": "Le Comptoir at Bar Crenn",
+    "note": "Lost star and Green Star (see above)"
+   },
+   {
+    "name": "The Restaurant at JUSTIN",
+    "note": "Still 1 Star in 2026 but no longer has a Green Star"
+   }
+  ],
+  "bib_not_in_2026": [
+   {
+    "name": "Bee Taqueria",
+    "note": "Listed '(temporarily closed)' in 2025"
+   },
+   {
+    "name": "Cedro Italian Restaurant",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "China Village",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Del Popolo",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Flavors from Afar",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Flores",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Jiang Nan Spring",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "La Azteca",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Orchard City Kitchen",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Pig in a Pickle",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Range Life",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Sushi Ran",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "The Bywater",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   },
+   {
+    "name": "Wood Tavern",
+    "note": "In the 2025 Bib list, absent from the 2026 Bib list; reason not stated by MICHELIN"
+   }
+  ]
+ },
+ "closed": [
+  {
+   "name": "Yank Sing",
+   "city": "San Francisco",
+   "source_url": "https://whatnow.com/san-francisco/restaurants/3-bay-area-restaurants-have-closed-this-september-2026/",
+   "source_date": "2026-09-30",
+   "why": "Bib Gourmand listed by MICHELIN at 101 Spear St. (Rincon Center). WhatNow: the family-owned dim sum restaurant closed its Rincon Center location permanently on 2026-09-20 because the lease ended; the same article says the Stevenson Street location remains open. Location-specific closure: the MICHELIN-listed address is closed."
+  },
+  {
+   "name": "Adana Restaurant",
+   "city": "Glendale",
+   "source_url": "https://agngnconpm.cloudimg.io/v7/https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/crb6vo783dp0p3f9t4y8tsw3-20260626-pr-michelinguide-california-2026.pdf",
+   "source_date": "2026-06-26",
+   "why": "Bib Gourmand marked '(temporarily closed)' in MICHELIN's own 2026 release PDF (michelin.com). The michelinmedia.com image of the same Bib table does not carry the note. Status at the time of the ceremony, not a later report; reopening not checked."
+  },
+  {
+   "name": "Little Fish",
+   "city": "Los Angeles",
+   "source_url": "https://michelinmedia.com/pages/blog/detail/article/c/a1474/",
+   "source_date": "2026-06-24",
+   "why": "Bib Gourmand at 1606 W. Sunset Blvd. marked '(temporarily closed)' in both MICHELIN 2026 sources (michelinmedia.com and the michelin.com PDF). The new Bib 'Little Fish Melrose Hill' (5035 Melrose Ave.) is listed separately. Status at the time of the ceremony; reopening not checked."
+  }
+ ],
+ "robots": {
+  "guide.michelin.com": "blocked for ClaudeBot (robots.txt has 'User-agent: ClaudeBot / Disallow: /', and its legal notice prohibits crawlers). The one test WebFetch the task asked for returned page content, not an empty 202, but robots.txt rules it out, so nothing from it is used",
+  "www.michelin.com": "allowed (press release page used)",
+  "agngnconpm.cloudimg.io": "no robots.txt served (the robots request got HTTP 408). This is the CDN for the press-release PDF linked from www.michelin.com; the PDF was used",
+  "dgaddcosprod.blob.core.windows.net": "no robots.txt (404). This is the origin storage behind the PDF CDN; not fetched directly",
+  "michelinmedia.com": "allowed (article a1474 for 2026 and a1409 for 2025, plus their table images)",
+  "en.wikipedia.org": "allowed for /wiki/ (List of Michelin-starred restaurants in California used only for footnotes on dropped restaurants)",
+  "sfist.com": "allowed (ClaudeBot crawl-delay 10 honored)",
+  "www.finedininglovers.com": "allowed (used to confirm the ceremony date)",
+  "lamag.com": "allowed",
+  "blog.resy.com": "allowed (checked, nothing about closures or drops)",
+  "secretlosangeles.com": "allowed (not used)",
+  "whatnow.com": "allowed (closure roundups used)",
+  "www.axios.com": "allowed by robots.txt, but the article returned HTTP 403 (treated as bot protection; not retried, not used)",
+  "www.sfchronicle.com": "blocked for ClaudeBot",
+  "www.latimes.com": "blocked for ClaudeBot",
+  "sf.eater.com": "blocked for ClaudeBot",
+  "la.eater.com": "blocked for ClaudeBot",
+  "www.eater.com": "blocked for ClaudeBot"
+ },
+ "notes": "EDITION: The 2026 MICHELIN Guide California is current. The selection was revealed at a ceremony at EVE in Downtown San Diego on Wednesday 2026-06-24. michelinmedia.com's post is dated June 24, 2026 and begins 'This evening...'; Fine Dining Lovers and SFist ('Wednesday night', published 2026-06-25) agree. The michelin.com page and PDF are dated 2026-06-26 (publication date, not the ceremony). The previous edition (2025) was revealed around 2025-06-25 (michelinmedia post dated June 25, 2025, 'Tonight').\n\nSOURCES: Names, distinctions, Green Stars, 'new'/'promotion' flags and the full Bib list come from MICHELIN's own 2026 release on michelinmedia.com (article a1474; its tables are images, which I read) and the michelin.com PDF. Names use the release's spelling, with curly apostrophes changed to ASCII. Two names contain a pipe character: 'Pasta|Bar' and 'R|O-Rebel Omakase'.\n\nADDRESS WARNING: The michelin.com PDF's starred-restaurant table has a scrambled address column; for example it prints Californios at Providence's address and Lilo at a Napa address. The michelinmedia star-table images are correctly aligned and match each restaurant's 2025 address and the city given in the release text, so every star address here comes from the michelinmedia images. The Bib and Green Star tables match in both sources. Addresses are as MICHELIN printed them; the star tables omit 'California', the Bib and Green Star tables include it. I did not need any restaurant websites. Typo: the PDF and michelinmedia text print 'Headlsburg' for Troubadour.\n\nCOUNTS: 10 three-star, 13 two-star, 60 one-star (83 starred), 18 Green Stars, 117 Bib Gourmands. These match MICHELIN's own selection table, and the build script checks the totals. Recommended: michelinmedia says 321 (521 restaurants in total); the michelin.com PDF says 323 (523 in total). I used 321. RECOMMENDED LIST NOT INCLUDED: MICHELIN's release names only the 19 new 2026 Recommended restaurants and points to guide.michelin.com for the full 321/323 list, and that host is blocked for ClaudeBot. So only the count is recorded. Exception: the 5 Green-Star-only restaurants (Chez Panisse, Chi Spacca, Monte's, Pomet, Sierra Mar) are Recommended-level and are included in restaurants[] with distinction 'Recommended' and green_star true, because the task asks for every Green Star.\n\nFIELDS: new_this_edition is true when any honor on that row is new in 2026: the 2 promotions to 3 Stars, Kato's promotion to 2 Stars, the 9 new 1 Stars (Seline and Troubadour are marked 'promotion' in the table but are among the 'nine restaurants' newly awarded One Star), the 3 new Green Stars (Six Test Kitchen's star is not new, only its Green Star) and the 7 new Bibs. Extra fields beyond the requested schema: 'change' (what changed, per MICHELIN), 'status_note' (MICHELIN's 'temporarily closed' marks), 'name_note' (Harbor House is printed as 'Harbor House Inn' in one michelinmedia image), and a top-level 'previous_edition' block.\n\nCHANGES FROM 2025: These are computed by comparing MICHELIN's own 2025 list (michelinmedia a1409) with the 2026 list, with reasons only where a source states one. 13 restaurants that had 1 Star in 2025 are not starred in 2026; see previous_edition.stars_not_in_2026. SFist says The Shota, O' by Claude Le Tohic, Le Comptoir at Bar Crenn (which 'recently announced will be closing') and Kenzo lost their stars. LA Magazine says 715, Camphor and Morihiro lost theirs. Wikipedia footnotes give closures for Gucci Osteria (Eater LA, 2025-11-24), Shibumi (LA Times, 2025-07-14) and Uka (2025-12-10). For Gwen, Knife Pleat and Valle, no opened source says why. No 3-Star or 2-Star restaurant was demoted. Green Stars dropped: Le Comptoir at Bar Crenn, and The Restaurant at JUSTIN (it keeps its 1 Star). 14 Bibs from 2025 are not in 2026 (listed in previous_edition.bib_not_in_2026, reasons not stated). 'Pizzeria Bianco' was renamed 'Pizzeria Bianco Los Angeles'. The 2025 Bib table images show 124 rows, while MICHELIN's 2025 count says 123.\n\nCLOSURES SINCE THE CEREMONY: These were checked through WhatNow's monthly closure roundups (LA July, August and September 2026; Bay Area September 2026), SFist's Michelin and closures tag pages, and targeted searches. Only Yank Sing's Rincon Center location (the MICHELIN-listed address) was found closed. The two Bibs already marked 'temporarily closed' by MICHELIN are recorded too. This check is not exhaustive: SF Chronicle, LA Times and Eater are blocked for ClaudeBot, and Axios returned 403. Other MICHELIN-recognized closures found are not in the 2026 starred or Bib lists (for example Prelude, a Recommended restaurant, closed 2026-09-19), so they are not in closed[].\n\nOTHER FACTS FROM THE RELEASE: Special Awards were Exceptional Cocktails (Bar Team, Maria Isabel), Sommelier (Savannah Riedler, Lilo), Outstanding Service (Julianna Yang, Sons & Daughters) and Young Chef (Anna Sonenshein and Niki Vahle, Little Fish Melrose Hill)."
+}

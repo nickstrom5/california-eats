@@ -1,0 +1,285 @@
+{
+ "100 Madonna Rd, San Luis Obispo, CA 93405": {
+  "lat": 35.265886,
+  "lon": -120.673724,
+  "matched": "100 MADONNA RD, SAN LUIS OBISPO, CA, 93405",
+  "zip": "93405"
+ },
+ "1000 W Sacramento Ave, Suite D, Chico, CA 95926": {
+  "lat": 39.731402,
+  "lon": -121.857734,
+  "matched": "1000 W SACRAMENTO AVE, CHICO, CA, 95926",
+  "zip": "95926"
+ },
+ "10710 Trinity Pkwy, Suite C, Stockton, CA": {
+  "lat": 38.053976,
+  "lon": -121.375261,
+  "matched": "10710 TRINITY PKWY, STOCKTON, CA, 95219",
+  "zip": "95219"
+ },
+ "113 E 4th St, Santa Ana, CA 92701": {
+  "lat": 33.748066,
+  "lon": -117.867452,
+  "matched": "113 E 4TH ST, SANTA ANA, CA, 92701",
+  "zip": "92701"
+ },
+ "1201 Redondo Ave, Long Beach, CA 90804": {
+  "lat": 33.781469,
+  "lon": -118.152475,
+  "matched": "1201 N REDONDO AVE, LONG BEACH, CA, 90804",
+  "zip": "90804"
+ },
+ "12434 Whittier Blvd, Whittier, CA 90603": {
+  "lat": 33.976917,
+  "lon": -118.047894,
+  "matched": "12434 WHITTIER BLVD, WHITTIER, CA, 90602",
+  "zip": "90602"
+ },
+ "12585 Cantu-Galleano Ranch Rd, Eastvale, CA 91752": {
+  "lat": 34.000876,
+  "lon": -117.557728,
+  "matched": "12585 CANTU-GALLEANO RANCH RD, EASTVALE, CA, 91752",
+  "zip": "91752"
+ },
+ "12620 Day St, Moreno Valley, CA 92553": {
+  "lat": 33.93722,
+  "lon": -117.278773,
+  "matched": "12620 DAY ST, MORENO VALLEY, CA, 92553",
+  "zip": "92553"
+ },
+ "1321 S Atlantic Blvd, East Los Angeles, CA 90022": {
+  "lat": 34.013752,
+  "lon": -118.15943,
+  "matched": "1321 S ATLANTIC BLVD, EAST LOS ANGELES, CA, 90022",
+  "zip": "90022"
+ },
+ "13325 Main St Ste 109, Hesperia, CA 92345": {
+  "lat": 34.426639,
+  "lon": -117.372379,
+  "matched": "13325 MAIN ST, HESPERIA, CA, 92345",
+  "zip": "92345"
+ },
+ "14135 Limonite Ave Ste 234, Eastvale, CA 92880": {
+  "lat": 33.975394,
+  "lon": -117.591151,
+  "matched": "14135 LIMONITE AVE, EASTVALE, CA, 92880",
+  "zip": "92880"
+ },
+ "14263 Hoyt St, Arleta, CA 91331": {
+  "lat": 34.249051,
+  "lon": -118.443953,
+  "matched": "14263 HOYT ST, ARLETA, CA, 91331",
+  "zip": "91331"
+ },
+ "1508 S Riverside Ave, Rialto, CA 92376": {
+  "lat": 34.07383,
+  "lon": -117.370386,
+  "matched": "1508 S RIVERSIDE AVE, RIALTO, CA, 92376",
+  "zip": "92376"
+ },
+ "16711 Hawthorne Blvd, Lawndale, CA 90260": {
+  "lat": 33.879287,
+  "lon": -118.352752,
+  "matched": "16711 HAWTHORNE BLVD, LAWNDALE, CA, 90260",
+  "zip": "90260"
+ },
+ "1743 N Cahuenga Blvd, Los Angeles, CA 90028": {
+  "lat": 34.102614,
+  "lon": -118.329614,
+  "matched": "1743 N CAHUENGA BLVD, LOS ANGELES, CA, 90028",
+  "zip": "90028"
+ },
+ "1766 E McFadden Ave, Santa Ana, CA 92705": {
+  "lat": 33.733656,
+  "lon": -117.843575,
+  "matched": "1766 MCFADDEN AVE, SANTA ANA, CA, 92705",
+  "zip": "92705"
+ },
+ "18 W Spain St, Sonoma, CA 95476": {
+  "lat": 38.293859,
+  "lon": -122.458749,
+  "matched": "18 W SPAIN ST, SONOMA, CA, 95476",
+  "zip": "95476"
+ },
+ "181 Industrial Way, Buellton, CA 93427": {
+  "lat": 34.612699,
+  "lon": -120.200292,
+  "matched": "181 INDUSTRIAL WAY, BUELLTON, CA, 93427",
+  "zip": "93427"
+ },
+ "1827 Ocean Front Walk, Venice, CA 90291": {
+  "lat": 33.985691,
+  "lon": -118.472537,
+  "matched": "1827 OCEAN FRONT WALK, VENICE, CA, 90291",
+  "zip": "90291"
+ },
+ "1904 Hillhurst Ave, Los Angeles, CA 90027": {
+  "lat": 34.105588,
+  "lon": -118.287346,
+  "matched": "1904 HILLHURST AVE, LOS ANGELES, CA, 90027",
+  "zip": "90027"
+ },
+ "2015 Birch Rd Ste 409, Chula Vista, CA 91915": {
+  "lat": 32.621113,
+  "lon": -116.966969,
+  "matched": "2015 BIRCH RD, CHULA VISTA, CA, 91915",
+  "zip": "91915"
+ },
+ "2081 Hillhurst Ave, Los Angeles, CA 90027": {
+  "lat": 34.10955,
+  "lon": -118.287496,
+  "matched": "2081 HILLHURST AVE, LOS ANGELES, CA, 90027",
+  "zip": "90027"
+ },
+ "2196 Logan Ave, San Diego, CA 92113": {
+  "lat": 32.698122,
+  "lon": -117.139355,
+  "matched": "2196 LOGAN AVE, SAN DIEGO, CA, 92113",
+  "zip": "92113"
+ },
+ "2211 S Shore Center #170, Alameda, CA 94501": {
+  "lat": 37.75855,
+  "lon": -122.252767,
+  "matched": "2211 S SHORE CENTER RD, ALAMEDA, CA, 94501",
+  "zip": "94501"
+ },
+ "244 E 3rd St, Long Beach, CA 90802": {
+  "lat": 33.770444,
+  "lon": -118.189916,
+  "matched": "244 E 3RD ST, LONG BEACH, CA, 90802",
+  "zip": "90802"
+ },
+ "290 N Coast Hwy 101, Encinitas, CA 92024": {
+  "lat": 33.054167,
+  "lon": -117.296736,
+  "matched": "290 N COAST HIGHWAY 101, ENCINITAS, CA, 92024",
+  "zip": "92024"
+ },
+ "29640 Goetz Rd, Menifee, CA 92587": {
+  "lat": 33.689988,
+  "lon": -117.24128,
+  "matched": "29640 GOETZ RD, MENIFEE, CA, 92587",
+  "zip": "92587"
+ },
+ "300 Pacific Coast Hwy #113, Huntington Beach, CA 92648": {
+  "lat": 33.656705,
+  "lon": -118.00116,
+  "matched": "300 PACIFIC COAST HWY, HUNTINGTON BEACH, CA, 92648",
+  "zip": "92648"
+ },
+ "3132 E 12th St, Oakland, CA 94601": {
+  "lat": 37.776667,
+  "lon": -122.227002,
+  "matched": "3132 E 12TH ST, OAKLAND, CA, 94601",
+  "zip": "94601"
+ },
+ "317 S Broadway, Los Angeles, CA 90013": {
+  "lat": 34.050732,
+  "lon": -118.248319,
+  "matched": "317 S BROADWAY, LOS ANGELES, CA, 90013",
+  "zip": "90013"
+ },
+ "3564 G St, Merced, CA 95340": {
+  "lat": 37.331321,
+  "lon": -120.468999,
+  "matched": "3564 G ST, MERCED, CA, 95340",
+  "zip": "95340"
+ },
+ "36 Rancho Del Mar, Aptos, CA 95003": {
+  "lat": 36.979223,
+  "lon": -121.908501,
+  "matched": "36 RANCHO DEL MAR, APTOS, CA, 95003",
+  "zip": "95003"
+ },
+ "3915 Alpine Rd, Portola Valley, CA 94028": {
+  "lat": 37.38165,
+  "lon": -122.194877,
+  "matched": "3915 ALPINE RD, PORTOLA VALLEY, CA, 94028",
+  "zip": "94028"
+ },
+ "4077 S Avalon Blvd, Los Angeles, CA 90011": {
+  "lat": 34.009448,
+  "lon": -118.265315,
+  "matched": "4077 AVALON BLVD, LOS ANGELES, CA, 90011",
+  "zip": "90011"
+ },
+ "41 Wharf Rd, Bolinas, CA 94924": {
+  "lat": 37.90983,
+  "lon": -122.685468,
+  "matched": "41 WHARF RD, BOLINAS, CA, 94924",
+  "zip": "94924"
+ },
+ "420 E Highway 246, Buellton, CA": {
+  "lat": 34.609824,
+  "lon": -120.184245,
+  "matched": "420 E STATE RTE 246, BUELLTON, CA, 93427",
+  "zip": "93427"
+ },
+ "5299 Holt Blvd Bldg 2, Montclair, CA 91763": {
+  "lat": 34.063203,
+  "lon": -117.689681,
+  "matched": "5299 HOLT BLVD, MONTCLAIR, CA, 91763",
+  "zip": "91763"
+ },
+ "53 Main St, Sutter Creek, CA": {
+  "lat": 38.392933,
+  "lon": -120.802966,
+  "matched": "53 MAIN ST, SUTTER CREEK, CA, 95685",
+  "zip": "95685"
+ },
+ "5650 Van Buren Blvd, Riverside, CA 92503": {
+  "lat": 33.940158,
+  "lon": -117.454015,
+  "matched": "5650 VAN BUREN BLVD, RIVERSIDE, CA, 92503",
+  "zip": "92503"
+ },
+ "602 Pacific Coast Hwy, Huntington Beach, CA 92648": {
+  "lat": 33.658442,
+  "lon": -118.00359,
+  "matched": "602 PACIFIC COAST HWY, HUNTINGTON BEACH, CA, 92648",
+  "zip": "92648"
+ },
+ "634 Pearl St, La Jolla, CA 92037": {
+  "lat": 32.839632,
+  "lon": -117.276503,
+  "matched": "634 PEARL ST, LA JOLLA, CA, 92037",
+  "zip": "92037"
+ },
+ "827 N Harbor Blvd, Fullerton, CA 92832": {
+  "lat": 33.877726,
+  "lon": -117.924365,
+  "matched": "827 N HARBOR BLVD, FULLERTON, CA, 92832",
+  "zip": "92832"
+ },
+ "8304 Main St, Mokelumne Hill, CA 95245": {
+  "lat": 38.301091,
+  "lon": -120.705834,
+  "matched": "8304 MAIN ST, MOKELUMNE HILL, CA, 95245",
+  "zip": "95245"
+ },
+ "865 Russell Blvd, Unit 130, Davis, CA 95616": {
+  "lat": 38.546401,
+  "lon": -121.761225,
+  "matched": "865 RUSSELL BLVD, DAVIS, CA, 95616",
+  "zip": "95616"
+ },
+ "914-A Sir Francis Drake Blvd, San Anselmo, CA 94960": {
+  "lat": 37.980801,
+  "lon": -122.566273,
+  "matched": "914 SIR FRANCIS DRAKE BLVD, SAN ANSELMO, CA, 94960",
+  "zip": "94960"
+ },
+ "980 N Haven Ave Ste 170, Ontario, CA 91764": {
+  "lat": 34.076862,
+  "lon": -117.575643,
+  "matched": "980 N HAVEN AVE, ONTARIO, CA, 91764",
+  "zip": "91764"
+ },
+ "_misses": [
+  "120-A Alamo Plaza, Alamo, CA 94507",
+  "2400 E Cesar Chavez Ave, Los Angeles, CA 90033",
+  "2605 West Taron Ct, Elk Grove, CA 95757",
+  "40315 Winchester Rd Ste D, Temecula, CA 92591",
+  "4326 E Cesar Chavez Blvd, Fresno, CA"
+ ]
+}

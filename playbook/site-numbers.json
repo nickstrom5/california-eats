@@ -1,0 +1,323 @@
+{
+ "generated": "2026-10-07",
+ "restaurants": 103585,
+ "towns": 1126,
+ "guides": {
+  "Taquer\u00edas": 363,
+  "Dim sum": 53,
+  "Burritos": 86,
+  "Fish tacos": 87,
+  "Korean BBQ": 74,
+  "Burger stands": 19,
+  "Wine country": 31
+ },
+ "oldest": 18,
+ "honored": 285,
+ "michelin_starred": 78,
+ "bib": 114,
+ "inspected": 33669,
+ "jurisdictions": {
+  "lac": {
+   "name": "Los Angeles County",
+   "through": "2026-09-30"
+  },
+  "sf": {
+   "name": "San Francisco",
+   "through": "2026-09-30"
+  },
+  "sac": {
+   "name": "Sacramento County",
+   "through": "2026-09-30"
+  }
+ },
+ "cities": {
+  "Los Angeles": {
+   "restaurants": 9865,
+   "Taquer\u00edas": 48,
+   "Dim sum": 5,
+   "Burritos": 0,
+   "Fish tacos": 5,
+   "Korean BBQ": 11,
+   "Burger stands": 8,
+   "Wine country": 0,
+   "honored": 69,
+   "inspected": 7813
+  },
+  "San Francisco": {
+   "restaurants": 5254,
+   "Taquer\u00edas": 23,
+   "Dim sum": 12,
+   "Burritos": 21,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 1,
+   "Wine country": 0,
+   "honored": 63,
+   "inspected": 4506
+  },
+  "San Diego": {
+   "restaurants": 4310,
+   "Taquer\u00edas": 33,
+   "Dim sum": 0,
+   "Burritos": 15,
+   "Fish tacos": 20,
+   "Korean BBQ": 5,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 12,
+   "inspected": 0
+  },
+  "San Jose": {
+   "restaurants": 2281,
+   "Taquer\u00edas": 7,
+   "Dim sum": 2,
+   "Burritos": 5,
+   "Fish tacos": 0,
+   "Korean BBQ": 4,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 2,
+   "inspected": 0
+  },
+  "Sacramento": {
+   "restaurants": 2480,
+   "Taquer\u00edas": 6,
+   "Dim sum": 1,
+   "Burritos": 0,
+   "Fish tacos": 3,
+   "Korean BBQ": 4,
+   "Burger stands": 1,
+   "Wine country": 0,
+   "honored": 7,
+   "inspected": 2105
+  },
+  "Oakland": {
+   "restaurants": 1011,
+   "Taquer\u00edas": 33,
+   "Dim sum": 9,
+   "Burritos": 26,
+   "Fish tacos": 0,
+   "Korean BBQ": 2,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 17,
+   "inspected": 0
+  },
+  "Fresno": {
+   "restaurants": 1294,
+   "Taquer\u00edas": 6,
+   "Dim sum": 1,
+   "Burritos": 0,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 0
+  },
+  "Long Beach": {
+   "restaurants": 1155,
+   "Taquer\u00edas": 13,
+   "Dim sum": 2,
+   "Burritos": 0,
+   "Fish tacos": 4,
+   "Korean BBQ": 5,
+   "Burger stands": 1,
+   "Wine country": 0,
+   "honored": 4,
+   "inspected": 1
+  },
+  "Pasadena": {
+   "restaurants": 557,
+   "Taquer\u00edas": 36,
+   "Dim sum": 14,
+   "Burritos": 0,
+   "Fish tacos": 11,
+   "Korean BBQ": 4,
+   "Burger stands": 4,
+   "Wine country": 0,
+   "honored": 1,
+   "inspected": 34
+  },
+  "Santa Barbara": {
+   "restaurants": 442,
+   "Taquer\u00edas": 3,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 5,
+   "inspected": 0
+  },
+  "Berkeley": {
+   "restaurants": 469,
+   "Taquer\u00edas": 24,
+   "Dim sum": 8,
+   "Burritos": 18,
+   "Fish tacos": 0,
+   "Korean BBQ": 2,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 5,
+   "inspected": 0
+  },
+  "Santa Monica": {
+   "restaurants": 601,
+   "Taquer\u00edas": 18,
+   "Dim sum": 3,
+   "Burritos": 0,
+   "Fish tacos": 2,
+   "Korean BBQ": 2,
+   "Burger stands": 3,
+   "Wine country": 0,
+   "honored": 6,
+   "inspected": 503
+  },
+  "Irvine": {
+   "restaurants": 570,
+   "Taquer\u00edas": 14,
+   "Dim sum": 2,
+   "Burritos": 0,
+   "Fish tacos": 4,
+   "Korean BBQ": 2,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 0
+  },
+  "Anaheim": {
+   "restaurants": 857,
+   "Taquer\u00edas": 26,
+   "Dim sum": 2,
+   "Burritos": 0,
+   "Fish tacos": 8,
+   "Korean BBQ": 11,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 2,
+   "inspected": 0
+  },
+  "Riverside": {
+   "restaurants": 752,
+   "Taquer\u00edas": 13,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 2,
+   "Korean BBQ": 2,
+   "Burger stands": 1,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 0
+  },
+  "Bakersfield": {
+   "restaurants": 1209,
+   "Taquer\u00edas": 4,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 1,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 1,
+   "inspected": 0
+  },
+  "Santa Cruz": {
+   "restaurants": 290,
+   "Taquer\u00edas": 8,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 2,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 0
+  },
+  "Napa": {
+   "restaurants": 277,
+   "Taquer\u00edas": 0,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 8,
+   "honored": 1,
+   "inspected": 0
+  },
+  "Palm Springs": {
+   "restaurants": 295,
+   "Taquer\u00edas": 2,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 0
+  },
+  "Monterey": {
+   "restaurants": 199,
+   "Taquer\u00edas": 2,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 0
+  },
+  "San Luis Obispo": {
+   "restaurants": 245,
+   "Taquer\u00edas": 0,
+   "Dim sum": 0,
+   "Burritos": 0,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 0
+  },
+  "Stockton": {
+   "restaurants": 654,
+   "Taquer\u00edas": 3,
+   "Dim sum": 1,
+   "Burritos": 0,
+   "Fish tacos": 0,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
+   "Wine country": 2,
+   "honored": 0,
+   "inspected": 0
+  },
+  "Glendale": {
+   "restaurants": 666,
+   "Taquer\u00edas": 43,
+   "Dim sum": 9,
+   "Burritos": 0,
+   "Fish tacos": 9,
+   "Korean BBQ": 13,
+   "Burger stands": 7,
+   "Wine country": 0,
+   "honored": 1,
+   "inspected": 568
+  },
+  "San Gabriel": {
+   "restaurants": 247,
+   "Taquer\u00edas": 37,
+   "Dim sum": 14,
+   "Burritos": 0,
+   "Fish tacos": 9,
+   "Korean BBQ": 4,
+   "Burger stands": 2,
+   "Wine country": 0,
+   "honored": 0,
+   "inspected": 219
+  }
+ }
+}

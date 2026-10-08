@@ -1,0 +1,2575 @@
+[
+ {
+  "name": "5 Tacos & Beers (Midtown Sacramento)",
+  "address": "1627 16th St",
+  "city": "Sacramento",
+  "zip": "95814",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos con carne (choice of meat)",
+   "fish or shrimp tacos",
+   "tacos dorados",
+   "quesabirrias",
+   "vegetarian and vegan tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Sacramento branch of a small Bay Area taco-and-craft-beer group cooking Jalisco-style food; Tuesday all-you-can-eat taco buffet.",
+  "website": "https://www.5tacos.com/location/midtown-sacramento/",
+  "sources": [
+   {
+    "url": "https://www.5tacos.com/location/midtown-sacramento/",
+    "what": "own location page, live, with current weekly hours (closed Mondays) and Taco Tuesday buffet",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.5tacos.com/walnut-creek-menu-1/",
+    "what": "own Sacramento menu page, live (tacos con carne, fish or shrimp tacos, tacos dorados)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Fiesta Taqueria (West Capitol)",
+  "address": "3023 W Capitol Ave",
+  "city": "West Sacramento",
+  "zip": "95691",
+  "county": "Yolo",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos: asada, pollo asado, carnitas, chorizo, al pastor, chile verde",
+   "lengua, buche, tripa and cabeza",
+   "grilled fish taco",
+   "California burrito",
+   "tortas",
+   "quesadillas",
+   "shrimp plates and mojarras"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "One of two La Fiesta taquerias (West Capitol and Greenback Ln); long meat list including offal cuts, plus seafood plates.",
+  "website": "https://www.taquerialafiesta.com/location/la-fiesta-taqueria-west-capitol/",
+  "sources": [
+   {
+    "url": "https://www.taquerialafiesta.com/location/la-fiesta-taqueria-west-capitol/",
+    "what": "own location page, live, with hours (Sun-Thu 8am-9pm, Fri-Sat 8am-10pm) and online-ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taquerialafiesta.com/menus/",
+    "what": "own menu page, live (meat choices, tacos, fish taco, burritos, tortas)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Fiesta Altena Taqueria",
+  "address": "1105 Alhambra Blvd",
+  "city": "Sacramento",
+  "zip": "95816",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "taco de carne asada",
+   "taco al pastor",
+   "taco de carnitas",
+   "Jalisco-style beef birria taco",
+   "super taco",
+   "burritos",
+   "quesadillas",
+   "sopes",
+   "mariscos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Jalisco-style taqueria with three shops (Folsom, Alhambra Blvd in Sacramento, Elk Grove); menu says tortillas are handmade.",
+  "website": "http://lafiestataqueria.com/",
+  "sources": [
+   {
+    "url": "http://lafiestataqueria.com/",
+    "what": "own site, live, (c) 2025-2026, lists the Folsom, Sacramento (1105 Alhambra Blvd) and Elk Grove shops",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://lafiestataqueria.com/menu.html?loc=sacramento",
+    "what": "own ordering menu, live, (c) 2026 (asada, al pastor, carnitas, birria tacos)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Fiesta Altena Taqueria",
+  "address": "1008 E Bidwell St",
+  "city": "Folsom",
+  "zip": "95630",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "taco de carne asada",
+   "taco al pastor",
+   "taco de carnitas",
+   "Jalisco-style beef birria taco",
+   "super taco",
+   "burritos",
+   "quesadillas",
+   "sopes",
+   "mariscos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Jalisco-style taqueria with three shops (Folsom, Alhambra Blvd in Sacramento, Elk Grove); menu says tortillas are handmade.",
+  "website": "http://lafiestataqueria.com/",
+  "sources": [
+   {
+    "url": "http://lafiestataqueria.com/",
+    "what": "own site, live, (c) 2025-2026, lists the Folsom, Sacramento (1105 Alhambra Blvd) and Elk Grove shops",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "http://lafiestataqueria.com/menu.html?loc=sacramento",
+    "what": "own ordering menu, live, (c) 2026 (asada, al pastor, carnitas, birria tacos)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mas Taco Bar",
+  "address": "1800 15th St, Suite D",
+  "city": "Sacramento",
+  "zip": "95811",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pork al pastor taco",
+   "battered fish and Baja fish tacos",
+   "birria taco",
+   "carnitas taco",
+   "carne asada taco",
+   "short rib taco",
+   "pork belly taco",
+   "fusion tacos (Indian butter chicken, banh mi shrimp)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Untraditional, globally inspired tacos and 50-plus tequilas from Mac Hospitality Group (the Wong brothers); three locations.",
+  "website": "https://www.mastacobar.com/",
+  "sources": [
+   {
+    "url": "https://www.mastacobar.com/",
+    "what": "own site, live, (c) 2026, lists all three addresses with reservation links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.mastacobar.com/menu/",
+    "what": "own menu page, live (tacos list)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mas Taco Bar",
+  "address": "3535 Fair Oaks Blvd, Suite A",
+  "city": "Sacramento",
+  "zip": "95864",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pork al pastor taco",
+   "battered fish and Baja fish tacos",
+   "birria taco",
+   "carnitas taco",
+   "carne asada taco",
+   "short rib taco",
+   "pork belly taco",
+   "fusion tacos (Indian butter chicken, banh mi shrimp)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Untraditional, globally inspired tacos and 50-plus tequilas from Mac Hospitality Group (the Wong brothers); three locations.",
+  "website": "https://www.mastacobar.com/",
+  "sources": [
+   {
+    "url": "https://www.mastacobar.com/",
+    "what": "own site, live, (c) 2026, lists all three addresses with reservation links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.mastacobar.com/menu/",
+    "what": "own menu page, live (tacos list)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mas Taco Bar",
+  "address": "450 Palladio Pkwy",
+  "city": "Folsom",
+  "zip": "95630",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "pork al pastor taco",
+   "battered fish and Baja fish tacos",
+   "birria taco",
+   "carnitas taco",
+   "carne asada taco",
+   "short rib taco",
+   "pork belly taco",
+   "fusion tacos (Indian butter chicken, banh mi shrimp)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Untraditional, globally inspired tacos and 50-plus tequilas from Mac Hospitality Group (the Wong brothers); three locations.",
+  "website": "https://www.mastacobar.com/",
+  "sources": [
+   {
+    "url": "https://www.mastacobar.com/",
+    "what": "own site, live, (c) 2026, lists all three addresses with reservation links",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.mastacobar.com/menu/",
+    "what": "own menu page, live (tacos list)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Masa Masa",
+  "address": "2310 Pleasant Grove Blvd, Suite 130",
+  "city": "Roseville",
+  "zip": "95747",
+  "county": "Placer",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "pork al pastor taco",
+   "chicken taco",
+   "quesabirria taco",
+   "carne asada taco",
+   "chicharrones (crispy pork belly) taco",
+   "tofu al pastor",
+   "adobo cauliflower taco",
+   "fried avocado taco"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Women-owned taco shop; its menu ties each taco to a local charity that the taco's proceeds support.",
+  "website": "https://www.masamasatacos.com/",
+  "sources": [
+   {
+    "url": "https://www.masamasatacos.com/",
+    "what": "own site, live: 'now open', Mon-Sun 11am-9pm, Toast online-ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.masamasatacos.com/menu",
+    "what": "own menu page, live (classic and plant-based tacos)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Loco Taqueria",
+  "address": "195 Blue Ravine Rd, Suite 700",
+  "city": "Folsom",
+  "zip": "95630",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos: carne asada, pollo, carnitas, al pastor, longaniza, pescado, camaron",
+   "Baja fish (cod) taco",
+   "lobster taco",
+   "burritos",
+   "quesadillas",
+   "enchiladas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Folsom taqueria serving breakfast Friday through Monday; site stresses salsas and guacamole made fresh daily.",
+  "website": "https://tacolocotaqueria.com/",
+  "sources": [
+   {
+    "url": "https://tacolocotaqueria.com/",
+    "what": "own site, live, (c) 2026, with address and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacolocotaqueria.com/lunch-and-dinner/",
+    "what": "own lunch & dinner menu page, live (tacos y minis list)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tequileros Taqueria",
+  "address": "801 Howe Ave",
+  "city": "Sacramento",
+  "zip": "95825",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (asada, chicken, al pastor, birria, shrimp)",
+   "taco tequilero",
+   "quesabirria tacos",
+   "ketotacos",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Stockton-based taqueria chain with about 20 locations; brand page lists this shop as open daily 9am-10pm.",
+  "website": "https://www.tequilerostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-locations",
+    "what": "brand's own locations page, live, lists this address with daily 9am-10pm hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-food-menu",
+    "what": "brand's own food menu, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tequileros Taqueria",
+  "address": "640 Carol Dr, Suite 140",
+  "city": "Galt",
+  "zip": "95632",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (asada, chicken, al pastor, birria, shrimp)",
+   "taco tequilero",
+   "quesabirria tacos",
+   "ketotacos",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Stockton-based taqueria chain with about 20 locations; brand page lists this shop as open daily 9am-10pm.",
+  "website": "https://www.tequilerostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-locations",
+    "what": "brand's own locations page, live, lists this address with daily 9am-10pm hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-food-menu",
+    "what": "brand's own food menu, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tequileros Taqueria",
+  "address": "9600 Bruceville Rd, Suite 100",
+  "city": "Elk Grove",
+  "zip": "95757",
+  "county": "Sacramento",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (asada, chicken, al pastor, birria, shrimp)",
+   "taco tequilero",
+   "quesabirria tacos",
+   "ketotacos",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Stockton-based taqueria chain with about 20 locations; brand page lists this shop as open daily 9am-10pm.",
+  "website": "https://www.tequilerostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-locations",
+    "what": "brand's own locations page, live, lists this address with daily 9am-10pm hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-food-menu",
+    "what": "brand's own food menu, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Agave Taqueria",
+  "address": "1285 Grass Valley Hwy",
+  "city": "Auburn",
+  "zip": "95603",
+  "county": "Placer",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos",
+   "fried fish tacos",
+   "grilled fish tacos",
+   "super tacos",
+   "crispy tacos",
+   "super burrito",
+   "menudo",
+   "pozole"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Auburn taqueria whose owners come from Jalisco; full Mexican menu (fajitas, molcajete) alongside its tacos.",
+  "website": "https://www.elagavetaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.elagavetaqueria.com/",
+    "what": "own site, live, with hours (Mon-Sun 10am-9pm), online-ordering link and menu items",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Sombrero Taqueria",
+  "address": "4060 Douglas Blvd",
+  "city": "Granite Bay",
+  "zip": "95746",
+  "county": "Placer",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "street tacos",
+   "burritos",
+   "seafood plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Taqueria and cantina in Granite Bay serving street-style tacos, burritos and seafood.",
+  "website": "https://www.elsombrerogb.com/",
+  "sources": [
+   {
+    "url": "https://www.elsombrerogb.com/",
+    "what": "own site, live, (c) 2026, with weekly hours and holiday hours, online-ordering link",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Guadalajara (Woodland)",
+  "address": "6 W Court St",
+  "city": "Woodland",
+  "zip": "95695",
+  "county": "Yolo",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada crispy taco",
+   "tacos",
+   "super burrito",
+   "tortas",
+   "pozole"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Woodland taqueria; site says it has served Woodland for decades with Jalisco-inspired recipes.",
+  "website": "https://tgwoodland.com/",
+  "sources": [
+   {
+    "url": "https://tgwoodland.com/",
+    "what": "own site, live, (c) 2026, with address and hours (Mon-Fri 9:30am-8:30pm, Sat-Sun 8am-8:30pm)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Al's Ricos Tacos",
+  "address": "2950 Ventura Ave",
+  "city": "Fresno",
+  "zip": "93721",
+  "county": "Fresno",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos: carne asada, lengua, chile verde",
+   "burritos",
+   "breakfast burritos",
+   "tamales",
+   "enchiladas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Two-shop Fresno taqueria (Ventura Ave and Ashlan Ave) serving tacos, burritos, tamales and breakfast.",
+  "website": "https://alsricos.com/",
+  "sources": [
+   {
+    "url": "https://alsricos.com/",
+    "what": "own site, live, 2026, lists both locations with hours and what they serve",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Al's Ricos Tacos",
+  "address": "3069 W Ashlan Ave",
+  "city": "Fresno",
+  "zip": "93722",
+  "county": "Fresno",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos: carne asada, lengua, chile verde",
+   "burritos",
+   "breakfast burritos",
+   "tamales",
+   "enchiladas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Two-shop Fresno taqueria (Ventura Ave and Ashlan Ave) serving tacos, burritos, tamales and breakfast.",
+  "website": "https://alsricos.com/",
+  "sources": [
+   {
+    "url": "https://alsricos.com/",
+    "what": "own site, live, 2026, lists both locations with hours and what they serve",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Don Pepe Taqueria",
+  "address": "7029 N Ingram Ave, #108",
+  "city": "Fresno",
+  "zip": "93650",
+  "county": "Fresno",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp and fish tacos",
+   "carne asada",
+   "tortas",
+   "super burritos",
+   "quesadillas",
+   "combination plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "North Fresno taqueria; seafood tacos alongside asada, tortas and burritos.",
+  "website": "http://www.taqueriadonpepe.com/",
+  "sources": [
+   {
+    "url": "http://www.taqueriadonpepe.com/",
+    "what": "own site, live, (c) 2026, with address, business hours and dish list",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dos Tacos",
+  "address": "3621 California Ave",
+  "city": "Bakersfield",
+  "zip": "93309",
+  "county": "Kern",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada taco",
+   "chicken taco",
+   "birria taco",
+   "quesobirria taco",
+   "fish taco",
+   "shrimp taco",
+   "burritos",
+   "asada fries"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Bakersfield street-taco shop with two locations; also offers franchises.",
+  "website": "https://dostacosonline.com/",
+  "sources": [
+   {
+    "url": "https://dostacosonline.com/locations",
+    "what": "own locations page, live, lists this location with phone and pickup ordering and weekly hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://dostacosonline.com/menu",
+    "what": "own menu page, live (taco list)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dos Tacos",
+  "address": "3880 Gosford Rd",
+  "city": "Bakersfield",
+  "zip": null,
+  "county": "Kern",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "asada taco",
+   "chicken taco",
+   "birria taco",
+   "quesobirria taco",
+   "fish taco",
+   "shrimp taco",
+   "burritos",
+   "asada fries"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Bakersfield street-taco shop with two locations; also offers franchises.",
+  "website": "https://dostacosonline.com/",
+  "sources": [
+   {
+    "url": "https://dostacosonline.com/locations",
+    "what": "own locations page, live, lists this location with phone and pickup ordering",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://dostacosonline.com/menu",
+    "what": "own menu page, live (taco list)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "El Taco Grande",
+  "address": "7357 N Blackstone Ave",
+  "city": "Fresno",
+  "zip": "93650",
+  "county": "Fresno",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "taco grande (two corn tortillas, jack cheese, whole pinto beans)",
+   "mini taco",
+   "meatless taco",
+   "carnitas",
+   "al pastor",
+   "cabeza",
+   "lengua",
+   "breakfast burritos",
+   "menudo (weekends)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Fresno taco counter serving breakfast all day; its signature taco grande comes on two corn tortillas with beans and cheese.",
+  "website": "https://eltacogrande.net/",
+  "sources": [
+   {
+    "url": "https://eltacogrande.net/",
+    "what": "own site, live, with address and hours (open 7 days)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://eltacogrande.net/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Los Cazadores Taqueria",
+  "address": "2282 E Yosemite Ave",
+  "city": "Manteca",
+  "zip": "95336",
+  "county": "San Joaquin",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "soft tacos",
+   "quesabirrias",
+   "menudo",
+   "roasted chicken and ribs (Thu-Sat)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Manteca taqueria from the group behind Jose's Birrieria; grills chicken and ribs Thursday to Saturday.",
+  "website": "https://loscazadorestaqueria.com/",
+  "sources": [
+   {
+    "url": "https://loscazadorestaqueria.com/",
+    "what": "own site, live, with address, hours (9am-9pm), pickup/delivery ordering page; site media uploaded 2025-2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tequileros Taqueria",
+  "address": "1330 E Yosemite Ave",
+  "city": "Manteca",
+  "zip": "95336",
+  "county": "San Joaquin",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (asada, chicken, al pastor, birria, shrimp)",
+   "taco tequilero",
+   "quesabirria tacos",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Stockton-based taqueria chain with about 20 locations; brand page lists this shop as open daily 9am-10pm.",
+  "website": "https://www.tequilerostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-locations",
+    "what": "brand's own locations page, live, lists this address with daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-food-menu",
+    "what": "brand's own food menu, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Sancho's Tacos (Bakersfield)",
+  "address": "700 18th St",
+  "city": "Bakersfield",
+  "zip": "93301",
+  "county": "Kern",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "OG tri-tip taco",
+   "carnitas taco",
+   "grilled chicken taco",
+   "grilled marinated fish taco",
+   "garlic-butter shrimp taco",
+   "beer-battered fish and shrimp tacos",
+   "artichoke-mushroom-spinach taco",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Bakersfield outpost of a Southern California beach taco chain (seven locations, most in Orange County).",
+  "website": "https://sanchostacos.com/",
+  "sources": [
+   {
+    "url": "https://sanchostacos.com/hours-locations/",
+    "what": "brand's own hours & locations page, live, lists 700 18th St with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://sanchostacos.com/menu/",
+    "what": "brand's own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Chapala",
+  "address": "205 S Fresno Ave",
+  "city": "Stockton",
+  "zip": "95203",
+  "county": "San Joaquin",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "street tacos: carne asada, al pastor, carnitas",
+   "regular and super burritos",
+   "breakfast burritos",
+   "tostadas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Early-opening Stockton taqueria (from 6am weekdays) known for breakfast burritos; closed Sundays.",
+  "website": "https://taqueriachapala209.com/",
+  "sources": [
+   {
+    "url": "https://taqueriachapala209.com/",
+    "what": "own site, live, with address and hours (Mon-Fri 6am-5pm, Sat 7am-2pm)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://taqueriachapala209.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria El Rodeo",
+  "address": "1313 E Pacheco Blvd, Suite D",
+  "city": "Los Banos",
+  "zip": "93635",
+  "county": "Merced",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "regular taco on handmade corn tortilla",
+   "'taco truck' taco",
+   "Taco El Rodeo (super)",
+   "taco de camaron",
+   "taco de pescado",
+   "crispy taco",
+   "barbacoa",
+   "carnitas",
+   "birria de chivo (Fri-Sun)",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Los Banos taqueria with handmade corn tortillas; goat birria on weekends.",
+  "website": "https://www.taqueriaelrodeo.com/",
+  "sources": [
+   {
+    "url": "https://www.taqueriaelrodeo.com/menu",
+    "what": "own online-ordering site, live, with full menu, address and daily opening hours",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Las Plebes Tacos y Mariscos",
+  "address": "4107 E Jensen Ave",
+  "city": "Fresno",
+  "zip": "93725",
+  "county": "Fresno",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos and seafood tacos on handmade tortillas",
+   "vampiros",
+   "seafood cocktails",
+   "aguachiles",
+   "ceviche tostadas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Sinaloa-style tacos-and-seafood spot with two Fresno locations (Jensen Ave and Cesar Chavez Blvd).",
+  "website": "https://lasplebes.com/",
+  "sources": [
+   {
+    "url": "https://lasplebes.com/",
+    "what": "own site, live, (c) 2026, lists both locations with hours and the menu sections",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Las Plebes Tacos y Mariscos",
+  "address": "4326 E Cesar Chavez Blvd",
+  "city": "Fresno",
+  "zip": null,
+  "county": "Fresno",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos and seafood tacos on handmade tortillas",
+   "vampiros",
+   "seafood cocktails",
+   "aguachiles",
+   "ceviche tostadas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Sinaloa-style tacos-and-seafood spot with two Fresno locations (Jensen Ave and Cesar Chavez Blvd).",
+  "website": "https://lasplebes.com/",
+  "sources": [
+   {
+    "url": "https://lasplebes.com/",
+    "what": "own site, live, (c) 2026, lists both locations with hours and the menu sections",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria San Jose",
+  "address": "2700 Coffee Rd",
+  "city": "Modesto",
+  "zip": "95355",
+  "county": "Stanislaus",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "regular taco",
+   "super taco",
+   "taco plates",
+   "burritos",
+   "breakfast plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Two-location Modesto taqueria (Coffee Road and Prescott Road).",
+  "website": "https://www.taqueriassanjose.net/",
+  "sources": [
+   {
+    "url": "https://www.taqueriassanjose.net/",
+    "what": "own site, live, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueriassanjose.net/mexican-restaurant-locations",
+    "what": "own locations page, live, with both addresses and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueriassanjose.net/mexican-restaurant-menu",
+    "what": "own menu page, live (tacos section)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria San Jose",
+  "address": "1800 Prescott Rd, Suite Q",
+  "city": "Modesto",
+  "zip": "95350",
+  "county": "Stanislaus",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "regular taco",
+   "super taco",
+   "taco plates",
+   "burritos",
+   "breakfast plates"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Two-location Modesto taqueria (Coffee Road and Prescott Road).",
+  "website": "https://www.taqueriassanjose.net/",
+  "sources": [
+   {
+    "url": "https://www.taqueriassanjose.net/",
+    "what": "own site, live, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueriassanjose.net/mexican-restaurant-locations",
+    "what": "own locations page, live, with both addresses and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taqueriassanjose.net/mexican-restaurant-menu",
+    "what": "own menu page, live (tacos section)",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tia Juana Taqueria",
+  "address": "430 Baker St",
+  "city": "Bakersfield",
+  "zip": "93305",
+  "county": "Kern",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada tacos",
+   "birria tacos",
+   "grilled or fried shrimp tacos",
+   "carnitas",
+   "burritos",
+   "quesadillas",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "East Bakersfield taqueria; site says tortillas are homemade; open daily from 10am.",
+  "website": "https://tiajuanataqueria.com/",
+  "sources": [
+   {
+    "url": "https://tiajuanataqueria.com/",
+    "what": "own site, live, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tiajuanataqueria.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tiajuanataqueria.com/locations/",
+    "what": "own locations page, live: 430 Baker St, open everyday 10am",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tequileros Taqueria",
+  "address": "4343 Pacific Ave",
+  "city": "Stockton",
+  "zip": "95207",
+  "county": "San Joaquin",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (asada, chicken, al pastor, birria, shrimp)",
+   "taco tequilero",
+   "quesabirria tacos",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Stockton-based taqueria chain with about 20 locations; brand page lists this shop as open daily 9am-10pm.",
+  "website": "https://www.tequilerostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-locations",
+    "what": "brand's own locations page, live, lists this address with daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-food-menu",
+    "what": "brand's own food menu, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tequileros Taqueria",
+  "address": "7840 N West Ln, D4",
+  "city": "Stockton",
+  "zip": "95210",
+  "county": "San Joaquin",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (asada, chicken, al pastor, birria, shrimp)",
+   "taco tequilero",
+   "quesabirria tacos",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Stockton-based taqueria chain with about 20 locations; brand page lists this shop as open daily 9am-10pm.",
+  "website": "https://www.tequilerostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-locations",
+    "what": "brand's own locations page, live, lists this address with daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-food-menu",
+    "what": "brand's own food menu, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tequileros Taqueria",
+  "address": "4925 Sisk Rd",
+  "city": "Salida",
+  "zip": "95368",
+  "county": "Stanislaus",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (asada, chicken, al pastor, birria, shrimp)",
+   "taco tequilero",
+   "quesabirria tacos",
+   "burritos",
+   "tortas",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Stockton-based taqueria chain with about 20 locations; brand page lists this shop as open daily 9am-10pm.",
+  "website": "https://www.tequilerostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-locations",
+    "what": "brand's own locations page, live, lists this address with daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tequilerostaqueria.com/tequileros-taqueria-food-menu",
+    "what": "brand's own food menu, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "La Elegante Taqueria",
+  "address": "1423 Kern St",
+  "city": "Fresno",
+  "zip": "93706",
+  "county": "Fresno",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "street-style tacos",
+   "burritos",
+   "quesadillas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown Fresno lunch taqueria, open Tuesday to Saturday 10am-2pm; no catering.",
+  "website": "https://laelegantetaqueria.com/",
+  "sources": [
+   {
+    "url": "https://laelegantetaqueria.com/",
+    "what": "own site, live, with hours and a linked 2024-2025 menu PDF",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Bros (Ming Ave)",
+  "address": "4521 Ming Ave",
+  "city": "Bakersfield",
+  "zip": "93309",
+  "county": "Kern",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "birria tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Bakersfield taco shop that bills itself 'Home of the Birria'; four Bakersfield locations.",
+  "website": "https://tacobros.com/",
+  "sources": [
+   {
+    "url": "https://tacobros.com/locations/",
+    "what": "own locations page, live, (c) 2026, lists 4521 Ming Ave with online ordering",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Las Palmas Taco Bar",
+  "address": "55 Front St",
+  "city": "Santa Cruz",
+  "zip": "95060",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos (two-taco mix or match)",
+   "ground beef crispy taco",
+   "burritos",
+   "enchiladas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Downtown Santa Cruz taco shop; site says the family behind it spans four generations; closing hours change with the season.",
+  "website": "https://laspalmastacobar.com/",
+  "sources": [
+   {
+    "url": "https://laspalmastacobar.com/",
+    "what": "own site, live, (c) 2026, with business hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://laspalmastacobar.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lilly's Taqueria",
+  "address": "310 Chapala St",
+  "city": "Santa Barbara",
+  "zip": "93101",
+  "county": "Santa Barbara",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos al vapor (steamed): asada",
+   "adobada (al pastor)",
+   "lengua",
+   "cabeza",
+   "tripas (Fri-Sun only)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Specializes in steamed tacos al vapor; two locations (Santa Barbara and Goleta).",
+  "website": "https://www.lillystacos.com/",
+  "sources": [
+   {
+    "url": "https://www.lillystacos.com/",
+    "what": "own site, live, with both addresses, hours (open Wednesday through Monday 10am-9pm) and the taco list",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Lilly's Taqueria",
+  "address": "290 D Storke Rd",
+  "city": "Goleta",
+  "zip": "93117",
+  "county": "Santa Barbara",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos al vapor (steamed): asada",
+   "adobada (al pastor)",
+   "lengua",
+   "cabeza",
+   "tripas (Fri-Sun only)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Specializes in steamed tacos al vapor; two locations (Santa Barbara and Goleta).",
+  "website": "https://www.lillystacos.com/",
+  "sources": [
+   {
+    "url": "https://www.lillystacos.com/",
+    "what": "own site, live, with both addresses, hours (open Wednesday through Monday 10am-9pm) and the taco list",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Primos",
+  "address": "425 Barson St",
+  "city": "Santa Cruz",
+  "zip": "95060",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "regular and super tacos",
+   "fish taco",
+   "grilled shrimp taco",
+   "machete tacos",
+   "quesabirrias with consomme",
+   "super burrito",
+   "huaraches",
+   "menudo (weekends)",
+   "ramen birria"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family taqueria on Barson Street; open daily 10am-10pm.",
+  "website": "https://savortaquerialosprimos.com/",
+  "sources": [
+   {
+    "url": "https://savortaquerialosprimos.com/",
+    "what": "own site, live, (c) 2026, with address, daily hours and full menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Maiz Picante Taqueria",
+  "address": "2714 De La Vina St",
+  "city": "Santa Barbara",
+  "zip": "93105",
+  "county": "Santa Barbara",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos on nixtamal corn tortillas: cabeza, lengua, birria, al pastor, carnitas, chorizo",
+   "quesabirria",
+   "costra al pastor (cheese crust)",
+   "taco Tijuana",
+   "plant-based 'beyond pastor'"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Modern taqueria using nixtamal tortillas and Mexican products; parking in the rear.",
+  "website": "https://www.maizpicante.com/",
+  "sources": [
+   {
+    "url": "https://www.maizpicante.com/location",
+    "what": "own location page, live, with hours (11am-10pm / 11am-9pm)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.maizpicante.com/menu-tacos",
+    "what": "own taco menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Mijo's Taqueria",
+  "address": "200 Monterey Ave",
+  "city": "Capitola",
+  "zip": "95010",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "street tacos: carne asada, chorizo, al pastor, carnitas, chicken, tinga",
+   "Baja fish taco",
+   "grilled fish taco",
+   "hongos (mushroom) taco",
+   "rolled chicken tacos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Capitola Village taqueria with a happy hour and a catering taco bar.",
+  "website": "https://mijostaqueria.com/",
+  "sources": [
+   {
+    "url": "https://mijostaqueria.com/",
+    "what": "own site, live, with online-ordering link; page data updated 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://mijostaqueria.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Papa Chevo's Taco Shop",
+  "address": "1760 Fremont Blvd, A2",
+  "city": "Seaside",
+  "zip": "93955",
+  "county": "Monterey",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "tortas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Late-night taco shop (open until midnight or later most nights); location page says 'Established 1996'. Brand also has three Arizona shops.",
+  "website": "https://www.papachevos.com/",
+  "sources": [
+   {
+    "url": "https://www.papachevos.com/seaside-ca/",
+    "what": "own location page, live, with address and daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.papachevos.com/menu/",
+    "what": "own menu page, live ('Tacos, Tortas, Burritos and more')",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Papa Chevo's Taco Shop",
+  "address": "3038 Del Monte Blvd",
+  "city": "Marina",
+  "zip": "93933",
+  "county": "Monterey",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "tortas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Late-night taco shop (open until midnight or later most nights); location page says 'Established 1997'. Brand also has three Arizona shops.",
+  "website": "https://www.papachevos.com/",
+  "sources": [
+   {
+    "url": "https://www.papachevos.com/marina-ca/",
+    "what": "own location page, live, with address and daily hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.papachevos.com/menu/",
+    "what": "own menu page, live ('Tacos, Tortas, Burritos and more')",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taco Temple",
+  "address": "2680 N Main St",
+  "city": "Morro Bay",
+  "zip": "93442",
+  "county": "San Luis Obispo",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "Baja tacos",
+   "Alaskan cod taco",
+   "calamari taco",
+   "crab cake taco",
+   "ahi poke street tacos",
+   "street tacos (chicken or asada)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "California-fusion taco spot in the Spencer's shopping center; seafood tacos make up much of the menu.",
+  "website": "https://tacotemple.com/",
+  "sources": [
+   {
+    "url": "https://tacotemple.com/",
+    "what": "own site, live, with address, hours (Mon-Sun 11am-8pm) and online-ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://tacotemple.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tacos El Jerry",
+  "address": "35 E Lake Ave",
+  "city": "Watsonville",
+  "zip": "95076",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos",
+   "super taco",
+   "veggie taco",
+   "quesabirrias",
+   "mulitas",
+   "tortas",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Watsonville taco spot open 7 days with late hours; its site also lists part-time locations.",
+  "website": "https://www.tacoseljerrywatsonville.com/",
+  "sources": [
+   {
+    "url": "https://www.tacoseljerrywatsonville.com/",
+    "what": "own site, live, with menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.tacoseljerrywatsonville.com/locations",
+    "what": "own locations page, live: 35 E Lake Ave, open 7 days, 11am-11pm/midnight",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Agave",
+  "address": "1836 Soquel Ave",
+  "city": "Santa Cruz",
+  "zip": "95062",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "regular taco",
+   "birria with consomme",
+   "super and jumbo burritos",
+   "quesadillas",
+   "vegan options"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Eastside Santa Cruz taqueria open 9am-10pm.",
+  "website": "https://www.taqueriaagave.com/",
+  "sources": [
+   {
+    "url": "https://www.taqueriaagave.com/",
+    "what": "own site, live, with address, hours, menu and online-ordering link",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria La Katrina",
+  "address": "1719 Mission St",
+  "city": "Santa Cruz",
+  "zip": "95060",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria",
+   "fishtaco"
+  ],
+  "open": true,
+  "dishes": [
+   "tacos: asada, carnitas, pollo asado, barbacoa, chile verde, al pastor, cochinita pibil",
+   "Baja fish taco",
+   "shrimp taco",
+   "quesabirria with consome",
+   "crispy taco"
+  ],
+  "opened": null,
+  "brand_founded": 2022,
+  "chain": false,
+  "note": "Taqueria mixing Jalisco and Mexico City styles; open daily 7am-9pm; Taco Tuesday al pastor special.",
+  "website": "https://www.taquerialakatrina.com/",
+  "sources": [
+   {
+    "url": "https://www.taquerialakatrina.com/",
+    "what": "own site, live, with address and daily hours; says it started in 2022",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taquerialakatrina.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Gordos",
+  "address": "7488 Soquel Dr",
+  "city": "Aptos",
+  "zip": "95003",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada tacos",
+   "carnitas tacos",
+   "al pastor taco",
+   "buche and cabeza tacos",
+   "Baja shrimp taco",
+   "crunchy tacos",
+   "breakfast tacos"
+  ],
+  "opened": null,
+  "brand_founded": 2001,
+  "chain": false,
+  "note": "Family-owned Aptos taqueria; site says it has served Aptos since 2001.",
+  "website": "https://www.taquerialosgordosaptos.com/",
+  "sources": [
+   {
+    "url": "https://www.taquerialosgordosaptos.com/",
+    "what": "own site, live, with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.taquerialosgordosaptos.com/menu",
+    "what": "own menu & ordering page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Pericos",
+  "address": "139 Water St",
+  "city": "Santa Cruz",
+  "zip": "95060",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "al pastor taco",
+   "fish soft taco",
+   "shrimp taco",
+   "Perico taco",
+   "super taco",
+   "crispy taco",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Santa Cruz County taqueria with three shops (downtown Santa Cruz, Aptos, Corralitos).",
+  "website": "https://taquerialospericos.com/",
+  "sources": [
+   {
+    "url": "https://taquerialospericos.com/",
+    "what": "own site, live, (c) 2026, with menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://taquerialospericos.com/pickup/",
+    "what": "own pickup-ordering page, live, lists all three locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Pericos",
+  "address": "531 Corralitos Rd",
+  "city": "Watsonville",
+  "zip": "95076",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "al pastor taco",
+   "fish soft taco",
+   "shrimp taco",
+   "Perico taco",
+   "super taco",
+   "crispy taco",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Santa Cruz County taqueria with three shops (downtown Santa Cruz, Aptos, Corralitos).",
+  "website": "https://taquerialospericos.com/",
+  "sources": [
+   {
+    "url": "https://taquerialospericos.com/",
+    "what": "own site, live, (c) 2026, with menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://taquerialospericos.com/pickup/",
+    "what": "own pickup-ordering page, live, lists all three locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Taqueria Los Pericos",
+  "address": "36 Rancho Del Mar",
+  "city": "Aptos",
+  "zip": "95003",
+  "county": "Santa Cruz",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "al pastor taco",
+   "fish soft taco",
+   "shrimp taco",
+   "Perico taco",
+   "super taco",
+   "crispy taco",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Santa Cruz County taqueria with three shops (downtown Santa Cruz, Aptos, Corralitos).",
+  "website": "https://taquerialospericos.com/",
+  "sources": [
+   {
+    "url": "https://taquerialospericos.com/",
+    "what": "own site, live, (c) 2026, with menu",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://taquerialospericos.com/pickup/",
+    "what": "own pickup-ordering page, live, lists all three locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Aca Taco",
+  "address": "133 Broadway St",
+  "city": "Chico",
+  "zip": "95928",
+  "county": "Butte",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "pollo asado taco",
+   "al pastor taco",
+   "fajita taco",
+   "veggie tacos",
+   "mini-tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1994,
+  "chain": false,
+  "note": "Chico taco shop with two locations (downtown Broadway and Nord Ave area); site says it has served Chico since 1994.",
+  "website": "https://acataco.com/",
+  "sources": [
+   {
+    "url": "https://acataco.com/",
+    "what": "own site, live, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://acataco.com/locations/",
+    "what": "own locations page, live, with both addresses and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://acataco.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Aca Taco (Nord)",
+  "address": "1000 W Sacramento Ave, Suite D",
+  "city": "Chico",
+  "zip": "95926",
+  "county": "Butte",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "carne asada taco",
+   "pollo asado taco",
+   "al pastor taco",
+   "fajita taco",
+   "veggie tacos",
+   "mini-tacos",
+   "burritos"
+  ],
+  "opened": null,
+  "brand_founded": 1994,
+  "chain": false,
+  "note": "Chico taco shop with two locations (downtown Broadway and Nord Ave area); site says it has served Chico since 1994.",
+  "website": "https://acataco.com/",
+  "sources": [
+   {
+    "url": "https://acataco.com/",
+    "what": "own site, live, (c) 2026",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://acataco.com/locations/",
+    "what": "own locations page, live, with both addresses and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://acataco.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Dos Amigos Taqueria",
+  "address": "1340 Churn Creek Rd, Suite C5",
+  "city": "Redding",
+  "zip": "96003",
+  "county": "Shasta",
+  "kinds": [
+   "taqueria"
+  ],
+  "open": true,
+  "dishes": [
+   "quesabirria tacos",
+   "birria plate",
+   "super soft taco",
+   "taco mexicano",
+   "crispy taco",
+   "super shrimp taco",
+   "super fish taco",
+   "burritos",
+   "tortas"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Redding taqueria whose menu leads with birria and quesabirria.",
+  "website": "https://dosamigostaq.com/",
+  "sources": [
+   {
+    "url": "https://dosamigostaq.com/",
+    "what": "own site, live, (c) 2024, with address and online-ordering link",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://dosamigostaq.com/menu/",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Tai Pan Dim Sum & Bakery",
+  "address": "4400 Freeport Blvd, Suite 160",
+  "city": "Sacramento",
+  "zip": "95822",
+  "county": "Sacramento",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "steamed and baked BBQ pork buns",
+   "custard buns",
+   "chive and shrimp dumplings",
+   "seafood and pork shu mai",
+   "BBQ pork rice noodle rolls",
+   "sticky rice in lotus leaf"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Family-run dim sum and Chinese bakery shop in Sutterville Square (order from the menu; online ordering); opens 7am.",
+  "website": "https://taipanusa.com/",
+  "sources": [
+   {
+    "url": "https://taipanusa.com/",
+    "what": "own site, live, (c) 2025, hours 7am-6pm, 'now offering online orders'",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://taipanusa.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://whatnow.com/sacramento/restaurants/dim-sum-bakery-in-san-jose-expanding-to-sacramento",
+    "what": "WhatNow Sacramento news story (July 11, 2025) on the family's new dim sum and bakery concept at this address",
+    "date": "2025-07-11"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "88 Bao Bao",
+  "address": "4181 Thrive Dr, #140",
+  "city": "Roseville",
+  "zip": "95678",
+  "county": "Placer",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "pork xiao long bao",
+   "shrimp and pork shaomai (siu mai)",
+   "shrimp dumplings (har gow)",
+   "BBQ pork buns (cha siu bao)",
+   "sticky rice shaomai",
+   "custard buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Dim sum and soup-dumpling chain from the Bay Area; menu-order dim sum all day (no carts mentioned).",
+  "website": "https://88baobao.menu11.com/roseville/order",
+  "sources": [
+   {
+    "url": "https://88baobao.menu11.com/roseville/order",
+    "what": "restaurant's own online-ordering menu, live, with this address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.88baobaous.com/",
+    "what": "brand's own site, live, lists this city among its locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "88 Bao Bao",
+  "address": "865 Russell Blvd, Unit 130",
+  "city": "Davis",
+  "zip": "95616",
+  "county": "Yolo",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "pork xiao long bao",
+   "shrimp and pork shaomai (siu mai)",
+   "shrimp dumplings (har gow)",
+   "BBQ pork buns (cha siu bao)",
+   "sticky rice shaomai",
+   "custard buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Dim sum and soup-dumpling chain from the Bay Area; menu-order dim sum all day (no carts mentioned).",
+  "website": "https://88baobao.menu11.com/davis/order",
+  "sources": [
+   {
+    "url": "https://88baobao.menu11.com/davis/order",
+    "what": "restaurant's own online-ordering menu, live, with this address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.88baobaous.com/",
+    "what": "brand's own site, live, lists this city among its locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "88 Bao Bao",
+  "address": "10710 Trinity Pkwy, Suite C",
+  "city": "Stockton",
+  "zip": null,
+  "county": "San Joaquin",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "pork xiao long bao",
+   "shrimp and pork shaomai (siu mai)",
+   "shrimp dumplings (har gow)",
+   "BBQ pork buns (cha siu bao)",
+   "sticky rice shaomai",
+   "custard buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Dim sum and soup-dumpling chain from the Bay Area; menu-order dim sum all day (no carts mentioned). Ordering page prints the ZIP as 94210, so ZIP left blank.",
+  "website": "https://88baobao.menu11.com/stockton/order",
+  "sources": [
+   {
+    "url": "https://88baobao.menu11.com/stockton/order",
+    "what": "restaurant's own online-ordering menu, live, with this address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.88baobaous.com/",
+    "what": "brand's own site, live, lists this city among its locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "88 Bao Bao",
+  "address": "2235 W Atherton Dr, #108",
+  "city": "Manteca",
+  "zip": "95337",
+  "county": "San Joaquin",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "pork xiao long bao",
+   "shrimp and pork shaomai (siu mai)",
+   "shrimp dumplings (har gow)",
+   "BBQ pork buns (cha siu bao)",
+   "sticky rice shaomai",
+   "custard buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Dim sum and soup-dumpling chain from the Bay Area; menu-order dim sum all day (no carts mentioned).",
+  "website": "https://88baobao.menu11.com/manteca/order",
+  "sources": [
+   {
+    "url": "https://88baobao.menu11.com/manteca/order",
+    "what": "restaurant's own online-ordering menu, live, with this address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.88baobaous.com/",
+    "what": "brand's own site, live, lists this city among its locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "88 Bao Bao",
+  "address": "3564 G St",
+  "city": "Merced",
+  "zip": "95340",
+  "county": "Merced",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "pork xiao long bao",
+   "shrimp and pork shaomai (siu mai)",
+   "shrimp dumplings (har gow)",
+   "BBQ pork buns (cha siu bao)",
+   "sticky rice shaomai",
+   "custard buns"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Dim sum and soup-dumpling chain from the Bay Area; menu-order dim sum all day (no carts mentioned).",
+  "website": "https://88baobao.menu11.com/merced/order",
+  "sources": [
+   {
+    "url": "https://88baobao.menu11.com/merced/order",
+    "what": "restaurant's own online-ordering menu, live, with this address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.88baobaous.com/",
+    "what": "brand's own site, live, lists this city among its locations",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Hidden Dumpling House",
+  "address": "9635 E Stockton Blvd",
+  "city": "Elk Grove",
+  "zip": "95624",
+  "county": "Sacramento",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "siu mai",
+   "crystal shrimp dumplings (har gow)",
+   "xiao long bao",
+   "sheng jian bao (pan-fried pork buns)"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Dumpling house whose menu includes Cantonese dim sum items (menu order); site also lists a second Sacramento shop.",
+  "website": "https://www.hiddendumplinghouse.com/",
+  "sources": [
+   {
+    "url": "https://www.hiddendumplinghouse.com/",
+    "what": "own site, live, with address and hours (Mon-Sun 11am-9pm)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.hiddendumplinghouse.com/onlinemenu",
+    "what": "own online menu, live, updated 2026",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Little Fat Dumpling",
+  "address": "8482 N Friant Rd, Suite 103",
+  "city": "Fresno",
+  "zip": "93720",
+  "county": "Fresno",
+  "kinds": [
+   "dimsum"
+  ],
+  "open": true,
+  "dishes": [
+   "shrimp dumplings",
+   "BBQ pork buns",
+   "egg custard buns",
+   "pork xiao long bao"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "North Fresno dumpling house with dim sum items on its daily menu (menu order).",
+  "website": "https://www.littlefatdumpling.com/",
+  "sources": [
+   {
+    "url": "https://www.littlefatdumpling.com/",
+    "what": "own site, live, with address and hours (Mon-Sun 11am-9pm)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.littlefatdumpling.com/menu",
+    "what": "own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Daikon Korean BBQ",
+  "address": "3636 N Freeway Blvd",
+  "city": "Sacramento",
+  "zip": "95834",
+  "county": "Sacramento",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "thick-cut pork belly",
+   "garlic soy and spicy pork belly",
+   "pork bulgogi",
+   "brisket",
+   "ribeye bulgogi",
+   "LA galbi"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "All-you-can-eat Korean barbecue in Natomas; diners grill at the table ('order, grill, eat & repeat').",
+  "website": "https://www.daikonkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.daikonkoreanbbq.com/",
+    "what": "own site, live, (c) 2026, address and hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.daikonkoreanbbq.com/korean-bbq-menu",
+    "what": "own AYCE menu, live, with grill rules",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Ember Korean BBQ",
+  "address": "9163 E Stockton Blvd, Suite 360",
+  "city": "Elk Grove",
+  "zip": "95624",
+  "county": "Sacramento",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "brisket",
+   "saeng galbi",
+   "AYCE meats",
+   "kimchi jeon"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": false,
+  "note": "Elk Grove Korean barbecue where diners cook at the table; posts 2025-2026 dated menus.",
+  "website": "https://www.emberkbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.emberkbbq.com/",
+    "what": "own site, live, with hours (Sun-Thu 11am-10pm, Fri-Sat 11am-11pm)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.emberkbbq.com/menu",
+    "what": "own menu page, live, links 'ember-menu-2026' and an Aug 2025 take-out menu",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Gen Korean BBQ House (Sacramento)",
+  "address": "1689 Arden Way, Suite 1148",
+  "city": "Sacramento",
+  "zip": "95815",
+  "county": "Sacramento",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "marinated beef slices for grilling",
+   "marinated chicken",
+   "grilled prawns",
+   "all-you-can-eat menu"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "Sacramento branch of a national all-you-can-eat Korean barbecue chain; menu meats are served raw for grilling at the table.",
+  "website": "https://genkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://genkoreanbbq.com/locations",
+    "what": "brand's own locations page, live, lists Gen Sacramento at this address with hours",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://genkoreanbbq.com/menu",
+    "what": "brand's own menu page, live",
+    "date": "2026-10-07"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Oz Korean BBQ",
+  "address": "3343 Bradshaw Rd",
+  "city": "Sacramento",
+  "zip": "95827",
+  "county": "Sacramento",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "chadol (thin brisket)",
+   "galbi (several styles)",
+   "pork belly (plain, garlic, spicy)",
+   "AYCE menu"
+  ],
+  "opened": null,
+  "brand_founded": 2004,
+  "chain": false,
+  "note": "Family-run Sacramento-area Korean barbecue; meats cooked on table grills.",
+  "website": "https://ozkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://ozkoreanbbq.com/",
+    "what": "own site, live, (c) 2025, address and hours (Sun-Thu 11am-10pm, Fri-Sat 11am-11pm)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://ozkoreanbbq.com/ayce-menu/",
+    "what": "own AYCE menu, live (priced per grill)",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://whatnow.com/sacramento/restaurants/oz-korean-bbq-to-join-palladio-in-folsom/",
+    "what": "WhatNow Sacramento story (July 5, 2024) stating the chain opened its first location in 2004 (brand year only)",
+    "date": "2024-07-05"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Oz Korean BBQ (Elk Grove)",
+  "address": "2605 West Taron Ct",
+  "city": "Elk Grove",
+  "zip": "95757",
+  "county": "Sacramento",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "chadol (thin brisket)",
+   "galbi (several styles)",
+   "pork belly (plain, garlic, spicy)",
+   "AYCE menu"
+  ],
+  "opened": null,
+  "brand_founded": 2004,
+  "chain": false,
+  "note": "Elk Grove (Stonelake Landing) branch of the family-run Oz Korean BBQ; meats cooked on table grills.",
+  "website": "https://ozkoreanbbq.com/",
+  "sources": [
+   {
+    "url": "https://ozkoreanbbq.com/",
+    "what": "own site, live, (c) 2025, lists 2605 West Taron Ct, Elk Grove",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://ozkoreanbbq.com/ayce-menu/",
+    "what": "own AYCE menu, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://whatnow.com/sacramento/restaurants/oz-korean-bbq-to-join-palladio-in-folsom/",
+    "what": "WhatNow Sacramento story (July 5, 2024) placing an Oz branch in Elk Grove's Stonelake Landing and dating the chain's first location to 2004 (brand year only)",
+    "date": "2024-07-05"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Seapot Hot Pot & Korean BBQ (Sacramento)",
+  "address": "6009 Florin Rd",
+  "city": "Sacramento",
+  "zip": "95823",
+  "county": "Sacramento",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "galbi (marinated short rib)",
+   "beef and spicy beef bulgogi",
+   "chicken bulgogi",
+   "pork belly (plain, garlic, spicy)",
+   "brisket",
+   "hot pot"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "All-you-can-eat chain combining Korean barbecue on tabletop grills with conveyor-belt hot pot.",
+  "website": "https://www.seapotusa.com/seapot-sacramento",
+  "sources": [
+   {
+    "url": "https://www.seapotusa.com/seapot-sacramento",
+    "what": "brand's own Sacramento page, live, (c) 2026, with address and phone",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://www.seapotusa.com/menu",
+    "what": "brand's own AYCE menu, live",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://whatnow.com/orange-county/restaurants/seapot-korean-bbq-and-hot-pot-coming-to-anaheim/",
+    "what": "WhatNow story (Feb 27, 2026) listing Sacramento among operating Seapot locations and describing tabletop grills",
+    "date": "2026-02-27"
+   }
+  ],
+  "checked": "2026-10-07"
+ },
+ {
+  "name": "Blue House Korean BBQ (Roseville)",
+  "address": "2030 Douglas Blvd, Suite 22",
+  "city": "Roseville",
+  "zip": "95661",
+  "county": "Placer",
+  "kinds": [
+   "kbbq"
+  ],
+  "open": true,
+  "dishes": [
+   "bulgogi",
+   "galbi",
+   "spicy pork",
+   "marinated shrimp and calamari",
+   "AYCE menu"
+  ],
+  "opened": null,
+  "brand_founded": null,
+  "chain": true,
+  "note": "All-you-can-eat Korean barbecue where guests grill at the table; Roseville branch stayed open while the Sacramento branch closed for renovation (late 2025).",
+  "website": "https://www.bluehousekbbq.com/",
+  "sources": [
+   {
+    "url": "https://www.bluehousekbbq.com/",
+    "what": "own site, live, (c) 2026, lists 2030 Douglas Blvd Suite 22",
+    "date": "2026-10-07"
+   },
+   {
+    "url": "https://whatnow.com/sacramento/restaurants/blue-house-korean-bbq-temporarily-closes-sacramento-location-during-renovations/",
+    "what": "WhatNow Sacramento story (Jan 2, 2026): Roseville location open; describes tabletop grilling and AYCE meats",
+    "date": "2026-01-02"
+   }
+  ],
+  "checked": "2026-10-07"
+ }
+]

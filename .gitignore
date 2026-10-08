@@ -1,0 +1,19 @@
+# build caches (Wisconsin once committed a 180 MB DerivedData folder)
+DerivedData*/
+build/
+*.xcodeproj/
+.venv/
+__pycache__/
+.DS_Store
+# raw and Google-derived data never go in a public repo
+data/raw/
+data/ca/
+data/meta-*.json.gz
+data/review-*.json.gz
+site/*.json
+.simulators
+data/app/
+# researcher working sets (map listings to check), not published
+data/research/candidates/
+*.bak
+*.tmp

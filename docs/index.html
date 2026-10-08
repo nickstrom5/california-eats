@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-base="/california-eats">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-+pVLco3lw1uwNvPduKL5H+vpzOU/auRMtCVLhj5pAKo='; style-src 'sha256-dHJY2MjxIG0V7pS3H8xhr+d5CDpAJ6mvqXxbjYNuA0c='; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>California Eats: Taquería, Dim Sum &amp; Restaurant App for CA</title>
+<meta name="description" content="Free iPhone and iPad guide to 103,585 California restaurants, with hand-checked taquerías, dim sum, burritos and MICHELIN and James Beard honors.">
+<link rel="canonical" href="https://nickstrom5.github.io/california-eats/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#003262">
+<meta property="og:title" content="California Eats: Taquería, Dim Sum &amp; Restaurant App for CA">
+<meta property="og:description" content="Free iPhone and iPad guide to 103,585 California restaurants, with hand-checked taquerías, dim sum, burritos and MICHELIN and James Beard honors.">
+<meta property="og:url" content="https://nickstrom5.github.io/california-eats/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="California Eats">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://nickstrom5.github.io/california-eats/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="California Eats: Taquería &amp; dim sum guide. California restaurants, with hand-checked taquerías, dim sum, burritos and more.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="California Eats: Taquería, Dim Sum &amp; Restaurant App for CA">
+<meta name="twitter:description" content="Free iPhone and iPad guide to 103,585 California restaurants, with hand-checked taquerías, dim sum, burritos and MICHELIN and James Beard honors.">
+<meta name="twitter:image" content="https://nickstrom5.github.io/california-eats/og.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003262'/%3E%3Crect y='53' width='64' height='11' fill='%231A4B80'/%3E%3Cpath d='M2 56 Q8 53 16 56 T32 56 T48 56 T64 56' stroke='%235582B4' stroke-width='1.6' fill='none'/%3E%3Cg transform='rotate(-16 32 30)'%3E%3Cpath d='M32 6 C40 6 41 20 47 31 C53 43 45 52 32 52 C19 52 11 43 17 31 C23 20 24 6 32 6 Z' fill='%232F4F1C'/%3E%3Cpath d='M32 8.5 C39 8.5 39.5 21 45 31.5 C50 42 43.5 49.5 32 49.5 C20.5 49.5 14 42 19 31.5 C24.5 21 25 8.5 32 8.5 Z' fill='%239CC94F'/%3E%3Cpath d='M32 12 C37.5 12 37.5 23 42.5 32 C46.5 40.5 41 46.5 32 46.5 C23 46.5 17.5 40.5 21.5 32 C26.5 23 26.5 12 32 12 Z' fill='%23E4EC9A'/%3E%3Ccircle cx='32' cy='36' r='7' fill='%237A4A26'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="/california-eats/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/california-eats/apple-touch-icon.png">
+<link rel="manifest" href="/california-eats/site.webmanifest">
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #fff; --surface2: #eef3f8; --rule: #dce3ec;
+    --ink: #0e1b2c; --ink2: #283a52; --muted: #4a5a72;
+    --blue: #003262; --blue2: #1a4b80; --sea: #5582b4; --seasoft: #e3ecf5;
+    --gold: #fdb515; --goldsoft: #fee7b0; --poppy: #e35b1e;
+    --radius: 16px;
+    --display: "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1420; --surface: #111d2c; --surface2: #172638; --rule: #24364b; --ink: #edf2f8; --ink2: #ccd8e6; --muted: #a2b2c6; --blue: #9cc3ec; --blue2: #7fb0e3; --sea: #8cb6df; --seasoft: #16304a; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: var(--blue); text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
+  .skip { position: absolute; left: -9999px; top: 0; background: var(--gold); color: #0e1b2c; padding: 10px 14px; font-weight: 700; z-index: 10; }
+  .skip:focus { left: 8px; top: 8px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  .band { display: block; width: 100%; height: 22px; margin-top: 8px; }
+  header.site { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0 18px; border-bottom: 4px solid var(--gold); }
+  .logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font: 800 22px/1 var(--display); text-transform: uppercase; letter-spacing: .01em; color: var(--blue); text-decoration: none; }
+  header.site nav { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: flex-end; }
+  header.site nav a { color: var(--ink2); text-decoration: none; font-size: 15px; }
+  header.site nav a, footer nav a, nav.crumbs a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
+  header.site nav a:hover { color: var(--blue); text-decoration: underline; }
+  h1, h2 { font-family: var(--display); font-weight: 800; color: var(--blue); letter-spacing: -.005em; }
+  h1 { font-size: clamp(36px, 7.5vw, 56px); line-height: 1.02; margin: 0 0 16px; text-transform: uppercase; text-wrap: balance; }
+  h1 .kicker { display: block; font: 700 15px/1.4 -apple-system, system-ui, sans-serif; letter-spacing: .06em; color: var(--muted); margin-bottom: 12px; }
+  h2 { font-size: 32px; line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  h3 { font-size: 18px; margin: 0; line-height: 1.3; }
+  .lede { font-size: 19px; color: var(--ink2); margin: 0 0 26px; }
+  .hero { padding: 44px 0 28px; }
+  section { padding: 36px 0; border-top: 1px solid var(--rule); }
+  section.hero { border: 0; }
+  .sub { color: var(--ink2); margin: 0 0 22px; }
+  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; gap: 10px; background: var(--gold); color: #0e1b2c; font-weight: 700; padding: 14px 20px; border-radius: 14px; text-decoration: none; font-size: 17px; }
+  .btn svg { width: 22px; height: 22px; }
+  .btn-ghost { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+  .pill { font-size: 14px; color: var(--muted); }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 28px 0 0; padding: 0; list-style: none; }
+  .stats li { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 14px; }
+  .stats b { display: block; font: 800 30px/1 var(--display); color: var(--blue); font-variant-numeric: tabular-nums; }
+  .stats span { font-size: 14px; color: var(--muted); }
+  .steps { display: grid; gap: 12px; list-style: none; margin: 0; padding: 0; }
+  .step { display: flex; gap: 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
+  .step .n { flex: 0 0 32px; height: 32px; border-radius: 50%; background: var(--gold); color: #0e1b2c; font-weight: 800; display: grid; place-items: center; }
+  .step p { margin: 4px 0 0; color: var(--ink2); }
+  .shots { display: flex; gap: 14px; overflow-x: auto; margin: 0 -20px; padding: 4px 20px 14px; scroll-snap-type: x proximity; list-style: none; }
+  .shots li { flex: 0 0 auto; width: 210px; scroll-snap-align: start; }
+  .shots img { display: block; width: 210px; height: auto; border-radius: 24px; border: 1px solid var(--rule); background: var(--surface2); }
+  .shots p { font-size: 14px; color: var(--muted); margin: 8px 2px 0; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
+  .card p { margin: 6px 0 0; color: var(--ink2); }
+  a.card { display: block; text-decoration: none; color: var(--ink); }
+  a.card:hover h3 { text-decoration: underline; color: var(--blue); }
+  .card.lead { border-color: var(--gold); background: var(--goldsoft); }
+  @media (prefers-color-scheme: dark) { .card.lead { background: var(--surface); } }
+  .cities { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+  .cities a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--rule); background: var(--surface); text-decoration: none; color: var(--ink); font-size: 15px; }
+  .cities a:hover { border-color: var(--blue); }
+  details { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 2px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; padding: 14px 0; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--blue); font-weight: 800; }
+  details[open] summary::after { content: "\2013"; }
+  details p { margin: 0 0 16px; color: var(--ink2); }
+  .final { text-align: center; }
+  .final .cta-row { justify-content: center; }
+  nav.crumbs { font-size: 14px; color: var(--muted); padding: 16px 0 0; }
+  nav.crumbs ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  nav.crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--rule); }
+  nav.crumbs a { color: var(--muted); }
+  nav.crumbs li { display: inline-flex; align-items: center; min-height: 44px; }
+  .places { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .places li { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; padding: 14px 16px; min-width: 0; overflow-wrap: anywhere; }
+  .places .where { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
+  .places .facts { margin: 8px 0 0; font-size: 15px; color: var(--ink2); }
+  .places .facts b { color: var(--ink); font-weight: 600; }
+  .places .note { margin: 6px 0 0; font-size: 15px; color: var(--ink2); }
+  .places .link { font-size: 14px; }
+  .places .link a, .places h3 a, .toc a, td a { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--goldsoft); color: #0e1b2c; border-radius: 6px; padding: 1px 6px; margin-right: 4px; }
+  .tag-sea { background: var(--seasoft); color: var(--blue); }
+  .tag-mi { background: #003262; color: #fff; }
+  .toc { columns: 2; padding-left: 20px; margin: 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--rule); }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .tablewrap { overflow-x: auto; }
+  .fine { font-size: 14px; color: var(--muted); }
+  .legal h2 { font-size: 26px; margin-top: 28px; }
+  .legal p, .legal li { color: var(--ink2); }
+  footer { padding: 32px 0 56px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--rule); margin-top: 20px; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+  footer a { color: var(--muted); }
+  footer p { margin: 12px 0 0; }
+  @media (max-width: 600px) {
+    .grid2 { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .toc { columns: 1; }
+    header.site { flex-direction: column; align-items: flex-start; }
+    header.site nav { justify-content: flex-start; }
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MobileApplication",
+   "@id": "https://nickstrom5.github.io/california-eats/#app",
+   "name": "California Eats: Restaurants",
+   "alternateName": [
+    "California Eats",
+    "CA Eats",
+    "California Eats: Taquería \u0026 Dim Sum Guide"
+   ],
+   "description": "A free guide to 103,585 California restaurants, with hand-checked taquerías, dim sum, burritos, fish tacos, Korean barbecue, burger stands and wine-country dining, MICHELIN and James Beard honors, and official county inspection results.",
+   "url": "https://nickstrom5.github.io/california-eats/",
+   "image": "https://nickstrom5.github.io/california-eats/og.png",
+   "operatingSystem": "iOS, iPadOS",
+   "applicationCategory": "TravelApplication",
+   "applicationSubCategory": "Food \u0026 Drink",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://nickstrom5.github.io/california-eats/#org"
+   },
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "category": "free"
+   },
+   "screenshot": "https://nickstrom5.github.io/california-eats/img/screen-home.png"
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://nickstrom5.github.io/california-eats/#org",
+   "name": "California Eats",
+   "url": "https://nickstrom5.github.io/california-eats/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://nickstrom5.github.io/california-eats/icon-512.png",
+    "width": 512,
+    "height": 512
+   },
+   "email": "work-with-nick@gmail.com",
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "work-with-nick@gmail.com",
+    "availableLanguage": "en"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://nickstrom5.github.io/california-eats/#website",
+   "name": "California Eats",
+   "alternateName": [
+    "CA Eats",
+    "California Eats app"
+   ],
+   "url": "https://nickstrom5.github.io/california-eats/",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://nickstrom5.github.io/california-eats/#org"
+   }
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://nickstrom5.github.io/california-eats/#faq",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Is California Eats free?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. The app is free, with no ads, no in-app purchases and no account."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Where do the taquerías and other guides come from?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "We checked each one by hand in October 2026: every place on the taquería, dim sum, burrito, fish taco, Korean barbecue, burger stand and wine-country lists has a 2025 or 2026 source such as its own menu page, a live online-ordering page it runs or a dated news story. The rest of the 103,585 restaurants come from Overture Maps' open place data, county food-facility records and California ABC licenses."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does the app show ratings and reviews?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not its own. Tap a place and Apple Maps' own place card opens inside the app with Apple's current ratings, hours, photos and directions. Our lists are never ordered by ratings."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What are the inspection results?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Where a county publishes inspection results in bulk (Los Angeles County, San Francisco and Sacramento County), the app shows that county's own official result at the latest inspection, as recorded: LA County's score and letter grade, and San Francisco's and Sacramento County's placards. We never compute a grade of our own or compare counties."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are MICHELIN stars and James Beard awards ratings?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No, they're honors, and the app shows them as facts from MICHELIN's 2026 California selection and the James Beard Foundation's own announcements. A finalist is always called a finalist."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it need my location?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Only if you want lists sorted by distance. Your location stays on your iPhone or iPad and is never sent to us. Everything else works without it."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "A place closed or is missing. How do I tell you?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Email work-with-nick@gmail.com with the name and town. Corrections go into the next update."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is there an Android version?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Not yet. California Eats is for iPhone and iPad. If enough people ask at work-with-nick@gmail.com, it moves up the list."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <svg class="band" viewBox="0 0 760 22" preserveAspectRatio="none" aria-hidden="true"><path d="M40 22 A22 22 0 0 1 84 22 Z" fill="#fdb515"/><path d="M0 22 V14 Q24 9 48 14 T96 14 T144 14 T192 14 T240 14 T288 14 T336 14 T384 14 T432 14 T480 14 T528 14 T576 14 T624 14 T672 14 T720 14 T760 14 V22 Z" fill="#5582b4"/><path d="M0 22 V18 Q24 14 48 18 T96 18 T144 18 T192 18 T240 18 T288 18 T336 18 T384 18 T432 18 T480 18 T528 18 T576 18 T624 18 T672 18 T720 18 T760 18 V22 Z" fill="#003262"/></svg>
+  <header class="site">
+    <a class="logo" href="/california-eats/" aria-label="California Eats home"><svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#003262"/><rect y="53" width="64" height="11" fill="#1A4B80"/><path d="M2 56 Q8 53 16 56 T32 56 T48 56 T64 56" stroke="#5582B4" stroke-width="1.6" fill="none"/><g transform="rotate(-16 32 30)"><path d="M32 6 C40 6 41 20 47 31 C53 43 45 52 32 52 C19 52 11 43 17 31 C23 20 24 6 32 6 Z" fill="#2F4F1C"/><path d="M32 8.5 C39 8.5 39.5 21 45 31.5 C50 42 43.5 49.5 32 49.5 C20.5 49.5 14 42 19 31.5 C24.5 21 25 8.5 32 8.5 Z" fill="#9CC94F"/><path d="M32 12 C37.5 12 37.5 23 42.5 32 C46.5 40.5 41 46.5 32 46.5 C23 46.5 17.5 40.5 21.5 32 C26.5 23 26.5 12 32 12 Z" fill="#E4EC9A"/><circle cx="32" cy="36" r="7" fill="#7A4A26"/></g></svg>California Eats</a>
+    <nav aria-label="Main"><a href="/california-eats/california-taquerias.html">Taquerías</a><a href="/california-eats/california-dim-sum.html">Dim sum</a><a href="/california-eats/california-burritos.html">Burritos</a><a href="/california-eats/california-fish-tacos.html">Fish tacos</a><a href="/california-eats/california-michelin-james-beard.html">Honors</a><a href="/california-eats/#cities">Cities</a><a href="/california-eats/explore/">Search</a></nav>
+  </header>
+  <main id="main">
+  <section class="hero">
+    <h1><span class="kicker">California Eats: the taquería &amp; dim sum guide for iPhone and iPad</span>California's restaurants, starting with the taquería</h1>
+    <p class="lede">California Eats is a free California restaurant guide. Find a taquería near you, a dim sum house, a Mission burrito, Baja fish tacos or Korean barbecue from lists we checked by hand, plus 103,585 restaurants, cafés and bars in 1,126 towns, MICHELIN and James Beard honors, and official county inspection results.</p>
+    <div class="cta-row"><a class="btn store-btn" href="mailto:work-with-nick@gmail.com?subject=California%20Eats%20early%20access&amp;body=Send%20me%20the%20TestFlight%20link."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.1 2.5-1.8 3.1-.5 7.6 1.3 10.1.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.9-4zM14 5.2c.7-.8 1.2-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3.1 1.1.1 2.3-.6 3-1.4z"/></svg><span class="store-label">Get early access</span></a><a class="btn btn-ghost" href="/california-eats/explore/">Search on the web</a><span class="pill store-note">Free. No ads, no account. Coming to the App Store.</span></div>
+    <ul class="stats" role="list" aria-label="What's in the app">
+      <li><b>363</b><span>taquerías</span></li>
+      <li><b>53</b><span>dim sum houses</span></li>
+      <li><b>78</b><span>MICHELIN-starred</span></li>
+      <li><b>103,585</b><span>restaurants</span></li>
+    </ul>
+  </section>
+
+  <section id="what">
+    <h2>A California restaurant guide that starts with tacos</h2>
+    <p class="sub">General restaurant apps rank by star ratings and can't tell a taquería with a trompo from a chain. California Eats starts from what Californians look for: al pastor and carnitas, a weekend dim sum cart, a burrito the size of a forearm, a Baja fish taco, galbi on a tabletop grill, a walk-up burger stand, and the places that have been open for generations. Every one of those was checked open in October 2026. Where a county publishes them, each place also shows its official inspection result. For ratings, hours and photos, each place opens Apple Maps' own live card.</p>
+  </section>
+
+  <section id="how">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li class="step"><div class="n" aria-hidden="true">1</div><div><h3>Pick a guide.</h3><p>Taquerías, Dim Sum, Burritos, Fish Tacos, Korean BBQ, Burger Stands, Wine Country, MICHELIN &amp; James Beard, Oldest Places, Inspections, or search 103,585 restaurants by name, town, street or dish.</p></div></li>
+      <li class="step"><div class="n" aria-hidden="true">2</div><div><h3>See what's near you.</h3><p>Sort by distance, filter by region, town or cuisine, or browse the map. Each hand-checked place lists what's on its menu.</p></div></li>
+      <li class="step"><div class="n" aria-hidden="true">3</div><div><h3>Go.</h3><p>Open Apple Maps' place card for live hours and photos, call, get directions, or save it for later.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="screens">
+    <h2>What it looks like</h2>
+    <ul class="shots" tabindex="0" aria-label="California Eats app screenshots">
+      <li><picture><source srcset="/california-eats/img/screen-home.webp" type="image/webp"><img src="/california-eats/img/screen-home.png" alt="California Eats home screen: guides for taquerías, dim sum, burritos, fish tacos, Korean barbecue, burger stands, wine country, MICHELIN and James Beard honors, the oldest places and official inspection results, with a search box for every restaurant in the state." width="480" height="1043" decoding="async"></picture><p>Guides for taquerías, dim sum and more.</p></li><li><picture><source srcset="/california-eats/img/screen-taquerias.webp" type="image/webp"><img src="/california-eats/img/screen-taquerias.png" alt="Taquerías list in California Eats, sorted by distance from downtown Los Angeles, with what each one serves." width="480" height="1043" decoding="async"></picture><p>Taquerías nearest you first.</p></li><li><picture><source srcset="/california-eats/img/screen-detail.webp" type="image/webp"><img src="/california-eats/img/screen-detail.png" alt="A taquería&#x27;s page in California Eats: address, a button for ratings, hours and photos in Apple Maps, what it serves and LA County&#x27;s official inspection grade." width="480" height="1043" loading="lazy" decoding="async"></picture><p>Each place, with live Apple Maps hours and photos.</p></li><li><picture><source srcset="/california-eats/img/screen-map.webp" type="image/webp"><img src="/california-eats/img/screen-map.png" alt="California Eats map with pins for hand-checked taquerías." width="480" height="1043" loading="lazy" decoding="async"></picture><p>The map, by taquerías, dim sum, burritos or honors.</p></li><li><picture><source srcset="/california-eats/img/screen-honors.webp" type="image/webp"><img src="/california-eats/img/screen-honors.png" alt="MICHELIN &amp; James Beard list in California Eats, with each restaurant&#x27;s distinction." width="480" height="1043" loading="lazy" decoding="async"></picture><p>MICHELIN and James Beard honors, as facts.</p></li>
+    </ul>
+  </section>
+
+  <section id="guides">
+    <h2>California food guides</h2>
+    <p class="sub">The app's hand-checked lists, readable on the web.</p>
+    <div class="grid2"><a class="card lead" href="/california-eats/california-taquerias.html"><h3>California taquerías</h3><p>363 taquerías, checked open.</p></a><a class="card" href="/california-eats/california-dim-sum.html"><h3>California dim sum</h3><p>53 dim sum houses, checked open.</p></a><a class="card" href="/california-eats/california-burritos.html"><h3>Mission &amp; California burritos</h3><p>86 burrito shops, checked open.</p></a><a class="card" href="/california-eats/california-fish-tacos.html"><h3>California fish tacos</h3><p>87 fish taco spots, checked open.</p></a><a class="card" href="/california-eats/california-korean-bbq.html"><h3>California Korean barbecue</h3><p>74 Korean barbecue restaurants, checked open.</p></a><a class="card" href="/california-eats/california-burger-stands.html"><h3>California burger stands</h3><p>19 burger stands, checked open.</p></a><a class="card" href="/california-eats/california-wine-country-restaurants.html"><h3>Wine-country restaurants</h3><p>31 restaurants, checked open.</p></a><a class="card" href="/california-eats/california-michelin-james-beard.html"><h3>MICHELIN &amp; James Beard</h3><p>78 starred restaurants, 114 Bib Gourmands and James Beard honorees.</p></a><a class="card" href="/california-eats/california-oldest-restaurants.html"><h3>Oldest restaurants</h3><p>18 places with a verified opening year.</p></a></div>
+  </section>
+
+  <section id="cities">
+    <h2>Restaurants by city</h2>
+    <p class="sub">Hand-checked places, local honors and what each of California's biggest towns eats.</p>
+    <ul class="cities"><li><a href="/california-eats/cities/los-angeles.html">Los Angeles</a></li><li><a href="/california-eats/cities/san-francisco.html">San Francisco</a></li><li><a href="/california-eats/cities/san-diego.html">San Diego</a></li><li><a href="/california-eats/cities/san-jose.html">San Jose</a></li><li><a href="/california-eats/cities/sacramento.html">Sacramento</a></li><li><a href="/california-eats/cities/oakland.html">Oakland</a></li><li><a href="/california-eats/cities/fresno.html">Fresno</a></li><li><a href="/california-eats/cities/long-beach.html">Long Beach</a></li><li><a href="/california-eats/cities/pasadena.html">Pasadena</a></li><li><a href="/california-eats/cities/santa-barbara.html">Santa Barbara</a></li><li><a href="/california-eats/cities/berkeley.html">Berkeley</a></li><li><a href="/california-eats/cities/santa-monica.html">Santa Monica</a></li><li><a href="/california-eats/cities/irvine.html">Irvine</a></li><li><a href="/california-eats/cities/anaheim.html">Anaheim</a></li><li><a href="/california-eats/cities/riverside.html">Riverside</a></li><li><a href="/california-eats/cities/bakersfield.html">Bakersfield</a></li><li><a href="/california-eats/cities/santa-cruz.html">Santa Cruz</a></li><li><a href="/california-eats/cities/napa.html">Napa</a></li><li><a href="/california-eats/cities/palm-springs.html">Palm Springs</a></li><li><a href="/california-eats/cities/monterey.html">Monterey</a></li><li><a href="/california-eats/cities/san-luis-obispo.html">San Luis Obispo</a></li><li><a href="/california-eats/cities/stockton.html">Stockton</a></li><li><a href="/california-eats/cities/glendale.html">Glendale</a></li><li><a href="/california-eats/cities/san-gabriel.html">San Gabriel</a></li></ul>
+  </section>
+
+  <section id="pricing">
+    <h2>Free, and staying that way</h2>
+    <p class="sub">No ads, no subscription, no in-app purchases, no account. The whole guide is built into the app, so lists open fast and work with a weak signal on Highway 1 or in the Sierra.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Your lunch plans are your business</h2>
+    <p class="sub">California Eats collects nothing. If you allow location, it only sorts lists by distance on your device. Saved places stay on your device. This website sets no cookies and runs no trackers. <a href="/california-eats/privacy.html">Read the privacy policy</a>.</p>
+  </section>
+
+  <section id="faq">
+    <h2>Questions</h2>
+    <details><summary>Is California Eats free?</summary><p>Yes. The app is free, with no ads, no in-app purchases and no account.</p></details><details><summary>Where do the taquerías and other guides come from?</summary><p>We checked each one by hand in October 2026: every place on the taquería, dim sum, burrito, fish taco, Korean barbecue, burger stand and wine-country lists has a 2025 or 2026 source such as its own menu page, a live online-ordering page it runs or a dated news story. The rest of the 103,585 restaurants come from Overture Maps&#x27; open place data, county food-facility records and California ABC licenses.</p></details><details><summary>Does the app show ratings and reviews?</summary><p>Not its own. Tap a place and Apple Maps&#x27; own place card opens inside the app with Apple&#x27;s current ratings, hours, photos and directions. Our lists are never ordered by ratings.</p></details><details><summary>What are the inspection results?</summary><p>Where a county publishes inspection results in bulk (Los Angeles County, San Francisco and Sacramento County), the app shows that county&#x27;s own official result at the latest inspection, as recorded: LA County&#x27;s score and letter grade, and San Francisco&#x27;s and Sacramento County&#x27;s placards. We never compute a grade of our own or compare counties.</p></details><details><summary>Are MICHELIN stars and James Beard awards ratings?</summary><p>No, they&#x27;re honors, and the app shows them as facts from MICHELIN&#x27;s 2026 California selection and the James Beard Foundation&#x27;s own announcements. A finalist is always called a finalist.</p></details><details><summary>Does it need my location?</summary><p>Only if you want lists sorted by distance. Your location stays on your iPhone or iPad and is never sent to us. Everything else works without it.</p></details><details><summary>A place closed or is missing. How do I tell you?</summary><p>Email work-with-nick@gmail.com with the name and town. Corrections go into the next update.</p></details><details><summary>Is there an Android version?</summary><p>Not yet. California Eats is for iPhone and iPad. If enough people ask at work-with-nick@gmail.com, it moves up the list.</p></details>
+  </section>
+
+  <section id="download" class="final">
+    <h2>Find your taquería</h2>
+    <p class="sub">California Eats is coming to the App Store for iPhone and iPad. Free.</p>
+    <div class="cta-row"><a class="btn store-btn" href="mailto:work-with-nick@gmail.com?subject=California%20Eats%20early%20access&amp;body=Send%20me%20the%20TestFlight%20link."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.1 2.5-1.8 3.1-.5 7.6 1.3 10.1.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.9-4zM14 5.2c.7-.8 1.2-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3.1 1.1.1 2.3-.6 3-1.4z"/></svg><span class="store-label">Get early access</span></a></div>
+  </section>
+  </main>
+  <footer>
+    <nav aria-label="Footer">
+      <a href="/california-eats/">California Eats app</a>
+      <a href="/california-eats/explore/">Search California restaurants</a>
+      <a href="/california-eats/california-taquerias.html">California taquerías</a><a href="/california-eats/california-dim-sum.html">California dim sum</a><a href="/california-eats/california-burritos.html">Mission &amp; California burritos</a><a href="/california-eats/california-fish-tacos.html">California fish tacos</a><a href="/california-eats/california-korean-bbq.html">California Korean barbecue</a><a href="/california-eats/california-burger-stands.html">California burger stands</a><a href="/california-eats/california-wine-country-restaurants.html">Wine-country restaurants</a>
+      <a href="/california-eats/california-michelin-james-beard.html">MICHELIN &amp; James Beard</a>
+      <a href="/california-eats/privacy.html">Privacy policy</a>
+      <a href="/california-eats/terms.html">Terms of use</a>
+      <a href="mailto:work-with-nick@gmail.com">Email us</a>
+    </nav>
+    <p>Place data: hand-checked research by California Eats (October 2026); Overture Maps Foundation (CDLA Permissive 2.0); County of Los Angeles, City and County of San Francisco, Sacramento County and San Diego County food-facility and inspection records; California Department of Alcoholic Beverage Control license data. Not affiliated with or endorsed by any restaurant, chain or government agency. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. Places open and close, so check before you go.</p>
+    <p>© 2026 California Eats.</p>
+  </footer>
+</div>
+<script>
+  // Once the App Store listing exists, paste its URL here (looks like https://apps.apple.com/app/id123456789).
+  // Every button switches from "Get early access" to "Download on the App Store" automatically.
+  var APP_STORE_URL = "";
+  if (APP_STORE_URL) {
+    document.querySelectorAll(".store-btn").forEach(function (b) { b.href = APP_STORE_URL; b.rel = "noopener"; });
+    document.querySelectorAll(".store-label").forEach(function (l) { l.textContent = "Download on the App Store"; });
+    document.querySelectorAll(".store-note").forEach(function (n) { n.textContent = "Free for iPhone and iPad."; });
+  }
+</script>
+</body>
+</html>

@@ -10,9 +10,10 @@ Two products share this folder and one data pipeline:
 Read `../STATE_EATS_PLAYBOOK.md`, then `playbook/12-sources.md`. Never modify `../chi-eats/`, `../wi-eats/` or another state's folder.
 
 ## Nick's calls (2026-10-07)
-- Name, subtitle and Home Screen name above; icon = the flat avocado half on Pacific blue with a wave line (`scripts/icon-concepts.swift`
-  concept B; `swift scripts/make-brand.swift` writes the app icon, og.png and favicons); palette California gold #FDB515 (a fill only, never
-  text on white) and Pacific blue #003262.
+- Name, subtitle and Home Screen name above; icon = the flat avocado half on Pacific blue (`scripts/icon-concepts.swift` concept B),
+  redrawn 2026-10-09 in the shared Eats Ranked style Nick approved (upright, flat, no sea or wave line; same food and colours; guide
+  `../state-prompts/ICON-STYLE.md`). `swift scripts/make-brand.swift` writes the app icon, og.png and favicons; the site's header logo and
+  SVG favicon are `LOGO` in `scripts/make-site.py`. Palette California gold #FDB515 (a fill only, never text on white) and Pacific blue #003262.
 - **Santa Clara County's inspection data states no license: private leaderboard only.** The app export (`CA_APP=1`) ships LA County,
   San Francisco and Sacramento results only.
 

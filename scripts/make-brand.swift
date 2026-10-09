@@ -1,5 +1,6 @@
 // Brand images for California Eats: the app icon (the flat avocado half on Pacific blue that Nick picked on 2026-10-07, concept B
-// of scripts/icon-concepts.swift), playbook/brand/, and the site's og.png, favicons and manifest icons.
+// of scripts/icon-concepts.swift; redrawn 2026-10-09 in the shared Eats Ranked style Nick approved: upright, flat, no sea or wave line,
+// see ../state-prompts/ICON-STYLE.md), playbook/brand/, and the site's og.png, favicons and manifest icons.
 // Usage: swift scripts/make-brand.swift ["105,000+"]   (run from ca-eats/; the optional argument is the restaurant count on og.png)
 import AppKit
 import CoreGraphics
@@ -28,39 +29,48 @@ func disc(_ c: CGContext, _ s: CGFloat, _ x: CGFloat, _ y: CGFloat, _ r: CGFloat
     c.setFillColor(col); c.fillEllipse(in: CGRect(x: s * (x - r), y: s * (y - r), width: s * r * 2, height: s * r * 2))
 }
 
-/// The ground: Pacific blue, the sea along the bottom with one lighter wave line.
+/// The ground: flat Pacific blue, edge to edge (no sea, no wave line: the shared Eats Ranked icon style).
 func ground(_ c: CGContext, _ s: CGFloat) {
     c.setFillColor(blue); c.fill(CGRect(x: 0, y: 0, width: s, height: s))
-    c.setFillColor(blue2); c.fill(CGRect(x: 0, y: 0, width: s, height: s * 0.17))
-    let wave = CGMutablePath()
-    wave.move(to: P(s, 0, 0.12))
-    for i in 0..<4 {
-        let x0 = CGFloat(i) * 0.25
-        wave.addCurve(to: P(s, x0 + 0.25, 0.12), control1: P(s, x0 + 0.08, 0.155), control2: P(s, x0 + 0.17, 0.085))
-    }
-    c.setStrokeColor(rgb(0x5582B4)); c.setLineWidth(s * 0.02); c.setLineCap(.round); c.addPath(wave); c.strokePath()
 }
 
-/// B: an avocado half: dark skin rim, pale flesh shading to green, round brown pit
+/// B: an avocado half seen straight on, narrow end up, symmetric about the vertical centre line (Eats Ranked style, 2026-10-09).
+/// Three tones of one fruit: a thin dark skin rim (a 16 px band outside the flesh, drawn as a 32 px round-join stroke under the
+/// fill, the way Chicago rings its hot dog), a 40 px bright-green flesh ring kept inside the outline by a clip, and pale flesh.
+/// One flat brown pit low in the wide end. Paints no background. Painted box 0.58 x 0.72 at 1024 (rows 143 to 880 from the top).
 func avocado(_ c: CGContext, _ s: CGFloat) {
-    func pear(_ inset: CGFloat) -> CGPath {
-        let p = CGMutablePath()   // a pear outline, wide at the bottom, tilted slightly
-        let cx: CGFloat = 0.5, top: CGFloat = 0.90 - inset, bot: CGFloat = 0.21 + inset, w: CGFloat = 0.29 - inset
-        p.move(to: P(s, cx, top))
-        p.addCurve(to: P(s, cx + w, bot + 0.22), control1: P(s, cx + w * 0.55, top), control2: P(s, cx + w * 0.62, bot + 0.40))
-        p.addCurve(to: P(s, cx, bot), control1: P(s, cx + w * 1.18, bot + 0.08), control2: P(s, cx + w * 0.55, bot))
-        p.addCurve(to: P(s, cx - w, bot + 0.22), control1: P(s, cx - w * 0.55, bot), control2: P(s, cx - w * 1.18, bot + 0.08))
-        p.addCurve(to: P(s, cx, top), control1: P(s, cx - w * 0.62, bot + 0.40), control2: P(s, cx - w * 0.55, top))
-        p.closeSubpath()
-        var t = CGAffineTransform(translationX: s * 0.5, y: s * 0.5).rotated(by: -0.28).translatedBy(x: -s * 0.5, y: -s * 0.5)
-        return p.copy(using: &t)!
-    }
-    c.setFillColor(rgb(0x2F4F1C)); c.addPath(pear(0)); c.fillPath()
-    c.setFillColor(rgb(0x9CC94F)); c.addPath(pear(0.03)); c.fillPath()
-    c.setFillColor(rgb(0xE4EC9A)); c.addPath(pear(0.075)); c.fillPath()
-    // pit in the wide lower half (after the tilt)
-    disc(c, s, 0.545, 0.42, 0.11, rgb(0x7A4A26))
-    disc(c, s, 0.515, 0.45, 0.034, rgb(0x9C6537))
+    let skin = rgb(0x2F4F1C), ring = rgb(0x9CC94F), flesh = rgb(0xE4EC9A), pit = rgb(0x7A4A26)
+    let rim: CGFloat = 16 / 1024, band: CGFloat = 40 / 1024
+    // The flesh outline (CG y-up, fractions of s). With the rim the fruit spans y 0.14...0.86 and x 0.21...0.79.
+    let cx: CGFloat = 0.5, top: CGFloat = 0.86 - rim, bot: CGFloat = 0.14 + rim, w: CGFloat = 0.29 - rim
+    let wide: CGFloat = 0.355                        // height of the widest point (just above the pit's centre)
+    let cap: CGFloat = 0.50, base: CGFloat = 0.56    // control reach at the round top and round bottom
+    // The neck: a gentle waist on each side, where the narrow top meets the wide base. Tangent kept, so no kink.
+    let nx = w * 0.76, ny = bot + (top - bot) * 0.60
+    let slope: CGFloat = 1.5, len = (1 + slope * slope).squareRoot()
+    let tx = 1 / len, ty = -slope / len              // unit tangent at the neck, pointing down and out
+    let hIn: CGFloat = 0.11, hOut: CGFloat = 0.13, rise: CGFloat = 0.35
+    let fruit = CGMutablePath()                      // 6 cubic segments, mirror-symmetric
+    fruit.move(to: P(s, cx, top))
+    fruit.addCurve(to: P(s, cx + nx, ny), control1: P(s, cx + w * cap, top), control2: P(s, cx + nx - tx * hIn, ny - ty * hIn))
+    fruit.addCurve(to: P(s, cx + w, wide), control1: P(s, cx + nx + tx * hOut, ny + ty * hOut), control2: P(s, cx + w, wide + (ny - wide) * rise))
+    fruit.addCurve(to: P(s, cx, bot), control1: P(s, cx + w, wide - (wide - bot) * base), control2: P(s, cx + w * base, bot))
+    fruit.addCurve(to: P(s, cx - w, wide), control1: P(s, cx - w * base, bot), control2: P(s, cx - w, wide - (wide - bot) * base))
+    fruit.addCurve(to: P(s, cx - nx, ny), control1: P(s, cx - w, wide + (ny - wide) * rise), control2: P(s, cx - nx - tx * hOut, ny + ty * hOut))
+    fruit.addCurve(to: P(s, cx, top), control1: P(s, cx - nx + tx * hIn, ny - ty * hIn), control2: P(s, cx - w * cap, top))
+    fruit.closeSubpath()
+
+    c.setLineJoin(.round); c.setLineCap(.round)
+    // skin: a band outside the flesh outline only
+    c.setStrokeColor(skin); c.setLineWidth(s * rim * 2); c.addPath(fruit); c.strokePath()
+    // pale flesh, then the bright-green ring just inside its edge
+    c.setFillColor(flesh); c.addPath(fruit); c.fillPath()
+    c.saveGState()
+    c.addPath(fruit); c.clip()
+    c.setStrokeColor(ring); c.setLineWidth(s * band * 2); c.addPath(fruit); c.strokePath()
+    c.restoreGState()
+    // the pit: one flat disc, 0.22 across, centred at 0.62 from the top
+    disc(c, s, cx, 0.38, 0.11, pit)
 }
 
 

@@ -124,14 +124,16 @@ def png_size(path):
 
 
 APPLE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.1 2.5-1.8 3.1-.5 7.6 1.3 10.1.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.9-4zM14 5.2c.7-.8 1.2-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3.1 1.1.1 2.3-.6 3-1.4z"/></svg>'
-# the app icon in miniature: a flat avocado half on Pacific blue with the wave line
+# the app icon in miniature (scripts/make-brand.swift's avocado at 64 units, Eats Ranked style 2026-10-09): a flat upright avocado
+# half on Pacific blue: skin rim outside the outline, bright-green ring clipped inside it, pale flesh, one flat pit
+AVO = ("M32 9.96 C40.78 9.96 41.44 21.73 45.35 27.59 C49.96 34.51 49.56 36.49 49.56 41.28 C49.56 48.43 41.83 54.04 32 54.04 "
+       "C22.17 54.04 14.44 48.43 14.44 41.28 C14.44 36.49 14.04 34.51 18.65 27.59 C22.56 21.73 23.22 9.96 32 9.96 Z")
 LOGO = ('<svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#003262"/>'
-        '<rect y="53" width="64" height="11" fill="#1A4B80"/>'
-        '<path d="M2 56 Q8 53 16 56 T32 56 T48 56 T64 56" stroke="#5582B4" stroke-width="1.6" fill="none"/>'
-        '<g transform="rotate(-16 32 30)"><path d="M32 6 C40 6 41 20 47 31 C53 43 45 52 32 52 C19 52 11 43 17 31 C23 20 24 6 32 6 Z" fill="#2F4F1C"/>'
-        '<path d="M32 8.5 C39 8.5 39.5 21 45 31.5 C50 42 43.5 49.5 32 49.5 C20.5 49.5 14 42 19 31.5 C24.5 21 25 8.5 32 8.5 Z" fill="#9CC94F"/>'
-        '<path d="M32 12 C37.5 12 37.5 23 42.5 32 C46.5 40.5 41 46.5 32 46.5 C23 46.5 17.5 40.5 21.5 32 C26.5 23 26.5 12 32 12 Z" fill="#E4EC9A"/>'
-        '<circle cx="32" cy="36" r="7" fill="#7A4A26"/></g></svg>')
+        f'<clipPath id="ca-fruit"><path d="{AVO}"/></clipPath>'
+        f'<path d="{AVO}" fill="none" stroke="#2F4F1C" stroke-width="2" stroke-linejoin="round"/>'
+        f'<path d="{AVO}" fill="#E4EC9A"/>'
+        f'<path d="{AVO}" fill="none" stroke="#9CC94F" stroke-width="5" clip-path="url(#ca-fruit)"/>'
+        '<circle cx="32" cy="39.68" r="7.04" fill="#7A4A26"/></svg>')
 FAVICON = "data:image/svg+xml," + LOGO.replace('width="30" height="30" ', "").replace(' aria-hidden="true"', "").replace("<svg ", "<svg xmlns='http://www.w3.org/2000/svg' ").replace('"', "'").replace("#", "%23").replace("<", "%3C").replace(">", "%3E")
 
 CSS = """

@@ -23,8 +23,11 @@
 Trademark: not checked. Search USPTO (tmsearch.uspto.gov) for "California Eats" in classes 9 and 43 before submitting.
 
 ## Icon
-Concept B: a flat avocado half on Pacific blue with a wave line (`scripts/icon-concepts.swift` draws A taco, B avocado, C fish taco;
+Concept B: a flat avocado half on Pacific blue (`scripts/icon-concepts.swift` draws A taco, B avocado, C fish taco;
 `scripts/make-brand.swift` writes the app icon, `docs/og.png` and the favicons).
+Redrawn 2026-10-09 in the shared Eats Ranked icon style Nick approved (`../state-prompts/ICON-STYLE.md`): same avocado and colours, now
+upright and centred on flat blue, with no sea, wave line or pit highlight. The site's header logo and SVG favicon (`LOGO` in
+`scripts/make-site.py`) match it.
 
 ## Palette
 | Token | Hex | Use |

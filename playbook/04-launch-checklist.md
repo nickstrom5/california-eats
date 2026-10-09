@@ -10,6 +10,7 @@ com.californiaeats.ios not found on App Store Connect": nothing was uploaded. Af
 `DEVELOPER_DIR="/Applications/Xcode 1.app/Contents/Developer" xcodebuild -exportArchive -archivePath build/CaliforniaEats.xcarchive
 -exportOptionsPlist build/ExportOptions-upload.plist -exportPath build/export -allowProvisioningUpdates` (the plist is
 `scripts/ExportOptions-AppStore.plist` with destination `upload`).
+That archive predates the 2026-10-09 icon redraw and still has the old icon: re-archive (App Store step 4) before uploading.
 
 ## Website
 1. **Done 2026-10-08.** **Create the public repo** `nickstrom5/california-eats` (empty, no README). Then, with Nick's yes, push `main` with only site and app

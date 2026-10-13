@@ -925,5 +925,716 @@
     "severity": "P2",
     "evidence": "$SP/work/link-scan/evidence/ca/theotherplace.com.html",
     "found": "2026-10-12"
+  },
+  {
+    "domain": "tfyogurt.com",
+    "match": "domain",
+    "place": "Tutti Frutti Frozen Yogurt; Tutti Frutti; Frozen Oasis (Santa Ana); TF Frozen Yogurt Fairfield (Fairfield)",
+    "reason": "domain taken over: domain is now an India-travel spam blog with OnlyFans and casino links (cresuscasino-fr.app)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/tfyogurt.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "sourdoughandco.com",
+    "match": "domain",
+    "place": "Sourdough & Co.; Sourdough and Co; West Coast Sourdough (Carlsbad); Sourdough and Co (San Marcos); Sourdough & Co. (Belmont); Sourdough and Co (Berkeley); Sourdough & Co. (Brentwood); Sourdough & Co. (Daly City) (+39 more)",
+    "reason": "injected hidden links: off-screen (position:fixed top:-25995px) casino links roulettinocasino.es, ninewin.es on every location page",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/sourdoughandco.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "figtreeeatery.com",
+    "match": "domain",
+    "place": "Fig Tree Cafe (San Diego)",
+    "reason": "injected spam text: Polish online-casino (\"kasyno BLIK\") article injected into the site's custom-CSS block",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/figtreeeatery.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "grizzlymanorcafe.com",
+    "match": "domain",
+    "place": "Grizzly Manor Cafe (Big Bear Lake)",
+    "reason": "domain taken over: whole site is Thai slot site \"CREEK888\"",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/grizzlymanorcafe.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "notnottacos.com",
+    "match": "domain",
+    "place": "Not Not Tacos (San Diego)",
+    "reason": "domain taken over: whole site is a Thai slot site (\"สล็อตเว็บตรง\")",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/notnottacos.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "lamichoacana-usa.com",
+    "match": "domain",
+    "place": "La Michoacana USA (Fontana)",
+    "reason": "injected hidden links: off-screen (top:-6666px) link \"top replica rolex\" to iapac.to",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/lamichoacana-usa.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "dalianrestaurant.com",
+    "match": "domain",
+    "place": "Dalian Restaurant (Berkeley)",
+    "reason": "injected hidden links: zero-size block linking hetstationenkhuizen.nl \"Cialis kopen\"",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/dalianrestaurant.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "salsamexicangrillconcord.com",
+    "match": "domain",
+    "place": "Salsa Mexican Grill (Concord)",
+    "reason": "domain taken over: whole site is Thai slot site \"SIAN77\"",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/salsamexicangrillconcord.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "mortysdelicatessen1.com",
+    "match": "domain",
+    "place": "Morty's Delicatessen (San Francisco)",
+    "reason": "domain taken over: whole site is \"Mostbet UZ\" casino/betting page",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/mortysdelicatessen1.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "patpongthai.com",
+    "match": "domain",
+    "place": "Patpong Thai Cuisine (San Francisco)",
+    "reason": "domain taken over: whole site is Thai slot site \"LEAW55\"",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/patpongthai.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "jpotcali.com",
+    "match": "domain",
+    "place": "J Pot Mini Hot Pot & Bar (Fresno); Jot Food (Fresno)",
+    "reason": "injected hidden links: off-screen (left:-7767364922px) link to slimking-casino.uk.com",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/jpotcali.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "diamondsteakhousechico.com",
+    "match": "domain",
+    "place": "Diamond Steakhouse (Chico)",
+    "reason": "domain taken over: whole site is \"MADRID778\" Indonesian gaming/togel site",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/diamondsteakhousechico.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "la-estrellarestaurant.com",
+    "match": "domain",
+    "place": "La Estrella Restaurant (Los Angeles); La Estrella; La Estrella Tacos (Los Angeles); La Estrella Tacos #1 (Pasadena)",
+    "reason": "domain taken over: whole site is a Thai slot site (all 3 La Estrella entries)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/la-estrellarestaurant.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "bigmanbakes.com",
+    "match": "domain",
+    "place": "Big Man Bakes (Los Angeles)",
+    "reason": "domain taken over: whole site is Russian \"Gama casino\" mirror",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/bigmanbakes.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "enjoyablecafes.space",
+    "match": "domain",
+    "place": "Frosty Chalet (Lone Pine)",
+    "reason": "cloaked redirect: listing-farm pages (<place>.enjoyablecafes.space); King's Teriyaki's page redirects to a World of Warships affiliate ad (promo.worldofwarships.com ...pub_id=1119080)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/enjoyablecafes.space.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "intirestaurantla.com",
+    "match": "domain",
+    "place": "Inti Peruvian Restaurant (Los Angeles)",
+    "reason": "cloaked redirect: domain bounces visitors through q1.quotes.com, flexlinkspro and linksynergy affiliate trackers to tiremart.com (traffic monetised; same affiliate sub-id 1119080 as enjoyablecafes.space)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/intirestaurantla.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "primoburgersandcafe.com",
+    "match": "domain",
+    "place": "Primo Burgers; Primos Burgers (Bell Gardens); Primo Burgers (Lancaster)",
+    "reason": "domain taken over: whole site is Thai online casino \"tmr89\" (both Primo Burgers entries)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/primoburgersandcafe.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "theolivesbranch.com",
+    "match": "domain",
+    "place": "The Olives Branch (San Juan Capistrano)",
+    "reason": "injected hidden links: 1px hidden block of replica-watch links (costwatches.com \"replica uhren\", bestreplicawatch.shop...)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/theolivesbranch.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "submarina.com",
+    "match": "domain",
+    "place": "Submarina California Subs; Submarina; Submarina California Subs, UTC (Escondido); Submarina California Subs; Submarina (La Mesa); Submarina Cali Subs (Murrieta)",
+    "reason": "injected hidden links: off-screen (left:-7881px) links: polscekasyno.pl \"fireball casino\", oneamphoto.co.uk \"betting sites\" on all location pages",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/submarina.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "jvsmexfood.com",
+    "match": "domain",
+    "place": "JV's Mexican Food (San Diego)",
+    "reason": "injected links: footer widgets carry Indian betting banners linking crorewin.bet and 4RABET",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/jvsmexfood.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "sanfranciscochinatown.com",
+    "match": "domain",
+    "place": "Chinatown (Loma Linda)",
+    "reason": "injected hidden links: off-screen (left:-2001px) link \"write essay for me\" (essayforme.org); also a SF Chinatown directory, not the Loma Linda place's site",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/sanfranciscochinatown.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "thelittlecafe.org",
+    "match": "domain",
+    "place": "The Little Cafe (Atascadero)",
+    "reason": "domain taken over: whole site is \"LittleCaffe x RajaZeus\" slot site",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/thelittlecafe.org.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "stickyricebistro.com",
+    "match": "domain",
+    "place": "Sticky Rice Chinese Bistro and Bar (Fairfield)",
+    "reason": "domain taken over: whole site is Greek betting site \"Betshop\"",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/stickyricebistro.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "ginochioskitchen.com",
+    "match": "domain",
+    "place": "Ginochio's Kitchen (Bodega Bay)",
+    "reason": "injected hidden links: off-screen (right:-1650px) link \"car insurance quotes wichita ks\" (wichitainsurance.pro)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/ginochioskitchen.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "cafebonapartehb.com",
+    "match": "domain",
+    "place": "Cafe Bonaparte (Hermosa Beach)",
+    "reason": "domain taken over: whole site is a Japanese online-casino rebate-bonus guide",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/cafebonapartehb.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "timothysbakery.com",
+    "match": "domain",
+    "place": "Timothy's Bakery (Woodland)",
+    "reason": "domain taken over: whole site is Thai slot site \"WINNOW168\"",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/timothysbakery.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "patoghdining.com",
+    "match": "domain",
+    "place": "Patogh Restaurant (Turlock)",
+    "reason": "domain taken over: whole site is a Thai slot promotion site",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/patoghdining.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "hightidedtla.com",
+    "match": "domain",
+    "place": "High Tide (Los Angeles)",
+    "reason": "injected hidden links: font-size:0 block of Turkish casino links \"deneme bonusu veren siteler\" (emerickbeats.com, sugarstilettosstyle.com)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/hightidedtla.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "birdshollywood.com",
+    "match": "domain",
+    "place": "Birds (Los Angeles)",
+    "reason": "injected hidden links: off-screen (left:-7532px) link \"online pokies australia\" (actpetcrisisfund.com)",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/birdshollywood.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "talsoffsunset.com",
+    "match": "domain",
+    "place": "Tal's Off Sunset (Los Angeles)",
+    "reason": "domain taken over: whole site is \"JANJISLOT\" Indonesian slot site",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/talsoffsunset.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "culichiroll.com",
+    "match": "domain",
+    "place": "Culichiroll (Pomona)",
+    "reason": "domain taken over: whole site is a Thai slot \"free credit\" site",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/culichiroll.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "eatatrudys.com",
+    "match": "domain",
+    "place": "Eat At Rudy's (Torrance)",
+    "reason": "domain taken over: whole site is \"POLTARTOTO\" toto/togel site",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/eatatrudys.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "mercadocorona.com",
+    "match": "domain",
+    "place": "Mercado Corona (Laguna Hills)",
+    "reason": "injected spam text: Cialis/sildenafil pharma spam text in the home page body",
+    "severity": "P0",
+    "evidence": "$SP/work/link-scan/evidence/ca/mercadocorona.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "nourishthai.com",
+    "match": "domain",
+    "place": "Nourish (Folsom)",
+    "reason": "another business: Nourish Thai with a New York address (not Folsom, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/nourishthai.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "bamboogarden.com",
+    "match": "domain",
+    "place": "Bamboo Garden Restaurant (Alhambra)",
+    "reason": "another business: Bamboo Garden Nursery, Oregon (for Bamboo Garden Restaurant, Alhambra, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/bamboogarden.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "newhorizons.com",
+    "match": "domain",
+    "place": "New Horizons Bakery (Daly City)",
+    "reason": "another business: New Horizons IT training company (for New Horizons Bakery, Daly City)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/newhorizons.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "thaicafenc.com",
+    "match": "domain",
+    "place": "Thai Cafe (Twentynine Palms)",
+    "reason": "another business: Thai Cafe, Durham/Wake Forest, NC (not Twentynine Palms, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/thaicafenc.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "fungskitchen.com",
+    "match": "domain",
+    "place": "Fung's Kitchen (Fresno)",
+    "reason": "another business: Fung's Kitchen, Houston, TX (not Fresno)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/fungskitchen.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "deliciasbakerycafe.com",
+    "match": "domain",
+    "place": "Delicias Bakery (Soledad)",
+    "reason": "another business: Delicias Bakery Cafe, New Jersey (not Soledad, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/deliciasbakerycafe.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "mayasfiestacatering.com",
+    "match": "domain",
+    "place": "Maya's Restaurant (Los Angeles)",
+    "reason": "another business: Maya Fiesta Catering, Washington State (for Maya's Restaurant, Los Angeles)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/mayasfiestacatering.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "chanosrestaurant.com",
+    "match": "domain",
+    "place": "Chanos Drive-In (San Gabriel)",
+    "reason": "another business: Chanos Latin Kitchen, Pompton Plains, NJ (for Chanos Drive-In, San Gabriel)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/chanosrestaurant.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "pjssportsbar.com",
+    "match": "domain",
+    "place": "Pj's Sports Pub (Thousand Oaks)",
+    "reason": "another business: PJ's Sports Bar, Texas (for PJ's Sports Pub, Thousand Oaks)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/pjssportsbar.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "starbagel.com",
+    "match": "domain",
+    "place": "Star Bagels (San Francisco)",
+    "reason": "another business: Star Bagel with a Tennessee address (not San Francisco)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/starbagel.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "falafelinc.org",
+    "match": "domain",
+    "place": "Falafel (Los Angeles)",
+    "reason": "another business: Falafel Inc, Washington DC (for Falafel, Los Angeles)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/falafelinc.org.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "highsierrabakery.com",
+    "match": "domain",
+    "place": "High Sierra Bakery (Bridgeport)",
+    "reason": "for sale: \"highsierrabakery.com for sale\"",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/highsierrabakery.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "mrshawarmatrucks.com",
+    "match": "domain",
+    "place": "Mr. Shawarma El Cajon (El Cajon); Mr. Shawarma Pacific Beach (San Diego)",
+    "reason": "no site: Apache2 Debian default page",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/mrshawarmatrucks.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "raniii.com",
+    "match": "domain",
+    "place": "Sake 2 Me Sushi (Tustin)",
+    "reason": "another business: Sake 2 Me Sushi, Tulsa, OK (not Tustin, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/raniii.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "bunsobreads.com",
+    "match": "domain",
+    "place": "Bunso Breads Bakery & Cafe (Pleasanton)",
+    "reason": "no site: \"Welcome to nginx!\" default page",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/bunsobreads.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "addisethiopian.com",
+    "match": "domain",
+    "place": "Addis Ethiopian Restaurant (Oakland)",
+    "reason": "no site: empty \"Index of /\" directory listing",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/addisethiopian.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "loganinn.com",
+    "match": "domain",
+    "place": "Logan Inn (San Diego)",
+    "reason": "another business: Logan Inn, New Hope, PA (not San Diego)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/loganinn.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "mooredelights.com",
+    "match": "domain",
+    "place": "Moore Delights Gourmet Bakery (Bakersfield)",
+    "reason": "parked: \"Parked Domain name on Hostinger DNS system\"",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/mooredelights.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "bangkokhouserestaurant.com",
+    "match": "domain",
+    "place": "Bangkok House Restaurant (Ridgecrest)",
+    "reason": "another business: Bangkok House, Milwaukee, WI (not Ridgecrest, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/bangkokhouserestaurant.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "cafefusion8300.com",
+    "match": "domain",
+    "place": "Cafe Fusion (San Diego)",
+    "reason": "another business: Cafe Fusion, Bloomington, MN (not San Diego)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/cafefusion8300.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "flordemayo.com",
+    "match": "domain",
+    "place": "Tortilleria Flor de mayo (Fontana)",
+    "reason": "another business: Flor de Mayo Peruvian restaurant, NYC (for Tortilleria Flor de Mayo, Fontana, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/flordemayo.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "famousfoods.com",
+    "match": "domain",
+    "place": "Famous Food Chinese Restaurant (Sunnyvale)",
+    "reason": "another business: Famous Foods New England cookware store (for Famous Food Chinese Restaurant, Sunnyvale)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/famousfoods.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "notjusdonuts.net",
+    "match": "domain",
+    "place": "JJS Donuts (West Covina)",
+    "reason": "another business: Not Jus' Donuts, Houston, TX (for JJS Donuts, West Covina)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/notjusdonuts.net.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "trellisrestaurant.com",
+    "match": "domain",
+    "place": "Trellis Restaurant (Menlo Park)",
+    "reason": "expired: \"Directnic Expired Domain ... renew now\"",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/trellisrestaurant.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "twobrotherspizza.com",
+    "match": "domain",
+    "place": "Two Brothers Pizza (Huntington Beach)",
+    "reason": "another business: Two Brothers Pizza, Massachusetts (not Huntington Beach, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/twobrotherspizza.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "match": "url",
+    "place": "Whole Foods Bakery (Venice)",
+    "reason": "another business: Whole Foods Kahala Mall, Honolulu store page (for Whole Foods Bakery, Venice, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/wholefoodsmarket.com_stores_honolulu.html",
+    "found": "2026-10-12",
+    "url": "http://wholefoodsmarket.com/stores/honolulu/"
+  },
+  {
+    "domain": "georgesmarket.com",
+    "match": "domain",
+    "place": "George's Market (Calimesa)",
+    "reason": "another business: George's Market at Dreshertown, PA (not Calimesa, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/georgesmarket.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "havenacresmn.org",
+    "match": "domain",
+    "place": "Haven Acres Marina Bar & Grill (Lathrop)",
+    "reason": "another business: Haven Acres, Minnesota (for Haven Acres Marina Bar & Grill, Lathrop, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/havenacresmn.org.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "fortunegardenonline.com",
+    "match": "domain",
+    "place": "Fortune Garden Chinese Restaurant (El Dorado Hills)",
+    "reason": "another business: Fortune Garden, Pennsylvania (not El Dorado Hills, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/fortunegardenonline.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "thespeakeasy.buzz",
+    "match": "domain",
+    "place": "The Speakeasy (Eureka)",
+    "reason": "another business: The Speakeasy with a Colorado address (not Eureka, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/thespeakeasy.buzz.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "rainbowdrivein.com",
+    "match": "domain",
+    "place": "Rainbow Drive In (Farmersville)",
+    "reason": "another business: Rainbow Drive-In, Honolulu (not Farmersville, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/rainbowdrivein.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "bigbasinburgerbar.com",
+    "match": "domain",
+    "place": "Big Basin Burger Bar (Saratoga)",
+    "reason": "parked: \"Parked Domain name on Hostinger DNS system\"",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/bigbasinburgerbar.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "cocoswirl.com",
+    "match": "domain",
+    "place": "Coco Swirl (Pleasant Hill)",
+    "reason": "another business: Cocoswirl Ltd, UK (not Pleasant Hill, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/cocoswirl.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "coffeeexpress.com",
+    "match": "domain",
+    "place": "Viva Espresso Organics (Salinas)",
+    "reason": "another business: Coffee Express with a Maine address (for Viva Espresso Organics, Salinas, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/coffeeexpress.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "seafoodinthesea.com",
+    "match": "domain",
+    "place": "Seafood In The Sea (Fresno)",
+    "reason": "no site: \"Welcome to nginx!\" default page",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/seafoodinthesea.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "caffepositanos.com",
+    "match": "domain",
+    "place": "Caffe Positano (Rancho Santa Fe)",
+    "reason": "another business: Caffè Positano, Apopka, FL (not Rancho Santa Fe, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/caffepositanos.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "atticusnhv.com",
+    "match": "domain",
+    "place": "Atticus Cafe (Anaheim)",
+    "reason": "another business: Atticus Bookstore Cafe, New Haven, CT (not Anaheim, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/atticusnhv.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "korean-bbq.com",
+    "match": "domain",
+    "place": "Seoul Garden Korean B.B.Q (Victorville)",
+    "reason": "another business: Cheraw Family Dentistry, SC (for Seoul Garden Korean BBQ, Victorville)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/korean-bbq.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "greenhousecafe.com",
+    "match": "domain",
+    "place": "Greenhouse Cafe (Placerville)",
+    "reason": "another business: Greenhouse Cafe with a New York address (not Placerville, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/greenhousecafe.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "shanghaigateboston.com",
+    "match": "domain",
+    "place": "Shanghai Fast Food (Lake Elsinore)",
+    "reason": "another business: Shanghai Gate, Boston, MA (for Shanghai Fast Food, Lake Elsinore, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/shanghaigateboston.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "hulas.com",
+    "match": "domain",
+    "place": "Hula's (Escalon)",
+    "reason": "another business: Hula's Bar & Lei Stand, Honolulu (not Escalon, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/hulas.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "poomthai.com",
+    "match": "domain",
+    "place": "Poom Thai Cuisine (Santa Monica)",
+    "reason": "for sale: \"poomthai.com for sale\"",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/poomthai.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "caliviejo.com",
+    "match": "domain",
+    "place": "Cali Viejo Restaurant (Van Nuys)",
+    "reason": "another business: Cali Viejo, Florida (not Van Nuys, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/caliviejo.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "kamakurarestaurant.com",
+    "match": "domain",
+    "place": "Kamakura Japanese Restaurant (Los Gatos)",
+    "reason": "for sale: \"Domain For Sale: Kamakura Restaurant ... make an offer\"",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/kamakurarestaurant.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "romancucina.com",
+    "match": "domain",
+    "place": "Roman Cucina (Fullerton)",
+    "reason": "another business: Roman Cucina, Texas (not Fullerton, CA)",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/romancucina.com.html",
+    "found": "2026-10-12"
+  },
+  {
+    "domain": "mckinleysgrille.com",
+    "match": "domain",
+    "place": "McKinley's Grille (Pomona)",
+    "reason": "no site: \"Welcome to nginx!\" default page",
+    "severity": "P2",
+    "evidence": "$SP/work/link-scan/evidence/ca/mckinleysgrille.com.html",
+    "found": "2026-10-12"
   }
 ]

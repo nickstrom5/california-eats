@@ -20,6 +20,7 @@ The web app (explore/): loads; searches; opens a place with Directions and focus
   A search inside a guide that finds no (or one or two) places offers 'Search all restaurants (N matches)', also before the statewide
   list has loaded (it says it's counting), and one click finds the place; the first load still doesn't fetch places.json; the search
   box's placeholder fits at 375 px. No blocklisted website (pipeline/website_blocklist.json, which mustn't be empty) anywhere in docs/.
+  No "Confirmed listing" anywhere in docs/ (the label is "High-confidence listing"), and no promise of a TestFlight invite or link.
 
 Until the custom domain is live, the site is built for https://nickstrom5.github.io/california-eats/, so it's served here under the same
 /california-eats/ prefix (a temporary folder with a link to docs/).
@@ -328,6 +329,33 @@ def family_and_contact_checks():
             bad("index.html: the #org node has no parentOrganization https://eatsranked.com/#organization")
         if org.get("email") != SITE_EMAIL or (org.get("contactPoint") or {}).get("email") != SITE_EMAIL:
             bad(f"index.html: the #org email isn't {SITE_EMAIL}")
+
+
+# Nick, 2026-10-13 (family-wide): the web app's middle tier is a "High-confidence listing", never a "Confirmed listing"; and since only
+# his internal TestFlight group exists, the site never promises a TestFlight invite or link: the early-access copy ends at an ask.
+OLD_LABEL = re.compile(r"confirmed\s+listing", re.I)
+PROMISES = [re.compile(r"\b(?:we|you)(?:\\?['’]ll|\s+will)\b[^.!?]{0,60}?(?:invit\w*|testflight(?:\s+(?:invit\w*|links?))?|\bbeta\b)", re.I),  # "we'll email you a TestFlight invite"
+            re.compile(r"\btestflight\s+(?:invit\w*|links?)\b", re.I)]                                           # "the button gets you a TestFlight link"
+
+
+def label_and_promise_checks():
+    """No "Confirmed listing" (any case) in any file in docs/, the web app's script and data included; and nothing a visitor reads
+    (page text, meta descriptions, alt and aria text, JSON-LD, the web app's strings) promises or offers a TestFlight invite or link.
+    A mailto: link whose body asks for access is fine, so mailto hrefs are left out of the promise check."""
+    for d, _, fs in os.walk(DOCS):
+        for f in fs:
+            if not f.endswith((".html", ".json", ".xml", ".txt", ".webmanifest", ".js", ".css", ".md", ".svg")):
+                continue
+            rel = os.path.relpath(os.path.join(d, f), DOCS)
+            s = open(os.path.join(d, f), encoding="utf-8", errors="replace").read()
+            m = OLD_LABEL.search(s)
+            if m:
+                bad(f"{rel}: says {m.group(0)!r} (the label is 'High-confidence listing')")
+            raw = html.unescape(re.sub(r'href="mailto:[^"]*"', 'href=""', s))
+            found = [m.group(0) for text in (raw, re.sub(r"<[^>]+>", " ", raw))   # as written, and with inline tags out of the way
+                     for rx in PROMISES for m in [rx.search(text)] if m]
+            if found:
+                bad(f"{rel}: promises a TestFlight invite or link: {' '.join(found[0].split())!r}")
 
 
 CITY_PROMISES = {"taquer": "taquerias", "dim sum": "dim-sum", "burrito": "burritos", "fish taco": "fish-tacos", "korean b": "korean-bbq",
@@ -1088,6 +1116,7 @@ def main():
     files = static_checks()
     page_type_checks(files)
     family_and_contact_checks()
+    label_and_promise_checks()
     city_page_checks(files)
     city_overlap_checks(files)
     privacy_storage_checks()

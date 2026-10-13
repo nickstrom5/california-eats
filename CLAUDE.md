@@ -63,6 +63,9 @@ Republish the artifact with the same file path (`site/index.html` + its JSON fil
 - Contact on the site is `nick@eatsranked.com` (Nick, 2026-10-12); `qa-site.py` fails on the old Gmail address anywhere in `docs/`. The
   app's `Links.swift` and the playbook's listing/reply files still have the old one until the next build.
 - Every page's footer says "Part of Eats Ranked" and the home `#org` node has `parentOrganization` (the hub's `#organization`).
+- Copy decisions (Nick, 2026-10-13, family-wide): the web app's middle tier is "High-confidence listing", never "Confirmed listing";
+  only Nick's internal TestFlight group exists, so the site never promises a TestFlight invite or link (early-access copy ends at an
+  ask; the button's mailto body may ask). `qa-site.py` fails on either (`label_and_promise_checks`).
 - Web app data (`docs/data/`): `start.json` (metadata + the ~860 hand-checked, honored and dated places; the first load is ~80 KB
   gzipped with the page), `places.json` (the rest, fetched for All restaurants, Inspections, saved places and `#p=` links), `detail-<k>.json`
   (ids, phones, websites and notes per block of 4,096 rows, fetched when a place opens) and `ids-<h>.json` (rows by id). `qa-site.py`

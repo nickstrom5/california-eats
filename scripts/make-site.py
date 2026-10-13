@@ -919,7 +919,7 @@ body = f"""{nav}
       <div class="ex-guides" role="group" aria-label="Guides">{guide_buttons}</div>
       <div class="ex-row1">
         <label class="skip" for="ex-q">Search</label>
-        <input id="ex-q" type="search" placeholder="Name, town, street, zip or dish" autocomplete="off" enterkeyhint="search">
+        <input id="ex-q" type="search" placeholder="Name, town, street or dish" autocomplete="off" enterkeyhint="search">
         <button type="button" id="ex-locate" class="ex-small">Near me</button>
       </div>
       <div class="ex-row2">

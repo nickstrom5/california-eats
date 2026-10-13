@@ -2,7 +2,7 @@
 <html lang="en" data-base="/california-eats">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-E4tV81eTK+zD1PJvWpZEELfMLrmnt9uSsb8LqDQI7qo=' 'sha256-+pVLco3lw1uwNvPduKL5H+vpzOU/auRMtCVLhj5pAKo='; style-src 'sha256-qZuyL83mR1JhoRO7NgDbHFpFqFCYjEYgn7j97QX36G8='; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-o2aSk8rsM7B7AXpreE2l7L+sd90k2pYV8U6S+1NKA1U=' 'sha256-+pVLco3lw1uwNvPduKL5H+vpzOU/auRMtCVLhj5pAKo='; style-src 'sha256-3pDrDBEMIayhhC7nnOl7vbCFkoSfpwd4gpPxr1NGTMI='; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <meta name="apple-itunes-app" content="app-id=APP_ID"> fill in once the App Store record exists -->
@@ -175,6 +175,7 @@
   .ex-rank { flex: 0 0 34px; height: 34px; display: grid; place-items: center; font: 800 20px var(--display); color: var(--blue); border-radius: 8px; }
   .ex-rank.top { background: var(--gold); color: #0e1b2c; }
   .ex-empty { padding: 24px 4px; color: var(--muted); }
+  .ex-widen .ex-small { display: flex; margin-top: 10px; }   /* "Search all restaurants" under an empty or short guide search */
   #ex-more { display: block; margin: 8px auto 24px; }
   #ex-mapwrap { position: relative; height: min(72vh, 620px); margin: 10px 0 20px; border: 1px solid var(--rule); border-radius: 16px; overflow: hidden; background: #d6e4f2; }
   @media (prefers-color-scheme: dark) { #ex-mapwrap { background: #13283d; } }
@@ -274,7 +275,7 @@
       <div class="ex-guides" role="group" aria-label="Guides"><button type="button" data-g="taqueria" aria-pressed="false">Taquerías</button><button type="button" data-g="dimsum" aria-pressed="false">Dim sum</button><button type="button" data-g="burrito" aria-pressed="false">Burritos</button><button type="button" data-g="fishtaco" aria-pressed="false">Fish tacos</button><button type="button" data-g="kbbq" aria-pressed="false">Korean BBQ</button><button type="button" data-g="burgerstand" aria-pressed="false">Burger stands</button><button type="button" data-g="winecountry" aria-pressed="false">Wine country</button><button type="button" data-g="honors" aria-pressed="false">MICHELIN &amp; James Beard</button><button type="button" data-g="oldest" aria-pressed="false">Oldest</button><button type="button" data-g="inspections" aria-pressed="false">Inspections</button><button type="button" data-g="all" aria-pressed="false">All restaurants</button><button type="button" data-g="saved" aria-pressed="false">Saved</button></div>
       <div class="ex-row1">
         <label class="skip" for="ex-q">Search</label>
-        <input id="ex-q" type="search" placeholder="Name, town, street, zip or dish" autocomplete="off" enterkeyhint="search">
+        <input id="ex-q" type="search" placeholder="Name, town, street or dish" autocomplete="off" enterkeyhint="search">
         <button type="button" id="ex-locate" class="ex-small">Near me</button>
       </div>
       <div class="ex-row2">
@@ -555,12 +556,53 @@
     if (view === "list") renderList(o); else drawMap();
   }
 
+  // A search inside a guide that the rest of the state answers ("porto's bakery" in Taquerías): the page opens on a guide, so offer All
+  // restaurants with the same words and filters instead of a dead end. The statewide rows (places.json) aren't part of the first load:
+  // the offer fetches them, says it's counting, then shows the count. Returns the offer's HTML, or "" when there's nothing more to find.
+  const FEW = 3;
+  let widenWait = null, widenFailed = false;
+  function widenOffer() {
+    if (st.g === "all" || current.length >= FEW) return "";
+    const q = parse(st.q);
+    if (qEmpty(q)) return "";
+    let label = "";
+    if (!fullDone) {
+      if (!widenFailed) {
+        label = " (counting matches…)";
+        // once: when the rows arrive (or don't), draw the view again with the count (or without one)
+        widenWait ||= loadFull().catch(() => { widenFailed = true; }).then(() => { widenWait = null; if (!GUIDES[st.g].full && !busy) render(); });
+      }
+    } else {
+      indexAll();
+      let n = 0;
+      for (const p of P) if (!p.v && allows(p) && matches(p, q)) n++;   // what All restaurants lists for the same words and filters
+      if (n <= current.length) return "";
+      label = ` (${n.toLocaleString()} ${n === 1 ? "match" : "matches"})`;
+    }
+    const lead = current.length ? `More outside ${esc(GUIDES[st.g].title)}:` : `Nothing in ${esc(GUIDES[st.g].title)} matches that.`;
+    return `<li class="ex-empty ex-widen">${lead} <button type="button" class="ex-small" id="ex-all">Search all restaurants${label}</button></li>`;
+  }
+  function wireWiden() {
+    const all = $("#ex-all");
+    if (!all) return;
+    all.onclick = () => {
+      st.g = "all"; st.sort = ""; shown = 100;
+      render();
+      // keyboard focus goes to the first result once the list is drawn (after the statewide rows load, if they hadn't)
+      (fullPromise || Promise.resolve()).then(() => { if (st.g === "all") $(".ex-row")?.focus(); }, () => {});
+    };
+  }
+
   function renderList(o) {
     const ol = $("#ex-list");
     const g = GUIDES[st.g];
+    const refocus = document.activeElement && document.activeElement.id === "ex-all";
     if (!current.length) {
-      ol.innerHTML = `<li class="ex-empty">${st.g === "saved" ? "Nothing saved yet. Open a place and tap Save to keep it here, in this browser." : "No places match. Try fewer words or clear the filters."}</li>`;
+      const offer = st.g === "saved" && !st.q.trim() ? "" : widenOffer();
+      ol.innerHTML = offer || `<li class="ex-empty">${st.g === "saved" && !st.q.trim() ? "Nothing saved yet. Open a place and tap Save to keep it here, in this browser." : "No places match. Try fewer words or clear the filters."}</li>`;
       $("#ex-more").hidden = true;
+      wireWiden();
+      if (refocus) $("#ex-all")?.focus();
       return;
     }
     ol.innerHTML = current.slice(0, shown).map((p, i) => {
@@ -570,7 +612,9 @@
       const second = insp ? [p.a, p.id_ && "inspected " + p.id_, p.is != null && p.ir != null && "score " + p.is].filter(Boolean).join(" · ") : (p.hc ? p.di : "");
       const metricHtml = insp ? `<span class="ex-metric">${resultBadge(p)}<small>official</small></span>` : m ? `<span class="ex-metric"><b>${esc(m[0])}</b><small>${m[1]}</small></span>` : "";
       return `<li><button class="ex-row" data-i="${p.i}">${rank}<span class="ex-main"><b>${esc(p.n)}</b><span class="ex-town">${esc([p.c, p.cu].filter(Boolean).join(" · "))}</span>${second ? `<span class="ex-town">${esc(second)}</span>` : ""}<span class="ex-chips">${chips(p, 4)}</span></span>${metricHtml}</button></li>`;
-    }).join("");
+    }).join("") + widenOffer();   // one or two results in a guide: the rest of the state may have more
+    wireWiden();
+    if (refocus) $("#ex-all")?.focus();
     const left = current.length - shown;
     $("#ex-more").hidden = left <= 0;
     $("#ex-more").textContent = `Show more (${left.toLocaleString()} left)`;

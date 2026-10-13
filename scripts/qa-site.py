@@ -17,6 +17,9 @@ The web app (explore/): loads; searches; opens a place with Directions and focus
   junk stored guide don't break it; the Inspections guide shows each county's own results; a failed start.json shows an error.
   Also: 16 px fields and the page's font on phones, the place panel as a modal dialog, Back/Forward with a place open, junk in any
   cae- key, no 'Nearest' without a location, a fresh fix on every Near me press, and a #p= link that is loading or fails.
+  A search inside a guide that finds no (or one or two) places offers 'Search all restaurants (N matches)', also before the statewide
+  list has loaded (it says it's counting), and one click finds the place; the first load still doesn't fetch places.json; the search
+  box's placeholder fits at 375 px. No blocklisted website (pipeline/website_blocklist.json, which mustn't be empty) anywhere in docs/.
 
 Until the custom domain is live, the site is built for https://nickstrom5.github.io/california-eats/, so it's served here under the same
 /california-eats/ prefix (a temporary folder with a link to docs/).
@@ -938,21 +941,137 @@ def webapp_behavior_checks(browser, base):
     ctx.close()
 
 
+FAMOUS = ("porto's bakery", "Porto's Bakery")   # a famous California place in no guide (only in the statewide list, places.json)
+
+
+def guide_search_checks(browser, base):
+    """The web app opens on a guide, and typing searches that guide only (ME-V08 / WI-V-03): a search the guide can't answer offers
+    'Search all restaurants' with the same words, before the statewide list (places.json) has loaded too (it fetches it, says it's
+    counting, then shows the count), and one click finds the place. The first load still doesn't fetch places.json. Also: the search
+    box's placeholder isn't cut off at 375 px (it read "...zip or d")."""
+    ex = base + PREFIX + "/explore/"
+    q, want = FAMOUS
+    ctx = browser.new_context(viewport={"width": 375, "height": 812})
+    page = ctx.new_page()
+    held = []   # places.json requests, held until released: the offer must work while they're in flight
+    page.route("**/data/places.json*", lambda r: held.append(r))
+    goto(page, ex + "#g=taqueria")
+    rows_ready(page)
+    # the placeholder's text as the value of the same box: same width, font, padding and border, as type=text (a type=search box with a
+    # value makes room for its clear button, which the placeholder doesn't have), then scrollWidth against clientWidth
+    ph = page.evaluate("""() => { const el = document.querySelector('#ex-q'), t = el.type, v = el.value, cs = getComputedStyle(el);
+        const keep = { fontSize: cs.fontSize, fontFamily: cs.fontFamily, fontWeight: cs.fontWeight, fontStyle: cs.fontStyle, letterSpacing: cs.letterSpacing,
+          paddingLeft: cs.paddingLeft, paddingRight: cs.paddingRight, borderLeftWidth: cs.borderLeftWidth, borderRightWidth: cs.borderRightWidth,
+          borderStyle: 'solid', boxSizing: cs.boxSizing, width: cs.width, flex: 'none' };
+        const size = parseFloat(cs.fontSize);
+        el.type = 'text'; Object.assign(el.style, keep); el.value = el.placeholder;
+        const r = { ph: el.placeholder, scroll: el.scrollWidth, client: el.clientWidth, size };
+        el.value = v; el.type = t; el.removeAttribute('style'); return r; }""")
+    if ph["scroll"] > ph["client"]:
+        bad(f"explore @375: the search placeholder {ph['ph']!r} is cut off (scrollWidth {ph['scroll']} > clientWidth {ph['client']})")
+    if ph["size"] < 16:
+        bad(f"explore @375: the search box is {ph['size']}px, under 16px")
+    page.wait_for_timeout(300)
+    if held:
+        bad("explore: the first load (a guide, no search) fetched places.json")
+    page.locator("#ex-q").fill(q)
+    page.wait_for_timeout(700)
+    if page.locator(".ex-row").count():
+        bad(f"explore: {q!r} now has a result in the Taquerías guide; pick another famous place outside every guide for this check")
+    btn = page.locator("#ex-all")
+    if not btn.count():
+        bad(f"explore: searching {q!r} in Taquerías before the statewide list loaded is a dead end ({(page.locator('#ex-list').text_content() or '').strip()[:90]!r}), with no way to search all restaurants")
+        ctx.close()
+        return
+    if "counting" not in (btn.text_content() or "") or not held:
+        bad(f"explore: while the statewide list loads, the offer should fetch it and say it's counting: {btn.text_content()!r}, places.json requested: {bool(held)}")
+    for r in held:
+        r.continue_()
+    page.unroute("**/data/places.json*")
+    try:
+        page.wait_for_function("() => /\\(\\d[\\d,]* match/.test(document.querySelector('#ex-all')?.textContent || '')", timeout=60000)
+    except Exception:
+        bad(f"explore: the 'Search all restaurants' offer never showed a count after the statewide list loaded: {page.locator('#ex-list').text_content()!r}")
+        ctx.close()
+        return
+    n = int(re.search(r"\(([\d,]+) match", btn.text_content()).group(1).replace(",", ""))
+    page.locator("#ex-all").click()
+    page.wait_for_timeout(600)
+    first = page.locator(".ex-row").first.text_content() if page.locator(".ex-row").count() else ""
+    count = page.locator("#ex-count").text_content() or ""
+    pressed = page.evaluate("document.querySelector('.ex-guides button[aria-pressed=\"true\"]')?.dataset.g")
+    if want not in first or pressed != "all" or page.locator("#ex-q").input_value() != q:
+        bad(f"explore: one click on 'Search all restaurants' should list {want} first in All restaurants with the same words: first row {first[:60]!r}, guide {pressed!r}")
+    if not count.startswith(f"{n:,} place"):
+        bad(f"explore: the offer said {n:,} matches but All restaurants lists {count!r}")
+    if not page.evaluate("document.activeElement?.classList.contains('ex-row')"):
+        bad("explore: after 'Search all restaurants', keyboard focus isn't on the first result")
+    # one or two results in a guide, more statewide: the offer follows the short list (Tito's Tacos: Culver City is a hand-checked taquería)
+    page.locator('.ex-guides button[data-g="taqueria"]').click()
+    page.locator("#ex-q").fill("tito's tacos")
+    page.wait_for_timeout(700)
+    rows, offer = page.locator(".ex-row").count(), page.locator("#ex-all").text_content() if page.locator("#ex-all").count() else ""
+    if not (1 <= rows < 3 and re.search(r"\(\d+ matches\)", offer or "")):
+        bad(f"explore: 'tito's tacos' in Taquerías ({rows} rows) should offer the statewide matches too: {offer!r}")
+    # nothing anywhere: no offer, the plain message
+    page.locator("#ex-q").fill("zzqxv")
+    page.wait_for_timeout(700)
+    if page.locator("#ex-all").count() or "No places match" not in (page.locator("#ex-list").text_content() or ""):
+        bad("explore: a search nothing statewide matches still offers 'Search all restaurants'")
+    ctx.close()
+    # clicking the offer before the statewide list arrives: All restaurants says it's loading, then lists the place
+    ctx = browser.new_context(viewport={"width": 375, "height": 812})
+    page = ctx.new_page()
+    held = []
+    page.route("**/data/places.json*", lambda r: held.append(r))
+    goto(page, ex + "#g=dimsum")
+    rows_ready(page)
+    page.locator("#ex-q").fill(q)
+    page.wait_for_timeout(700)
+    if not page.locator("#ex-all").count():
+        bad(f"explore: searching {q!r} in Dim Sum before the statewide list loaded offers nothing")
+    else:
+        page.locator("#ex-all").click()
+        page.wait_for_timeout(300)
+        if "Loading" not in (page.locator("#ex-count").text_content() or ""):
+            bad(f"explore: 'Search all restaurants' clicked while the statewide list loads shows no loading state: {page.locator('#ex-count').text_content()!r}")
+        for r in held:
+            r.continue_()
+        page.unroute("**/data/places.json*")
+        try:
+            page.wait_for_function("(w) => (document.querySelector('.ex-row')?.textContent || '').includes(w)", arg=want, timeout=60000)
+        except Exception:
+            bad(f"explore: 'Search all restaurants' clicked while the statewide list loaded never listed {want}")
+    ctx.close()
+
+
 def blocklist_checks():
     """No blocklisted website (pipeline/website_blocklist.json: hacked sites, listing farms, another business's page) anywhere in docs/:
-    pages, JSON-LD and every web-app data file, any case, with or without www. or http(s)://."""
+    pages, JSON-LD and every web-app data file, any case, with or without www. or http(s)://. An empty or missing list fails too (the
+    check would pass on anything), and so does an entry this check couldn't match."""
     path = os.path.join(ROOT, "pipeline", "website_blocklist.json")
     if not os.path.exists(path):
         bad("no pipeline/website_blocklist.json")
         return
+    entries = json.load(open(path))
+    if not isinstance(entries, list) or not entries:
+        bad("pipeline/website_blocklist.json is empty: the blocklist check would pass on anything")
+        return
     pats = []
-    for b in json.load(open(path)):
+    for b in entries:
         if b.get("match", "domain") == "domain":
-            d = re.escape(b["domain"].lower().removeprefix("www."))
-            pats.append((b["domain"], re.compile(r"(?<![a-z0-9.-])(?:[a-z0-9-]+\.)*" + d + r"(?![a-z0-9-])", re.I)))
+            dom = (b.get("domain") or "").strip().lower().removeprefix("www.")
+            if not re.fullmatch(r"[a-z0-9-]+(\.[a-z0-9-]+)+", dom):
+                bad(f"pipeline/website_blocklist.json: {b.get('domain')!r} isn't a bare domain (no scheme, path or spaces)")
+                continue
+            pats.append((b["domain"], re.compile(r"(?<![a-z0-9.-])(?:[a-z0-9-]+\.)*" + re.escape(dom) + r"(?![a-z0-9-])", re.I)))
         else:
-            u = re.escape(re.sub(r"^https?://(www\.)?", "", b["url"].lower()).rstrip("/"))
-            pats.append((b["url"], re.compile(r"(?<![a-z0-9.-])(?:www\.)?" + u + r"/?(?![a-z0-9/_-])", re.I)))
+            raw = b.get("url") or b.get("domain") or ""     # make-site.py reads a "url" entry the same way
+            if not raw.strip():
+                bad(f"pipeline/website_blocklist.json: a url entry without a url ({b.get('place')!r})")
+                continue
+            u = re.escape(re.sub(r"^https?://(www\.)?", "", raw.strip().lower()).rstrip("/"))
+            pats.append((raw, re.compile(r"(?<![a-z0-9.-])(?:www\.)?" + u + r"/?(?![a-z0-9/_-])", re.I)))
     for d, _, fs in os.walk(DOCS):
         for fn in fs:
             if not fn.endswith(GZIP_TYPES):
@@ -993,6 +1112,7 @@ def main():
         explore_load_checks(browser, base)
         webapp_checks(browser, base)
         webapp_behavior_checks(browser, base)
+        guide_search_checks(browser, base)
         browser.close()
     print(f"static: {len(files)} HTML files, {n_static} problems | browser: {len(jobs)} page loads at 375 and 1280 px, plus the web app")
     for p in problems:

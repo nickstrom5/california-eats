@@ -253,12 +253,53 @@
     if (view === "list") renderList(o); else drawMap();
   }
 
+  // A search inside a guide that the rest of the state answers ("porto's bakery" in Taquerías): the page opens on a guide, so offer All
+  // restaurants with the same words and filters instead of a dead end. The statewide rows (places.json) aren't part of the first load:
+  // the offer fetches them, says it's counting, then shows the count. Returns the offer's HTML, or "" when there's nothing more to find.
+  const FEW = 3;
+  let widenWait = null, widenFailed = false;
+  function widenOffer() {
+    if (st.g === "all" || current.length >= FEW) return "";
+    const q = parse(st.q);
+    if (qEmpty(q)) return "";
+    let label = "";
+    if (!fullDone) {
+      if (!widenFailed) {
+        label = " (counting matches…)";
+        // once: when the rows arrive (or don't), draw the view again with the count (or without one)
+        widenWait ||= loadFull().catch(() => { widenFailed = true; }).then(() => { widenWait = null; if (!GUIDES[st.g].full && !busy) render(); });
+      }
+    } else {
+      indexAll();
+      let n = 0;
+      for (const p of P) if (!p.v && allows(p) && matches(p, q)) n++;   // what All restaurants lists for the same words and filters
+      if (n <= current.length) return "";
+      label = ` (${n.toLocaleString()} ${n === 1 ? "match" : "matches"})`;
+    }
+    const lead = current.length ? `More outside ${esc(GUIDES[st.g].title)}:` : `Nothing in ${esc(GUIDES[st.g].title)} matches that.`;
+    return `<li class="ex-empty ex-widen">${lead} <button type="button" class="ex-small" id="ex-all">Search all restaurants${label}</button></li>`;
+  }
+  function wireWiden() {
+    const all = $("#ex-all");
+    if (!all) return;
+    all.onclick = () => {
+      st.g = "all"; st.sort = ""; shown = 100;
+      render();
+      // keyboard focus goes to the first result once the list is drawn (after the statewide rows load, if they hadn't)
+      (fullPromise || Promise.resolve()).then(() => { if (st.g === "all") $(".ex-row")?.focus(); }, () => {});
+    };
+  }
+
   function renderList(o) {
     const ol = $("#ex-list");
     const g = GUIDES[st.g];
+    const refocus = document.activeElement && document.activeElement.id === "ex-all";
     if (!current.length) {
-      ol.innerHTML = `<li class="ex-empty">${st.g === "saved" ? "Nothing saved yet. Open a place and tap Save to keep it here, in this browser." : "No places match. Try fewer words or clear the filters."}</li>`;
+      const offer = st.g === "saved" && !st.q.trim() ? "" : widenOffer();
+      ol.innerHTML = offer || `<li class="ex-empty">${st.g === "saved" && !st.q.trim() ? "Nothing saved yet. Open a place and tap Save to keep it here, in this browser." : "No places match. Try fewer words or clear the filters."}</li>`;
       $("#ex-more").hidden = true;
+      wireWiden();
+      if (refocus) $("#ex-all")?.focus();
       return;
     }
     ol.innerHTML = current.slice(0, shown).map((p, i) => {
@@ -268,7 +309,9 @@
       const second = insp ? [p.a, p.id_ && "inspected " + p.id_, p.is != null && p.ir != null && "score " + p.is].filter(Boolean).join(" · ") : (p.hc ? p.di : "");
       const metricHtml = insp ? `<span class="ex-metric">${resultBadge(p)}<small>official</small></span>` : m ? `<span class="ex-metric"><b>${esc(m[0])}</b><small>${m[1]}</small></span>` : "";
       return `<li><button class="ex-row" data-i="${p.i}">${rank}<span class="ex-main"><b>${esc(p.n)}</b><span class="ex-town">${esc([p.c, p.cu].filter(Boolean).join(" · "))}</span>${second ? `<span class="ex-town">${esc(second)}</span>` : ""}<span class="ex-chips">${chips(p, 4)}</span></span>${metricHtml}</button></li>`;
-    }).join("");
+    }).join("") + widenOffer();   // one or two results in a guide: the rest of the state may have more
+    wireWiden();
+    if (refocus) $("#ex-all")?.focus();
     const left = current.length - shown;
     $("#ex-more").hidden = left <= 0;
     $("#ex-more").textContent = `Show more (${left.toLocaleString()} left)`;

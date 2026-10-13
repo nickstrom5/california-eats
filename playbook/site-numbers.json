@@ -41,7 +41,9 @@
    "Burger stands": 8,
    "Wine country": 0,
    "honored": 69,
-   "inspected": 7813
+   "oldest": 2,
+   "inspected": 7813,
+   "indexed": true
   },
   "San Francisco": {
    "restaurants": 5254,
@@ -53,7 +55,9 @@
    "Burger stands": 1,
    "Wine country": 0,
    "honored": 63,
-   "inspected": 4506
+   "oldest": 2,
+   "inspected": 4506,
+   "indexed": true
   },
   "San Diego": {
    "restaurants": 4310,
@@ -65,7 +69,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 12,
-   "inspected": 0
+   "oldest": 3,
+   "inspected": 0,
+   "indexed": true
   },
   "San Jose": {
    "restaurants": 2281,
@@ -77,7 +83,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 2,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Sacramento": {
    "restaurants": 2480,
@@ -89,19 +97,23 @@
    "Burger stands": 1,
    "Wine country": 0,
    "honored": 7,
-   "inspected": 2105
+   "oldest": 0,
+   "inspected": 2105,
+   "indexed": true
   },
   "Oakland": {
    "restaurants": 1011,
-   "Taquer\u00edas": 33,
-   "Dim sum": 9,
-   "Burritos": 26,
+   "Taquer\u00edas": 14,
+   "Dim sum": 1,
+   "Burritos": 10,
    "Fish tacos": 0,
    "Korean BBQ": 2,
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 17,
-   "inspected": 0
+   "oldest": 1,
+   "inspected": 0,
+   "indexed": true
   },
   "Fresno": {
    "restaurants": 1294,
@@ -113,31 +125,37 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Long Beach": {
    "restaurants": 1155,
-   "Taquer\u00edas": 13,
-   "Dim sum": 2,
+   "Taquer\u00edas": 6,
+   "Dim sum": 0,
    "Burritos": 0,
-   "Fish tacos": 4,
-   "Korean BBQ": 5,
-   "Burger stands": 1,
+   "Fish tacos": 1,
+   "Korean BBQ": 0,
+   "Burger stands": 0,
    "Wine country": 0,
    "honored": 4,
-   "inspected": 1
+   "oldest": 0,
+   "inspected": 1,
+   "indexed": true
   },
   "Pasadena": {
    "restaurants": 557,
-   "Taquer\u00edas": 36,
-   "Dim sum": 14,
+   "Taquer\u00edas": 9,
+   "Dim sum": 4,
    "Burritos": 0,
-   "Fish tacos": 11,
-   "Korean BBQ": 4,
-   "Burger stands": 4,
+   "Fish tacos": 5,
+   "Korean BBQ": 1,
+   "Burger stands": 1,
    "Wine country": 0,
    "honored": 1,
-   "inspected": 34
+   "oldest": 0,
+   "inspected": 34,
+   "indexed": true
   },
   "Santa Barbara": {
    "restaurants": 442,
@@ -149,31 +167,37 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 5,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Berkeley": {
    "restaurants": 469,
-   "Taquer\u00edas": 24,
-   "Dim sum": 8,
-   "Burritos": 18,
+   "Taquer\u00edas": 10,
+   "Dim sum": 1,
+   "Burritos": 7,
    "Fish tacos": 0,
-   "Korean BBQ": 2,
+   "Korean BBQ": 1,
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 5,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Santa Monica": {
    "restaurants": 601,
-   "Taquer\u00edas": 18,
-   "Dim sum": 3,
+   "Taquer\u00edas": 7,
+   "Dim sum": 2,
    "Burritos": 0,
-   "Fish tacos": 2,
-   "Korean BBQ": 2,
-   "Burger stands": 3,
+   "Fish tacos": 1,
+   "Korean BBQ": 1,
+   "Burger stands": 1,
    "Wine country": 0,
    "honored": 6,
-   "inspected": 503
+   "oldest": 0,
+   "inspected": 503,
+   "indexed": true
   },
   "Irvine": {
    "restaurants": 570,
@@ -185,7 +209,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Anaheim": {
    "restaurants": 857,
@@ -197,7 +223,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 2,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Riverside": {
    "restaurants": 752,
@@ -209,7 +237,9 @@
    "Burger stands": 1,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Bakersfield": {
    "restaurants": 1209,
@@ -221,7 +251,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 1,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Santa Cruz": {
    "restaurants": 290,
@@ -233,7 +265,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Napa": {
    "restaurants": 277,
@@ -245,7 +279,9 @@
    "Burger stands": 0,
    "Wine country": 8,
    "honored": 1,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Palm Springs": {
    "restaurants": 295,
@@ -257,7 +293,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": false
   },
   "Monterey": {
    "restaurants": 199,
@@ -269,7 +307,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": false
   },
   "San Luis Obispo": {
    "restaurants": 245,
@@ -281,7 +321,9 @@
    "Burger stands": 0,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 0
+   "oldest": 1,
+   "inspected": 0,
+   "indexed": false
   },
   "Stockton": {
    "restaurants": 654,
@@ -293,31 +335,37 @@
    "Burger stands": 0,
    "Wine country": 2,
    "honored": 0,
-   "inspected": 0
+   "oldest": 0,
+   "inspected": 0,
+   "indexed": true
   },
   "Glendale": {
    "restaurants": 666,
-   "Taquer\u00edas": 43,
-   "Dim sum": 9,
+   "Taquer\u00edas": 9,
+   "Dim sum": 1,
    "Burritos": 0,
-   "Fish tacos": 9,
-   "Korean BBQ": 13,
-   "Burger stands": 7,
+   "Fish tacos": 3,
+   "Korean BBQ": 2,
+   "Burger stands": 1,
    "Wine country": 0,
    "honored": 1,
-   "inspected": 568
+   "oldest": 0,
+   "inspected": 568,
+   "indexed": true
   },
   "San Gabriel": {
    "restaurants": 247,
-   "Taquer\u00edas": 37,
-   "Dim sum": 14,
+   "Taquer\u00edas": 9,
+   "Dim sum": 12,
    "Burritos": 0,
-   "Fish tacos": 9,
-   "Korean BBQ": 4,
-   "Burger stands": 2,
+   "Fish tacos": 4,
+   "Korean BBQ": 2,
+   "Burger stands": 1,
    "Wine country": 0,
    "honored": 0,
-   "inspected": 219
+   "oldest": 0,
+   "inspected": 219,
+   "indexed": true
   }
  }
 }

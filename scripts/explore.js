@@ -1,6 +1,11 @@
 // California Eats web app: the iPhone app's guides, search, filters, map and place details, in the browser.
-// Same data as the app (split into core + detail by scripts/make-site.py). No cookies, no trackers; saved places and the last guide
-// live in this browser's localStorage only. Adapted from wa-eats/scripts/explore.js (itself from wi-eats).
+// Same data as the app, split by scripts/make-site.py so the first load stays small: data/start.json (metadata and the ~860
+// hand-checked, honored and dated places: every guide but All restaurants and Inspections), data/places.json (everything else, list,
+// search and map columns; fetched when a view needs it), data/detail-<k>.json (ids, phones, websites, notes; one block of rows, fetched
+// when a place in it first opens) and data/ids-<h>.json (rows by id, for saved places and #p= links). No cookies, no trackers; saved
+// places and the last guide live in this browser's localStorage only, under "cae-" keys (other state sites share the github.io origin).
+// The page runs under a strict Content-Security-Policy (hash-pinned inline script and style): no inline event handlers or style
+// attributes in the HTML built here.
 (() => {
   "use strict";
   const BASE = document.documentElement.dataset.base || "";
@@ -44,7 +49,10 @@
     for (const [phrase, key] of tagPhraseList) { const r = find(normalize(phrase)); if (r) { q.tag = G[key]; q.tagPhrase = cut(r); break; } }
     for (const key of TOWN_KEYS_BY_LENGTH) {
       const r = find(key);
-      if (r && !(r[1] < mapped.length && typeAbbrs.has(mapped[r[1]]))) { q.town = TOWN_KEYS[key]; q.townPhrase = cut(r); break; }
+      // a town name right after a house number or a direction is a street ("1001 n alameda" is Alameda Street, not the town)
+      const before = r && r[0] > 0 ? mapped[r[0] - 1] : "";
+      const street = r && (/^\d+$/.test(before) || ["n", "s", "e", "w"].includes(before));
+      if (r && !street && !(r[1] < mapped.length && typeAbbrs.has(mapped[r[1]]))) { q.town = TOWN_KEYS[key]; q.townPhrase = cut(r); break; }
     }
     const stop = new Set(["the", "and", "of", "a", "in", "near", "me"]);
     let idx = raw.map((_, i) => i);
@@ -88,16 +96,23 @@
     honors: { title: "MICHELIN & James Beard", sub: "MICHELIN Guide California 2026 and James Beard honors, from the official announcements. Facts, not ratings.", inc: (p) => p.mi || p.h || p.gs,
       sorts: ["honored", "nearest", "name"], ranked: true },
     oldest: { title: "Oldest Places", sub: "Opening years we could verify at the current address, oldest first", inc: (p) => p.f != null, sorts: ["oldest", "nearest"], ranked: true },
-    inspections: { title: "Inspections", sub: "", inc: (p) => p.ij != null && p.ij === st.jur, sorts: ["best", "lowest", "nearest"] },
-    all: { title: "All Restaurants", sub: "Restaurants, cafés and bars statewide", inc: () => true, sorts: ["name", "nearest"] },
-    saved: { title: "Saved", sub: "Places you saved in this browser", inc: (p) => saved.has(p.id), sorts: ["name", "nearest"] },
+    inspections: { title: "Inspections", sub: "", inc: (p) => p.ij != null && p.ij === st.jur, sorts: ["best", "lowest", "nearest"], full: true },
+    all: { title: "All Restaurants", sub: "Restaurants, cafés and bars statewide", inc: () => true, sorts: ["name", "nearest"], full: true },
+    saved: { title: "Saved", sub: "Places you saved in this browser", inc: (p) => saved.has(IDS[p.i]), sorts: ["name", "nearest"] },
   };
   const SORT_LABEL = { nearest: "Nearest", oldest: "Oldest first", name: "A to Z", honored: "Most honored", best: "Best latest result", lowest: "Lowest latest result" };
+  // what the list is really in: "Nearest" needs a location, and until there is one the list runs A to Z
+  const orderLabel = (o) => (o === "nearest" && !here ? "A to Z (press Near me to sort by distance)" : SORT_LABEL[o]);
 
   // ---------------------------------------------------------------- state
-  let P = [], D = null, CAL = {}, JURS = [], TOWNS = new Set(), KINDS = new Set(), TOWN_KEYS = {}, TOWN_KEYS_BY_LENGTH = [], GENERATED = "", REGIONS = [];
-  let here = null, shown = 100, current = [], view = "list";
-  const saved = new Set(store.get("saved", []));
+  let P = [], META = {}, CAL = {}, JURS = [], TOWNS = new Set(), KINDS = new Set(), TOWN_KEYS = {}, TOWN_KEYS_BY_LENGTH = [], GENERATED = "", REGIONS = [];
+  let here = null, shown = 100, current = [], view = "list", openI = -1, busy = "";
+  const IDS = [], ID2I = new Map();   // each row's stable id, and the row for an id, as far as the files fetched so far tell
+  // any page on the shared github.io origin can write these keys: keep only what looks like a place id (a list of anything else, an
+  // object or a string would stop the app or fetch files for nothing)
+  const ID_RE = /^[0-9a-f][0-9a-z]{7,63}$/;   // a place id, as make-site.py writes them
+  const savedRaw = store.get("saved", []);
+  const saved = new Set(Array.isArray(savedRaw) ? savedRaw.filter((x) => typeof x === "string" && ID_RE.test(x)) : []);
   const st = { g: "taqueria", q: "", sort: "", region: "", town: "", cuisine: "", chains: false, p: "", jur: 0 };
 
   const miles = (a, b) => {
@@ -135,6 +150,8 @@
     return true;
   }
 
+  // one collator for every sort: localeCompare with options builds a new one per call, which took seconds over 100,000 names
+  const collate = new Intl.Collator("en", { sensitivity: "base" }).compare;
   // within one county: LA County's own score where there is one, otherwise the placard; then fewer non-pass results on record
   const inspKey = (p) => [p.is != null ? -p.is : (p.ir ?? 9) * 1000, p.ib ?? 0];
   function list() {
@@ -142,7 +159,7 @@
     if (qEmpty(q) && st.q.trim()) return [];   // typed something, but nothing searchable ("🌮", "!!!")
     if (!qEmpty(q)) indexAll();
     let out = P.filter((p) => g.inc(p) && allows(p) && (qEmpty(q) || matches(p, q)));
-    const byName = (a, b) => a.n.localeCompare(b.n, "en", { sensitivity: "base" });
+    const byName = (a, b) => collate(a.n, b.n);
     const dist = (p) => (here && p.la != null ? miles(here, p) : Infinity);
     if (o === "nearest" && here) out.sort((a, b) => dist(a) - dist(b) || byName(a, b));
     else if (o === "oldest") out.sort((a, b) => (a.f ?? 9999) - (b.f ?? 9999) || byName(a, b));
@@ -151,9 +168,14 @@
       const s = o === "best" ? 1 : -1;
       out.sort((a, b) => { const x = inspKey(a), y = inspKey(b); return s * (x[0] - y[0]) || s * (x[1] - y[1]) || byName(a, b); });
     } else out.sort(byName);
-    if (q.tokens.length && !g.ranked && o !== "best" && o !== "lowest") {       // name matches first when searching
-      const named = out.filter((p) => nameMatches(p, q));
-      if (named.length && named.length < out.length) { const ids = new Set(named); out = named.concat(out.filter((p) => !ids.has(p))); }
+    if (q.tokens.length && !g.ranked && o !== "best" && o !== "lowest") {
+      // when searching: a name holding the whole query first ("taco maria" finds Taco María before El Mariachi), then other name
+      // matches, then the rest (street, dish, town); each tier keeps the chosen order
+      const whole = " " + normalize(st.q) + " ";
+      const tier = (p) => (p.nameText.includes(whole) ? 0 : nameMatches(p, q) ? 1 : 2);
+      const tiers = [[], [], []];
+      for (const p of out) tiers[tier(p)].push(p);
+      out = tiers[0].concat(tiers[1], tiers[2]);
     }
     return out;
   }
@@ -198,7 +220,6 @@
 
   function render() {
     const g = GUIDES[st.g], o = order();
-    current = list();
     document.querySelectorAll(".ex-guides button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.g === st.g)));
     $("#ex-sub").textContent = st.g === "inspections" ? jurNote() : g.sub;
     $("#ex-jur").hidden = st.g !== "inspections";
@@ -207,11 +228,29 @@
     sortSel.disabled = g.sorts.length < 2;
     const regionName = st.region && (REGIONS.find((r) => r.id === st.region) || {}).name;
     const filters = [regionName && `in ${regionName}`, st.town && `in ${st.town}`, st.cuisine && st.cuisine, st.chains && "no chains"].filter(Boolean);
-    $("#ex-count").textContent = `${current.length.toLocaleString()} ${current.length === 1 ? "place" : "places"} · ${SORT_LABEL[o]}` + (filters.length ? ` · ${filters.join(", ")}` : "");
     $("#ex-clear").hidden = !filters.length;
-    $("#ex-locate").hidden = Boolean(here);
-    if (view === "list") renderList(o); else drawMap();
     saveHash();
+    const wait = pending();
+    if (wait) {   // this view needs rows the first file doesn't have: say so, fetch them, then draw it
+      const want = st.g;
+      current = [];
+      busy = `Loading the full list of ${(META.kinds || []).reduce((n, k) => n + k[1], 0).toLocaleString()} places…`;
+      $("#ex-count").textContent = busy;
+      $("#ex-more").hidden = true;
+      if (view === "list") $("#ex-list").innerHTML = `<li class="ex-empty">${esc(busy)}</li>`; else drawMap();
+      wait.then(() => { busy = ""; if (st.g === want) render(); }, () => {
+        busy = "";
+        if (st.g !== want) return;
+        $("#ex-count").textContent = "The full list couldn't load.";
+        $("#ex-list").innerHTML = '<li class="ex-empty">The full list couldn\'t load. Check the connection, then <button type="button" id="ex-retry" class="ex-small">Try again</button></li>';
+        $("#ex-retry").onclick = () => render();
+        if (view === "map") setView("list", false);
+      });
+      return;
+    }
+    current = list();
+    $("#ex-count").textContent = `${current.length.toLocaleString()} ${current.length === 1 ? "place" : "places"} · ${orderLabel(o)}` + (filters.length ? ` · ${filters.join(", ")}` : "");
+    if (view === "list") renderList(o); else drawMap();
   }
 
   function renderList(o) {
@@ -236,7 +275,7 @@
   }
 
   // ---------------------------------------------------------------- place panel
-  const TIER = { 2: "On an official list", 1: "Confirmed listing", 0: "Listing only" };
+  const TIER = { 2: "On an official list", 1: "High-confidence listing", 0: "Listing only" };
 
   function rate(p) {
     if (p.t === 2) return null;
@@ -261,11 +300,17 @@
   }
 
   const kv = (k, v) => (v == null || v === "" ? "" : `<div class="ex-kv"><span>${esc(k)}</span><b>${esc(v)}</b></div>`);
+  // The place panel is a modal dialog (its role and aria-modal are in the page): while it's open the rest of the page is inert, so Tab and
+  // screen readers stay in it. Opening a place from the list or the map adds a history entry, so the browser's Back button closes it.
+  const outside = () => [...document.body.children].filter((el) => el.id !== "ex-panel" && el.id !== "ex-scrim" && el.tagName !== "SCRIPT");
+  let pushed = false, pushedKey = 0, closingBack = false, beforePush = "", lastHash = "";
   const section = (t, body) => `<section class="ex-sec"><h3>${esc(t)}</h3>${body}</section>`;
 
-  function openPlace(p, push = true) {
-    st.p = p.id;
-    const d = (D && D[p.i]) || {};
+  function openPlace(p, push = true, first = true) {
+    openI = p.i;
+    const id = IDS[p.i], blk = block(p.i);
+    st.p = id || "";
+    const d = (blk && blk.d[p.i - blk.from]) || {};
     const addr = [p.a, [p.c, p.z].filter(Boolean).join(" ")].filter(Boolean).join(", ");
     const apple = p.la != null
       ? `https://maps.apple.com/?q=${encodeURIComponent(p.n)}&ll=${p.la},${p.lo}`
@@ -284,7 +329,7 @@
           <a href="${esc(dirs)}" rel="noopener" target="_blank">Directions</a>
           ${d.ph ? `<a href="tel:${esc(d.ph.replace(/[^\d+]/g, ""))}">Call</a>` : ""}
           ${site ? `<a href="${esc(site)}" rel="noopener nofollow" target="_blank">Website</a>` : ""}
-          <button id="ex-save" aria-pressed="${saved.has(p.id)}">${saved.has(p.id) ? "Saved" : "Save"}</button>
+          <button id="ex-save" aria-pressed="${saved.has(id)}"${id ? "" : " disabled"}>${saved.has(id) ? "Saved" : "Save"}</button>
         </div>
       </div>`;
     if (p.hc || d.note || p.di) {
@@ -311,30 +356,39 @@
       + (p.ch >= 2 ? kv("Locations in California", p.ch.toLocaleString()) : "") + `<p class="ex-fine">${esc(howWeKnow(p))}</p>`);
     html += `<p class="ex-app">Save it on your phone: <a class="store-btn" href="${BASE}/#download"><span class="store-label">Get the free iPhone app</span></a></p>`;
     const panel = $("#ex-panel");
+    // redrawn when its details arrive: keep keyboard focus where it was (rebuilding the panel would drop it on the page)
+    const had = !first && panel.contains(document.activeElement) ? document.activeElement.id || "ex-close" : null;
     panel.innerHTML = html;
     panel.hidden = false;
+    $("#ex-scrim").hidden = false;
+    outside().forEach((el) => { el.inert = true; });
     document.body.classList.add("ex-open");
-    $("#ex-close").onclick = closePlace;
+    $("#ex-close").onclick = () => closePlace();
     $("#ex-save").onclick = (e) => {
-      if (saved.has(p.id)) saved.delete(p.id); else saved.add(p.id);
+      if (!id) return;
+      if (saved.has(id)) saved.delete(id); else saved.add(id);
       store.set("saved", [...saved]);
-      e.target.textContent = saved.has(p.id) ? "Saved" : "Save";
-      e.target.setAttribute("aria-pressed", String(saved.has(p.id)));
+      e.target.textContent = saved.has(id) ? "Saved" : "Save";
+      e.target.setAttribute("aria-pressed", String(saved.has(id)));
       if (st.g === "saved") render();
     };
-    panel.scrollTop = 0;
-    $("#ex-close").focus();
-    if (push) saveHash();
-    if (!D) loadDetail().then(() => { if (st.p === p.id) openPlace(p, false); });
+    if (first) { panel.scrollTop = 0; $("#ex-close").focus(); } else if (had) (document.getElementById(had) || $("#ex-close")).focus();
+    if (push && first && !pushed) { beforePush = location.hash; saveHash(true); pushed = true; } else if (push) saveHash();
+    // phone, website, notes and the id (for the address bar and Save) come with this place's block of rows
+    if (!blk) loadBlock(p.i).then(() => { if (openI === p.i) openPlace(p, true, false); }, () => { /* offline: the panel keeps what it has */ });
   }
 
-  function closePlace() {
-    const was = st.p;
+  // fromHistory: Back or Forward already moved the history, so only the panel closes
+  function closePlace(fromHistory = false) {
+    const was = openI;
+    openI = -1;
     st.p = "";
     $("#ex-panel").hidden = true;
+    $("#ex-scrim").hidden = true;
+    outside().forEach((el) => { el.inert = false; });
     document.body.classList.remove("ex-open");
-    saveHash();
-    const row = was && document.querySelector(`.ex-row[data-i="${P.findIndex((p) => p.id === was)}"]`);
+    if (!fromHistory && pushed) { pushed = false; closingBack = true; history.back(); } else { pushed = false; saveHash(); }
+    const row = was >= 0 && document.querySelector(`.ex-row[data-i="${was}"]`);
     if (row) row.focus();
   }
 
@@ -377,7 +431,7 @@
         c.beginPath(); c.arc(x, y, featured ? r + 1 : r, 0, 6.2832); c.fill(); if (featured) c.stroke();
       }
     }
-    $("#ex-maphint").textContent = pts.length ? `${pts.length.toLocaleString()} places · tap a dot` : "No places to show";
+    $("#ex-maphint").textContent = busy || (pts.length ? `${pts.length.toLocaleString()} places · tap a dot` : "No places to show");
   }
 
   function nearestDot(px, py) {
@@ -443,7 +497,7 @@
   let SOURCES = [], LIQT = [];
   // Search text for every place. Building it for 120,000 places blocks the page for seconds on a phone, and the first screen
   // (a guide) doesn't need it: it's built in small slices after the first paint, and finished at once if a search comes first.
-  let indexed = 0;
+  let indexed = 0, indexing = false;
   function indexPlace(p) {
     p.search = " " + normalize([p.n, p.c, p.co, p.z, p.cu, p.b, p.di].filter(Boolean).join(" ")) + " " + normAddr(p.a || "") + " ";
     p.nameText = " " + normalize([p.n, p.b].filter(Boolean).join(" ")) + " ";
@@ -453,46 +507,114 @@
   function indexSome(deadline) {
     const until = performance.now() + Math.min(deadline && !deadline.didTimeout ? deadline.timeRemaining() : 12, 12);
     while (indexed < P.length && performance.now() < until) indexPlace(P[indexed++]);
-    if (indexed < P.length) idle(indexSome);
+    indexing = indexed < P.length;
+    if (indexing) idle(indexSome);
   }
+  const indexLater = () => { if (!indexing && indexed < P.length) { indexing = true; idle(indexSome); } };
   async function fetchJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(r.status + " " + url); return r.json(); }
-  let detailPromise = null;
-  function loadDetail() {
-    detailPromise ||= fetchJSON(`${BASE}/data/detail.json`).then((d) => { D = d; }).catch(() => { D = {}; });
-    return detailPromise;
+  // every file after start.json carries its build's version: a cached file from another build is fetched again
+  async function fetchPart(name) {
+    const url = `${BASE}/data/${name}?v=${encodeURIComponent(META.v)}`;
+    let d = await fetchJSON(url);
+    if (d.v !== META.v) d = await (await fetch(url, { cache: "reload" })).json();
+    if (d.v !== META.v) throw new Error("data files from different builds");
+    return d;
+  }
+  const setId = (i, id) => { IDS[i] = id; ID2I.set(id, i); };
+
+  // columns -> place objects. Dense columns are arrays; mostly-empty ones are [rows since the last value, value] pairs; la, lo and z
+  // are integers, each the change from the previous row's.
+  function decode(R, from) {
+    const n = R.n.length;
+    const col = (k) => {
+      const v = R[k];
+      if (Array.isArray(v)) return v;
+      const full = new Array(n).fill(null);
+      if (v && v.gap) { let i = -1; for (const [gap, x] of v.gap) { i += gap; full[i] = x; } }
+      return full;
+    };
+    const undelta = (k, scale) => { let acc = 0; return col(k).map((x) => (x == null ? null : (acc += x) / scale)); };
+    const C = {};
+    for (const k of ["c", "ct", "cu", "t", "s", "a", "b", "ch", "v", "g", "hc", "ip", "f", "h", "mi", "gs", "di", "liq", "rg", "ij", "ir", "is", "id_", "in", "ib"]) C[k] = col(k);
+    const la = undelta("la", 1e4), lo = undelta("lo", 1e4), z = undelta("z", 1);
+    const out = new Array(n);
+    for (let k = 0; k < n; k++) {
+      const city = C.c[k] == null ? null : META.cities[C.c[k]], brand = C.b[k] == null ? null : META.brands[C.b[k]];
+      const co = C.ct[k] == null ? null : META.counties[C.ct[k]];
+      out[k] = { i: from + k, n: R.n[k], c: city, co, cu: META.cuisines[C.cu[k]], t: C.t[k], s: C.s[k], a: C.a[k], z: z[k] == null ? null : String(z[k]).padStart(5, "0"),
+        la: la[k], lo: lo[k], ch: C.ch[k] || 1, v: C.v[k] === 1, g: C.g[k] || 0, hc: C.hc[k] === 1, ip: C.ip[k], f: C.f[k], h: C.h[k] || 0, mi: C.mi[k] || 0,
+        gs: C.gs[k] === 1, di: C.di[k], liq: C.liq[k] || 0, rg: (REGIONS[C.rg[k]] || {}).id, ij: C.ij[k], ir: C.ir[k], is: C.is[k], id_: C.id_[k], in: C.in[k],
+        ib: C.ib[k], b: brand };
+    }
+    return out;
+  }
+
+  // the rest of the state (places.json), fetched once a view needs it
+  let fullPromise = null, fullDone = false;
+  function loadFull() {
+    fullPromise ||= fetchPart("places.json").then((d) => {
+      if (fullDone) return;
+      if (d.from !== P.length) throw new Error("places.json doesn't follow start.json");
+      P = P.concat(decode(d.rows, d.from));
+      fullDone = true;
+      indexLater();
+    }).catch((e) => { fullPromise = null; throw e; });
+    return fullPromise;
+  }
+  // a block of rows' ids and details (phone, website, notes), fetched when a place in it first opens
+  const BLOCKS = new Map(), blockLoads = new Map();
+  const block = (i) => BLOCKS.get(Math.floor(i / META.block)) || null;
+  function loadBlock(i) {
+    const k = Math.floor(i / META.block);
+    if (!blockLoads.has(k)) {
+      blockLoads.set(k, fetchPart(`detail-${k}.json`).then((b) => {
+        b.ids.forEach((id, j) => setId(b.from + j, id));
+        BLOCKS.set(k, { from: b.from, d: b.d });
+      }).catch((e) => { blockLoads.delete(k); throw e; }));
+    }
+    return blockLoads.get(k);
+  }
+  // rows for ids the first file doesn't have (a saved place, a #p= link): the full list, plus the ids-<first character>.json files
+  const idFiles = new Map(), idFilesDone = new Set();
+  const idFile = (id) => (typeof id === "string" && /^[0-9a-f]/.test(id) ? id[0] : null);
+  // ids whose row isn't loaded yet and could be: an id a detail block named (its row may be in places.json), or one whose file isn't in
+  const unknownIds = (ids) => ids.filter((id) => (ID2I.has(id) ? !P[ID2I.get(id)] : Boolean(idFile(id)) && !idFilesDone.has(idFile(id))));
+  function loadIds(h) {
+    if (!idFiles.has(h)) {
+      idFiles.set(h, fetchPart(`ids-${h}.json`).then((m) => {
+        for (const id in m.rows) setId(m.rows[id], id);
+        idFilesDone.add(h);
+      }).catch((e) => { idFiles.delete(h); throw e; }));
+    }
+    return idFiles.get(h);
+  }
+  async function resolveIds(ids) {
+    const todo = unknownIds(ids);
+    if (todo.length) await Promise.all([loadFull(), ...[...new Set(todo.filter((id) => !ID2I.has(id)).map(idFile))].map(loadIds)]);
+  }
+  // what the current view still needs, as a promise (null when it can draw now)
+  function pending() {
+    if (GUIDES[st.g].full && !fullDone) return loadFull();
+    if (st.g === "saved" && unknownIds([...saved]).length) return resolveIds([...saved]);
+    return null;
   }
 
   async function load() {
-    const d = await fetchJSON(`${BASE}/data/core.json`);
+    const d = await fetchJSON(`${BASE}/data/start.json`);
+    META = d;
     GENERATED = d.generated; CAL = d.calibration || {}; SOURCES = d.sources || []; JURS = d.jurs || []; G = d.guides || {}; LIQT = d.liqt || [];
     REGIONS = d.regions || [];
-    const C = d.cols, n = C.id.length, towns = new Map();
-    for (const k in C) if (C[k] && !Array.isArray(C[k])) {   // sparse columns: [rows since the last value, value] pairs
-      const full = new Array(n).fill(null);
-      let i = -1;
-      for (const [gap, v] of C[k].gap) { i += gap; full[i] = v; }
-      C[k] = full;
-    }
-    P = new Array(n);
-    for (let i = 0; i < n; i++) {
-      const city = C.c[i] == null ? null : d.cities[C.c[i]], cu = d.cuisines[C.cu[i]], brand = C.b[i] == null ? null : d.brands[C.b[i]];
-      const co = C.ct[i] == null ? null : d.counties[C.ct[i]];
-      const p = { i, id: C.id[i], n: C.n[i], c: city, co, cu, t: C.t[i], s: C.s[i], a: C.a[i], z: C.z[i], la: C.la[i], lo: C.lo[i],
-        ch: C.ch[i] || 1, v: C.v[i] === 1, g: C.g[i] || 0, hc: C.hc[i] === 1, ip: C.ip[i], f: C.f[i], h: C.h[i] || 0, mi: C.mi[i] || 0, gs: C.gs[i] === 1,
-        di: C.di[i], liq: C.liq[i] || 0, rg: (REGIONS[C.rg[i]] || {}).id, ij: C.ij[i], ir: C.ir[i], is: C.is[i], id_: C.id_[i], in: C.in[i], ib: C.ib[i], b: brand };
-      P[i] = p;
-      if (city && !p.v) towns.set(city, (towns.get(city) || 0) + 1);
-    }
-    const byCount = [...towns.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+    P = decode(d.rows, 0);
+    d.rows.id.forEach((id, i) => setId(i, id));
+    // towns and kinds of place count every place statewide (the build counted them), not just the first file's
+    const byCount = d.towns.slice().sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
     for (const [name] of byCount) { const k = normAddr(name); if (!(k in TOWN_KEYS)) TOWN_KEYS[k] = name; }
     TOWN_KEYS_BY_LENGTH = Object.keys(TOWN_KEYS).sort((a, b) => b.length - a.length);
-    TOWNS = new Set(towns.keys());
+    TOWNS = new Set(d.towns.map((t) => t[0]));
     $("#ex-region").innerHTML = '<option value="">All of California</option>' + REGIONS.map((r) => `<option value="${esc(r.id)}">${esc(r.name)}</option>`).join("");
-    $("#ex-town").innerHTML = '<option value="">All towns</option>' + [...towns.keys()].sort((a, b) => a.localeCompare(b)).map((t) => `<option>${esc(t)}</option>`).join("");
-    const cuis = new Map();
-    for (const p of P) if (!p.v) cuis.set(p.cu, (cuis.get(p.cu) || 0) + 1);
-    KINDS = new Set(cuis.keys());
-    $("#ex-cuisine").innerHTML = '<option value="">All kinds</option>' + [...cuis.entries()].sort((a, b) => b[1] - a[1]).map(([c, k]) => `<option value="${esc(c)}">${esc(c)} (${k.toLocaleString()})</option>`).join("");
+    $("#ex-town").innerHTML = '<option value="">All towns</option>' + [...TOWNS].sort((a, b) => a.localeCompare(b)).map((t) => `<option>${esc(t)}</option>`).join("");
+    KINDS = new Set(d.kinds.map((k) => k[0]));
+    $("#ex-cuisine").innerHTML = '<option value="">All kinds</option>' + d.kinds.map(([c, k]) => `<option value="${esc(c)}">${esc(c)} (${esc(k.toLocaleString())})</option>`).join("");
     $("#ex-jur").innerHTML = JURS.map((j, i) => `<option value="${i}">${esc(j.name)}</option>`).join("");
   }
 
@@ -503,12 +625,15 @@
     st.q = h.get("q") || ""; st.region = h.get("region") || ""; st.town = h.get("town") || ""; st.cuisine = h.get("kind") || ""; st.chains = h.get("chains") === "1";
     st.sort = h.get("sort") || ""; st.p = h.get("p") || ""; st.jur = Number(h.get("county") || store.get("jur", 0)) || 0;
   }
-  function saveHash() {
+  function saveHash(push = false) {
     const h = new URLSearchParams();
     h.set("g", st.g);
     if (st.q) h.set("q", st.q); if (st.region) h.set("region", st.region); if (st.town) h.set("town", st.town); if (st.cuisine) h.set("kind", st.cuisine);
     if (st.chains) h.set("chains", "1"); if (st.sort) h.set("sort", st.sort); if (st.p) h.set("p", st.p); if (st.g === "inspections") h.set("county", String(st.jur));
-    history.replaceState(null, "", "#" + h.toString());
+    // filters and searches replace the entry (Back leaves the page); opening a place adds one (Back closes it)
+    if (push) { pushedKey = Date.now() + Math.random(); history.pushState({ place: pushedKey }, "", "#" + h.toString()); }
+    else history.replaceState(history.state, "", "#" + h.toString());
+    lastHash = location.hash;
     store.set("guide", st.g); store.set("jur", st.jur);
   }
 
@@ -521,18 +646,21 @@
       $("#ex-locmsg").textContent = outside ? "You're outside California, so distances are from where you are now. Your location stays in this browser."
         : "Sorted by distance from you. Your location stays in this browser.";
       st.sort = GUIDES[st.g].sorts.includes("nearest") ? "nearest" : st.sort;
-      if (view === "map" && !outside) centerOn(here);
+      if (view === "map") { if (outside) cam = null; else centerOn(here); }   // outside California the map stays on the state
       shown = 100; render();
-    }, () => { $("#ex-locmsg").textContent = "Location is off for this site. Allow it in your browser settings to sort by distance."; },
-    { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
+    }, (err) => {
+      $("#ex-locmsg").textContent = err && err.code === 1 ? "Location is off for this site. Allow it in your browser settings to sort by distance."
+        : "Couldn't get a fix on your location. Press Near me to try again.";
+      render();
+    }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 0 });   // a fresh fix on every press: one from earlier can be a drive away
   }
 
-  function setView(v) {
+  function setView(v, draw = true) {
     view = v;
     document.querySelectorAll(".ex-view button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === v)));
     $("#ex-listwrap").hidden = v !== "list";
     $("#ex-mapwrap").hidden = v !== "map";
-    render();
+    if (draw) render();
   }
 
   function controls() {
@@ -543,9 +671,8 @@
     $("#ex-region").onchange = (e) => {
       st.region = e.target.value; st.town = ""; $("#ex-town").value = ""; shown = 100;
       if (view === "map") {   // the map zooms to the region
-        const ps = P.filter((p) => p.rg === st.region && p.la != null);
-        cam = ps.length ? fitCam($("#ex-map").clientWidth, $("#ex-map").clientHeight, [Math.min(...ps.map((p) => p.lo)), Math.max(...ps.map((p) => p.lo)),
-          Math.min(...ps.map((p) => p.la)), Math.max(...ps.map((p) => p.la))]) : null;
+        const r = REGIONS.find((x) => x.id === st.region);
+        cam = r && r.box && r.box.length === 4 ? fitCam($("#ex-map").clientWidth, $("#ex-map").clientHeight, r.box) : null;
       }
       render();
     };
@@ -558,14 +685,44 @@
     $("#ex-more").onclick = () => { shown += 200; renderList(order()); };
     document.querySelectorAll(".ex-view button").forEach((b) => b.onclick = () => setView(b.dataset.v));
     $("#ex-list").addEventListener("click", (e) => { const b = e.target.closest(".ex-row"); if (b) openPlace(P[+b.dataset.i]); });
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && st.p) closePlace(); });
-    // a link or an edited address bar changing the hash (our own updates use replaceState, which doesn't fire this)
-    window.addEventListener("hashchange", () => {
-      readHash(); checkState(); syncInputs(); shown = 100; render();
-      const p = st.p && P.find((x) => x.id === st.p);
-      if (p) openPlace(p, false); else if (!$("#ex-panel").hidden) closePlace();
-    });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("#ex-panel").hidden) closePlace(); });
+    $("#ex-scrim").onclick = () => closePlace();
+    window.addEventListener("popstate", onHistory);
+    window.addEventListener("hashchange", onHistory);
     mapEvents();
+  }
+  // Back, Forward, a link or the address bar changed the hash (our own updates set lastHash, so they're skipped)
+  function onHistory() {
+    if (closingBack) { closingBack = false; saveHash(); return; }   // the Back that closed a place: keep the current filters
+    // Back from an open place: close it and keep the filters. (A place still waiting for its id added an entry with the same hash.)
+    const left = pushed && (history.state || {}).place !== pushedKey;
+    if (left && (location.hash === beforePush || location.hash === lastHash)) { closePlace(true); return; }
+    if (location.hash === lastHash) return;                         // also the hashchange that follows a handled popstate
+    if (location.hash && !location.hash.includes("=")) return;      // "#main" from the skip link isn't app state
+    pushed = false;
+    readHash(); checkState(); syncInputs(); shown = 100; render();
+    openFromHash();
+  }
+  // the place in #p=, on a fresh load or a changed hash: from the first file, or after fetching its row
+  const LINK_WAIT = "Opening the place in this link…";
+  async function openFromHash() {
+    const want = st.p, msg = $("#ex-locmsg");
+    if (!want) { if (!$("#ex-panel").hidden) closePlace(true); return; }
+    if (!ID_RE.test(want)) { st.p = ""; if (!$("#ex-panel").hidden) closePlace(true); else saveHash(); return; }   // not an id: fetch nothing
+    const fetching = unknownIds([want]).length > 0;   // its row is in the statewide list: that's a 2 MB wait on a slow connection
+    if (fetching) msg.textContent = LINK_WAIT;
+    let failed = false;
+    try { await resolveIds([want]); } catch { failed = true; }
+    if (msg.textContent === LINK_WAIT) msg.textContent = "";
+    if (st.p !== want) return;    // the hash changed while the row loaded
+    const i = ID2I.get(want);
+    if (i != null && P[i]) { openPlace(P[i], false); return; }
+    if (failed) {   // keep p= in the address bar, so a reload tries again too
+      msg.innerHTML = 'The place in this link couldn\'t load. Check the connection, then <button type="button" id="ex-linkretry" class="ex-small">Try again</button>';
+      $("#ex-linkretry").onclick = () => { msg.textContent = ""; openFromHash(); };
+      return;
+    }
+    st.p = ""; if (!$("#ex-panel").hidden) closePlace(true); else saveHash();   // no such place (any more)
   }
   function checkState() {
     if (st.region && !REGIONS.some((r) => r.id === st.region)) st.region = "";
@@ -582,13 +739,12 @@
     readHash();
     // #ex-count is inside the hidden app, so a failed load is reported where "Loading…" was
     try { await load(); } catch (e) { $("#ex-loading").textContent = "The restaurant list couldn't load. Refresh to try again."; return; }
+    if (document.readyState === "loading") await new Promise((r) => document.addEventListener("DOMContentLoaded", r, { once: true }));
     checkState(); syncInputs(); controls();
     $("#ex-app").hidden = false;
     $("#ex-loading").hidden = true;
     render();
-    const open = st.p && P.find((p) => p.id === st.p);
-    if (open) { await loadDetail(); openPlace(open, false); }
-    idle(() => loadDetail());
-    idle(indexSome);
+    openFromHash();
+    indexLater();
   })();
 })();

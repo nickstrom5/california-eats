@@ -10,12 +10,14 @@ Usage (from the repo root): .venv/bin/python scripts/make-site.py
 Re-run it after every data rebuild, then check the pages: .venv/bin/python scripts/qa-site.py
 """
 import base64
+import datetime
 import hashlib
 import html
 import json
 import math
 import os
 import re
+import urllib.parse
 import struct
 from collections import Counter, defaultdict
 
@@ -29,11 +31,46 @@ DOMAIN = f"https://{CUSTOM_DOMAIN}" if CUSTOM_DOMAIN else "https://nickstrom5.gi
 BASE = "" if CUSTOM_DOMAIN else "/california-eats"     # path prefix for root-relative links
 BRAND = "California Eats"
 TAGLINE = "Taquería & dim sum guide"
-EMAIL = "work-with-nick@gmail.com"
+EMAIL = "nick@eatsranked.com"      # Nick, 2026-10-12: the public site's contact address (Cloudflare Email Routing); the app follows next build
 CHECKED = "October 2026"
 
 IDX = json.load(open(f"{ROOT}/data/app/index.json"))
+# Website links the site must never publish (hacked sites, listing farms, another business's page): pipeline/website_blocklist.json,
+# [{"domain": ..., "match": "domain" | "url", ...}]. "domain" covers the domain and every subdomain; "url" that one address. The place
+# stays; only its link goes, everywhere this script writes one (static pages and every web-app data file). Add entries there, not here.
+BLOCKLIST = json.load(open(f"{ROOT}/pipeline/website_blocklist.json"))
+BLOCK_DOMAINS = {b["domain"].lower().removeprefix("www.") for b in BLOCKLIST if b.get("match", "domain") == "domain"}
+_url_key = lambda u: re.sub(r"^https?://(www\.)?", "", (u or "").strip().lower()).rstrip("/")
+BLOCK_URLS = {_url_key(b.get("url") or b["domain"]) for b in BLOCKLIST if b.get("match") == "url"}
+
+
+def site_blocked(u):
+    if not u:
+        return False
+    host = urllib.parse.urlsplit(u.strip() if "://" in u else "http://" + u.strip()).hostname or ""
+    return any(host == d or host.endswith("." + d) for d in BLOCK_DOMAINS) or _url_key(u) in BLOCK_URLS
+
+
+def region_file(rf):
+    """One region's places from data/app, with blocklisted website links removed."""
+    R = json.load(open(f"{ROOT}/data/app/{rf['file']}"))
+    for r in R["places"]:
+        if site_blocked(r.get("w")):
+            del r["w"]
+    return R
+
+
 TODAY = IDX["generated"][:10]
+# the day the site's own text last changed (bump it with the copy, the privacy policy or the terms); pages and the sitemap show the later
+# of this and the data's date
+SITE_UPDATED = "2026-10-12"
+LASTMOD = max(TODAY, SITE_UPDATED)
+
+
+def nice_date(iso):
+    d = datetime.date.fromisoformat(iso[:10])
+    return f"{d:%B} {d.day}, {d.year}"
+
 CUISINES, BRANDS, COUNTIES, JURS = IDX["cuisines"], IDX["brands"], IDX["counties"], IDX["jurs"]
 GB = IDX["guides"]   # guide bits: taqueria 1, burrito 2, fishtaco 4, dimsum 8, kbbq 16, burgerstand 32, winecountry 64, oldest 128
 MI = {5: "3 MICHELIN Stars", 4: "2 MICHELIN Stars", 3: "1 MICHELIN Star", 2: "Bib Gourmand", 1: "MICHELIN Recommended"}
@@ -83,7 +120,7 @@ class P:
 
 PLACES = []
 for rf in IDX["regions"]:
-    R = json.load(open(f"{ROOT}/data/app/{rf['file']}"))
+    R = region_file(rf)
     PLACES += [P(r, R["cities"], rf) for r in R["places"]]
 REST = [p for p in PLACES if not p.venue]
 REGIONS = [rf["name"] for rf in IDX["regions"]]
@@ -313,7 +350,7 @@ def nav_links():
     return "".join(f'<a href="{u if u.startswith("/") else "/" + u}">{e(l)}</a>' for u, l in links)
 
 
-def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview:large", og_alt=None, extra_css=""):
+def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview:large", og_alt=None, extra_css="", after=""):
     assert 50 <= len(title) <= 60 or path == "404.html", (path, len(title), title)
     assert 140 <= len(desc) <= 160 or path == "404.html", (path, len(desc), desc)
     assert body.count("<h1") == 1, path
@@ -325,6 +362,7 @@ def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="apple-itunes-app" content="app-id=APP_ID"> fill in once the App Store record exists -->
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{url}">
@@ -371,10 +409,10 @@ def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview
       <a href="mailto:{EMAIL}">Email us</a>
     </nav>
     <p>Place data: hand-checked research by {BRAND} ({CHECKED}); Overture Maps Foundation (CDLA Permissive 2.0); County of Los Angeles, City and County of San Francisco, Sacramento County and San Diego County food-facility and inspection records; California Department of Alcoholic Beverage Control license data. Not affiliated with or endorsed by any restaurant, chain or government agency. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. Places open and close, so check before you go.</p>
-    <p>© 2026 {BRAND}.</p>
+    <p>© {TODAY[:4]} {BRAND}. Part of <a href="https://eatsranked.com/">Eats Ranked</a>, restaurant apps state by state.</p>
   </footer>
 </div>
-<script>
+{after}<script>
   // Once the App Store listing exists, paste its URL here (looks like https://apps.apple.com/app/id123456789).
   // Every button switches from "Get early access" to "Download on the App Store" automatically.
   var APP_STORE_URL = "";
@@ -387,7 +425,7 @@ def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview
 </body>
 </html>
 """
-    if path == "404.html":   # a 404 is served at any URL, so it names no canonical address of its own
+    if path == "404.html" or "noindex" in robots:   # a 404 is served at any URL; a noindexed page names no address for search either
         doc = re.sub(r'<link rel="canonical"[^>]*>\n|<meta property="og:url"[^>]*>\n', "", doc)
     if BASE:   # served under /california-eats/: every root-relative link and asset gets the prefix
         doc = re.sub(r'(href|src|srcset)="/', rf'\1="{BASE}/', doc)
@@ -437,9 +475,24 @@ def place_item(p, show_town=True, extra=None):
     return "".join(out)
 
 
+def dish_list(text):
+    """A menu line split into dishes at the commas outside parentheses: "super burrito (rice, beans, cheese), carnitas" is two dishes,
+    not "super burrito (rice" and "beans"."""
+    out, depth, cur = [], 0, ""
+    for ch in text or "":
+        depth += (ch == "(") - (ch == ")")
+        if ch == "," and depth <= 0:
+            out.append(cur); cur = ""
+        else:
+            cur += ch
+    return [d.strip().lower() for d in out + [cur] if d.strip()]
+
+
 def restaurant_ld(p):
     x = {"@type": "Restaurant", "name": p.name,
          "address": {"@type": "PostalAddress", "streetAddress": p.addr, "addressLocality": p.city, "addressRegion": "CA", "addressCountry": "US"}}
+    if not p.addr:     # a stand with no street number: no empty property
+        del x["address"]["streetAddress"]
     if p.zip:
         x["address"]["postalCode"] = p.zip
     if web_link(p.site):
@@ -458,7 +511,7 @@ def item_list(name, places, url):
 
 def article_ld(url, headline, desc):
     return {"@context": "https://schema.org", "@type": "Article", "headline": headline, "description": desc,
-            "datePublished": TODAY, "dateModified": TODAY, "inLanguage": "en", "mainEntityOfPage": url,
+            "datePublished": TODAY, "dateModified": LASTMOD, "inLanguage": "en", "mainEntityOfPage": url,
             "image": f"{DOMAIN}/og.png", "author": {"@type": "Organization", "name": BRAND, "url": DOMAIN + "/"},
             "publisher": {"@type": "Organization", "name": BRAND, "url": DOMAIN + "/", "logo": {"@type": "ImageObject", "url": f"{DOMAIN}/icon-512.png"}}}
 
@@ -504,15 +557,15 @@ def city_links(skip=None):
 
 
 def guide_cta():
-    return f'<div class="cta-row">{store_button()}<span class="pill store-note">Free for iPhone and iPad. Coming to the App Store.</span></div>'
+    return f'<div class="cta-row">{store_button()}<span class="pill store-note">Free for iPhone and iPad, arriving on the App Store soon.</span></div>'
 
 
-written = []
+written, noindexed = [], []    # sitemap pages; pages kept out of search (thin towns)
 
 # ---------------------------------------------------------------- the hand-checked guides
-HOW = ("How the list was built: every place was checked against a 2025 or 2026 source, such as its own menu page, a live online-ordering page "
-       "it runs, or a dated local news story. A listing merely named that way, with a dead website or no current source, stays in the app's "
-       "directory but not on this guide. Nothing here comes from review sites, and the order is by region and town, not by anyone's rating.")
+HOW = (f"Our method: for every place we found a 2025 or 2026 source of its own, such as the menu on its website, an ordering page it runs, or a "
+       f"dated story in the local press, and read it in {CHECKED}. A listing that only carries the word in its name, or whose website has gone "
+       "dark, stays in the app's directory and off this page. No review site fed this list, and it runs by region and town, never by score.")
 for bit, path, lbl, gtitle, noun, nouns, places, blurb in GUIDE_PAGES:
     url = f"{DOMAIN}/{path}"
     n = len(places)
@@ -526,22 +579,25 @@ for bit, path, lbl, gtitle, noun, nouns, places, blurb in GUIDE_PAGES:
     toc, secs = region_sections(places, noun, nouns)
     dish = Counter()
     for p in places:
-        for d in {x.strip().lower() for x in p.dishes.split(",") if x.strip()}:
+        for d in dict.fromkeys(dish_list(p.dishes)):
             dish[d] += 1
-    top = ", ".join(d for d, _ in dish.most_common(8))
+    # most common first, ties by name: the page is the same on every run (a set's order changed it from run to run)
+    # "most often" means on at least three menus; a guide whose dishes rarely repeat (wine country) skips the sentence
+    common = [d for d, k in sorted(dish.items(), key=lambda x: (-x[1], x[0])) if k >= 3][:8]
+    top = ", ".join(common) if len(common) >= 3 else ""
     nav, bc = crumbs([("Home", "/"), (gtitle, "/" + path)])
     body = f"""{nav}
   <main id="main">
   <section class="hero">
     <h1><span class="kicker">{BRAND} guide · checked {CHECKED}</span>{e(gtitle)}</h1>
-    <p class="lede">{n} {e(nouns)} in {regions_n} {"region" if regions_n == 1 else "regions"} of California, each confirmed open in {CHECKED} on its own website, menu or ordering page, or in dated local news. {e(blurb)}</p>
+    <p class="lede">{n} {e(nouns)} {f"across all {len(REGIONS)} of California's regions" if regions_n == len(REGIONS) else f"across {regions_n} of California's {len(REGIONS)} regions"}, each checked open in {CHECKED} against its own website, menu or ordering page, or a dated local news story. {e(blurb)}</p>
     {guide_cta()}
   </section>
   <section id="about">
     <h2>About this list</h2>
     {f"<p>What's on the menus, most often: {e(top)}. Each place lists what its own menu shows.</p>" if top else ""}
     <p>{HOW}</p>
-    <p>In the {BRAND} app, the same list sorts by distance from you, and each place opens Apple Maps' own card for live hours and photos.</p>
+    <p>The app sorts the same {e(nouns)} by how far each one is from you, and tapping one brings up its Apple Maps card, hours and photos included.</p>
     <h2>Jump to a region</h2>
     {toc}
     <p class="fine">City pages: {", ".join(f'<a href="{city_url(c)}">{e(c)}</a>' for c in CITY_PAGES)}.</p>
@@ -592,14 +648,14 @@ if OLD:
     url = f"{DOMAIN}/california-oldest-restaurants.html"
     title = fit(["California's Oldest Restaurants, Checked Open | California Eats", "California's Oldest Restaurants and Bars, Checked Open",
                  "The Oldest Restaurants in California | California Eats"], 50, 60)
-    desc = fit([f"{len(OLD)} California restaurants and bars with a verified opening year, oldest first, each checked open in {CHECKED}. Gold Rush survivors to 1960 diners.",
+    desc = fit([f"{len(OLD)} California restaurants and bars with a sourced opening year, oldest first, each checked open in {CHECKED}: Gold Rush saloons to 1950s burger stands.",
                 f"{len(OLD)} of California's oldest restaurants and bars, oldest first, with opening years from their own history or local news, checked open in {CHECKED}."], 140, 160)
     nav, bc = crumbs([("Home", "/"), ("Oldest restaurants", "/california-oldest-restaurants.html")])
     body = f"""{nav}
   <main id="main">
   <section class="hero">
     <h1><span class="kicker">{BRAND} · checked {CHECKED}</span>California's oldest restaurants</h1>
-    <p class="lede">{len(OLD)} restaurants and bars with an opening year we could verify, oldest first. "Opened" means at this address; when a business is older than its current building, the note says so.</p>
+    <p class="lede">{len(OLD)} California restaurants and bars, oldest first, each with an opening year taken from its own history or a dated source. The year counts from when it opened at this address; where a business is older than its current home, its note tells the story.</p>
     {guide_cta()}
   </section>
   <section id="list"><h2>Oldest first</h2><ol class="places">{"".join(place_item(p) for p in OLD)}</ol></section>
@@ -608,12 +664,19 @@ if OLD:
 
 # ---------------------------------------------------------------- city pages
 city_stats = {}
+OWN_HEALTH_DEPT = ("Pasadena", "Long Beach", "Vernon")
+COUNT_NOUN = {"Taquerías": ("taquería", "taquerías"), "Dim sum": ("dim sum house", "dim sum houses"), "Burritos": ("burrito shop", "burrito shops"),
+              "Fish tacos": ("fish taco spot", "fish taco spots"), "Korean BBQ": ("Korean barbecue restaurant", "Korean barbecue restaurants"),
+              "Burger stands": ("burger stand", "burger stands"), "Wine country": ("wine-country restaurant", "wine-country restaurants")}
 GUIDE_SETS = [(lbl, t, ps, p_) for b, p_, lbl, t, _, _, ps, _ in GUIDE_PAGES]
 for c in CITY_PAGES:
     here = [p for p in REST if p.city == c and p.lat is not None]
     n_town = len(here)
     center = (sorted(p.lat for p in here)[len(here) // 2], sorted(p.lon for p in here)[len(here) // 2])
-    radius = 5 if c in ("Los Angeles", "San Francisco", "San Diego") else 10
+    # "near" is 5 miles in the dense cores of LA, San Francisco, the East Bay and San Diego (10 miles from Pasadena reached most of
+    # San Gabriel's list, so the two pages read alike), 10 miles elsewhere
+    radius = 5 if c in ("Los Angeles", "San Francisco", "San Diego", "Pasadena", "Glendale", "San Gabriel", "Santa Monica", "Long Beach",
+                        "Oakland", "Berkeley") else 10
 
     def near(ps):
         out = []
@@ -640,44 +703,74 @@ for c in CITY_PAGES:
     if honored:
         secs.append(f'<section id="honors"><h2>MICHELIN and James Beard in {e(c)}</h2><p class="sub">From MICHELIN\'s 2026 California selection and the James Beard Foundation\'s announcements. Facts, not ratings.</p><ol class="places">'
                     + "".join(place_item(p) for p in honored) + "</ol></section>")
+    old_here = [p for p in OLD if p.city == c]
+    if old_here:
+        secs.append(f'<section id="oldest"><h2>Open since 1960 or earlier in {e(c)}</h2><p class="sub">From the <a href="/california-oldest-restaurants.html">oldest-restaurants list</a>: '
+                    'each opening year is from the place\'s own history or a dated source, and counts from when it opened at this address.</p><ol class="places">'
+                    + "".join(place_item(p) for p in old_here) + "</ol></section>")
     insp = [p for p in here if p.insp]
     jur_line = ""
-    if insp:
+    # Pasadena, Long Beach and Vernon run their own health departments (the FAQ says LA County's grades don't cover them): the few places
+    # with those town names and an LA County result sit outside the city or are matches under review, so the page claims none
+    if insp and c not in OWN_HEALTH_DEPT:
         j = JURS[insp[0].insp["j"]]
-        jur_line = f" {len(insp):,} places in {e(c)} also show {e(j['name'])}'s official inspection result, as recorded, through {e(j['through'])}."
+        jur_line = (f" {len(insp):,} {'place' if len(insp) == 1 else 'places'} in {e(c)} also {'shows' if len(insp) == 1 else 'show'} "
+                    f"{e(j['name'])}'s official inspection result, as recorded, through {e(nice_date(j['through']))}.")
     cuis = Counter(p.cuisine for p in here if p.cuisine and p.cuisine != "American & Other").most_common(10)
     if cuis:
         rows = "".join(f'<tr><td>{e(k)}</td><td class="n">{n:,}</td></tr>' for k, n in cuis)
-        secs.append(f'<section id="cuisines"><h2>What {e(c)} eats</h2><p class="sub">The most common kinds of restaurant among the {n_town:,} in {e(c)}, from open map data and county records.</p><div class="tablewrap"><table><thead><tr><th scope="col">Kind of place</th><th scope="col" class="n">Places</th></tr></thead><tbody>{rows}</tbody></table></div></section>')
-    city_stats[c] = {"restaurants": n_town, **counts, "honored": len(honored), "inspected": len(insp)}
+        secs.append(f'<section id="cuisines"><h2>What {e(c)} eats</h2><p class="sub">Which kinds of food {e(c)} has the most of, counting its {n_town:,} restaurants in open map data and county records.</p><div class="tablewrap"><table><thead><tr><th scope="col">Kind of place</th><th scope="col" class="n">Places</th></tr></thead><tbody>{rows}</tbody></table></div></section>')
+    # a town with almost nothing hand-checked, honored or dated nearby gets a page people can use, but not one search engines index:
+    # its words would be the same as every other thin town's
+    thin = sum(counts.values()) + len(honored) + len(old_here) < 3
+    city_stats[c] = {"restaurants": n_town, **counts, "honored": len(honored), "oldest": len(old_here), "inspected": len(insp), "indexed": not thin}
     path = f"cities/{slug(c)}.html"
     url = DOMAIN + "/" + path
     PHRASE = {"Taquerías": "taquerías", "Dim sum": "dim sum", "Burritos": "burritos", "Fish tacos": "fish tacos", "Korean BBQ": "Korean BBQ",
               "Burger stands": "burger stands", "Wine country": "wine-country dining"}
-    gl = [PHRASE.get(lbl, lbl.lower()) for lbl, *_ in GUIDE_SETS if counts.get(lbl)]
-    title = fit([f"{c} Taquerías, Dim Sum & Restaurants | {BRAND}", f"{c} Taquerías & Restaurant Guide | {BRAND}", f"{c}, CA Restaurants & Taquerías | {BRAND}",
-                 f"{c} Restaurant Guide: Tacos, Dim Sum & More", f"{c}, California Restaurant Guide | {BRAND}", f"{c} Restaurants | {BRAND}: Free Guide",
-                 f"{c}, California Taquerías, Dim Sum & Restaurants", f"{c} Restaurants, Checked Open | {BRAND} Guide"], 50, 60)
+    TWORD = {"Taquerías": "Taquerías", "Dim sum": "Dim Sum", "Burritos": "Burritos", "Fish tacos": "Fish Tacos", "Korean BBQ": "Korean BBQ",
+             "Burger stands": "Burger Stands", "Wine country": "Wine Country Dining"}
+    have = [lbl for lbl, *_ in GUIDE_SETS if counts.get(lbl)]
+    gl = [PHRASE[lbl] for lbl in have]
+    # the title and description promise only what this page lists: no "dim sum" where there's none nearby, no honors where none are
+    tw = [TWORD[lbl] for lbl in have]
+    titles = []
+    if len(tw) >= 2:
+        titles += [f"{c} {tw[0]}, {tw[1]} & Restaurants | {BRAND}", f"{c} Restaurants: {tw[0]}, {tw[1]} & More | CA Eats",
+                   f"{c} {tw[0]}, {tw[1]} & More | {BRAND}", f"{c}, CA {tw[0]} & {tw[1]} | {BRAND}"]
+    if tw:
+        titles += [f"{c} {tw[0]} & Restaurant Guide | {BRAND}", f"{c}, CA Restaurants & {tw[0]} | {BRAND}",
+                   f"{c} Restaurant Guide: {tw[0]} & More | {BRAND}", f"{c} {tw[0]} & Restaurants | {BRAND} App"]
+    titles += [f"{c}, California Restaurant Guide | {BRAND}", f"{c} Restaurants, Cafés & Bars | {BRAND}", f"{c} Restaurants | {BRAND}: Free Guide"]
+    title = fit(titles, 50, 60)
     opts = []
-    for k in (3, 2, 1, 0):
+    for k in (3, 2, 1):
         if k > len(gl):
             continue
-        what = " and ".join([", ".join(gl[:k][:-1]), gl[:k][-1]] if k > 1 else gl[:k]) if k else "restaurants"
-        what = what.replace(", and", " and") if k == 2 else what
+        what = " and ".join([", ".join(gl[:k][:-1]), gl[:k][-1]] if k > 1 else gl[:k])
         cap = what[0].upper() + what[1:]
-        opts += [f"Hand-checked {what} in and near {c}, CA, checked open in {CHECKED}, plus MICHELIN and James Beard honors and {n_town:,} restaurants in the free app.",
-                 f"{cap} in and near {c}, California, checked open in {CHECKED}, with MICHELIN and James Beard honors and the {n_town:,} restaurants in town.",
-                 f"Hand-checked {what} in and near {c}, checked open in {CHECKED}, plus local MICHELIN and James Beard honors. Free California restaurant guide.",
-                 f"{c}, California: hand-checked {what}, local MICHELIN and James Beard honors, and {n_town:,} restaurants in the free {BRAND} app.",
-                 f"{cap} near {c}, checked open in {CHECKED}, plus local honors and {n_town:,} restaurants in the free {BRAND} app for iPhone and iPad.",
-                 f"The {n_town:,} restaurants in {c}, California, plus hand-checked {what} nearby and local MICHELIN and James Beard honors. Free app."]
+        if honored:
+            opts += [f"Hand-checked {what} near {c}, CA, checked open in {CHECKED}, plus MICHELIN and James Beard honors and {n_town:,} local restaurants in a free app.",
+                     f"{c}, CA: hand-checked {what}, local MICHELIN and James Beard honors and {n_town:,} restaurants in the free {BRAND} app.",
+                     f"{cap} in and near {c}, checked open in {CHECKED}, with local MICHELIN and James Beard honors. Free California restaurant guide.",
+                     f"{cap} near {c}, CA, checked in {CHECKED}, plus local MICHELIN and James Beard honors. A free iPhone, iPad and web guide."]
+        else:
+            opts += [f"Hand-checked {what} in and near {c}, CA, checked open in {CHECKED}, plus {n_town:,} restaurants in the free {BRAND} app for iPhone and iPad.",
+                     f"{cap} in and near {c}, California, checked open in {CHECKED}, with the {n_town:,} restaurants in town. Free iPhone and iPad app, no ads.",
+                     f"{c}, California: hand-checked {what}, plus {n_town:,} restaurants, cafés and bars in the free {BRAND} app for iPhone, iPad and the web.",
+                     f"The {n_town:,} restaurants in {c}, California, with hand-checked {what} nearby, checked open in {CHECKED}. A free guide for iPhone, iPad and the web."]
+    if not gl:
+        hon = ", MICHELIN and James Beard honors" if honored else ""
+        opts += [f"The {n_town:,} restaurants, cafés and bars in {c}, California{hon}, from open map data and county records, sorted by distance in the free {BRAND} app.",
+                 f"{c}, California: {n_town:,} restaurants, cafés and bars{hon} from open map data and county records, in a free iPhone, iPad and web guide.",
+                 f"{c}, California: {n_town:,} restaurants, cafés and bars from open map data and county records, sorted by distance in a free iPhone and iPad app."]
     desc = fit(opts, 140, 160)
     nav, bc = crumbs([("Home", "/"), ("Cities", "/#cities"), (c, "/" + path)])
     head = f"""{nav}
   <main id="main">
   <section class="hero">
     <h1><span class="kicker">{BRAND} · {e(c)}, California</span>{e(c)} restaurants</h1>
-    <p class="lede">{" · ".join(f"{counts[l]} {l.lower()}" for l, *_ in GUIDE_SETS if counts.get(l))}{" in and around " + e(c) + ", each checked open in " + CHECKED + "." if any(counts.values()) else ""} The {BRAND} app lists {n_town:,} restaurants, cafés and bars in {e(c)} and sorts them by distance from you.{jur_line}</p>
+    <p class="lede">{" · ".join(f"{counts[l]} {COUNT_NOUN[l][counts[l] != 1]}" for l, *_ in GUIDE_SETS if counts.get(l))}{" in and around " + e(c) + ", each checked open in " + CHECKED + "." if any(counts.values()) else ""} In the app, {e(c)} has {n_town:,} restaurants, cafés and bars, nearest first.{jur_line}</p>
     {guide_cta()}
   </section>"""
     body = head + "\n".join(secs) + f'<section id="more"><h2>More California cities</h2>{city_links(skip=c)}</section>\n  </main>'
@@ -688,53 +781,126 @@ for c in CITY_PAGES:
             if id(p) not in seen:
                 seen.add(id(p)); u2.append(p)
         lds.append(item_list(f"Hand-checked places near {c}", u2, url))
-    written.append(page(path, title, desc, body, lds))
+    if thin:
+        page(path, title, desc, body, lds, robots="noindex,follow")
+        noindexed.append(path)
+    else:
+        written.append(page(path, title, desc, body, lds))
 
-# ---------------------------------------------------------------- web app (docs/explore/): data split + page
+# ---------------------------------------------------------------- web app (docs/explore/): data files + page
+# The web app's first load is small (hub QA HUB6-08: it used to fetch 4.5 MB, core.json + detail.json, before it worked):
+#   data/start.json    the lists' metadata (towns, kinds, regions with their map boxes) and the ~860 hand-checked, honored or dated places,
+#                      every column. Every guide except All restaurants and Inspections works from it alone.
+#   data/places.json   the other ~107,000 places, list/search/map columns only (no ids, phones or websites). Fetched when All restaurants,
+#                      Inspections, a saved place or a #p= link outside start.json needs it.
+#   data/detail-<k>.json  ids, phones, websites, notes and honors' details for rows k*DETAIL_ROWS .. (k+1)*DETAIL_ROWS-1, fetched when a
+#                      place in that block first opens. Rows are sorted by region, town and street, so a block is one area.
+#   data/ids-<h>.json  {id: row} for the ids starting with <h> (hex), for #p= links and saved places the first file doesn't hold.
+# Every later file is fetched with ?v=<start.json's version>, so a cached old start.json never pairs with new rows.
 os.makedirs(f"{DOCS}/data", exist_ok=True)
-CORE_KEYS = ["id", "n", "c", "ct", "cu", "t", "s", "a", "z", "la", "lo", "b", "ch", "v", "g", "hc", "ip", "f", "h", "mi", "gs", "di", "liq"]
-cols = {k: [] for k in CORE_KEYS + ["rg", "ij", "ir", "is", "id_", "in", "ib"]}
-detail, all_cities = [], []
-city_ix = {}
+DETAIL_ROWS = 4096
+ROW_KEYS = ["n", "c", "ct", "cu", "t", "s", "a", "z", "la", "lo", "b", "ch", "v", "g", "hc", "ip", "f", "h", "mi", "gs", "di", "liq",
+            "rg", "ij", "ir", "is", "id_", "in", "ib"]
+DENSE = {"n", "a", "c", "ct", "cu", "t", "s", "rg"}            # every row has one; small ints compress to almost nothing in town order
+DELTA = {"la": 1e4, "lo": 1e4, "z": 1}                           # integers, each the change from the previous row (rows are in town order)
+all_cities, city_ix, rows = [], {}, []
 rix = {r["id"]: n for n, r in enumerate(IDX["regions"])}
 for rf in IDX["regions"]:
-    R = json.load(open(f"{ROOT}/data/app/{rf['file']}"))
+    R = region_file(rf)
     for r in R["places"]:
-        for k in CORE_KEYS:
-            v = r.get(k)
-            if k == "c":
-                name = R["cities"][v] if v is not None else None
-                if name is not None and name not in city_ix:
-                    city_ix[name] = len(all_cities); all_cities.append(name)
-                v = city_ix.get(name) if name is not None else None
-            cols[k].append(round(v, 4) if k in ("la", "lo") and v is not None else v)
-        cols["rg"].append(rix[rf["id"]])
+        name = R["cities"][r["c"]] if r.get("c") is not None else None
+        if name is not None and name not in city_ix:
+            city_ix[name] = len(all_cities); all_cities.append(name)
         i = r.get("in") or {}
-        for k, src in (("ij", "j"), ("ir", "r"), ("is", "s"), ("id_", "d"), ("in", "n"), ("ib", "b")):
-            cols[k].append(i.get(src))
-        d = {k: r[k] for k in ("ph", "w", "note", "jbf", "bf", "on") if r.get(k)}
-        detail.append(d or None)
-# mostly-empty columns ship as [gap, value] pairs (rows since the last value): a column of nulls was most of a 20 MB file,
-# and gaps compress far better than row numbers
-for k, v in list(cols.items()):
-    if sum(x is not None for x in v) < 0.4 * len(v):
-        pairs, last = [], -1
-        for i, x in enumerate(v):
-            if x is not None:
-                pairs.append([i - last, x]); last = i
-        cols[k] = {"gap": pairs}
-core = {"generated": TODAY, "jurs": JURS, "cities": all_cities, "cuisines": CUISINES, "counties": COUNTIES, "brands": BRANDS, "sources": IDX["sources"],
-        "regions": [{"id": r["id"], "name": r["name"]} for r in IDX["regions"]], "liqt": IDX["liqt"], "guides": GB,
-        "calibration": IDX.get("calibration", {}), "cols": cols}
-json.dump(core, open(f"{DOCS}/data/core.json", "w"), separators=(",", ":"), ensure_ascii=False)
-json.dump(detail, open(f"{DOCS}/data/detail.json", "w"), separators=(",", ":"), ensure_ascii=False)
+        row = {k: r.get(k) for k in ROW_KEYS if k in r}
+        row.update(c=city_ix.get(name), rg=rix[rf["id"]], la=r.get("la"), lo=r.get("lo"), z=int(r["z"]) if (r.get("z") or "").isdigit() else None,
+                   ij=i.get("j"), ir=i.get("r"), id_=i.get("d"), ib=i.get("b"), **{"is": i.get("s"), "in": i.get("n")})
+        row["_id"], row["_city"] = r["id"], name or ""
+        row["_d"] = {k: r[k] for k in ("ph", "w", "note", "jbf", "bf", "on") if r.get(k)} or None
+        rows.append(row)
+
+
+def featured(r):
+    return r.get("hc") == 1 or bool(r.get("mi") or r.get("h") or r.get("gs") or r.get("f"))
+
+
+def street_key(r):
+    m = re.match(r"\s*(\d+)\s*(.*)", r.get("a") or "")
+    return (m.group(2).lower(), int(m.group(1))) if m else ((r.get("a") or "").lower(), 0)
+
+
+order_key = lambda r: (r["rg"], r["_city"], street_key(r), r["n"].lower(), r["_id"])
+FEAT = sorted([r for r in rows if featured(r)], key=order_key)
+REST_ROWS = sorted([r for r in rows if not featured(r)], key=order_key)
+ROWS = FEAT + REST_ROWS
+assert len({r["_id"] for r in ROWS}) == len(ROWS), "duplicate place ids"
+assert all(re.fullmatch(r"[0-9a-f][0-9a-z]*", r["_id"]) for r in ROWS), "an id the ids-<h>.json files can't shard"
+
+
+def columns(rs):
+    out = {}
+    for k in ROW_KEYS:
+        v = [r.get(k) for r in rs]
+        if k in ("la", "lo"):
+            v = [None if x is None else round(x * DELTA[k]) for x in v]
+        if k in DELTA:     # [change from the previous non-null value], null stays null
+            prev, dv = 0, []
+            for x in v:
+                dv.append(None if x is None else x - prev)
+                prev = prev if x is None else x
+            v = dv
+        if k in DENSE or k in DELTA:
+            out[k] = v
+        elif any(x is not None for x in v):   # mostly empty: [rows since the last value, value] pairs
+            pairs, last = [], -1
+            for i, x in enumerate(v):
+                if x is not None:
+                    pairs.append([i - last, x]); last = i
+            out[k] = {"gap": pairs}
+    return out
+
+
+def dump(name, obj):
+    json.dump(obj, open(f"{DOCS}/data/{name}", "w"), separators=(",", ":"), ensure_ascii=False)
+    return name
+
+
+VERSION = hashlib.sha256(json.dumps([[r.get(k) for k in ROW_KEYS] + [r["_id"], r["_d"]] for r in ROWS], ensure_ascii=False).encode()).hexdigest()[:12]
+nonvenue = [r for r in ROWS if not r.get("v")]
+towns = Counter(all_cities[r["c"]] for r in nonvenue if r.get("c") is not None)
+kinds = Counter(CUISINES[r["cu"]] for r in nonvenue if r.get("cu") is not None)
+boxes = {}
+for r in ROWS:
+    b = boxes.setdefault(r["rg"], [r["lo"], r["lo"], r["la"], r["la"]])
+    b[:] = [min(b[0], r["lo"]), max(b[1], r["lo"]), min(b[2], r["la"]), max(b[3], r["la"])]
+data_files = {dump("start.json", {
+    "v": VERSION, "generated": TODAY, "total": len(ROWS), "first": len(FEAT), "block": DETAIL_ROWS,
+    "jurs": JURS, "cities": all_cities, "cuisines": CUISINES, "counties": COUNTIES, "brands": BRANDS, "sources": IDX["sources"],
+    "regions": [{"id": r["id"], "name": r["name"], "box": [round(x, 3) for x in boxes.get(n, [])]} for n, r in enumerate(IDX["regions"])],
+    "liqt": IDX["liqt"], "guides": GB, "calibration": IDX.get("calibration", {}),
+    "towns": sorted(towns.items(), key=lambda x: (-x[1], x[0])), "kinds": sorted(kinds.items(), key=lambda x: (-x[1], x[0])),
+    "rows": {**columns(FEAT), "id": [r["_id"] for r in FEAT]}})}
+data_files.add(dump("places.json", {"v": VERSION, "from": len(FEAT), "rows": columns(REST_ROWS)}))
+for k in range(0, len(ROWS), DETAIL_ROWS):
+    blk = ROWS[k:k + DETAIL_ROWS]
+    data_files.add(dump(f"detail-{k // DETAIL_ROWS}.json", {"v": VERSION, "from": k, "ids": [r["_id"] for r in blk], "d": [r["_d"] for r in blk]}))
+by_hex = defaultdict(dict)
+for n, r in enumerate(ROWS):
+    by_hex[r["_id"][0]][r["_id"]] = n
+for h, m in sorted(by_hex.items()):
+    data_files.add(dump(f"ids-{h}.json", {"v": VERSION, "rows": m}))
 json.dump(json.load(open(f"{ROOT}/data/ca/ca_shapes.json")), open(f"{DOCS}/data/ca_shapes.json", "w"), separators=(",", ":"))
+data_files.add("ca_shapes.json")
+for f in os.listdir(f"{DOCS}/data"):    # an older build's files (core.json, detail.json, blocks past the end) aren't published
+    if f not in data_files:
+        os.remove(f"{DOCS}/data/{f}")
 
 EXPLORE_CSS = open(f"{ROOT}/scripts/explore.css").read() if os.path.exists(f"{ROOT}/scripts/explore.css") else ""
 url = f"{DOMAIN}/explore/"
 title = fit(["Search California Restaurants, Taquerías & Dim Sum", "California Restaurant Search & Map | California Eats",
              "Search California Restaurants | California Eats Web App"], 50, 60)
-desc = fit([f"Search {N_REST:,} California restaurants by name, town, street or dish, and map {len(TAQ)} hand-checked taquerías and {len(DIM)} dim sum houses. Free.",
+desc = fit([f"Find a California taquería, dim sum house or any of {N_REST:,} restaurants by name, town, street, zip or dish, on a list or a map. Free, in your browser.",
+            f"Search {N_REST:,} California restaurants by name, town, street or dish, and map {len(TAQ)} hand-checked taquerías and {len(DIM)} dim sum houses. Free.",
             f"Search {N_REST:,} California restaurants by name, town, street or dish, and map hand-checked taquerías, dim sum, burritos and more. Free, no account."], 140, 160)
 nav, bc = crumbs([("Home", "/"), ("Search", "/explore/")])
 guide_buttons = "".join(f'<button type="button" data-g="{k}" aria-pressed="false">{e(t)}</button>' for k, t in
@@ -744,7 +910,7 @@ body = f"""{nav}
   <main id="main">
   <section class="ex-hero">
     <h1><span class="kicker">{BRAND} · on the web</span>Search California restaurants</h1>
-    <p class="sub">{N_REST:,} restaurants, cafés and bars, with {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses and the state's MICHELIN and James Beard honorees. The same data as the free iPhone and iPad app. Nothing about you is stored anywhere but this browser.</p>
+    <p class="sub">Look up any of {N_REST:,} California restaurants, cafés and bars, or start from {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses or the MICHELIN and James Beard list. It's the iPhone app's data in your browser, and what you save stays in this browser.</p>
   </section>
   <p id="ex-loading">Loading the restaurant list…</p>
   <noscript><p>The search needs JavaScript. The guides work without it: {", ".join(f'<a href="/{p}">{e(t.lower())}</a>' for _, p, _, t, *_ in GUIDE_PAGES)}.</p></noscript>
@@ -768,7 +934,7 @@ body = f"""{nav}
       </div>
       <p id="ex-sub"></p>
       <p id="ex-count" aria-live="polite"></p>
-      <p id="ex-locmsg"></p>
+      <p id="ex-locmsg" aria-live="polite"></p>
     </div>
     <div id="ex-listwrap"><ol id="ex-list" class="ex-list"></ol><button type="button" id="ex-more" class="ex-small" hidden></button></div>
     <div id="ex-mapwrap" hidden>
@@ -777,22 +943,27 @@ body = f"""{nav}
       <p id="ex-maphint"></p>
     </div>
   </div>
-  <aside id="ex-panel" class="ex-panel" hidden aria-labelledby="ex-pname"></aside>
   </main>
 <script>
 {open(f"{ROOT}/scripts/explore.js").read()}
 </script>"""
 webapp_ld = {"@context": "https://schema.org", "@type": "WebApplication", "name": f"{BRAND} web app", "url": url,
              "applicationCategory": "TravelApplication", "operatingSystem": "Any", "browserRequirements": "Requires JavaScript",
-             "description": desc, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@id": f"{DOMAIN}/#org"}}
-written.append(page("explore/index.html", title, desc, body, [webapp_ld, bc], extra_css=EXPLORE_CSS))
+             "description": desc, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+             "publisher": {"@type": "Organization", "@id": f"{DOMAIN}/#org", "name": BRAND, "url": f"{DOMAIN}/"}}
+# the place panel is a modal dialog: it and its scrim sit outside the page wrapper, so the web app can make everything else inert
+# while a place is open (Tab and screen readers stay in the dialog)
+explore_after = """<div id="ex-scrim" class="ex-scrim" hidden></div>
+<aside id="ex-panel" class="ex-panel" role="dialog" aria-modal="true" aria-labelledby="ex-pname" hidden></aside>
+"""
+written.append(page("explore/index.html", title, desc, body, [webapp_ld, bc], extra_css=EXPLORE_CSS, after=explore_after))
 
 # ---------------------------------------------------------------- landing page
-shots = [("home", "California Eats home screen: guides for taquerías, dim sum, burritos, fish tacos, Korean barbecue, burger stands, wine country, MICHELIN and James Beard honors, the oldest places and official inspection results, with a search box for every restaurant in the state.", "Guides for taquerías, dim sum and more."),
-         ("taquerias", "Taquerías list in California Eats, sorted by distance from downtown Los Angeles, with what each one serves.", "Taquerías nearest you first."),
-         ("detail", "A taquería's page in California Eats: address, a button for ratings, hours and photos in Apple Maps, what it serves and LA County's official inspection grade.", "Each place, with live Apple Maps hours and photos."),
-         ("map", "California Eats map with pins for hand-checked taquerías.", "The map, by taquerías, dim sum, burritos or honors."),
-         ("honors", "MICHELIN & James Beard list in California Eats, with each restaurant's distinction.", "MICHELIN and James Beard honors, as facts.")]
+shots = [("home", "California Eats home screen: guides for taquerías, dim sum, burritos, fish tacos, Korean barbecue, burger stands, wine country, MICHELIN and James Beard honors, the oldest places and official inspection results, with a search box for every restaurant in the state.", "Every guide, one screen."),
+         ("taquerias", "Taquerías list in California Eats, sorted by distance from downtown Los Angeles, with what each one serves.", "Taquerías, closest first."),
+         ("detail", "A taquería's page in California Eats: address, a button for ratings, hours and photos in Apple Maps, what it serves and LA County's official inspection grade.", "A place's page, with its county result and Apple Maps."),
+         ("map", "California Eats map with pins for hand-checked taquerías.", "Hand-checked places on the map."),
+         ("honors", "MICHELIN & James Beard list in California Eats, with each restaurant's distinction.", "Honors, listed as facts.")]
 shot_html = []
 for i, (name, alt, cap) in enumerate(shots):
     png = f"{DOCS}/img/screen-{name}.png"
@@ -804,23 +975,25 @@ for i, (name, alt, cap) in enumerate(shots):
     shot_html.append(f'<li><picture>{webp}<img src="/img/screen-{name}.png" alt="{e(alt)}" width="{w}" height="{h}"{lazy} decoding="async"></picture><p>{e(cap)}</p></li>')
 shots_section = f"""
   <section id="screens">
-    <h2>What it looks like</h2>
+    <h2>Inside the app</h2>
     <ul class="shots" tabindex="0" aria-label="California Eats app screenshots">
       {"".join(shot_html)}
     </ul>
   </section>
 """ if shot_html else ""
 jnames = " and ".join(j["name"] for j in JURS) if len(JURS) <= 2 else ", ".join(j["name"] for j in JURS[:-1]) + " and " + JURS[-1]["name"]
+LAC = next((j for j in JURS if j["id"] == "lac"), None)
 faq = [
-    ("Is California Eats free?", "Yes. The app is free, with no ads, no in-app purchases and no account."),
-    ("Where do the taquerías and other guides come from?", f"We checked each one by hand in {CHECKED}: every place on the taquería, dim sum, burrito, fish taco, Korean barbecue, burger stand and wine-country lists has a 2025 or 2026 source such as its own menu page, a live online-ordering page it runs or a dated news story. The rest of the {N_REST:,} restaurants come from Overture Maps' open place data, county food-facility records and California ABC licenses."),
-    ("Does the app show ratings and reviews?", "Not its own. Tap a place and Apple Maps' own place card opens inside the app with Apple's current ratings, hours, photos and directions. Our lists are never ordered by ratings."),
-    ("What are the inspection results?", f"Where a county publishes inspection results in bulk ({jnames}), the app shows that county's own official result at the latest inspection, as recorded: LA County's score and letter grade, and San Francisco's and Sacramento County's placards. We never compute a grade of our own or compare counties."),
-    ("Are MICHELIN stars and James Beard awards ratings?", "No, they're honors, and the app shows them as facts from MICHELIN's 2026 California selection and the James Beard Foundation's own announcements. A finalist is always called a finalist."),
-    ("Does it need my location?", "Only if you want lists sorted by distance. Your location stays on your iPhone or iPad and is never sent to us. Everything else works without it."),
-    ("A place closed or is missing. How do I tell you?", f"Email {EMAIL} with the name and town. Corrections go into the next update."),
-    ("Is there an Android version?", f"Not yet. California Eats is for iPhone and iPad. If enough people ask at {EMAIL}, it moves up the list."),
+    ("Does California Eats cost anything?", "No. Downloading and using it is free: there are no ads, nothing to buy inside the app and no sign-up."),
+    ("How did the taquerías and dim sum houses make the list?", f"By hand, in {CHECKED}. Every taquería, dim sum house, burrito shop, fish taco spot, Korean barbecue restaurant, burger stand and wine-country restaurant on a list has a 2025 or 2026 source of its own: a menu page, an ordering page it runs, or a dated local news story. The rest of the app's {N_REST:,} restaurants, cafés and bars come from Overture Maps' open place data, county food-facility records and California ABC license data."),
+    ("What do LA County's A, B and C restaurant grades mean?", "They're Los Angeles County's own letter grades from a restaurant's latest inspection: A for a score of 90 to 100, B for 80 to 89, C for 70 to 79. Seven cities that never adopted grade cards show the score alone, and Pasadena, Long Beach and Vernon run their own health departments, so LA County's grades don't cover them. The app shows each grade exactly as the county recorded it."),
+    ("Why is there no health grade for San Diego restaurants?", f"San Diego County publishes its grades only through a search page, not as a data file, so the app doesn't show them; it uses the county's permit list to measure how often map listings match a permitted restaurant. Inspection results in the app come from {jnames}, each on its own scale and never compared with another county's."),
+    ("Where do the ratings come from?", "Not from us: California Eats gives no ratings of its own, and no list in it is ordered by ratings. Opening a place shows Apple Maps' own card inside the app, with Apple's ratings, hours, photos and directions. MICHELIN stars and James Beard awards appear as facts, the way MICHELIN's 2026 California selection and the James Beard Foundation announced them, and a finalist is never called a winner."),
+    ("Do I have to share my location?", "No. It's only used to put the nearest places first, it stays on your iPhone or iPad, and it never reaches us. Guides, search and the map all work with it off."),
+    ("A taquería closed, or a place is missing. How do I report it?", f"Write to {EMAIL} with the place's name and town, and the fix goes into the next update."),
+    ("Will there be an Android app?", f"Not for now: California Eats is built for iPhone and iPad. On an Android phone, the web search on this site works in the browser, and if you'd use an Android app, say so at {EMAIL}."),
 ]
+assert LAC is None or LAC["scale"] == ["A", "B", "C"], "the LA County answer describes an A/B/C scale"
 faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
 faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "@id": f"{DOMAIN}/#faq",
           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
@@ -833,26 +1006,30 @@ app_ld = {"@context": "https://schema.org", "@graph": [
      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "free"}},
     {"@type": "Organization", "@id": f"{DOMAIN}/#org", "name": BRAND, "url": f"{DOMAIN}/",
      "logo": {"@type": "ImageObject", "url": f"{DOMAIN}/icon-512.png", "width": 512, "height": 512}, "email": EMAIL,
-     "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": EMAIL, "availableLanguage": "en"}},
+     "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": EMAIL, "availableLanguage": "en"},
+     # the Eats Ranked hub lists this site as a subOrganization; say so from this side too (Wisconsin's wording, wi-eats a6d63a5)
+     "parentOrganization": {"@type": "Organization", "@id": "https://eatsranked.com/#organization", "name": "Eats Ranked", "url": "https://eatsranked.com/"}},
     {"@type": "WebSite", "@id": f"{DOMAIN}/#website", "name": BRAND, "alternateName": ["CA Eats", "California Eats app"], "url": f"{DOMAIN}/",
      "inLanguage": "en", "publisher": {"@id": f"{DOMAIN}/#org"}}]}
 if shot_html:
     app_ld["@graph"][0]["screenshot"] = f"{DOMAIN}/img/screen-home.png"
 title = "California Eats: Taquería, Dim Sum & Restaurant App for CA"
-desc = fit([f"Free iPhone and iPad guide to {N_REST:,} California restaurants, with {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses and MICHELIN honors.",
+desc = fit([f"Taquerías, dim sum and burritos checked by hand, plus {N_REST:,} California restaurants, county inspection results and MICHELIN stars. Free for iPhone and iPad.",
+            f"Hand-checked taquerías and dim sum, {N_REST:,} California restaurants, LA County grades and MICHELIN stars, in a free iPhone and iPad app with no ads.",
+            f"Free iPhone and iPad guide to {N_REST:,} California restaurants, with {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses and MICHELIN honors.",
             f"Free iPhone and iPad guide to {N_REST:,} California restaurants, with hand-checked taquerías, dim sum, burritos and MICHELIN and James Beard honors.",
             f"Free iPhone and iPad guide to {N_REST:,} California restaurants, with hand-checked taquerías and dim sum, MICHELIN stars and inspection results."], 140, 160)
 guide_cards = "".join(f'<a class="card{" lead" if i == 0 else ""}" href="/{p_}"><h3>{e(t)}</h3><p>{len(ps)} {e(nouns if len(ps) != 1 else noun)}, checked open.</p></a>'
                       for i, (_, p_, _, t, noun, nouns, ps, _) in enumerate(GUIDE_PAGES))
 guide_cards += f'<a class="card" href="/california-michelin-james-beard.html"><h3>MICHELIN &amp; James Beard</h3><p>{len(stars)} starred restaurants, {len(bibs)} Bib Gourmands and James Beard honorees.</p></a>'
 if OLD:
-    guide_cards += f'<a class="card" href="/california-oldest-restaurants.html"><h3>Oldest restaurants</h3><p>{len(OLD)} places with a verified opening year.</p></a>'
+    guide_cards += f'<a class="card" href="/california-oldest-restaurants.html"><h3>Oldest restaurants</h3><p>{len(OLD)} places with a sourced opening year.</p></a>'
 city_cards = "".join(f'<li><a href="{city_url(c)}">{e(c)}</a></li>' for c in CITY_PAGES)
 body = f"""  <main id="main">
   <section class="hero">
     <h1><span class="kicker">{BRAND}: the {e(TAGLINE.lower())} for iPhone and iPad</span>California's restaurants, starting with the taquería</h1>
-    <p class="lede">{BRAND} is a free California restaurant guide. Find a taquería near you, a dim sum house, a Mission burrito, Baja fish tacos or Korean barbecue from lists we checked by hand, plus {N_REST:,} restaurants, cafés and bars in {N_TOWNS:,} towns, MICHELIN and James Beard honors, and official county inspection results.</p>
-    <div class="cta-row">{store_button()}<a class="btn btn-ghost" href="/explore/">Search on the web</a><span class="pill store-note">Free. No ads, no account. Coming to the App Store.</span></div>
+    <p class="lede">Al pastor, har gow, a carne asada burrito after the beach: {BRAND} starts from what you're hungry for. It puts {len(TAQ)} taquerías and {len(DIM)} dim sum houses we checked by hand next to {N_REST:,} restaurants, cafés and bars in {N_TOWNS:,} California towns, with MICHELIN and James Beard honors and the inspection results {jnames} publish.</p>
+    <div class="cta-row">{store_button()}<a class="btn btn-ghost" href="/explore/">Search on the web</a><span class="pill store-note">Free on iPhone and iPad soon, with no ads and no sign-up.</span></div>
     <ul class="stats" role="list" aria-label="What's in the app">
       <li><b>{len(TAQ)}</b><span>taquerías</span></li>
       <li><b>{len(DIM)}</b><span>dim sum houses</span></li>
@@ -862,50 +1039,50 @@ body = f"""  <main id="main">
   </section>
 
   <section id="what">
-    <h2>A California restaurant guide that starts with tacos</h2>
-    <p class="sub">General restaurant apps rank by star ratings and can't tell a taquería with a trompo from a chain. {BRAND} starts from what Californians look for: al pastor and carnitas, a weekend dim sum cart, a burrito the size of a forearm, a Baja fish taco, galbi on a tabletop grill, a walk-up burger stand, and the places that have been open for generations. Every one of those was checked open in {CHECKED}. Where a county publishes them, each place also shows its official inspection result. For ratings, hours and photos, each place opens Apple Maps' own live card.</p>
+    <h2>Built around how California eats</h2>
+    <p class="sub">{BRAND} begins with the food people here plan a day around: al pastor and carnitas, Sunday dim sum, a foil-wrapped burrito, Baja fish tacos, galbi on a tabletop grill, a walk-up burger stand, and dining rooms that have been open for generations. Those lists were checked by hand in {CHECKED}, and nothing in them is sorted by stars. Where {jnames} publish inspection results, a place shows its county's latest one, and every place opens its own Apple Maps card for ratings, hours and photos.</p>
   </section>
 
   <section id="how">
-    <h2>How it works</h2>
+    <h2>Using {BRAND}</h2>
     <ol class="steps">
-      <li class="step"><div class="n" aria-hidden="true">1</div><div><h3>Pick a guide.</h3><p>Taquerías, Dim Sum, Burritos, Fish Tacos, Korean BBQ, Burger Stands, Wine Country, MICHELIN &amp; James Beard, Oldest Places, Inspections, or search {N_REST:,} restaurants by name, town, street or dish.</p></div></li>
-      <li class="step"><div class="n" aria-hidden="true">2</div><div><h3>See what's near you.</h3><p>Sort by distance, filter by region, town or cuisine, or browse the map. Each hand-checked place lists what's on its menu.</p></div></li>
-      <li class="step"><div class="n" aria-hidden="true">3</div><div><h3>Go.</h3><p>Open Apple Maps' place card for live hours and photos, call, get directions, or save it for later.</p></div></li>
+      <li class="step"><div class="n" aria-hidden="true">1</div><div><h3>Choose what you're after.</h3><p>Start from Taquerías, Dim Sum, Burritos, Fish Tacos, Korean BBQ, Burger Stands, Wine Country, MICHELIN &amp; James Beard, Oldest Places or Inspections, or type a name, town, street or dish to search {N_REST:,} places.</p></div></li>
+      <li class="step"><div class="n" aria-hidden="true">2</div><div><h3>Narrow it down.</h3><p>Put the closest first, keep to one of {len(REGIONS)} regions, one town or one kind of food, or switch to the map. Hand-checked places show what their own menus list.</p></div></li>
+      <li class="step"><div class="n" aria-hidden="true">3</div><div><h3>Head out.</h3><p>Open the place's Apple Maps card for hours and photos, call ahead, get directions, or save it for the weekend.</p></div></li>
     </ol>
   </section>
 {shots_section}
   <section id="guides">
-    <h2>California food guides</h2>
-    <p class="sub">The app's hand-checked lists, readable on the web.</p>
+    <h2>The hand-checked lists</h2>
+    <p class="sub">Each one is on the web too. The app adds distance, the map and saved places.</p>
     <div class="grid2">{guide_cards}</div>
   </section>
 
   <section id="cities">
-    <h2>Restaurants by city</h2>
-    <p class="sub">Hand-checked places, local honors and what each of California's biggest towns eats.</p>
+    <h2>California restaurants by city</h2>
+    <p class="sub">From San Diego to Sacramento: the hand-checked places nearby, local MICHELIN and James Beard honors, and the kinds of food each big town has most of.</p>
     <ul class="cities">{city_cards}</ul>
   </section>
 
   <section id="pricing">
-    <h2>Free, and staying that way</h2>
-    <p class="sub">No ads, no subscription, no in-app purchases, no account. The whole guide is built into the app, so lists open fast and work with a weak signal on Highway 1 or in the Sierra.</p>
+    <h2>What it costs: nothing</h2>
+    <p class="sub">There's no subscription, no ad, nothing to unlock and no login. Every list ships inside the app, so it opens quickly and keeps working when the signal drops on Highway 1 or up in the Sierra.</p>
   </section>
 
   <section id="privacy">
-    <h2>Your lunch plans are your business</h2>
-    <p class="sub">{BRAND} collects nothing. If you allow location, it only sorts lists by distance on your device. Saved places stay on your device. This website sets no cookies and runs no trackers. <a href="/privacy.html">Read the privacy policy</a>.</p>
+    <h2>What the app knows about you: nothing</h2>
+    <p class="sub">{BRAND} has no analytics and no account, and it sends us nothing. Turn on location and it's used on your phone to sort by distance; saved places stay there too. This site uses no cookies or trackers. <a href="/privacy.html">The privacy policy</a> has the details.</p>
   </section>
 
   <section id="faq">
-    <h2>Questions</h2>
+    <h2>Questions about {BRAND}</h2>
     {faq_html}
   </section>
 
   <section id="download" class="final">
     <h2>Find your taquería</h2>
-    <p class="sub">{BRAND} is coming to the App Store for iPhone and iPad. Free.</p>
-    <div class="cta-row">{store_button()}</div>
+    <p class="sub">{BRAND} for iPhone and iPad will be free when it reaches the App Store. Until then, ask us for early access, or use the search right here.</p>
+    <div class="cta-row">{store_button()}<a class="btn btn-ghost" href="/explore/">Search on the web</a></div>
   </section>
   </main>"""
 written.append(page("index.html", title, desc, body, [app_ld, faq_ld]))
@@ -916,7 +1093,7 @@ body = f"""{nav}
   <main id="main" class="legal">
   <section class="hero">
     <h1>Privacy policy</h1>
-    <p class="lede">Short version: the {BRAND} app collects nothing about you, and this website doesn't track you. Last updated {TODAY}.</p>
+    <p class="lede">Short version: the {BRAND} app collects nothing about you, and this website doesn't track you. Last updated {nice_date(SITE_UPDATED)}.</p>
   </section>
   <section>
     <h2>The app</h2>
@@ -928,9 +1105,9 @@ body = f"""{nav}
       <li><b>Spotlight.</b> The app adds its hand-checked and honored places to your device's search index so you can find them from Spotlight. That index stays on your device.</li>
       <li><b>Calls, websites and email</b> you start from a place open in the Phone app, your browser or Mail, and are handled by them.</li>
     </ul>
-    <p>On the App Store, the app's privacy label is "Data Not Collected".</p>
+    <p>On the App Store, the app's privacy label will be "Data Not Collected" (the app isn't on the store yet).</p>
     <h2>This website</h2>
-    <p>The site is static pages hosted on GitHub Pages. It sets no cookies and loads no analytics, fonts or scripts from anyone else. The web app's saved places stay in your browser's local storage. Its "Near me" button asks your browser for your location only when you press it; the location is used in the page to sort by distance and is never sent anywhere. GitHub may keep standard server logs, such as IP addresses, for security; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub's privacy statement</a>.</p>
+    <p>The site is static pages hosted on GitHub Pages. It sets no cookies and loads no analytics, fonts or scripts from anyone else. The web app keeps three things in your browser's local storage, on your device only: the places you save (<code>cae-saved</code>), the last guide you opened (<code>cae-guide</code>) and the county you last picked under Inspections (<code>cae-jur</code>). Clearing this site's data in your browser deletes them. Its "Near me" button asks your browser for your location only when you press it; the location is used in the page to sort by distance and is never sent anywhere. GitHub may keep standard server logs, such as IP addresses, for security; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub's privacy statement</a>.</p>
     <h2>Email</h2>
     <p>If you email us, we use your message and address only to reply and to fix the listing you told us about. We don't add you to a mailing list or share your address.</p>
     <h2>Children</h2>
@@ -946,12 +1123,12 @@ written.append(page("privacy.html", "Privacy Policy: California Eats Taquería &
                     body, [bc]))
 
 nav, bc = crumbs([("Home", "/"), ("Terms of use", "/terms.html")])
-jur_items = "".join(f"<li>{e(j['agency'])}: official inspection results through {e(j['through'])}.</li>" for j in JURS)
+jur_items = "".join(f"<li>{e(j['agency'])}: official inspection results through {e(nice_date(j['through']))}.</li>" for j in JURS)
 body = f"""{nav}
   <main id="main" class="legal">
   <section class="hero">
     <h1>Terms of use</h1>
-    <p class="lede">The plain-language terms for the {BRAND} app and this website. Last updated {TODAY}.</p>
+    <p class="lede">The plain-language terms for the {BRAND} app and this website. Last updated {nice_date(SITE_UPDATED)}.</p>
   </section>
   <section>
     <h2>What the app is</h2>
@@ -987,7 +1164,7 @@ written.append(page("terms.html", "Terms of Use: California Eats Taquería & Res
 body = f"""  <main id="main">
   <section class="hero">
     <h1>Page not found</h1>
-    <p class="lede">That page isn't here. Try the <a href="/">{BRAND} home page</a>, the <a href="/{GUIDE_PAGES[0][1] if GUIDE_PAGES else ''}">taquería guide</a> or the <a href="/explore/">restaurant search</a>.</p>
+    <p class="lede">Nothing lives at this address. Head back to the <a href="/">{BRAND} home page</a>, browse the <a href="/{GUIDE_PAGES[0][1] if GUIDE_PAGES else ''}">taquería guide</a>, or find a restaurant by name in the <a href="/explore/">California restaurant search</a>.</p>
   </section>
   </main>"""
 page("404.html", f"Page not found | {BRAND}", "This page doesn't exist.", body, robots="noindex,follow")
@@ -996,7 +1173,7 @@ page("404.html", f"Page not found | {BRAND}", "This page doesn't exist.", body, 
 urls = ["" if w == "index.html" else w.replace("index.html", "") for w in written]
 urls.sort(key=lambda u: (u != "", u.startswith("cities/"), u))
 open(f"{DOCS}/sitemap.xml", "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-                                       + "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls) + "</urlset>\n")
+                                       + "".join(f"  <url><loc>{DOMAIN}/{u}</loc><lastmod>{LASTMOD}</lastmod></url>\n" for u in urls) + "</urlset>\n")
 open(f"{DOCS}/robots.txt", "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
 json.dump({"name": BRAND, "short_name": "CA Eats", "description": f"{TAGLINE}, plus {N_REST:,} California restaurants.", "start_url": f"{BASE}/", "display": "browser",
            "background_color": "#f8fafc", "theme_color": "#003262",
@@ -1012,6 +1189,6 @@ json.dump({"generated": TODAY, "restaurants": N_REST, "towns": N_TOWNS, "guides"
            "oldest": len(OLD), "honored": len(HON), "michelin_starred": len(stars), "bib": len(bibs), "inspected": len(INSPECTED),
            "jurisdictions": {j["id"]: {"name": j["name"], "through": j["through"]} for j in JURS}, "cities": city_stats},
           open(f"{ROOT}/playbook/site-numbers.json", "w"), indent=1)
-print("wrote", len(written) + 1, "pages:", ", ".join(written))
+print("wrote", len(written) + len(noindexed) + 1, "pages:", ", ".join(written), "| noindex (thin):", ", ".join(noindexed) or "none")
 print(f"restaurants {N_REST:,} in {N_TOWNS} towns | " + " | ".join(f"{lbl} {len(ps)}" for _, _, lbl, _, _, _, ps, _ in GUIDE_PAGES)
       + f" | honored {len(HON)} | oldest {len(OLD)} | inspected {len(INSPECTED):,}")

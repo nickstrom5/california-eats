@@ -14,7 +14,9 @@ Browser checks (headless Chrome via Python Playwright, 375 and 1280 px wide), ev
 
 The web app (explore/): loads; searches; opens a place with Directions and focus on Close, and closes on Escape with focus back on the
   row; an emoji search lists nothing; Near me sorts by distance; the map draws; a saved place survives a reload; hostile hashes and a
-  junk stored guide don't break it; the Inspections guide shows each county's own results; a failed core.json shows an error.
+  junk stored guide don't break it; the Inspections guide shows each county's own results; a failed start.json shows an error.
+  Also: 16 px fields and the page's font on phones, the place panel as a modal dialog, Back/Forward with a place open, junk in any
+  cae- key, no 'Nearest' without a location, a fresh fix on every Near me press, and a #p= link that is loading or fails.
 
 Until the custom domain is live, the site is built for https://nickstrom5.github.io/california-eats/, so it's served here under the same
 /california-eats/ prefix (a temporary folder with a link to docs/).
@@ -24,6 +26,7 @@ Usage: .venv/bin/python scripts/qa-site.py [--docs DIR] [--workers N]
 import argparse
 import base64
 import functools
+import gzip
 import hashlib
 import html
 import http.server
@@ -42,6 +45,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ap = argparse.ArgumentParser()
 ap.add_argument("--docs", default=os.path.join(ROOT, "docs"))
 ap.add_argument("--workers", type=int, default=2)
+ap.add_argument("--static", action="store_true", help="static checks only (no browser)")
+ap.add_argument("--port", type=int, default=int(os.environ.get("QA_PORT", "0")), help="local port for the test server (0 = any free port)")
 ARGS = ap.parse_args()
 DOCS = os.path.abspath(ARGS.docs)
 HAS_CNAME = os.path.exists(os.path.join(DOCS, "CNAME"))
@@ -54,9 +59,33 @@ def bad(msg):
     problems.append(msg)
 
 
+GZIP_TYPES = (".html", ".json", ".js", ".css", ".svg", ".xml", ".txt", ".webmanifest")
+_gz = {}
+
+
 class Quiet(http.server.SimpleHTTPRequestHandler):
+    """Serves docs/ like GitHub Pages does where it matters here: text files gzipped when the browser accepts it, so the transfer
+    sizes the budget checks measure are the ones a visitor downloads."""
+
     def log_message(self, *a):
         pass
+
+    def do_GET(self):
+        path = self.translate_path(self.path)
+        if os.path.isdir(path) and self.path.split("?")[0].endswith("/"):
+            path = os.path.join(path, "index.html")
+        if "gzip" in self.headers.get("Accept-Encoding", "") and os.path.isfile(path) and path.endswith(GZIP_TYPES):
+            if path not in _gz:
+                _gz[path] = gzip.compress(open(path, "rb").read(), 6)
+            body = _gz[path]
+            self.send_response(200)
+            self.send_header("Content-Type", self.guess_type(path))
+            self.send_header("Content-Encoding", "gzip")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        super().do_GET()
 
 
 def serve():
@@ -64,7 +93,7 @@ def serve():
     if PREFIX:
         root = tempfile.mkdtemp(prefix="ca-site-")
         os.symlink(DOCS, os.path.join(root, PREFIX.strip("/")))
-    srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), functools.partial(Quiet, directory=root))
+    srv = http.server.ThreadingHTTPServer(("127.0.0.1", ARGS.port), functools.partial(Quiet, directory=root))
     srv.handle_error = lambda *a: None     # a browser dropping a connection mid-file isn't a site problem
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     return f"http://127.0.0.1:{srv.server_address[1]}"
@@ -93,7 +122,12 @@ def html_files():
 SHA = lambda s: "sha256-" + base64.b64encode(hashlib.sha256(s.encode()).digest()).decode()
 BANNED_LD = {"aggregateRating", "review", "reviews", "reviewRating", "ratingValue", "reviewCount", "bestRating"}
 OVERCLAIMS = [r"every california restaurant", r"every restaurant", r"\ball the restaurants?\b", r"\bsearch all\b", r"\bhas all\b",
-              r"\ball \d[\d,]* (california )?(restaurants|taquer[ií]as|places)", r"\bbest\b", r"\btop[- ]rated\b"]
+              r"\ball \d[\d,]* (california )?(restaurants|taquer[ií]as|places)", r"\bbest\b", r"\btop[- ]rated\b",
+              r"\b(confirmed|verified) (open|listing)\b", r"\bverified opening\b",
+              # "363 taquerías in each of California's 9 regions" reads as 363 per region; the honors list IS ordered by stars
+              r"\bin each of california's \d+ regions\b", r"\bsorts nothing by stars\b"]
+# text that contradicts the data rules or reads wrong: "1 places"; LA County results claimed for a city with its own health department
+WRONG_TEXT = [r"\b1 places\b", r"places in (pasadena|long beach|vernon) also shows? los angeles county"]
 _ids = {}
 
 
@@ -101,6 +135,16 @@ def ids_in(f):
     if f not in _ids:
         _ids[f] = set(re.findall(r'\sid="([^"]+)"', open(f).read()))
     return _ids[f]
+
+
+def walk_dicts(x):
+    if isinstance(x, dict):
+        yield x
+        for v in x.values():
+            yield from walk_dicts(v)
+    elif isinstance(x, list):
+        for v in x:
+            yield from walk_dicts(v)
 
 
 def walk_keys(x):
@@ -111,6 +155,14 @@ def walk_keys(x):
     elif isinstance(x, list):
         for v in x:
             yield from walk_keys(v)
+
+
+ITUNES = '<!-- <meta name="apple-itunes-app" content="app-id=APP_ID"> fill in once the App Store record exists -->'
+# other Eats Ranked apps, their repos and folders, and their web apps' storage prefixes (bare state names are fine: Washington Blvd,
+# chile colorado, a New York steak)
+SIBLINGS = re.compile(r"(?i)\b(?:(?:wisconsin|florida|washington|colorado|connecticut|maine|idaho|new york|michigan|texas) eats"
+                      r"|chicago restaurants|chi ranked|(?:wi|fl|wa|co|ct|me|id|ny|chi|mi|tx)-eats|(?:wisconsin|florida|washington|colorado|connecticut"
+                      r"|maine|idaho|new-york|michigan|texas)-eats|chicago-restaurants-ranked|(?:fleats|coeats|ideats|nye|wae)-)")
 
 
 def static_checks():
@@ -160,12 +212,22 @@ def static_checks():
                     bad(f"{where}: CSP {kind} hashes don't match the page's inline blocks")
         if '<meta name="referrer"' not in s:
             bad(f"{where}: no referrer meta")
+        # part of the Eats Ranked family: every page's footer links the hub (the hub lists this site as a subOrganization)
+        if '<a href="https://eatsranked.com/">Eats Ranked</a>' not in s:
+            bad(f"{where}: no 'Part of Eats Ranked' link in the footer")
         if re.search(r"<[a-zA-Z][^>]*\sstyle=", s):
             bad(f"{where}: inline style attribute (blocked by the CSP)")
         if re.search(r"<[a-zA-Z][^>]*\son[a-z]+=", s):
             bad(f"{where}: inline event handler (blocked by the CSP)")
-        if "<!--" in s:
+        # the one comment allowed: SEO-SPEC's App Store banner placeholder, in every page's head
+        if ITUNES not in s:
+            bad(f"{where}: no commented apple-itunes-app placeholder in the head")
+        if "<!--" in s.replace(ITUNES, ""):
             bad(f"{where}: HTML comment left in the output")
+        # this state's own site: no sibling app, repo or storage prefix named anywhere, comments and inline script included
+        for m in re.finditer(SIBLINGS, s):
+            bad(f"{where}: names another state's app or repo: {m.group(0)!r}")
+        ld_nodes = []
         for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
             if "<" in raw:
                 bad(f"{where}: raw '<' inside JSON-LD")
@@ -177,11 +239,29 @@ def static_checks():
             hit = BANNED_LD & set(walk_keys(obj))
             if hit:
                 bad(f"{where}: ratings or reviews in JSON-LD: {sorted(hit)}")
+            ld_nodes.append(obj)
+        # JSON-LD: no empty values, and a bare {"@id": ...} reference points at a node defined on this page
+        defined = {n.get("@id") for o in ld_nodes for n in walk_dicts(o) if len(n) > 1 and n.get("@id")}
+        for o in ld_nodes:
+            for n in walk_dicts(o):
+                if any(v == "" for v in n.values()):
+                    bad(f"{where}: JSON-LD has an empty value in {n.get('@type') or n.get('name')}")
+                if set(n) == {"@id"} and n["@id"] not in defined:
+                    bad(f"{where}: JSON-LD refers to {n['@id']}, which this page doesn't define")
+        ld_nodes.clear()
         text = html.unescape(re.sub(r"<[^>]+>", " ", re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", s, flags=re.S)))
+        # a list cut at a comma inside parentheses ("california burrito (carne asada, ...") leaves a paragraph with an open "("
+        for blk in re.findall(r"<(p|li|h[1-6]|summary|td)\b[^>]*>(.*?)</\1>", re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", s, flags=re.S), re.S):
+            t = html.unescape(re.sub(r"<[^>]+>", "", blk[1]))
+            if t.count("(") != t.count(")"):
+                bad(f"{where}: unbalanced parentheses in {t[:80]!r}")
         low = text.lower()
         for rx in OVERCLAIMS:
             if re.search(rx, low):
                 bad(f"{where}: overclaim matching {rx!r}")
+        for rx in WRONG_TEXT:
+            if re.search(rx, low):
+                bad(f"{where}: text matching {rx!r}")
         if "google" in low and rel not in ("privacy.html", "terms.html"):
             bad(f"{where}: mentions Google")
         if "michelin" in low and not re.search(r"trademarks? of michelin", low):
@@ -216,6 +296,103 @@ def static_checks():
             elif frag and f.endswith(".html") and "/explore" not in path and frag not in ids_in(f):
                 bad(f"{where}: link to a missing anchor {ref}")
     return files
+
+
+OLD_EMAIL = "work-with-nick@gmail.com"     # Nick, 2026-10-12: the site's address is nick@eatsranked.com
+SITE_EMAIL = "nick@eatsranked.com"
+
+
+def family_and_contact_checks():
+    """The contact address is nick@eatsranked.com everywhere in docs/ (every file, not just pages), and the home page's Organization
+    names Eats Ranked as its parent."""
+    for d, _, fs in os.walk(DOCS):
+        for f in fs:
+            if f.endswith((".html", ".json", ".xml", ".txt", ".webmanifest", ".js", ".css", ".md", ".svg")):
+                if OLD_EMAIL in open(os.path.join(d, f), encoding="utf-8", errors="replace").read():
+                    bad(f"{os.path.relpath(os.path.join(d, f), DOCS)}: still shows {OLD_EMAIL}")
+    home = open(os.path.join(DOCS, "index.html")).read()
+    if f'href="mailto:{SITE_EMAIL}' not in home:
+        bad(f"index.html: no mailto:{SITE_EMAIL}")
+    org = None
+    for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>', home, re.S):
+        for n in json.loads(raw).get("@graph", []):
+            if n.get("@type") == "Organization" and n.get("@id", "").endswith("/#org"):
+                org = n
+    if not org:
+        bad("index.html: no Organization #org node")
+    else:
+        if (org.get("parentOrganization") or {}).get("@id") != "https://eatsranked.com/#organization":
+            bad("index.html: the #org node has no parentOrganization https://eatsranked.com/#organization")
+        if org.get("email") != SITE_EMAIL or (org.get("contactPoint") or {}).get("email") != SITE_EMAIL:
+            bad(f"index.html: the #org email isn't {SITE_EMAIL}")
+
+
+CITY_PROMISES = {"taquer": "taquerias", "dim sum": "dim-sum", "burrito": "burritos", "fish taco": "fish-tacos", "korean b": "korean-bbq",
+                  "burger stand": "burger-stands", "wine country": "wine-country", "wine-country": "wine-country", "michelin": "honors", "james beard": "honors"}
+
+
+def city_page_checks(files):
+    """A city page's title and description promise only sections the page has (no "Dim Sum" in a town with none nearby, no honors
+    where there are none, no "checked open" without a hand-checked list), and a town page listing fewer than three places stays out
+    of search (noindex), since its text would match every other thin town's."""
+    for f in files:
+        if not f.startswith("cities/"):
+            continue
+        s = open(os.path.join(DOCS, f)).read()
+        head = html.unescape(re.search(r"<title>(.*?)</title>", s, re.S).group(1) + " " + re.search(r'<meta name="description" content="([^"]*)"', s).group(1)).lower()
+        head = head.replace("í", "i")
+        for word, sec in CITY_PROMISES.items():
+            if word in head and f'<section id="{sec}"' not in s:
+                bad(f"{f}: title or description mentions {word!r}, but the page has no {sec} section")
+        guide_secs = [v for k, v in CITY_PROMISES.items() if v != "honors" and f'<section id="{v}"' in s]
+        if "checked open" in head and not guide_secs:
+            bad(f"{f}: says checked open, but lists no hand-checked guide")
+        lede = html.unescape(re.sub(r"<[^>]+>", "", re.search(r'<p class="lede">(.*?)</p>', s, re.S).group(1)))
+        if re.search(r"\b1 (taquerías|dim sum\b(?! house)|burrito shops|fish taco spots|burger stands|wine country|fish tacos)|korean bbq|\b\d+ wine country\b", lede):
+            bad(f"{f}: lede counts don't read right: {lede[:90]!r}")
+        n_places = len(re.findall(r'<ol class="places">.*?</ol>', s, re.S)) and sum(x.count("<li>") for x in re.findall(r'<ol class="places">(.*?)</ol>', s, re.S))
+        if n_places < 3 and 'content="noindex' not in s:
+            bad(f"{f}: lists {n_places} places but is indexable (thin)")
+
+
+def city_overlap_checks(files):
+    """No two city pages read alike: the share of 5-word runs two town pages' main text has in common stays under half (a 10-mile
+    radius once made Pasadena's page mostly San Gabriel's list)."""
+    sh = {}
+    for f in files:
+        if f.startswith("cities/"):
+            s = open(os.path.join(DOCS, f)).read()
+            main = re.search(r"<main.*?</main>", s, re.S).group(0)
+            words = re.findall(r"[a-z0-9']+", html.unescape(re.sub(r"<[^>]+>", " ", main)).lower())
+            sh[f] = {tuple(words[i:i + 5]) for i in range(len(words) - 4)}
+    names = sorted(sh)
+    for i, a in enumerate(names):
+        for b in names[i + 1:]:
+            j = len(sh[a] & sh[b]) / max(1, len(sh[a] | sh[b]))
+            if j > 0.5:
+                bad(f"{a} and {b} share {j:.0%} of their text")
+
+
+def privacy_storage_checks():
+    """The privacy page names every localStorage key the web app writes, and doesn't call the App Store label live before the app is."""
+    ex = open(os.path.join(DOCS, "explore/index.html")).read()
+    prefix = re.search(r'localStorage\.setItem\("([a-z]+-)"', ex)
+    keys = set(re.findall(r'store\.set\("([a-z]+)"', ex))
+    priv = open(os.path.join(DOCS, "privacy.html")).read()
+    if not prefix or not keys:
+        bad("explore: can't find the web app's localStorage keys")
+        return
+    if prefix.group(1) != "cae-":
+        bad(f"explore: localStorage prefix {prefix.group(1)!r} isn't California's cae-")
+    for k in sorted(keys):
+        if prefix.group(1) + k not in priv:
+            bad(f"privacy.html: doesn't name the web app's {prefix.group(1) + k} key")
+    for name in ("privacy.html", "terms.html"):
+        page_s = open(os.path.join(DOCS, name)).read()
+        if not re.search(r"Last updated (January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4}\.", page_s):
+            bad(f"{name}: no readable 'Last updated <Month D, YYYY>' date")
+    if re.search(r"privacy label is", priv):
+        bad("privacy.html: says the App Store privacy label is live (the app isn't on the store yet)")
 
 
 def page_type_checks(files):
@@ -253,8 +430,11 @@ def sitemap_checks(files):
     if len(locs) != len(set(locs)):
         bad("sitemap: duplicate URLs")
     for f in files:
-        if f != "404.html" and f not in paths:
+        noindex = 'content="noindex' in open(os.path.join(DOCS, f)).read()
+        if f != "404.html" and f not in paths and not noindex:
             bad(f"sitemap: {f} exists but isn't in the sitemap")
+        if noindex and f in paths:
+            bad(f"sitemap: {f} is noindex but listed")
     robots = open(os.path.join(DOCS, "robots.txt")).read()
     if "Sitemap:" not in robots:
         bad("robots.txt doesn't point at the sitemap")
@@ -388,6 +568,13 @@ def webapp_checks(browser, base):
             page.wait_for_timeout(700)
             if not page.locator(".ex-row").count():
                 bad(f"{w}: search {q!r} found nothing")
+        # a name that is the whole query comes first; a street named like a town is still a street
+        for q, want, first in (("taco maria", "Taco Mar", True), ("1001 n alameda", "Philippe", False)):
+            search.fill(q)
+            page.wait_for_timeout(900)
+            names = page.locator(".ex-row b").all_text_contents()
+            if (first and not (names and names[0].startswith(want))) or (not first and not any(n.startswith(want) for n in names[:20])):
+                bad(f"{w}: search {q!r} should {'start with' if first else 'list'} {want}…, got {names[:3]}")
         search.fill("🌮")
         page.wait_for_timeout(500)
         if page.locator(".ex-row").count():
@@ -440,21 +627,361 @@ def webapp_checks(browser, base):
         ctx.close()
     ctx = browser.new_context(viewport={"width": 375, "height": 812})
     page = ctx.new_page()
-    page.route("**/data/core.json", lambda r: r.abort())
+    page.route("**/data/start.json", lambda r: r.abort())
     goto(page, ex, "networkidle")
     page.wait_for_timeout(500)
     if "couldn" not in (page.locator("#ex-loading").text_content() or ""):
-        bad("explore: a failed core.json didn't show an error")
+        bad("explore: a failed start.json didn't show an error")
     ctx.close()
+    # the statewide list fails to load: All restaurants says so and offers Try again, which works once the network is back
+    ctx = browser.new_context(viewport={"width": 375, "height": 812})
+    page = ctx.new_page()
+    blocked = [True]
+    page.route("**/data/places.json*", lambda r: r.abort() if blocked[0] else r.continue_())
+    goto(page, ex + "#g=all", "networkidle")
+    try:
+        page.wait_for_selector("#ex-retry", timeout=30000)
+        blocked[0] = False
+        page.locator("#ex-retry").click()
+        rows_ready(page)
+    except Exception as e:
+        bad(f"explore: a failed places.json didn't offer a working Try again ({str(e).splitlines()[0][:80]})")
+    ctx.close()
+
+
+# ---------------------------------------------------------------- web app: what a visitor downloads, and links to one place
+FIRST_ROW = """window.__firstRow = 0;
+new MutationObserver(() => { if (!window.__firstRow && document.querySelector('.ex-row')) window.__firstRow = performance.now(); })
+  .observe(document, { subtree: true, childList: true });"""
+BUDGET_FIRST = 1_500_000   # bytes over the wire for /explore/ until it's usable, idle prefetches included (HUB6-08: it was 4.5 MB)
+BUDGET_ALL = 2_200_000     # All restaurants: the statewide list (1.9 MB in Oct 2026), fetched only when that guide or Inspections opens
+
+
+def transfer(browser, url, ready):
+    """Fresh, uncached load of url: total encoded (gzip) bytes of every response, measured with the Chrome DevTools protocol, once
+    `ready` holds and the network has been quiet (plus 2.5 s for requestIdleCallback prefetches)."""
+    ctx = browser.new_context(viewport={"width": 1280, "height": 800})
+    page = ctx.new_page()
+    cdp = ctx.new_cdp_session(page)
+    cdp.send("Network.enable")
+    cdp.send("Network.setCacheDisabled", {"cacheDisabled": True})
+    sizes, names = {}, {}
+    cdp.on("Network.responseReceived", lambda e: names.__setitem__(e["requestId"], e["response"]["url"]))
+    cdp.on("Network.loadingFinished", lambda e: sizes.__setitem__(e["requestId"], e["encodedDataLength"]))
+    goto(page, url, "load")
+    try:
+        page.wait_for_function(ready, timeout=90000)
+    except Exception:
+        bad(f"{url.split('/explore/')[-1] or 'explore'}: never became usable")
+    page.wait_for_load_state("networkidle")
+    page.wait_for_timeout(2500)
+    page.wait_for_load_state("networkidle")
+    files = {urllib.parse.urlparse(names.get(k, "")).path.rsplit("/", 2)[-2:][-1] or "explore/": v for k, v in sizes.items()}
+    ctx.close()
+    return sum(sizes.values()), files
+
+
+def load_source():
+    """Every place the app ships, by id (data/app/, the generator's input), to check what the web app shows against."""
+    idx = json.load(open(os.path.join(ROOT, "data/app/index.json")))
+    out = {}
+    for rf in idx["regions"]:
+        R = json.load(open(os.path.join(ROOT, "data/app", rf["file"])))
+        for r in R["places"]:
+            out[r["id"]] = {**r, "city": R["cities"][r["c"]] if r.get("c") is not None else ""}
+    return out
+
+
+def panel_matches(page, rec, where):
+    """The open place panel shows this record: name, street address and zip, Directions to its coordinates, its phone and website."""
+    try:
+        page.wait_for_function("(n) => document.querySelector('#ex-pname')?.textContent === n", arg=rec["n"], timeout=60000)
+        page.wait_for_function("() => !document.querySelector('#ex-save')?.disabled", timeout=60000)
+        # its block of details (phone, website) can arrive after its id (a #p= link resolves the id from ids-<h>.json first)
+        page.wait_for_load_state("networkidle")
+        page.wait_for_timeout(300)
+    except Exception:
+        bad(f"{where}: the panel never showed {rec['n']!r} (shows {page.locator('#ex-pname').text_content() if page.locator('#ex-pname').count() else None!r})")
+        return
+    addr = page.locator(".ex-addr").text_content() or ""
+    for part in (rec.get("a"), rec.get("z"), rec.get("city")):
+        if part and part not in addr:
+            bad(f"{where}: panel address {addr!r} lacks {part!r}")
+    dirs = page.locator("#ex-panel a", has_text="Directions").get_attribute("href") or ""
+    want = f"daddr={round(rec['la'], 4)},{round(rec['lo'], 4)}"
+    m = re.search(r"daddr=(-?[\d.]+),(-?[\d.]+)", dirs)
+    if not m or abs(float(m.group(1)) - rec["la"]) > 6e-5 or abs(float(m.group(2)) - rec["lo"]) > 6e-5:
+        bad(f"{where}: Directions go to {dirs[-40:]}, want about {want}")
+    tel = page.locator("#ex-panel a[href^='tel:']")
+    if rec.get("ph") and (not tel.count() or tel.first.get_attribute("href") != "tel:" + re.sub(r"[^\d+]", "", rec["ph"])):
+        bad(f"{where}: panel phone isn't {rec['ph']}")
+    site = page.locator("#ex-panel a", has_text="Website")
+    if rec.get("w") and (not site.count() or site.first.get_attribute("href") != rec["w"]):
+        bad(f"{where}: panel website isn't {rec['w']}")
+    if not rec.get("w") and site.count():
+        bad(f"{where}: panel shows a website the data doesn't have")
+
+
+def explore_load_checks(browser, base):
+    ex = base + PREFIX + "/explore/"
+    data = os.path.join(DOCS, "data")
+    rows = lambda: "() => document.querySelectorAll('.ex-row').length > 0"
+    total, files = transfer(browser, ex, rows())
+    print(f"  explore first load: {total / 1e6:.2f} MB over the wire ({', '.join(f'{k} {v // 1024} KB' for k, v in sorted(files.items()))})")
+    if total > BUDGET_FIRST:
+        bad(f"explore: first load transfers {total / 1e6:.2f} MB, over the {BUDGET_FIRST / 1e6:.1f} MB budget: {files}")
+    extra = sorted(set(files) - {"explore/", "start.json"})
+    if extra:
+        bad(f"explore: the first load fetches more than the page and start.json: {extra}")
+    total, files = transfer(browser, ex + "#g=all", rows())
+    print(f"  explore All restaurants: {total / 1e6:.2f} MB over the wire")
+    # once the statewide list has arrived, it's on screen within 2 s (sorting 100,000 names with localeCompare took 3-5 s): the time the
+    # first row appeared, minus the end of the last data file that had arrived before it
+    ctx = browser.new_context(viewport={"width": 1280, "height": 800})
+    ctx.add_init_script(FIRST_ROW)
+    page = ctx.new_page()
+    goto(page, ex + "#g=all", "load")
+    rows_ready(page)
+    lag = page.evaluate("""() => { const f = window.__firstRow, r = performance.getEntriesByType('resource').filter((e) => /data\\/[a-z]+\\.json/.test(e.name) && e.responseEnd <= f);
+        return f && r.length ? f - Math.max(...r.map((e) => e.responseEnd)) : null; }""")
+    ctx.close()
+    if lag is not None and lag > 2000:
+        bad(f"explore #g=all: the list took {lag / 1000:.1f} s to show after its data arrived")
+    if total > BUDGET_ALL:
+        bad(f"explore #g=all: transfers {total / 1e6:.2f} MB, over the {BUDGET_ALL / 1e6:.1f} MB budget: {files}")
+    if not os.path.exists(os.path.join(data, "start.json")):
+        bad("explore: no data/start.json")
+        return
+    src = load_source()
+    start = json.load(open(os.path.join(data, "start.json")))
+    first_ids = start["rows"]["id"]
+    # a featured place (the first file) and two from the statewide list, each opened by a #p= link on a fresh load
+    feat = next(i for i in first_ids if src.get(i, {}).get("w") and src[i].get("ph"))
+    blk = json.load(open(os.path.join(data, "detail-3.json")))
+    rest = [i for i in blk["ids"] if src.get(i, {}).get("w")][:1] + [blk["ids"][-1]]
+    for pid, h in [(feat, f"#p={feat}"), (rest[0], f"#p={rest[0]}"), (rest[1], f"#g=all&p={rest[1]}")]:
+        if pid not in src:
+            bad(f"explore: {pid} isn't in data/app")
+            continue
+        if h.startswith("#p=") and pid == feat:
+            total, files = transfer(browser, ex + h, "() => document.querySelector('#ex-pname')")
+            if total > BUDGET_FIRST:
+                bad(f"explore {h}: a link to a hand-checked place transfers {total / 1e6:.2f} MB: {files}")
+        ctx = browser.new_context(viewport={"width": 375, "height": 812})
+        page = ctx.new_page()
+        errors = []
+        page.on("pageerror", lambda e: errors.append(str(e)))
+        goto(page, ex + h, "load")
+        panel_matches(page, src[pid], f"explore {h}")
+        if f"p={pid}" not in page.evaluate("location.hash"):
+            bad(f"explore {h}: the address bar lost the place")
+        problems.extend(f"explore {h}: {e}" for e in errors)
+        ctx.close()
+    # a row from the statewide list opened from the list: its panel matches the data, and the address bar gets its id
+    ctx = browser.new_context(viewport={"width": 1280, "height": 800})
+    page = ctx.new_page()
+    goto(page, ex + "#g=all", "load")
+    rows_ready(page)
+    page.locator("#ex-q").fill(src[rest[0]]["n"] + " " + src[rest[0]]["city"])
+    page.wait_for_timeout(900)
+    hit = page.locator(".ex-row", has_text=src[rest[0]]["n"])
+    if not hit.count():
+        bad(f"explore: All restaurants search didn't find {src[rest[0]]['n']} in {src[rest[0]]['city']}")
+    else:
+        hit.first.click()
+        panel_matches(page, src[rest[0]], "explore (opened from the All list)")
+        page.wait_for_function("(id) => location.hash.includes('p=' + id)", arg=rest[0], timeout=30000)
+    keys = page.evaluate("Object.keys(localStorage)")
+    if any(not k.startswith("cae-") for k in keys):
+        bad(f"explore: localStorage keys without California's cae- prefix: {keys}")
+    ctx.close()
+
+
+def webapp_behavior_checks(browser, base):
+    """The web app's phone fonts, the place dialog, Back/Forward, junk in localStorage, the sort label without a location, a fresh
+    location fix on every press, and a #p= link whose place is still loading or fails to load (verification pass, 2026-10-12)."""
+    ex = base + PREFIX + "/explore/"
+    src = open(os.path.join(DOCS, "explore", "index.html"), encoding="utf-8").read()
+    # 1. 'font: 14px inherit' is invalid CSS, so the browser drops the whole rule: inputs fell to 13.33 px (iOS zooms on focus)
+    for m in re.findall(r"font:\s*([^;}]*)", src):
+        if "inherit" in m and m.strip() != "inherit":
+            bad(f"explore: invalid font shorthand 'font: {m.strip()}' (the browser ignores it)")
+    ctx = browser.new_context(viewport={"width": 375, "height": 812})
+    page = ctx.new_page()
+    goto(page, ex + "#g=taqueria")
+    rows_ready(page)
+    f = page.evaluate("""() => { const cs = (s) => getComputedStyle(document.querySelector(s)), body = getComputedStyle(document.body).fontFamily;
+        return { small: ['#ex-q', '#ex-sort', '#ex-region', '#ex-town', '#ex-cuisine'].filter((s) => parseFloat(cs(s).fontSize) < 16),
+                 font: ['.ex-guides button', '#ex-locate', '.ex-view button', '#ex-zin'].filter((s) => cs(s).fontFamily !== body) }; }""")
+    for sel in f["small"]:
+        bad(f"explore @375: {sel} is under 16 px (iOS Safari zooms the page when it gets focus)")
+    for sel in f["font"]:
+        bad(f"explore @375: {sel} doesn't use the page's font")
+    # 3. the place panel is a modal dialog: named, the page behind inert, Tab stays inside, Escape returns to the row
+    page.locator(".ex-row").nth(2).click()
+    page.wait_for_timeout(500)
+    d = page.evaluate("""() => { const p = document.querySelector('#ex-panel');
+        return { role: p.getAttribute('role'), modal: p.getAttribute('aria-modal'), name: !!document.getElementById(p.getAttribute('aria-labelledby') || '-'),
+                 inert: !!document.querySelector('#ex-q').closest('[inert]') }; }""")
+    if d != {"role": "dialog", "modal": "true", "name": True, "inert": True}:
+        bad(f"explore: the place panel isn't a named modal dialog with the page behind it inert: {d}")
+    for _ in range(14):
+        page.keyboard.press("Tab")
+        if page.evaluate("(() => { const a = document.activeElement; return a !== document.body && !document.querySelector('#ex-panel').contains(a); })()"):
+            bad("explore: Tab left the open place panel for the page behind it")
+            break
+    ctx.close()
+    # 2. Back with a place open closes it and keeps the search; Forward opens it again
+    ctx = browser.new_context(viewport={"width": 1280, "height": 800})
+    page = ctx.new_page()
+    goto(page, base + PREFIX + "/")
+    goto(page, ex + "#g=taqueria&q=oakland")
+    rows_ready(page)
+    page.locator(".ex-row").first.click()
+    page.wait_for_selector("#ex-pname")
+    name = page.locator("#ex-pname").text_content()
+    page.go_back()
+    page.wait_for_timeout(600)
+    st = page.evaluate("({ path: location.pathname, panel: document.querySelector('#ex-panel')?.hidden, q: document.querySelector('#ex-q')?.value })")
+    if not st["path"].endswith("/explore/") or st["panel"] is not True or st["q"] != "oakland":
+        bad(f"explore: Back with a place open should close it and keep the search, got {st}")
+    else:
+        page.go_forward()
+        page.wait_for_timeout(800)
+        if page.evaluate("document.querySelector('#ex-panel').hidden ? null : document.querySelector('#ex-pname').textContent") != name:
+            bad("explore: Forward didn't reopen the place")
+    # the skip link's #main isn't app state: the search stays
+    fresh(page, ex + "#g=taqueria&q=oakland")
+    rows_ready(page)
+    page.evaluate("location.hash = 'main'")
+    page.wait_for_timeout(400)
+    if page.evaluate("document.querySelector('#ex-q').value") != "oakland":
+        bad("explore: the skip link (#main) cleared the search")
+    ctx.close()
+    # 4. any page on the shared github.io origin can write cae- keys: junk in them mustn't stop the app
+    for key, val in (("cae-saved", '{"x":1}'), ("cae-saved", "not json"), ("cae-saved", "[null, 5, {}]"), ("cae-saved", '"abc"'),
+                     ("cae-guide", '{"x":1}'), ("cae-jur", '"__proto__"')):
+        ctx = browser.new_context(viewport={"width": 375, "height": 812})
+        page = ctx.new_page()
+        errors = []
+        page.on("pageerror", lambda e: errors.append(str(e)))
+        goto(page, base + PREFIX + "/404.html")
+        page.evaluate("([k, v]) => localStorage.setItem(k, v)", [key, val])
+        goto(page, ex)
+        try:
+            rows_ready(page)
+            page.locator('.ex-guides button[data-g="saved"]').click()
+            page.wait_for_function("() => /^\\d+ place/.test(document.querySelector('#ex-count').textContent)", timeout=30000)
+        except Exception:
+            bad(f"explore: {key}={val} in localStorage stopped the web app: {errors[:1]}")
+        ctx.close()
+    # 5. no "Nearest" before there's a location (the list is A to Z until then)
+    ctx = browser.new_context(viewport={"width": 375, "height": 812})
+    page = ctx.new_page()
+    goto(page, ex + "#g=taqueria&sort=nearest")
+    rows_ready(page)
+    if "Nearest" in (page.locator("#ex-count").text_content() or ""):
+        bad("explore: the count says 'Nearest' with no location")
+    ctx.close()
+    # 6. Near me asks for a fresh fix on every press, and says so outside California
+    ctx = browser.new_context(viewport={"width": 375, "height": 812}, geolocation={"latitude": 34.0522, "longitude": -118.2437}, permissions=["geolocation"])
+    page = ctx.new_page()
+    goto(page, ex + "#g=taqueria")
+    rows_ready(page)
+    page.locator("#ex-locate").click()
+    page.wait_for_timeout(1000)
+    la = page.locator(".ex-row .ex-town").first.text_content()
+    ctx.set_geolocation({"latitude": 38.5816, "longitude": -121.4944})   # Sacramento
+    if not page.locator("#ex-locate").is_visible():
+        bad("explore: Near me is gone after the first fix, so it can't be refreshed")
+    else:
+        page.locator("#ex-locate").click()
+        page.wait_for_timeout(1000)
+        if "Sacramento" not in (page.locator(".ex-row .ex-town").first.text_content() or "") or la == page.locator(".ex-row .ex-town").first.text_content():
+            bad("explore: a second Near me press kept the old location")
+        ctx.set_geolocation({"latitude": 39.5296, "longitude": -119.8138})   # Reno
+        page.locator("#ex-locate").click()
+        page.wait_for_timeout(1000)
+        if "outside California" not in (page.locator("#ex-locmsg").text_content() or ""):
+            bad("explore: Near me in Reno didn't say it's outside California")
+    ctx.close()
+    # a #p= link to a place in the statewide list: says it's loading, and if the list can't load, says so and offers Try again
+    blk = os.path.join(DOCS, "data", "detail-9.json")
+    if not os.path.exists(blk):
+        bad("explore: no data/detail-9.json to take a statewide-list place from")
+        return
+    pid = json.load(open(blk))["ids"][7]
+    ctx = browser.new_context(viewport={"width": 375, "height": 812})
+    page = ctx.new_page()
+    hold = [True]
+    page.route("**/data/places.json*", lambda r: r.abort() if hold[0] else r.continue_())
+    goto(page, ex + f"#p={pid}")
+    try:
+        page.wait_for_selector("#ex-linkretry", timeout=30000)
+        if f"p={pid}" not in page.evaluate("location.hash"):
+            bad("explore: a #p= link whose place failed to load lost its p= from the address bar")
+        hold[0] = False
+        page.locator("#ex-linkretry").click()
+        page.wait_for_function("() => document.querySelector('#ex-pname')", timeout=60000)
+    except Exception as e:
+        bad(f"explore: a #p= link whose place failed to load showed no error with a working Try again ({str(e).splitlines()[0][:80]})")
+    ctx.close()
+    ctx = browser.new_context(viewport={"width": 375, "height": 812})
+    page = ctx.new_page()
+    cdp = ctx.new_cdp_session(page)    # a slow connection (300 kbps): the 2 MB statewide list takes about a minute
+    cdp.send("Network.enable")
+    cdp.send("Network.emulateNetworkConditions", {"offline": False, "latency": 200, "downloadThroughput": 300 * 128, "uploadThroughput": 300 * 128})
+    goto(page, ex + f"#p={pid}", "commit")
+    page.wait_for_function("() => document.querySelector('#ex-app') && !document.querySelector('#ex-app').hidden", timeout=60000)
+    if "Opening the place" not in (page.locator("#ex-locmsg").text_content() or ""):
+        bad("explore: a #p= link to a place still loading shows nothing while it loads")
+    ctx.close()
+
+
+def blocklist_checks():
+    """No blocklisted website (pipeline/website_blocklist.json: hacked sites, listing farms, another business's page) anywhere in docs/:
+    pages, JSON-LD and every web-app data file, any case, with or without www. or http(s)://."""
+    path = os.path.join(ROOT, "pipeline", "website_blocklist.json")
+    if not os.path.exists(path):
+        bad("no pipeline/website_blocklist.json")
+        return
+    pats = []
+    for b in json.load(open(path)):
+        if b.get("match", "domain") == "domain":
+            d = re.escape(b["domain"].lower().removeprefix("www."))
+            pats.append((b["domain"], re.compile(r"(?<![a-z0-9.-])(?:[a-z0-9-]+\.)*" + d + r"(?![a-z0-9-])", re.I)))
+        else:
+            u = re.escape(re.sub(r"^https?://(www\.)?", "", b["url"].lower()).rstrip("/"))
+            pats.append((b["url"], re.compile(r"(?<![a-z0-9.-])(?:www\.)?" + u + r"/?(?![a-z0-9/_-])", re.I)))
+    for d, _, fs in os.walk(DOCS):
+        for fn in fs:
+            if not fn.endswith(GZIP_TYPES):
+                continue
+            text = open(os.path.join(d, fn), encoding="utf-8", errors="replace").read()
+            for name, rx in pats:
+                n = len(rx.findall(text))
+                if n:
+                    bad(f"{os.path.relpath(os.path.join(d, fn), DOCS)}: blocklisted website {name} appears {n}x")
 
 
 def main():
     base = serve()
     files = static_checks()
     page_type_checks(files)
+    family_and_contact_checks()
+    city_page_checks(files)
+    city_overlap_checks(files)
+    privacy_storage_checks()
+    blocklist_checks()
     locs = sitemap_checks(files)
     n_static = len(problems)
-    jobs = [(urllib.parse.urlparse(loc).path, width) for loc in locs for width in (375, 1280)]
+    if ARGS.static:
+        print(f"static: {len(files)} HTML files, {n_static} problems (browser checks skipped)")
+        for p in problems:
+            print("  ✗", p)
+        sys.exit(1 if problems else 0)
+    # every page, noindexed ones and the 404 included (the sitemap leaves those out)
+    jobs = [(PREFIX + "/" + f.removesuffix("index.html"), width) for f in files for width in (375, 1280)]
     chunks = [jobs[i::ARGS.workers] for i in range(ARGS.workers)]
     threads = [threading.Thread(target=page_worker, args=(base, c)) for c in chunks]
     for t in threads:
@@ -463,7 +990,9 @@ def main():
         t.join()
     with sync_playwright() as pw:
         browser = pw.chromium.launch(channel="chrome")
+        explore_load_checks(browser, base)
         webapp_checks(browser, base)
+        webapp_behavior_checks(browser, base)
         browser.close()
     print(f"static: {len(files)} HTML files, {n_static} problems | browser: {len(jobs)} page loads at 375 and 1280 px, plus the web app")
     for p in problems:

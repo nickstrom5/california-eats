@@ -57,6 +57,23 @@ cp data/app/*.json CaliforniaEats/Resources/Data/ && .venv/bin/python scripts/ma
 ```
 Republish the artifact with the same file path (`site/index.html` + its JSON files) to keep the URL.
 
+## Website (`docs/`, generated; QA pass 2026-10-12)
+- Generate and check: `.venv/bin/python scripts/make-site.py && .venv/bin/python scripts/qa-site.py` (`--static` skips the browser,
+  `--docs DIR` checks another copy, `--port N` pins the test server). Never hand-edit `docs/`.
+- Contact on the site is `nick@eatsranked.com` (Nick, 2026-10-12); `qa-site.py` fails on the old Gmail address anywhere in `docs/`. The
+  app's `Links.swift` and the playbook's listing/reply files still have the old one until the next build.
+- Every page's footer says "Part of Eats Ranked" and the home `#org` node has `parentOrganization` (the hub's `#organization`).
+- Web app data (`docs/data/`): `start.json` (metadata + the ~860 hand-checked, honored and dated places; the first load is ~80 KB
+  gzipped with the page), `places.json` (the rest, fetched for All restaurants, Inspections, saved places and `#p=` links), `detail-<k>.json`
+  (ids, phones, websites and notes per block of 4,096 rows, fetched when a place opens) and `ids-<h>.json` (rows by id). `qa-site.py`
+  measures the transfer with Chrome's DevTools protocol: first load under 1.5 MB, All restaurants under 2.2 MB (hub QA HUB6-08 found 4.5 MB).
+- `pipeline/website_blocklist.json` lists website links the site must never publish (hacked or taken-over domains, listing farms such as
+  mybistro.online and cafecityguide.website, another business's page): `make-site.py` drops those links (never the place) from every page
+  and web-app data file, and `qa-site.py` fails if one appears anywhere in `docs/`. Add entries there; the app's bundle still has them
+  until the next export (`check_websites.py` doesn't read the list yet).
+- City pages with fewer than three hand-checked, honored or dated places nearby are `noindex` and left out of the sitemap; titles and
+  descriptions only name what a page lists. Bump `SITE_UPDATED` in `make-site.py` when the copy, privacy policy or terms change.
+
 ## Build the app (shared Mac: see the playbook's "Machine rules")
 - The Xcode project is **generated**: `xcodegen generate`. Never commit `CaliforniaEats.xcodeproj`.
 - Simulators: this project's own "CA Eats 6.9" (iPhone 17 Pro Max) and "CA Eats iPad 13" (iPad Pro 13-inch), iOS 27.0. Before booting,

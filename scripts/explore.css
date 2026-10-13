@@ -4,12 +4,13 @@
   .ex-hero h1 { font-size: clamp(30px, 6vw, 44px); }
   .ex-controls { background: var(--bg); padding: 10px 0 8px; border-bottom: 1px solid var(--rule); }
   .ex-guides { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; }
-  .ex-guides button, .ex-view button, .ex-small { flex: 0 0 auto; border: 1px solid var(--rule); background: var(--surface); color: var(--blue); border-radius: 999px; padding: 7px 12px; font: 600 14px/1.2 inherit; font-family: inherit; cursor: pointer; min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  .ex-guides button, .ex-view button, .ex-small { flex: 0 0 auto; border: 1px solid var(--rule); background: var(--surface); color: var(--blue); border-radius: 999px; padding: 7px 12px; font-weight: 600; font-size: 14px; line-height: 1.2; font-family: inherit; cursor: pointer; min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .ex-guides button[aria-pressed="true"], .ex-view button[aria-pressed="true"] { background: var(--blue); color: var(--bg); border-color: var(--blue); }
   .ex-row1 { display: flex; gap: 8px; align-items: center; }
-  .ex-row1 input[type=search] { flex: 1; min-width: 0; font: 16px/1.3 inherit; font-family: inherit; padding: 10px 12px; min-height: 44px; border: 2px solid var(--blue); border-radius: 12px; background: var(--surface); color: var(--ink); }
+  .ex-row1 input[type=search] { flex: 1; min-width: 0; font-size: 16px; line-height: 1.3; font-family: inherit; padding: 10px 12px; min-height: 44px; border: 2px solid var(--blue); border-radius: 12px; background: var(--surface); color: var(--ink); }
   .ex-row2 { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px; font-size: 14px; }
-  .ex-row2 select { font: 14px inherit; font-family: inherit; padding: 6px 8px; min-height: 44px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); color: var(--ink); max-width: 46vw; }
+  .ex-row2 select { font-size: 14px; font-family: inherit; padding: 6px 8px; min-height: 44px; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); color: var(--ink); max-width: 46vw; }
+  @media (max-width: 600px) { .ex-row2 select { font-size: 16px; } }   /* under 16px, iOS Safari zooms the page when a field gets focus */
   .ex-row2 label { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; cursor: pointer; }
   .ex-view { margin-left: auto; display: flex; gap: 4px; }
   #ex-count { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
@@ -39,18 +40,19 @@
   @media (prefers-color-scheme: dark) { #ex-mapwrap { background: #13283d; } }
   #ex-map { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
   .ex-zoom { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
-  .ex-zoom button { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--rule); background: var(--surface); color: var(--blue); font: 700 20px/1 inherit; cursor: pointer; }
+  .ex-zoom button { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--rule); background: var(--surface); color: var(--blue); font-weight: 700; font-size: 20px; line-height: 1; font-family: inherit; cursor: pointer; }
   #ex-maphint { position: absolute; left: 10px; bottom: 8px; margin: 0; font-size: 13px; background: var(--surface); padding: 3px 8px; border-radius: 999px; color: var(--ink2); }
+  .ex-scrim { position: fixed; inset: 0; z-index: 19; background: rgba(0,0,0,.28); }
   .ex-panel { position: fixed; z-index: 20; right: 0; top: 0; bottom: 0; width: min(440px, 100%); overflow-y: auto; background: var(--surface); border-left: 1px solid var(--rule); box-shadow: -8px 0 24px rgba(0,0,0,.12); padding: 18px 20px 40px; }
   @media (max-width: 600px) { .ex-panel { top: auto; height: 86vh; border-left: 0; border-top: 4px solid var(--gold); border-radius: 18px 18px 0 0; } }
-  .ex-close { position: sticky; top: 0; float: right; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--rule); background: var(--surface); font-size: 24px; line-height: 1; cursor: pointer; color: var(--ink); }
+  .ex-close { position: sticky; top: 0; float: right; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--rule); background: var(--surface); font-size: 24px; line-height: 1; font-family: inherit; cursor: pointer; color: var(--ink); }
   .ex-kicker { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: .1em; color: var(--blue2); }
   .ex-panel h2 { font-size: 34px; margin: 4px 0 6px; text-transform: uppercase; }
   .ex-addr, .ex-dist { margin: 0 0 4px; color: var(--ink2); font-size: 15px; }
   .ex-actions { margin: 14px 0 8px; display: grid; gap: 8px; }
   .ex-apple { justify-content: center; }
   .ex-act-row { display: flex; gap: 8px; flex-wrap: wrap; }
-  .ex-act-row a, .ex-act-row button { flex: 1; min-width: 88px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 10px; border: 1px solid var(--rule); border-radius: 12px; text-decoration: none; color: var(--blue); font: 600 14px inherit; font-family: inherit; background: var(--surface); cursor: pointer; }
+  .ex-act-row a, .ex-act-row button { flex: 1; min-width: 88px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; text-align: center; padding: 10px; border: 1px solid var(--rule); border-radius: 12px; text-decoration: none; color: var(--blue); font-weight: 600; font-size: 14px; font-family: inherit; background: var(--surface); cursor: pointer; }
   .ex-act-row button[aria-pressed="true"] { background: var(--goldsoft); color: #0e1b2c; }
   .ex-sec { margin-top: 18px; }
   .ex-sec h3 { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 6px; margin-bottom: 8px; }

@@ -410,6 +410,7 @@ def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview
     </nav>
     <p>Place data: hand-checked research by {BRAND} ({CHECKED}); Overture Maps Foundation (CDLA Permissive 2.0); County of Los Angeles, City and County of San Francisco, Sacramento County and San Diego County food-facility and inspection records; California Department of Alcoholic Beverage Control license data. Not affiliated with or endorsed by any restaurant, chain or government agency. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. Places open and close, so check before you go.</p>
     <p>© {TODAY[:4]} {BRAND}. Part of <a href="https://eatsranked.com/">Eats Ranked</a>, restaurant apps state by state.</p>
+    <p>Created by <a href="https://work-with-nick.com/" rel="author">Nick Soderstrom</a></p>
   </footer>
 </div>
 {after}<script>

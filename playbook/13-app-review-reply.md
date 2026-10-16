@@ -51,7 +51,7 @@ Thank you. Here is the information requested. A screen recording from an iPhone 
 
 6. Regulated or protected material: the app is not in a regulated industry and includes no protected third-party material. The data is open-licensed or public record, with attribution and licenses on the About tab. Ratings, hours and photos appear only inside Apple's own place card through MapKit; the app stores no ratings or reviews. Inspection results are each county's own (LA County's score and letter grade, San Francisco's and Sacramento County's placard results), labeled official and dated; the app never computes its own grades. MICHELIN and James Beard honors are stated as announced, with trademark notices. Restaurant names are factual references. Every website link was checked before release, and adult venues are excluded. The app is independent and not affiliated with any restaurant, agency, Michelin or the James Beard Foundation.
 
-Support: work-with-nick@gmail.com
+Support: nick@eatsranked.com
 ```
 
 (If the custom domain is live by submission, replace the website line with https://california.eatsranked.com and update Links.swift.)

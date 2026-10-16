@@ -59,7 +59,7 @@ Every place in the taquería, burrito, fish taco, dim sum, Korean barbecue, burg
 PRIVATE BY DESIGN
 No account, no tracking, no ads. Your location, if you share it, only sorts lists on your device. Saved places stay on your device.
 
-Places open and close, so check before you go. Spot a mistake? Email work-with-nick@gmail.com.
+Places open and close, so check before you go. Spot a mistake? Email nick@eatsranked.com.
 
 An independent app, not affiliated with any restaurant, chain or government agency (including the County of Los Angeles, the City and County of San Francisco, Sacramento County and California ABC), or with Michelin or the James Beard Foundation. MICHELIN and the MICHELIN Guide are trademarks of Michelin. James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. Place data from Overture Maps Foundation (CDLA Permissive 2.0) and others; sources and licenses are on the About tab.
 ```

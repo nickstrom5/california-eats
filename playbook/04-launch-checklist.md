@@ -27,8 +27,9 @@ That archive predates the 2026-10-09 icon redraw and still has the old icon: re-
    `eatsranked/docs/icons/california.png`, rebuild the hub, push (with Nick's OK; the hub is shared and public).
 
 ## App Store
-1. **Nick:** register the bundle ID `com.californiaeats.ios` and create the App Store Connect record "California Eats: Restaurants"
-   (SKU e.g. `california-eats`). The API can't create app records.
+1. **Bundle ID registered 2026-10-16** through the API (Nick's yes): `com.californiaeats.ios`, "California Eats", id 3CD5DPZAN7.
+   **Nick:** create the App Store Connect record "California Eats: Restaurants" (SKU e.g. `california-eats`) with that bundle ID.
+   The API can't create app records.
 2. Trademark check: USPTO search for "California Eats" (classes 9, 43).
 3. Re-run `pipeline/check_websites.py` and rebuild, run the unit and UI tests on both simulators, recapture screenshots if any UI changed.
 4. Archive with the **public Xcode** (`DEVELOPER_DIR="/Applications/Xcode 1.app/Contents/Developer"`), check `DTXcodeBuild`, upload to

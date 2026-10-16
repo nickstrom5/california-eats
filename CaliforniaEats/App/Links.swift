@@ -7,7 +7,7 @@ enum Links {
     static let site = URL(string: "https://nickstrom5.github.io/california-eats/")!
     static let privacy = URL(string: "https://nickstrom5.github.io/california-eats/privacy.html")!
     static let terms = URL(string: "https://nickstrom5.github.io/california-eats/terms.html")!
-    static let supportEmail = "work-with-nick@gmail.com"
+    static let supportEmail = "nick@eatsranked.com"   // Nick, 2026-10-12: replaced the Gmail address everywhere
 
     static var correctionEmail: URL {
         URL(string: "mailto:\(supportEmail)?subject=California%20Eats%20correction")!

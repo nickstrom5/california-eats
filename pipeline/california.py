@@ -21,6 +21,7 @@ from rapidfuzz import fuzz
 from common import (norm_name, nice, name_sim, cuisine, CUISINE_RULES, FOOD_COST, MARGIN, MARGIN_CUISINE, SPEND, GENERIC, _stems, DATA, CA,
                     ROOT, canon_city, town_key, street_key, street_nums)
 from brands import brand_of
+import link_blocklist
 import official
 from listings_util import official_match, _close_words
 
@@ -1050,7 +1051,7 @@ if APP:
     TIERS = {"listing": 0, "both": 1, "official": 2}
     SRCS_A = ["official", "meta", "AllThePlaces", "DAC", "research"]
     LINKS = json.load(open(f"{CA}/website_check.json")) if os.path.exists(f"{CA}/website_check.json") else {}
-    link_drops, link_cands = collections.Counter(), {}
+    link_drops, link_cands, bl_drops = collections.Counter(), {}, collections.Counter()
     # the same place twice: same name at the same street address, or (not a chain) same name in one town within 400 m;
     # the kept copy inherits what the dropped one knew (a hand check, honors, facts)
     rank_ = o.tier.map(TIERS).fillna(0) * 10 + o.hc.astype(int) * 5 + o.honored.astype(int) * 3 + o.web.notna().astype(int)
@@ -1158,6 +1159,8 @@ if APP:
                 p_["in"] = ins
             places.append(p_)
         fn = f"places-{rid}.json"
+        # pipeline/website_blocklist.json: no hacked, taken-over or wrong-business link in any field of the app data (link_blocklist.py)
+        link_blocklist.scrub(places, bl_drops)
         json.dump({"region": rid, "cities": CITIES, "places": places}, open(f"{SITE}/{fn}", "w"), separators=(",", ":"), ensure_ascii=False, allow_nan=False, default=str)
         sv = sub[~sub.venue]
         files.append({"id": rid, "name": rname, "file": fn, "counties": sorted(sub.county.dropna().unique().tolist()), "count": len(places),
@@ -1165,6 +1168,7 @@ if APP:
         print(f"APP region {rid}: {len(places)} places, {os.path.getsize(f'{SITE}/{fn}') // 1024} KB", flush=True)
     json.dump(link_cands, open(f"{CA}/website_candidates.json", "w"), indent=0, ensure_ascii=False)
     print("website links dropped:", sum(link_drops.values()), link_drops.most_common(8), flush=True)
+    print("blocklisted links dropped from the app data:", sum(bl_drops.values()), dict(bl_drops), flush=True)
     calib_app = json.load(open(f"{CA}/calibration_app.json")) if os.path.exists(f"{CA}/calibration_app.json") else {}
     index = {"v": 1, "generated": str(pd.Timestamp.now().date()), "regions": files, "cuisines": CUIS, "brands": BRANDS, "sources": SRCS_A,
              "counties": COUNTIES_A, "guides": GUIDE_BITS, "liqt": LIQT,

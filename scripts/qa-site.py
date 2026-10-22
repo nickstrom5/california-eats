@@ -516,6 +516,53 @@ def fresh(page, url):
     return goto(page, url, "networkidle")
 
 
+def expected_bib():
+    """Bib Gourmand places (MICHELIN level 2, non-restaurants left out like the app): every MICHELIN place is a featured row of
+    start.json, where mi and v are sparse {"gap": [[rows since the last value, value], ...]} columns."""
+    rows = json.load(open(os.path.join(DOCS, "data", "start.json")))["rows"]
+
+    def sparse(k):
+        out, i = {}, -1
+        for gap, v in (rows.get(k) or {}).get("gap", []):
+            i += gap
+            out[i] = v
+        return out
+    mi, v = sparse("mi"), sparse("v")
+    return sum(1 for i, m in mi.items() if m == 2 and not v.get(i))
+
+
+def bib_problems(page, ex, width):
+    """The Bib Gourmand box keeps every Bib Gourmand and nothing else: the count is start.json's, every row says Bib Gourmand,
+    and unticking it brings the whole guide back."""
+    want, out, w = expected_bib(), [], f"explore @{width}"
+    if not want:
+        return [f"{w}: start.json has no Bib Gourmand (mi 2) places"]
+    goto(page, ex + "#g=all&bib=1", "networkidle")
+    page.reload(wait_until="networkidle")
+    rows_ready(page)
+    try:   # the full list loads in the background; a wrong count never matches, and is reported below
+        page.wait_for_function("(n) => document.querySelector('#ex-count').textContent.startsWith(n + ' place')", arg=f"{want:,}", timeout=30000)
+    except Exception:
+        out.append(f"{w}: Bib Gourmand lists {page.locator('#ex-count').inner_text()!r}, expected the {want:,} in start.json")
+    box = page.locator("#ex-bibwrap")
+    if not box.is_visible() or box.inner_text().strip() != f"Bib Gourmand ({want:,})" or not page.locator("#ex-bib").is_checked():
+        out.append(f"{w}: the Bib Gourmand box isn't shown ticked as 'Bib Gourmand ({want:,})' ({box.inner_text().strip()!r})")
+    while page.locator("#ex-more").is_visible():
+        page.locator("#ex-more").click()
+        page.wait_for_timeout(80)
+    tags = page.evaluate("[...document.querySelectorAll('.ex-row')].map(r => [...r.querySelectorAll('.tag')].map(t => t.textContent))")
+    if len(tags) != want:
+        out.append(f"{w}: Bib Gourmand shows {len(tags)} rows, expected the {want} in start.json")
+    wrong = [t for t in tags if "Bib Gourmand" not in t or any("MICHELIN Star" in x for x in t)]
+    if wrong:
+        out.append(f"{w}: Bib Gourmand lists places that aren't Bib Gourmands: {wrong[:3]}")
+    page.locator("#ex-bib").uncheck()
+    page.wait_for_timeout(500)
+    if page.locator("#ex-count").inner_text().startswith(f"{want:,} place"):
+        out.append(f"{w}: unticking Bib Gourmand didn't bring the whole guide back")
+    return out
+
+
 def rows_ready(page):
     page.wait_for_function("() => document.querySelectorAll('.ex-row').length > 0", timeout=90000)
 
@@ -594,6 +641,8 @@ def webapp_checks(browser, base):
             st = page.evaluate("({ hidden: document.querySelector('#ex-panel').hidden, row: document.activeElement?.classList.contains('ex-row') })")
             if not st["hidden"] or not st["row"]:
                 bad(f"{w}: Escape didn't close the panel and return focus to the row: {st}")
+        for m in bib_problems(page, ex, width):
+            bad(m)
         for q in ("taco maria costa mesa", "dim sum monterey park", "al pastor oakland"):
             search.fill(q)
             page.wait_for_timeout(700)

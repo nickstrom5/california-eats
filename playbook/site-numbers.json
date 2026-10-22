@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-07",
- "restaurants": 103585,
- "towns": 1126,
+ "generated": "2026-10-22",
+ "restaurants": 103526,
+ "towns": 1125,
  "guides": {
   "Taquer\u00edas": 363,
   "Dim sum": 53,
@@ -15,7 +15,7 @@
  "honored": 285,
  "michelin_starred": 78,
  "bib": 114,
- "inspected": 33669,
+ "inspected": 33637,
  "jurisdictions": {
   "lac": {
    "name": "Los Angeles County",
@@ -32,7 +32,7 @@
  },
  "cities": {
   "Los Angeles": {
-   "restaurants": 9865,
+   "restaurants": 9858,
    "Taquer\u00edas": 48,
    "Dim sum": 5,
    "Burritos": 0,
@@ -42,11 +42,11 @@
    "Wine country": 0,
    "honored": 69,
    "oldest": 2,
-   "inspected": 7813,
+   "inspected": 7807,
    "indexed": true
   },
   "San Francisco": {
-   "restaurants": 5254,
+   "restaurants": 5242,
    "Taquer\u00edas": 23,
    "Dim sum": 12,
    "Burritos": 21,
@@ -56,11 +56,11 @@
    "Wine country": 0,
    "honored": 63,
    "oldest": 2,
-   "inspected": 4506,
+   "inspected": 4496,
    "indexed": true
   },
   "San Diego": {
-   "restaurants": 4310,
+   "restaurants": 4309,
    "Taquer\u00edas": 33,
    "Dim sum": 0,
    "Burritos": 15,
@@ -88,7 +88,7 @@
    "indexed": true
   },
   "Sacramento": {
-   "restaurants": 2480,
+   "restaurants": 2477,
    "Taquer\u00edas": 6,
    "Dim sum": 1,
    "Burritos": 0,
@@ -98,7 +98,7 @@
    "Wine country": 0,
    "honored": 7,
    "oldest": 0,
-   "inspected": 2105,
+   "inspected": 2103,
    "indexed": true
   },
   "Oakland": {
@@ -116,7 +116,7 @@
    "indexed": true
   },
   "Fresno": {
-   "restaurants": 1294,
+   "restaurants": 1293,
    "Taquer\u00edas": 6,
    "Dim sum": 1,
    "Burritos": 0,

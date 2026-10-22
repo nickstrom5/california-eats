@@ -113,7 +113,8 @@
   const ID_RE = /^[0-9a-f][0-9a-z]{7,63}$/;   // a place id, as make-site.py writes them
   const savedRaw = store.get("saved", []);
   const saved = new Set(Array.isArray(savedRaw) ? savedRaw.filter((x) => typeof x === "string" && ID_RE.test(x)) : []);
-  const st = { g: "taqueria", q: "", sort: "", region: "", town: "", cuisine: "", chains: false, p: "", jur: 0 };
+  const st = { g: "taqueria", q: "", sort: "", region: "", town: "", cuisine: "", chains: false, bib: false, p: "", jur: 0 };
+  let bibCount = 0;   // Bib Gourmand places (non-restaurants left out): the box shows only when there are some
 
   const miles = (a, b) => {
     const r = Math.PI / 180, dLa = (b.la - a.la) * r, dLo = (b.lo - a.lo) * r;
@@ -147,6 +148,7 @@
     if (st.town && p.c !== st.town) return false;
     if (st.cuisine && p.cu !== st.cuisine) return false;
     if (st.chains && p.ch >= 5) return false;
+    if (st.bib && p.mi !== 2) return false;      // MICHELIN Bib Gourmand only, as the app's Filters switch
     return true;
   }
 
@@ -227,7 +229,7 @@
     sortSel.innerHTML = g.sorts.map((s) => `<option value="${s}"${s === o ? " selected" : ""}>${SORT_LABEL[s]}</option>`).join("");
     sortSel.disabled = g.sorts.length < 2;
     const regionName = st.region && (REGIONS.find((r) => r.id === st.region) || {}).name;
-    const filters = [regionName && `in ${regionName}`, st.town && `in ${st.town}`, st.cuisine && st.cuisine, st.chains && "no chains"].filter(Boolean);
+    const filters = [regionName && `in ${regionName}`, st.town && `in ${st.town}`, st.cuisine && st.cuisine, st.chains && "no chains", st.bib && "Bib Gourmand"].filter(Boolean);
     $("#ex-clear").hidden = !filters.length;
     saveHash();
     const wait = pending();
@@ -658,6 +660,11 @@
     $("#ex-town").innerHTML = '<option value="">All towns</option>' + [...TOWNS].sort((a, b) => a.localeCompare(b)).map((t) => `<option>${esc(t)}</option>`).join("");
     KINDS = new Set(d.kinds.map((k) => k[0]));
     $("#ex-cuisine").innerHTML = '<option value="">All kinds</option>' + d.kinds.map(([c, k]) => `<option value="${esc(c)}">${esc(c)} (${esc(k.toLocaleString())})</option>`).join("");
+    // every MICHELIN place is in the first file (start.json's featured rows), so this is the statewide count
+    bibCount = P.filter((p) => !p.v && p.mi === 2).length;
+    $("#ex-bibwrap").hidden = !bibCount;
+    $("#ex-bibn").textContent = `(${bibCount.toLocaleString()})`;
+    if (!bibCount) st.bib = false;
     $("#ex-jur").innerHTML = JURS.map((j, i) => `<option value="${i}">${esc(j.name)}</option>`).join("");
   }
 
@@ -665,14 +672,14 @@
     const h = new URLSearchParams(location.hash.slice(1));
     st.g = Object.hasOwn(GUIDES, h.get("g") || "") ? h.get("g") : store.get("guide", "taqueria");
     if (!Object.hasOwn(GUIDES, String(st.g))) st.g = "taqueria";
-    st.q = h.get("q") || ""; st.region = h.get("region") || ""; st.town = h.get("town") || ""; st.cuisine = h.get("kind") || ""; st.chains = h.get("chains") === "1";
+    st.q = h.get("q") || ""; st.region = h.get("region") || ""; st.town = h.get("town") || ""; st.cuisine = h.get("kind") || ""; st.chains = h.get("chains") === "1"; st.bib = h.get("bib") === "1";
     st.sort = h.get("sort") || ""; st.p = h.get("p") || ""; st.jur = Number(h.get("county") || store.get("jur", 0)) || 0;
   }
   function saveHash(push = false) {
     const h = new URLSearchParams();
     h.set("g", st.g);
     if (st.q) h.set("q", st.q); if (st.region) h.set("region", st.region); if (st.town) h.set("town", st.town); if (st.cuisine) h.set("kind", st.cuisine);
-    if (st.chains) h.set("chains", "1"); if (st.sort) h.set("sort", st.sort); if (st.p) h.set("p", st.p); if (st.g === "inspections") h.set("county", String(st.jur));
+    if (st.chains) h.set("chains", "1"); if (st.bib) h.set("bib", "1"); if (st.sort) h.set("sort", st.sort); if (st.p) h.set("p", st.p); if (st.g === "inspections") h.set("county", String(st.jur));
     // filters and searches replace the entry (Back leaves the page); opening a place adds one (Back closes it)
     if (push) { pushedKey = Date.now() + Math.random(); history.pushState({ place: pushedKey }, "", "#" + h.toString()); }
     else history.replaceState(history.state, "", "#" + h.toString());
@@ -723,7 +730,8 @@
     $("#ex-cuisine").onchange = (e) => { st.cuisine = e.target.value; shown = 100; render(); };
     $("#ex-jur").onchange = (e) => { st.jur = Number(e.target.value) || 0; shown = 100; render(); };
     $("#ex-chains").onchange = (e) => { st.chains = e.target.checked; shown = 100; render(); };
-    $("#ex-clear").onclick = () => { st.region = st.town = st.cuisine = ""; st.chains = false; syncInputs(); shown = 100; render(); };
+    $("#ex-bib").onchange = (e) => { st.bib = e.target.checked; shown = 100; render(); };
+    $("#ex-clear").onclick = () => { st.region = st.town = st.cuisine = ""; st.chains = st.bib = false; syncInputs(); shown = 100; render(); };
     $("#ex-locate").onclick = locate;
     $("#ex-more").onclick = () => { shown += 200; renderList(order()); };
     document.querySelectorAll(".ex-view button").forEach((b) => b.onclick = () => setView(b.dataset.v));
@@ -775,7 +783,7 @@
   }
   function syncInputs() {
     $("#ex-q").value = st.q; $("#ex-region").value = st.region; $("#ex-town").value = st.town; $("#ex-cuisine").value = st.cuisine;
-    $("#ex-chains").checked = st.chains; $("#ex-jur").value = String(st.jur);
+    $("#ex-chains").checked = st.chains; $("#ex-bib").checked = st.bib; $("#ex-jur").value = String(st.jur);
   }
 
   (async () => {

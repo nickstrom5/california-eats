@@ -124,9 +124,10 @@ struct Filters: Equatable, Codable {
     var hideChains = false
     var confirmedOnly = false
     var includeNonRestaurants = false
+    var bibGourmand = false          // MICHELIN Bib Gourmand only: a fact from the Guide, not a rating
 
     var activeCount: Int {
-        [town != nil, cuisine != nil, region != nil, hideChains, confirmedOnly, includeNonRestaurants].filter { $0 }.count
+        [town != nil, cuisine != nil, region != nil, hideChains, confirmedOnly, includeNonRestaurants, bibGourmand].filter { $0 }.count
     }
 
     func allows(_ p: Place) -> Bool {
@@ -136,7 +137,22 @@ struct Filters: Equatable, Codable {
         if let cuisine, p.cuisine != cuisine { return false }
         if hideChains && p.isChain { return false }
         if confirmedOnly && p.tier == .listing { return false }
+        if bibGourmand && p.michelin != 2 { return false }
         return true
+    }
+}
+
+extension Filters {
+    /// Filters saved by an older build have no bibGourmand key: read what's there instead of dropping them all.
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        self.init(town: try c.decodeIfPresent(String.self, forKey: .town),
+                  cuisine: try c.decodeIfPresent(String.self, forKey: .cuisine),
+                  region: try c.decodeIfPresent(String.self, forKey: .region),
+                  hideChains: try c.decodeIfPresent(Bool.self, forKey: .hideChains) ?? false,
+                  confirmedOnly: try c.decodeIfPresent(Bool.self, forKey: .confirmedOnly) ?? false,
+                  includeNonRestaurants: try c.decodeIfPresent(Bool.self, forKey: .includeNonRestaurants) ?? false,
+                  bibGourmand: try c.decodeIfPresent(Bool.self, forKey: .bibGourmand) ?? false)
     }
 }
 

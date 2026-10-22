@@ -929,6 +929,7 @@ body = f"""{nav}
         <select id="ex-cuisine" aria-label="Kind of place"></select>
         <select id="ex-jur" aria-label="County" hidden></select>
         <label><input type="checkbox" id="ex-chains"> Hide chains</label>
+        <label id="ex-bibwrap" hidden><input type="checkbox" id="ex-bib"> <span>Bib Gourmand <span id="ex-bibn"></span></span></label>
         <button type="button" id="ex-clear" class="ex-small" hidden>Clear filters</button>
         <div class="ex-view" role="group" aria-label="View"><button type="button" data-v="list" aria-pressed="true">List</button><button type="button" data-v="map" aria-pressed="false">Map</button></div>
       </div>

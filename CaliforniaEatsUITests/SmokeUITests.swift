@@ -218,6 +218,32 @@ final class SmokeUITests: XCTestCase {
         XCTAssertEqual(app.state, .runningForeground)
     }
 
+    /// The Bib Gourmand switch turns the MICHELIN guide into Bib Gourmands only: no starred place is left on screen.
+    func testBibGourmandFilter() throws {
+        if isPad { throw XCTSkip("iPhone flow; the filter itself is covered by BibGourmandFilterTests") }
+        waitFor(text(containing: "Taquería & dim sum guide"), 15, "home header")
+        let card = app.buttons.matching(NSPredicate(format: "label CONTAINS[c] %@ AND NOT (label CONTAINS[c] 'Surprise')", "MICHELIN & James Beard")).firstMatch
+        scrollTo(card)
+        card.tap()
+        waitFor(text(containing: "places ·"), 5, "honors list")
+        // filters are saved between launches: start from none, whatever an earlier test left on
+        if text(containing: "filter on").exists || text(containing: "filters on").exists { button(containing: "Clear").tap() }
+        app.buttons["Filters"].tap()
+        waitFor(app.navigationBars["Filters"], 3, "filters sheet")
+        let bib = app.switches.matching(NSPredicate(format: "label BEGINSWITH 'Bib Gourmand ('")).firstMatch
+        // below the Show switches: a swipe raises the sheet to full height and scrolls to it
+        for _ in 0..<6 where !(bib.exists && bib.isHittable) { app.swipeUp() }
+        waitFor(bib, 3, "Bib Gourmand switch with its count")
+        bib.coordinate(withNormalizedOffset: CGVector(dx: 0.93, dy: 0.5)).tap()
+        XCTAssertEqual(bib.value as? String, "1", "switch turned on")
+        app.buttons["Done"].tap()
+        waitFor(text(containing: "1 filter on"), 3, "active-filter row")
+        waitFor(text(containing: "Bib Gourmand"), 5, "a Bib Gourmand row")
+        XCTAssertFalse(text(containing: "MICHELIN Star").exists, "a starred place is still listed")
+        button(containing: "Clear").tap()
+        XCTAssertTrue(text(containing: "MICHELIN Star").waitForExistence(timeout: 5), "cleared: the starred places are back")
+    }
+
     func testEverythingLayerFillsInWhenZoomed() {
         if isPad {
             XCUIDevice.shared.orientation = .landscapeLeft

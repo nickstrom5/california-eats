@@ -18,6 +18,8 @@ final class AppModel {
     /// towns sorted by how many restaurants they have
     private(set) var towns: [(name: String, count: Int)] = []
     private(set) var cuisines: [(name: String, count: Int)] = []
+    /// Bib Gourmand places (non-restaurants left out, like the other counts): the Filters switch shows only when there are some.
+    private(set) var bibCount = 0
     /// normalized town name -> display name ("mt shasta" -> "Mount Shasta")
     private(set) var townKeys: [String: String] = [:]
 
@@ -111,6 +113,7 @@ final class AppModel {
         }
         towns = tc.map { ($0.key, $0.value) }.sorted { $0.count != $1.count ? $0.count > $1.count : $0.name < $1.name }
         cuisines = cc.map { ($0.key, $0.value) }.sorted { $0.count != $1.count ? $0.count > $1.count : $0.name < $1.name }
+        bibCount = places.lazy.filter { !$0.isVenue && $0.michelin == 2 }.count
         var keys: [String: String] = [:]
         for (name, _) in towns {   // biggest town wins a shared spelling
             let k = Search.normalizeAddress(name)
@@ -119,6 +122,7 @@ final class AppModel {
         townKeys = keys
         if let t = filters.town, tc[t] == nil { filters.town = nil }
         if let c = filters.cuisine, cc[c] == nil { filters.cuisine = nil }
+        if filters.bibGourmand && bibCount == 0 { filters.bibGourmand = false }
         if let r = filters.region, !regions.contains(where: { $0.id == r }) { filters.region = nil }
         byID = Dictionary(places.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
         isLoaded = true

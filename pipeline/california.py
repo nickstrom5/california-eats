@@ -22,6 +22,8 @@ from common import (norm_name, nice, name_sim, cuisine, CUISINE_RULES, FOOD_COST
                     ROOT, canon_city, town_key, street_key, street_nums)
 from brands import brand_of
 import link_blocklist
+import tracking_params
+import private_dining   # employer cafeterias, schools, caterers, legal-entity names (QA 2026-10-19, P1 #7)
 import official
 from listings_util import official_match, _close_words
 
@@ -718,6 +720,18 @@ STORE = re.compile(r"^(?:7 ELEVEN|CIRCLE K|AM ?PM|ARCO(?: AM ?PM)?|CHEVRON|SHELL
 REALFOOD = re.compile(r"\b(?:RESTAURANT|GRILL|BAR|PUB|TAVERN|PIZZA|CAFE|KITCHEN|STEAK|BISTRO|DINER|BREWING|BREWERY|TAP|SALOON|TAQUERIA|"
                       r"TAPROOM|LOUNGE|INN|EATERY|BURGERS?|BBQ|TACOS?|DRIVE IN|DELI|COFFEE|ICE CREAM|CREAMERY|BAKERY|DONUTS?|SUSHI|PHO|BOBA|TEA)\b")
 CANDY = re.compile(r"\b(?:CANDY|CANDIES|FUDGE|POPCORN|CONFECTION\w*|CHOCOLATES?|CHOCOLATIER|TRUFFLES?|SWEETS? SHOPPE?|KETTLE CORN|NUTRITION)\b")
+# ---------------------------------------------------------------- legal-entity names (QA 2026-10-19, P1 #7; private_dining.py)
+# "Sars Enterprises Dba Dashpoint Chevron" shows its trade name, "Smoke Eaters Mercado, Lp" loses the tail; a bare holder name
+# ("Joban & Supreet Enterprises") is removed below, after the hand checks and honors are known. Ids keep the old name.
+_fix = [private_dining.entity_fix(n) for n in o.name_out.fillna("")]
+_rule = pd.Series([r for _, r in _fix], index=o.index)
+_fixed = _rule.notna() & _rule.ne("holder")
+print("legal-entity names replaced by the trade name:", int(_fixed.sum()),
+      [f"{a} -> {b[0]}" for a, b, f_ in zip(o.name_out, _fix, _fixed) if f_][:60], flush=True)
+o["id_name"] = o.name_out.where(_fixed)
+o.loc[_fixed, "name_out"] = [b[0] for b, f_ in zip(_fix, _fixed) if f_]
+o["holder_name"] = _rule.eq("holder")
+
 HARD = re.compile(r"\b(?:AIRPORT|TERMINAL|CONCOURSE|LAX|SFO|DODGER STADIUM|SOFI STADIUM|LEVIS STADIUM|ORACLE PARK|CHASE CENTER|CRYPTO COM ARENA|"
                   r"PETCO PARK|ANGEL STADIUM|ROSE BOWL|GOLDEN 1 CENTER|SAP CENTER|INTUIT DOME|FAIRGROUNDS?|LEVY|AVIANDS|SODEXO|ARAMARK|"
                   r"DELAWARE NORTH|CENTERPLATE|COMPASS GROUP|CHARTWELLS|BON APPETIT|HMSHOST|EUREST|GUCKENHEIMER|SSP AMERICA|DELTA SKY CLUB|"
@@ -750,6 +764,13 @@ LICENSE_ONLY_NONREST = re.compile(r"\b(?:APARTMENTS?|POOLS?|SWIM|AQUATIC|ASSOCIA
 lic_only = o.src.eq("official")
 club = kd.str.contains(r"\bCLUB\b") & ~kd.str.contains(r"NIGHT ?CLUB|SUPPER ?CLUB")
 venue |= lic_only & (kd.str.contains(LICENSE_ONLY_NONREST) | club) & ~busy
+# employer cafeterias, contract caterers' units and school dining: not open to the public (private_dining.py)
+_priv = pd.Series([private_dining.private_dining(n) for n in o.name_out.fillna("")], index=o.index)
+_new = _priv.notna() & ~(store | venue)
+print("private dining hidden with the non-restaurants:", _priv.value_counts().to_dict(), "| newly hidden:", int(_new.sum()), flush=True)
+for _k in sorted(_priv[_new].unique()):
+    print(f"  {_k}:", sorted(o.name_out[_new & _priv.eq(_k)].tolist()), flush=True)
+venue |= _priv.notna()
 o["venue"] = store | venue | o.get("lic_shared", pd.Series(False, index=o.index)).fillna(False).astype(bool)
 print("non-restaurants flagged:", int(o.venue.sum()), "| stores:", int(store.sum()), "| venues:", int((venue & ~store).sum()), flush=True)
 adult = o.name_out.str.contains(r"gentlem[ae]n'?s club|exotic dancer|strip club|adult entertainment|spearmint rhino|deja vu showgirls|hustler club", case=False, regex=True)
@@ -899,6 +920,19 @@ for c in CLOSED_V:
         mh = curated_matcher(o)
 print("verified closed, removed:", gone, flush=True)
 o.loc[o.honored, "venue"] = False   # a starred hotel dining room is a restaurant
+# a license holder's name with no trade name (private_dining.entity_fix): never shown, unless hand-checked or honored
+_holder = o.holder_name.fillna(False).astype(bool) & ~o.hc.fillna(False).astype(bool) & ~o.honored.fillna(False).astype(bool)
+print("legal-entity names removed (no trade name known):", int(_holder.sum()), sorted(o.name_out[_holder].tolist()), flush=True)
+o = o[~_holder].reset_index(drop=True)
+# a repaired entity row ("Holdren's Terrace Ltd Lp", "Finney's Funk Zone Lp") is usually the license holder's copy of a listing at the same
+# street address that starts with the same word ("Holdren's Steaks & Seafood", "Finney's Crafthouse"): that listing stands for it
+_street = o.street.fillna("").astype(str).str.upper().str.replace(r"[^A-Z0-9]+", " ", regex=True).str.strip()
+_first = o.name_out.fillna("").map(lambda n: ((norm_name(n) or "").split() or [""])[0])
+_fixed_row = o.id_name.notna() & ~o.hc.fillna(False).astype(bool) & ~o.honored.fillna(False).astype(bool)
+_plain = set(zip(_street[~o.id_name.notna()], _first[~o.id_name.notna()]))
+_dup = _fixed_row & pd.Series([s_ != "" and len(f_) >= 3 and (s_, f_) in _plain for s_, f_ in zip(_street, _first)], index=o.index)
+print("repaired entity names that duplicate a listing at the same address, removed:", int(_dup.sum()), sorted(o.name_out[_dup].tolist()), flush=True)
+o = o[~_dup].reset_index(drop=True)
 
 # ---------------------------------------------------------------- hand-checked guides (data/research/app): open with a 2025-26 source
 RES, RES_CLOSED = load_research()
@@ -1052,6 +1086,7 @@ if APP:
     SRCS_A = ["official", "meta", "AllThePlaces", "DAC", "research"]
     LINKS = json.load(open(f"{CA}/website_check.json")) if os.path.exists(f"{CA}/website_check.json") else {}
     link_drops, link_cands, bl_drops = collections.Counter(), {}, collections.Counter()
+    tp_changes = collections.Counter()
     # the same place twice: same name at the same street address, or (not a chain) same name in one town within 400 m;
     # the kept copy inherits what the dropped one knew (a hand check, honors, facts)
     rank_ = o.tier.map(TIERS).fillna(0) * 10 + o.hc.astype(int) * 5 + o.honored.astype(int) * 3 + o.web.notna().astype(int)
@@ -1102,7 +1137,8 @@ if APP:
         CITIES = sorted(sub.city.dropna().unique().tolist()); ci = {c: i for i, c in enumerate(CITIES)}
         places = []
         for _, x in sub.iterrows():
-            idsrc = f"{norm_name(x.name_out)}|{round(float(x.lat), 3)}|{round(float(x.lon), 3)}"
+            idn = x.id_name if isinstance(x.get("id_name"), str) else x.name_out   # a trade-name fix keeps the id
+            idsrc = f"{norm_name(idn)}|{round(float(x.lat), 3)}|{round(float(x.lon), 3)}"
             p_ = {"id": hashlib.md5(idsrc.encode()).hexdigest()[:12], "n": x.name_out, "cu": cu[x.cuisine], "t": TIERS[x.tier],
                   "s": SRCS_A.index(x.src) if x.src in SRCS_A else 1}
             while p_["id"] in seen_ids:   # two same-name places in one ~100 m cell
@@ -1161,6 +1197,8 @@ if APP:
         fn = f"places-{rid}.json"
         # pipeline/website_blocklist.json: no hacked, taken-over or wrong-business link in any field of the app data (link_blocklist.py)
         link_blocklist.scrub(places, bl_drops)
+        # tracking tags (ref=google, utm_*, cn_channel …) off every outbound link; the store's own parameters stay
+        tracking_params.scrub(places, tp_changes)
         json.dump({"region": rid, "cities": CITIES, "places": places}, open(f"{SITE}/{fn}", "w"), separators=(",", ":"), ensure_ascii=False, allow_nan=False, default=str)
         sv = sub[~sub.venue]
         files.append({"id": rid, "name": rname, "file": fn, "counties": sorted(sub.county.dropna().unique().tolist()), "count": len(places),
@@ -1169,6 +1207,7 @@ if APP:
     json.dump(link_cands, open(f"{CA}/website_candidates.json", "w"), indent=0, ensure_ascii=False)
     print("website links dropped:", sum(link_drops.values()), link_drops.most_common(8), flush=True)
     print("blocklisted links dropped from the app data:", sum(bl_drops.values()), dict(bl_drops), flush=True)
+    print("tracking parameters stripped from links:", sum(tp_changes.values()), dict(tp_changes), flush=True)
     calib_app = json.load(open(f"{CA}/calibration_app.json")) if os.path.exists(f"{CA}/calibration_app.json") else {}
     index = {"v": 1, "generated": str(pd.Timestamp.now().date()), "regions": files, "cuisines": CUIS, "brands": BRANDS, "sources": SRCS_A,
              "counties": COUNTIES_A, "guides": GUIDE_BITS, "liqt": LIQT,

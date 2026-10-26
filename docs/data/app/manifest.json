@@ -1,0 +1,75 @@
+{
+ "schema": 1,
+ "version": "2026-10-22.1",
+ "records_through": "2026-10-22",
+ "published": "2026-10-26T14:19:45Z",
+ "min_app_build": 1,
+ "files": {
+  "index": {
+   "path": "index-a62025959e50.json",
+   "sha256": "a62025959e50aaea87f90528b453a87d738f53e82aeb7fb62eca99c9a3640448",
+   "bytes": 9106,
+   "rows": 0
+  },
+  "places-bay": {
+   "path": "places-bay-8c7dca60e18b.json",
+   "sha256": "8c7dca60e18b0068612d22f8a8478594b8ab9d5dc316c16cb0c97f34c2698e51",
+   "bytes": 4497667,
+   "rows": 21768
+  },
+  "places-cc": {
+   "path": "places-cc-733d937d5783.json",
+   "sha256": "733d937d578300808a2159d67f247da073a291f7d0736f805774b092b626123c",
+   "bytes": 1209218,
+   "rows": 5984
+  },
+  "places-cv": {
+   "path": "places-cv-2050274d77cf.json",
+   "sha256": "2050274d77cf424517e8af40b82bc27c522671d91cce521f74045145e48907ad",
+   "bytes": 1739852,
+   "rows": 8683
+  },
+  "places-ie": {
+   "path": "places-ie-882773d5fb3d.json",
+   "sha256": "882773d5fb3d8c71c9056643c46bbd4f91993903c1fabd385ec433a03bd711b2",
+   "bytes": 1899445,
+   "rows": 9167
+  },
+  "places-la": {
+   "path": "places-la-93b99a751048.json",
+   "sha256": "93b99a751048d07ac44239dc732af69f1c9d058eece5624e689ae878ee0a23ba",
+   "bytes": 7974270,
+   "rows": 34261
+  },
+  "places-north": {
+   "path": "places-north-b5b0de8d0a1b.json",
+   "sha256": "b5b0de8d0a1ba5a35e9037f1f800987301275d03470f686846c16ac1fd9b3025",
+   "bytes": 634374,
+   "rows": 3225
+  },
+  "places-oc": {
+   "path": "places-oc-f529f636d761.json",
+   "sha256": "f529f636d761c89356a4e610324184262afb75808c341c0c122f1df4b34c24fa",
+   "bytes": 1684959,
+   "rows": 8296
+  },
+  "places-sac": {
+   "path": "places-sac-2b052bcb9f9e.json",
+   "sha256": "2b052bcb9f9e38f1775a9d350bce02ce1709272188b2ab41efa9e9aac9c90332",
+   "bytes": 1541421,
+   "rows": 6801
+  },
+  "places-sd": {
+   "path": "places-sd-70e18276ac5d.json",
+   "sha256": "70e18276ac5d7d4ffc1df3fd0e811327c33b7276e06e14d3bb63175219534fbd",
+   "bytes": 1914890,
+   "rows": 9383
+  }
+ },
+ "counts": {
+  "places": 107568,
+  "files": 10,
+  "bytes": 23105202,
+  "restaurants": 103526
+ }
+}

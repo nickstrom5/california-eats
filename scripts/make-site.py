@@ -64,6 +64,7 @@ TODAY = IDX["generated"][:10]
 # the day the site's own text last changed (bump it with the copy, the privacy policy or the terms); pages and the sitemap show the later
 # of this and the data's date
 SITE_UPDATED = "2026-10-12"
+PRIVACY_UPDATED = "2026-10-26"   # the privacy policy alone: the app's data updates (OTA-DATA.md)
 LASTMOD = max(TODAY, SITE_UPDATED)
 
 
@@ -892,7 +893,7 @@ for h, m in sorted(by_hex.items()):
 json.dump(json.load(open(f"{ROOT}/data/ca/ca_shapes.json")), open(f"{DOCS}/data/ca_shapes.json", "w"), separators=(",", ":"))
 data_files.add("ca_shapes.json")
 for f in os.listdir(f"{DOCS}/data"):    # an older build's files (core.json, detail.json, blocks past the end) aren't published
-    if f not in data_files:
+    if f not in data_files and os.path.isfile(f"{DOCS}/data/{f}"):   # data/app/ is the app's data updates (publish_app_data.py)
         os.remove(f"{DOCS}/data/{f}")
 
 EXPLORE_CSS = open(f"{ROOT}/scripts/explore.css").read() if os.path.exists(f"{ROOT}/scripts/explore.css") else ""
@@ -1094,7 +1095,7 @@ body = f"""{nav}
   <main id="main" class="legal">
   <section class="hero">
     <h1>Privacy policy</h1>
-    <p class="lede">Short version: the {BRAND} app collects nothing about you, and this website doesn't track you. Last updated {nice_date(SITE_UPDATED)}.</p>
+    <p class="lede">Short version: the {BRAND} app collects nothing about you, and this website doesn't track you. Last updated {nice_date(PRIVACY_UPDATED)}.</p>
   </section>
   <section>
     <h2>The app</h2>
@@ -1103,6 +1104,7 @@ body = f"""{nav}
       <li><b>Location.</b> If you allow it, your location is used on your device to sort places by distance and show where you are on the map. It is never sent to us. You can turn it off in Settings at any time.</li>
       <li><b>Saved places and filters</b> are stored only on your device and are deleted when you delete the app.</li>
       <li><b>Apple Maps.</b> The maps in the app are Apple's, loaded from Apple as you look around them. When you open a place's ratings, hours and photos, or ask for directions, the app asks Apple Maps for that place. Apple handles those requests under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a>, as it does for any app that shows a map.</li>
+      <li><b>Data updates.</b> When you open the app, it checks this website for newer restaurant data, at most once a day (or an hour later if a check didn't go through), and downloads it when there is some. These requests carry no location or identifiers. GitHub, which hosts this site, may keep standard server logs of them, as it does for any visit here.</li>
       <li><b>Spotlight.</b> The app adds its hand-checked and honored places to your device's search index so you can find them from Spotlight. That index stays on your device.</li>
       <li><b>Calls, websites and email</b> you start from a place open in the Phone app, your browser or Mail, and are handled by them.</li>
     </ul>

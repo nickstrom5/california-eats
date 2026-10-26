@@ -1160,6 +1160,17 @@ def blocklist_checks():
                     bad(f"{os.path.relpath(os.path.join(d, fn), DOCS)}: blocklisted website {name} appears {n}x")
 
 
+def app_data_checks(problems):
+    """docs/data/app/, the app's data updates (scripts/publish_app_data.py, OTA-DATA.md): every manifest entry's hash, size and
+    row count match its file, the head file's date matches, and no old copy lingers."""
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from publish_app_data import check_app_data, app_data_dir
+    found, notes = check_app_data(DOCS, app_data_dir())
+    problems.extend("app data: " + x for x in found)
+    for x in notes:
+        print("  note: app data:", x)
+
+
 def main():
     base = serve()
     files = static_checks()
@@ -1169,6 +1180,7 @@ def main():
     city_page_checks(files)
     city_overlap_checks(files)
     privacy_storage_checks()
+    app_data_checks(problems)
     blocklist_checks()
     locs = sitemap_checks(files)
     n_static = len(problems)

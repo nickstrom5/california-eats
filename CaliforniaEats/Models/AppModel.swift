@@ -64,7 +64,8 @@ final class AppModel {
 
     nonisolated static var bundledData: URL? { Bundle.main.url(forResource: "Data", withExtension: nil) }
 
-    func load(from folder: URL? = AppModel.bundledData) async {
+    /// The data AppData chose at launch: the bundled Data folder, or a newer downloaded copy (OTA-DATA.md).
+    func load(from folder: URL? = AppData.folder) async {
         guard !isLoaded else { return }
         if let loading { await loading.value; return }
         let task = Task { await decode(from: folder) }
@@ -76,15 +77,11 @@ final class AppModel {
     private func decode(from folder: URL?) async {
         guard let folder else { loadError = "The restaurant data is missing from the app."; return }
         do {
-            let index = try await Task.detached(priority: .userInitiated) {
-                try JSONDecoder().decode(DataIndex.self, from: Data(contentsOf: folder.appendingPathComponent("index.json")))
-            }.value
+            let index = try await Task.detached(priority: .userInitiated) { try AppModel.readIndex(folder) }.value
             let parts = try await withThrowingTaskGroup(of: (Int, [Place]).self) { group in
                 for (n, r) in index.regions.enumerated() {
                     group.addTask(priority: .userInitiated) {
-                        let data = try Data(contentsOf: folder.appendingPathComponent(r.file))
-                        let region = try JSONDecoder().decode(RegionData.self, from: data)
-                        return (n, region.places.map { Place($0, region: region, index: index) })
+                        (n, try AppModel.readRegion(folder.appendingPathComponent(r.file), index: index))
                     }
                 }
                 var out: [(Int, [Place])] = []
@@ -93,8 +90,21 @@ final class AppModel {
             }
             apply(index: index, places: parts)
         } catch {
+            // a downloaded copy this build can't read (OTA-DATA.md): back to the data built into the app
+            if let bundled = AppData.fallback(from: folder) { return await decode(from: bundled) }
             loadError = "The restaurant data couldn't be read (\(error.localizedDescription))."
         }
+    }
+
+    /// Reads index.json: launch, and the check a downloaded copy passes before it's stored (DataLayout.app, OTA-DATA.md).
+    nonisolated static func readIndex(_ folder: URL) throws -> DataIndex {
+        try JSONDecoder().decode(DataIndex.self, from: Data(contentsOf: folder.appendingPathComponent("index.json")))
+    }
+
+    /// Reads one region file into places, the same way for launch and the check.
+    nonisolated static func readRegion(_ url: URL, index: DataIndex) throws -> [Place] {
+        let region = try JSONDecoder().decode(RegionData.self, from: Data(contentsOf: url))
+        return region.places.map { Place($0, region: region, index: index) }
     }
 
     func apply(index: DataIndex, places: [Place]) {

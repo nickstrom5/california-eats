@@ -3,7 +3,9 @@ import CoreSpotlight
 
 @main
 struct CaliforniaEatsApp: App {
+    @Environment(\.scenePhase) private var scenePhase
     @State private var model = AppModel()
+    @State private var updater = DataUpdater()
     @State private var location = LocationService()
 
     init() {
@@ -23,12 +25,15 @@ struct CaliforniaEatsApp: App {
             RootView()
                 .environment(model)
                 .environment(location)
+                .environment(updater)
                 .tint(Theme.blue)
                 .task {
+                    await AppData.prepare()
                     LaunchTiming.mark("load start")
                     await model.load()
                     LaunchTiming.mark("load end")
                     ScreenshotMode.apply(to: model)
+                    if model.isLoaded { updater.checkIfDue(placesInUse: model.places.count) }
                     if model.isLoaded && !ScreenshotMode.isActive {
                         SpotlightIndexer.indexIfNeeded(model.places, generated: model.generated)
                     }
@@ -41,6 +46,7 @@ struct CaliforniaEatsApp: App {
                     }
                 }
         }
+        .onChange(of: scenePhase) { _, phase in updater.phaseChanged(to: phase, placesInUse: model.isLoaded ? model.places.count : nil) }
     }
 }
 

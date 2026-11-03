@@ -773,8 +773,18 @@ for _k in sorted(_priv[_new].unique()):
 venue |= _priv.notna()
 o["venue"] = store | venue | o.get("lic_shared", pd.Series(False, index=o.index)).fillna(False).astype(bool)
 print("non-restaurants flagged:", int(o.venue.sum()), "| stores:", int(store.sum()), "| venues:", int((venue & ~store).sum()), flush=True)
-adult = o.name_out.str.contains(r"gentlem[ae]n'?s club|exotic dancer|strip club|adult entertainment|spearmint rhino|deja vu showgirls|hustler club", case=False, regex=True)
-print("adult clubs removed:", int(adult.sum()), o.name_out[adult].head(10).tolist(), flush=True)
+# adult clubs aren't restaurants and don't belong in a 13+ app at all. "Cabaret" alone is no sign (Gilles Cabaret, the Magic Castle's).
+# QA 2026-10-29: "Gentlemen Club", "Gentleman's Lounge", topless and bikini bars, a male exotic cabaret and the Gold Club, Peppermint Hippo
+# and Stilettos brands got through, so they count too
+adult = o.name_out.str.contains(r"gentlem[ae]n['’]?s? (?:club|lounge)|exotic dancer|strip club|adult entertainment|spearmint rhino|deja vu showgirls|"
+                                r"hustler club|bikini bar|\btopless\b|male exotic|\bgold club\b|centerfolds|peppermint hippo|stilettos? cabaret|showgirls|\bjet strip\b", case=False, regex=True)
+# a club under a plain name goes by its checked address (data/research/adult_venues.json, each with a source)
+AV = json.load(open(f"{DATA}/research/adult_venues.json"))["venues"]
+av_keys = {(n_, s_, t.lower()) for v in AV for n_, s_ in [street_key(v["address"].upper())] for t in v["towns"]}
+adult_addr = pd.Series([(n_, s_, (c_ or "").lower()) in av_keys if n_ and s_ else False
+                        for (n_, s_), c_ in zip(o.street.fillna("").str.upper().map(street_key), o.city)], index=o.index)
+adult = adult | adult_addr
+print("adult clubs removed:", int(adult.sum()), "(by checked address", int(adult_addr.sum()), ")", o.name_out[adult].tolist()[:30], flush=True)
 o = o[~adult].reset_index(drop=True)
 
 # ---------------------------------------------------------------- California boards by name and category (leaderboard v1; the app's guides are hand-checked)

@@ -201,8 +201,12 @@ final class CaliforniaEatsTests: XCTestCase {
                       "a hand check always names its guide")
         XCTAssertTrue(m.list(.oldest, sort: .oldest, search: "", here: nil).allSatisfy { ($0.founded ?? 9999) <= 1960 },
                       "Oldest Places: open at this address since 1960 or earlier")
-        XCTAssertFalse(m.places.contains { $0.name.range(of: #"gentlem[ae]n'?s club|strip club|exotic dancer|spearmint rhino"#, options: [.regularExpression, .caseInsensitive]) != nil },
+        XCTAssertFalse(m.places.contains { $0.name.range(of: #"gentlem[ae]n['’]?s? (?:club|lounge)|strip club|exotic dancer|spearmint rhino|bikini bar|\btopless\b|male exotic|\bgold club\b|centerfolds|peppermint hippo|stilettos? cabaret|showgirls|\bjet strip\b"#, options: [.regularExpression, .caseInsensitive]) != nil },
                        "adult clubs aren't restaurants")
+        // data/research/adult_venues.json's checked club addresses (number and street start), by town
+        let adultAddresses = [("618 E Ball", "Anaheim"), ("650 Howard", "San Francisco"), ("4600 Hollywood", "Los Angeles")]
+        XCTAssertFalse(m.places.contains { p in adultAddresses.contains { (a, t) in p.city == t && (p.address ?? "").lowercased().hasPrefix(a.lowercased()) } },
+                       "no place at a checked adult-club address")
         XCTAssertFalse(m.places.contains { ($0.website?.absoluteString ?? "").range(
             of: #"yelp\.com|business\.site|google\.com|groupon\.com|yellowpages\.com"#, options: .regularExpression) != nil },
                        "directory links were checked out")

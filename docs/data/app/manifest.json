@@ -1,21 +1,21 @@
 {
  "schema": 1,
- "version": "2026-10-22.1",
- "records_through": "2026-10-22",
- "published": "2026-10-26T14:19:45Z",
+ "version": "2026-11-03.1",
+ "records_through": "2026-11-03",
+ "published": "2026-11-03T13:27:12Z",
  "min_app_build": 1,
  "files": {
   "index": {
-   "path": "index-a62025959e50.json",
-   "sha256": "a62025959e50aaea87f90528b453a87d738f53e82aeb7fb62eca99c9a3640448",
+   "path": "index-c27a9a7b09eb.json",
+   "sha256": "c27a9a7b09eb50bfc83c45c8ad8680f78a79e30bf3f15b311f14306e8cb100c7",
    "bytes": 9106,
    "rows": 0
   },
   "places-bay": {
-   "path": "places-bay-8c7dca60e18b.json",
-   "sha256": "8c7dca60e18b0068612d22f8a8478594b8ab9d5dc316c16cb0c97f34c2698e51",
-   "bytes": 4497667,
-   "rows": 21768
+   "path": "places-bay-72e416a9fd42.json",
+   "sha256": "72e416a9fd422c261d74981eafa4ef10ba38e3ee3f419772b259432c089a495b",
+   "bytes": 4497233,
+   "rows": 21766
   },
   "places-cc": {
    "path": "places-cc-733d937d5783.json",
@@ -30,16 +30,16 @@
    "rows": 8683
   },
   "places-ie": {
-   "path": "places-ie-882773d5fb3d.json",
-   "sha256": "882773d5fb3d8c71c9056643c46bbd4f91993903c1fabd385ec433a03bd711b2",
-   "bytes": 1899445,
-   "rows": 9167
+   "path": "places-ie-4e86269f5a50.json",
+   "sha256": "4e86269f5a5011466f22037b5154645670a4d8758bcffbcf358b68e35c2f753a",
+   "bytes": 1899212,
+   "rows": 9166
   },
   "places-la": {
-   "path": "places-la-93b99a751048.json",
-   "sha256": "93b99a751048d07ac44239dc732af69f1c9d058eece5624e689ae878ee0a23ba",
-   "bytes": 7974270,
-   "rows": 34261
+   "path": "places-la-679497f4e35a.json",
+   "sha256": "679497f4e35abfc83bf3b2080e0eae1284d0d7b62a421d78914121bc4c127342",
+   "bytes": 7972668,
+   "rows": 34254
   },
   "places-north": {
    "path": "places-north-b5b0de8d0a1b.json",
@@ -48,16 +48,16 @@
    "rows": 3225
   },
   "places-oc": {
-   "path": "places-oc-f529f636d761.json",
-   "sha256": "f529f636d761c89356a4e610324184262afb75808c341c0c122f1df4b34c24fa",
-   "bytes": 1684959,
-   "rows": 8296
+   "path": "places-oc-b35ae42fd6ce.json",
+   "sha256": "b35ae42fd6ce3e765ae61f7fad334b2aec5633686353416a686a66e5bb160e83",
+   "bytes": 1684237,
+   "rows": 8292
   },
   "places-sac": {
-   "path": "places-sac-2b052bcb9f9e.json",
-   "sha256": "2b052bcb9f9e38f1775a9d350bce02ce1709272188b2ab41efa9e9aac9c90332",
-   "bytes": 1541421,
-   "rows": 6801
+   "path": "places-sac-9e3a5d69a85c.json",
+   "sha256": "9e3a5d69a85c535dfdc49431345f5fa577a70eea1fae03731a7c6e08e08527e4",
+   "bytes": 1541217,
+   "rows": 6800
   },
   "places-sd": {
    "path": "places-sd-70e18276ac5d.json",
@@ -67,9 +67,24 @@
   }
  },
  "counts": {
-  "places": 107568,
+  "places": 107553,
   "files": 10,
-  "bytes": 23105202,
-  "restaurants": 103526
+  "bytes": 23102007,
+  "restaurants": 103518
+ },
+ "previous": {
+  "version": "2026-10-22.1",
+  "files": {
+   "index": "index-a62025959e50.json",
+   "places-bay": "places-bay-8c7dca60e18b.json",
+   "places-cc": "places-cc-733d937d5783.json",
+   "places-cv": "places-cv-2050274d77cf.json",
+   "places-ie": "places-ie-882773d5fb3d.json",
+   "places-la": "places-la-93b99a751048.json",
+   "places-north": "places-north-b5b0de8d0a1b.json",
+   "places-oc": "places-oc-f529f636d761.json",
+   "places-sac": "places-sac-2b052bcb9f9e.json",
+   "places-sd": "places-sd-70e18276ac5d.json"
+  }
  }
 }

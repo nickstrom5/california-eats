@@ -1,0 +1,36 @@
+{
+ "note": "California adult clubs the name rules miss; each entry sourced (california.py removes every place at these addresses in these towns)",
+ "venues": [
+  {
+   "name": "Satin Topless",
+   "address": "618 E Ball Rd",
+   "towns": [
+    "Anaheim"
+   ],
+   "sources": [
+    "atly.com/location/Satin-Topless-Gentlemen's-Club---Anaheim (a gentlemen's club), looked up 2026-10-29"
+   ]
+  },
+  {
+   "name": "Gold Club SF",
+   "address": "650 Howard St",
+   "towns": [
+    "San Francisco"
+   ],
+   "sources": [
+    "sfstandard.com/2023/11/11/san-francisco-apec-strip-clubs-pot/ (a gentleman's club), looked up 2026-10-29"
+   ]
+  },
+  {
+   "name": "Cheetah's",
+   "address": "4600 Hollywood Blvd",
+   "towns": [
+    "Los Angeles"
+   ],
+   "sources": [
+    "timeout.com/los-angeles/sex-dating/cheetahs (4600 Hollywood Blvd)",
+    "laweekly.com (\"bikini bar Cheetahs over on Hollywood Boulevard\"), looked up 2026-10-29"
+   ]
+  }
+ ]
+}

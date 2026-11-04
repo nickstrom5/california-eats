@@ -1,7 +1,7 @@
 {
  "generated": "2026-11-03",
- "restaurants": 103518,
- "towns": 1125,
+ "restaurants": 103294,
+ "towns": 1124,
  "guides": {
   "Taquer\u00edas": 363,
   "Dim sum": 53,
@@ -32,7 +32,7 @@
  },
  "cities": {
   "Los Angeles": {
-   "restaurants": 9856,
+   "restaurants": 9847,
    "Taquer\u00edas": 48,
    "Dim sum": 5,
    "Burritos": 0,
@@ -60,7 +60,7 @@
    "indexed": true
   },
   "San Diego": {
-   "restaurants": 4309,
+   "restaurants": 4301,
    "Taquer\u00edas": 33,
    "Dim sum": 0,
    "Burritos": 15,
@@ -74,7 +74,7 @@
    "indexed": true
   },
   "San Jose": {
-   "restaurants": 2281,
+   "restaurants": 2279,
    "Taquer\u00edas": 7,
    "Dim sum": 2,
    "Burritos": 5,
@@ -88,7 +88,7 @@
    "indexed": true
   },
   "Sacramento": {
-   "restaurants": 2477,
+   "restaurants": 2472,
    "Taquer\u00edas": 6,
    "Dim sum": 1,
    "Burritos": 0,
@@ -116,7 +116,7 @@
    "indexed": true
   },
   "Fresno": {
-   "restaurants": 1293,
+   "restaurants": 1290,
    "Taquer\u00edas": 6,
    "Dim sum": 1,
    "Burritos": 0,
@@ -130,7 +130,7 @@
    "indexed": true
   },
   "Long Beach": {
-   "restaurants": 1155,
+   "restaurants": 1152,
    "Taquer\u00edas": 6,
    "Dim sum": 0,
    "Burritos": 0,
@@ -158,7 +158,7 @@
    "indexed": true
   },
   "Santa Barbara": {
-   "restaurants": 442,
+   "restaurants": 441,
    "Taquer\u00edas": 3,
    "Dim sum": 0,
    "Burritos": 0,
@@ -200,7 +200,7 @@
    "indexed": true
   },
   "Irvine": {
-   "restaurants": 570,
+   "restaurants": 569,
    "Taquer\u00edas": 14,
    "Dim sum": 2,
    "Burritos": 0,
@@ -214,7 +214,7 @@
    "indexed": true
   },
   "Anaheim": {
-   "restaurants": 855,
+   "restaurants": 850,
    "Taquer\u00edas": 26,
    "Dim sum": 2,
    "Burritos": 0,
@@ -228,7 +228,7 @@
    "indexed": true
   },
   "Riverside": {
-   "restaurants": 752,
+   "restaurants": 750,
    "Taquer\u00edas": 13,
    "Dim sum": 0,
    "Burritos": 0,
@@ -242,7 +242,7 @@
    "indexed": true
   },
   "Bakersfield": {
-   "restaurants": 1209,
+   "restaurants": 1202,
    "Taquer\u00edas": 4,
    "Dim sum": 0,
    "Burritos": 0,
@@ -284,7 +284,7 @@
    "indexed": true
   },
   "Palm Springs": {
-   "restaurants": 295,
+   "restaurants": 294,
    "Taquer\u00edas": 2,
    "Dim sum": 0,
    "Burritos": 0,
@@ -326,7 +326,7 @@
    "indexed": false
   },
   "Stockton": {
-   "restaurants": 654,
+   "restaurants": 651,
    "Taquer\u00edas": 3,
    "Dim sum": 1,
    "Burritos": 0,

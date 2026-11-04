@@ -203,6 +203,8 @@ final class CaliforniaEatsTests: XCTestCase {
                       "Oldest Places: open at this address since 1960 or earlier")
         XCTAssertFalse(m.places.contains { $0.name.range(of: #"gentlem[ae]n['’]?s? (?:club|lounge)|strip club|exotic dancer|spearmint rhino|bikini bar|\btopless\b|male exotic|\bgold club\b|centerfolds|peppermint hippo|stilettos? cabaret|showgirls|\bjet strip\b"#, options: [.regularExpression, .caseInsensitive]) != nil },
                        "adult clubs aren't restaurants")
+        XCTAssertFalse(m.places.contains { !$0.isVenue && $0.name.range(of: #"^(?:the )?(?:meltdown|burger den)$|banda burrito|tenderfix|pardon my cheesesteak|neighborhood wings"#, options: [.regularExpression, .caseInsensitive]) != nil },
+                       "delivery-only brands cooked in another restaurant's kitchen (Denny's, Applebee's) stay hidden (QA 2026-10-29)")
         // data/research/adult_venues.json's checked club addresses (number and street start), by town
         let adultAddresses = [("618 E Ball", "Anaheim"), ("650 Howard", "San Francisco"), ("4600 Hollywood", "Los Angeles")]
         XCTAssertFalse(m.places.contains { p in adultAddresses.contains { (a, t) in p.city == t && (p.address ?? "").lowercased().hasPrefix(a.lowercased()) } },

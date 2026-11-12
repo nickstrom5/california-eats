@@ -810,9 +810,9 @@ def explore_load_checks(browser, base):
     print(f"  explore first load: {total / 1e6:.2f} MB over the wire ({', '.join(f'{k} {v // 1024} KB' for k, v in sorted(files.items()))})")
     if total > BUDGET_FIRST:
         bad(f"explore: first load transfers {total / 1e6:.2f} MB, over the {BUDGET_FIRST / 1e6:.1f} MB budget: {files}")
-    extra = sorted(set(files) - {"explore/", "start.json"})
+    extra = sorted(set(files) - {"explore/", "start.json", "paytone-one-latin.woff2"})   # the headline face, from this site
     if extra:
-        bad(f"explore: the first load fetches more than the page and start.json: {extra}")
+        bad(f"explore: the first load fetches more than the page, start.json and the headline font: {extra}")
     total, files = transfer(browser, ex + "#g=all", rows())
     print(f"  explore All restaurants: {total / 1e6:.2f} MB over the wire")
     # once the statewide list has arrived, it's on screen within 2 s (sorting 100,000 names with localeCompare took 3-5 s): the time the

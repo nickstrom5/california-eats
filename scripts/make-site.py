@@ -181,7 +181,7 @@ CSS = """
     --blue: #003262; --blue2: #1a4b80; --sea: #5582b4; --seasoft: #e3ecf5;
     --gold: #fdb515; --goldsoft: #fee7b0; --poppy: #e35b1e;
     --radius: 16px;
-    --display: "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif;
+    --display: "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif; --head-font: "Paytone One", "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #0b1420; --surface: #111d2c; --surface2: #172638; --rule: #24364b; --ink: #edf2f8; --ink2: #ccd8e6; --muted: #a2b2c6; --blue: #9cc3ec; --blue2: #7fb0e3; --sea: #8cb6df; --seasoft: #16304a; }
@@ -198,15 +198,15 @@ CSS = """
   .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
   .band { display: block; width: 100%; height: 22px; margin-top: 8px; }
   header.site { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0 18px; border-bottom: 4px solid var(--gold); }
-  .logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font: 800 22px/1 var(--display); text-transform: uppercase; letter-spacing: .01em; color: var(--blue); text-decoration: none; }
+  .logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font: 400 22px/1 var(--head-font); letter-spacing: .01em; color: var(--blue); text-decoration: none; }
   header.site nav { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: flex-end; }
   header.site nav a { color: var(--ink2); text-decoration: none; font-size: 15px; }
   header.site nav a, footer nav a, nav.crumbs a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
   header.site nav a:hover { color: var(--blue); text-decoration: underline; }
-  h1, h2 { font-family: var(--display); font-weight: 800; color: var(--blue); letter-spacing: -.005em; }
-  h1 { font-size: clamp(36px, 7.5vw, 56px); line-height: 1.02; margin: 0 0 16px; text-transform: uppercase; text-wrap: balance; }
+  h1, h2 { font-family: var(--head-font); font-weight: 400; color: var(--blue); letter-spacing: -.005em; }
+  h1 { font-size: clamp(38px, 11.88vw, 56px); line-height: 1.08; margin: 0 0 16px; text-wrap: balance; }
   h1 .kicker { display: block; font: 700 15px/1.4 -apple-system, system-ui, sans-serif; letter-spacing: .06em; color: var(--muted); margin-bottom: 12px; }
-  h2 { font-size: 32px; line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  h2 { font-size: 31px; line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
   h3 { font-size: 18px; margin: 0; line-height: 1.3; }
   .lede { font-size: 19px; color: var(--ink2); margin: 0 0 26px; }
   .hero { padding: 44px 0 28px; }
@@ -284,6 +284,16 @@ CSS = """
     header.site nav { justify-content: flex-start; }
   }
 """
+
+# The headline face: Paytone One (SIL Open Font License, in docs/fonts/OFL-Paytone-One.txt). It is the site's one web font and it is served from this
+# site, so pages still load nothing from anyone else. The big headline, the section headings, card titles and the site name use it
+# (--head-font); numbers and badges keep the condensed system faces (--display).
+CSS = "".join(f'  @font-face {{ font-family: "Paytone One"; src: url("{BASE}/fonts/{_f}") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: {_r}; }}\n'
+              for _f, _r in (
+                  ("paytone-one-vietnamese.woff2", "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"),
+                  ("paytone-one-latin-ext.woff2", "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF"),
+                  ("paytone-one-latin.woff2", "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"),
+              )) + CSS
 # the one California element: a low gold sun over two Pacific swells
 BAND = ('<svg class="band" viewBox="0 0 760 22" preserveAspectRatio="none" aria-hidden="true">'
         '<path d="M40 22 A22 22 0 0 1 84 22 Z" fill="#fdb515"/>'
@@ -309,7 +319,7 @@ def csp(doc):
     h = lambda t: "'sha256-" + base64.b64encode(hashlib.sha256(t.encode()).digest()).decode() + "'"
     scripts = " ".join(h(t) for t in re.findall(r"<script>(.*?)</script>", doc, re.S)) or "'none'"
     styles = " ".join(h(t) for t in re.findall(r"<style>(.*?)</style>", doc, re.S)) or "'none'"
-    return (f"default-src 'none'; script-src {scripts}; style-src {styles}; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; "
+    return (f"default-src 'none'; script-src {scripts}; style-src {styles}; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; "
             "base-uri 'none'; form-action 'none'; object-src 'none'")
 
 
@@ -386,6 +396,7 @@ def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview
 <link rel="icon" type="image/svg+xml" href="{FAVICON}">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/paytone-one-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="manifest" href="/site.webmanifest">
 <style>{CSS}{extra_css}</style>
 {ld}

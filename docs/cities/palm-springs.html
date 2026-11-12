@@ -2,7 +2,7 @@
 <html lang="en" data-base="/california-eats">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-XfW65miMSFXjOO3n93lKOHgTsMdNDjk/M757SXeCAjw='; style-src 'sha256-dHJY2MjxIG0V7pS3H8xhr+d5CDpAJ6mvqXxbjYNuA0c='; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-XfW65miMSFXjOO3n93lKOHgTsMdNDjk/M757SXeCAjw='; style-src 'sha256-6SbrZiuf/QJrLpo1tkeREbTpqVzU17bJhhihA92+bMM='; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <meta name="apple-itunes-app" content="app-id=APP_ID"> fill in once the App Store record exists -->
@@ -26,15 +26,19 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003262'/%3E%3CclipPath id='ca-fruit'%3E%3Cpath d='M32 9.96 C40.78 9.96 41.44 21.73 45.35 27.59 C49.96 34.51 49.56 36.49 49.56 41.28 C49.56 48.43 41.83 54.04 32 54.04 C22.17 54.04 14.44 48.43 14.44 41.28 C14.44 36.49 14.04 34.51 18.65 27.59 C22.56 21.73 23.22 9.96 32 9.96 Z'/%3E%3C/clipPath%3E%3Cpath d='M32 9.96 C40.78 9.96 41.44 21.73 45.35 27.59 C49.96 34.51 49.56 36.49 49.56 41.28 C49.56 48.43 41.83 54.04 32 54.04 C22.17 54.04 14.44 48.43 14.44 41.28 C14.44 36.49 14.04 34.51 18.65 27.59 C22.56 21.73 23.22 9.96 32 9.96 Z' fill='none' stroke='%232F4F1C' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M32 9.96 C40.78 9.96 41.44 21.73 45.35 27.59 C49.96 34.51 49.56 36.49 49.56 41.28 C49.56 48.43 41.83 54.04 32 54.04 C22.17 54.04 14.44 48.43 14.44 41.28 C14.44 36.49 14.04 34.51 18.65 27.59 C22.56 21.73 23.22 9.96 32 9.96 Z' fill='%23E4EC9A'/%3E%3Cpath d='M32 9.96 C40.78 9.96 41.44 21.73 45.35 27.59 C49.96 34.51 49.56 36.49 49.56 41.28 C49.56 48.43 41.83 54.04 32 54.04 C22.17 54.04 14.44 48.43 14.44 41.28 C14.44 36.49 14.04 34.51 18.65 27.59 C22.56 21.73 23.22 9.96 32 9.96 Z' fill='none' stroke='%239CC94F' stroke-width='5' clip-path='url(%23ca-fruit)'/%3E%3Ccircle cx='32' cy='39.68' r='7.04' fill='%237A4A26'/%3E%3C/svg%3E">
 <link rel="icon" type="image/png" sizes="32x32" href="/california-eats/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/california-eats/apple-touch-icon.png">
+<link rel="preload" href="/california-eats/fonts/paytone-one-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="manifest" href="/california-eats/site.webmanifest">
-<style>
+<style>  @font-face { font-family: "Paytone One"; src: url("/california-eats/fonts/paytone-one-vietnamese.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB; }
+  @font-face { font-family: "Paytone One"; src: url("/california-eats/fonts/paytone-one-latin-ext.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  @font-face { font-family: "Paytone One"; src: url("/california-eats/fonts/paytone-one-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
   :root {
     --bg: #f8fafc; --surface: #fff; --surface2: #eef3f8; --rule: #dce3ec;
     --ink: #0e1b2c; --ink2: #283a52; --muted: #4a5a72;
     --blue: #003262; --blue2: #1a4b80; --sea: #5582b4; --seasoft: #e3ecf5;
     --gold: #fdb515; --goldsoft: #fee7b0; --poppy: #e35b1e;
     --radius: 16px;
-    --display: "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif;
+    --display: "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif; --head-font: "Paytone One", "Avenir Next Condensed", "HelveticaNeue-CondensedBold", "Arial Narrow", system-ui, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root { --bg: #0b1420; --surface: #111d2c; --surface2: #172638; --rule: #24364b; --ink: #edf2f8; --ink2: #ccd8e6; --muted: #a2b2c6; --blue: #9cc3ec; --blue2: #7fb0e3; --sea: #8cb6df; --seasoft: #16304a; }
@@ -51,15 +55,15 @@
   .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
   .band { display: block; width: 100%; height: 22px; margin-top: 8px; }
   header.site { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0 18px; border-bottom: 4px solid var(--gold); }
-  .logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font: 800 22px/1 var(--display); text-transform: uppercase; letter-spacing: .01em; color: var(--blue); text-decoration: none; }
+  .logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font: 400 22px/1 var(--head-font); letter-spacing: .01em; color: var(--blue); text-decoration: none; }
   header.site nav { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: flex-end; }
   header.site nav a { color: var(--ink2); text-decoration: none; font-size: 15px; }
   header.site nav a, footer nav a, nav.crumbs a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
   header.site nav a:hover { color: var(--blue); text-decoration: underline; }
-  h1, h2 { font-family: var(--display); font-weight: 800; color: var(--blue); letter-spacing: -.005em; }
-  h1 { font-size: clamp(36px, 7.5vw, 56px); line-height: 1.02; margin: 0 0 16px; text-transform: uppercase; text-wrap: balance; }
+  h1, h2 { font-family: var(--head-font); font-weight: 400; color: var(--blue); letter-spacing: -.005em; }
+  h1 { font-size: clamp(38px, 11.88vw, 56px); line-height: 1.08; margin: 0 0 16px; text-wrap: balance; }
   h1 .kicker { display: block; font: 700 15px/1.4 -apple-system, system-ui, sans-serif; letter-spacing: .06em; color: var(--muted); margin-bottom: 12px; }
-  h2 { font-size: 32px; line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
+  h2 { font-size: 31px; line-height: 1.1; margin: 0 0 10px; text-wrap: balance; }
   h3 { font-size: 18px; margin: 0; line-height: 1.3; }
   .lede { font-size: 19px; color: var(--ink2); margin: 0 0 26px; }
   .hero { padding: 44px 0 28px; }

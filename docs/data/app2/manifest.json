@@ -1,0 +1,68 @@
+{
+ "schema": 2,
+ "version": "2026-11-03.1",
+ "records_through": "2026-11-03",
+ "min_app_build": 1,
+ "files": {
+  "detail-bay": {
+   "path": "detail-bay-c103ca9201eb.json",
+   "sha256": "c103ca9201ebcd719c95f29e9633c06e9e31ac7fa6b30a819c094de33319cadc",
+   "bytes": 1261586
+  },
+  "detail-cc": {
+   "path": "detail-cc-15cc6746a6b9.json",
+   "sha256": "15cc6746a6b9a5482a8a699e47d0a9f4090ba33cde8468b31eb0125a89036c9c",
+   "bytes": 378321
+  },
+  "detail-cv": {
+   "path": "detail-cv-0b2a547a102b.json",
+   "sha256": "0b2a547a102bc3af9f48313dcc63b52ce2712cb2feb503ec15afe434c7b03d3f",
+   "bytes": 540386
+  },
+  "detail-ie": {
+   "path": "detail-ie-12f45520704a.json",
+   "sha256": "12f45520704af3f90cb14d774fbf82b7af8194b6366bb3febb8a22cfff8b5a60",
+   "bytes": 608488
+  },
+  "detail-la": {
+   "path": "detail-la-1d797231330c.json",
+   "sha256": "1d797231330c52bcf8a20d08fac5b1651f2f4b54d97f2836047a5945ba52dfa7",
+   "bytes": 1657962
+  },
+  "detail-north": {
+   "path": "detail-north-2f76ec660581.json",
+   "sha256": "2f76ec66058192fbb7cae3dbcfd7523ea675a6ca98213fab7d0845c411590379",
+   "bytes": 191201
+  },
+  "detail-oc": {
+   "path": "detail-oc-a809c0cb3580.json",
+   "sha256": "a809c0cb3580d03d174b3b100d6c4cee9f1a49f4c17df6208575580adc307047",
+   "bytes": 528277
+  },
+  "detail-sac": {
+   "path": "detail-sac-333bb5a1a3b1.json",
+   "sha256": "333bb5a1a3b1cbfeec08740f74f005cb2f467caf53b8d4229880992c5cfa4c46",
+   "bytes": 410145
+  },
+  "detail-sd": {
+   "path": "detail-sd-22fb0346c019.json",
+   "sha256": "22fb0346c019980acc1af5bd003649211f52dbbc661082e5ebf08441550af089",
+   "bytes": 595907
+  },
+  "places": {
+   "path": "places-1ec63bb322db.json",
+   "sha256": "1ec63bb322dbf8b36986a65141563b1e50319717d3e6c8cf36b6761e071291d3",
+   "bytes": 18323177
+  },
+  "state": {
+   "path": "state-b2f20e1c99c2.json",
+   "sha256": "b2f20e1c99c28ade1dc2f10fc6c41c2ec02cf3f412a33a46cb76d71d23abdb28",
+   "bytes": 22793
+  }
+ },
+ "counts": {
+  "places": 107553,
+  "restaurants": 103294,
+  "bytes": 24518243
+ }
+}

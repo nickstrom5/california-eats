@@ -2,10 +2,9 @@
 <html lang="en" data-base="/california-eats">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-7kve7kASmS0fewv9hJTgzsteVpnc/9lnXm0P4f263/k=' 'sha256-XfW65miMSFXjOO3n93lKOHgTsMdNDjk/M757SXeCAjw='; style-src 'sha256-/OCKI4ehzrnfC+DBN28b8us0aIlba5cHlUeabmqGi3I='; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-pJQ92Svj80SgNqSqnc7+u6zLMGXdwENJ3s1SS8yEiWM='; style-src 'sha256-oSJ2dFAUnNmYHiTW2poNSdfbRrQNKF7pMimlr28qAXk='; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <meta name="apple-itunes-app" content="app-id=APP_ID"> fill in once the App Store record exists -->
 <title>Search California Restaurants, Taquerías &amp; Dim Sum</title>
 <meta name="description" content="Find a California taquería, dim sum house or any of 103,294 restaurants by name, town, street, zip or dish, on a list or a map. Free, in your browser.">
 <link rel="canonical" href="https://nickstrom5.github.io/california-eats/explore/">
@@ -85,10 +84,6 @@
   .step { display: flex; gap: 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
   .step .n { flex: 0 0 32px; height: 32px; border-radius: 50%; background: var(--gold); color: #0e1b2c; font-weight: 800; display: grid; place-items: center; }
   .step p { margin: 4px 0 0; color: var(--ink2); }
-  .shots { display: flex; gap: 14px; overflow-x: auto; margin: 0 -20px; padding: 4px 20px 14px; scroll-snap-type: x proximity; list-style: none; }
-  .shots li { flex: 0 0 auto; width: 210px; scroll-snap-align: start; }
-  .shots img { display: block; width: 210px; height: auto; border-radius: 24px; border: 1px solid var(--rule); background: var(--surface2); }
-  .shots p { font-size: 14px; color: var(--muted); margin: 8px 2px 0; }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
   .card p { margin: 6px 0 0; color: var(--ink2); }
@@ -270,7 +265,7 @@
   <main id="main">
   <section class="ex-hero">
     <h1><span class="kicker">California Eats · on the web</span>Search California restaurants</h1>
-    <p class="sub">Look up any of 103,294 California restaurants, cafés and bars, or start from 363 hand-checked taquerías, 53 dim sum houses or the MICHELIN and James Beard list. It's the iPhone app's data in your browser, and what you save stays in this browser.</p>
+    <p class="sub">Look up any of 103,294 California restaurants, cafés and bars, or start from 363 hand-checked taquerías, 53 dim sum houses or the MICHELIN and James Beard list. What you save stays in this browser.</p>
   </section>
   <p id="ex-loading">Loading the restaurant list…</p>
   <noscript><p>The search needs JavaScript. The guides work without it: <a href="/california-eats/california-taquerias.html">california taquerías</a>, <a href="/california-eats/california-dim-sum.html">california dim sum</a>, <a href="/california-eats/california-burritos.html">mission &amp; california burritos</a>, <a href="/california-eats/california-fish-tacos.html">california fish tacos</a>, <a href="/california-eats/california-korean-bbq.html">california korean barbecue</a>, <a href="/california-eats/california-burger-stands.html">california burger stands</a>, <a href="/california-eats/california-wine-country-restaurants.html">wine-country restaurants</a>.</p></noscript>
@@ -306,7 +301,7 @@
   </div>
   </main>
 <script>
-// California Eats web app: the iPhone app's guides, search, filters, map and place details, in the browser.
+// California Eats web app: the guides, search, filters, map and place details, in the browser.
 // Same data as the app, split by scripts/make-site.py so the first load stays small: data/start.json (metadata and the ~860
 // hand-checked, honored and dated places: every guide but All restaurants and Inspections), data/places.json (everything else, list,
 // search and map columns; fetched when a view needs it), data/detail-<k>.json (ids, phones, websites, notes; one block of rows, fetched
@@ -707,7 +702,8 @@
     html += section("How we know it's here", kv("Listed as", TIER[p.t]) + kv("County", p.co)
       + kv("Serves alcohol", p.liq ? `${LIQT[p.liq]} (ABC on-sale license)` : "— (no on-sale license matched)")
       + (p.ch >= 2 ? kv("Locations in California", p.ch.toLocaleString()) : "") + `<p class="ex-fine">${esc(howWeKnow(p))}</p>`);
-    html += `<p class="ex-app">Save it on your phone: <a class="store-btn" href="${BASE}/#download"><span class="store-label">Get the free iPhone app</span></a></p>`;
+    // the app is Eats Ranked, which carries this guide; data-applive is set by scripts/make-site.py (APP_LIVE) once it's on the App Store
+    html += `<p class="ex-app">Also in <a href="https://eatsranked.com/#app" rel="noopener">Eats Ranked for iPhone and iPad</a>, ${$("#ex-app").dataset.applive ? "free on" : "coming soon to"} the App Store.</p>`;
     const panel = $("#ex-panel");
     // redrawn when its details arrive: keep keyboard focus where it was (rebuilding the panel would drop it on the page)
     const had = !first && panel.contains(document.activeElement) ? document.activeElement.id || "ex-close" : null;
@@ -1111,30 +1107,21 @@
 </script>
   <footer>
     <nav aria-label="Footer">
-      <a href="/california-eats/">California Eats app</a>
+      <a href="/california-eats/">California Eats home</a>
       <a href="/california-eats/explore/">Search California restaurants</a>
       <a href="/california-eats/california-taquerias.html">California taquerías</a><a href="/california-eats/california-dim-sum.html">California dim sum</a><a href="/california-eats/california-burritos.html">Mission &amp; California burritos</a><a href="/california-eats/california-fish-tacos.html">California fish tacos</a><a href="/california-eats/california-korean-bbq.html">California Korean barbecue</a><a href="/california-eats/california-burger-stands.html">California burger stands</a><a href="/california-eats/california-wine-country-restaurants.html">Wine-country restaurants</a>
       <a href="/california-eats/california-michelin-james-beard.html">MICHELIN &amp; James Beard</a>
+      <a href="https://eatsranked.com/#app" rel="noopener">Eats Ranked app</a>
       <a href="/california-eats/privacy.html">Privacy policy</a>
       <a href="/california-eats/terms.html">Terms of use</a>
       <a href="mailto:nick@eatsranked.com">Email us</a>
     </nav>
     <p>Place data: hand-checked research by California Eats (October 2026); Overture Maps Foundation (CDLA Permissive 2.0); County of Los Angeles, City and County of San Francisco, Sacramento County and San Diego County food-facility and inspection records; California Department of Alcoholic Beverage Control license data. Not affiliated with or endorsed by any restaurant, chain or government agency. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. Places open and close, so check before you go.</p>
-    <p>© 2026 California Eats. Part of <a href="https://eatsranked.com/">Eats Ranked</a>, restaurant apps state by state.</p>
+    <p>© 2026 California Eats. Part of <a href="https://eatsranked.com/">Eats Ranked</a>, free restaurant guides state by state.</p>
     <p>Created by <a href="https://work-with-nick.com/" rel="author">Nick Soderstrom</a></p>
   </footer>
 </div>
 <div id="ex-scrim" class="ex-scrim" hidden></div>
 <aside id="ex-panel" class="ex-panel" role="dialog" aria-modal="true" aria-labelledby="ex-pname" hidden></aside>
-<script>
-  // Once the App Store listing exists, paste its URL here (looks like https://apps.apple.com/app/id123456789).
-  // Every button switches from "Ask for early access" to "Download on the App Store" automatically.
-  var APP_STORE_URL = "";
-  if (APP_STORE_URL) {
-    document.querySelectorAll(".store-btn").forEach(function (b) { b.href = APP_STORE_URL; b.rel = "noopener"; });
-    document.querySelectorAll(".store-label").forEach(function (l) { l.textContent = "Download on the App Store"; });
-    document.querySelectorAll(".store-note").forEach(function (n) { n.textContent = "Free for iPhone and iPad."; });
-  }
-</script>
 </body>
 </html>

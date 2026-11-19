@@ -18,7 +18,6 @@ import math
 import os
 import re
 import urllib.parse
-import struct
 from collections import Counter, defaultdict
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -63,8 +62,18 @@ def region_file(rf):
 TODAY = IDX["generated"][:10]
 # the day the site's own text last changed (bump it with the copy, the privacy policy or the terms); pages and the sitemap show the later
 # of this and the data's date
-SITE_UPDATED = "2026-10-12"
-PRIVACY_UPDATED = "2026-10-26"   # the privacy policy alone: the app's data updates (OTA-DATA.md)
+SITE_UPDATED = "2026-11-19"
+PRIVACY_UPDATED = "2026-11-19"  # the privacy policy alone (11-19: the app is Eats Ranked, with its own policy on the hub)
+# The app. This site is the California guide on the web. On iPhone and iPad the same guide is inside Eats Ranked, the one app that
+# carries the state guides; there is no California-only app. Pages link the hub's app section, which shows the App Store badge once
+# there is one, so nothing here links the App Store or needs Apple's artwork. Until Eats Ranked is approved the copy says
+# "coming soon"; on the day it is, set APP_LIVE = True and rebuild. Never "download" or "get" before then.
+APP_URL = "https://eatsranked.com/#app"
+APP_PRIVACY_URL = "https://eatsranked.com/privacy.html"
+APP_LIVE = False
+APP_WHEN = "free on the App Store" if APP_LIVE else "coming soon to the App Store"
+APP_LINK = f'<a href="{APP_URL}" rel="noopener">Eats Ranked for iPhone and iPad</a>'
+APP_NOTE = f"Free website. Also in {APP_LINK}, {APP_WHEN}."      # the line under a page's opening paragraph
 LASTMOD = max(TODAY, SITE_UPDATED)
 
 
@@ -155,13 +164,6 @@ def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")
 
 
-def png_size(path):
-    with open(path, "rb") as f:
-        head = f.read(24)
-    return struct.unpack(">II", head[16:24])
-
-
-APPLE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.5 2-3.7 2.1-3.8-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.1 2.5-1.8 3.1-.5 7.6 1.3 10.1.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.3.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9 0 0-2.7-1-2.9-4zM14 5.2c.7-.8 1.2-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3.1 1.1.1 2.3-.6 3-1.4z"/></svg>'
 # the app icon in miniature (scripts/make-brand.swift's avocado at 64 units, Eats Ranked style 2026-10-09): a flat upright avocado
 # half on Pacific blue: skin rim outside the outline, bright-green ring clipped inside it, pale flesh, one flat pit
 AVO = ("M32 9.96 C40.78 9.96 41.44 21.73 45.35 27.59 C49.96 34.51 49.56 36.49 49.56 41.28 C49.56 48.43 41.83 54.04 32 54.04 "
@@ -226,10 +228,6 @@ CSS = """
   .step { display: flex; gap: 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
   .step .n { flex: 0 0 32px; height: 32px; border-radius: 50%; background: var(--gold); color: #0e1b2c; font-weight: 800; display: grid; place-items: center; }
   .step p { margin: 4px 0 0; color: var(--ink2); }
-  .shots { display: flex; gap: 14px; overflow-x: auto; margin: 0 -20px; padding: 4px 20px 14px; scroll-snap-type: x proximity; list-style: none; }
-  .shots li { flex: 0 0 auto; width: 210px; scroll-snap-align: start; }
-  .shots img { display: block; width: 210px; height: auto; border-radius: 24px; border: 1px solid var(--rule); background: var(--surface2); }
-  .shots p { font-size: 14px; color: var(--muted); margin: 8px 2px 0; }
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; }
   .card p { margin: 6px 0 0; color: var(--ink2); }
@@ -332,11 +330,6 @@ def crumbs(trail):
     return f'<nav class="crumbs" aria-label="Breadcrumb"><ol>{items}</ol></nav>', ld
 
 
-def store_button(label="Ask for early access"):
-    return (f'<a class="btn store-btn" href="mailto:{EMAIL}?subject=California%20Eats%20early%20access&amp;body=Send%20me%20the%20TestFlight%20link.">'
-            f'{APPLE}<span class="store-label">{label}</span></a>')
-
-
 GUIDE_PAGES = [   # (bit, page, nav label, guide title, noun, nouns, list, blurb)
     ("taqueria", "california-taquerias.html", "Taquerías", "California taquerías", "taquería", "taquerías", TAQ,
      "Taquerías and taco shops with a fixed address, from East LA and the Mission to Fresno and San Diego, with the tacos on each menu."),
@@ -373,7 +366,6 @@ def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <meta name="apple-itunes-app" content="app-id=APP_ID"> fill in once the App Store record exists -->
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{url}">
@@ -412,30 +404,21 @@ def page(path, title, desc, body, lds=(), robots="index,follow,max-image-preview
 {body}
   <footer>
     <nav aria-label="Footer">
-      <a href="/">{BRAND} app</a>
+      <a href="/">{BRAND} home</a>
       <a href="/explore/">Search California restaurants</a>
       {"".join(f'<a href="/{p}">{e(t)}</a>' for _, p, _, t, *_ in GUIDE_PAGES)}
       <a href="/california-michelin-james-beard.html">MICHELIN &amp; James Beard</a>
+      <a href="{APP_URL}" rel="noopener">Eats Ranked app</a>
       <a href="/privacy.html">Privacy policy</a>
       <a href="/terms.html">Terms of use</a>
       <a href="mailto:{EMAIL}">Email us</a>
     </nav>
     <p>Place data: hand-checked research by {BRAND} ({CHECKED}); Overture Maps Foundation (CDLA Permissive 2.0); County of Los Angeles, City and County of San Francisco, Sacramento County and San Diego County food-facility and inspection records; California Department of Alcoholic Beverage Control license data. Not affiliated with or endorsed by any restaurant, chain or government agency. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. Places open and close, so check before you go.</p>
-    <p>© {TODAY[:4]} {BRAND}. Part of <a href="https://eatsranked.com/">Eats Ranked</a>, restaurant apps state by state.</p>
+    <p>© {TODAY[:4]} {BRAND}. Part of <a href="https://eatsranked.com/">Eats Ranked</a>, free restaurant guides state by state.</p>
     <p>Created by <a href="https://work-with-nick.com/" rel="author">Nick Soderstrom</a></p>
   </footer>
 </div>
-{after}<script>
-  // Once the App Store listing exists, paste its URL here (looks like https://apps.apple.com/app/id123456789).
-  // Every button switches from "Ask for early access" to "Download on the App Store" automatically.
-  var APP_STORE_URL = "";
-  if (APP_STORE_URL) {{
-    document.querySelectorAll(".store-btn").forEach(function (b) {{ b.href = APP_STORE_URL; b.rel = "noopener"; }});
-    document.querySelectorAll(".store-label").forEach(function (l) {{ l.textContent = "Download on the App Store"; }});
-    document.querySelectorAll(".store-note").forEach(function (n) {{ n.textContent = "Free for iPhone and iPad."; }});
-  }}
-</script>
-</body>
+{after}</body>
 </html>
 """
     if path == "404.html" or "noindex" in robots:   # a 404 is served at any URL; a noindexed page names no address for search either
@@ -570,7 +553,7 @@ def city_links(skip=None):
 
 
 def guide_cta():
-    return f'<div class="cta-row">{store_button()}<span class="pill store-note">Free for iPhone and iPad, arriving on the App Store soon.</span></div>'
+    return f'<div class="cta-row"><span class="pill">{APP_NOTE}</span></div>'
 
 
 written, noindexed = [], []    # sitemap pages; pages kept out of search (thin towns)
@@ -578,17 +561,17 @@ written, noindexed = [], []    # sitemap pages; pages kept out of search (thin t
 # ---------------------------------------------------------------- the hand-checked guides
 HOW = (f"Our method: for every place we found a 2025 or 2026 source of its own, such as the menu on its website, an ordering page it runs, or a "
        f"dated story in the local press, and read it in {CHECKED}. A listing that only carries the word in its name, or whose website has gone "
-       "dark, stays in the app's directory and off this page. No review site fed this list, and it runs by region and town, never by score.")
+       "dark, stays in the directory and off this page. No review site fed this list, and it runs by region and town, never by score.")
 for bit, path, lbl, gtitle, noun, nouns, places, blurb in GUIDE_PAGES:
     url = f"{DOMAIN}/{path}"
     n = len(places)
     regions_n = len(by_region(places))
     title = fit([f"{gtitle}: {n} Checked Places | {BRAND}", f"{gtitle}: {n} Hand-Checked Places", f"{gtitle}: {n} Places Checked Open",
-                 f"{gtitle} Guide | {BRAND}", f"{gtitle}, Checked Open | {BRAND} App", f"{gtitle}: A Hand-Checked Guide | California Eats"], 50, 60)
+                 f"{gtitle} Guide | {BRAND}", f"{gtitle}, Checked Open | {BRAND}", f"{gtitle}: A Hand-Checked Guide | California Eats"], 50, 60)
     desc = fit([f"{n} {nouns} across California, each checked open in {CHECKED} against a 2025 or 2026 source, with what they serve, by region and town. Free, no ads.",
-                f"{n} {nouns} in California, each checked open in {CHECKED}, listed by region and town with what's on the menu. Free app, no ads, no ratings.",
+                f"{n} {nouns} in California, each checked open in {CHECKED}, listed by region and town with what's on the menu. Free, with no ads or ratings.",
                 f"{n} California {nouns}, checked open in {CHECKED} and listed by region and town with what they serve. Free, no ratings, no ads.",
-                f"{n} {nouns} statewide, checked open in {CHECKED} with what they serve. Free California guide for iPhone, iPad and the web, no ratings."], 140, 160)
+                f"{n} {nouns} statewide, checked open in {CHECKED} with what they serve. Free California guide on the web, no login, no ads, no ratings."], 140, 160)
     toc, secs = region_sections(places, noun, nouns)
     dish = Counter()
     for p in places:
@@ -610,7 +593,7 @@ for bit, path, lbl, gtitle, noun, nouns, places, blurb in GUIDE_PAGES:
     <h2>About this list</h2>
     {f"<p>What's on the menus, most often: {e(top)}. Each place lists what its own menu shows.</p>" if top else ""}
     <p>{HOW}</p>
-    <p>The app sorts the same {e(nouns)} by how far each one is from you, and tapping one brings up its Apple Maps card, hours and photos included.</p>
+    <p>The <a href="/explore/">web search</a> sorts the same {e(nouns)} by how far each one is from you, and each links to Apple Maps for hours and photos.</p>
     <h2>Jump to a region</h2>
     {toc}
     <p class="fine">City pages: {", ".join(f'<a href="{city_url(c)}">{e(c)}</a>' for c in CITY_PAGES)}.</p>
@@ -641,7 +624,7 @@ body = f"""{nav}
   <main id="main">
   <section class="hero">
     <h1><span class="kicker">{BRAND} · honors are facts, not ratings</span>MICHELIN &amp; James Beard in California</h1>
-    <p class="lede">The MICHELIN Guide California 2026 selection and James Beard Award honors for California restaurants, as the guide and the Foundation announced them. {len(HON)} honored places are in the app, each with its own address and, where it has one, its official county inspection result.</p>
+    <p class="lede">The MICHELIN Guide California 2026 selection and James Beard Award honors for California restaurants, as the guide and the Foundation announced them. {len(HON)} honored places are in the guide, each with its own address and, where it has one, its official county inspection result.</p>
     {guide_cta()}
   </section>
   <section id="about">
@@ -753,7 +736,7 @@ for c in CITY_PAGES:
                    f"{c} {tw[0]}, {tw[1]} & More | {BRAND}", f"{c}, CA {tw[0]} & {tw[1]} | {BRAND}"]
     if tw:
         titles += [f"{c} {tw[0]} & Restaurant Guide | {BRAND}", f"{c}, CA Restaurants & {tw[0]} | {BRAND}",
-                   f"{c} Restaurant Guide: {tw[0]} & More | {BRAND}", f"{c} {tw[0]} & Restaurants | {BRAND} App"]
+                   f"{c} Restaurant Guide: {tw[0]} & More | {BRAND}", f"{c} {tw[0]} & Restaurants | {BRAND}"]
     titles += [f"{c}, California Restaurant Guide | {BRAND}", f"{c} Restaurants, Cafés & Bars | {BRAND}", f"{c} Restaurants | {BRAND}: Free Guide"]
     title = fit(titles, 50, 60)
     opts = []
@@ -763,27 +746,27 @@ for c in CITY_PAGES:
         what = " and ".join([", ".join(gl[:k][:-1]), gl[:k][-1]] if k > 1 else gl[:k])
         cap = what[0].upper() + what[1:]
         if honored:
-            opts += [f"Hand-checked {what} near {c}, CA, checked open in {CHECKED}, plus MICHELIN and James Beard honors and {n_town:,} local restaurants in a free app.",
-                     f"{c}, CA: hand-checked {what}, local MICHELIN and James Beard honors and {n_town:,} restaurants in the free {BRAND} app.",
+            opts += [f"Hand-checked {what} near {c}, CA, checked open in {CHECKED}, plus MICHELIN and James Beard honors and {n_town:,} local restaurants on a free map.",
+                     f"{c}, CA: hand-checked {what}, local MICHELIN and James Beard honors and {n_town:,} restaurants on the free {BRAND} map.",
                      f"{cap} in and near {c}, checked open in {CHECKED}, with local MICHELIN and James Beard honors. Free California restaurant guide.",
-                     f"{cap} near {c}, CA, checked in {CHECKED}, plus local MICHELIN and James Beard honors. A free iPhone, iPad and web guide."]
+                     f"{cap} near {c}, CA, checked in {CHECKED}, plus local MICHELIN and James Beard honors. A free guide on the web, no login."]
         else:
-            opts += [f"Hand-checked {what} in and near {c}, CA, checked open in {CHECKED}, plus {n_town:,} restaurants in the free {BRAND} app for iPhone and iPad.",
-                     f"{cap} in and near {c}, California, checked open in {CHECKED}, with the {n_town:,} restaurants in town. Free iPhone and iPad app, no ads.",
-                     f"{c}, California: hand-checked {what}, plus {n_town:,} restaurants, cafés and bars in the free {BRAND} app for iPhone, iPad and the web.",
-                     f"The {n_town:,} restaurants in {c}, California, with hand-checked {what} nearby, checked open in {CHECKED}. A free guide for iPhone, iPad and the web."]
+            opts += [f"Hand-checked {what} in and near {c}, CA, checked open in {CHECKED}, plus {n_town:,} restaurants on the free {BRAND} map, with no ads at all.",
+                     f"{cap} in and near {c}, California, checked open in {CHECKED}, with the {n_town:,} restaurants in town. Free website, no ads, no sign-up.",
+                     f"{c}, California: hand-checked {what}, plus {n_town:,} restaurants, cafés and bars on the free {BRAND} map on the web, no ads, no login.",
+                     f"The {n_town:,} restaurants in {c}, California, with hand-checked {what} nearby, checked open in {CHECKED}. A free guide on the web, no ads, no login."]
     if not gl:
         hon = ", MICHELIN and James Beard honors" if honored else ""
-        opts += [f"The {n_town:,} restaurants, cafés and bars in {c}, California{hon}, from open map data and county records, sorted by distance in the free {BRAND} app.",
-                 f"{c}, California: {n_town:,} restaurants, cafés and bars{hon} from open map data and county records, in a free iPhone, iPad and web guide.",
-                 f"{c}, California: {n_town:,} restaurants, cafés and bars from open map data and county records, sorted by distance in a free iPhone and iPad app."]
+        opts += [f"The {n_town:,} restaurants, cafés and bars in {c}, California{hon}, from open map data and county records, sorted by distance on the free {BRAND} map.",
+                 f"{c}, California: {n_town:,} restaurants, cafés and bars{hon} from open map data and county records, in a free guide on the web, no login.",
+                 f"{c}, California: {n_town:,} restaurants, cafés and bars from open map data and county records, sorted by distance in a free web guide, no login."]
     desc = fit(opts, 140, 160)
     nav, bc = crumbs([("Home", "/"), ("Cities", "/#cities"), (c, "/" + path)])
     head = f"""{nav}
   <main id="main">
   <section class="hero">
     <h1><span class="kicker">{BRAND} · {e(c)}, California</span>{e(c)} restaurants</h1>
-    <p class="lede">{" · ".join(f"{counts[l]} {COUNT_NOUN[l][counts[l] != 1]}" for l, *_ in GUIDE_SETS if counts.get(l))}{" in and around " + e(c) + ", each checked open in " + CHECKED + "." if any(counts.values()) else ""} In the app, {e(c)} has {n_town:,} restaurants, cafés and bars, nearest first.{jur_line}</p>
+    <p class="lede">{" · ".join(f"{counts[l]} {COUNT_NOUN[l][counts[l] != 1]}" for l, *_ in GUIDE_SETS if counts.get(l))}{" in and around " + e(c) + ", each checked open in " + CHECKED + "." if any(counts.values()) else ""} In the web search, {e(c)} has {n_town:,} restaurants, cafés and bars, nearest first once you share your location.{jur_line}</p>
     {guide_cta()}
   </section>"""
     body = head + "\n".join(secs) + f'<section id="more"><h2>More California cities</h2>{city_links(skip=c)}</section>\n  </main>'
@@ -923,11 +906,11 @@ body = f"""{nav}
   <main id="main">
   <section class="ex-hero">
     <h1><span class="kicker">{BRAND} · on the web</span>Search California restaurants</h1>
-    <p class="sub">Look up any of {N_REST:,} California restaurants, cafés and bars, or start from {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses or the MICHELIN and James Beard list. It's the iPhone app's data in your browser, and what you save stays in this browser.</p>
+    <p class="sub">Look up any of {N_REST:,} California restaurants, cafés and bars, or start from {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses or the MICHELIN and James Beard list. What you save stays in this browser.</p>
   </section>
   <p id="ex-loading">Loading the restaurant list…</p>
   <noscript><p>The search needs JavaScript. The guides work without it: {", ".join(f'<a href="/{p}">{e(t.lower())}</a>' for _, p, _, t, *_ in GUIDE_PAGES)}.</p></noscript>
-  <div id="ex-app" hidden>
+  <div id="ex-app" hidden{' data-applive="1"' if APP_LIVE else ""}>
     <div class="ex-controls">
       <div class="ex-guides" role="group" aria-label="Guides">{guide_buttons}</div>
       <div class="ex-row1">
@@ -973,66 +956,36 @@ explore_after = """<div id="ex-scrim" class="ex-scrim" hidden></div>
 written.append(page("explore/index.html", title, desc, body, [webapp_ld, bc], extra_css=EXPLORE_CSS, after=explore_after))
 
 # ---------------------------------------------------------------- landing page
-shots = [("home", "California Eats home screen: guides for taquerías, dim sum, burritos, fish tacos, Korean barbecue, burger stands, wine country, MICHELIN and James Beard honors, the oldest places and official inspection results, with a search box for every restaurant in the state.", "Every guide, one screen."),
-         ("taquerias", "Taquerías list in California Eats, sorted by distance from downtown Los Angeles, with what each one serves.", "Taquerías, closest first."),
-         ("detail", "A taquería's page in California Eats: address, a button for ratings, hours and photos in Apple Maps, what it serves and LA County's official inspection grade.", "A place's page, with its county result and Apple Maps."),
-         ("map", "California Eats map with pins for hand-checked taquerías.", "Hand-checked places on the map."),
-         ("honors", "MICHELIN & James Beard list in California Eats, with each restaurant's distinction.", "Honors, listed as facts.")]
-shot_html = []
-for i, (name, alt, cap) in enumerate(shots):
-    png = f"{DOCS}/img/screen-{name}.png"
-    if not os.path.exists(png):
-        continue
-    w, h = png_size(png)
-    lazy = ' loading="lazy"' if i > 1 else ""
-    webp = f'<source srcset="/img/screen-{name}.webp" type="image/webp">' if os.path.exists(f"{DOCS}/img/screen-{name}.webp") else ""
-    shot_html.append(f'<li><picture>{webp}<img src="/img/screen-{name}.png" alt="{e(alt)}" width="{w}" height="{h}"{lazy} decoding="async"></picture><p>{e(cap)}</p></li>')
-shots_section = f"""
-  <section id="screens">
-    <h2>Inside the app</h2>
-    <ul class="shots" tabindex="0" aria-label="California Eats app screenshots">
-      {"".join(shot_html)}
-    </ul>
-  </section>
-""" if shot_html else ""
 jnames = " and ".join(j["name"] for j in JURS) if len(JURS) <= 2 else ", ".join(j["name"] for j in JURS[:-1]) + " and " + JURS[-1]["name"]
 LAC = next((j for j in JURS if j["id"] == "lac"), None)
 faq = [
-    ("Does California Eats cost anything?", "No. Downloading and using it is free: there are no ads, nothing to buy inside the app and no sign-up."),
-    ("How did the taquerías and dim sum houses make the list?", f"By hand, in {CHECKED}. Every taquería, dim sum house, burrito shop, fish taco spot, Korean barbecue restaurant, burger stand and wine-country restaurant on a list has a 2025 or 2026 source of its own: a menu page, an ordering page it runs, or a dated local news story. The rest of the app's {N_REST:,} restaurants, cafés and bars come from Overture Maps' open place data, county food-facility records and California ABC license data."),
-    ("What do LA County's A, B and C restaurant grades mean?", "They're Los Angeles County's own letter grades from a restaurant's latest inspection: A for a score of 90 to 100, B for 80 to 89, C for 70 to 79. Seven cities that never adopted grade cards show the score alone, and Pasadena, Long Beach and Vernon run their own health departments, so LA County's grades don't cover them. The app shows each grade exactly as the county recorded it."),
-    ("Why is there no health grade for San Diego restaurants?", f"San Diego County publishes its grades only through a search page, not as a data file, so the app doesn't show them; it uses the county's permit list to measure how often map listings match a permitted restaurant. Inspection results in the app come from {jnames}, each on its own scale and never compared with another county's."),
-    ("Where do the ratings come from?", "Not from us: California Eats gives no ratings of its own, and no list in it is ordered by ratings. Opening a place shows Apple Maps' own card inside the app, with Apple's ratings, hours, photos and directions. MICHELIN stars and James Beard awards appear as facts, the way MICHELIN's 2026 California selection and the James Beard Foundation announced them, and a finalist is never called a winner."),
-    ("Do I have to share my location?", "No. It's only used to put the nearest places first, it stays on your iPhone or iPad, and it never reaches us. Guides, search and the map all work with it off."),
+    ("Does California Eats cost anything?", f"No. It's free: there are no ads, nothing to buy and no sign-up. It's a website, so it works in any browser. The same guide is in Eats Ranked for iPhone and iPad, {APP_WHEN}."),
+    ("How did the taquerías and dim sum houses make the list?", f"By hand, in {CHECKED}. Every taquería, dim sum house, burrito shop, fish taco spot, Korean barbecue restaurant, burger stand and wine-country restaurant on a list has a 2025 or 2026 source of its own: a menu page, an ordering page it runs, or a dated local news story. The rest of the {N_REST:,} restaurants, cafés and bars come from Overture Maps' open place data, county food-facility records and California ABC license data."),
+    ("What do LA County's A, B and C restaurant grades mean?", "They're Los Angeles County's own letter grades from a restaurant's latest inspection: A for a score of 90 to 100, B for 80 to 89, C for 70 to 79. Seven cities that never adopted grade cards show the score alone, and Pasadena, Long Beach and Vernon run their own health departments, so LA County's grades don't cover them. This site shows each grade exactly as the county recorded it."),
+    ("Why is there no health grade for San Diego restaurants?", f"San Diego County publishes its grades only through a search page, not as a data file, so this site doesn't show them; it uses the county's permit list to measure how often map listings match a permitted restaurant. Inspection results here come from {jnames}, each on its own scale and never compared with another county's."),
+    ("Where do the ratings come from?", "Not from us: California Eats gives no ratings of its own, and no list in it is ordered by ratings. In the web search, each place links to Apple Maps for Apple's ratings, hours, photos and directions. MICHELIN stars and James Beard awards appear as facts, the way MICHELIN's 2026 California selection and the James Beard Foundation announced them, and a finalist is never called a winner."),
+    ("Do I have to share my location?", "No. It's only used to put the nearest places first, it stays in your browser, and it never reaches us. Guides, search and the map all work with it off."),
     ("A taquería closed, or a place is missing. How do I report it?", f"Write to {EMAIL} with the place's name and town, and the fix goes into the next update."),
-    ("Will there be an Android app?", f"Not for now: California Eats is built for iPhone and iPad. On an Android phone, the web search on this site works in the browser, and if you'd use an Android app, say so at {EMAIL}."),
+    ("Is California in the Eats Ranked app?", f"Yes. Eats Ranked for iPhone and iPad is one free app with the state guides inside, California among them, and it is {APP_WHEN}. On any phone or computer, the web search on this site has the same guides."),
 ]
 assert LAC is None or LAC["scale"] == ["A", "B", "C"], "the LA County answer describes an A/B/C scale"
 faq_html = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in faq)
 faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "@id": f"{DOMAIN}/#faq",
           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]}
-app_ld = {"@context": "https://schema.org", "@graph": [
-    {"@type": "MobileApplication", "@id": f"{DOMAIN}/#app", "name": "California Eats: Restaurants",
-     "alternateName": ["California Eats", "CA Eats", "California Eats: Taquería & Dim Sum Guide"],
-     "description": f"A free guide to {N_REST:,} California restaurants, with hand-checked taquerías, dim sum, burritos, fish tacos, Korean barbecue, burger stands and wine-country dining, MICHELIN and James Beard honors, and official county inspection results.",
-     "url": f"{DOMAIN}/", "image": f"{DOMAIN}/og.png", "operatingSystem": "iOS, iPadOS", "applicationCategory": "TravelApplication",
-     "applicationSubCategory": "Food & Drink", "inLanguage": "en", "publisher": {"@id": f"{DOMAIN}/#org"},
-     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "free"}},
+site_ld = {"@context": "https://schema.org", "@graph": [
     {"@type": "Organization", "@id": f"{DOMAIN}/#org", "name": BRAND, "url": f"{DOMAIN}/",
      "logo": {"@type": "ImageObject", "url": f"{DOMAIN}/icon-512.png", "width": 512, "height": 512}, "email": EMAIL,
      "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": EMAIL, "availableLanguage": "en"},
      # the Eats Ranked hub lists this site as a subOrganization; say so from this side too (Wisconsin's wording, wi-eats a6d63a5)
      "parentOrganization": {"@type": "Organization", "@id": "https://eatsranked.com/#organization", "name": "Eats Ranked", "url": "https://eatsranked.com/"}},
-    {"@type": "WebSite", "@id": f"{DOMAIN}/#website", "name": BRAND, "alternateName": ["CA Eats", "California Eats app"], "url": f"{DOMAIN}/",
+    {"@type": "WebSite", "@id": f"{DOMAIN}/#website", "name": BRAND, "alternateName": ["CA Eats"], "url": f"{DOMAIN}/",
+     "description": f"A free guide to {N_REST:,} California restaurants, with hand-checked taquerías, dim sum, burritos, fish tacos, Korean barbecue, burger stands and wine-country dining, MICHELIN and James Beard honors, and official county inspection results.",
      "inLanguage": "en", "publisher": {"@id": f"{DOMAIN}/#org"}}]}
-if shot_html:
-    app_ld["@graph"][0]["screenshot"] = f"{DOMAIN}/img/screen-home.png"
-title = "California Eats: Taquería, Dim Sum & Restaurant App for CA"
-desc = fit([f"Taquerías, dim sum and burritos checked by hand, plus {N_REST:,} California restaurants, county inspection results and MICHELIN stars. Free for iPhone and iPad.",
-            f"Hand-checked taquerías and dim sum, {N_REST:,} California restaurants, LA County grades and MICHELIN stars, in a free iPhone and iPad app with no ads.",
-            f"Free iPhone and iPad guide to {N_REST:,} California restaurants, with {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses and MICHELIN honors.",
-            f"Free iPhone and iPad guide to {N_REST:,} California restaurants, with hand-checked taquerías, dim sum, burritos and MICHELIN and James Beard honors.",
-            f"Free iPhone and iPad guide to {N_REST:,} California restaurants, with hand-checked taquerías and dim sum, MICHELIN stars and inspection results."], 140, 160)
+title = "California Eats: Taquería, Dim Sum & Restaurant Guide for CA"
+desc = fit([f"Taquerías, dim sum and burritos checked by hand, plus {N_REST:,} California restaurants, county inspection results and MICHELIN stars. Free on the web.",
+            f"Hand-checked taquerías and dim sum, {N_REST:,} California restaurants, LA County grades and MICHELIN stars, in a free guide on the web with no ads.",
+            f"A free guide to {N_REST:,} California restaurants, with {len(TAQ)} hand-checked taquerías, {len(DIM)} dim sum houses and MICHELIN and James Beard honors.",
+            f"A free guide to {N_REST:,} California restaurants, with hand-checked taquerías, dim sum, burritos and MICHELIN and James Beard honors, on the web."], 140, 160)
 guide_cards = "".join(f'<a class="card{" lead" if i == 0 else ""}" href="/{p_}"><h3>{e(t)}</h3><p>{len(ps)} {e(nouns if len(ps) != 1 else noun)}, checked open.</p></a>'
                       for i, (_, p_, _, t, noun, nouns, ps, _) in enumerate(GUIDE_PAGES))
 guide_cards += f'<a class="card" href="/california-michelin-james-beard.html"><h3>MICHELIN &amp; James Beard</h3><p>{len(stars)} starred restaurants, {len(bibs)} Bib Gourmands and James Beard honorees.</p></a>'
@@ -1041,10 +994,10 @@ if OLD:
 city_cards = "".join(f'<li><a href="{city_url(c)}">{e(c)}</a></li>' for c in CITY_PAGES)
 body = f"""  <main id="main">
   <section class="hero">
-    <h1><span class="kicker">{BRAND}: the {e(TAGLINE.lower())} for iPhone and iPad</span>California's restaurants, starting with the taquería</h1>
+    <h1><span class="kicker">{BRAND}: the {e(TAGLINE.lower())}</span>California's restaurants, starting with the taquería</h1>
     <p class="lede">Al pastor, har gow, a carne asada burrito after the beach: {BRAND} starts from what you're hungry for. It puts {len(TAQ)} taquerías and {len(DIM)} dim sum houses we checked by hand next to {N_REST:,} restaurants, cafés and bars in {N_TOWNS:,} California towns, with MICHELIN and James Beard honors and the inspection results {jnames} publish.</p>
-    <div class="cta-row">{store_button()}<a class="btn btn-ghost" href="/explore/">Search on the web</a><span class="pill store-note">Free on iPhone and iPad soon, with no ads and no sign-up.</span></div>
-    <ul class="stats" role="list" aria-label="What's in the app">
+    <div class="cta-row"><a class="btn" href="/explore/">Search California restaurants</a><span class="pill">Free, with no ads and no sign-up. Also in {APP_LINK}, {APP_WHEN}.</span></div>
+    <ul class="stats" role="list" aria-label="What's in the guide">
       <li><b>{len(TAQ)}</b><span>taquerías</span></li>
       <li><b>{len(DIM)}</b><span>dim sum houses</span></li>
       <li><b>{len(stars)}</b><span>MICHELIN-starred</span></li>
@@ -1054,7 +1007,7 @@ body = f"""  <main id="main">
 
   <section id="what">
     <h2>Built around how California eats</h2>
-    <p class="sub">{BRAND} begins with the food people here plan a day around: al pastor and carnitas, Sunday dim sum, a foil-wrapped burrito, Baja fish tacos, galbi on a tabletop grill, a walk-up burger stand, and dining rooms that have been open for generations. Those lists were checked by hand in {CHECKED}, and nothing in them is sorted by stars. Where {jnames} publish inspection results, a place shows its county's latest one, and every place opens its own Apple Maps card for ratings, hours and photos.</p>
+    <p class="sub">{BRAND} begins with the food people here plan a day around: al pastor and carnitas, Sunday dim sum, a foil-wrapped burrito, Baja fish tacos, galbi on a tabletop grill, a walk-up burger stand, and dining rooms that have been open for generations. Those lists were checked by hand in {CHECKED}, and nothing in them is sorted by stars. Where {jnames} publish inspection results, a place shows its county's latest one, and in the web search every place links to Apple Maps for ratings, hours and photos.</p>
   </section>
 
   <section id="how">
@@ -1065,10 +1018,9 @@ body = f"""  <main id="main">
       <li class="step"><div class="n" aria-hidden="true">3</div><div><h3>Head out.</h3><p>Open the place's Apple Maps card for hours and photos, call ahead, get directions, or save it for the weekend.</p></div></li>
     </ol>
   </section>
-{shots_section}
   <section id="guides">
     <h2>The hand-checked lists</h2>
-    <p class="sub">Each one is on the web too. The app adds distance, the map and saved places.</p>
+    <p class="sub">Each one has its own page here, and the web search adds distance, the map and saved places.</p>
     <div class="grid2">{guide_cards}</div>
   </section>
 
@@ -1080,12 +1032,12 @@ body = f"""  <main id="main">
 
   <section id="pricing">
     <h2>What it costs: nothing</h2>
-    <p class="sub">There's no subscription, no ad, nothing to unlock and no login. Every list ships inside the app, so it opens quickly and keeps working when the signal drops on Highway 1 or up in the Sierra.</p>
+    <p class="sub">There's no subscription, no ad, nothing to unlock and no login. The guides and the search are open to anyone with a browser. The Eats Ranked app keeps a state's lists on the phone, so they keep working when the signal drops on Highway 1 or up in the Sierra.</p>
   </section>
 
   <section id="privacy">
-    <h2>What the app knows about you: nothing</h2>
-    <p class="sub">{BRAND} has no analytics and no account, and it sends us nothing. Turn on location and it's used on your phone to sort by distance; saved places stay there too. This site uses no cookies or trackers. <a href="/privacy.html">The privacy policy</a> has the details.</p>
+    <h2>What this site knows about you: nothing</h2>
+    <p class="sub">{BRAND} has no analytics and no account, and it sends us nothing. Share your location and it's used in your browser to sort by distance; saved places stay there too. This site uses no cookies or trackers. <a href="/privacy.html">The privacy policy</a> has the details.</p>
   </section>
 
   <section id="faq">
@@ -1095,11 +1047,11 @@ body = f"""  <main id="main">
 
   <section id="download" class="final">
     <h2>Find your taquería</h2>
-    <p class="sub">{BRAND} for iPhone and iPad will be free when it reaches the App Store. Until then, ask us for early access, or use the search right here.</p>
-    <div class="cta-row">{store_button()}<a class="btn btn-ghost" href="/explore/">Search on the web</a></div>
+    <p class="sub">The guides and the web search are free and open now. The same California guide is in {APP_LINK}, one free app with the state guides inside, {APP_WHEN}.</p>
+    <div class="cta-row"><a class="btn" href="/explore/">Search on the web</a><a class="btn btn-ghost" href="{APP_URL}" rel="noopener">About the Eats Ranked app</a></div>
   </section>
   </main>"""
-written.append(page("index.html", title, desc, body, [app_ld, faq_ld]))
+written.append(page("index.html", title, desc, body, [site_ld, faq_ld]))
 
 # ---------------------------------------------------------------- privacy and terms
 nav, bc = crumbs([("Home", "/"), ("Privacy policy", "/privacy.html")])
@@ -1107,34 +1059,25 @@ body = f"""{nav}
   <main id="main" class="legal">
   <section class="hero">
     <h1>Privacy policy</h1>
-    <p class="lede">Short version: the {BRAND} app collects nothing about you, and this website doesn't track you. Last updated {nice_date(PRIVACY_UPDATED)}.</p>
+    <p class="lede">Short version: this website doesn't track you. No account, no analytics, no ads, no cookies. Last updated {nice_date(PRIVACY_UPDATED)}.</p>
   </section>
   <section>
-    <h2>The app</h2>
-    <ul>
-      <li><b>No account, no analytics, no ads.</b> The app has no sign-in, no advertising and no analytics or crash-reporting code. We receive no data from it.</li>
-      <li><b>Location.</b> If you allow it, your location is used on your device to sort places by distance and show where you are on the map. It is never sent to us. You can turn it off in Settings at any time.</li>
-      <li><b>Saved places and filters</b> are stored only on your device and are deleted when you delete the app.</li>
-      <li><b>Apple Maps.</b> The maps in the app are Apple's, loaded from Apple as you look around them. When you open a place's ratings, hours and photos, or ask for directions, the app asks Apple Maps for that place. Apple handles those requests under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a>, as it does for any app that shows a map.</li>
-      <li><b>Data updates.</b> When you open the app, it checks this website for newer restaurant data, at most once a day (or an hour later if a check didn't go through), and downloads it when there is some. These requests carry no location or identifiers. GitHub, which hosts this site, may keep standard server logs of them, as it does for any visit here.</li>
-      <li><b>Spotlight.</b> The app adds its hand-checked and honored places to your device's search index so you can find them from Spotlight. That index stays on your device.</li>
-      <li><b>Calls, websites and email</b> you start from a place open in the Phone app, your browser or Mail, and are handled by them.</li>
-    </ul>
-    <p>On the App Store, the app's privacy label will be "Data Not Collected" (the app isn't on the store yet).</p>
     <h2>This website</h2>
     <p>The site is static pages hosted on GitHub Pages. It sets no cookies and loads no analytics, fonts or scripts from anyone else. The web app keeps three things in your browser's local storage, on your device only: the places you save (<code>cae-saved</code>), the last guide you opened (<code>cae-guide</code>) and the county you last picked under Inspections (<code>cae-jur</code>). Clearing this site's data in your browser deletes them. Its "Near me" button asks your browser for your location only when you press it; the location is used in the page to sort by distance and is never sent anywhere. GitHub may keep standard server logs, such as IP addresses, for security; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub's privacy statement</a>.</p>
+    <h2>The Eats Ranked app</h2>
+    <p>On iPhone and iPad, the California guide is part of the Eats Ranked app, {APP_WHEN}. Eats Ranked has its own privacy policy at <a href="{APP_PRIVACY_URL}" rel="noopener">eatsranked.com/privacy.html</a>. In short, it collects nothing about you. When it downloads or refreshes the California guide it fetches data files from this website, in requests that carry no location and no identifier; GitHub may log them as it does any visit here.</p>
     <h2>Email</h2>
     <p>If you email us, we use your message and address only to reply and to fix the listing you told us about. We don't add you to a mailing list or share your address.</p>
     <h2>Children</h2>
-    <p>The app collects no personal information from anyone, including children.</p>
+    <p>This website collects no personal information from anyone, including children.</p>
     <h2>California residents</h2>
-    <p>Because we collect no personal information through the app or this site, there is nothing for us to sell, share or delete. If you emailed us and want that message deleted, ask at <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+    <p>Because we collect no personal information through this site, there is nothing for us to sell, share or delete. If you emailed us and want that message deleted, ask at <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
     <h2>Changes and contact</h2>
     <p>If this policy changes, the new version will be posted here with a new date. Questions: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
   </section>
   </main>"""
-written.append(page("privacy.html", "Privacy Policy: California Eats Taquería & Restaurant App",
-                    fit(["The California Eats privacy policy: the app collects no data, keeps your location and saved places on your device, and this site sets no cookies."], 140, 160),
+written.append(page("privacy.html", "Privacy Policy: California Eats Taquería & Restaurant Guide",
+                    fit(["The California Eats privacy policy: this website collects no data, keeps your location and saved places in your browser, and sets no cookies."], 140, 160),
                     body, [bc]))
 
 nav, bc = crumbs([("Home", "/"), ("Terms of use", "/terms.html")])
@@ -1143,17 +1086,17 @@ body = f"""{nav}
   <main id="main" class="legal">
   <section class="hero">
     <h1>Terms of use</h1>
-    <p class="lede">The plain-language terms for the {BRAND} app and this website. Last updated {nice_date(SITE_UPDATED)}.</p>
+    <p class="lede">The plain-language terms for {BRAND}, this website. Last updated {nice_date(SITE_UPDATED)}.</p>
   </section>
   <section>
-    <h2>What the app is</h2>
+    <h2>What {BRAND} is</h2>
     <p>{BRAND} is a free guide to restaurants in California. It is provided as is, for personal use, without charge and without warranties of any kind.</p>
     <h2>Check before you go</h2>
     <p>Restaurants open, close, change their hours and change their menus. What a place serves and when it opened are what the place or a named source said when we checked in {CHECKED}. We work to keep the lists right, but we can't promise that any listing is current or complete. Call the restaurant before you make the trip.</p>
     <h2>Inspection results</h2>
-    <p>Inspection results are each county's own, shown as the county recorded them at the latest inspection. We don't compute or change them, and we don't compare counties. One inspection is a snapshot of one day; conditions may have changed since. For the official record, check with the county's environmental health department. No county endorses this app.</p>
+    <p>Inspection results are each county's own, shown as the county recorded them at the latest inspection. We don't compute or change them, and we don't compare counties. One inspection is a snapshot of one day; conditions may have changed since. For the official record, check with the county's environmental health department. No county endorses this site.</p>
     <h2>Other people's content</h2>
-    <p>Ratings, reviews, hours and photos in each place card come from Apple Maps and are Apple's and its providers', under Apple's terms. Restaurant names and trademarks belong to their owners. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. {BRAND} is not affiliated with any restaurant, chain, award body or government agency.</p>
+    <p>The web search links each place to Apple Maps; the ratings, reviews, hours and photos there are Apple's and its providers', under Apple's terms. Restaurant names and trademarks belong to their owners. MICHELIN and the MICHELIN Guide are trademarks of Michelin; James Beard Foundation and James Beard Award are trademarks of the James Beard Foundation. {BRAND} is not affiliated with any restaurant, chain, award body or government agency.</p>
     <h2>Data sources and licenses</h2>
     <ul>
       <li>Overture Maps Foundation places data, under the Community Data License Agreement, Permissive 2.0 (and Apache 2.0 for Foursquare data); boundaries from Overture Maps.</li>
@@ -1167,12 +1110,12 @@ body = f"""{nav}
     <h2>Corrections</h2>
     <p>If a listing is wrong, or you own a restaurant and want something fixed, email <a href="mailto:{EMAIL}">{EMAIL}</a>. We fix mistakes in the next update.</p>
     <h2>Liability</h2>
-    <p>To the extent the law allows, we are not liable for any loss arising from use of the app or site, including a wasted drive to a closed restaurant. California law governs these terms.</p>
+    <p>To the extent the law allows, we are not liable for any loss arising from use of this site, including a wasted drive to a closed restaurant. California law governs these terms.</p>
     <h2>Changes</h2>
     <p>We may update these terms; the current version and its date are always on this page. See also the <a href="/privacy.html">privacy policy</a>.</p>
   </section>
   </main>"""
-written.append(page("terms.html", "Terms of Use: California Eats Taquería & Restaurant App",
+written.append(page("terms.html", "Terms of Use: California Eats Taquería & Restaurant Guide",
                     fit(["The California Eats terms of use: a free California restaurant guide, provided as is. Check before you go, and see where each listing comes from."], 140, 160),
                     body, [bc]))
 
